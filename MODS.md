@@ -1,0 +1,146 @@
+# Mods in Create IronWoven
+
+**Inventory snapshot:** 3 November 2026  
+**Minecraft:** 1.21.1  
+**Loader:** NeoForge 21.1.265  
+**Java:** 21
+
+This page tells players which mods are recorded in the current test installation and which are client-only. The server log reported 82 loaded mods when bundled/nested mods were counted. The lists below reflect the latest available test snapshot, not a final release manifest. Versions and contents may change before public beta release.
+
+Some entries below are libraries, APIs, or bundled components required by other mods. They are listed for transparency even though they do not add a standalone gameplay feature.
+
+## Main Create, engineering, transport, and automation mods
+
+| Mod | Version in test snapshot |
+|---|---|
+| Create | 6.0.10 |
+| Create Aeronautics | 1.3.2 |
+| Create Aeronautics: Curios Compat | 2.0 |
+| Create Aeronautics: Copycat Wing | 1.0.4 |
+| Create Aeronautics: Transmission & Linkage | 0.2.9 |
+| Create Bits 'n' Bobs | 2.3.5 |
+| Create Cobblestone | 1.5.1 |
+| Create Crafts & Additions | 1.6.0 |
+| Create Deco | 2.1.3 |
+| Create Diesel Generators | 1.3.15 |
+| Create Encased | 1.10.0-fix1 |
+| Create Gadgets & Gizmos | 1.2.10 |
+| Create Kinetic | 1.4.3 |
+| Create Liquid Fuel | 3.0.0 |
+| Create Offroad | 1.3.2 |
+| Create: Simulated | 1.3.2 |
+| Create Slice & Dice | 4.3.4 |
+| Create: Bells & Whistles | 0.4.7 |
+| Create: Blocks & Bogies | 1.0.8 |
+| Create: Copycats+ | 3.0.9 |
+| Copycats+ Additions | 1.5.0 |
+| Create: Dragons Plus | 1.11.9 |
+| Create: Enchantment Industry | 2.5.4b |
+| Create: Fluids Be Gone! | 1.0.1 |
+| Create: Framed | 1.8.2 |
+| Create: Numismatics | 1.0.20 |
+| Create: Numismatics Plus | 1.0.1 |
+| Create: Pantographs & Wires | 0.2.3-C6 beta |
+| Create: Pattern Schematics | 2.0.10 |
+| Create: Power Grid | 0.6.2 |
+| Create: Rustic Structures | 1.0.1 |
+| Create: Sound of Steam / Pipe Organs | 0.9.2.1 |
+| Create: Steam 'n' Rails | 0.3.0-alpha.2 |
+| Create: Structures Arise | 176.49.50 |
+| Create: The Factory Must Grow | 1.3.2a-community |
+| Create: Unified Fuels | 1.0.4 |
+| Create: Vibrant Vaults | 0.3.2 |
+| Modern Train Parts | 0.2.5 |
+| KineticGrip | 1.0.5 |
+| Aeronautical Diesel | 1.1.0 |
+| AeroPortals | 1.3.6 |
+| Strut Your Stuff | 1.3.1 |
+| Shield Generators | 1.4.0 |
+
+## Building, decoration, food, and storage
+
+| Mod | Version in test snapshot |
+|---|---|
+| Chipped | 4.0.2 |
+| Design n' Decor | 2.2b |
+| Farmer's Delight | 1.3.4 |
+| Mama's Herbs and Harvest | 1.21.1-24 |
+| Sophisticated Backpacks | 3.26.19 |
+| Sophisticated Backpacks Create Integration | 0.2.3 |
+| Sophisticated Air Tank | 1.0.1-beta |
+| Sophisticated Core | 1.5.23 |
+
+## World generation and exploration
+
+| Mod | Version in test snapshot |
+|---|---|
+| Oh The Biomes We've Gone (BYG) | 2.6.3 |
+| Regions Unexplored | 0.6.3 |
+| Oh The Trees You'll Grow | 5.3.5 |
+| TerraBlender | 4.1.0.8 |
+| Lithostitched | 1.8.1 |
+| Atmosphere | 1.0.18 |
+
+## Player interface, teams, and utility
+
+| Mod | Version in test snapshot |
+|---|---|
+| AppleSkin | 3.0.9 |
+| FTB Chunks | 2101.1.23 |
+| FTB Library | 2101.1.39 |
+| FTB Teams | 2101.1.11 |
+| FTB XMod Compat | 21.1.14 |
+| InControl! | 10.3.1 |
+| Jade | 15.10.6 |
+| Just Enough Items (JEI) | 19.64.0.455 |
+| Mouse Tweaks | 2.26.1 |
+| Memory Settings | 6.0 |
+| Sable | 2.0.6 |
+
+## Client-only graphics mods
+
+These are recorded in the project master list as client-only additions. They do not belong in the dedicated server's mods folder.
+
+| Mod | Version recorded | Installation |
+|---|---|---|
+| Sodium | 0.8.13 | Client only |
+| Iris | 1.8.14-beta.1 | Client only |
+| Sodium Extra | 0.9.5 NeoForge | Client only |
+
+## Libraries, APIs, and support components
+
+These support other mods and may not appear as separate gameplay features.
+
+| Component | Version in test snapshot |
+|---|---|
+| Apollib | 1.2.0 |
+| Architectury | 13.0.11 |
+| Athena | 4.0.6 |
+| Azimuth | 1.4.10 |
+| Conditional Mixin | 0.6.4 |
+| CorgiLib | 5.0.0.10 |
+| Cupboard | 4.2 |
+| Curios API | 9.5.1 |
+| DragonLib | 3.0.29 |
+| Ferrite Core | 7.0.3 |
+| Flywheel | 1.0.6 |
+| Forge Config API Port | 21.1.1 |
+| Gadgets & Gizmos Library | 1.2.10 |
+| GeckoLib 4 | 4.9.3 |
+| Kotlin for Forge | 5.12.0 |
+| MezzConfig | 0.6.10 |
+| ModernFix | 5.27.27 |
+| Ponder | 1.0.82 |
+| Resourceful Lib | 3.0.12 |
+| Sable Companion | 1.6.0 |
+| Veil | 4.3.2 |
+
+## Important notes
+
+- The server inventory was taken from a successful dedicated-server test on 3 November 2026. It is not a promise that every item above will remain in the public release.
+- Some Create Aeronautics and Gadgets & Gizmos components are bundled inside parent mod JARs.
+- Sodium, Iris, and Sodium Extra are client-only.
+- The final client and server manifests will be published with the beta release after a fresh inventory and clean-install test.
+- Third-party mods remain the property of their authors. This page identifies the tested components; it does not redistribute their JARs.
+
+See [Mods planned, on hold, and excluded](MOD_PLANS.md) for the difference between installed mods and future candidates.

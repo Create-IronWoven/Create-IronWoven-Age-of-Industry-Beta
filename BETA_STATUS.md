@@ -7,9 +7,16 @@
 
 ## Current stage
 
-<badge>Internal testing / public feedback hub being prepared</badge>
+**Current stage: Internal testing / public feedback hub**
 
 The pack is undergoing compatibility and dedicated-server testing. This repository is open for collecting feedback and documenting progress. A public downloadable beta build has **not** been announced here.
+
+## Mod list and future plans
+
+- [Mods in the current test pack](MODS.md)
+- [Mods planned, on hold, or excluded](MOD_PLANS.md)
+
+The current mod inventory is a dated test snapshot. Batch 7 has not started, and no Batch 7 additions are approved yet. Terralith remains on hold.
 
 ## Project direction
 

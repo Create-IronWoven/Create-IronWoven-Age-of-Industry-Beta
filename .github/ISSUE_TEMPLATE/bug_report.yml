@@ -1,0 +1,81 @@
+name: Bug report
+description: Report a reproducible problem in the Create IronWoven beta.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting, search existing issues and check Known Issues. Remove personal information from logs and screenshots.
+  - type: input
+    id: pack-version
+    attributes:
+      label: Modpack version / build
+      placeholder: Exact release name or build identifier
+    validations:
+      required: true
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft version
+      placeholder: "1.21.1"
+    validations:
+      required: true
+  - type: input
+    id: loader-version
+    attributes:
+      label: NeoForge version
+      placeholder: "21.1.265"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where did this happen?
+      options:
+        - Single-player
+        - Dedicated server
+        - Client joining a server
+        - Other / unsure
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Number the steps so the maintainer can try to repeat the problem.
+      placeholder: |
+        1. Start a new test world...
+        2. Open...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Relevant error text or log excerpt
+      description: Paste only the relevant section. Remove usernames, private paths, IPs, tokens, and other personal details.
+      render: text
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: I removed personal or sensitive information from attachments.
+          required: true

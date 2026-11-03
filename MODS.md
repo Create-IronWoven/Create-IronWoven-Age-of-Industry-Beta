@@ -19,7 +19,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | Create Aeronautics: Copycat Wing | 1.0.4 |
 | Create Aeronautics: Transmission & Linkage | 0.2.9 |
 | Create Bits 'n' Bobs | 2.3.5 |
-| Create Cobblestone | 1.5.1 |
+| Create Cobblestone | 1.5.1+neoforge-1.21.1-160 |
 | Create Crafts & Additions | 1.6.0 |
 | Create Deco | 2.1.3 |
 | Create Diesel Generators | 1.3.15 |
@@ -80,6 +80,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | TerraBlender | 4.1.0.8 |
 | Lithostitched | 1.8.1 |
 | Atmosphere | 1.0.18 |
+| Create Oh The Biomes We've Gone Compatibility | 0.0NONE |
 
 ## Player interface, teams, and utility
 
@@ -95,6 +96,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | Just Enough Items (JEI) | 19.64.0.455 |
 | Mouse Tweaks | 2.26.1 |
 | Memory Settings | 6.0 |
+| MezzConfig | 0.6.10 |
 | Sable | 2.0.6 |
 
 ## Client-only graphics mods
@@ -144,3 +146,9 @@ These support other mods and may not appear as separate gameplay features.
 - Third-party mods remain the property of their authors. This page identifies the tested components; it does not redistribute their JARs.
 
 See [Mods planned, on hold, and excluded](MOD_PLANS.md) for the difference between installed mods and future candidates.
+
+
+## Inventory notes before release
+
+- The private project master list also records Create: Sophisticated Exoskeleton 1.0 as a confirmed addition, but it was not present in the latest server log's loaded-mod list used for this snapshot. It is therefore not counted as confirmed active here; the client and server inventories must be reconciled before the public release manifest is finalized.
+- The current server inventory and client-only additions were drawn from different project records. A fresh client manifest and server JAR inventory will be published with the beta release.

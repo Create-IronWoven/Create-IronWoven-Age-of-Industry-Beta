@@ -50,12 +50,13 @@ The private development repository contains the technical ownership register, re
 
 Relevant existing upstream discussions identified so far:
 
-- Steam 'n' Rails: https://github.com/Porters-of-Railways/Railway-1.21.1/pull/393
-- Create Kinetic: no matching open issue found yet for the two findings
-- Copycats+: https://github.com/copycats-plus/copycats/issues/437
-- Create Deco: https://github.com/talrey/CreateDeco/issues/268
-- Design n' Decor: https://github.com/DrMango14/Create-Design-n-Decor/issues/139
-- Struts: https://github.com/cakeGit/StrutYourStuff/issues/6
+- Steam 'n' Rails: existing issues [#302](https://github.com/Porters-of-Railways/Railway-1.21.1/issues/302) and [#378](https://github.com/Porters-of-Railways/Railway-1.21.1/issues/378), plus open [PR #393](https://github.com/Porters-of-Railways/Railway-1.21.1/pull/393) addressing the invalid condition format and compatibility-track prefix handling.
+- Create Kinetic: no matching open issue found yet for the dedicated-server mixin and five stale loot-table references. The mixin correction passed the local smoke test; the loot-table correction needs maintainer confirmation of intended item registrations.
+- Copycats+: existing [issue #437](https://github.com/copycats-plus/copycats/issues/437).
+- Create Deco: canonical existing [issue #268](https://github.com/talrey/CreateDeco/issues/268); [#282](https://github.com/talrey/CreateDeco/issues/282) appears to be a duplicate.
+- Design n' Decor: existing [issue #139](https://github.com/DrMango14/Create-Design-n-Decor/issues/139).
+- Struts: exact dedicated-server error already appears in [issue #6](https://github.com/cakeGit/StrutYourStuff/issues/6). The proposed mixin-side correction has not yet been tested.
+- Mama's Herbs and Harvest: its CurseForge project lists Botany Pots as an optional dependency; a maintainer message is drafted, but no public source repository was found in this audit.
 
 No external developer report or patch has been submitted from this project yet. Upstream patches are being prepared and reviewed first. No personal credit or payment is requested for these contributions.
 

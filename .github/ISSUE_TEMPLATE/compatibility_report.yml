@@ -1,0 +1,56 @@
+name: Compatibility report
+description: Report a mod conflict, version mismatch, or client/server compatibility problem.
+title: "[Compatibility]: "
+labels: ["compatibility"]
+body:
+  - type: input
+    id: pack-version
+    attributes:
+      label: Modpack version / build
+    validations:
+      required: true
+  - type: input
+    id: mod-name
+    attributes:
+      label: Mod or feature involved
+    validations:
+      required: true
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod version
+      description: Include the exact version if known.
+    validations:
+      required: false
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Single-player
+        - Dedicated server
+        - Client and dedicated server
+        - Other / unsure
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is incompatible?
+      description: Explain what fails, conflicts, or behaves differently.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log excerpt
+      description: Remove private paths, usernames, IPs, tokens, and other personal details.
+      render: text
+    validations:
+      required: false

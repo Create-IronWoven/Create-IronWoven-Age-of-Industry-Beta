@@ -16,7 +16,7 @@ The pack is undergoing compatibility and dedicated-server testing. This reposito
 - [Mods in the current test pack](MODS.md)
 - [Mods planned, on hold, or excluded](MOD_PLANS.md)
 
-The current mod inventory is a dated test snapshot. Batch 7 has not started, and no Batch 7 additions are approved yet. Terralith remains on hold.
+The current mod inventory is a dated test snapshot. New requested candidates have been researched and recorded in MOD_PLANS.md. They are not installed or approved; Batch 7 has not started. Terralith remains on hold.
 
 ## Project direction
 
@@ -49,6 +49,7 @@ These are maintainer-side smoke-test results, not a guarantee that every feature
 - PowerGrid optional native accelerated solver does not currently load in the tested Windows server environment.
 - Review remaining nonfatal data-map, item-tag, and biome mob-category warnings.
 - Continue compatibility and client/server testing.
+- Review the requested planned mods one at a time; do not add them to the active inventory until approved and tested.
 
 ## Release readiness
 

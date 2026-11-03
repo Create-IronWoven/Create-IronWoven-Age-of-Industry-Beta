@@ -37,7 +37,6 @@ These mods were specifically recorded as not wanted for this project:
 - Carry On
 - Easy Villagers
 - Immersive Paintings
-- Just Create SMP Pops
 
 The following optional dependency mods were also explicitly declined for the current Herbs & Harvest recipe setup:
 

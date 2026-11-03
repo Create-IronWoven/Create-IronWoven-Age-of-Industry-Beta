@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the beta status
+    url: https://github.com/alexth110987/Create-IronWoven-Beta/blob/main/BETA_STATUS.md
+    about: Check current testing progress and release information.
+  - name: Read known issues
+    url: https://github.com/alexth110987/Create-IronWoven-Beta/blob/main/KNOWN_ISSUES.md
+    about: Check whether your problem is already known.
+  - name: Support and privacy guidance
+    url: https://github.com/alexth110987/Create-IronWoven-Beta/blob/main/SUPPORT.md
+    about: Learn what to include and what not to upload.

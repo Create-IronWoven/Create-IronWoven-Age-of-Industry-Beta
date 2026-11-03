@@ -13,6 +13,7 @@ This repository is for **players and beta testers**. Use it to follow developmen
 - [Mods planned, on hold, and excluded](MOD_PLANS.md)
 - [Changelog](CHANGELOG.md)
 - [Known issues](KNOWN_ISSUES.md)
+- [Compatibility progress](COMPATIBILITY_PROGRESS.md)
 - [Support and troubleshooting](SUPPORT.md)
 - [How to contribute feedback](CONTRIBUTING.md)
 - [Report a bug](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=bug_report.yml)

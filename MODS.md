@@ -118,7 +118,7 @@ These support other mods and may not appear as separate gameplay features.
 | Apollib | 1.2.0 |
 | Architectury | 13.0.11 |
 | Athena | 4.0.6 |
-| Azimuth | 1.4.10 |
+| Azimuth | 1.4.10 | 1.4.10 |
 | Conditional Mixin | 0.6.4 |
 | CorgiLib | 5.0.0.10 |
 | Cupboard | 4.2 |

@@ -9,6 +9,8 @@ This repository is for **players and beta testers**. Use it to follow developmen
 ## Quick links
 
 - [Current beta status](BETA_STATUS.md)
+- [Mods currently in the pack](MODS.md)
+- [Mods planned, on hold, and excluded](MOD_PLANS.md)
 - [Changelog](CHANGELOG.md)
 - [Known issues](KNOWN_ISSUES.md)
 - [Support and troubleshooting](SUPPORT.md)

@@ -1,0 +1,66 @@
+name: Validate public mod plan
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'MOD_PLANS.md'
+      - '.github/workflows/validate-mod-plans.yml'
+  pull_request:
+    paths:
+      - 'MOD_PLANS.md'
+      - '.github/workflows/validate-mod-plans.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out public beta repository
+        uses: actions/checkout@v4
+
+      - name: Validate planned mod entries
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("MOD_PLANS.md")
+          if not path.is_file():
+              raise SystemExit("Missing required file: MOD_PLANS.md")
+
+          content = path.read_text(encoding="utf-8")
+          candidates = [
+              "Botany Pots",
+              "Create Deco",
+              "Construction Sticks",
+              "Lootr",
+              "YUNG's Better End Island",
+              "BetterEnd: New Dawn",
+              "Bigger Better End Cities",
+              "Ender Villages",
+              "Bookshelf",
+              "Prickle",
+          ]
+
+          errors = [f"Missing planned mod entry: {name}"
+                    for name in candidates if name not in content]
+
+          bookshelf_rows = [
+              line for line in content.splitlines()
+              if line.strip().startswith("| Bookshelf |")
+          ]
+          if len(bookshelf_rows) != 1:
+              errors.append(
+                  f"Bookshelf must appear once in the candidate table; found {len(bookshelf_rows)}"
+              )
+
+          if errors:
+              print("\n".join(f"::error::{error}" for error in errors))
+              raise SystemExit(1)
+
+          print("PASS: all requested candidate names are present.")
+          print("PASS: duplicate Bookshelf entry is not present.")
+          PY

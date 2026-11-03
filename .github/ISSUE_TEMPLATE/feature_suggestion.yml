@@ -1,0 +1,26 @@
+name: Feature suggestion
+description: Suggest a feature, modpack improvement, or quality-of-life change.
+title: "[Suggestion]: "
+labels: ["suggestion"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see?
+      description: Describe the idea clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why would this improve Create IronWoven?
+      description: Explain how it fits the Create / Aeronautics / engineering / exploration focus.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or references
+      description: Optional links or other approaches.
+    validations:
+      required: false

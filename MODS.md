@@ -152,7 +152,7 @@ See [Mods planned, on hold, and excluded](MOD_PLANS.md) for the difference betwe
 
 ## Inventory notes before release
 
-- The private project master list also records Create: Sophisticated Exoskeleton 1.0 as a confirmed addition, but it was not present in the latest server log's loaded-mod list used for this snapshot. It is therefore not counted as confirmed active here; the client and server inventories must be reconciled before the public release manifest is finalized.
+- Create: Sophisticated Exoskeleton 1.0 was previously installed/tested as a Batch 5 entry, then removed because it did not meet the maintainer's expectations. It is not part of the current test inventory or intended beta release; see [MOD_PLANS.md](MOD_PLANS.md) for the explicit exclusion.
 - The current server inventory and client-only additions were drawn from different project records. A fresh client manifest and server JAR inventory will be published with the beta release.
 
 

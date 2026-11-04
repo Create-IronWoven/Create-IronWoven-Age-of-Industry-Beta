@@ -81,3 +81,10 @@ For each distinct project, the private development audit records its official pr
 - Unknown or ambiguous items remain on hold. Current file availability and approval are rechecked before each release export.
 
 The detailed per-mod evidence and outstanding checks are maintained in the private repository's `docs/CURSEFORGE_PERMISSION_AUDIT.md`. This public checklist is not a blanket release clearance.
+
+
+## Audit progress — Create addon batch (4 November 2026)
+
+A first additional project-page pass found CurseForge-hosted pages for Create Crafts & Additions, Create: Bits 'n' Bobs, Create: Diesel Generators, Create: Blocks & Bogies, Create: Pantographs & Wires, and Create Aeronautics: Gadgets & Gizmos. They must be selected through the CurseForge App manifest, not manually bundled.
+
+Two inventory/file mismatches remain open: the recorded Bits 'n' Bobs 2.3.5 versus the surfaced 2.3.2 page file, and the recorded bundled Gadgets & Gizmos 1.2.10 versus the surfaced standalone 1.1.3 file. Pantographs & Wires still needs its licence/terms and exact manifest file ID recorded. These entries are not yet fully release-cleared. See the private audit register for exact sources and remaining checks.

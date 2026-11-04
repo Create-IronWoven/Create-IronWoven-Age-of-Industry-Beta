@@ -413,3 +413,19 @@ Do not modify the production inventory, production world or world-generation set
 - [ ] Record client/server sync, loot, recipe visibility, chunk-border generation, restart behavior and full logs for every stage.
 
 Keep the production world, BYG 2.6.3, Regions Unexplored 0.6.3 and current world-generation JSON unchanged. Existing BetterEnd / Lootr limitation remains open and must not be assumed fixed by this shortlist. Detailed candidate notes: [End expansion research](https://github.com/alexth110987/Create-IronWoven/blob/main/docs/END_EXPANSION_RESEARCH_2026-11-04.md).
+
+
+### Stage A maintainer result — 4 November 2026
+
+**Partial pass — feature observed, approval pending.** Maintainer confirms modded planks work in Chipped's Carpenter's Table and the stone table works. Server log confirms Every Compat 2.11.56 + Moonlight 3.8.1 load, Chipped modules and dynamic server resources generate, and dedicated server reaches Done.
+
+- [x] Carpenter's Table accepts tested modded planks (maintainer observation).
+- [x] Chipped stone table works (maintainer observation).
+- [x] Dedicated server starts to Done with Every Compat and Moonlight loaded.
+- [ ] Check recipes, JEI, models/textures, drops and additional modded wood types.
+- [ ] Investigate duplicate registration ERROR for `everycomp:ch/herbsandharvest/golden_cherry_fruit_leaves`.
+- [ ] Evaluate 9,480 generated compatibility blocks (36.22% of registry) and the logged memory/load-time warning.
+- [ ] Re-run in a clean isolated disposable profile/world; current log includes BetterEnd, YUNG's Better End Island and the wider pack, so Pythadendron support is not proven.
+- [ ] Check client/server consistency and save/restart.
+
+Keep Every Compat candidate-only until remaining checks pass and the project owner approves. No production inventory changes.

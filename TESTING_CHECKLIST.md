@@ -23,7 +23,7 @@ Use the [Dimension Mod Guide](DIMENSIONS.md) to group world-generation and explo
 2. Hand the remaining BetterEnd 2B gameplay checks to beta testers; keep their feedback separate from the limited maintainer test result.
 3. Complete the remaining Botany Pots, Construction Sticks and Lootr multiplayer feature checks.
 4. Investigate the outstanding Struts dedicated-server error, PowerGrid optional native backend, and unattributed chunk/world-load messages.
-.. Continue the other End candidate tests (Bigger Better End Cities and Ender Villages) separately in fresh disposable worlds.
+.. Continue variety-focused End candidate research and test Ender Villages separately in a fresh disposable world; Bigger Better End Cities is not selected.
 6. Research Create Big Cannons and the full colony ecosystem as separate candidate groups; do not install either until the dependency and compatibility reviews are complete.
 7. Complete the remaining pack validation and clean-install checks before any public beta package.
 
@@ -409,7 +409,7 @@ Do not modify the production inventory, production world or world-generation set
 - [ ] Verify Unusual End 2.3.1b dependencies and test separately for biome, mob, resource and decorative-block generation.
 - [ ] Verify Extended End 0.9 file/dependencies and test Obscurite ore, Void Bark wood, recipes, tools/armour and decorative blocks.
 - [ ] Keep End Beyond 1.0.4 as a separate alternative-overhaul comparison; do not combine with The Beyond without evidence.
-- [ ] Only after individual passes, test selected structure additions (Bigger Better End Cities, Ender Villages, Better End Cities Better End, MES) one at a time and then evaluate overlap.
+- [ ] Only after individual passes, test selected structure additions (Ender Villages, Better End Cities Better End, MES) one at a time and then evaluate overlap.
 - [ ] Record client/server sync, loot, recipe visibility, chunk-border generation, restart behavior and full logs for every stage.
 
 Keep the production world, BYG 2.6.3, Regions Unexplored 0.6.3 and current world-generation JSON unchanged. Existing BetterEnd / Lootr limitation remains open and must not be assumed fixed by this shortlist. Detailed candidate notes: [End expansion research](https://github.com/alexth110987/Create-IronWoven/blob/main/docs/END_EXPANSION_RESEARCH_2026-11-04.md).
@@ -441,22 +441,17 @@ Maintainer confirms that the world works with the complete mod set shown in the 
 - [ ] Confirm client/server consistency and save/restart; isolate Pythadendron separately.
 
 
-## Active End test — Batch 2C: Bigger Better End Cities
+## End test direction update — 4 November 2026
 
-**Status: Selected for isolated test; not yet installed or runtime-tested.** Exact CurseForge file: `biggerbetterendcities-1.21.1-1.0.0.jar` (file 6461536), Minecraft 1.21.1 / NeoForge. CurseForge identifies it as server-side and lists no required dependencies on the file page.
+**Bigger Better End Cities 1.0.0 is not selected for further testing.** The maintainer considers simply making vanilla End Cities bigger overkill. The pack goal is more variety and reasons to explore, not oversized versions of the same city. Do not add this candidate to the production pack or keep it in the active test queue.
 
-**Test setup**
-- [ ] Make a disposable copy of the test installation; do not touch the production server or production world.
-- [ ] Create a fresh world named `world_end_city_2c` so all End City generation occurs in new chunks.
-- [ ] For this isolated first pass, disable BetterEnd: New Dawn and YUNG's Better End Island in this disposable profile. Leave unrelated baseline mods unchanged.
-- [ ] Add only Bigger Better End Cities 1.0.0 to the dedicated test server. It is marked server-side; do not add its JAR to the client unless the official file metadata changes.
-- [ ] Start server, confirm `Done`, load the fresh world, join with the matching client, and review startup/login logs.
+The uploaded `latest(20261104-221550).log` confirms the JAR was loaded and the server reached `Done`; the client joined and entered the End, and the server saved and shut down cleanly. This was not an isolated test: BetterEnd 21.0.39 and YUNG's Better End Island 3.1.2 were also active. No Bigger Better End Cities structure-generation result is established by this log.
 
-**Structure checks**
-- [ ] Enter the End and generate new outer-island chunks.
-- [ ] Inspect city scale, branching, tower height, bridges and ship placement.
-- [ ] Check loot containers and whether loot tables load without errors.
-- [ ] Record structure frequency, overlap, chunk-boundary cutoffs and any generation collisions.
-- [ ] Save, stop cleanly, restart and revisit generated areas to confirm persistence.
+**Next priorities for the End shortlist**
+- [ ] Prioritize candidates adding genuinely different structures, ruins, dungeons, settlements and exploration locations.
+- [ ] Prioritize new End biomes/landscapes, ores/resources, mobs and loot experiences.
+- [ ] Keep generation candidates separate in fresh disposable worlds; test combinations only after individual candidates pass.
+- [ ] Compare candidates against the already-installed BetterEnd and YUNG's Better End Island to avoid redundant content and world-generation conflicts.
+- [ ] Keep the Lootr Compatibility: BetterEnd datapack on the candidate test list; verify whether it fixes Lootr on BetterEnd-generated ship chests.
 
-**Result rules:** record startup, login, structure generation and loot/log findings separately. Existing End chunks do not count as a generation test. This selection is not production approval. Keep production world and BYG 2.6.3 / Regions Unexplored 0.6.3 world-generation setup unchanged.
+Preserve production world and current BYG 2.6.3 / Regions Unexplored 0.6.3 world-generation setup. Candidate selection is not production approval.

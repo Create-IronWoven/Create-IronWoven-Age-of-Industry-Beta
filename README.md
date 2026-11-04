@@ -9,6 +9,7 @@ Welcome to the public, player-facing home for **Create IronWoven**, a Minecraft 
 - [Current beta status](BETA_STATUS.md)
 - [Mods in the current test pack](MODS.md)
 - [Planned, on-hold, and excluded mods](MOD_PLANS.md)
+- [Dimension-based mod guide](DIMENSIONS.md)
 - [Testing checklist](TESTING_CHECKLIST.md)
 - [Known issues](KNOWN_ISSUES.md)
 - [Support and troubleshooting](SUPPORT.md)
@@ -33,6 +34,7 @@ This repository documents progress and collects player feedback. It does not cur
 |---|---|
 | See what is in the current test inventory | [MODS.md](MODS.md) |
 | See ideas that are not installed or approved | [MOD_PLANS.md](MOD_PLANS.md) |
+| Browse world-generation and exploration work by dimension | [DIMENSIONS.md](DIMENSIONS.md) |
 | Find unfinished tests | [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md) |
 | Check an already-known problem | [KNOWN_ISSUES.md](KNOWN_ISSUES.md) |
 | Understand the current development stage | [BETA_STATUS.md](BETA_STATUS.md) |

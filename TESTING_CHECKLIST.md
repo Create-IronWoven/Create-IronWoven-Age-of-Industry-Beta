@@ -443,7 +443,7 @@ Maintainer confirms that the world works with the complete mod set shown in the 
 
 ## End test direction update — 4 November 2026
 
-**Bigger Better End Cities 1.0.0 is not selected for further testing.** The maintainer considers simply making vanilla End Cities bigger overkill. The pack goal is more variety and reasons to explore, not oversized versions of the same city. Do not add this candidate to the production pack or keep it in the active test queue.
+**Bigger Better End Cities 1.0.0 is explicitly excluded from Create IronWoven.** The maintainer considers simply making vanilla End Cities bigger overkill. The pack goal is more variety and reasons to explore, not oversized versions of the same city. Do not add it to the mod list or reintroduce it as a candidate unless the maintainer changes this decision.
 
 The uploaded `latest(20261104-221550).log` confirms the JAR was loaded and the server reached `Done`; the client joined and entered the End, and the server saved and shut down cleanly. This was not an isolated test: BetterEnd 21.0.39 and YUNG's Better End Island 3.1.2 were also active. No Bigger Better End Cities structure-generation result is established by this log.
 

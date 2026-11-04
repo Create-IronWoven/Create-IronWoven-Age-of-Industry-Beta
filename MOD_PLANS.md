@@ -143,19 +143,9 @@ No colony component is approved or installed by this list. Choose MineColonies a
 
 ## Performance improvement candidates — 4 November 2026
 
-**Current installed performance baseline:** ModernFix 5.27.27 and FerriteCore 7.0.3 are already in the recorded server inventory. Sodium 0.8.13, Sodium Extra 0.9.5 and Iris 1.8.14-beta.1 are client graphics components. Do not add a second renderer or duplicate memory optimizer.
+The performance candidate register is maintained once, in the side-separated section below: [Performance and long-distance/world-generation research — split by installation side](#performance-and-long-distanceworld-generation-research--split-by-installation-side-4-november-2026). That canonical section records client-only, dedicated-server, both-side and world-generation candidates, along with Voxy/Roxy's current source-policy block.
 
-| Candidate | Exact 1.21.1 NeoForge file/version | Scope | Purpose / test caution |
-|---|---|---|---|
-| spark | 1.10.124, CurseForge file 6225208 | Diagnostic profiler | Measures server tick/CPU/memory rather than increasing FPS. Use first to establish baseline and identify the real bottleneck. |
-| ImmediatelyFast | 1.6.15, file 9165518 | Client | Optimizes GUI/HUD, text, particles, entities and block-entity rendering; complement to Sodium. |
-| Entity Culling | 1.11.3, 1.21.1 NeoForge release | Client | Avoids drawing hidden entities/block entities. Test Create renderers carefully and whitelist pulleys/extended render bounds where needed. |
-| Lithium | 0.15.4, file 8330365 | Server/game logic; confirm exact side requirements | General logic/tick optimization. Back up a disposable world and test alone against Create/Aeronautics and the current worldgen/data stack. |
-| FastSuite | 6.0.7, file 7527945 | Recipe system | Optimizes JSON recipe lookup; check JEI, Create machines and custom recipe/datapack behavior. |
-| FastFurnace | 9.0.1, file 6751551 | Furnace recipe processing | Optimizes furnace/blast furnace/smoker recipe matching, not smelting speed. Lower priority than FastSuite. |
-| Chunk-Pregenerator | 4.5.4, NeoForge | Dedicated-server/world utility | Pre-generates a selected area to reduce first-exploration chunk-generation spikes. Does not improve FPS in already-generated chunks; plan disk usage/radius. |
-
-Test one at a time and compare matching workloads. spark is diagnostics, not an optimization itself. C2ME and ServerCore are not in the first wave; assess experimental chunk threading and behavior-changing server optimizers separately. Follow-up verification found More Culling v1.0.9 for NeoForge 1.21.1; see the side-separated research section below.
+Do not use older duplicate performance tables or version notes as a separate source of truth. In particular, the current Entity Culling candidate in the side-separated register is **1.10.4 for NeoForge 1.21.1**. All performance entries remain potential candidates only; no installation or production approval is implied.
 
 ## Quality-of-life candidates — 4 November 2026
 

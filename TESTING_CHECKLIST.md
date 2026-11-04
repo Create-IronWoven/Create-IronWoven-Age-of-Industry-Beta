@@ -6,6 +6,17 @@
 
 This is the living queue of mod features and compatibility checks that still need testing for Create IronWoven. It is separate from the installed-mod inventory and does not approve a mod for the production pack or a public release.
 
+## Dimension-separated world-generation testing
+
+Use the [Dimension Mod Guide](DIMENSIONS.md) to group world-generation and exploration work into **Overworld**, **Nether**, **End**, and **Shared / multi-dimension**.
+
+- Keep each dimension's generation tests in its own fresh disposable world.
+- Test one generation/structure candidate at a time; do not combine candidates during initial validation.
+- Record which dimension and exact candidate/version were tested, plus the world state and relevant dependencies.
+- A mod that intentionally affects multiple dimensions belongs in Shared / multi-dimension and must be checked in each affected dimension.
+- Keep the production world and its existing BYG 2.6.3 / Regions Unexplored 0.6.3 setup unchanged.
+- Keep the canonical candidate status in `MOD_PLANS.md`; this checklist remains the single queue of unfinished tests. The dimension guide is navigation, not a duplicate mod list.
+
 ## Recommended work order — 4 November 2026
 
 1. Test Every Compat (Wood Good) as the next maintainer candidate: verify its exact CurseForge 1.21.1 NeoForge file/dependencies, then check Chipped 4.0.2 wood variants, especially BetterEnd Pythadendron.

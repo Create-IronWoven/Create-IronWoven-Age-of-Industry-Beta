@@ -108,20 +108,23 @@ These entries are not in the active test installation. First confirm an exact Mi
 
 ### 9. End-generation candidates — Batch 2
 
-**2A status: Setup pending.** The project owner approved starting the YUNG's Better End Island test on 4 November 2026. Exact CurseForge files are verified; the user still needs to place them in the separate test installation.
+**2A status: Partial smoke-test pass — gameplay test blocked by wrong world selection.** The 4 November 2026 logs confirm that both JARs were installed in the separate test server, discovered, and listed as loaded mods. The server reached Done, accepted the local player, and shut down cleanly with all dimensions saved. No YUNG-specific dependency or startup failure was found.
 
 **2A — YUNG's Better End Island 3.1.2**
 - Main file: `YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar` — [CurseForge file 6300968](https://www.curseforge.com/minecraft/mc-mods/yungs-better-end-island-neoforge/files/6300968).
 - Required library: `YungsApi-1.21.1-NeoForge-5.1.9.jar` — [CurseForge file 8894736](https://www.curseforge.com/minecraft/mc-mods/yungs-api-neoforge/files/8894736).
-- [ ] Add these two files to the separate test setup only; use test profile/server, never production.
-- [ ] Use a fresh disposable world named `world_yungs_end_test` and ensure the IronWoven custom compatibility datapacks are loaded.
-- [ ] Confirm dependency resolution, server startup, world load, client join and clean shutdown.
+- [x] Both JARs discovered and loaded by the separate test server.
+- [x] YUNG's API dependency resolved; no YUNG-specific startup failure found.
+- [x] Dedicated server reached Done, local client joined, and all dimensions saved on shutdown.
+- [ ] Correct the separate test server's `server.properties` so `level-name=world_yungs_end_test`. The uploaded run loaded `world_lootr_test`; no YUNG End island generation was tested. Keep `world_lootr_test` intact.
+- [ ] Restore the custom IronWoven compatibility datapack folders into `world_yungs_end_test/datapacks`, preserving that world's other datapacks. The known loot-table, placard recipe and Catwalk selector errors returned because the custom fixes were not evidenced as loaded.
+- [ ] Verify the next startup log prepares `world_yungs_end_test` and lists the IronWoven compatibility packs as loaded.
 - [ ] Inspect the redesigned central island, spawn platform, portal, pillars and gateways.
 - [ ] Approach the central bell tower and check dragon summon behavior.
 - [ ] Complete the dragon fight and test respawning with the four crystals in the tower's intended positions.
 - [ ] Save, restart and rejoin to verify the arena persists.
 
-The exact dedicated test procedure and pass criteria are in the private maintainer report. This Beta checklist is the public summary. Do not run `/end_island reset` on an existing or production world.
+The logs show 459 ERROR entries and 160 WARN entries. The 453 loot-table errors, one Create Deco placard recipe error and three Sable/Copycats selector errors are known IronWoven compatibility-datapack issues; separate Struts and PowerGrid errors also remain. They are not attributed to YUNG's mods. Do not run `/end_island reset` on an existing or production world.
 
 **2B — BetterEnd: New Dawn 21.0.39**
 - Main file: `BetterEnd-21.0.39.jar` — [CurseForge file 9306604](https://www.curseforge.com/minecraft/mc-mods/betterend-neoforge/files/9306604).

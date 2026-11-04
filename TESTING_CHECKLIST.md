@@ -14,6 +14,18 @@ This is the living queue of mod features and compatibility checks that still nee
 - **Research gate** — verify the exact CurseForge NeoForge file and dependency chain before installing anything.
 - **On hold** — do not start testing until the project owner resumes it.
 
+## Installed baseline: startup passed, feature testing still required
+
+The 4 November dedicated-server test reached `Done`, loaded the test world, accepted a client login, and shut down cleanly with the recorded server mod set discovered/loaded. This is a **pack-level startup/load pass** for that server configuration. It does not mean every installed mod has passed its own feature tests.
+
+- [ ] Work through the installed baseline mod list in `MODS.md` and validate each mod's core feature(s) that are relevant to this pack.
+- [ ] Check representative recipes, blocks/items, machines, structures, entities, progression, and integrations where the mod provides them.
+- [ ] Check key cross-mod interactions, especially Create/Create Aeronautics integrations and world-generation/structure mods, in disposable test worlds.
+- [ ] Run a matching client startup test and review the client log; the dedicated-server log does not validate client-only graphics mods such as Sodium, Iris, or Sodium Extra.
+- [ ] Record individual results as **passed**, **partial**, **failed**, or **not yet tested**. Do not infer a feature pass from the server reaching `Done`.
+
+**Known startup exceptions that remain open:** Struts 1.3.1 attempts to load client-only `RenderSystem` on the dedicated server; Create: Power Grid 0.6.2 cannot load its optional `powergridNative7` accelerated solver in the tested Windows environment. Neither prevented the 4 November server startup, but both require follow-up.
+
 ## Active tests
 
 ### 1. Botany Pots — 21.1.44

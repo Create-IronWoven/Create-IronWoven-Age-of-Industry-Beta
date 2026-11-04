@@ -178,15 +178,49 @@ Test one at a time and compare matching workloads. spark is diagnostics, not an 
 These candidates are not installed or approved. Match exact CurseForge files/dependencies at the time of approval, use a separate test profile, and check client/server placement before adding them.
 
 
-## Expanded performance and LOD/world-generation research — 4 November 2026
+## Performance and long-distance/world-generation research — split by installation side (4 November 2026)
 
-Research-only candidates for Minecraft 1.21.1 / NeoForge:
+**Target:** Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21. **Status:** research candidates only; none approved or installed.
 
-- **Client rendering:** ImmediatelyFast 1.6.15 (CurseForge file 9165518), Flerovium 1.1.2 stable (Sodium required), Entity Culling 1.10.4 (file 8274693), More Culling 1.0.11 (1.21.1 NeoForge release listing).
-- **Server/recipe:** Lithium 0.15.4 (file 8330365; backup and compatibility testing required), FastSuite 6.0.7, FastFurnace 9.0.1 (lower priority), spark 1.10.124 (diagnostic profiler, not a performance boost), optional Chunk-Pregenerator 4.5.4 for a chosen fresh world area.
-- **Long-distance terrain:** Distant Horizons 3.3.3 (NeoForge 1.21.1, CurseForge file 9004764) is a viable CurseForge-only LOD candidate. Do not combine with Voxy/Roxy in the same client profile. Iris/shaders require shader packs that explicitly support DH.
-- **Voxy:** Roxy 0.4.1 is available on CurseForge (file 9283446), but it is only a loader/translation layer and requires the original Voxy JAR plus Forgified Fabric API. Roxy's author currently calls Voxy 0.2.16-beta for MC 1.21.11 the only verified Voxy build. The required Voxy JAR is not a matching CurseForge-hosted MC 1.21.1 build, so Voxy is blocked under the project's CurseForge-only rule. Do not add Roxy by itself.
-- **Aeronautics caveat:** Separate Sable Render Distance (SSRD) is designed to render Create Aeronautics physics sublevels farther out with DH/Voxy; no eligible CurseForge download was verified. DH alone may render terrain at a distance without extending moving aircraft/ship sublevel rendering.
-- **Tectonic:** v3.0.28 NeoForge 21.1 for MC 1.21.1 (CurseForge file 8855043) is a promising worldgen candidate. Its author documents compatibility with Regions Unexplored and BWG/BYG via TerraBlender/Biolith. Test separately with copies of current custom worldgen JSON in a disposable world. Do not touch the production world, BYG 2.6.3, RU 0.6.3, or active worldgen JSON.
+### Client-side only — install in each player's CurseForge profile
 
-Full evidence, constraints and test ordering: see the private developer research report. These are research candidates, not installed or production-approved mods. Existing ModernFix, FerriteCore, Sodium, Sodium Extra and Iris remain the optimization baseline; no duplicate renderer/memory optimizer is proposed.
+| Candidate | Version | Purpose / test |
+|---|---|---|
+| ImmediatelyFast | 1.6.15 | Client render batching; test HUD, GUI, particles, entities and block entities. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast/files/9165518) |
+| Flerovium | 1.1.2 stable | Requires the already-installed Sodium; item, particle and entity rendering improvements, potentially useful for Create depots/belts/dropped items. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/flerovium) |
+| Entity Culling | 1.10.4 | Hidden entity/block-entity culling; inspect Create contraptions, pulleys and Aeronautics/Sable sublevels. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/entityculling/files/8274693) |
+| Distant Horizons | 3.3.3 | Client LOD terrain rendering; test without shaders first, then only with an Iris shader pack that explicitly supports DH. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/distant-horizons/files/9004764) |
+
+Voxy/Roxy also belongs on the **client side only**, but is currently blocked: CurseForge-hosted Roxy 0.4.1 requires the original Voxy JAR; the only build its author identifies as verified is Voxy 0.2.16-beta for Minecraft 1.21.11, not a matching CurseForge 1.21.1 release. Do not install Roxy alone. SSRD may improve Aeronautics sublevel visibility with LOD, but no CurseForge download was verified.
+
+### Server-side profiling / administration — install in the dedicated server for these tasks
+
+| Candidate | Version | Purpose / test |
+|---|---|---|
+| spark | 1.10.124 | Server profiler for TPS/MSPT and CPU baselines; diagnostic only, not an FPS/TPS booster. Can also profile clients, but first use is server-side. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/spark/files/6225208) |
+| Chunk-Pregenerator | 4.5.4 | Dedicated-server world pre-generation utility; reduces first-exploration chunk-gen spikes, not FPS in existing chunks. Use only on a disposable world and defined radius. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/chunkpregenerator/files/all) |
+
+### Both client and server — use the matching version on both sides for paired tests
+
+| Candidate | Version | Purpose / test |
+|---|---|---|
+| Lithium | 0.15.4 | Game-logic optimization, strong server-tick relevance; project supports client and server. Back up first and test Create, Sable, trains, inventories, redstone, mobs and farms. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/lithium/files/8330365) |
+| FastSuite | 6.0.7 | JSON recipe lookup optimization; project supports client and server. Test JEI, Create recipes and all custom datapacks. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/fastsuite) |
+| FastFurnace | 9.0.1 | Furnace recipe lookup optimization, not faster smelting; project marks Client & Server. Low priority for this Create-focused pack. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/fastfurnace) |
+| More Culling | **1.0.9** | Current 1.21.1 NeoForge file found; project marks Client & Server. Visual benefit is client-focused, but keep the paired deployment consistent and test both sides. Check leaves, glass, connected textures and modded blocks. [CurseForge files](https://www.curseforge.com/minecraft/mc-mods/moreculling/files/all) |
+
+**Version correction:** an earlier note said More Culling 1.0.11. The matching 1.21.1 NeoForge release shown by CurseForge is **v1.0.9**. Do not use a later release intended for 1.21.11 or newer.
+
+### Both client and server — world-generation test
+
+| Candidate | Version | Purpose / safety |
+|---|---|---|
+| Tectonic | v3.0.28 ~ NeoForge 21.1 | CurseForge marks Client & Server; use the same version on both sides. Promising with BYG/RU via TerraBlender, but test only in a fresh disposable world with a copy of current JSON. Never change production world, BYG 2.6.3, RU 0.6.3 or active worldgen JSON. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/tectonic/files/8855043) |
+
+### Existing optimization baseline — already installed, grouped by side
+
+- **Both client and server:** ModernFix 5.27.27; FerriteCore 7.0.3.
+- **Client only:** Sodium 0.8.13; Sodium Extra 0.9.5; Iris 1.8.14-beta.1.
+- Do not add another renderer such as Embeddium alongside Sodium or a duplicate memory optimizer.
+
+For the full compatibility notes and evidence, see the private developer report [PERFORMANCE_VOXY_TECTONIC_RESEARCH_2026-11-04.md](https://github.com/alexth110987/Create-IronWoven/blob/docs/upstream-fix-ownership-register/docs/PERFORMANCE_VOXY_TECTONIC_RESEARCH_2026-11-04.md). The user's 88-mod count includes client-side files. No test candidate is production-approved.

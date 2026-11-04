@@ -16,6 +16,8 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | Create | 6.0.10 |
 | Create Aeronautics | 1.3.2 |
 | Create Aeronautics: Curios Compat | 2.0 |
+| Create: Curios Backtank | 1.0.2 — test installation; smoke test pending |
+| More Curios Slots | 1.4 — test installation; smoke test pending |
 | Create Aeronautics: Copycat Wing | 1.0.4 |
 | Create Aeronautics: Transmission & Linkage | 0.2.9 |
 | Create Bits 'n' Bobs | 2.3.5 |

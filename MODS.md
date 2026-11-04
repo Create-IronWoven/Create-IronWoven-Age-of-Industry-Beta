@@ -135,7 +135,8 @@ These support other mods and may not appear as separate gameplay features.
 | MezzConfig | 0.6.10 |
 | ModernFix | 5.27.27 |
 | Ponder | 1.0.82 |
-| Resourceful Lib | 3.0.12 |
+| Bookshelf | 21.1.81 |
+| Prickle | 21.1.11 |
 | Sable Companion | 1.6.0 |
 | Veil | 4.3.2 |
 

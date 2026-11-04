@@ -23,14 +23,6 @@ This page is the public register of requested additions, research candidates, pa
 | Excluded | Explicitly not wanted for this project. |
 | Already in test inventory | No new addition is required; see [MODS.md](MODS.md). |
 
-## Explicit exclusions
-
-These decisions must be preserved. Do not reintroduce an excluded mod as a candidate unless the maintainer changes the decision.
-
-| Mod | Version | Reason | Status |
-|---|---|---|---|
-| Create: Sophisticated Exoskeleton | 1.0 | Previously installed/tested in Batch 5, then removed because it did not meet the maintainer's expectations. | Excluded — removed; do not re-add |
-
 ## Recently requested candidates
 
 These six candidates came from the maintainer's 4 November shortlist. They were compared with the existing inventory and are retained here as potential additions only.
@@ -151,6 +143,7 @@ These mods are not wanted for Create IronWoven and must not be reintroduced as c
 - Easy Villagers
 - Immersive Paintings
 - Bigger Better End Cities — larger vanilla-style End Cities do not fit the project's goal of adding more exploration variety.
+- Create: Sophisticated Exoskeleton 1.0 — previously installed/tested in Batch 5, then removed because it did not meet the maintainer's expectations. Do not re-add unless the maintainer changes this decision.
 
 ## Test and approval safeguards
 

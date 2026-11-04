@@ -176,3 +176,17 @@ Test one at a time and compare matching workloads. spark is diagnostics, not an 
 - JER extends JEI rather than replacing it.
 
 These candidates are not installed or approved. Match exact CurseForge files/dependencies at the time of approval, use a separate test profile, and check client/server placement before adding them.
+
+
+## Expanded performance and LOD/world-generation research — 4 November 2026
+
+Research-only candidates for Minecraft 1.21.1 / NeoForge:
+
+- **Client rendering:** ImmediatelyFast 1.6.15 (CurseForge file 9165518), Flerovium 1.1.2 stable (Sodium required), Entity Culling 1.10.4 (file 8274693), More Culling 1.0.11 (1.21.1 NeoForge release listing).
+- **Server/recipe:** Lithium 0.15.4 (file 8330365; backup and compatibility testing required), FastSuite 6.0.7, FastFurnace 9.0.1 (lower priority), spark 1.10.124 (diagnostic profiler, not a performance boost), optional Chunk-Pregenerator 4.5.4 for a chosen fresh world area.
+- **Long-distance terrain:** Distant Horizons 3.3.3 (NeoForge 1.21.1, CurseForge file 9004764) is a viable CurseForge-only LOD candidate. Do not combine with Voxy/Roxy in the same client profile. Iris/shaders require shader packs that explicitly support DH.
+- **Voxy:** Roxy 0.4.1 is available on CurseForge (file 9283446), but it is only a loader/translation layer and requires the original Voxy JAR plus Forgified Fabric API. Roxy's author currently calls Voxy 0.2.16-beta for MC 1.21.11 the only verified Voxy build. The required Voxy JAR is not a matching CurseForge-hosted MC 1.21.1 build, so Voxy is blocked under the project's CurseForge-only rule. Do not add Roxy by itself.
+- **Aeronautics caveat:** Separate Sable Render Distance (SSRD) is designed to render Create Aeronautics physics sublevels farther out with DH/Voxy; no eligible CurseForge download was verified. DH alone may render terrain at a distance without extending moving aircraft/ship sublevel rendering.
+- **Tectonic:** v3.0.28 NeoForge 21.1 for MC 1.21.1 (CurseForge file 8855043) is a promising worldgen candidate. Its author documents compatibility with Regions Unexplored and BWG/BYG via TerraBlender/Biolith. Test separately with copies of current custom worldgen JSON in a disposable world. Do not touch the production world, BYG 2.6.3, RU 0.6.3, or active worldgen JSON.
+
+Full evidence, constraints and test ordering: see the private developer research report. These are research candidates, not installed or production-approved mods. Existing ModernFix, FerriteCore, Sodium, Sodium Extra and Iris remain the optimization baseline; no duplicate renderer/memory optimizer is proposed.

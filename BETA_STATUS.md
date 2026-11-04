@@ -79,3 +79,8 @@ YUNG's API 5.1.9 and YUNG's Better End Island 3.1.2 were discovered and loaded o
 The separate test server successfully loaded Botany Pots 21.1.44 with Bookshelf 21.1.81 and Prickle 21.1.11. Botany Pots reported one plugin loaded and the recipe manager parsed 14,444 recipes without recipe-parsing failures. This makes basic Botany Pots features and the optional Herbs & Harvest integration expected to be testable; it does not yet prove planting, growth, harvesting or integration behavior in-game.
 
 The 47 Herbs & Harvest Botany Pots recipes remain suppressed by the temporary `neoforge:false` overrides. In a disposable test copy only, validate replacing those unconditional suppressions with a conditional `neoforge:mod_loaded` check for `botanypots`, then confirm the recipes in JEI and test representative crops. The production datapack remains unchanged until that test passes.
+
+
+## Inventory, performance and QoL review — 4 November 2026
+
+The current recorded baseline already has ModernFix and FerriteCore, plus client-side Sodium, Sodium Extra and Iris. The maintainer review has added candidate testing for ImmediatelyFast, Entity Culling, Lithium, FastSuite and FastFurnace, with spark as the diagnostic profiler. QoL candidates include JER, Shulker Box Tooltip, Enchantment Descriptions, Nature's Compass, Explorer's Compass and Waystones. None have been installed or approved by this review. Exact versions and test steps are in [MOD_PLANS.md](MOD_PLANS.md) and [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md).

@@ -143,7 +143,7 @@ These mods are not wanted for Create IronWoven and must not be reintroduced as c
 - Easy Villagers
 - Immersive Paintings
 - Bigger Better End Cities — larger vanilla-style End Cities do not fit the project's goal of adding more exploration variety.
-- Create: Sophisticated Exoskeleton 1.0 — previously installed/tested in Batch 5, then removed because it did not meet the maintainer's expectations. Do not re-add unless the maintainer changes this decision.
+- Create: Sophisticated Exoskeleton 1.0 — **REJECTED / removed** after Batch 5 testing because it did not meet the maintainer's expectations. Do not re-add unless the maintainer changes this decision.
 
 ## Test and approval safeguards
 

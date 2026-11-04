@@ -11,6 +11,7 @@ This repository is for **players and beta testers**. Use it to follow developmen
 - [Current beta status](BETA_STATUS.md)
 - [Mods currently in the pack](MODS.md)
 - [Mods planned, on hold, and excluded](MOD_PLANS.md)
+- [Testing checklist — mods and what still needs testing](TESTING_CHECKLIST.md)
 - [Changelog](CHANGELOG.md)
 - [Known issues](KNOWN_ISSUES.md)
 - [Support and troubleshooting](SUPPORT.md)
@@ -43,7 +44,7 @@ Do not upload private information, account tokens, passwords, IP addresses, or f
 
 ## Project progress
 
-Progress updates are published in [BETA_STATUS.md](BETA_STATUS.md) and recorded in [CHANGELOG.md](CHANGELOG.md). A completed fix in development testing does not automatically mean it is included in a public beta release.
+Progress updates are published in [BETA_STATUS.md](BETA_STATUS.md) and recorded in [CHANGELOG.md](CHANGELOG.md). The [testing checklist](TESTING_CHECKLIST.md) records gameplay checks, compatibility retests, and candidate mods that still need research or testing. A completed fix in development testing does not automatically mean it is included in a public beta release.
 
 ## Useful links
 

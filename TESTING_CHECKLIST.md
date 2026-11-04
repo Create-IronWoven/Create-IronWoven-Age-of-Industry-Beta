@@ -365,14 +365,16 @@ Nothing in this checklist authorizes installation into the production profile or
 - [ ] Inspect End City complexity, loot-room/chest count, structure integrity, spawner/entity behavior, placement frequency, overlaps and chunk boundaries.
 - [ ] Save, restart, revisit generated areas and compare client/server logs.
 
-**Candidate B — MES / Moog's End Structures**
-- Exact 1.21.1 NeoForge file: `mes-1.3.5-1.21.jar` — [CurseForge file 5872117](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures/files/5872117).
-- CurseForge lists client & server; project description says it can be installed server-side only.
-- Earlier file 6918257 / `mes-1.4.6-1.21.jar` reference was wrong for this target; use file 5872117 for the 1.21.1 NeoForge candidate.
-- [ ] Test MES alone in a separate fresh disposable End world.
-- [ ] Locate and inspect each new End structure; record structure types, frequency, placement and overlap with vanilla End Cities.
-- [ ] Inspect ship structures, loot tables, hostile entities/challenges and traversal.
-- [ ] Check chunk-boundary generation, save/restart persistence and client/server logs.
+**Candidate B — MES / Moog's End Structures — FIRST TEST**
+- Exact 1.21.1 NeoForge file: `mes-1.4.6-1.21.jar` — [CurseForge file 6918257](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures/files/6918257). CurseForge lists Minecraft 1.21.1 and NeoForge. Do not use the older 1.3.5 file 5872117.
+- CurseForge describes MES as vanilla-styled End structures and says it can be installed server-side only. The file page lists no required dependency.
+- The 1.4.6 changelog adds seven Mega Ship variants and loot tables for those structures.
+- [ ] Add only MES 1.4.6 to the disposable test profile/server; do not add another new End candidate.
+- [ ] Create/use a fresh disposable world with a newly generated End. Do not use the production world or previously generated End chunks.
+- [ ] Record the exact mod set. Existing BetterEnd/YUNG baseline mods must be noted if they remain enabled; their presence means the test is not fully isolated from them.
+- [ ] Locate and inspect all new structure types and the seven Mega Ship variants; record frequency, placement and overlap with vanilla End Cities.
+- [ ] Open ship/structure containers and verify loot tables, loot variety and balance.
+- [ ] Check hostile entities/challenges, chunk-boundary generation, save/restart persistence, client/server behavior and logs.
 
 **Combined test — only after both isolated candidates pass**
 - [ ] Decide whether a combined test adds value; do not combine them automatically.

@@ -12,7 +12,8 @@ This is the living queue of mod features and compatibility checks that still nee
 2. Complete the remaining Botany Pots, Construction Sticks and Lootr multiplayer feature checks.
 3. Investigate the outstanding Struts dedicated-server error, PowerGrid optional native backend, and unattributed chunk/world-load messages.
 4. Test BetterEnd: New Dawn, Bigger Better End Cities and Ender Villages separately, after 2A is documented.
-5. Complete the remaining pack validation and clean-install checks before any public beta package.
+5. Research Create Big Cannons and the full colony ecosystem as separate candidate groups; do not install either until the dependency and compatibility reviews are complete.
+6. Complete the remaining pack validation and clean-install checks before any public beta package.
 
 This is an order of work, not permission to install or approve additional mods. Keep production worlds unchanged.
 
@@ -164,19 +165,42 @@ Do not combine the central-island overhauls in the first test. Keep production w
 
 **Status: Research gate — no installation or gameplay test has been approved.**
 
-Candidates: MineColonies, CreateColonies, Create: MineColonies Link, Structurize, Domum Ornamentum, BlockUI, Multi-Piston, and TownTalk.
+| Candidate | Role | Next step |
+|---|---|---|
+| MineColonies | Main colony system | Select the exact stable 1.21.1 NeoForge release and build its complete dependency chain |
+| CreateColonies | Create/MineColonies integration | Verify exact project/release and Create 6.0.10 compatibility |
+| Create: MineColonies Link | Separate Create integration | Establish distinct functionality and whether it can coexist with CreateColonies |
+| Structurize | MineColonies support component | Match the version required by the selected MineColonies release |
+| Domum Ornamentum | MineColonies support component | Match the version required by the selected MineColonies release |
+| BlockUI | MineColonies support component | Match the version required by the selected MineColonies release |
+| Multi-Piston | Possible supporting dependency | Verify whether the selected MineColonies release requires it |
+| TownTalk | Optional colony integration | Verify exact project, loader support and distinct functionality |
+| Dynamic Trees | Separate world/ecology candidate | Verify NeoForge 1.21.1 and compatibility with BYG 2.6.3 / Regions Unexplored 0.6.3 |
+| Colony building styles and schematics | Content research, not automatically mods | Check file format, dependencies, MineColonies/Structurize compatibility and permissions |
 
 - [ ] Select and verify the exact MineColonies NeoForge 1.21.1 release first.
-- [ ] Build its dependency list from the selected CurseForge release.
+- [ ] Build the dependency list from that exact CurseForge release; do not guess versions.
 - [ ] Verify Create 6.0.10 compatibility and whether CreateColonies and Create: MineColonies Link are separate integrations that can safely coexist.
-- [ ] Only after the full stack is reviewed and approved, test it on a disposable dedicated server and a disposable world.
-- [ ] Test colony creation, building placement, worker behavior, save/restart, and Create integration.
+- [ ] Only after the full stack is reviewed and approved, test it on a disposable dedicated server and disposable world.
+- [ ] Test colony creation, starter placement, buildings/schematics, worker behavior, requests, raids/defense, Create integration, multiplayer, save/restart and performance.
+- [ ] Keep Dynamic Trees as a separate optional test; do not change production world generation.
 
-**Dynamic Trees** is a separate optional world/ecology candidate:
-- [ ] Verify NeoForge 1.21.1 support and compatibility with BYG 2.6.3 and Regions Unexplored 0.6.3 before considering a disposable-world test.
-- [ ] Do not change existing world generation or the production world.
+### 11. Create Big Cannons 5.11.7
 
-Additional colony building styles and schematics are content research, not automatically separate mods; check format, dependencies, compatibility, and permissions before adding them.
+**Status: Research candidate — not installed for IronWoven testing and not approved.** Exact 1.21.1 NeoForge release and required library verified on CurseForge.
+
+- Main file: `createbigcannons-5.11.7+mc.1.21.1.jar` — [CurseForge file 8303106](https://www.curseforge.com/minecraft/mc-mods/create-big-cannons/files/8303106).
+- Required library: Ritchie's Projectile Library 2.1.2, `ritchiesprojectilelib-2.1.2-mc.1.21.1-neoforge.jar` — [CurseForge file 7587771](https://www.curseforge.com/minecraft/mc-mods/ritchies-projectile-library/files/7587771).
+- Required Create dependency: Create 6.0.7+; the current recorded pack has Create 6.0.10, satisfying the published minimum.
+- CBC 5.11.7 changelog lists Sable 2.0.0 support and a shell-impact compatibility fix. Validate that against the current pack's Sable build.
+- [ ] Recheck exact CurseForge files/dependencies before installation.
+- [ ] Check recipes and JEI visibility; build cannon and autocannon multiblocks.
+- [ ] Test breeches, materials, kinetic loading/aiming, ammunition, fuzes, firing and projectile damage.
+- [ ] Test Sable shell impacts, multiplayer synchronization, server performance and save/restart.
+- [ ] Test Create Aeronautics vehicle/ship integration separately; do not assume support.
+- [ ] Bronze and steel cannon materials may need an ingot-provider mod. CBC upstream recommends IngotCraft, but it is not listed as a required dependency; research separately before adding.
+
+Only test on a disposable dedicated server and world after explicit approval. Do not alter the production mod list or world.
 
 ## On hold
 

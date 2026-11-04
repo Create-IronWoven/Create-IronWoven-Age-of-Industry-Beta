@@ -46,7 +46,7 @@ These are maintainer-side smoke-test results, not a guarantee that every feature
 
 ## Remaining test work
 
-- **Botany Pots 21.1.44:** startup passed; planting, growth, harvesting, and the 47 suppressed Herbs & Harvest integration recipes still need review.
+- **Botany Pots 21.1.44:** loaded with Bookshelf 21.1.81 and Prickle 21.1.11; one Botany Pots plugin initialized and 14,444 recipes parsed without parser failures. Basic features and the Herbs & Harvest integration are expected to be testable. Planting, growth and harvesting still need in-game validation; 47 optional integration recipes remain suppressed by `neoforge:false` until a conditional `botanypots` test is completed in a disposable copy.
 - **Construction Sticks 1.5.0:** startup passed; placement with modded blocks and FTB Chunks claim protections still needs testing.
 - **Lootr 1.11.38.127:** the player confirmed opening a chest and finding loot; a second-player independent-loot test remains.
 - **Struts 1.3.1:** dedicated-server attempt to load client-only `RenderSystem` remains under investigation.
@@ -72,3 +72,10 @@ You can report reproducible issues and suggest improvements through the [issue t
 ## Batch 2A runtime status — 4 November 2026
 
 YUNG's API 5.1.9 and YUNG's Better End Island 3.1.2 were discovered and loaded on the separate test server. Server startup, client login and clean shutdown passed. The user clarified that `world_lootr_test` was selected intentionally because its End had not yet been generated. The earlier world-name mismatch assessment is corrected. The End-generation gameplay checks remain pending, and the custom IronWoven compatibility datapacks must be verified (and restored in this disposable world if absent) before continuing. See the [testing checklist](TESTING_CHECKLIST.md). No production changes or approval.
+
+
+## Botany Pots update — 4 November 2026
+
+The separate test server successfully loaded Botany Pots 21.1.44 with Bookshelf 21.1.81 and Prickle 21.1.11. Botany Pots reported one plugin loaded and the recipe manager parsed 14,444 recipes without recipe-parsing failures. This makes basic Botany Pots features and the optional Herbs & Harvest integration expected to be testable; it does not yet prove planting, growth, harvesting or integration behavior in-game.
+
+The 47 Herbs & Harvest Botany Pots recipes remain suppressed by the temporary `neoforge:false` overrides. In a disposable test copy only, validate replacing those unconditional suppressions with a conditional `neoforge:mod_loaded` check for `botanypots`, then confirm the recipes in JEI and test representative crops. The production datapack remains unchanged until that test passes.

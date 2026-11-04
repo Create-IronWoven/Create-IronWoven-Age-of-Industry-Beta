@@ -24,7 +24,7 @@ Official guidance:
 
 | Mod | Finding | Release status |
 |---|---|---|
-| Ender Villages 2.0 | The project's licence page states All Rights Reserved. Review the exact 1.21.1 file and terms before release. | Hold — licence/terms review |
+| Ender Villages 2.0 | Exact 1.21.1 NeoForge CurseForge file 6741737; project licence states All Rights Reserved. | CurseForge-hosted; use App manifest, never manually bundle JAR. Gameplay/side checks pending |
 
 ## Audit scope and limitation
 

@@ -280,3 +280,21 @@ These are candidates, not installed or approved additions. Test one group at a t
 - When a new log, screenshot, or manual test result is reviewed, update this checklist: record the date, move only the proven checks to passed, add newly discovered tests, and remove completed items only when the evidence supports it.
 - Keep this page aligned with the maintainer's latest test records. Publish only concise, player-safe summaries here; do not publish raw logs, private paths, IPs, tokens, or other personal/system details.
 - Do not change the production mod list or world as part of updating this documentation.
+
+
+## Expanded performance / LOD / Tectonic test queue — 4 November 2026
+
+- [ ] Capture a spark 1.10.124 baseline (server TPS/MSPT and CPU profile) during idle, exploration, Create factory, trains and Aeronautics activity; record client FPS/frametime separately.
+- [ ] Test ImmediatelyFast 1.6.15 alone in a duplicated client profile.
+- [ ] Reset; test Flerovium 1.1.2 stable alone. Check dropped items, depots, belts, particles, entities and Aeronautics visuals.
+- [ ] Reset; test Entity Culling 1.10.4 alone. Check moving Create block entities, pulleys, Sable sublevels, trains and visual culling errors; whitelist only as needed.
+- [ ] Reset; test More Culling 1.0.11 alone. Check leaves, glass, connected textures, decorative blocks and Create block visuals.
+- [ ] Test Lithium 0.15.4 alone on a disposable server with a world backup. Verify Create, Sable, trains, inventories, redstone, farms, mob AI and chunk ticking.
+- [ ] Test FastSuite 6.0.7 alone; verify JEI and every Create/custom recipe/datapack integration. FastFurnace 9.0.1 is optional/low priority.
+- [ ] Test Distant Horizons 3.3.3 in a duplicated client profile, first with shaders disabled, then with an explicitly DH-compatible Iris shader. Record LOD terrain quality, resource usage, world generation, and the distance at which Aeronautics sublevels disappear.
+- [ ] SSRD research is relevant for Aeronautics sublevel visibility with DH/Voxy, but do not download/add it unless a CurseForge source is verified or the download-source rule is explicitly changed.
+- [ ] Test Tectonic 3.0.28 in a disposable fresh world with a copy of current custom worldgen JSON. Check BYG/RU biome distribution, biome sizes, terrain, structures, rivers/oceans, and End generation. Never use the production world for this test.
+- [ ] Consider Chunk-Pregenerator 4.5.4 only after selecting a new test world and defined generation radius.
+- [ ] Do not test Voxy through Roxy unless an approved CurseForge-compliant Voxy artifact becomes available or the user explicitly changes the source policy; Roxy alone is nonfunctional.
+
+Run each candidate separately before combination. Startup/login smoke tests are not gameplay approval. No item above authorizes installation in production.

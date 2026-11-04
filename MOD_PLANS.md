@@ -16,10 +16,10 @@ These are requested candidates only. Botany Pots and Construction Sticks are now
 | Create Deco 2.1.3 | Already in current test inventory | No addition needed; current server inventory already records 2.1.3. |
 | Construction Sticks | Present in 4 Nov server test; feature review pending | Server loaded 1.5.0. Placement with modded blocks has not yet been tested. |
 | Lootr | Present in 4 Nov test; partial manual check | Lootr 1.11.38.127 loaded and the user confirmed a chest opened with loot. Two-player independent personal loot is still unverified; see [Testing Checklist](TESTING_CHECKLIST.md). |
-| YUNG's Better End Island | Candidate — dependencies required | 1.21.1 NeoForge file 3.1.2; requires YUNG's API. Overlaps the central End island with BetterEnd: New Dawn; test separately. |
-| BetterEnd: New Dawn | Candidate — dependencies and End test required | 1.21.1 NeoForge file 21.0.36; requires BCLib: New Dawn, WunderLib: New Dawn, and WorldWeaver: New Dawn. Adds its own End generator and central-island content. Test separately from YUNG's Better End Island and check the existing BYG / Regions Unexplored setup. |
-| Bigger Better End Cities | Research gate — confirm exact NeoForge file | Confirm a CurseForge Minecraft 1.21.1 NeoForge artifact before any test; do not use a Fabric file. |
-| Ender Villages | On hold — exact file not confirmed | Adds End structures and villagers. A matching 1.21.1 NeoForge file was not confirmed in the reviewed release listings. |
+| YUNG's Better End Island | Exact CurseForge file verified; gameplay test pending | `YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar` (file 6300968); requires YUNG's API NeoForge 5.1.9 (file 8894736). Test central island and dragon fight in a fresh disposable world. |
+| BetterEnd: New Dawn | Exact CurseForge file verified; gameplay test pending | `BetterEnd-21.0.39.jar` (file 9306604); requires BCLib 21.0.28, WorldWeaver 21.0.30, WunderLib 21.0.11. Test separately in a fresh disposable world; review BYG / Regions Unexplored / TerraBlender / Lithostitched compatibility. |
+| Bigger Better End Cities | Exact CurseForge NeoForge file verified; gameplay test pending | `biggerbetterendcities-1.21.1-1.0.0.jar` (file 6461536); valid server-side NeoForge 1.21.1 release. Test End City generation alone. |
+| Ender Villages | Exact CurseForge NeoForge file verified; gameplay test pending | `endervillages-2.0-1.21.1.jar` (file 6741737); NeoForge 1.21.1, uploaded 7 July 2025. Project license All Rights Reserved; verify client/server placement and test village, villager, trade and persistence behavior. |
 | Bookshelf | Conditional dependency; load check passed | Required by Botany Pots on 1.21.1; 21.1.81 loaded with the test group. |
 | Prickle | Conditional dependency; load check passed | Required by Botany Pots on 1.21.1; 21.1.11 loaded with the test group. |
 
@@ -88,3 +88,14 @@ These are requested candidates and content ideas for compatibility research only
 - Test the complete selected stack on a disposable dedicated server and copied world, only after approval.
 - No main-world changes or installations are authorized by this candidate list.
 - Batch 7 has not started. All entries remain under review, not approved additions.
+
+
+## Batch 2 End-content review — 4 November 2026
+
+Exact CurseForge Minecraft 1.21.1 NeoForge files have now been verified for all four End candidates. The detailed feature checklist and separate test order are in [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md).
+
+The earlier “Bigger Better End Cities is Fabric-only” and “Ender Villages has no 1.21.1 NeoForge file” statements are superseded. BetterEnd: New Dawn 21.0.39 is newer than the previous 21.0.34 / 21.0.36 notes.
+
+A separate optional WorldWeaver Registry Synchronization 1.0.0 patch exists for WorldWeaver 21.0.30 / NeoForge 21.1.265 / Java 21. This is not a required dependency and is not approved for install; evaluate only if the exact race reproduces.
+
+All four remain candidates, not installed or approved additions. Use one candidate group per fresh disposable End world, then test combinations only after separate tests pass. Preserve production world and existing BYG / Regions Unexplored generation.

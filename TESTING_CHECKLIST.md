@@ -356,3 +356,17 @@ Nothing in this checklist authorizes installation into the production profile or
 - [ ] Check structure overlap, generation frequency, loot balance, startup and chunk errors.
 
 **Safeguards:** CurseForge only. Keep production world and BYG 2.6.3 / Regions Unexplored 0.6.3 unchanged. Do not modify the installed inventory or production server. Test selection is not production approval.
+
+
+## 12. Every Compat (Wood Good) — after Batch 2B
+
+**Status: Research gate / candidate only. Not installed or approved.** Chipped 4.0.2 is already present. Investigate whether Every Compat supports Chipped's wood variants and BetterEnd: New Dawn's Pythadendron Planks.
+
+- [ ] Verify the exact Minecraft 1.21.1 NeoForge Every Compat file and required dependencies on CurseForge only.
+- [ ] Confirm the selected release supports Chipped 4.0.2 and the relevant BetterEnd: New Dawn wood blocks; verify supported mod integrations rather than assuming all woods are covered.
+- [ ] Start only after the current 2B BetterEnd: New Dawn test is documented; use a separate disposable profile/world and only the exact required dependencies.
+- [ ] Check whether Pythadendron Planks are recognized by Chipped's Carpenter's Table and whether useful decorative variants are available.
+- [ ] Check recipes, JEI visibility, block models/textures, client/server consistency, logs and save/restart.
+- [ ] Record any missing wood support, duplicate recipes, visual errors or registry conflicts.
+
+Do not combine this candidate with 2B, install it now, alter the production inventory, or modify the production world.

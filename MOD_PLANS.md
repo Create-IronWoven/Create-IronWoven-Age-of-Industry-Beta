@@ -285,3 +285,14 @@ The maintainer has paused End-mod research and testing for now. No suitable Curs
 - This does not change the installed mod list, production world or world-generation settings.
 - Overworld additions, including Create Aeronautics Structures, remain a separate active workstream.
 
+## End test-profile cleanup — 5 November 2026
+
+The maintainer has explicitly instructed that all End-specific mods be removed from the active disposable test setup while End development is paused. This supersedes the previous instruction to keep Ender Ore in the test setup.
+
+- Remove any present End-only content JARs from the disposable test server and matching client: YUNG's Better End Island, BetterEnd: New Dawn, Ender Ore, Ender Villages, Better End Cities Better End, MES / Moog's End Structures, and any other End-only generation/content mods.
+- Bigger Better End Cities remains excluded. The Beyond, Isleweaver, Stellarity, Unusual End, Extended End, End Beyond and other uninstalled candidates must stay out.
+- Remove libraries used only by removed End mods only after checking the dependency graph; keep shared libraries. Lootr is general-purpose and is not included in this End-specific removal instruction.
+- End research and testing remain paused until the maintainer explicitly reopens the workstream.
+
+**Physical removal not yet verified:** GitHub access does not expose the live Minecraft test server/client mods folders. A current directory listing and clean startup log are required before cleanup can be reported as complete. Historical test notes are retained as historical evidence only.
+

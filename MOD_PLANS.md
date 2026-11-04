@@ -12,7 +12,7 @@ These are requested candidates only. Botany Pots and Construction Sticks are now
 
 | Mod | Review status | Notes |
 |---|---|---|
-| Botany Pots | Present in 4 Nov server test; feature review pending | Server loaded Botany Pots 21.1.44 with Bookshelf 21.1.81 and Prickle 21.1.11; one Botany Pots plugin loaded. Existing datapack skips 47 optional Herbs & Harvest Botany Pots recipes; review those before treating crop/recipe coverage as complete. |
+| Botany Pots | Present in 4 Nov server test; feature review pending | Server loaded Botany Pots 21.1.44 with Bookshelf 21.1.81 and Prickle 21.1.11; one Botany Pots plugin loaded and 14,444 recipes parsed without parser failures. Basic features and Herbs & Harvest integration are expected to be testable. The 47 optional integration recipes remain suppressed by unconditional `neoforge:false` overrides; enable them only through a conditional `botanypots` test in a disposable copy, then verify in JEI and in-game. |
 | Create Deco 2.1.3 | Already in current test inventory | No addition needed; current server inventory already records 2.1.3. |
 | Construction Sticks | Present in 4 Nov server test; feature review pending | Server loaded 1.5.0. Placement with modded blocks has not yet been tested. |
 | Lootr | Present in 4 Nov test; partial manual check | Lootr 1.11.38.127 loaded and the user confirmed a chest opened with loot. Two-player independent personal loot is still unverified; see [Testing Checklist](TESTING_CHECKLIST.md). |
@@ -27,7 +27,7 @@ These are requested candidates only. Botany Pots and Construction Sticks are now
 
 - Keep the production world and its current BYG 2.6.3 / Regions Unexplored 0.6.3 setup unchanged.
 - Test End world-generation candidates in separate disposable worlds. BetterEnd: New Dawn and YUNG's Better End Island both change the central End island; combined compatibility has not been established.
-- The 47 Herbs & Harvest Botany Pots integration recipes remain suppressed; do not describe them as restored.
+- Botany Pots and its dependencies load in the test group; basic features and the optional Herbs & Harvest integration are ready for gameplay validation. The 47 Herbs & Harvest recipes remain suppressed by `neoforge:false`; they need a conditional `botanypots` test in a disposable copy before being described as restored.
 - Batch 7 has not started. Candidate mods are not approved additions.
 
 ## Confirmed current client-only additions

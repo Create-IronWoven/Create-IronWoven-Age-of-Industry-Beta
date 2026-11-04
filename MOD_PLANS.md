@@ -6,13 +6,13 @@ This page separates confirmed installed mods from ideas for future versions. **A
 
 Target platform: Minecraft 1.21.1, NeoForge 21.1.265, Java 21.
 
-These are requested candidates only. **None of the new candidates below have been installed or approved.** Bookshelf appeared twice in the submitted list and is recorded once.
+These are requested candidates only. Botany Pots and Construction Sticks are now present in the 4 November dedicated-server test inventory. Their smoke-test loading is confirmed; full feature validation and final release inclusion remain pending. Bookshelf appeared twice in the submitted list and is recorded once.
 
 | Mod | Review status | Notes |
 |---|---|---|
-| Botany Pots | Candidate — compatible with required libraries | 1.21.1 NeoForge file found. Requires Bookshelf and Prickle. Existing datapack skips 47 optional Herbs & Harvest Botany Pots recipes; revisit those before enabling the mod. |
+| Botany Pots | Present in 4 Nov server test; feature review pending | Server loaded Botany Pots 21.1.44 with Bookshelf 21.1.81 and Prickle 21.1.11; one Botany Pots plugin loaded. Existing datapack skips 47 optional Herbs & Harvest Botany Pots recipes; review those before treating crop/recipe coverage as complete. |
 | Create Deco 2.1.3 | Already in current test inventory | No addition needed; current server inventory already records 2.1.3. |
-| Construction Sticks | Candidate — compatible | 1.21.1 NeoForge file 1.5.0 found. Test placement with modded blocks. |
+| Construction Sticks | Present in 4 Nov server test; feature review pending | Server loaded 1.5.0. Placement with modded blocks has not yet been tested. |
 | Lootr | Candidate — compatible | 1.21.1 NeoForge file 1.11.38.127 found. Test on a copied world because it changes loot-container behaviour. |
 | YUNG's Better End Island | Candidate — dependencies required | 1.21.1 NeoForge file 3.1.2; requires YUNG's API. Overlaps the central End island with BetterEnd: New Dawn; test separately. |
 | BetterEnd: New Dawn | Candidate — dependencies and End test required | 1.21.1 NeoForge file 21.0.36; requires BCLib: New Dawn, WunderLib: New Dawn, and WorldWeaver: New Dawn. Adds its own End generator and central-island content. Test separately from YUNG's Better End Island and check the existing BYG / Regions Unexplored setup. |

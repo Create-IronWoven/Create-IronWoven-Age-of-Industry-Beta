@@ -1,6 +1,6 @@
 # Create IronWoven — Beta Status
 
-**Last updated:** 3 November 2026  
+**Last updated:** 4 November 2026  
 **Minecraft:** 1.21.1  
 **Loader:** NeoForge 21.1.265  
 **Java:** 21
@@ -11,12 +11,13 @@
 
 The pack is undergoing compatibility and dedicated-server testing. This repository is open for collecting feedback and documenting progress. A public downloadable beta build has **not** been announced here.
 
-## Mod list and future plans
+## Mod list, plans, and test queue
 
 - [Mods in the current test pack](MODS.md)
 - [Mods planned, on hold, or excluded](MOD_PLANS.md)
+- [Testing checklist — mods and what still needs testing](TESTING_CHECKLIST.md)
 
-The current mod inventory is a dated test snapshot. New requested candidates have been researched and recorded in MOD_PLANS.md. They are not installed or approved; Batch 7 has not started. Terralith remains on hold.
+The testing checklist is the current queue for unfinished gameplay tests, compatibility retests, and research gates. It is not a release approval list. A mod can pass startup and still need feature testing.
 
 ## Project direction
 
@@ -28,32 +29,40 @@ Create IronWoven aims to combine:
 
 ## Internal test progress snapshot
 
-The maintainer's dedicated-server smoke tests have confirmed the following targeted fixes:
+The maintainer's dedicated-server smoke tests have confirmed the following targeted fixes in the tested configuration:
 
 | Area | Current status |
 |---|---|
-| Create Deco placard recipe correction | Passed smoke test |
-| Optional Herbs & Harvest Botany Pots recipe references | Suppressed; passed smoke test |
-| Optional Design n' Decor Dye Depot loot references | Suppressed; passed smoke test |
-| Steam 'n' Rails missing-item loot references | Passed smoke test |
+| Create Deco placard recipe correction | Passed smoke test; include the compatibility datapack in fresh test worlds |
+| Optional Herbs & Harvest Botany Pots recipe references | Suppressed; 47 optional integration recipes remain disabled pending review |
+| Optional Design n' Decor Dye Depot loot references | Passed smoke test when the IronWoven compatibility datapack is loaded |
+| Steam 'n' Rails missing-item loot references | Passed smoke test when the IronWoven compatibility datapack is loaded |
 | Create: Enchantment Industry optional integration loot references | Passed smoke test |
-| Create Kinetic missing-item loot references | Passed smoke test |
-| Sable / Copycats Catwalk physics selector | Passed smoke test |
+| Create Kinetic missing-item loot references | Passed smoke test when the IronWoven compatibility datapack is loaded |
+| Sable / Copycats Catwalk physics selector | Passed smoke test when the IronWoven compatibility datapack is loaded |
 | Create Kinetic dedicated-server client mixin | Passed smoke test |
 
-These are maintainer-side smoke-test results, not a guarantee that every feature has been fully playtested.
+These are maintainer-side smoke-test results, not a guarantee that every feature has been fully playtested. A fresh Lootr test world did not automatically include the custom IronWoven compatibility datapacks; the earlier errors reappeared in that test world.
 
-## Remaining internal work
+## Remaining test work
 
-- Struts dedicated-server client-class mixin warning/error investigation.
-- PowerGrid optional native accelerated solver does not currently load in the tested Windows server environment.
-- Review remaining nonfatal data-map, item-tag, and biome mob-category warnings.
-- Continue compatibility and client/server testing.
-- Review the requested planned mods one at a time; do not add them to the active inventory until approved and tested.
+- **Botany Pots 21.1.44:** startup passed; planting, growth, harvesting, and the 47 suppressed Herbs & Harvest integration recipes still need review.
+- **Construction Sticks 1.5.0:** startup passed; placement with modded blocks and FTB Chunks claim protections still needs testing.
+- **Lootr 1.11.38.127:** the player confirmed opening a chest and finding loot; a second-player independent-loot test remains.
+- **Struts 1.3.1:** dedicated-server attempt to load client-only `RenderSystem` remains under investigation.
+- **PowerGrid 0.6.2:** optional `powergridNative7` accelerated solver did not load in the tested Windows server environment; fallback behavior and native-library availability need review.
+- Review the unattributed world/chunk-generation messages after the compatibility datapacks are correctly loaded in a disposable world.
+- Review requested End-generation and colony candidates only after exact CurseForge NeoForge files and dependencies are verified.
+
+See the [full testing checklist](TESTING_CHECKLIST.md) for each test step and its current status.
+
+## Batch 2 End-content review — 4 November 2026
+
+Exact 1.21.1 NeoForge CurseForge files have been verified for YUNG's Better End Island, BetterEnd: New Dawn 21.0.39, Bigger Better End Cities, and Ender Villages 2.0. Their feature checks and dependencies are recorded in the [testing checklist](TESTING_CHECKLIST.md). These are candidates only; no files have been installed or approved. Test individually in disposable End worlds and preserve the production world.
 
 ## Release readiness
 
-No public beta package or release date is confirmed in this status file. The maintainer will update this page when a build is ready for external testers.
+No public beta package or release date is confirmed in this status file. A test pass does not automatically approve a mod for release. The final client and server manifests, clean-install checks, and release validation remain outstanding.
 
 ## How players can help now
 

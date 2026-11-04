@@ -455,3 +455,12 @@ The uploaded `latest(20261104-221550).log` confirms the JAR was loaded and the s
 - [ ] Keep the Lootr Compatibility: BetterEnd datapack on the candidate test list; verify whether it fixes Lootr on BetterEnd-generated ship chests.
 
 Preserve production world and current BYG 2.6.3 / Regions Unexplored 0.6.3 world-generation setup. Candidate selection is not production approval.
+
+### End theme evaluation — abandoned industrial world
+
+The maintainer's chosen End direction is an **abandoned industrial world**, not a strongly magical/fantasy dimension. When researching and testing End candidates, assess whether they add derelict factories, refineries, mines, industrial outposts, abandoned small settlements, broken railways, cargo bridges, cranes, pipes, gears, turbines, laboratories or large industrial complexes. Prefer weathered metal/copper/brass/dark-stone materials and desolate landscapes with restrained End colours. Create-style engineering is the visual inspiration; functional Create machinery is not required.
+
+- [ ] Research CurseForge 1.21.1 NeoForge candidates that actually generate abandoned industrial settlements/towns; do not count MES as a town mod without evidence.
+- [ ] Check structures, building materials, loot, mobs and resources against the abandoned-industrial theme before selecting tests.
+- [ ] Test promising candidates individually in fresh disposable End worlds; inspect generation frequency, overlap, chunk borders, loot, client/server behavior and save/restart.
+- [ ] Keep production world and installed inventory unchanged; design preference is not installation approval.

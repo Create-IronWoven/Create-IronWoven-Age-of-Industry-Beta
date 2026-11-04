@@ -16,7 +16,7 @@ These are requested candidates only. Botany Pots and Construction Sticks are now
 | Create Deco 2.1.3 | Already in current test inventory | No addition needed; current server inventory already records 2.1.3. |
 | Construction Sticks | Present in 4 Nov server test; feature review pending | Server loaded 1.5.0. Placement with modded blocks has not yet been tested. |
 | Lootr | Present in 4 Nov test; partial manual check | Lootr 1.11.38.127 loaded and the user confirmed a chest opened with loot. Two-player independent personal loot is still unverified; see [Testing Checklist](TESTING_CHECKLIST.md). |
-| YUNG's Better End Island | 2A test setup started; awaiting user file placement | `YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar` (file 6300968); required YUNG's API NeoForge 5.1.9 (file 8894736). New disposable world `world_yungs_end_test`; central island and dragon fight checks pending. |
+| YUNG's Better End Island | 2A partial smoke-test pass; End gameplay pending | Both exact JARs discovered and loaded. Server reached Done, client joined, clean shutdown. Run loaded `world_lootr_test` instead of `world_yungs_end_test`; correct world selection and custom datapack setup before End exploration. See [Testing Checklist](TESTING_CHECKLIST.md). |
 | BetterEnd: New Dawn | Exact CurseForge file verified; gameplay test pending | `BetterEnd-21.0.39.jar` (file 9306604); requires BCLib 21.0.28, WorldWeaver 21.0.30, WunderLib 21.0.11. Test separately in a fresh disposable world; review BYG / Regions Unexplored / TerraBlender / Lithostitched compatibility. |
 | Bigger Better End Cities | Exact CurseForge NeoForge file verified; gameplay test pending | `biggerbetterendcities-1.21.1-1.0.0.jar` (file 6461536); valid server-side NeoForge 1.21.1 release. Test End City generation alone. |
 | Ender Villages | Exact CurseForge NeoForge file verified; gameplay test pending | `endervillages-2.0-1.21.1.jar` (file 6741737); NeoForge 1.21.1, uploaded 7 July 2025. Project license All Rights Reserved; verify client/server placement and test village, villager, trade and persistence behavior. |
@@ -99,3 +99,8 @@ The earlier “Bigger Better End Cities is Fabric-only” and “Ender Villages 
 A separate optional WorldWeaver Registry Synchronization 1.0.0 patch exists for WorldWeaver 21.0.30 / NeoForge 21.1.265 / Java 21. This is not a required dependency and is not approved for install; evaluate only if the exact race reproduces.
 
 All four remain candidates, not installed or approved additions. Use one candidate group per fresh disposable End world, then test combinations only after separate tests pass. Preserve production world and existing BYG / Regions Unexplored generation.
+
+
+## Batch 2A runtime update — 4 November 2026
+
+The first dedicated-server run confirms YUNG's API 5.1.9 and YUNG's Better End Island 3.1.2 loaded and the server completed startup, client login and clean shutdown. However, the server opened `world_lootr_test`, not `world_yungs_end_test`; the central End island and dragon features remain untested. The world-scoped IronWoven compatibility datapacks were not evidently loaded and known errors returned. This is a partial smoke-test pass only, not production approval. Follow the next steps in [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md).

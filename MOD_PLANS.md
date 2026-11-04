@@ -61,7 +61,7 @@ These six candidates came from the maintainer's 4 November shortlist. They were 
 | Better End Cities Better End | `BetterEndCities-Raijin-structure-1.21.1.jar` | CurseForge file 8105176; dependency gate was never completed. No test is active. | On hold — End workstream paused; absent from current folder screenshots |
 | MES — Moog's End Structures | `MoogsEndStructures-universal-1.21-2.1.1.jar` | Actual test file, Minecraft 1.21.1 / NeoForge. Crash report: required `moogs_structures` >=1.1.0 was missing. Add [Moog's Structure Lib 1.1.0 NeoForge file 7238573](https://www.curseforge.com/minecraft/mc-mods/moogs-structure-lib/files/7238573) before retrying. BetterEnd and YUNG's Better End Island were still loaded, so isolate them for the structure-generation test. | Selected first; dependency fix required; feature test not started |
 
-**End test order:** verify any required dependency baseline first; then test each structure/generation candidate alone in its own fresh disposable world. Only consider combinations after individual tests pass. Preserve the production world and current BYG 2.6.3 / Regions Unexplored 0.6.3 setup.
+**Historical End test order (paused; do not run):** the earlier proposed test stages are retained as research notes only. The End workstream is paused; preserve the production world and current BYG 2.6.3 / Regions Unexplored 0.6.3 setup.
 
 ## Batch 2B preliminary result — 4 November 2026
 

@@ -41,3 +41,28 @@ Candidates remain separate from installed mods and are not approved by appearing
 5. Perform a clean CurseForge export/import test.
 
 **Current decision: not ready for CurseForge submission.** No mod has been installed, removed, updated, or approved by this audit.
+
+
+## Expanded release-audit scope — 4 November 2026
+
+The audit is being performed against the **entire** current inventory and potential-mod register, not only the most recent additions:
+
+- Current test profile: all entries in [MODS.md](MODS.md), including Create/Aeronautics addons, world generation, building/storage/food, UI utilities, client-only graphics, and support libraries.
+- Test/server inventory: reconciled against the private master record; the 88-entry launcher snapshot and historical 79-JAR / 82-loaded server snapshot are distinct.
+- Potential additions: all entries in [MOD_PLANS.md](MOD_PLANS.md), including QoL, gameplay, End content, MineColonies ecosystem, performance/rendering, and dependencies.
+
+### Official CurseForge checks recorded so far
+
+- Create 6.0.10 and Create Aeronautics 1.3.2 have matching 1.21.1 NeoForge CurseForge files. Create Aeronautics uses a Custom License and requires Create plus Sable.
+- Create Deco 2.1.3 has an exact 1.21.1 NeoForge CurseForge file. Its project licence is All Rights Reserved, but it is hosted on CurseForge and should be selected through the App-generated manifest, not manually bundled.
+- Create: Kinetic 1.4.3 is confirmed as CurseForge file **9293815** for 1.21.1 NeoForge (GPLv3).
+- Create: Fluids Be Gone 1.0.1 is confirmed on CurseForge for 1.21.1 NeoForge (MIT).
+- Regions Unexplored 0.6.3 is confirmed for 1.21.1 NeoForge (MIT).
+- MineColonies 1.1.1403 is available for 1.21.1 NeoForge (file 9058295). Its required libraries are Structurize, MultiPiston, BlockUI, and Domum Ornamentum at the minimum versions declared by that file.
+- TownTalk 1.2.0 is available for 1.21.1 NeoForge but has an All Rights Reserved licence and unset environment metadata; treat it as a separate review item.
+- Dynamic Trees — Regions Unexplored 1.1.2 is available for 1.21.1 NeoForge; the base Dynamic Trees file still needs its own verification.
+- ImmediatelyFast 1.6.15 is available for 1.21.1 NeoForge and is client-only. Flerovium is also identified as client-only and requires Sodium.
+
+CurseForge-hosted mods, including those with custom or restrictive project licences, must be referenced through the App-generated manifest. Do not manually bundle their JARs in `overrides/mods`. Third-party mods not hosted on CurseForge require approved-list status.
+
+**This is partial source/file verification, not a completed clearance of every entry.** Remaining installed mods and candidates still need exact project/file, dependency, loader, side, and source reconciliation. No candidates have been installed or approved.

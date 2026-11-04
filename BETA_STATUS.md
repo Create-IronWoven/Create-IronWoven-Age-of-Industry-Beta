@@ -105,3 +105,6 @@ Candidate lists and side placement are now separated in [MOD_PLANS.md](MOD_PLANS
 - **Client-only but blocked:** Voxy/Roxy because the required Voxy JAR is not a matching CurseForge 1.21.1 artifact. SSRD has no verified CurseForge file.
 
 A version correction has also been made: More Culling's matching NeoForge 1.21.1 release is v1.0.9, not 1.0.11. No candidate has been installed or approved.
+## Quality-of-life shortlist comparison — 4 November 2026
+
+The six QoL candidates from the maintainer's screenshot have been compared with the recorded installed inventory and added to [MOD_PLANS.md](MOD_PLANS.md), with matching isolated checks in [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md). JER complements existing JEI; Shulker Box Tooltip complements Sophisticated Backpacks; Enchantment Descriptions needs Bookshelf and Prickle confirmed in the main profile; Nature's Compass and Explorer's Compass add biome and structure search respectively; Waystones needs an AeroPortals overlap review and compatible Balm dependency check. All remain candidates only. No mods were installed or approved.

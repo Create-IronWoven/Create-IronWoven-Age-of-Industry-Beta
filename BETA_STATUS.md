@@ -84,3 +84,8 @@ The 47 Herbs & Harvest Botany Pots recipes remain suppressed by the temporary `n
 ## Inventory, performance and QoL review — 4 November 2026
 
 The current recorded baseline already has ModernFix and FerriteCore, plus client-side Sodium, Sodium Extra and Iris. The maintainer review has added candidate testing for ImmediatelyFast, Entity Culling, Lithium, FastSuite and FastFurnace, with spark as the diagnostic profiler. QoL candidates include JER, Shulker Box Tooltip, Enchantment Descriptions, Nature's Compass, Explorer's Compass and Waystones. None have been installed or approved by this review. Exact versions and test steps are in [MOD_PLANS.md](MOD_PLANS.md) and [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md).
+
+
+## Current mods-folder count reconciliation — 4 November 2026
+
+A newer user-supplied profile mods-folder screenshot shows the test additions (Botany Pots and its libraries, Construction Sticks, Lootr, YUNG's API and Better End Island) together with client-side Sodium, Iris and Sodium Extra. The user reports 88 entries; manual visual counting gives 89 visible JAR filenames, so one entry remains to be reconciled from a direct folder export. This is not a fresh dedicated-server manifest; the earlier 79 top-level JAR / 82 loaded-entry figures belong to a historical server snapshot. See [MODS.md](MODS.md) for the distinction. Create Big Cannons/Ritchie's Projectile Library and all colony ecosystem candidates remain not installed.

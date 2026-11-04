@@ -1,54 +1,58 @@
 # Create IronWoven — Public Beta Hub
 
-Welcome to the public beta home for **Create IronWoven**, a Minecraft 1.21.1 NeoForge modpack focused on Create, Create Aeronautics, trains, automation, engineering, transport, and exploration.
+Welcome to the public, player-facing home for **Create IronWoven**, a Minecraft 1.21.1 NeoForge modpack focused on Create, Create Aeronautics, trains, automation, engineering, transport, and exploration.
 
-This repository is for **players and beta testers**. Use it to follow development progress, read known issues, check updates, and report problems you find while playing.
+> **Development notice:** The pack is still being tested. Features, balance, compatibility, and stability may change. Back up important worlds before updating, and do not assume a test build is safe for an existing production world.
 
-> **Beta notice:** This pack is still in development. Features, balance, compatibility, and stability may change between test builds. Back up important worlds before updating and never assume a beta build is safe for an existing production world.
-
-## Quick links
+## Start here
 
 - [Current beta status](BETA_STATUS.md)
-- [Mods currently in the pack](MODS.md)
-- [Mods planned, on hold, and excluded](MOD_PLANS.md)
-- [Testing checklist — mods and what still needs testing](TESTING_CHECKLIST.md)
-- [Changelog](CHANGELOG.md)
+- [Mods in the current test pack](MODS.md)
+- [Planned, on-hold, and excluded mods](MOD_PLANS.md)
+- [Testing checklist](TESTING_CHECKLIST.md)
 - [Known issues](KNOWN_ISSUES.md)
 - [Support and troubleshooting](SUPPORT.md)
-- [How to contribute feedback](CONTRIBUTING.md)
-- [Report a bug](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=bug_report.yml)
-- [Report a compatibility problem](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=compatibility_report.yml)
-- [Suggest an idea](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=feature_suggestion.yml)
+- [Changelog](CHANGELOG.md)
+- [Documentation guide](DOCUMENTATION.md)
 
-## Modpack information
+## Platform
 
-| Item | Current target |
+| Component | Target |
 |---|---|
 | Minecraft | 1.21.1 |
-| Mod loader | NeoForge |
-| NeoForge | 21.1.265 |
+| Loader | NeoForge 21.1.265 |
 | Java | 21 |
 | Main focus | Create and Create Aeronautics |
-| Beta stage | Internal testing / preparing public feedback hub |
+| Current stage | Internal testing / public feedback hub |
 
-The public beta repository is an information and feedback space. It is separate from the private development repository and does not distribute the modpack files.
+This repository documents progress and collects player feedback. It does not currently distribute the modpack files, and no public downloadable beta release is announced here.
 
-## Reporting a problem
+## Which page should I use?
 
-Before opening an issue, please:
+| I want to… | Read |
+|---|---|
+| See what is in the current test inventory | [MODS.md](MODS.md) |
+| See ideas that are not installed or approved | [MOD_PLANS.md](MOD_PLANS.md) |
+| Find unfinished tests | [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md) |
+| Check an already-known problem | [KNOWN_ISSUES.md](KNOWN_ISSUES.md) |
+| Understand the current development stage | [BETA_STATUS.md](BETA_STATUS.md) |
+
+## Report a problem or suggest an idea
+
+Before opening an issue:
+
 1. Check [Known Issues](KNOWN_ISSUES.md).
-2. Search existing [open issues](https://github.com/alexth110987/Create-IronWoven-Beta/issues).
-3. Use the most suitable issue form and include steps to reproduce the problem.
+2. Search the [issue tracker](https://github.com/alexth110987/Create-IronWoven-Beta/issues).
+3. Choose the closest report form and include steps to reproduce the issue.
 
-Do not upload private information, account tokens, passwords, IP addresses, or full world saves. Remove personal information from logs and screenshots before posting.
+- [Report a bug](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=bug_report.yml)
+- [Report a compatibility problem](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=compatibility_report.yml)
+- [Suggest a feature or mod](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=feature_suggestion.yml)
 
-## Project progress
+Include the Minecraft, NeoForge, and modpack versions. Remove passwords, tokens, private addresses, local paths, player data, and other personal information from logs or screenshots. Do not upload world saves, private server backups, or third-party mod JARs.
 
-Progress updates are published in [BETA_STATUS.md](BETA_STATUS.md) and recorded in [CHANGELOG.md](CHANGELOG.md). The [testing checklist](TESTING_CHECKLIST.md) records gameplay checks, compatibility retests, and candidate mods that still need research or testing. A completed fix in development testing does not automatically mean it is included in a public beta release.
+## Project ownership
 
-## Useful links
+The [private development repository](https://github.com/alexth110987/Create-IronWoven) contains maintainer-only technical research, internal test evidence, and development records. This public repository contains player-safe summaries only.
 
-- [Public beta issue tracker](https://github.com/alexth110987/Create-IronWoven-Beta/issues)
-- [Private development repository](https://github.com/alexth110987/Create-IronWoven) — maintainer-only; not the place for player reports
-
-Thanks for helping test Create IronWoven!
+A successful server startup does not prove every mod feature works or that a candidate is approved for release. The testing checklist records what remains to be checked.

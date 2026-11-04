@@ -265,18 +265,18 @@ Only test on a disposable dedicated server and world after explicit approval. Do
 
 Do not install C2ME or ServerCore in this first wave. Their chunk-threading/behavior changes require separate compatibility research for this Create/Aeronautics and BYG/Regions Unexplored stack. Do not add Embeddium or another renderer alongside Sodium without a specific compatibility reason.
 
-## Quality-of-life candidate queue
+## Quality-of-life candidate queue — compare with installed mods
 
-**Already present:** JEI, Jade, AppleSkin, Mouse Tweaks, FTB Chunks/Teams and Sophisticated Backpacks. FTB Chunks already supplies the team's claim/map system, so a second map/minimap is not a default recommendation.
+**Already present:** JEI 19.64.0.455, Jade 15.10.6, AppleSkin 3.0.9, Mouse Tweaks 2.26.1, FTB Chunks/Teams and Sophisticated Backpacks 3.26.19. FTB Chunks already supplies claims/team-map functionality. AeroPortals 1.3.6 is also installed and must be compared with Waystones before selecting a travel system.
 
-- [ ] **Just Enough Resources (JER) 1.6.0.57** — [CurseForge file 9311693](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer/files/9311693). Adds mob-drop, ore-generation and resource information to JEI. Test client info and modded loot/worldgen coverage.
-- [ ] **Shulker Box Tooltip 5.1.9+1.21.1** — [CurseForge files](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip/files/all). Test shulker/container previews in inventory, JEI and Sophisticated storage interactions.
-- [ ] **Enchantment Descriptions 21.1.11 NeoForge 1.21.1** — [CurseForge files](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/all). Requires Bookshelf. Bookshelf 21.1.81 was loaded in the Botany Pots test group but is not confirmed in the baseline; verify matching client/server dependencies first.
-- [ ] **Nature's Compass 3.4.0 NeoForge 1.21.1** — [CurseForge files](https://www.curseforge.com/minecraft/mc-mods/natures-compass/files/all). Test searches across BYG/Regions Unexplored and decide on exploration/balance settings.
-- [ ] **Explorer's Compass 3.4.0 NeoForge 1.21.1** — [CurseForge files](https://www.curseforge.com/minecraft/mc-mods/explorers-compass/files/all). Test searches for modded structures and decide on structure-search limits.
-- [ ] **Waystones 21.1.46 NeoForge 1.21.1** — [CurseForge files](https://www.curseforge.com/minecraft/mc-mods/waystones/files/all); requires a compatible Balm version. Test multiplayer visibility, costs, scrolls, cooldowns and team settings to preserve progression balance.
+- [ ] **Just Enough Resources (JER) 1.6.0.57 — client-side JEI addon** — [CurseForge file 9311693](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer/files/9311693). Adds mob drops, dungeon loot, villager trades, plant drops and ore/worldgen information to JEI; it complements, not replaces, JEI. Check BYG/RU and custom loot-table coverage.
+- [ ] **Shulker Box Tooltip 5.1.9+1.21.1 — client & server supported** — [CurseForge file 7768285](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip/files/7768285). Preview shulker/container contents. Distinct from Sophisticated Backpacks; test shulker previews, Sophisticated storage and generic container support.
+- [ ] **Enchantment Descriptions 21.1.11 — NeoForge 1.21.1** — [CurseForge file 8693034](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/8693034). No current equivalent found. Requires Bookshelf and Prickle; both appeared in the separate Botany Pots test group, but neither should be assumed present in the main profile. Confirm exact main-profile dependency files first.
+- [ ] **Nature's Compass 3.4.0 — client & server** — [CurseForge file 7892954](https://www.curseforge.com/minecraft/mc-mods/natures-compass/files/7892954). Search vanilla, BYG and Regions Unexplored biomes. No equivalent compass is listed; test biome registration/visibility and XP/durability settings.
+- [ ] **Explorer's Compass 3.4.0 — client & server** — [CurseForge file 7892943](https://www.curseforge.com/minecraft/mc-mods/explorers-compass/files/7892943). Search registered structures. FTB Chunks is not a structure locator. Test End and modded structures, locator tags, search cost and exploration balance.
+- [ ] **Waystones 21.1.46 — client & server** — [CurseForge 1.21.1 NeoForge files](https://www.curseforge.com/minecraft/mc-mods/waystones/files/all). Requires compatible Balm. AeroPortals 1.3.6 is already installed; first document its teleport behavior, then compare both systems in a disposable world. Check Balm's exact version and multiplayer costs, cooldowns, access rules and progression before deciding whether Waystones adds enough.
 
-These are candidates, not installed or approved additions. Test one group at a time in the separate profile and record exact dependencies, client/server side and log results.
+**Test order:** JER; Shulker Box Tooltip; Enchantment Descriptions after dependency confirmation; Nature's Compass; Explorer's Compass; Waystones only after the AeroPortals/Balm review. Keep tests isolated and record client/server placement and logs. These are candidates, not approved additions.
 
 ## On hold
 

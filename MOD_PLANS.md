@@ -13,7 +13,7 @@ This page is the public register of requested additions, research candidates, pa
 
 ## Status definitions
 
-| Status | Meaning |
+  Status   Meaning |
 |---|---|
 | Candidate — research pending | Exact file, dependencies, side, or compatibility still needs checking. |
 | Selected for isolated test | Chosen for a disposable test; not installed or approved for production. |

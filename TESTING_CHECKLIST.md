@@ -108,7 +108,7 @@ These entries are not in the active test installation. First confirm an exact Mi
 
 ### 9. End-generation candidates — Batch 2
 
-**2A status: Partial smoke-test pass — gameplay test blocked by wrong world selection.** The 4 November 2026 logs confirm that both JARs were installed in the separate test server, discovered, and listed as loaded mods. The server reached Done, accepted the local player, and shut down cleanly with all dimensions saved. No YUNG-specific dependency or startup failure was found.
+**2A status: Partial smoke-test pass — gameplay checks still pending.** The 4 November 2026 logs confirm that both JARs were installed in the separate test server, discovered, and listed as loaded mods. The server reached Done, accepted the local player, and shut down cleanly with all dimensions saved. No YUNG-specific dependency or startup failure was found.
 
 **2A — YUNG's Better End Island 3.1.2**
 - Main file: `YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar` — [CurseForge file 6300968](https://www.curseforge.com/minecraft/mc-mods/yungs-better-end-island-neoforge/files/6300968).
@@ -116,15 +116,16 @@ These entries are not in the active test installation. First confirm an exact Mi
 - [x] Both JARs discovered and loaded by the separate test server.
 - [x] YUNG's API dependency resolved; no YUNG-specific startup failure found.
 - [x] Dedicated server reached Done, local client joined, and all dimensions saved on shutdown.
-- [ ] Correct the separate test server's `server.properties` so `level-name=world_yungs_end_test`. The uploaded run loaded `world_lootr_test`; no YUNG End island generation was tested. Keep `world_lootr_test` intact.
-- [ ] Restore the custom IronWoven compatibility datapack folders into `world_yungs_end_test/datapacks`, preserving that world's other datapacks. The known loot-table, placard recipe and Catwalk selector errors returned because the custom fixes were not evidenced as loaded.
-- [ ] Verify the next startup log prepares `world_yungs_end_test` and lists the IronWoven compatibility packs as loaded.
+- [x] Load the user's intentionally selected disposable `world_lootr_test` world. The user chose it because its End had not yet been generated; there is no need to create or rename a world solely because the level name differs from the original plan.
+- [ ] Confirm the End had not been generated before YUNG's Better End Island was installed; then enter the End and inspect the new generation.
+- [ ] Check `/datapack list enabled` in `world_lootr_test`. The uploaded logs did not evidently show the custom IronWoven compatibility packs, and known loot-table, placard recipe and Catwalk selector errors returned. If packs are missing, copy only those folders into `world_lootr_test/datapacks`, preserving other datapacks.
+- [ ] Restart and verify the IronWoven compatibility packs are enabled before continuing.
 - [ ] Inspect the redesigned central island, spawn platform, portal, pillars and gateways.
 - [ ] Approach the central bell tower and check dragon summon behavior.
 - [ ] Complete the dragon fight and test respawning with the four crystals in the tower's intended positions.
 - [ ] Save, restart and rejoin to verify the arena persists.
 
-The logs show 459 ERROR entries and 160 WARN entries. The 453 loot-table errors, one Create Deco placard recipe error and three Sable/Copycats selector errors are known IronWoven compatibility-datapack issues; separate Struts and PowerGrid errors also remain. They are not attributed to YUNG's mods. Do not run `/end_island reset` on an existing or production world.
+The logs show 459 ERROR entries and 160 WARN entries. The 453 loot-table errors, one Create Deco placard recipe error and three Sable/Copycats selector errors are known IronWoven compatibility-datapack issues; separate Struts and PowerGrid errors also remain. They are not attributed to YUNG's mods. The world-name choice was intentional, not a test failure. Do not run `/end_island reset` on an existing or production world.
 
 **2B — BetterEnd: New Dawn 21.0.39**
 - Main file: `BetterEnd-21.0.39.jar` — [CurseForge file 9306604](https://www.curseforge.com/minecraft/mc-mods/betterend-neoforge/files/9306604).

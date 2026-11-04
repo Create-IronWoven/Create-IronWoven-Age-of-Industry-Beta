@@ -276,3 +276,12 @@ Find CurseForge-only Minecraft 1.21.1 NeoForge content that actually generates d
 - Keep its structure placement in the Overworld; it is not an End content candidate.
 - Status: selected planned addition / test queue; not installed or production-approved. Test in a disposable world/profile first.
 
+## End mod workstream — paused
+
+The maintainer has paused End-mod research and testing for now. No suitable CurseForge-only Minecraft 1.21.1 / NeoForge mod has been identified that provides the desired Create-style abandoned industrial End.
+
+- Keep the abandoned-industrial End concept as a future direction, but do not actively search, shortlist, install or test End overhaul/structure mods until the maintainer reopens this workstream.
+- Previously recorded End candidates remain historical research only; this pause does not approve any of them.
+- This does not change the installed mod list, production world or world-generation settings.
+- Overworld additions, including Create Aeronautics Structures, remain a separate active workstream.
+

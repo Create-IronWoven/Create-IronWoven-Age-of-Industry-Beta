@@ -17,7 +17,7 @@ The pack is undergoing compatibility and dedicated-server testing. This reposito
 - [Mods planned, on hold, or excluded](MOD_PLANS.md)
 - [Testing checklist — mods and what still needs testing](TESTING_CHECKLIST.md)
 
-The testing checklist is the current queue for unfinished gameplay tests, compatibility retests, and research gates. Batch 2A (YUNG's Better End Island 3.1.2 + YUNG's API 5.1.9) has passed server mod discovery, startup, client login and clean shutdown. Gameplay checks remain pending. The user intentionally selected `world_lootr_test` because its End had not yet been generated; the world name is not a setup error. The world-scoped IronWoven compatibility datapacks also need to be checked and restored in the disposable test world if absent. It is not a release approval list. A mod can pass startup and still need feature testing.
+The testing checklist is the current queue for unfinished gameplay tests, compatibility retests, and research gates. The 4 November test confirms the server mod set starts and loads as a pack, but **all existing installed mods still require relevant feature/integration checks**; client-only mods also need client-side validation. Batch 2A (YUNG's Better End Island 3.1.2 + YUNG's API 5.1.9) also passed server mod discovery, startup, client login and clean shutdown in the intentionally selected disposable `world_lootr_test`; the world name is not a setup error. Verify the world-scoped IronWoven compatibility datapacks and restore them in that disposable world if absent. Startup success is not release approval or proof that every feature works.
 
 ## Project direction
 

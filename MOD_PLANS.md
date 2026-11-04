@@ -214,3 +214,28 @@ Voxy/Roxy also belongs on the **client side only**, but is currently blocked: Cu
 - Do not add another renderer such as Embeddium alongside Sodium or a duplicate memory optimizer.
 
 For the full compatibility notes and evidence, see the private developer report [PERFORMANCE_VOXY_TECTONIC_RESEARCH_2026-11-04.md](https://github.com/alexth110987/Create-IronWoven/blob/docs/upstream-fix-ownership-register/docs/PERFORMANCE_VOXY_TECTONIC_RESEARCH_2026-11-04.md). The user's 88-mod count includes client-side files. No test candidate is production-approved.
+
+
+## End City / End Village replacement research — 4 November 2026
+
+Target: Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21. CurseForge files only. These are research candidates, not installed or approved mods.
+
+| Mod / role | Review status | Notes |
+|---|---|---|
+| Better End Cities Better End | Alternative candidate — test pending | CurseForge file 8105176, `BetterEndCities-Raijin-structure-1.21.1.jar`; exact NeoForge 1.21.1 server file. Creates more intricate End Cities and richer BetterEnd-themed loot. Closest visual/loot alternative to Bigger Better End Cities, but does not reproduce its giant city scale / long-bridge / multi-ship controls. Compatibility with BetterEnd: New Dawn 21.0.39 is not yet proven. [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/better-end-cities-better-end/files/8105176). |
+| MES — Moog's End Structures | Selected for separate test; not installed | Correct 1.21.1 NeoForge file 5872117, `mes-1.3.5-1.21.jar`; CurseForge lists client & server and the project says it can be installed server-side only. Adds vanilla-styled End structures, challenges and loot. [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures/files/5872117). |
+| Ender Villages | Retain original candidate — test pending | Exact NeoForge 1.21.1 file 6741737 remains the closest match for End villages with custom villagers, professions, trades and breeding. No verified equivalent replacement with that full feature set was found. Project license is All Rights Reserved. [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/ender-villages/files/6741737). |
+
+**Recommendation:** Keep Bigger Better End Cities as the candidate if giant city size / bridges / ships are essential; test Better End Cities Better End first if intricate city designs and loot are the priority. Keep Ender Villages because no full-featured equivalent was verified. Test each structure mod alone in a fresh disposable world. Preserve the production world and current BYG / Regions Unexplored setup. No installation or approval is authorized.
+
+
+## End structure candidates selected for separate testing — 4 November 2026
+
+The maintainer selected both alternatives below for separate disposable-world tests. This is a testing-queue decision only; neither mod is installed or approved for the pack.
+
+| Candidate | Exact CurseForge file | Status and test notes |
+|---|---|---|
+| Better End Cities Better End | [File 8105176](https://www.curseforge.com/minecraft/mc-mods/better-end-cities-better-end/files/8105176), `BetterEndCities-Raijin-structure-1.21.1.jar` | Selected for test. NeoForge 1.21.1; server-side. CurseForge currently lists three required BetterEnd-family dependencies. Resolve the exact compatible 1.21.1 NeoForge dependency set before installation; do not assume BetterEnd: New Dawn 21.0.39 plus its libraries satisfies every relation until file-specific dependencies are confirmed. |
+| MES — Moog's End Structures | [File 5872117](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures/files/5872117), `mes-1.3.5-1.21.jar` | Selected for test. MES 1.3.5 for Minecraft 1.21.1 NeoForge; CurseForge lists client & server. This is the corrected file reference. Earlier file 6918257 / 1.4.6 reference was incorrect for this target. |
+
+**Test order:** (1) validate BetterEnd dependency baseline alone; (2) test Better End Cities Better End with its exact required dependencies in a separate fresh world; (3) test MES alone in another fresh world. Do not combine the two candidates during initial testing. Preserve production world and BYG / Regions Unexplored. No installation or production approval is authorized.

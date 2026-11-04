@@ -66,3 +66,18 @@ The audit is being performed against the **entire** current inventory and potent
 CurseForge-hosted mods, including those with custom or restrictive project licences, must be referenced through the App-generated manifest. Do not manually bundle their JARs in `overrides/mods`. Third-party mods not hosted on CurseForge require approved-list status.
 
 **This is partial source/file verification, not a completed clearance of every entry.** Remaining installed mods and candidates still need exact project/file, dependency, loader, side, and source reconciliation. No candidates have been installed or approved.
+
+
+## Ongoing per-mod source and permission checks
+
+Every mod already recorded in the installed/test inventory and every candidate in [MOD_PLANS.md](MOD_PLANS.md) is subject to an individual release-source audit. New suggestions are checked before they are recommended for inclusion. This is separate from compatibility testing and production approval.
+
+For each distinct project, the private development audit records its official project page, CurseForge-hosted status, exact 1.21.1 NeoForge file and current availability, licence and explicit project restrictions, dependencies, client/server metadata, source links, and review date.
+
+- CurseForge-hosted mods are selected through the CurseForge App and its generated manifest. Their JARs must not be manually bundled in `overrides/mods`.
+- Mods not hosted on CurseForge must appear on the current approved Non-CurseForge Mods list. A personal permission alone does not replace CurseForge approval.
+- A custom or All Rights Reserved licence label alone is not treated as proof that a CurseForge manifest reference is prohibited; explicit terms are reviewed separately.
+- A source/permission pass does not mean a mod is compatible, tested, selected, or approved for installation.
+- Unknown or ambiguous items remain on hold. Current file availability and approval are rechecked before each release export.
+
+The detailed per-mod evidence and outstanding checks are maintained in the private repository's `docs/CURSEFORGE_PERMISSION_AUDIT.md`. This public checklist is not a blanket release clearance.

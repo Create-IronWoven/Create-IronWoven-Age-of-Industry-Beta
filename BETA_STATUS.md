@@ -17,7 +17,7 @@ The pack is undergoing compatibility and dedicated-server testing. This reposito
 - [Mods planned, on hold, or excluded](MOD_PLANS.md)
 - [Testing checklist — mods and what still needs testing](TESTING_CHECKLIST.md)
 
-The testing checklist is the current queue for unfinished gameplay tests, compatibility retests, and research gates. It is not a release approval list. A mod can pass startup and still need feature testing.
+The testing checklist is the current queue for unfinished gameplay tests, compatibility retests, and research gates. The 4 November test confirms the server mod set starts and loads as a pack, but **all existing installed mods still require relevant feature/integration checks**; client-only mods also need client-side validation. Startup success is not a release approval or proof that every feature works.
 
 ## Project direction
 

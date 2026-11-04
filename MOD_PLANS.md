@@ -185,3 +185,25 @@ Players can use the [feature suggestion form](https://github.com/alexth110987/Cr
 - [ ] Check normal End City loot is unchanged and inspect logs, save/restart, and datapack load priority.
 
 Keep the current Lootr/BetterEnd ship incompatibility recorded until these checks pass. This is a data pack candidate, not a new mod JAR; do not add it to the installed-mod inventory yet.
+
+
+## End expansion shortlist — 4 November 2026
+
+**Target:** Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21. **CurseForge only.** Every entry below is a potential candidate only; none is approved or installed.
+
+| Candidate | Proposed role | Research / test gate |
+|---|---|---|
+| The Beyond 1.0.1 | Main End terrain and biome overhaul; new mobs and exploration | Test alone first. |
+| Isleweaver 0.0.3b-InDev | Compatibility layer for combining The Beyond with other End biome mods | Test with The Beyond before adding other content. |
+| Stellarity | Additional End fantasy content, structures and items | Confirm exact 1.21.1 NeoForge file; test after The Beyond + Isleweaver. |
+| Unusual End 2.3.1b | More biomes, vegetation, mobs, resources and decorative block variants | Verify dependencies and test as a separate stage. |
+| Extended End 0.9 | Obscurite ore, Void Bark wood, tools/armour, biome and decorative blocks | Older beta; verify exact file and recipes; test separately. |
+| End Beyond 1.0.4 | Alternative End overhaul with Enderite progression, structures and boss | Separate alternative branch; do not combine with The Beyond without evidence. |
+
+Existing End candidates remain: YUNG's Better End Island, BetterEnd: New Dawn, Bigger Better End Cities, Ender Villages, Better End Cities Better End, and MES — Moog's End Structures.
+
+**Compatibility cautions:** Isleweaver's BetterEnd / WorldWeaver support has instability caveats; Stellarity lists BetterEnd as incompatible. End Ores' matching 1.21.1 file is Forge rather than NeoForge, and Dimensional Ores: End has no confirmed 1.21.1 NeoForge file. Do not add either based on a different loader/version.
+
+**Test sequence:** The Beyond alone → The Beyond + Isleweaver → Stellarity after exact-file verification → Unusual End → Extended End → structure mods one at a time. Keep End Beyond as a separate comparison branch. Use a fresh disposable world for every stage. Check biomes, ore generation, mobs, structures, loot, recipes, building variants, chunk borders, client/server sync, save/restart and logs. Preserve the production world, BYG 2.6.3, Regions Unexplored 0.6.3 and current world-generation JSON.
+
+Detailed findings and CurseForge links: [private maintainer research report](https://github.com/alexth110987/Create-IronWoven/blob/main/docs/END_EXPANSION_RESEARCH_2026-11-04.md).

@@ -496,3 +496,15 @@ Selected by the maintainer for **Overworld generation only**. Do not treat this 
 
 Keep its status as planned/test pending until these checks are complete.
 
+## End workstream pause — maintainer decision
+
+**End mod research and testing are on hold.** The current CurseForge-only Minecraft 1.21.1 / NeoForge search has not found a suitable Create-style abandoned-industrial End solution.
+
+- [x] Record End research/testing as paused by maintainer.
+- [ ] Do not continue End candidate searches, installations or tests unless the maintainer explicitly reopens the workstream.
+- [ ] Keep existing End candidates as historical research only; do not treat them as approved or queued for installation.
+- [ ] Keep the abandoned-industrial End concept available for future reconsideration.
+- [ ] Continue separate Overworld testing, including Create Aeronautics Structures, under its own test checklist.
+
+This pause does not authorize production mod-list, server, world, BYG 2.6.3, Regions Unexplored 0.6.3 or world-generation JSON changes.
+

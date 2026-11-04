@@ -202,6 +202,69 @@ Do not combine the central-island overhauls in the first test. Keep production w
 
 Only test on a disposable dedicated server and world after explicit approval. Do not alter the production mod list or world.
 
+## Performance test queue — separate tests only
+
+**Current baseline already includes:** ModernFix 5.27.27 and FerriteCore 7.0.3 in the recorded server inventory; Sodium 0.8.13, Sodium Extra 0.9.5 and Iris 1.8.14-beta.1 in the client graphics profile. Do not add duplicate renderer or memory mods.
+
+### Diagnostic first
+
+**spark 1.10.124 — diagnostic tool, not an FPS boost**
+- CurseForge 1.21.1 NeoForge file: [file 6225208](https://www.curseforge.com/minecraft/mc-mods/spark/files/6225208).
+- [ ] Use the test server to capture a baseline profile under normal load and during a known laggy area/contraption.
+- [ ] Record TPS/MSPT, CPU hotspots and memory/GC behavior before adding optimizers.
+
+### Client rendering candidates
+
+**ImmediatelyFast 1.6.15 — client**
+- [CurseForge file 9165518](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast/files/9165518).
+- [ ] Test by itself in the matching test client with the existing Sodium/Iris profile.
+- [ ] Compare FPS/frame pacing, GUI/HUD, particles and Create screens.
+
+**Entity Culling 1.11.3 — client**
+- [CurseForge 1.21.1 NeoForge file](https://www.curseforge.com/minecraft/mc-mods/entityculling/files/all).
+- [ ] Test by itself after ImmediatelyFast is recorded.
+- [ ] Check Create pulleys, moving contraptions, extended block-entity render bounds and animated entities.
+- [ ] Whitelist any renderers that are incorrectly hidden; do not accept missing visual parts as a performance pass.
+
+### Server/game-logic candidates
+
+**Lithium 0.15.4 — NeoForge 1.21.1**
+- [CurseForge file 8330365](https://www.curseforge.com/minecraft/mc-mods/lithium/files/8330365).
+- [ ] Back up/copy a disposable world and test Lithium alone.
+- [ ] Test Create contraptions, kinetic networks, trains, Aeronautics, block updates, entities, chunk save/load and restart.
+- [ ] Review full server/client logs and compare spark profiles.
+
+**FastSuite 6.0.7 — NeoForge 1.21.1**
+- [CurseForge file 7527945](https://www.curseforge.com/minecraft/mc-mods/fastsuite/files/7527945).
+- [ ] Test recipe lookup in JEI and with representative Create machines.
+- [ ] Verify custom IronWoven recipes/datapacks and recipe-conflict behavior.
+
+**FastFurnace 9.0.1 — NeoForge 1.21.1**
+- [CurseForge file 6751551](https://www.curseforge.com/minecraft/mc-mods/fastfurnace/files/6751551).
+- [ ] Test vanilla furnace, blast furnace, smoker and representative modded furnace recipes.
+- [ ] Confirm no smelting behavior/recipe regressions; this optimizes recipe lookup, not smelting speed.
+
+**Chunk-Pregenerator 4.5.4 — optional server/world utility**
+- [CurseForge NeoForge files](https://www.curseforge.com/minecraft/mc-mods/chunkpregenerator/files/all).
+- [ ] Consider only after deciding the test world's intended border/radius.
+- [ ] Trial a small area in a disposable world; monitor disk growth, CPU, memory and generation errors.
+- [ ] Do not run uncontrolled pre-generation on the production world.
+
+Do not install C2ME or ServerCore in this first wave. Their chunk-threading/behavior changes require separate compatibility research for this Create/Aeronautics and BYG/Regions Unexplored stack. Do not add Embeddium or another renderer alongside Sodium without a specific compatibility reason.
+
+## Quality-of-life candidate queue
+
+**Already present:** JEI, Jade, AppleSkin, Mouse Tweaks, FTB Chunks/Teams and Sophisticated Backpacks. FTB Chunks already supplies the team's claim/map system, so a second map/minimap is not a default recommendation.
+
+- [ ] **Just Enough Resources (JER) 1.6.0.57** — [CurseForge file 9311693](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer/files/9311693). Adds mob-drop, ore-generation and resource information to JEI. Test client info and modded loot/worldgen coverage.
+- [ ] **Shulker Box Tooltip 5.1.9+1.21.1** — [CurseForge files](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip/files/all). Test shulker/container previews in inventory, JEI and Sophisticated storage interactions.
+- [ ] **Enchantment Descriptions 21.1.11 NeoForge 1.21.1** — [CurseForge files](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/all). Requires Bookshelf. Bookshelf 21.1.81 was loaded in the Botany Pots test group but is not confirmed in the baseline; verify matching client/server dependencies first.
+- [ ] **Nature's Compass 3.4.0 NeoForge 1.21.1** — [CurseForge files](https://www.curseforge.com/minecraft/mc-mods/natures-compass/files/all). Test searches across BYG/Regions Unexplored and decide on exploration/balance settings.
+- [ ] **Explorer's Compass 3.4.0 NeoForge 1.21.1** — [CurseForge files](https://www.curseforge.com/minecraft/mc-mods/explorers-compass/files/all). Test searches for modded structures and decide on structure-search limits.
+- [ ] **Waystones 21.1.46 NeoForge 1.21.1** — [CurseForge files](https://www.curseforge.com/minecraft/mc-mods/waystones/files/all); requires a compatible Balm version. Test multiplayer visibility, costs, scrolls, cooldowns and team settings to preserve progression balance.
+
+These are candidates, not installed or approved additions. Test one group at a time in the separate profile and record exact dependencies, client/server side and log results.
+
 ## On hold
 
 ### Terralith

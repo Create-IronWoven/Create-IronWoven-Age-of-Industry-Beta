@@ -159,16 +159,18 @@ These mods are not wanted for Create IronWoven and must not be reintroduced as c
 Players can use the [feature suggestion form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=feature_suggestion.yml). Include the official project page, exact supported Minecraft / NeoForge versions, required dependencies, and why the mod fits Create IronWoven. Suggestions are reviewed, not automatically accepted.
 
 
-## Every Compat (Wood Good) — next maintainer test
+## Every Compat (Wood Good) — research complete; test pending
 
-**Status: Next isolated maintainer test; candidate only. Not installed or approved.** The initial BetterEnd observations are documented and remaining broad gameplay checks are deferred to beta testers. The goal is to check whether Every Compat can expose additional modded wood types to Chipped's decorative variants. Chipped 4.0.2 is already in the recorded inventory; BetterEnd's Pythadendron Planks are the first example to verify.
+**Status: Candidate only. Not installed or approved.** Exact CurseForge 1.21.1 NeoForge file: everycomp-1.21-2.11.56-neoforge.jar (file 9336749). Required library: Moonlight Lib; author's minimum is 1.21.1-3.7.2. Current 1.21.1 NeoForge CurseForge release is moonlight-1.21.1-3.8.1-neoforge.jar (file 9436226). Chipped 4.0.2 is already present and is listed as an optional Every Compat integration; Chipped-specific fixes are documented in the author's changelog.
 
-- Verify the exact Minecraft 1.21.1 NeoForge file and all required dependencies on CurseForge.
-- Confirm support for Chipped 4.0.2 and BetterEnd's Pythadendron wood; do not assume automatic support for every wood type.
-- Start this as the next maintainer test in a separate disposable profile/world with only the exact required dependencies. Do not combine it with the BetterEnd test or install it in production.
-- Check Carpenter's Table variants, recipes, models/textures, JEI visibility, client/server consistency, logs and save/restart.
-- Keep it as a candidate only; do not change the installed inventory or production world.
+**Pythadendron is not confirmed:** BetterEnd / Pythadendron is not named in the reviewed Every Compat build metadata or changelog. Verify it in a separate follow-up rather than assuming automatic support.
 
+- [ ] Stage A: in a disposable copy of the current pack, add only Every Compat 2.11.56 and Moonlight 3.8.1 on both client and server. Keep existing Chipped 4.0.2, RU 0.6.3 and BYG 2.6.3 unchanged.
+- [ ] Verify Chipped Carpenter's Table variants and recipes for multiple installed modded wood types; check JEI, textures/models, drops, placement, client/server consistency, logs and save/restart.
+- [ ] Stage B only after Stage A passes: use a new separate disposable world/profile with the exact BetterEnd: New Dawn 21.0.39 dependency stack to test Pythadendron wood registration and Chipped variants. Do not reuse the 2B test world.
+- [ ] Record any missing wood support, duplicate recipes, visual errors or registry conflicts.
+
+Do not change the production inventory or world. Full details: [Every Compat Research and Test Plan](https://github.com/alexth110987/Create-IronWoven/blob/main/docs/EVERY_COMPAT_RESEARCH_2026-11-04.md).
 
 ## Lootr Compatibility: BetterEnd — new candidate (4 November 2026)
 

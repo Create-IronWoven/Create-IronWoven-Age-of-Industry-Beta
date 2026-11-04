@@ -17,7 +17,7 @@ The pack is undergoing compatibility and dedicated-server testing. This reposito
 - [Mods planned, on hold, or excluded](MOD_PLANS.md)
 - [Testing checklist — mods and what still needs testing](TESTING_CHECKLIST.md)
 
-The testing checklist is the current queue for unfinished gameplay tests, compatibility retests, and research gates. Batch 2A (YUNG's Better End Island 3.1.2 + YUNG's API 5.1.9) has passed server mod discovery, startup, client login and clean shutdown. Gameplay testing is blocked because the run loaded `world_lootr_test` rather than `world_yungs_end_test`; the world-scoped IronWoven compatibility datapacks also need to be restored in the disposable test world. It is not a release approval list. A mod can pass startup and still need feature testing.
+The testing checklist is the current queue for unfinished gameplay tests, compatibility retests, and research gates. Batch 2A (YUNG's Better End Island 3.1.2 + YUNG's API 5.1.9) has passed server mod discovery, startup, client login and clean shutdown. Gameplay checks remain pending. The user intentionally selected `world_lootr_test` because its End had not yet been generated; the world name is not a setup error. The world-scoped IronWoven compatibility datapacks also need to be checked and restored in the disposable test world if absent. It is not a release approval list. A mod can pass startup and still need feature testing.
 
 ## Project direction
 
@@ -71,4 +71,4 @@ You can report reproducible issues and suggest improvements through the [issue t
 
 ## Batch 2A runtime status — 4 November 2026
 
-YUNG's API 5.1.9 and YUNG's Better End Island 3.1.2 were discovered and loaded on the separate test server. Server startup, client login and clean shutdown passed. The test did **not** reach the End-generation checks because it loaded `world_lootr_test` instead of `world_yungs_end_test`. Restore the custom IronWoven compatibility datapacks in the correct disposable world before the next run. See the [testing checklist](TESTING_CHECKLIST.md) for the next steps. No production changes or approval.
+YUNG's API 5.1.9 and YUNG's Better End Island 3.1.2 were discovered and loaded on the separate test server. Server startup, client login and clean shutdown passed. The user clarified that `world_lootr_test` was selected intentionally because its End had not yet been generated. The earlier world-name mismatch assessment is corrected. The End-generation gameplay checks remain pending, and the custom IronWoven compatibility datapacks must be verified (and restored in this disposable world if absent) before continuing. See the [testing checklist](TESTING_CHECKLIST.md). No production changes or approval.

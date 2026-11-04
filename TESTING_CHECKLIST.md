@@ -382,37 +382,20 @@ Nothing in this checklist authorizes installation into the production profile or
 **Safeguards:** CurseForge only. Keep production world and BYG 2.6.3 / Regions Unexplored 0.6.3 unchanged. Do not modify the installed inventory or production server. Test selection is not production approval.
 
 
-## 12. Every Compat (Wood Good) — next maintainer test
+## 12. Every Compat (Wood Good) — research complete; Stage A test pending
 
-**Status: Next isolated maintainer test; candidate only. Not installed or approved.** Chipped 4.0.2 is already present. The initial BetterEnd observation is documented; remaining broad BetterEnd gameplay checks are assigned to beta testers. Investigate whether Every Compat supports Chipped's wood variants and BetterEnd: New Dawn's Pythadendron Planks.
+**Status: Candidate only; not installed or approved.** Exact CurseForge 1.21.1 NeoForge release: everycomp-1.21-2.11.56-neoforge.jar (file 9336749). Required library: Moonlight Lib / Selene; author's minimum is 1.21.1-3.7.2. Current 1.21.1 NeoForge CurseForge release: moonlight-1.21.1-3.8.1-neoforge.jar (file 9436226). Chipped 4.0.2 is already present and is listed as an optional Every Compat integration. The author's changelog records Chipped fixes, but this does not prove every modded wood type is supported.
 
-- [ ] Verify the exact Minecraft 1.21.1 NeoForge Every Compat file and required dependencies on CurseForge only.
-- [ ] Confirm the selected release supports Chipped 4.0.2 and the relevant BetterEnd: New Dawn wood blocks; verify supported mod integrations rather than assuming all woods are covered.
-- [ ] Start as the next maintainer test in a separate disposable profile/world, using only the exact required dependencies.
-- [ ] Check whether Pythadendron Planks are recognized by Chipped's Carpenter's Table and whether useful decorative variants are available.
-- [ ] Check recipes, JEI visibility, block models/textures, client/server consistency, logs and save/restart.
-- [ ] Record any missing wood support, duplicate recipes, visual errors or registry conflicts.
+**Pythadendron status: unconfirmed.** BetterEnd / Pythadendron is not named in the reviewed Every Compat build metadata or changelog.
 
-Do not combine this candidate with 2B, install it now, alter the production inventory, or modify the production world.
+- [ ] Stage A: add only Every Compat 2.11.56 and Moonlight 3.8.1 to a disposable copy of the current pack; install matching files on client and server. Keep existing Chipped 4.0.2, RU 0.6.3 and BYG 2.6.3 unchanged.
+- [ ] Check supported modded woods in Chipped's Carpenter's Table; verify generated variants, recipes, JEI, textures/models, drops, placement, client/server consistency, logs and save/restart.
+- [ ] Stage B only after Stage A passes: use a new separate disposable profile/world with BetterEnd: New Dawn 21.0.39 and its exact dependencies to test Pythadendron registration and Carpenter's Table variants. Do not reuse or alter the 2B test world.
+- [ ] Record unsupported wood types, duplicate recipes, visual errors, registry conflicts and any attributable log errors.
 
+Full research: [Every Compat Research and Test Plan](https://github.com/alexth110987/Create-IronWoven/blob/main/docs/EVERY_COMPAT_RESEARCH_2026-11-04.md).
 
-### 13. Lootr Compatibility: BetterEnd — requested candidate
-
-**Status: Candidate / compatibility research pending. Not installed or approved.** The maintainer requested this CurseForge datapack for testing as a possible addition to address the known BetterEnd-generated ship / Lootr limitation.
-
-- Project: [Lootr Compatibility: BetterEnd](https://www.curseforge.com/minecraft/data-packs/lootr-compat-betterend) by Noobanidus; MIT-licensed datapack.
-- Its documented purpose is to make specific BetterEnd chest and barrel blocks eligible for Lootr conversion when they have loot tables. The list includes Pythadendron and other BetterEnd wood chest/barrel variants.
-- **Important version gate:** the official CurseForge file listing currently shows Lootr-BetterEnd-Compatibility-2.0.zip for Minecraft 1.21.7 and an older file for 1.21.4. It does not currently list an exact 1.21.1 file. Because IronWoven targets 1.21.1 / NeoForge 21.1.265 and uses CurseForge only, do not install either file or infer exact 1.21.1 support from the generic “1.20 and later” description.
-- **Important scope gate:** the published block list covers BetterEnd chests and barrels; it does not explicitly say it patches BetterEnd ship structures. First identify the exact container block IDs used in a BetterEnd ship and confirm they have loot tables.
-- [ ] Recheck CurseForge for an exact 1.21.1 file, or obtain explicit 1.21.1 compatibility confirmation from the author.
-- [ ] In a disposable world, inspect a BetterEnd-generated ship and record each chest/barrel block ID and its loot-table presence.
-- [ ] Once the version gate is cleared, test this datapack by itself alongside the current Lootr + BetterEnd stack in a fresh disposable world.
-- [ ] Verify the affected ship containers convert to Lootr containers and generate loot.
-- [ ] Have a second player open the same converted container and verify independent personal loot.
-- [ ] Confirm normal vanilla End City chests/ships still work and check datapack load order, logs, save/restart, and any loot-table errors.
-
-Do not change the installed-mod inventory or production world. Keep the known BetterEnd ship limitation open until the isolated test proves it is fixed. This is a datapack candidate, not a mod JAR.
-
+Do not modify the production inventory, production world or world-generation settings.
 
 ## End expansion shortlist — research and staged tests
 

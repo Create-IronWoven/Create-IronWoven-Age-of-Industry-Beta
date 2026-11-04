@@ -399,9 +399,9 @@ Full research: [Every Compat Research and Test Plan](https://github.com/alexth11
 
 Do not modify the production inventory, production world or world-generation settings.
 
-## End expansion shortlist — research and staged tests
+## End expansion shortlist — historical research / paused
 
-**Status:** research candidates only. Do not install into the production profile or world. CurseForge only; target Minecraft 1.21.1 / NeoForge 21.1.265.
+**Status: PAUSED. Do not perform the unchecked steps below.** These candidates were researched but are not suitable for the selected Create-style abandoned-industrial End direction. This section is retained as historical research only. Do not install into the production or disposable test profile unless the maintainer explicitly reopens End work. CurseForge only; target Minecraft 1.21.1 / NeoForge 21.1.265.
 
 - [ ] Verify exact 1.21.1 NeoForge file and dependencies for The Beyond 1.0.1.
 - [ ] Verify exact Isleweaver 0.0.3b-InDev file and its dependency/compatibility requirements.

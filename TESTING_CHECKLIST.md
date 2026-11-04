@@ -508,3 +508,17 @@ Keep its status as planned/test pending until these checks are complete.
 
 This pause does not authorize production mod-list, server, world, BYG 2.6.3, Regions Unexplored 0.6.3 or world-generation JSON changes.
 
+## End test-profile cleanup — 5 November 2026
+
+**End test profile cleanup required; End workstream remains paused.** The maintainer has instructed that all End-specific mods be removed from the disposable test server and matching client. This supersedes the earlier instruction to keep Ender Ore in the test setup.
+
+- [ ] Inspect the current disposable server and client mods folders.
+- [ ] Remove any present End-only content JARs: YUNG's Better End Island, BetterEnd: New Dawn, Ender Ore, Ender Villages, Better End Cities Better End, MES / Moog's End Structures, and any other End-only generation/content mods. Bigger Better End Cities remains excluded.
+- [ ] Keep uninstalled End candidates out of both folders.
+- [ ] Check dependencies before removing support libraries; remove a library only if no remaining mod requires it.
+- [ ] Keep Lootr (general-purpose) unless separately directed; it is not an End overhaul.
+- [ ] Capture a fresh folder listing and clean startup log proving the End-specific JARs are absent.
+- [ ] Leave End research and testing paused unless the maintainer explicitly reopens it.
+
+**Status:** documentation updated, but physical JAR removal is not verified because the GitHub connection cannot access the live Minecraft server/client folders. Do not tick the cleanup complete until the folder listing and startup log have been checked. Keep previous test logs/results as historical evidence.
+

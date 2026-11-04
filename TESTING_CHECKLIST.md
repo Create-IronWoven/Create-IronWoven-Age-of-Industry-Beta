@@ -483,3 +483,16 @@ This is a test-profile recommendation only. It does not authorize changes to the
 - [ ] Recheck the CurseForge-only 1.21.1 NeoForge candidate list for genuinely abandoned industrial factories, refineries, mines, railways, cranes, pipelines, laboratories and small settlements before selecting any replacement.
 - [ ] Do not promote fantasy-style or generic vanilla-style End overhauls just to fill the slot. Keep candidates as research-only until their actual structures, materials and compatibility are verified.
 
+## Overworld test — Create Aeronautics Structures
+
+Selected by the maintainer for **Overworld generation only**. Do not treat this as an End structure candidate.
+
+- [ ] Verify the exact CurseForge file for Minecraft 1.21.1 / NeoForge 21.1.265.
+- [ ] Verify exact dependency versions (reported: Create Aeronautics, Sable and GeckoLib) and check against the current installed inventory.
+- [ ] Install only in a disposable test profile/world; do not change the production inventory or world.
+- [ ] Explore fresh Overworld chunks for abandoned engineering buildings, boats, airships and balloon structures; record actual structure variety and generation frequency.
+- [ ] Check structure placement/overlap, loot, client/server sync, chunk borders, logs and save/restart.
+- [ ] Confirm it does not generate in the End unless a separate future decision explicitly requests that.
+
+Keep its status as planned/test pending until these checks are complete.
+

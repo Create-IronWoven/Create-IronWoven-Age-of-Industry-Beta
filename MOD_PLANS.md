@@ -139,3 +139,40 @@ The complete candidate list remains:
 | Colony building styles and schematics | Content research, not automatically mods | Check format, dependencies, compatibility and permissions |
 
 No colony component is approved or installed by this list. Choose MineColonies and its exact required dependencies first, verify Create integrations, then test the selected stack only after approval on a disposable dedicated server and world. Keep Dynamic Trees as a separate test and preserve production world generation.
+
+
+## Performance improvement candidates — 4 November 2026
+
+**Current installed performance baseline:** ModernFix 5.27.27 and FerriteCore 7.0.3 are already in the recorded server inventory. Sodium 0.8.13, Sodium Extra 0.9.5 and Iris 1.8.14-beta.1 are client graphics components. Do not add a second renderer or duplicate memory optimizer.
+
+| Candidate | Exact 1.21.1 NeoForge file/version | Scope | Purpose / test caution |
+|---|---|---|---|
+| spark | 1.10.124, CurseForge file 6225208 | Diagnostic profiler | Measures server tick/CPU/memory rather than increasing FPS. Use first to establish baseline and identify the real bottleneck. |
+| ImmediatelyFast | 1.6.15, file 9165518 | Client | Optimizes GUI/HUD, text, particles, entities and block-entity rendering; complement to Sodium. |
+| Entity Culling | 1.11.3, 1.21.1 NeoForge release | Client | Avoids drawing hidden entities/block entities. Test Create renderers carefully and whitelist pulleys/extended render bounds where needed. |
+| Lithium | 0.15.4, file 8330365 | Server/game logic; confirm exact side requirements | General logic/tick optimization. Back up a disposable world and test alone against Create/Aeronautics and the current worldgen/data stack. |
+| FastSuite | 6.0.7, file 7527945 | Recipe system | Optimizes JSON recipe lookup; check JEI, Create machines and custom recipe/datapack behavior. |
+| FastFurnace | 9.0.1, file 6751551 | Furnace recipe processing | Optimizes furnace/blast furnace/smoker recipe matching, not smelting speed. Lower priority than FastSuite. |
+| Chunk-Pregenerator | 4.5.4, NeoForge | Dedicated-server/world utility | Pre-generates a selected area to reduce first-exploration chunk-generation spikes. Does not improve FPS in already-generated chunks; plan disk usage/radius. |
+
+Test one at a time and compare matching workloads. spark is diagnostics, not an optimization itself. C2ME and ServerCore are not in the first wave; assess experimental chunk threading and behavior-changing server optimizers separately. More Culling did not have a confirmed 1.21.1 NeoForge file in this review.
+
+## Quality-of-life candidates — 4 November 2026
+
+| Candidate | Exact 1.21.1 NeoForge file/version | Benefit | Notes |
+|---|---|---|---|
+| Just Enough Resources (JER) | 1.6.0.57, file 9311693 | Adds mob drops, ore generation and resource information to the existing JEI interface | Strong companion to already-installed JEI. |
+| Shulker Box Tooltip | 5.1.9+1.21.1 | Shows shulker/container contents in tooltips | Small inventory QoL addition. |
+| Enchantment Descriptions | 21.1.11 NeoForge 1.21.1 | Explains enchantments in tooltips | Requires Bookshelf. Bookshelf 21.1.81 loaded in the Botany Pots test group but is not confirmed in the main baseline. |
+| Nature's Compass | 3.4.0 NeoForge 1.21.1 | Finds biomes | Useful with BYG and Regions Unexplored; decide whether its search ability fits exploration balance. |
+| Explorer's Compass | 3.4.0 NeoForge 1.21.1 | Finds structures | Useful with modded structures, but can reduce exploration challenge. |
+| Waystones | 21.1.46 NeoForge 1.21.1 | Player travel between placed waystones and scrolls | Requires compatible Balm. Optional; tune costs, visibility and cooldowns to suit multiplayer balance. |
+
+### Existing QoL — no duplicate needed by default
+
+- JEI, Jade, AppleSkin, Mouse Tweaks, FTB Chunks/Teams and Sophisticated Backpacks are already in the recorded inventory.
+- FTB Chunks already supplies claims/team-map functionality; do not add another map/minimap by default.
+- Sophisticated Backpacks is already present; another backpack mod is not a priority.
+- JER extends JEI rather than replacing it.
+
+These candidates are not installed or approved. Match exact CurseForge files/dependencies at the time of approval, use a separate test profile, and check client/server placement before adding them.

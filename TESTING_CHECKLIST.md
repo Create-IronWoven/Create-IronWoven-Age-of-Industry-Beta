@@ -282,19 +282,33 @@ These are candidates, not installed or approved additions. Test one group at a t
 - Do not change the production mod list or world as part of updating this documentation.
 
 
-## Expanded performance / LOD / Tectonic test queue — 4 November 2026
+## Performance / LOD / Tectonic tests — separated by installation side (4 November 2026)
 
-- [ ] Capture a spark 1.10.124 baseline (server TPS/MSPT and CPU profile) during idle, exploration, Create factory, trains and Aeronautics activity; record client FPS/frametime separately.
-- [ ] Test ImmediatelyFast 1.6.15 alone in a duplicated client profile.
-- [ ] Reset; test Flerovium 1.1.2 stable alone. Check dropped items, depots, belts, particles, entities and Aeronautics visuals.
+**Rules:** Use one candidate at a time. Keep client-only files out of the dedicated server. For both-side candidates use the same compatible release on both client and server. Startup/login smoke tests are not gameplay approval.
+
+### 1. Dedicated server first
+
+- [ ] Add spark 1.10.124 to the disposable dedicated server only for the initial server baseline. Record TPS/MSPT and CPU during idle, exploration, a busy Create factory, trains and Aeronautics activity. Remove it after capturing results unless continued profiling is needed.
+- [ ] Later, test Chunk-Pregenerator 4.5.4 as a dedicated-server utility only in a disposable world, after selecting a defined generation radius. Monitor CPU, memory, disk use and world-generation correctness.
+
+### 2. Client-only tests — player's CurseForge profile only
+
+- [ ] Test ImmediatelyFast 1.6.15 alone. Check GUI, HUD, particles, entities and block entities.
+- [ ] Reset to baseline; test Flerovium 1.1.2 stable alone. Sodium is already present. Check dropped items, Create depots, belts, particles, mobs and Aeronautics visuals.
 - [ ] Reset; test Entity Culling 1.10.4 alone. Check moving Create block entities, pulleys, Sable sublevels, trains and visual culling errors; whitelist only as needed.
-- [ ] Reset; test More Culling 1.0.11 alone. Check leaves, glass, connected textures, decorative blocks and Create block visuals.
-- [ ] Test Lithium 0.15.4 alone on a disposable server with a world backup. Verify Create, Sable, trains, inventories, redstone, farms, mob AI and chunk ticking.
-- [ ] Test FastSuite 6.0.7 alone; verify JEI and every Create/custom recipe/datapack integration. FastFurnace 9.0.1 is optional/low priority.
-- [ ] Test Distant Horizons 3.3.3 in a duplicated client profile, first with shaders disabled, then with an explicitly DH-compatible Iris shader. Record LOD terrain quality, resource usage, world generation, and the distance at which Aeronautics sublevels disappear.
-- [ ] SSRD research is relevant for Aeronautics sublevel visibility with DH/Voxy, but do not download/add it unless a CurseForge source is verified or the download-source rule is explicitly changed.
-- [ ] Test Tectonic 3.0.28 in a disposable fresh world with a copy of current custom worldgen JSON. Check BYG/RU biome distribution, biome sizes, terrain, structures, rivers/oceans, and End generation. Never use the production world for this test.
-- [ ] Consider Chunk-Pregenerator 4.5.4 only after selecting a new test world and defined generation radius.
-- [ ] Do not test Voxy through Roxy unless an approved CurseForge-compliant Voxy artifact becomes available or the user explicitly changes the source policy; Roxy alone is nonfunctional.
+- [ ] Reset; test Distant Horizons 3.3.3 alone with shaders disabled. Then test only an explicitly DH-compatible Iris shader. Record terrain LOD quality, performance, and the distance at which Aeronautics sublevels disappear.
+- [ ] Do not add Voxy/Roxy under the current CurseForge-only rule. Do not add SSRD unless a CurseForge download is verified.
 
-Run each candidate separately before combination. Startup/login smoke tests are not gameplay approval. No item above authorizes installation in production.
+### 3. Both-side tests — matching version on client and dedicated server
+
+- [ ] Test Lithium 0.15.4 on both sides in a disposable environment with a full world backup. Verify Create contraptions, Sable physics, trains, inventories, redstone, farms, mob AI and chunk ticking.
+- [ ] Reset; test FastSuite 6.0.7 on both sides. Verify JEI, every Create/custom recipe, datapack override and modded workstation.
+- [ ] Reset; test More Culling **1.0.9** (correct 1.21.1 NeoForge version) on both sides. Check leaves, glass, connected textures, Create blocks and modded decorative blocks.
+- [ ] FastFurnace 9.0.1 is lower priority; if tested, use its matching 1.21.1 NeoForge build on both sides and verify furnace, blast furnace and smoker recipes.
+
+### 4. Both-side world-generation test
+
+- [ ] Test Tectonic v3.0.28 ~ NeoForge 21.1 on client and server in a new disposable world. Use a copy of current worldgen JSON only. Check BYG/RU biome distribution, biome sizes, terrain, structures, rivers/oceans and End generation.
+- [ ] Never use the production world for this test. Do not alter production BYG 2.6.3, RU 0.6.3 or current JSON before explicit approval.
+
+Nothing in this checklist authorizes installation into the production profile or production server.

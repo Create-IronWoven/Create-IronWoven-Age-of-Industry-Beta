@@ -1,253 +1,146 @@
-# Mods Planned, On Hold, and Excluded
+# Mod Plans — Create IronWoven
 
-This page separates confirmed installed mods from ideas for future versions. **A mod listed as planned or on hold is not part of the current pack unless it also appears on [Mods in the Pack](MODS.md).**
+**Last reviewed:** 4 November 2026  
+**Target:** Minecraft 1.21.1 · NeoForge 21.1.265 · Java 21  
+**Download policy:** CurseForge only
 
-The [Testing Checklist](TESTING_CHECKLIST.md) is the live list of gameplay checks, compatibility retests, and research still required. A test listed there does not mean the mod is approved for release.
+This page is the public register of requested additions, research candidates, paused ideas, and explicit exclusions. It is **not** an installed-mod inventory or an approval list.
 
-## Requested candidates — compatibility review 3 November 2026
+- [Current test-pack inventory](MODS.md) records what is present in the latest documented test snapshot.
+- [Testing checklist](TESTING_CHECKLIST.md) is the single task queue for unfinished tests and research.
+- A candidate remains **not installed / not approved** unless the current inventory and a separate maintainer decision explicitly say otherwise.
+- A startup pass proves only the specific startup/load steps recorded; it does not prove every feature or integration.
 
-Target platform: Minecraft 1.21.1, NeoForge 21.1.265, Java 21.
+## Status definitions
 
-These are requested candidates only. Botany Pots and Construction Sticks are now present in the 4 November dedicated-server test inventory. Their smoke-test loading is confirmed; full feature validation and final release inclusion remain pending. Bookshelf appeared twice in the submitted list and is recorded once.
+| Status | Meaning |
+|---|---|
+| Candidate — research pending | Exact file, dependencies, side, or compatibility still needs checking. |
+| Selected for isolated test | Chosen for a disposable test; not installed or approved for production. |
+| Loaded — feature test pending | Appeared in a test server/profile; gameplay checks remain. |
+| Partial test pass | Only the explicitly recorded checks passed. |
+| On hold | Do not resume without a new decision. |
+| Excluded | Explicitly not wanted for this project. |
+| Already in test inventory | No new addition is required; see [MODS.md](MODS.md). |
 
-| Mod | Review status | Notes |
+## Recently requested candidates
+
+These six candidates came from the maintainer's 4 November shortlist. They were compared with the existing inventory and are retained here as potential additions only.
+
+| Candidate | Candidate file/version | Existing overlap and assessment | Status |
+|---|---|---|---|
+| Just Enough Resources (JER) | 1.6.0.57 · [CurseForge file 9311693](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources/files/9311693) | JEI 19.64.0.455 is installed. JER is a JEI addon for mob drops, loot, trades, plants, and world-generation information; it complements rather than replaces JEI. Check BYG / Regions Unexplored and custom loot coverage. | Candidate — test pending |
+| Shulker Box Tooltip | 5.1.9+1.21.1 · [CurseForge file 7768285](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip/files/7768285) | Sophisticated Backpacks is installed but does not provide the same shulker-box preview feature. Client/server placement and supported container previews need checking. | Candidate — test pending |
+| Enchantment Descriptions | 21.1.11 · [CurseForge file 8693034](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/8693034) | No equivalent tooltip mod is recorded. Requires Bookshelf and Prickle. Those libraries loaded in the separate Botany Pots test group but are not confirmed in the main client inventory. | Candidate — dependency/profile check |
+| Nature's Compass | 3.4.0 · [CurseForge file 7892954](https://www.curseforge.com/minecraft/mc-mods/natures-compass/files/7892954) | BYG and Regions Unexplored add biomes, not a biome-search compass. Check modded-biome registration and locator balance. | Candidate — test pending |
+| Explorer's Compass | 3.4.0 · [CurseForge file 7892943](https://www.curseforge.com/minecraft/mc-mods/explorers-compass/files/7892943) | Existing structure/world-generation mods and FTB Chunks do not provide the same structure-search function. Check modded structure tags and whether locating structures undermines exploration. | Candidate — test pending |
+| Waystones | 21.1.46 · [CurseForge project](https://www.curseforge.com/minecraft/mc-mods/waystones) | Requires a compatible Balm. AeroPortals 1.3.6 is the nearest existing travel-system overlap, but a functional duplicate/conflict has not been established. Check the full Balm inventory and compare both systems in a disposable world. | Candidate — dependency and overlap review |
+
+## Other requested additions
+
+| Mod | Exact recorded candidate | Current evidence and next gate | Status |
+|---|---|---|---|
+| Botany Pots | 21.1.44 | Loaded with Bookshelf 21.1.81 and Prickle 21.1.11 in the 4 November test group. One plugin initialized and the test server parsed 14,444 recipes. Planting, growth, harvesting, and Herbs & Harvest integration remain unverified. Forty-seven optional integration recipes remain suppressed by temporary `neoforge:false` overrides; test a conditional `neoforge:mod_loaded` gate for `botanypots` in a disposable copy only. | Loaded — feature test pending |
+| Construction Sticks | 1.5.0 | Loaded in the 4 November test group. Test vanilla/modded block placement, orientation, item consumption, and FTB Chunks claim protection. | Loaded — feature test pending |
+| Lootr | 1.11.38.127 | Loaded in the test environment; a chest was opened and loot confirmed. A second player receiving independent loot from the same chest remains unverified. | Partial test pass |
+| Create Deco | 2.1.3 | Already present in the recorded test inventory. | Already in test inventory |
+| Bookshelf | 21.1.81 | Conditional library dependency for Botany Pots and Enchantment Descriptions. Loaded in the Botany Pots test group; not thereby confirmed in the main client profile. | Conditional dependency |
+| Prickle | 21.1.11 | Conditional library dependency for Botany Pots and Enchantment Descriptions. Loaded in the Botany Pots test group; not thereby confirmed in the main client profile. | Conditional dependency |
+| Create Big Cannons | 5.11.7 · [CurseForge file 8303106](https://www.curseforge.com/minecraft/mc-mods/create-big-cannons/files/8303106) | Requires Create 6.0.7+ and Ritchie's Projectile Library 2.1.2 ([file 7587771](https://www.curseforge.com/minecraft/mc-mods/ritchies-projectile-library/files/7587771)). Current Create 6.0.10 meets the published minimum. Check Sable compatibility, multiblocks, ammunition, recipes, damage, client/server sync, and Aeronautics separately. | Candidate — research/test pending |
+
+## End generation and structure candidates
+
+All End-generation candidates must be tested in **separate fresh disposable worlds**. Do not combine them during initial tests. YUNG's Better End Island and BetterEnd: New Dawn both alter central End generation, so combined compatibility is not established.
+
+| Candidate | Exact recorded file | Evidence / test gate | Status |
+|---|---|---|---|
+| YUNG's Better End Island | 3.1.2; YUNG's API 5.1.9 | Both loaded in the 4 November Batch 2A server test; startup, client login, and clean shutdown passed. End gameplay and the world-scoped IronWoven compatibility datapacks still need checking in the intentionally selected disposable `world_lootr_test`. | Partial smoke-test pass |
+| BetterEnd: New Dawn | 21.0.39 · `BetterEnd-21.0.39.jar` | CurseForge file 9306604. Requires BCLib 21.0.28, WorldWeaver 21.0.30, and WunderLib 21.0.11. Review BYG, Regions Unexplored, TerraBlender, and Lithostitched interactions. | Candidate — isolated test pending |
+| Bigger Better End Cities | `biggerbetterendcities-1.21.1-1.0.0.jar` | CurseForge file 6461536; exact NeoForge 1.21.1 file verified. Test city scale, bridges, ships, loot, frequency, and overlap. | Candidate — isolated test pending |
+| Ender Villages | `endervillages-2.0-1.21.1.jar` | CurseForge file 6741737; exact NeoForge 1.21.1 file verified. Check village generation, villagers, professions, trades, breeding, persistence, and client/server placement. Project license is All Rights Reserved. | Candidate — isolated test pending |
+| Better End Cities Better End | `BetterEndCities-Raijin-structure-1.21.1.jar` | CurseForge file 8105176. Selected for a separate test. Resolve the exact three BetterEnd-family required dependencies for this file before testing; do not assume the BetterEnd: New Dawn stack alone satisfies them. Focuses on intricate End Cities and BetterEnd-themed loot, not giant city scale. | Selected for isolated test; dependency gate open |
+| MES — Moog's End Structures | `mes-1.3.5-1.21.jar` | CurseForge file 5872117; corrected 1.21.1 NeoForge file. Selected for a separate test. Inspect structures, ships, loot, entities, frequency, and chunk-boundary generation. | Selected for isolated test |
+
+**End test order:** verify any required dependency baseline first; then test each structure/generation candidate alone in its own fresh disposable world. Only consider combinations after individual tests pass. Preserve the production world and current BYG 2.6.3 / Regions Unexplored 0.6.3 setup.
+
+## Colony ecosystem research
+
+No colony component is installed or approved by this register. Choose an exact stable MineColonies 1.21.1 NeoForge release first, then resolve its declared dependencies and integrations.
+
+| Candidate | Role | Research gate |
 |---|---|---|
-| Botany Pots | Present in 4 Nov server test; feature review pending | Server loaded Botany Pots 21.1.44 with Bookshelf 21.1.81 and Prickle 21.1.11; one Botany Pots plugin loaded and 14,444 recipes parsed without parser failures. Basic features and Herbs & Harvest integration are expected to be testable. The 47 optional integration recipes remain suppressed by unconditional `neoforge:false` overrides; enable them only through a conditional `botanypots` test in a disposable copy, then verify in JEI and in-game. |
-| Create Deco 2.1.3 | Already in current test inventory | No addition needed; current server inventory already records 2.1.3. |
-| Construction Sticks | Present in 4 Nov server test; feature review pending | Server loaded 1.5.0. Placement with modded blocks has not yet been tested. |
-| Lootr | Present in 4 Nov test; partial manual check | Lootr 1.11.38.127 loaded and the user confirmed a chest opened with loot. Two-player independent personal loot is still unverified; see [Testing Checklist](TESTING_CHECKLIST.md). |
-| Create Big Cannons | Research candidate; not installed or approved | `createbigcannons-5.11.7+mc.1.21.1.jar` (CurseForge 8303106); requires Create 6.0.7+ and Ritchie's Projectile Library 2.1.2 (CurseForge 7587771). Current Create 6.0.10 meets the published minimum; test Sable 2.0.x compatibility and gameplay in a disposable server/world. |
-| YUNG's Better End Island | 2A partial smoke-test pass; End gameplay pending | Both exact JARs discovered and loaded. Server reached Done, client joined, clean shutdown. The user intentionally selected `world_lootr_test` because its End had not yet been generated; there was no world-selection mistake. Verify the End-generation state and custom datapack setup before End exploration. See [Testing Checklist](TESTING_CHECKLIST.md). |
-| BetterEnd: New Dawn | Exact CurseForge file verified; gameplay test pending | `BetterEnd-21.0.39.jar` (file 9306604); requires BCLib 21.0.28, WorldWeaver 21.0.30, WunderLib 21.0.11. Test separately in a fresh disposable world; review BYG / Regions Unexplored / TerraBlender / Lithostitched compatibility. |
-| Bigger Better End Cities | Exact CurseForge NeoForge file verified; gameplay test pending | `biggerbetterendcities-1.21.1-1.0.0.jar` (file 6461536); valid server-side NeoForge 1.21.1 release. Test End City generation alone. |
-| Ender Villages | Exact CurseForge NeoForge file verified; gameplay test pending | `endervillages-2.0-1.21.1.jar` (file 6741737); NeoForge 1.21.1, uploaded 7 July 2025. Project license All Rights Reserved; verify client/server placement and test village, villager, trade and persistence behavior. |
-| Bookshelf | Conditional dependency; load check passed | Required by Botany Pots on 1.21.1; 21.1.81 loaded with the test group. |
-| Prickle | Conditional dependency; load check passed | Required by Botany Pots on 1.21.1; 21.1.11 loaded with the test group. |
+| MineColonies | Main colony system | Verify exact NeoForge file and complete dependency chain. |
+| CreateColonies | Create / MineColonies integration | Verify exact project, release, and Create 6.0.10 compatibility. |
+| Create: MineColonies Link | Separate Create integration | Establish distinct functionality and whether it coexists with CreateColonies. |
+| Structurize | MineColonies support component | Match the selected MineColonies release. |
+| Domum Ornamentum | MineColonies support component | Match the selected MineColonies release. |
+| BlockUI | MineColonies support component | Match the selected MineColonies release. |
+| Multi-Piston | Possible support dependency | Confirm whether the selected MineColonies release requires it. |
+| TownTalk | Optional colony integration | Verify exact project, loader support, and distinct functionality. |
+| Dynamic Trees | Optional ecology/world-generation mod | Verify NeoForge 1.21.1 and compatibility with BYG / Regions Unexplored. |
+| Colony building styles / schematics | Content research, not automatically a mod | Check format, dependencies, compatibility, and permissions. |
 
-### Important test safeguards
+Test a selected colony stack only after its exact dependency set is established and after explicit authorization, using a disposable dedicated server and copied world. Keep Dynamic Trees as a separate world-generation investigation.
 
-- Keep the production world and its current BYG 2.6.3 / Regions Unexplored 0.6.3 setup unchanged.
-- Test End world-generation candidates in separate disposable worlds. BetterEnd: New Dawn and YUNG's Better End Island both change the central End island; combined compatibility has not been established.
-- Botany Pots and its dependencies load in the test group; basic features and the optional Herbs & Harvest integration are ready for gameplay validation. The 47 Herbs & Harvest recipes remain suppressed by `neoforge:false`; they need a conditional `botanypots` test in a disposable copy before being described as restored.
-- Batch 7 has not started. Candidate mods are not approved additions.
+## Performance and rendering candidates
 
-## Confirmed current client-only additions
+These are independent IronWoven candidates. Do not copy decisions from another modpack or test environment. Match the listed 1.21.1 NeoForge file and the correct installation side before any test.
 
-These are recorded as installed in the client profile, not as dedicated-server mods:
+### Client only
 
-| Mod | Version recorded | Status |
+| Candidate | Version | Purpose / gate |
 |---|---|---|
-| Sodium | 0.8.13 | Client only |
-| Iris | 1.8.14-beta.1 | Client only |
-| Sodium Extra | 0.9.5 NeoForge | Client only |
+| ImmediatelyFast | 1.6.15 | Render batching; inspect HUD, GUI, particles, entities, and block entities. [CurseForge file 9165518](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast/files/9165518) |
+| Flerovium | 1.1.2 stable | Requires Sodium; test item, particle, and entity rendering. [CurseForge project](https://www.curseforge.com/minecraft/mc-mods/flerovium) |
+| Entity Culling | 1.10.4 | Check Create contraptions, pulleys, Aeronautics, and Sable sublevels. [CurseForge file 8274693](https://www.curseforge.com/minecraft/mc-mods/entityculling/files/8274693) |
+| Distant Horizons | 3.3.3 | Test LOD without shaders first; shader use requires a compatible Iris shader pack. [CurseForge file 9004764](https://www.curseforge.com/minecraft/mc-mods/distant-horizons/files/9004764) |
+| Voxy / Roxy | No matching verified CurseForge 1.21.1 Voxy file | Blocked by source/version gate: Roxy 0.4.1 requires the original Voxy JAR, while the author-identified verified Voxy build is for Minecraft 1.21.11. Do not install Roxy alone. |
+| SSRD | No verified CurseForge file | Research only; do not source or install outside the CurseForge-only policy. |
 
-## On hold / under investigation
+### Dedicated-server profiling / administration
 
-| Mod | Status | Notes |
+| Candidate | Version | Purpose / gate |
 |---|---|---|
-| Terralith | On hold — not installed | A possible world-generation option. Compatibility investigation was paused. The current BYG 2.6.3 and Regions Unexplored 0.6.3 setup and existing worlds must remain unchanged while this is on hold. |
+| spark | 1.10.124 | Diagnostic profiler for TPS/MSPT and CPU baselines; not an FPS/TPS booster. [CurseForge file 6225208](https://www.curseforge.com/minecraft/mc-mods/spark/files/6225208) |
+| Chunk-Pregenerator | 4.5.4 | Pre-generation utility, not an FPS fix. Use only on a disposable world and defined radius. [CurseForge project](https://www.curseforge.com/minecraft/mc-mods/chunkpregenerator) |
 
-## Explicitly excluded from the current plan
+### Both client and server
 
-These mods remain specifically recorded as not wanted for this project:
+| Candidate | Version | Purpose / gate |
+|---|---|---|
+| Lithium | 0.15.4 | Game-logic optimization. Test Create, Sable, trains, inventories, redstone, mobs, and farms. [CurseForge file 8330365](https://www.curseforge.com/minecraft/mc-mods/lithium/files/8330365) |
+| FastSuite | 6.0.7 | Recipe lookup optimization. Test JEI, Create recipes, and custom datapacks. [CurseForge project](https://www.curseforge.com/minecraft/mc-mods/fastsuite) |
+| FastFurnace | 9.0.1 | Furnace recipe lookup optimization, not faster smelting; lower priority for this pack. [CurseForge project](https://www.curseforge.com/minecraft/mc-mods/fastfurnace) |
+| More Culling | **1.0.9** | Correct recorded NeoForge 1.21.1 version; earlier 1.0.11 note was superseded. Inspect leaves, glass, connected textures, and modded blocks. [CurseForge project](https://www.curseforge.com/minecraft/mc-mods/moreculling) |
+| Tectonic | 3.0.28 · NeoForge 21.1 | World-generation candidate; test in a fresh disposable world with a copy of the current JSON. Never change production worldgen, BYG, Regions Unexplored, or active JSON. [CurseForge file 8855043](https://www.curseforge.com/minecraft/mc-mods/tectonic/files/8855043) |
+
+**Recorded optimization baseline (not candidates):** ModernFix 5.27.27 and FerriteCore 7.0.3 on both sides; Sodium 0.8.13, Sodium Extra 0.9.5, and Iris 1.8.14-beta.1 on the client. Do not add a duplicate renderer alongside Sodium or another duplicate memory optimizer.
+
+## On hold
+
+| Mod / topic | Hold reason |
+|---|---|
+| Terralith | World-generation investigation is paused. Do not install it or dependencies, change the current BYG 2.6.3 / Regions Unexplored 0.6.3 setup, or alter existing worlds while on hold. Resume only when explicitly requested. |
+
+## Explicit exclusions
+
+These mods are not wanted for Create IronWoven and must not be reintroduced as candidates unless the maintainer explicitly changes the decision:
 
 - Carry On
 - Easy Villagers
 - Immersive Paintings
 - Just Create SMP Pops
 
-## How players can suggest a mod
-
-Use the [feature suggestion form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=feature_suggestion.yml). Please include the exact mod name, its official project page, supported Minecraft / NeoForge versions, and why it fits Create IronWoven.
-
-Suggestions are reviewed, not automatically accepted. The pack's existing compatibility and world-preservation decisions take priority over adding more mods.
-
-## Requested colony ecosystem candidates — 4 November 2026
-
-Target platform: Minecraft 1.21.1, NeoForge 21.1.265, Java 21.
-
-These are requested candidates and content ideas for compatibility research only. **None have been installed or approved.** Exact 1.21.1 NeoForge files, versions, dependencies, and compatibility with the current pack still need verification.
-
-| Candidate | Review status | Notes |
-|---|---|---|
-| CreateColonies | Candidate — review pending | Verify exact project, 1.21.1 NeoForge file, MineColonies dependency, and Create 6.0.10 compatibility. |
-| MineColonies | Candidate — review pending | Proposed main colony system. Verify current NeoForge release and complete dependency chain. |
-| Create: MineColonies Link | Candidate — review pending | Verify exact project and compatibility with the selected MineColonies and Create versions. |
-| Structurize | Supporting dependency candidate | Match the version required by the selected MineColonies release. |
-| Domum Ornamentum | Supporting dependency candidate | Match the version required by the selected MineColonies release. |
-| BlockUI | Supporting dependency candidate | Match the version required by the selected MineColonies release. |
-| Multi-Piston | Supporting dependency candidate | Verify whether required by the selected MineColonies release and match its declared version. |
-| TownTalk | Optional integration candidate | Verify exact project, loader support, and distinct functionality. |
-| Dynamic Trees | Optional world/ecology candidate | Verify NeoForge 1.21.1 support and compatibility with existing BYG / Regions Unexplored world generation. |
-| Additional colony building styles and schematics | Content research item — not necessarily a mod | Check format, dependencies, MineColonies/Structurize compatibility, and permissions. |
-
-### Colony ecosystem test safeguards
-
-- Select the exact MineColonies release first and use its declared dependency versions.
-- Verify whether CreateColonies and Create: MineColonies Link are separate compatible integrations before considering both.
-- Keep Dynamic Trees optional; do not change the current BYG 2.6.3 / Regions Unexplored 0.6.3 setup.
-- Test the complete selected stack on a disposable dedicated server and copied world, only after approval.
-- No main-world changes or installations are authorized by this candidate list.
-- Batch 7 has not started. All entries remain under review, not approved additions.
-
-
-## Batch 2 End-content review — 4 November 2026
-
-Exact CurseForge Minecraft 1.21.1 NeoForge files have now been verified for all four End candidates. The detailed feature checklist and separate test order are in [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md).
-
-The earlier “Bigger Better End Cities is Fabric-only” and “Ender Villages has no 1.21.1 NeoForge file” statements are superseded. BetterEnd: New Dawn 21.0.39 is newer than the previous 21.0.34 / 21.0.36 notes.
-
-A separate optional WorldWeaver Registry Synchronization 1.0.0 patch exists for WorldWeaver 21.0.30 / NeoForge 21.1.265 / Java 21. This is not a required dependency and is not approved for install; evaluate only if the exact race reproduces.
-
-All four remain candidates, not installed or approved additions. Use one candidate group per fresh disposable End world, then test combinations only after separate tests pass. Preserve production world and existing BYG / Regions Unexplored generation.
-
-
-## Batch 2A runtime update — 4 November 2026
-
-The first dedicated-server run confirms YUNG's API 5.1.9 and YUNG's Better End Island 3.1.2 loaded and the server completed startup, client login and clean shutdown. However, the user intentionally selected `world_lootr_test` because its End had not yet been generated. The central End island and dragon features remain untested. The world-scoped IronWoven compatibility datapacks were not evidently loaded and known errors returned. This is a partial smoke-test pass only, not production approval. Follow the next steps in [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md).
-
-
-## Create Big Cannons — additional candidate — 4 November 2026
-
-Create Big Cannons 5.11.7 has an exact Minecraft 1.21.1 NeoForge release. Required components are Create (already recorded at 6.0.10) and Ritchie's Projectile Library 2.1.2. The current release changelog includes Sable 2.0.0 support and a shell-impact compatibility fix; validate against the pack's current Sable version.
-
-- Main file: [Create Big Cannons 5.11.7 — CurseForge file 8303106](https://www.curseforge.com/minecraft/mc-mods/create-big-cannons/files/8303106).
-- Required library: [Ritchie's Projectile Library 2.1.2 — CurseForge file 7587771](https://www.curseforge.com/minecraft/mc-mods/ritchies-projectile-library/files/7587771).
-- [ ] Verify recipe/JEI visibility and material progression.
-- [ ] Test cannon/autocannon multiblock assembly, breeches, kinetic loading/aiming, ammunition, fuzes, firing and shell damage.
-- [ ] Test client/server synchronization, Sable shell impacts, performance and save/restart.
-- [ ] Evaluate Create Aeronautics vehicle integration separately. Do not assume it works without testing.
-- [ ] Bronze and steel materials may require a separate ingot provider; upstream recommends IngotCraft, but it is not a required dependency in the CurseForge relation list. Research separately before adding.
-
-**Status:** research candidate only. Not in the current installed inventory, not installed for IronWoven testing and not production-approved. Use a disposable test server/world after explicit approval.
-
-## Colony ecosystem — complete candidate register
-
-The complete candidate list remains:
-
-| Candidate | Role | Status / next step |
-|---|---|---|
-| MineColonies | Main colony system | Verify exact stable 1.21.1 NeoForge release and its dependency chain |
-| CreateColonies | Create/MineColonies integration | Verify exact project/release and Create 6.0.10 compatibility |
-| Create: MineColonies Link | Separate Create integration | Verify distinct functionality and whether it coexists with CreateColonies |
-| Structurize | MineColonies support component | Match the version required by selected MineColonies |
-| Domum Ornamentum | MineColonies support component | Match the version required by selected MineColonies |
-| BlockUI | MineColonies support component | Match the version required by selected MineColonies |
-| Multi-Piston | Possible supporting dependency | Verify whether the selected MineColonies release requires it |
-| TownTalk | Optional colony integration | Verify exact project, loader support and distinct functionality |
-| Dynamic Trees | Separate world/ecology candidate | Verify NeoForge 1.21.1 and compatibility with BYG / Regions Unexplored |
-| Colony building styles and schematics | Content research, not automatically mods | Check format, dependencies, compatibility and permissions |
-
-No colony component is approved or installed by this list. Choose MineColonies and its exact required dependencies first, verify Create integrations, then test the selected stack only after approval on a disposable dedicated server and world. Keep Dynamic Trees as a separate test and preserve production world generation.
-
-
-## Performance improvement candidates — 4 November 2026
-
-The performance candidate register is maintained once, in the side-separated section below: [Performance and long-distance/world-generation research — split by installation side](#performance-and-long-distanceworld-generation-research--split-by-installation-side-4-november-2026). That canonical section records client-only, dedicated-server, both-side and world-generation candidates, along with Voxy/Roxy's current source-policy block.
-
-Do not use older duplicate performance tables or version notes as a separate source of truth. In particular, the current Entity Culling candidate in the side-separated register is **1.10.4 for NeoForge 1.21.1**. All performance entries remain potential candidates only; no installation or production approval is implied.
-
-## Quality-of-life candidates — compared with the current inventory (4 November 2026)
-
-**Target:** Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21. These six candidates came from the user's 4 November shortlist. All remain potential additions only; none are installed or approved.
-
-| Candidate | Candidate file/version | Existing IronWoven overlap | Compatibility / placement | Assessment |
-|---|---|---|---|---|
-| Just Enough Resources (JER) | 1.6.0.57; CurseForge file 9311693 | JEI 19.64.0.455 is already installed. | Client-side JEI addon; matching NeoForge 1.21.1 release exists. | **High-value complement, not a duplicate.** Adds mob drops, dungeon loot, villager trades, plant/seed drops and ore/worldgen information inside JEI. Check BYG/RU coverage and custom loot tables. |
-| Shulker Box Tooltip | 5.1.9+1.21.1; CurseForge file 7768285 | Sophisticated Backpacks 3.26.19 and its Create integration are installed, but they do not provide the same shulker-box preview feature. | Client & server supported; NeoForge 1.21.1 release verified. Test on matching client/server profile and inspect container previews. | **Good low-risk QoL candidate.** Adds previews for shulker boxes and supported container items; functionally distinct from backpack management. |
-| Enchantment Descriptions | 21.1.11; CurseForge file 8693034 | No equivalent enchantment-tooltip mod appears in the current inventory. Bookshelf 21.1.81 and Prickle 21.1.11 loaded in the Botany Pots test group, but are not listed in the current MODS.md baseline. | NeoForge 1.21.1 release verified. Required dependencies: Bookshelf and Prickle; confirm exact versions/files and ensure both are in the actual client profile before test. | **Useful, dependency-gated.** No feature duplicate found. Do not count test-profile libraries as installed in the main profile. |
-| Nature's Compass | 3.4.0; CurseForge file 7892954 | BYG 2.6.3, Regions Unexplored 0.6.3 and TerraBlender 4.1.0.8 provide biomes, not a compass search tool. No biome locator is listed. | Client & server release verified for NeoForge 1.21.1. | **Good exploration QoL candidate.** Searches for biomes, including modded biomes where registered for locator selection. Test BYG/RU biome visibility and consider XP/durability settings to preserve exploration. |
-| Explorer's Compass | 3.4.0; CurseForge file 7892943 | Existing End/structure mods add structures, while FTB Chunks provides claims/map functionality; neither is a structure-search compass. | Client & server release verified for NeoForge 1.21.1. | **Useful but balance-sensitive.** Searches for registered structures. Test modded structure discovery, locator tags and whether it trivializes exploration or loot progression. |
-| Waystones | 21.1.46; NeoForge 1.21.1 release verified on CurseForge | AeroPortals 1.3.6 is already installed and is the closest possible travel-system overlap. The current inventory does not document AeroPortals' exact travel behavior/configuration, so a true duplicate/conflict is not established. | Client & server; requires compatible Balm. Confirm exact Balm NeoForge 1.21.1 file and check whether Balm is already present in the full JAR inventory before adding. | **Conditional / compare before selecting.** Offers player-built waystone networks, warp scrolls and configurable teleport rules. Test side-by-side with AeroPortals only in a disposable world; if AeroPortals already covers player-to-player/base teleport well, Waystones may be unnecessary. |
-
-### Compatibility and decision notes
-
-- The verified target releases exist for Minecraft 1.21.1 NeoForge. This is file/version compatibility evidence, not proof of conflict-free gameplay with every Create IronWoven mod.
-- JER is a JEI addon, not a JEI replacement. It is the strongest direct fit with the current interface setup.
-- Shulker Box Tooltip complements Sophisticated Backpacks; it does not replace backpacks or their Create integration.
-- Enchantment Descriptions must not be treated as dependency-complete until Bookshelf and Prickle are confirmed in the main client profile. They were seen in a separate Botany Pots test group.
-- Nature's Compass and Explorer's Compass solve different searches (biomes vs structures). Neither duplicates BYG/RU or FTB Chunks.
-- Waystones needs a focused AeroPortals comparison and a Balm inventory check before any install decision.
-- Keep all six in the potential list until individually reviewed. CurseForge remains the only approved download source. Do not install anything or alter the production world as part of this documentation update.
-
-### Existing QoL — no duplicate needed by default
-
-- JEI, Jade, AppleSkin, Mouse Tweaks, FTB Chunks/Teams and Sophisticated Backpacks are already in the recorded inventory.
-- FTB Chunks already supplies claims/team-map functionality; do not add another map/minimap by default.
-- Sophisticated Backpacks is already present; another backpack mod is not a priority.
-- JER extends JEI rather than replacing it.
-
-These candidates are not installed or approved. Match exact CurseForge files/dependencies at the time of approval, use a separate test profile, and check client/server placement before adding them.
-
-
-## Performance and long-distance/world-generation research — split by installation side (4 November 2026)
-
-**Target:** Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21. **Status:** research candidates only; none approved or installed.
-
-### Client-side only — install in each player's CurseForge profile
-
-| Candidate | Version | Purpose / test |
-|---|---|---|
-| ImmediatelyFast | 1.6.15 | Client render batching; test HUD, GUI, particles, entities and block entities. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast/files/9165518) |
-| Flerovium | 1.1.2 stable | Requires the already-installed Sodium; item, particle and entity rendering improvements, potentially useful for Create depots/belts/dropped items. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/flerovium) |
-| Entity Culling | 1.10.4 | Hidden entity/block-entity culling; inspect Create contraptions, pulleys and Aeronautics/Sable sublevels. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/entityculling/files/8274693) |
-| Distant Horizons | 3.3.3 | Client LOD terrain rendering; test without shaders first, then only with an Iris shader pack that explicitly supports DH. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/distant-horizons/files/9004764) |
-
-Voxy/Roxy also belongs on the **client side only**, but is currently blocked: CurseForge-hosted Roxy 0.4.1 requires the original Voxy JAR; the only build its author identifies as verified is Voxy 0.2.16-beta for Minecraft 1.21.11, not a matching CurseForge 1.21.1 release. Do not install Roxy alone. SSRD may improve Aeronautics sublevel visibility with LOD, but no CurseForge download was verified.
-
-### Server-side profiling / administration — install in the dedicated server for these tasks
-
-| Candidate | Version | Purpose / test |
-|---|---|---|
-| spark | 1.10.124 | Server profiler for TPS/MSPT and CPU baselines; diagnostic only, not an FPS/TPS booster. Can also profile clients, but first use is server-side. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/spark/files/6225208) |
-| Chunk-Pregenerator | 4.5.4 | Dedicated-server world pre-generation utility; reduces first-exploration chunk-gen spikes, not FPS in existing chunks. Use only on a disposable world and defined radius. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/chunkpregenerator/files/all) |
-
-### Both client and server — use the matching version on both sides for paired tests
-
-| Candidate | Version | Purpose / test |
-|---|---|---|
-| Lithium | 0.15.4 | Game-logic optimization, strong server-tick relevance; project supports client and server. Back up first and test Create, Sable, trains, inventories, redstone, mobs and farms. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/lithium/files/8330365) |
-| FastSuite | 6.0.7 | JSON recipe lookup optimization; project supports client and server. Test JEI, Create recipes and all custom datapacks. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/fastsuite) |
-| FastFurnace | 9.0.1 | Furnace recipe lookup optimization, not faster smelting; project marks Client & Server. Low priority for this Create-focused pack. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/fastfurnace) |
-| More Culling | **1.0.9** | Current 1.21.1 NeoForge file found; project marks Client & Server. Visual benefit is client-focused, but keep the paired deployment consistent and test both sides. Check leaves, glass, connected textures and modded blocks. [CurseForge files](https://www.curseforge.com/minecraft/mc-mods/moreculling/files/all) |
-
-**Version correction:** an earlier note said More Culling 1.0.11. The matching 1.21.1 NeoForge release shown by CurseForge is **v1.0.9**. Do not use a later release intended for 1.21.11 or newer.
-
-### Both client and server — world-generation test
-
-| Candidate | Version | Purpose / safety |
-|---|---|---|
-| Tectonic | v3.0.28 ~ NeoForge 21.1 | CurseForge marks Client & Server; use the same version on both sides. Promising with BYG/RU via TerraBlender, but test only in a fresh disposable world with a copy of current JSON. Never change production world, BYG 2.6.3, RU 0.6.3 or active worldgen JSON. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/tectonic/files/8855043) |
-
-### Existing optimization baseline — already installed, grouped by side
-
-- **Both client and server:** ModernFix 5.27.27; FerriteCore 7.0.3.
-- **Client only:** Sodium 0.8.13; Sodium Extra 0.9.5; Iris 1.8.14-beta.1.
-- Do not add another renderer such as Embeddium alongside Sodium or a duplicate memory optimizer.
-
-For the full compatibility notes and evidence, see the private developer report [PERFORMANCE_VOXY_TECTONIC_RESEARCH_2026-11-04.md](https://github.com/alexth110987/Create-IronWoven/blob/docs/upstream-fix-ownership-register/docs/PERFORMANCE_VOXY_TECTONIC_RESEARCH_2026-11-04.md). The user's 88-mod count includes client-side files. No test candidate is production-approved.
-
-
-## End City / End Village replacement research — 4 November 2026
-
-Target: Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21. CurseForge files only. These are research candidates, not installed or approved mods.
-
-| Mod / role | Review status | Notes |
-|---|---|---|
-| Better End Cities Better End | Alternative candidate — test pending | CurseForge file 8105176, `BetterEndCities-Raijin-structure-1.21.1.jar`; exact NeoForge 1.21.1 server file. Creates more intricate End Cities and richer BetterEnd-themed loot. Closest visual/loot alternative to Bigger Better End Cities, but does not reproduce its giant city scale / long-bridge / multi-ship controls. Compatibility with BetterEnd: New Dawn 21.0.39 is not yet proven. [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/better-end-cities-better-end/files/8105176). |
-| MES — Moog's End Structures | Selected for separate test; not installed | Correct 1.21.1 NeoForge file 5872117, `mes-1.3.5-1.21.jar`; CurseForge lists client & server and the project says it can be installed server-side only. Adds vanilla-styled End structures, challenges and loot. [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures/files/5872117). |
-| Ender Villages | Retain original candidate — test pending | Exact NeoForge 1.21.1 file 6741737 remains the closest match for End villages with custom villagers, professions, trades and breeding. No verified equivalent replacement with that full feature set was found. Project license is All Rights Reserved. [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/ender-villages/files/6741737). |
-
-**Recommendation:** Keep Bigger Better End Cities as the candidate if giant city size / bridges / ships are essential; test Better End Cities Better End first if intricate city designs and loot are the priority. Keep Ender Villages because no full-featured equivalent was verified. Test each structure mod alone in a fresh disposable world. Preserve the production world and current BYG / Regions Unexplored setup. No installation or approval is authorized.
-
-
-## End structure candidates selected for separate testing — 4 November 2026
-
-The maintainer selected both alternatives below for separate disposable-world tests. This is a testing-queue decision only; neither mod is installed or approved for the pack.
-
-| Candidate | Exact CurseForge file | Status and test notes |
-|---|---|---|
-| Better End Cities Better End | [File 8105176](https://www.curseforge.com/minecraft/mc-mods/better-end-cities-better-end/files/8105176), `BetterEndCities-Raijin-structure-1.21.1.jar` | Selected for test. NeoForge 1.21.1; server-side. CurseForge currently lists three required BetterEnd-family dependencies. Resolve the exact compatible 1.21.1 NeoForge dependency set before installation; do not assume BetterEnd: New Dawn 21.0.39 plus its libraries satisfies every relation until file-specific dependencies are confirmed. |
-| MES — Moog's End Structures | [File 5872117](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures/files/5872117), `mes-1.3.5-1.21.jar` | Selected for test. MES 1.3.5 for Minecraft 1.21.1 NeoForge; CurseForge lists client & server. This is the corrected file reference. Earlier file 6918257 / 1.4.6 reference was incorrect for this target. |
-
-**Test order:** (1) validate BetterEnd dependency baseline alone; (2) test Better End Cities Better End with its exact required dependencies in a separate fresh world; (3) test MES alone in another fresh world. Do not combine the two candidates during initial testing. Preserve production world and BYG / Regions Unexplored. No installation or production approval is authorized.
+## Test and approval safeguards
+
+1. CurseForge is the only approved mod download source.
+2. Verify the exact Minecraft 1.21.1 NeoForge file, dependencies, optional integrations, client/server side, maintenance status, and overlap before recommending installation.
+3. Test candidates separately in a disposable profile/server/world. World-generation and structure candidates always require fresh disposable worlds.
+4. Keep the production world and current BYG / Regions Unexplored configuration unchanged.
+5. A test selection or successful startup does not approve a candidate for production or release.
+6. Update this register when candidate status changes; update [MODS.md](MODS.md) only when the installed/test inventory is supported by evidence. Keep the detailed test steps in [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md).
+7. Batch 7 has not started unless a later dated project record explicitly updates that status.
+
+## Suggest a mod
+
+Players can use the [feature suggestion form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=feature_suggestion.yml). Include the official project page, exact supported Minecraft / NeoForge versions, required dependencies, and why the mod fits Create IronWoven. Suggestions are reviewed, not automatically accepted.

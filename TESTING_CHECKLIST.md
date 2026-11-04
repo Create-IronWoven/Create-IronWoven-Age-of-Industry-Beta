@@ -383,3 +383,21 @@ Nothing in this checklist authorizes installation into the production profile or
 - [ ] Record any missing wood support, duplicate recipes, visual errors or registry conflicts.
 
 Do not combine this candidate with 2B, install it now, alter the production inventory, or modify the production world.
+
+
+### 13. Lootr Compatibility: BetterEnd — requested candidate
+
+**Status: Candidate / compatibility research pending. Not installed or approved.** The maintainer requested this CurseForge datapack for testing as a possible addition to address the known BetterEnd-generated ship / Lootr limitation.
+
+- Project: [Lootr Compatibility: BetterEnd](https://www.curseforge.com/minecraft/data-packs/lootr-compat-betterend) by Noobanidus; MIT-licensed datapack.
+- Its documented purpose is to make specific BetterEnd chest and barrel blocks eligible for Lootr conversion when they have loot tables. The list includes Pythadendron and other BetterEnd wood chest/barrel variants.
+- **Important version gate:** the official CurseForge file listing currently shows Lootr-BetterEnd-Compatibility-2.0.zip for Minecraft 1.21.7 and an older file for 1.21.4. It does not currently list an exact 1.21.1 file. Because IronWoven targets 1.21.1 / NeoForge 21.1.265 and uses CurseForge only, do not install either file or infer exact 1.21.1 support from the generic “1.20 and later” description.
+- **Important scope gate:** the published block list covers BetterEnd chests and barrels; it does not explicitly say it patches BetterEnd ship structures. First identify the exact container block IDs used in a BetterEnd ship and confirm they have loot tables.
+- [ ] Recheck CurseForge for an exact 1.21.1 file, or obtain explicit 1.21.1 compatibility confirmation from the author.
+- [ ] In a disposable world, inspect a BetterEnd-generated ship and record each chest/barrel block ID and its loot-table presence.
+- [ ] Once the version gate is cleared, test this datapack by itself alongside the current Lootr + BetterEnd stack in a fresh disposable world.
+- [ ] Verify the affected ship containers convert to Lootr containers and generate loot.
+- [ ] Have a second player open the same converted container and verify independent personal loot.
+- [ ] Confirm normal vanilla End City chests/ships still work and check datapack load order, logs, save/restart, and any loot-table errors.
+
+Do not change the installed-mod inventory or production world. Keep the known BetterEnd ship limitation open until the isolated test proves it is fixed. This is a datapack candidate, not a mod JAR.

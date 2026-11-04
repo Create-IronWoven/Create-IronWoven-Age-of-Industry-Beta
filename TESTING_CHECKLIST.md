@@ -29,12 +29,14 @@ This is an order of work, not permission to install or approve additional mods. 
 
 ### 1. Botany Pots — 21.1.44
 
-**Status: Gameplay test pending.** Server loading passed in the 4 November test group. Bookshelf 21.1.81 and Prickle 21.1.11 were also discovered and loaded as its supporting libraries.
+**Status: Gameplay test pending; feature checks are expected to be possible.** Botany Pots 21.1.44, Bookshelf 21.1.81 and Prickle 21.1.11 loaded in the 4 November test group. Botany Pots reported one plugin loaded, and the server parsed 14,444 recipes without recipe-parsing failures. This confirms the mod and its dependencies load, but not in-game planting, growth, harvesting or the optional Herbs & Harvest integration.
 
 - [ ] Place Botany Pots and test planting with supported vanilla seeds.
 - [ ] Test growth and harvesting, and verify the expected drops.
 - [ ] Check supported Herbs & Harvest crops and recipes in JEI.
-- [ ] Review the 47 Herbs & Harvest Botany Pots integration recipes that are currently suppressed by the IronWoven compatibility datapack. They have **not** been restored; do not enable them until a safe conditional fix is ready.
+- [ ] The 47 Herbs & Harvest Botany Pots integration recipes remain hidden by temporary `neoforge:false` overrides. Even with Botany Pots installed, those conditions still suppress the recipes.
+- [ ] In a disposable test copy only, replace those suppressions with a conditional `neoforge:mod_loaded` check for `botanypots`, reload recipes, and verify the recipes appear in JEI.
+- [ ] Test representative Herbs & Harvest crops through planting, growth and harvesting, and verify expected drops.
 - [ ] Confirm there are no new recipe, registry, or server errors during the gameplay test.
 
 **Do not call this feature-tested just because the server starts.**

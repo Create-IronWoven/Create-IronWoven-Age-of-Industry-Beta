@@ -5,7 +5,7 @@
 **Loader:** NeoForge 21.1.265  
 **Java:** 21
 
-This page tells players which mods are recorded in the current test installation and which are client-only. The server log reported 82 loaded mods when bundled/nested mods were counted. The 4 November run reached the normal server `Done` state after discovering/loading the server mod set, loading the test world, and accepting a client login. **That confirms the recorded server configuration passes a startup/load smoke test; it does not confirm that every mod feature works correctly.** Existing installed mods still need targeted feature and integration testing. Client-only mods need a separate client startup/rendering check and are not validated by the dedicated-server log. Versions and contents may change before public beta release.
+This page tells players which mods are recorded in the current test installation and which are client-only. The server log reported 82 loaded mods when bundled/nested mods were counted. The lists below reflect the latest available test snapshot, not a final release manifest. Versions and contents may change before public beta release.
 
 Some entries below are libraries, APIs, or bundled components required by other mods. They are listed for transparency even though they do not add a standalone gameplay feature.
 
@@ -135,8 +135,7 @@ These support other mods and may not appear as separate gameplay features.
 | MezzConfig | 0.6.10 |
 | ModernFix | 5.27.27 |
 | Ponder | 1.0.82 |
-| Bookshelf | 21.1.81 |
-| Prickle | 21.1.11 |
+| Resourceful Lib | 3.0.12 |
 | Sable Companion | 1.6.0 |
 | Veil | 4.3.2 |
 
@@ -155,3 +154,17 @@ See [Mods planned, on hold, and excluded](MOD_PLANS.md) for the difference betwe
 
 - The private project master list also records Create: Sophisticated Exoskeleton 1.0 as a confirmed addition, but it was not present in the latest server log's loaded-mod list used for this snapshot. It is therefore not counted as confirmed active here; the client and server inventories must be reconciled before the public release manifest is finalized.
 - The current server inventory and client-only additions were drawn from different project records. A fresh client manifest and server JAR inventory will be published with the beta release.
+
+
+## Performance baseline and test-only candidates — 4 November 2026
+
+The recorded performance baseline already includes ModernFix 5.27.27 and FerriteCore 7.0.3 in the server inventory. Sodium 0.8.13, Sodium Extra 0.9.5 and Iris 1.8.14-beta.1 are client graphics mods. They are already part of the recorded profile; do not duplicate them with another renderer or memory optimizer.
+
+Botany Pots, Construction Sticks, Lootr, and YUNG's Better End Island + YUNG's API have also been exercised in separate test-server runs. Their appearance in test notes does not make them production-approved or part of a final release manifest. See [MOD_PLANS.md](MOD_PLANS.md) and [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md) for the status and outstanding tests.
+
+New performance and quality-of-life recommendations remain candidates only. They are not installed in the confirmed baseline.
+
+
+## Newer user-supplied mods-folder snapshot — 4 November 2026
+
+A follow-up launcher screenshot explicitly displays `Content (88)` and `Mods (88)`, confirming **88 mods in the current profile**. The earlier manual filename transcription gave 89 visible names; that visual count was one over the launcher-confirmed profile total and must not be treated as the profile count. The screenshot includes client-only graphics files Sodium, Iris and Sodium Extra and is not a replacement for a fresh dedicated-server manifest. The older 79 top-level server JAR / 82 loaded-mod figure is a historical server snapshot and must remain separate.

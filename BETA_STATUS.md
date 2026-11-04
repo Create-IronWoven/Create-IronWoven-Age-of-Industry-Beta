@@ -17,7 +17,7 @@ The pack is undergoing compatibility and dedicated-server testing. This reposito
 - [Mods planned, on hold, or excluded](MOD_PLANS.md)
 - [Testing checklist — mods and what still needs testing](TESTING_CHECKLIST.md)
 
-The testing checklist is the current queue for unfinished gameplay tests, compatibility retests, and research gates. Batch 2A (YUNG's Better End Island 3.1.2 + YUNG's API 5.1.9) has been approved to begin in the separate test environment; exact CurseForge files are verified and user-side file placement is pending. It is not a release approval list. A mod can pass startup and still need feature testing.
+The testing checklist is the current queue for unfinished gameplay tests, compatibility retests, and research gates. Batch 2A (YUNG's Better End Island 3.1.2 + YUNG's API 5.1.9) has passed server mod discovery, startup, client login and clean shutdown. Gameplay testing is blocked because the run loaded `world_lootr_test` rather than `world_yungs_end_test`; the world-scoped IronWoven compatibility datapacks also need to be restored in the disposable test world. It is not a release approval list. A mod can pass startup and still need feature testing.
 
 ## Project direction
 
@@ -67,3 +67,8 @@ No public beta package or release date is confirmed in this status file. A test 
 ## How players can help now
 
 You can report reproducible issues and suggest improvements through the [issue tracker](https://github.com/alexth110987/Create-IronWoven-Beta/issues). Please state clearly which Minecraft, NeoForge, and modpack build you are using.
+
+
+## Batch 2A runtime status — 4 November 2026
+
+YUNG's API 5.1.9 and YUNG's Better End Island 3.1.2 were discovered and loaded on the separate test server. Server startup, client login and clean shutdown passed. The test did **not** reach the End-generation checks because it loaded `world_lootr_test` instead of `world_yungs_end_test`. Restore the custom IronWoven compatibility datapacks in the correct disposable world before the next run. See the [testing checklist](TESTING_CHECKLIST.md) for the next steps. No production changes or approval.

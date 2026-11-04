@@ -106,25 +106,53 @@ Do not assign these messages to Lootr based on the current evidence.
 
 These entries are not in the active test installation. First confirm an exact Minecraft 1.21.1 NeoForge file and all required dependencies on CurseForge. Do not install them until the compatibility review is complete and the project owner approves the test.
 
-### 9. End-generation candidates
+### 9. End-generation candidates — Batch 2 researched 4 November 2026
 
-**YUNG's Better End Island — 3.1.2; YUNG's API required**
-- [ ] Confirm exact CurseForge NeoForge 1.21.1 files and dependency version.
-- [ ] Test alone in a disposable End world.
-- [ ] Check central-island generation, structures, dimension entry/exit, and server/client errors.
+**Status: Exact CurseForge Minecraft 1.21.1 NeoForge files verified; gameplay tests pending. No candidate is installed or approved.** Use separate disposable End worlds, one candidate group at a time.
 
-**BetterEnd: New Dawn — 21.0.36; BCLib: New Dawn, WunderLib: New Dawn, and WorldWeaver: New Dawn required**
-- [ ] Confirm the complete matching CurseForge dependency set.
-- [ ] Test alone in a separate disposable End world.
-- [ ] Check central-island generation, biomes, structures, dimension entry/exit, and compatibility with the existing BYG / Regions Unexplored setup.
+**YUNG's Better End Island 3.1.2**
+- Main file: `YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar` — [CurseForge file 6300968](https://www.curseforge.com/minecraft/mc-mods/yungs-better-end-island-neoforge/files/6300968).
+- Required API: `YungsApi-1.21.1-NeoForge-5.1.9.jar` — [CurseForge file 8894736](https://www.curseforge.com/minecraft/mc-mods/yungs-api-neoforge/files/8894736).
+- Changes the central End island and dragon-fight arena.
+- [ ] Test central island, obsidian pillars, gateways, spawn platform and portal on a fresh disposable world.
+- [ ] Test dragon summon at the bell tower, dragon respawn/crystal placement and return through gateways.
+- [ ] Check server/client logs and save/restart behavior.
 
-Do not combine these two End generators until each has been tested separately and their combined behavior has been reviewed.
+**BetterEnd: New Dawn 21.0.39**
+- Main file: `BetterEnd-21.0.39.jar` — [CurseForge file 9306604](https://www.curseforge.com/minecraft/mc-mods/betterend-neoforge/files/9306604).
+- Required libraries: `bclib-21.0.28.jar`, `WorldWeaver-21.0.30.jar`, `wunderlib-21.0.11.jar`. [BCLib files](https://www.curseforge.com/minecraft/mc-mods/bclib-neoforge/files), [WorldWeaver files](https://www.curseforge.com/minecraft/mc-mods/worldweaver-neoforge/files), [WunderLib file 9172421](https://www.curseforge.com/minecraft/mc-mods/wunderlib-neoforge/files/9172421).
+- Includes a broad End biome, terrain, cave, structure, mob and progression overhaul. Its stated compatibility work includes TerraBlender, Lithostitched, BYG and Regions Unexplored, but the full IronWoven combination has not been tested.
+- [ ] Test this stack alone in a fresh disposable world.
+- [ ] Check End biomes, terrain, caves, structures, resources, new mobs, recipes, blocks and progression.
+- [ ] Test Infusion Pedestals / rituals, Eternal Portals and Respawn Obelisks.
+- [ ] Verify BYG 2.6.3, Regions Unexplored 0.6.3, TerraBlender, Lithostitched and IronWoven datapack compatibility.
+- [ ] Restart and revisit generated areas; inspect chunks, structures, registry and world-generation logs.
 
-**Bigger Better End Cities**
-- [ ] Reconfirm an exact CurseForge Minecraft 1.21.1 NeoForge artifact before considering a test. Do not use a Fabric file.
+**WorldWeaver optional patch warning:** [WorldWeaver Registry Synchronization 1.0.0, CurseForge file 9389941](https://www.curseforge.com/minecraft/mc-mods/worldweaver-registry-synchronization/files/9389941) targets WorldWeaver 21.0.30, Minecraft 1.21.1, NeoForge 21.1.265 and Java 21. It is **not** a required BetterEnd dependency and is not approved for installation. Only evaluate it in a separate test if the described parallel registry-registration race reproduces; it is an independently published compatibility patch.
 
-**Ender Villages**
-- [ ] Confirm whether an exact CurseForge Minecraft 1.21.1 NeoForge file exists. It remains on hold until verified.
+**Bigger Better End Cities 1.0.0**
+- Exact file: `biggerbetterendcities-1.21.1-1.0.0.jar` — [CurseForge file 6461536](https://www.curseforge.com/minecraft/mc-mods/bigger-better-end-cities/files/6461536).
+- Valid NeoForge 1.21.1 file; server environment. The earlier Fabric-only note was incorrect.
+- [ ] Test alone in a fresh disposable End world.
+- [ ] Check city size, branching paths, tower height, bridge lengths, ship frequency and config options.
+- [ ] Check generated structures for overlaps, missing pieces, chunk-boundary issues, shulkers and loot chests.
+
+**Ender Villages 2.0**
+- Exact file: `endervillages-2.0-1.21.1.jar` — [CurseForge file 6741737](https://www.curseforge.com/minecraft/mc-mods/ender-villages/files/6741737).
+- Valid NeoForge 1.21.1 file, uploaded 7 July 2025. The old “file not confirmed” status was incorrect. The project license is All Rights Reserved; obtain through CurseForge and do not mirror the JAR independently.
+- CurseForge does not set a clear client/server environment for this file; verify intended distribution in the disposable test.
+- [ ] Test alone in a fresh disposable End world.
+- [ ] Find several villages; inspect structure generation and overlap with End Cities.
+- [ ] Test End Villagers, professions, trades, breeding, baby villagers and End Cats.
+- [ ] Verify entity/village persistence after save, server restart and client reconnect.
+
+**Recommended test order**
+1. YUNG's Better End Island + YUNG's API.
+2. BetterEnd: New Dawn + its three required libraries.
+3. Bigger Better End Cities alone.
+4. Ender Villages alone.
+
+Do not combine YUNG's Better End Island with BetterEnd: New Dawn in the first test because both alter central End generation. Keep the production world and the current BYG 2.6.3 / Regions Unexplored 0.6.3 setup unchanged. Do not use `/end_island reset` on the production world.
 
 ### 10. Colony ecosystem candidates
 

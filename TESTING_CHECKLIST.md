@@ -6,6 +6,17 @@
 
 This is the living queue of mod features and compatibility checks that still need testing for Create IronWoven. It is separate from the installed-mod inventory and does not approve a mod for the production pack or a public release.
 
+## Recommended work order — 4 November 2026
+
+1. Finish the YUNG's Better End Island 2A test in the intentionally selected disposable `world_lootr_test`; first verify its End-generation state and the IronWoven compatibility datapacks.
+2. Complete the remaining Botany Pots, Construction Sticks and Lootr multiplayer feature checks.
+3. Investigate the outstanding Struts dedicated-server error, PowerGrid optional native backend, and unattributed chunk/world-load messages.
+4. Test BetterEnd: New Dawn, Bigger Better End Cities and Ender Villages separately, after 2A is documented.
+5. Complete the remaining pack validation and clean-install checks before any public beta package.
+
+This is an order of work, not permission to install or approve additional mods. Keep production worlds unchanged.
+
+
 ## Status meanings
 
 - **Gameplay test pending** — the mod loads, but its actual feature has not been checked.

@@ -464,3 +464,22 @@ The maintainer's chosen End direction is an **abandoned industrial world**, not 
 - [ ] Check structures, building materials, loot, mobs and resources against the abandoned-industrial theme before selecting tests.
 - [ ] Test promising candidates individually in fresh disposable End worlds; inspect generation frequency, overlap, chunk borders, loot, client/server behavior and save/restart.
 - [ ] Keep production world and installed inventory unchanged; design preference is not installation approval.
+
+## Superseding End test-profile cleanup — abandoned industrial direction
+
+**This section supersedes the earlier End candidate work order and End-generation test stages above.** The selected direction is a long-abandoned industrial civilisation. The following mods are proposed for removal from the disposable End test profile because their current content does not fit that direction:
+
+- **BetterEnd: New Dawn 21.0.39** — remove from the End test profile; its colourful fantasy-style biomes and natural features conflict with the chosen industrial aesthetic.
+- **YUNG's Better End Island 3.1.2** — remove from the End test profile; its central-island overhaul does not add the abandoned industrial locations being sought.
+- **MES / Moog's End Structures 2.1.1** — remove from the End test profile; its vanilla-styled structures do not meet the industrial-settlement goal.
+
+**Dependency cleanup:** remove Moog's Structure Lib only if no remaining mod requires it. Check whether any other installed YUNG mod still needs YUNG's API before removing that library. Check the remaining consumers of BCLib, WorldWeaver and WunderLib before removing any of BetterEnd's support libraries. Do not remove shared libraries blindly.
+
+Keep **Lootr** and **Ender Ore** in the test setup for now; this theme decision does not establish that either should be removed. **Bigger Better End Cities remains explicitly excluded.**
+
+This is a test-profile recommendation only. It does not authorize changes to the production mod inventory, production server or existing world. Existing generated End chunks will not be retroactively redesigned by removing generation mods; assess the revised direction only in newly generated End terrain in a disposable test world.
+
+- [ ] Remove the three listed End-generation mods from the disposable End test profile, after checking shared-library consumers.
+- [ ] Recheck the CurseForge-only 1.21.1 NeoForge candidate list for genuinely abandoned industrial factories, refineries, mines, railways, cranes, pipelines, laboratories and small settlements before selecting any replacement.
+- [ ] Do not promote fantasy-style or generic vanilla-style End overhauls just to fill the slot. Keep candidates as research-only until their actual structures, materials and compatibility are verified.
+

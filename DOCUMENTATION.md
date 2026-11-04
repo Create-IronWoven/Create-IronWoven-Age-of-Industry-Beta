@@ -26,6 +26,10 @@ This repository is the public, player-facing home for Create IronWoven beta info
 | What problems are currently known? | [KNOWN_ISSUES.md](KNOWN_ISSUES.md) |
 | What stage is the project at? | [BETA_STATUS.md](BETA_STATUS.md) |
 
+## Required language
+
+All maintained documentation and other repository-authored content must remain in **English**, regardless of the language used in conversations with the maintainer. Translate maintainer decisions and technical findings into clear English before recording them here. Preserve official names, identifiers, filenames, commands, and verbatim log/error text when exact wording matters, and explain them in English.
+
 ## Public documentation rules
 
 - Keep this repository player-safe and understandable without access to internal development records.

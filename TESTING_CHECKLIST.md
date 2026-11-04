@@ -1,7 +1,7 @@
 # Testing Checklist — Mods and Compatibility
 
-**Last updated:** 4 November 2026  
-**Target:** Minecraft 1.21.1 / NeoForge 21.1.26. / Java 21  
+**Last updated:** 5 November 2026  
+**Target:** Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21  
 **Mod download source:** CurseForge only
 
 This is the living queue of mod features and compatibility checks that still need testing for Create IronWoven. It is separate from the installed-mod inventory and does not approve a mod for the production pack or a public release.
@@ -19,13 +19,13 @@ Use the [Dimension Mod Guide](DIMENSIONS.md) to group world-generation and explo
 
 ## Recommended work order — 4 November 2026
 
-1. Test Every Compat (Wood Good) as the next maintainer candidate: verify its exact CurseForge 1.21.1 NeoForge file/dependencies, then check Chipped 4.0.2 wood variants, especially BetterEnd Pythadendron.
-2. Hand the remaining BetterEnd 2B gameplay checks to beta testers; keep their feedback separate from the limited maintainer test result.
-3. Complete the remaining Botany Pots, Construction Sticks and Lootr multiplayer feature checks.
-4. Investigate the outstanding Struts dedicated-server error, PowerGrid optional native backend, and unattributed chunk/world-load messages.
-.. Continue variety-focused End candidate research and test Ender Villages separately in a fresh disposable world; Bigger Better End Cities is not selected.
-6. Research Create Big Cannons and the full colony ecosystem as separate candidate groups; do not install either until the dependency and compatibility reviews are complete.
-7. Complete the remaining pack validation and clean-install checks before any public beta package.
+1. Continue Every Compat (Wood Good) validation: check Chipped 4.0.2 variants, recipes, models/textures, drops, duplicate registration and registry-size impact.
+2. Complete the remaining Botany Pots, Construction Sticks and Lootr multiplayer feature checks.
+3. Investigate the outstanding Struts dedicated-server error, PowerGrid optional native backend, and unattributed chunk/world-load messages.
+4. Research Create Big Cannons and the full colony ecosystem as separate candidate groups; do not install either until dependency and compatibility reviews are complete.
+5. Complete the remaining pack validation and clean-install checks before any public beta package.
+
+**End reminder:** End research/testing is paused. Do not resume the historical End checks below unless the maintainer explicitly reopens that workstream.
 
 This is an order of work, not permission to install or approve additional mods. Keep production worlds unchanged.
 
@@ -147,7 +147,7 @@ Do not assign these messages to Lootr based on the current evidence.
 
 These entries are not in the active test installation. First confirm an exact Minecraft 1.21.1 NeoForge file and all required dependencies on CurseForge. Do not install them until the compatibility review is complete and the project owner approves the test.
 
-### 9. End-generation candidates — Batch 2
+### 9. End-generation candidates — Batch 2 (historical; paused)
 
 **2A status: Partial smoke-test pass — gameplay checks still pending.** The 4 November 2026 logs confirm that both JARs were installed in the separate test server, discovered, and listed as loaded mods. The server reached Done, accepted the local player, and shut down cleanly with all dimensions saved. No YUNG-specific dependency or startup failure was found.
 
@@ -521,4 +521,18 @@ This pause does not authorize production mod-list, server, world, BYG 2.6.3, Reg
 - [ ] Leave End research and testing paused unless the maintainer explicitly reopens it.
 
 **Status:** documentation updated, but physical JAR removal is not verified because the GitHub connection cannot access the live Minecraft server/client folders. Do not tick the cleanup complete until the folder listing and startup log have been checked. Keep previous test logs/results as historical evidence.
+
+## End test-profile cleanup — visually verified 5 November 2026
+
+The maintainer supplied two current screenshots: the disposable dedicated server's `MinecraftServer-Test/mods` folder and the CurseForge client instance's `Create World/mods` folder. I reviewed the visible filenames in both. No End-specific content/generation JARs are visible: BetterEnd, YUNG's Better End Island, Ender Ore, Ender Villages, Better End Cities Better End, MES / Moog's End Structures and Bigger Better End Cities are absent. End-only support libraries (YUNG's API, BCLib, WorldWeaver, WunderLib and Moog's Structure Lib) are also not visible. Lootr remains, correctly, as a general-purpose mod.
+
+- [x] Inspect the current dedicated test server mods folder screenshot.
+- [x] Inspect the current CurseForge client mods folder screenshot.
+- [x] Verify visually that no End-specific content/generation JARs are visible in either screenshot.
+- [x] Verify visually that the known End-only support libraries are not visible.
+- [x] Keep Lootr; it is general-purpose and not an End overhaul.
+- [x] Keep the End workstream paused; do not restart searches, installations or tests without explicit maintainer instruction.
+- [ ] Obtain a fresh startup log if a log-level audit is required; screenshot evidence alone is not a runtime scan.
+
+**Status:** cleanup visually verified from both supplied folder screenshots. Historical End tests and candidates remain recorded above for audit only. Create Aeronautics Structures remains a planned Overworld addition and is not visible as installed in these screenshots.
 

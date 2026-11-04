@@ -11,7 +11,7 @@ Create IronWoven will be distributed exclusively through CurseForge. GitHub is u
 
 - CurseForge-hosted mods must be selected through the CurseForge App and referenced by its generated `manifest.json`.
 - Do not manually place CurseForge-hosted mod JARs in `overrides/mods`.
-- Mods not hosted on CurseForge may only be included if they appear on CurseForge's approved Non-CurseForge Mods list and meet its published conditions.
+- Only mods with an official CurseForge project/file are eligible. If no suitable CurseForge file exists, mark the mod Not eligible and exclude it. No external source or exception route is permitted.
 - Export the App-generated ZIP with `manifest.json` and pack-owned files in `overrides/`. Do not manually edit the manifest.
 - A mod's presence in a development/test profile does not automatically clear it for public release.
 
@@ -37,7 +37,7 @@ Candidates remain separate from installed mods and are not approved by appearing
 1. Export the latest client profile from the CurseForge App.
 2. Reconcile every manifest project/file ID and every current server JAR.
 3. Verify exact Minecraft 1.21.1 NeoForge files, dependencies, current approval, project licences, and project-specific restrictions.
-4. Check every non-CurseForge item against CurseForge's approved list; otherwise exclude it.
+4. Confirm that every mod has an official CurseForge project/file; exclude any mod without one.
 5. Perform a clean CurseForge export/import test.
 
 **Current decision: not ready for CurseForge submission.** No mod has been installed, removed, updated, or approved by this audit.
@@ -63,7 +63,7 @@ The audit is being performed against the **entire** current inventory and potent
 - Dynamic Trees — Regions Unexplored 1.1.2 is available for 1.21.1 NeoForge; the base Dynamic Trees file still needs its own verification.
 - ImmediatelyFast 1.6.15 is available for 1.21.1 NeoForge and is client-only. Flerovium is also identified as client-only and requires Sodium.
 
-CurseForge-hosted mods, including those with custom or restrictive project licences, must be referenced through the App-generated manifest. Do not manually bundle their JARs in `overrides/mods`. Third-party mods not hosted on CurseForge require approved-list status.
+CurseForge-hosted mods, including those with custom or restrictive project licences, must be referenced through the App-generated manifest. Do not manually bundle their JARs in `overrides/mods`. No mods hosted outside CurseForge will be considered or included.
 
 **This is partial source/file verification, not a completed clearance of every entry.** Remaining installed mods and candidates still need exact project/file, dependency, loader, side, and source reconciliation. No candidates have been installed or approved.
 
@@ -75,7 +75,7 @@ Every mod already recorded in the installed/test inventory and every candidate i
 For each distinct project, the private development audit records its official project page, CurseForge-hosted status, exact 1.21.1 NeoForge file and current availability, licence and explicit project restrictions, dependencies, client/server metadata, source links, and review date.
 
 - CurseForge-hosted mods are selected through the CurseForge App and its generated manifest. Their JARs must not be manually bundled in `overrides/mods`.
-- Mods not hosted on CurseForge must appear on the current approved Non-CurseForge Mods list. A personal permission alone does not replace CurseForge approval.
+- Mods without an official CurseForge project/file are not eligible and must be excluded. No external downloads or developer-provided JARs are accepted.
 - A custom or All Rights Reserved licence label alone is not treated as proof that a CurseForge manifest reference is prohibited; explicit terms are reviewed separately.
 - A source/permission pass does not mean a mod is compatible, tested, selected, or approved for installation.
 - Unknown or ambiguous items remain on hold. Current file availability and approval are rechecked before each release export.

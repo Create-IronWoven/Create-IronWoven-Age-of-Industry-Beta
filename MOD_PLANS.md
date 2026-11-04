@@ -147,16 +147,28 @@ The performance candidate register is maintained once, in the side-separated sec
 
 Do not use older duplicate performance tables or version notes as a separate source of truth. In particular, the current Entity Culling candidate in the side-separated register is **1.10.4 for NeoForge 1.21.1**. All performance entries remain potential candidates only; no installation or production approval is implied.
 
-## Quality-of-life candidates — 4 November 2026
+## Quality-of-life candidates — compared with the current inventory (4 November 2026)
 
-| Candidate | Exact 1.21.1 NeoForge file/version | Benefit | Notes |
-|---|---|---|---|
-| Just Enough Resources (JER) | 1.6.0.57, file 9311693 | Adds mob drops, ore generation and resource information to the existing JEI interface | Strong companion to already-installed JEI. |
-| Shulker Box Tooltip | 5.1.9+1.21.1 | Shows shulker/container contents in tooltips | Small inventory QoL addition. |
-| Enchantment Descriptions | 21.1.11 NeoForge 1.21.1 | Explains enchantments in tooltips | Requires Bookshelf. Bookshelf 21.1.81 loaded in the Botany Pots test group but is not confirmed in the main baseline. |
-| Nature's Compass | 3.4.0 NeoForge 1.21.1 | Finds biomes | Useful with BYG and Regions Unexplored; decide whether its search ability fits exploration balance. |
-| Explorer's Compass | 3.4.0 NeoForge 1.21.1 | Finds structures | Useful with modded structures, but can reduce exploration challenge. |
-| Waystones | 21.1.46 NeoForge 1.21.1 | Player travel between placed waystones and scrolls | Requires compatible Balm. Optional; tune costs, visibility and cooldowns to suit multiplayer balance. |
+**Target:** Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21. These six candidates came from the user's 4 November shortlist. All remain potential additions only; none are installed or approved.
+
+| Candidate | Candidate file/version | Existing IronWoven overlap | Compatibility / placement | Assessment |
+|---|---|---|---|---|
+| Just Enough Resources (JER) | 1.6.0.57; CurseForge file 9311693 | JEI 19.64.0.455 is already installed. | Client-side JEI addon; matching NeoForge 1.21.1 release exists. | **High-value complement, not a duplicate.** Adds mob drops, dungeon loot, villager trades, plant/seed drops and ore/worldgen information inside JEI. Check BYG/RU coverage and custom loot tables. |
+| Shulker Box Tooltip | 5.1.9+1.21.1; CurseForge file 7768285 | Sophisticated Backpacks 3.26.19 and its Create integration are installed, but they do not provide the same shulker-box preview feature. | Client & server supported; NeoForge 1.21.1 release verified. Test on matching client/server profile and inspect container previews. | **Good low-risk QoL candidate.** Adds previews for shulker boxes and supported container items; functionally distinct from backpack management. |
+| Enchantment Descriptions | 21.1.11; CurseForge file 8693034 | No equivalent enchantment-tooltip mod appears in the current inventory. Bookshelf 21.1.81 and Prickle 21.1.11 loaded in the Botany Pots test group, but are not listed in the current MODS.md baseline. | NeoForge 1.21.1 release verified. Required dependencies: Bookshelf and Prickle; confirm exact versions/files and ensure both are in the actual client profile before test. | **Useful, dependency-gated.** No feature duplicate found. Do not count test-profile libraries as installed in the main profile. |
+| Nature's Compass | 3.4.0; CurseForge file 7892954 | BYG 2.6.3, Regions Unexplored 0.6.3 and TerraBlender 4.1.0.8 provide biomes, not a compass search tool. No biome locator is listed. | Client & server release verified for NeoForge 1.21.1. | **Good exploration QoL candidate.** Searches for biomes, including modded biomes where registered for locator selection. Test BYG/RU biome visibility and consider XP/durability settings to preserve exploration. |
+| Explorer's Compass | 3.4.0; CurseForge file 7892943 | Existing End/structure mods add structures, while FTB Chunks provides claims/map functionality; neither is a structure-search compass. | Client & server release verified for NeoForge 1.21.1. | **Useful but balance-sensitive.** Searches for registered structures. Test modded structure discovery, locator tags and whether it trivializes exploration or loot progression. |
+| Waystones | 21.1.46; NeoForge 1.21.1 release verified on CurseForge | AeroPortals 1.3.6 is already installed and is the closest possible travel-system overlap. The current inventory does not document AeroPortals' exact travel behavior/configuration, so a true duplicate/conflict is not established. | Client & server; requires compatible Balm. Confirm exact Balm NeoForge 1.21.1 file and check whether Balm is already present in the full JAR inventory before adding. | **Conditional / compare before selecting.** Offers player-built waystone networks, warp scrolls and configurable teleport rules. Test side-by-side with AeroPortals only in a disposable world; if AeroPortals already covers player-to-player/base teleport well, Waystones may be unnecessary. |
+
+### Compatibility and decision notes
+
+- The verified target releases exist for Minecraft 1.21.1 NeoForge. This is file/version compatibility evidence, not proof of conflict-free gameplay with every Create IronWoven mod.
+- JER is a JEI addon, not a JEI replacement. It is the strongest direct fit with the current interface setup.
+- Shulker Box Tooltip complements Sophisticated Backpacks; it does not replace backpacks or their Create integration.
+- Enchantment Descriptions must not be treated as dependency-complete until Bookshelf and Prickle are confirmed in the main client profile. They were seen in a separate Botany Pots test group.
+- Nature's Compass and Explorer's Compass solve different searches (biomes vs structures). Neither duplicates BYG/RU or FTB Chunks.
+- Waystones needs a focused AeroPortals comparison and a Balm inventory check before any install decision.
+- Keep all six in the potential list until individually reviewed. CurseForge remains the only approved download source. Do not install anything or alter the production world as part of this documentation update.
 
 ### Existing QoL — no duplicate needed by default
 

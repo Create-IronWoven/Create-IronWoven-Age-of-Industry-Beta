@@ -3,7 +3,7 @@
 **Target:** Minecraft 1.21.1 · NeoForge 21.1.265  
 **Mod download source:** CurseForge only
 
-The mod project is now organised into three dimension areas so that world-generation and exploration additions can be researched and tested separately.
+The mod project is organised into three dimension areas so that world-generation and exploration additions can be researched and tested separately.
 
 This page is a navigation guide, not a second mod inventory. The installed/test inventory stays in [MODS.md](MODS.md), candidate status stays in [MOD_PLANS.md](MOD_PLANS.md), and unfinished work stays in [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md).
 
@@ -13,7 +13,7 @@ This page is a navigation guide, not a second mod inventory. The installed/test 
 
 The recorded world-generation baseline includes BYG 2.6.3 and Regions Unexplored 0.6.3, with their supporting world-generation components. The production world and its current world-generation setup are to remain unchanged during candidate research.
 
-New Overworld candidates will be listed in [MOD_PLANS.md](MOD_PLANS.md) and tested separately in disposable worlds.
+New Overworld candidates will be listed in [MOD_PLANS.md](MOD_PLANS.md) and tested separately in disposable worlds. **Create Aeronautics Structures is selected as a planned Overworld addition**, subject to exact file/dependency verification and disposable-world testing. It is not an End mod.
 
 ## Nether
 
@@ -23,11 +23,18 @@ Nether-specific additions will have their own research and test grouping. No Net
 
 ## End
 
-**Coverage:** End islands and biomes, central island, outer-island structures, End Cities and ships, mobs, bosses, ores/resources, loot, and progression.
+<badge>PAUSED</badge>
 
-The current End research includes the BetterEnd and YUNG's Better End Island lines, plus separate End structure candidates. Their exact versions, dependencies, test results, and outstanding checks are recorded in [MOD_PLANS.md](MOD_PLANS.md) and [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md).
+**Status:** End mod research and testing are paused by maintainer.
 
-The recorded BetterEnd ship/Lootr limitation remains documented: normal End City chests and ships worked in the maintainer's test, while BetterEnd-generated ships did not. This is a known partial compatibility result, not a general conclusion about all End containers.
+**Reason:** No suitable CurseForge-only Minecraft 1.21.1 / NeoForge mod has been found that delivers the desired Create-style, abandoned-industrial End. The available candidates researched so far do not meet that goal.
+
+The future design concept is saved: an abandoned industrial civilisation with derelict factories, refineries, mines, industrial settlements, broken railways, cargo infrastructure and Create-inspired engineering. This is a future direction only, not an active search or test queue.
+
+- Do not continue End-mod searches, shortlist additions, installations or tests unless the maintainer explicitly reopens this workstream.
+- Previously recorded End candidates are historical research only; none is approved by this pause.
+- Existing End compatibility notes, including the partial BetterEnd ship/Lootr limitation, remain historical records and are not active testing tasks.
+- This pause does not authorize changes to the installed inventory, production server/world or world-generation settings.
 
 ## Shared / multi-dimension
 
@@ -35,8 +42,8 @@ Mods that intentionally affect multiple dimensions are recorded once as shared/m
 
 ## Organisation rules
 
-- Keep Overworld, Nether, and End research and test worlds separate.
-- Test each dimension-generation candidate alone in a fresh disposable world before testing combinations.
+- Keep Overworld, Nether, and End records separate.
+- Test active dimension-generation candidates in fresh disposable worlds.
 - Do not duplicate a mod's status across dimension pages.
 - Keep candidate, installed/test, partial-pass, on-hold, and excluded statuses distinct.
 - A startup pass does not prove gameplay features or compatibility.

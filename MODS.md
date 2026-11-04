@@ -1,6 +1,6 @@
 # Mods in Create IronWoven
 
-**Inventory snapshot:** 4 November 2026  
+**Inventory snapshot:** 5 November 2026 (latest folder screenshots reviewed)  
 **Minecraft:** 1.21.1  
 **Loader:** NeoForge 21.1.265  
 **Java:** 21

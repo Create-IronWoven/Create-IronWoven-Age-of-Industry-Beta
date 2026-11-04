@@ -89,3 +89,12 @@ The current recorded baseline already has ModernFix and FerriteCore, plus client
 ## Current mods-folder count reconciliation — 4 November 2026
 
 A follow-up launcher screenshot explicitly displays `Content (88)` and `Mods (88)`, confirming **88 mods in the current profile**. The earlier manual visual filename count of 89 was one over the launcher-confirmed profile total. This is not a fresh dedicated-server manifest; the earlier 79 top-level JAR / 82 loaded-entry figures belong to a historical server snapshot. See [MODS.md](MODS.md) for the distinction. Create Big Cannons/Ritchie's Projectile Library and all colony ecosystem candidates remain not installed.
+
+
+## Expanded performance / Voxy / Tectonic findings — 4 November 2026
+
+The current client profile count is **88 including client-side mods**, confirmed by the launcher. Existing performance baseline remains ModernFix/FerriteCore plus client Sodium/Sodium Extra/Iris. Newly researched 1.21.1 candidates and test requirements are recorded in [MOD_PLANS.md](MOD_PLANS.md) and [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md). Nothing has been installed or approved.
+
+Tectonic v3.0.28 has an official NeoForge 1.21.1 CurseForge file and its project documents support for Regions Unexplored and BWG/BYG through biome injection libraries. It remains disposable-world-only because it changes terrain generation and IronWoven has custom worldgen JSON and an existing world.
+
+Voxy is technically loadable experimentally through CurseForge-hosted Roxy 0.4.1, but Roxy needs a separate original Voxy JAR; the currently documented verified Voxy build is Fabric 1.21.11, not a matching CurseForge 1.21.1 artifact. Therefore it is blocked by our CurseForge-only policy. Distant Horizons 3.3.3 is a CurseForge-only 1.21.1 NeoForge LOD alternative; Aeronautics sublevel rendering may need SSRD, for which no CurseForge source has been verified.

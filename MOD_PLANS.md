@@ -233,3 +233,35 @@ Maintainer confirms the world works with the complete mod set shown in the lates
 The maintainer's preferred End identity is an **abandoned industrial world**, rather than a strongly magical/fantasy dimension. Future End candidates should be assessed for derelict factories, refineries, mines, industrial outposts, abandoned small settlements, broken railways, cargo bridges, cranes, pipes, gears, turbines, laboratories and large industrial complexes. Prefer weathered metal, copper, brass and dark stone, with desolate landscapes and restrained End colours. Create-style engineering is the visual inspiration; functional Create machinery is not required.
 
 This is a design preference, not a claim that any installed or shortlisted mod already adds these features. MES is a structure-variety candidate, not a confirmed town mod. Town/settlement generation remains a separate research need. No installation, approval or production-world change is implied.
+
+## Superseding End direction — abandoned industrial civilisation (4 November 2026)
+
+The maintainer has now chosen a firm visual/gameplay direction: the End should become the remains of a long-abandoned industrial civilisation, not a colourful fantasy biome overhaul or a collection of generic vanilla-style structures. Create-style engineering is the visual reference.
+
+### Remove from the End test setup (proposed cleanup; not production approval)
+
+The latest uploaded server log latest(20261104-225334).log confirms these End-generation mods are currently loaded:
+
+| Mod | Current recorded version | Action | Reason |
+|---|---:|---|---|
+| BetterEnd: New Dawn | 21.0.39 | Remove from the End test profile | Its colourful fantasy biomes, plants and natural features do not match the selected abandoned-industrial aesthetic. |
+| YUNG's Better End Island | 3.1.2 | Remove from the End test profile | Central-island overhaul is not an industrial-world feature and is not needed for the new direction. |
+| MES / Moog's End Structures | 2.1.1 | Remove from the End test profile | Vanilla-styled generic End structures do not meet the industrial-ruin/factory target. The dependency now loads successfully, but this does not make MES thematically suitable. |
+
+### Dependency cleanup — check before deleting
+
+- Moog's Structure Lib 1.1.0 (moogs_structures) was added solely to satisfy MES in the recorded test. Remove it together with MES only after confirming no other installed mod requires it.
+- BetterEnd's BCLib 21.0.28 and related BetterEnd support libraries were part of its stack. Remove a library only after checking the full current dependency graph; do not delete shared libraries blindly.
+- YUNG's API 5.1.9 may be shared by other YUNG mods. Remove it only if no remaining installed mod requires it.
+- Do not remove Lootr, Ender Ore or general-purpose libraries based on this aesthetic decision alone; they are not End terrain/structure overhauls in the evidence reviewed.
+
+### Keep separate from the removal decision
+
+- The user has not asked to delete the existing world or change the production server. Existing generated chunks cannot be visually transformed simply by removing mods.
+- This is a proposed cleanup for the disposable/current test profile. Do not alter the authoritative installed inventory (MODS.md), production world, BYG 2.6.3, Regions Unexplored 0.6.3 or world-generation JSON without explicit approval.
+- The Beyond, Isleweaver, Stellarity, Unusual End, Extended End, End Beyond, Ender Villages and other earlier fantasy/vanilla-style candidates are not automatically suitable. Reassess or pause them against the industrial theme; do not carry them forward just because they were previously shortlisted.
+- Current research has not verified a CurseForge 1.21.1 NeoForge mod that directly supplies abandoned industrial End factories or towns. Do not claim one exists until exact files and feature evidence are found.
+
+### New research priority
+
+Find CurseForge-only Minecraft 1.21.1 NeoForge content that actually generates derelict factories, mining/processing facilities, industrial outposts, abandoned settlements, cargo infrastructure, cranes, pipes, machinery and weathered metal structures in the End. If no End-specific option exists, investigate whether structure datapacks or configurable structure-generation tools can achieve this without introducing an unrelated fantasy overhaul. Record exact files, dependencies, licensing, dimension placement and actual structure previews before adding anything to the test queue.

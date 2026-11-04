@@ -99,3 +99,16 @@ The earlier “Bigger Better End Cities is Fabric-only” and “Ender Villages 
 A separate optional WorldWeaver Registry Synchronization 1.0.0 patch exists for WorldWeaver 21.0.30 / NeoForge 21.1.265 / Java 21. This is not a required dependency and is not approved for install; evaluate only if the exact race reproduces.
 
 All four remain candidates, not installed or approved additions. Use one candidate group per fresh disposable End world, then test combinations only after separate tests pass. Preserve production world and existing BYG / Regions Unexplored generation.
+
+
+## End City / End Village replacement research — 4 November 2026
+
+Target: Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21. CurseForge files only. These are research candidates, not installed or approved mods.
+
+| Mod / role | Review status | Notes |
+|---|---|---|
+| Better End Cities Better End | Alternative candidate — test pending | CurseForge file 8105176, `BetterEndCities-Raijin-structure-1.21.1.jar`; exact NeoForge 1.21.1 server file. Creates more intricate End Cities and richer BetterEnd-themed loot. Closest visual/loot alternative to Bigger Better End Cities, but does not reproduce its giant city scale / long-bridge / multi-ship controls. Compatibility with BetterEnd: New Dawn 21.0.39 is not yet proven. [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/better-end-cities-better-end/files/8105176). |
+| MES — Moog's End Structures | Alternative / supplement candidate — test pending | CurseForge file 6918257, `mes-1.4.6-1.21.jar`; NeoForge 1.21.1 server-side. Adds seven mega-ship structures and loot tables, but does not overhaul End Cities. [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures/files/6918257). |
+| Ender Villages | Retain original candidate — test pending | Exact NeoForge 1.21.1 file 6741737 remains the closest match for End villages with custom villagers, professions, trades and breeding. No verified equivalent replacement with that full feature set was found. Project license is All Rights Reserved. [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/ender-villages/files/6741737). |
+
+**Recommendation:** Keep Bigger Better End Cities as the candidate if giant city size / bridges / ships are essential; test Better End Cities Better End first if intricate city designs and loot are the priority. Keep Ender Villages because no full-featured equivalent was verified. Test each structure mod alone in a fresh disposable world. Preserve the production world and current BYG / Regions Unexplored setup. No installation or approval is authorized.

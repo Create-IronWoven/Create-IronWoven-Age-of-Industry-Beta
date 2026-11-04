@@ -227,3 +227,9 @@ Continue checking recipes, JEI, models/textures, drops, more modded wood types, 
 ### Full mod-list world test — 4 November 2026
 
 Maintainer confirms the world works with the complete mod set shown in the latest test-installation screenshot, including Every Compat 2.11.56 + Moonlight 3.8.1, Chipped, BetterEnd and YUNG's Better End Island alongside the wider Create/Aeronautics pack. This is a user-confirmed pack-level world-playability result. It does not mean every mod feature/integration is fully tested or grant production approval. Every Compat remains a partial pass while recipe/JEI/visual/drop checks, the duplicate Golden Cherry registration, registry-size impact, Pythadendron and save/restart/client-server checks remain open.
+
+## End design direction — abandoned industrial world (4 November 2026)
+
+The maintainer's preferred End identity is an **abandoned industrial world**, rather than a strongly magical/fantasy dimension. Future End candidates should be assessed for derelict factories, refineries, mines, industrial outposts, abandoned small settlements, broken railways, cargo bridges, cranes, pipes, gears, turbines, laboratories and large industrial complexes. Prefer weathered metal, copper, brass and dark stone, with desolate landscapes and restrained End colours. Create-style engineering is the visual inspiration; functional Create machinery is not required.
+
+This is a design preference, not a claim that any installed or shortlisted mod already adds these features. MES is a structure-variety candidate, not a confirmed town mod. Town/settlement generation remains a separate research need. No installation, approval or production-world change is implied.

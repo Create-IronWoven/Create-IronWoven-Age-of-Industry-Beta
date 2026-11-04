@@ -1,6 +1,6 @@
 # Create IronWoven — Beta Status
 
-**Last updated:** 4 November 2026  
+**Last updated:** 5 November 2026  
 **Minecraft:** 1.21.1  
 **Loader:** NeoForge 21.1.265  
 **Java:** 21
@@ -48,6 +48,7 @@ These are maintainer-side smoke-test results, not a guarantee that every feature
 
 - **Botany Pots 21.1.44:** loaded with Bookshelf 21.1.81 and Prickle 21.1.11; one Botany Pots plugin initialized and 14,444 recipes parsed without parser failures. Basic features and the Herbs & Harvest integration are expected to be testable. Planting, growth and harvesting still need in-game validation; 47 optional integration recipes remain suppressed by `neoforge:false` until a conditional `botanypots` test is completed in a disposable copy.
 - **Construction Sticks 1.5.0:** startup passed; placement with modded blocks and FTB Chunks claim protections still needs testing.
+- **Curios add-on test group:** Create: Curios Backtank 1.0.2 and More Curios Slots 1.4 were downloaded and installed for testing on 5 November. Dedicated-server/client smoke-test results are pending; neither is approved for release.
 - **Lootr 1.11.38.127:** the player confirmed opening a chest and finding loot; a second-player independent-loot test remains.
 - **Struts 1.3.1:** dedicated-server attempt to load client-only `RenderSystem` remains under investigation.
 - **PowerGrid 0.6.2:** optional `powergridNative7` accelerated solver did not load in the tested Windows server environment; fallback behavior and native-library availability need review.

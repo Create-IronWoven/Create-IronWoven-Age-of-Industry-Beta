@@ -177,3 +177,9 @@ Remove any present End-specific content JARs from the disposable test server and
 
 **Physical cleanup is not verified by this repository snapshot.** The GitHub connection cannot inspect or delete files in the live server/client mods folders. A fresh folder listing and clean startup log are still required before this page can claim the physical test setup is clear. Historical test evidence above is retained for accuracy.
 
+## End test-profile cleanup — visually verified 5 November 2026
+
+The maintainer supplied current screenshots of the dedicated test server's `MinecraftServer-Test/mods` folder and the CurseForge client instance's `Create World/mods` folder. No End-specific content/generation JARs are visible in either folder. Specifically, BetterEnd, YUNG's Better End Island, Ender Ore, Ender Villages, Better End Cities Better End, MES / Moog's End Structures and Bigger Better End Cities are absent. End-only support libraries (YUNG's API, BCLib, WorldWeaver, WunderLib and Moog's Structure Lib) are also not visible. The general-purpose Lootr mod remains and is not an End overhaul.
+
+**Cleanup status: visually verified from the two supplied screenshots.** This is not a live filesystem scan or fresh startup-log verification. Historic End test runs remain recorded above for transparency; they do not describe the current folders. Create Aeronautics Structures is still only a planned Overworld addition and is not visible as installed in these screenshots.
+

@@ -175,7 +175,7 @@ The maintainer has paused End development and instructed that **all End-specific
 
 Remove any present End-specific content JARs from the disposable test server and matching client, including YUNG's Better End Island, BetterEnd: New Dawn, Ender Ore, Ender Villages, Better End Cities Better End, MES / Moog's End Structures, and any other End-only content. Bigger Better End Cities is excluded and must also be removed if present in the test folders. Keep all other End candidates out. Remove support libraries only if no remaining mod depends on them. Lootr is general-purpose and is not included in this End-mod removal instruction.
 
-**Physical cleanup is not verified by this repository snapshot.** The GitHub connection cannot inspect or delete files in the live server/client mods folders. A fresh folder listing and clean startup log are still required before this page can claim the physical test setup is clear. Historical test evidence above is retained for accuracy.
+**Initial status at the time this note was written:** physical cleanup had not yet been verified. This was superseded by the later screenshots from both the dedicated test server and the CurseForge client folders; see the visually verified section below. Historical test evidence is retained for accuracy.
 
 ## End test-profile cleanup — visually verified 5 November 2026
 

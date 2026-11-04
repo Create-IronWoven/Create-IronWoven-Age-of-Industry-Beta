@@ -290,7 +290,7 @@ The maintainer has paused End-mod research and testing for now. No suitable Curs
 The maintainer has explicitly instructed that all End-specific mods be removed from the active disposable test setup while End development is paused. This supersedes the previous instruction to keep Ender Ore in the test setup.
 
 - Remove any present End-only content JARs from the disposable test server and matching client: YUNG's Better End Island, BetterEnd: New Dawn, Ender Ore, Ender Villages, Better End Cities Better End, MES / Moog's End Structures, and any other End-only generation/content mods.
-- Bigger Better End Cities remains excluded. The Beyond, Isleweaver, Stellarity, Unusual End, Extended End, End Beyond and other uninstalled candidates must stay out.
+- Bigger Better End Cities is excluded and must also be removed if present in the test folders. The Beyond, Isleweaver, Stellarity, Unusual End, Extended End, End Beyond and other uninstalled candidates must stay out.
 - Remove libraries used only by removed End mods only after checking the dependency graph; keep shared libraries. Lootr is general-purpose and is not included in this End-specific removal instruction.
 - End research and testing remain paused until the maintainer explicitly reopens the workstream.
 

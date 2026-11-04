@@ -1,7 +1,7 @@
 # Testing Checklist — Mods and Compatibility
 
 **Last updated:** 4 November 2026  
-**Target:** Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21  
+**Target:** Minecraft 1.21.1 / NeoForge 21.1.26. / Java 21  
 **Mod download source:** CurseForge only
 
 This is the living queue of mod features and compatibility checks that still need testing for Create IronWoven. It is separate from the installed-mod inventory and does not approve a mod for the production pack or a public release.
@@ -23,7 +23,7 @@ Use the [Dimension Mod Guide](DIMENSIONS.md) to group world-generation and explo
 2. Hand the remaining BetterEnd 2B gameplay checks to beta testers; keep their feedback separate from the limited maintainer test result.
 3. Complete the remaining Botany Pots, Construction Sticks and Lootr multiplayer feature checks.
 4. Investigate the outstanding Struts dedicated-server error, PowerGrid optional native backend, and unattributed chunk/world-load messages.
-5. Continue the other End candidate tests (Bigger Better End Cities and Ender Villages) separately in fresh disposable worlds.
+.. Continue the other End candidate tests (Bigger Better End Cities and Ender Villages) separately in fresh disposable worlds.
 6. Research Create Big Cannons and the full colony ecosystem as separate candidate groups; do not install either until the dependency and compatibility reviews are complete.
 7. Complete the remaining pack validation and clean-install checks before any public beta package.
 
@@ -439,3 +439,24 @@ Maintainer confirms that the world works with the complete mod set shown in the 
 - [ ] Continue Every Compat checks: recipes/JEI, textures/models, drops and additional wood types.
 - [ ] Investigate duplicate Golden Cherry leaves registration and the 9,480-block / 36.22% registry-size warning.
 - [ ] Confirm client/server consistency and save/restart; isolate Pythadendron separately.
+
+
+## Active End test — Batch 2C: Bigger Better End Cities
+
+**Status: Selected for isolated test; not yet installed or runtime-tested.** Exact CurseForge file: `biggerbetterendcities-1.21.1-1.0.0.jar` (file 6461536), Minecraft 1.21.1 / NeoForge. CurseForge identifies it as server-side and lists no required dependencies on the file page.
+
+**Test setup**
+- [ ] Make a disposable copy of the test installation; do not touch the production server or production world.
+- [ ] Create a fresh world named `world_end_city_2c` so all End City generation occurs in new chunks.
+- [ ] For this isolated first pass, disable BetterEnd: New Dawn and YUNG's Better End Island in this disposable profile. Leave unrelated baseline mods unchanged.
+- [ ] Add only Bigger Better End Cities 1.0.0 to the dedicated test server. It is marked server-side; do not add its JAR to the client unless the official file metadata changes.
+- [ ] Start server, confirm `Done`, load the fresh world, join with the matching client, and review startup/login logs.
+
+**Structure checks**
+- [ ] Enter the End and generate new outer-island chunks.
+- [ ] Inspect city scale, branching, tower height, bridges and ship placement.
+- [ ] Check loot containers and whether loot tables load without errors.
+- [ ] Record structure frequency, overlap, chunk-boundary cutoffs and any generation collisions.
+- [ ] Save, stop cleanly, restart and revisit generated areas to confirm persistence.
+
+**Result rules:** record startup, login, structure generation and loot/log findings separately. Existing End chunks do not count as a generation test. This selection is not production approval. Keep production world and BYG 2.6.3 / Regions Unexplored 0.6.3 world-generation setup unchanged.

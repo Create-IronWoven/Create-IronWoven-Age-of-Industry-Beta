@@ -129,7 +129,6 @@ These mods are not wanted for Create IronWoven and must not be reintroduced as c
 - Carry On
 - Easy Villagers
 - Immersive Paintings
-- Just Create SMP Pops
 
 ## Test and approval safeguards
 

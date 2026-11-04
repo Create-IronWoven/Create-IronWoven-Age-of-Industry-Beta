@@ -5,7 +5,7 @@
 **Loader:** NeoForge 21.1.265  
 **Java:** 21
 
-This page tells players which mods are recorded in the current test installation and which are client-only. The server log reported 82 loaded mods when bundled/nested mods were counted. The lists below reflect the latest available test snapshot, not a final release manifest. Versions and contents may change before public beta release.
+This page tells players which mods are recorded in the current test installation and which are client-only. The server log reported 82 loaded mods when bundled/nested mods were counted. The 4 November run reached the normal server `Done` state after discovering/loading the server mod set, loading the test world, and accepting a client login. **That confirms the recorded server configuration passes a startup/load smoke test; it does not confirm that every mod feature works correctly.** Existing installed mods still need targeted feature and integration testing. Client-only mods need a separate client startup/rendering check and are not validated by the dedicated-server log. Versions and contents may change before public beta release.
 
 Some entries below are libraries, APIs, or bundled components required by other mods. They are listed for transparency even though they do not add a standalone gameplay feature.
 

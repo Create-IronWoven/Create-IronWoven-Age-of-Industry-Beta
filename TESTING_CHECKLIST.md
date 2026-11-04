@@ -33,6 +33,7 @@ This is an order of work, not permission to install or approve additional mods. 
 ## Status meanings
 
 - **Gameplay test pending** — the mod loads, but its actual feature has not been checked.
+- **Testing** — installed in the test setup; smoke-test evidence is still pending.
 - **Partial pass** — the specific test described as passed is confirmed; other behavior remains untested.
 - **Retest needed** — a known fix must be checked in a correctly prepared disposable world.
 - **Research gate** — verify the exact CurseForge NeoForge file and dependency chain before installing anything.
@@ -52,6 +53,24 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 **Known startup exceptions that remain open:** Struts 1.3.1 attempts to load client-only `RenderSystem` on the dedicated server; Create: Power Grid 0.6.2 cannot load its optional `powergridNative7` accelerated solver in the tested Windows environment. Neither prevented the 4 November server startup, but both require follow-up.
 
 ## Active tests
+
+### Curios add-on test group — 5 November 2026
+
+**Status: TESTING — installed in the test setup; smoke-test evidence pending.** The maintainer reports installing both 1.21.1 NeoForge client/server candidates. This is a separate add-on test group, not Batch 7 and not production approval.
+
+| Mod | Exact CurseForge file | Required baseline |
+|---|---|---|
+| Create: Curios Backtank | Version 1.0.2 · file 9207977 | Create 6.0.10 and Curios API 9.5.1 |
+| More Curios Slots | Version 1.4 · file 8170156 | Curios API 9.5.1 |
+
+- [ ] Confirm the matching exact-version JAR for each add-on is present in both the test client and dedicated test server; keep client and server versions matched.
+- [ ] Start the dedicated test server and confirm it reaches `Done` without missing dependencies, mod-file rejection, registry failures, or new Curios-related errors.
+- [ ] Load the disposable test world and confirm the world completes loading.
+- [ ] Join using the matching CurseForge client and confirm login succeeds.
+- [ ] Shut the server down cleanly and review the new server `latest.log` and client log for Curios, Backtank, slot-registration, rendering, and mixin errors.
+- [ ] Record the outcome for each add-on separately as passed, partial, or failed for the smoke-test scope.
+
+A successful smoke test proves loading, world load, client login, and log status only. It does not by itself prove that the Backtank works when equipped in a Curios slot or that the extra slot recipes and slot behavior are correct. Do not mark either mod approved or release-ready from installation or startup alone. Any deeper feature check should be scoped separately after the smoke-test result.
 
 ### 1. Botany Pots — 21.1.44
 

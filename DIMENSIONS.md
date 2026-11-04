@@ -50,3 +50,8 @@ Mods that intentionally affect multiple dimensions are recorded once as shared/m
 - Do not change the production world or installed pack as part of documentation organisation.
 
 For exact status and test steps, use [MOD_PLANS.md](MOD_PLANS.md) and [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md).
+
+## End folder cleanup verification — 5 November 2026
+
+The supplied screenshots of both `MinecraftServer-Test/mods` and the CurseForge `Create World/mods` folders show no End-specific content/generation JARs or End-only support libraries. The End cleanup is visually verified at screenshot level; a fresh startup-log audit has not been supplied. The End workstream remains paused. Existing candidate/test records are historical only, not an active queue. Lootr remains as a general-purpose mod. Create Aeronautics Structures is still a planned Overworld addition and is not visible as installed in these screenshots.
+

@@ -26,6 +26,19 @@ This is an order of work, not permission to install or approve additional mods. 
 - **Research gate** — verify the exact CurseForge NeoForge file and dependency chain before installing anything.
 - **On hold** — do not start testing until the project owner resumes it.
 
+
+## Installed baseline: startup passed, feature testing still required
+
+The 4 November dedicated-server test reached `Done`, loaded the test world, accepted a client login, and shut down cleanly with the recorded server mod set discovered/loaded. This is a **pack-level startup/load pass** for that server configuration. It does not mean every installed mod has passed its own feature tests.
+
+- [ ] Work through the installed baseline mod list in `MODS.md` and validate each mod's core feature(s) that are relevant to this pack.
+- [ ] Check representative recipes, blocks/items, machines, structures, entities, progression, and integrations where the mod provides them.
+- [ ] Check key cross-mod interactions, especially Create/Create Aeronautics integrations and world-generation/structure mods, in disposable test worlds.
+- [ ] Run a matching client startup test and review the client log; the dedicated-server log does not validate client-only graphics mods such as Sodium, Iris, or Sodium Extra.
+- [ ] Record individual results as **passed**, **partial**, **failed**, or **not yet tested**. Do not infer a feature pass from the server reaching `Done`.
+
+**Known startup exceptions that remain open:** Struts 1.3.1 attempts to load client-only `RenderSystem` on the dedicated server; Create: Power Grid 0.6.2 cannot load its optional `powergridNative7` accelerated solver in the tested Windows environment. Neither prevented the 4 November server startup, but both require follow-up.
+
 ## Active tests
 
 ### 1. Botany Pots — 21.1.44
@@ -312,3 +325,34 @@ These are candidates, not installed or approved additions. Test one group at a t
 - [ ] Never use the production world for this test. Do not alter production BYG 2.6.3, RU 0.6.3 or current JSON before explicit approval.
 
 Nothing in this checklist authorizes installation into the production profile or production server.
+
+### 11. End structure alternatives — selected for separate tests
+
+**Status: Selected for test planning; exact dependency gate remains open for Better End Cities Better End. No mods installed or approved.** Use three separate disposable test worlds/iterations; never use the production world.
+
+**Candidate A — Better End Cities Better End**
+- File: `BetterEndCities-Raijin-structure-1.21.1.jar` — [CurseForge file 8105176](https://www.curseforge.com/minecraft/mc-mods/better-end-cities-better-end/files/8105176).
+- Minecraft 1.21.1, NeoForge; server-side structure mod.
+- Adds more intricate End Cities and extra loot using BetterEnd blocks.
+- CurseForge project relations list three required BetterEnd-family dependencies (BetterEnd, BetterEnd Forge, BetterEnd: New Dawn). The project-level list is not enough to establish the exact compatible files for this specific NeoForge file. Resolve exact 1.21.1 NeoForge dependencies before any installation. Do not assume the BetterEnd: New Dawn 21.0.39 stack alone satisfies all requirements.
+- [ ] Confirm exact dependency declarations for file 8105176 and resolve any conflicting/duplicate BetterEnd implementations.
+- [ ] Test the required BetterEnd dependency stack by itself in a fresh disposable world; check startup, client login, End entry and logs.
+- [ ] In a second fresh disposable world, add Better End Cities Better End with only its exact required dependency set.
+- [ ] Inspect End City complexity, loot-room/chest count, structure integrity, spawner/entity behavior, placement frequency, overlaps and chunk boundaries.
+- [ ] Save, restart, revisit generated areas and compare client/server logs.
+
+**Candidate B — MES / Moog's End Structures**
+- Exact 1.21.1 NeoForge file: `mes-1.3.5-1.21.jar` — [CurseForge file 5872117](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures/files/5872117).
+- CurseForge lists client & server; project description says it can be installed server-side only.
+- Earlier file 6918257 / `mes-1.4.6-1.21.jar` reference was wrong for this target; use file 5872117 for the 1.21.1 NeoForge candidate.
+- [ ] Test MES alone in a separate fresh disposable End world.
+- [ ] Locate and inspect each new End structure; record structure types, frequency, placement and overlap with vanilla End Cities.
+- [ ] Inspect ship structures, loot tables, hostile entities/challenges and traversal.
+- [ ] Check chunk-boundary generation, save/restart persistence and client/server logs.
+
+**Combined test — only after both isolated candidates pass**
+- [ ] Decide whether a combined test adds value; do not combine them automatically.
+- [ ] If approved, create another fresh disposable world with only the individually passing candidates and their required dependencies.
+- [ ] Check structure overlap, generation frequency, loot balance, startup and chunk errors.
+
+**Safeguards:** CurseForge only. Keep production world and BYG 2.6.3 / Regions Unexplored 0.6.3 unchanged. Do not modify the installed inventory or production server. Test selection is not production approval.

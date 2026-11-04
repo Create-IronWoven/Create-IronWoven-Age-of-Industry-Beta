@@ -56,7 +56,7 @@ All End-generation candidates must be tested in **separate fresh disposable worl
 |---|---|---|---|
 | YUNG's Better End Island | 3.1.2; YUNG's API 5.1.9 | Both loaded in the 4 November Batch 2A server test; startup, client login, and clean shutdown passed. End gameplay and the world-scoped IronWoven compatibility datapacks still need checking in the intentionally selected disposable `world_lootr_test`. | Partial smoke-test pass |
 | BetterEnd: New Dawn | 21.0.39 · `BetterEnd-21.0.39.jar` | Loaded in the 4 November test run with its required libraries. User observed BetterEnd-generated ships, but Lootr did not work in those ships; Lootr still works with normal End City chests/ships. YUNG's Better End Island was also loaded, so generation was not isolated. Remaining gameplay checks are deferred to beta testers. | Partial test — beta feedback pending; not production-approved |
-| Bigger Better End Cities | `biggerbetterendcities-1.21.1-1.0.0.jar` | CurseForge file 6461536; exact NeoForge 1.21.1 file verified. Maintainer does not want larger vanilla-style cities; prioritise varied structures and exploration instead. | Not selected — overlarge city focus does not fit pack goal |
+
 | Ender Villages | `endervillages-2.0-1.21.1.jar` | CurseForge file 6741737; exact NeoForge 1.21.1 file verified. Check village generation, villagers, professions, trades, breeding, persistence, and client/server placement. Project license is All Rights Reserved. | Candidate — isolated test pending |
 | Better End Cities Better End | `BetterEndCities-Raijin-structure-1.21.1.jar` | CurseForge file 8105176. Selected for a separate test. Resolve the exact three BetterEnd-family required dependencies for this file before testing; do not assume the BetterEnd: New Dawn stack alone satisfies them. Focuses on intricate End Cities and BetterEnd-themed loot, not giant city scale. | Selected for isolated test; dependency gate open |
 | MES — Moog's End Structures | `mes-1.3.5-1.21.jar` | CurseForge file 5872117; corrected 1.21.1 NeoForge file. Selected for a separate test. Inspect structures, ships, loot, entities, frequency, and chunk-boundary generation. | Selected for isolated test |
@@ -143,6 +143,7 @@ These mods are not wanted for Create IronWoven and must not be reintroduced as c
 - Carry On
 - Easy Villagers
 - Immersive Paintings
+- Bigger Better End Cities — larger vanilla-style End Cities do not fit the project's goal of adding more exploration variety.
 
 ## Test and approval safeguards
 

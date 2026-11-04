@@ -48,9 +48,9 @@ These six candidates came from the maintainer's 4 November shortlist. They were 
 | Prickle | 21.1.11 | Conditional library dependency for Botany Pots and Enchantment Descriptions. Loaded in the Botany Pots test group; not thereby confirmed in the main client profile. | Conditional dependency |
 | Create Big Cannons | 5.11.7 · [CurseForge file 8303106](https://www.curseforge.com/minecraft/mc-mods/create-big-cannons/files/8303106) | Requires Create 6.0.7+ and Ritchie's Projectile Library 2.1.2 ([file 7587771](https://www.curseforge.com/minecraft/mc-mods/ritchies-projectile-library/files/7587771)). Current Create 6.0.10 meets the published minimum. Check Sable compatibility, multiblocks, ammunition, recipes, damage, client/server sync, and Aeronautics separately. | Candidate — research/test pending |
 
-## End generation and structure candidates
+## End generation and structure candidates — historical research / paused
 
-All End-generation candidates must be tested in **separate fresh disposable worlds**. Do not combine them during initial tests. YUNG's Better End Island and BetterEnd: New Dawn both alter central End generation, so combined compatibility is not established.
+**Workstream status: PAUSED.** The entries below preserve historical research and test evidence only. No End candidate is active, approved, or queued for testing. The maintainer paused this work because no suitable CurseForge-only Create-style abandoned-industrial End solution was found for Minecraft 1.21.1 / NeoForge 21.1.265.
 
 | Candidate | Exact recorded file | Evidence / test gate | Status |
 |---|---|---|---|
@@ -295,4 +295,10 @@ The maintainer has explicitly instructed that all End-specific mods be removed f
 - End research and testing remain paused until the maintainer explicitly reopens the workstream.
 
 **Physical removal not yet verified:** GitHub access does not expose the live Minecraft test server/client mods folders. A current directory listing and clean startup log are required before cleanup can be reported as complete. Historical test notes are retained as historical evidence only.
+
+## End test-profile cleanup — visually verified 5 November 2026
+
+The maintainer supplied current screenshots of both the disposable dedicated-server `MinecraftServer-Test/mods` folder and the CurseForge client `Create World/mods` folder. No End-specific content/generation JARs are visible in either. BetterEnd, YUNG's Better End Island, Ender Ore, Ender Villages, Better End Cities Better End, MES / Moog's End Structures and Bigger Better End Cities are absent; no End-only support libraries are visible either. Lootr remains as a general-purpose mod.
+
+This visually verifies the current cleanup at screenshot level, not through a live filesystem scan or fresh startup log. All End entries above remain historical research only; the End workstream stays paused. Do not add End mods back or resume tests unless the maintainer explicitly asks. Create Aeronautics Structures remains a planned Overworld addition, not an installed mod in these screenshots.
 

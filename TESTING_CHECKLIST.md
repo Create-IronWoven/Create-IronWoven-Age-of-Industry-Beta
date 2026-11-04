@@ -429,3 +429,13 @@ Keep the production world, BYG 2.6.3, Regions Unexplored 0.6.3 and current world
 - [ ] Check client/server consistency and save/restart.
 
 Keep Every Compat candidate-only until remaining checks pass and the project owner approves. No production inventory changes.
+
+
+### Full mod-list world test — 4 November 2026
+
+Maintainer confirms that the world works with the complete mod set shown in the latest test-installation screenshot. The pictured configuration includes Every Compat 2.11.56 + Moonlight 3.8.1, Chipped 4.0.2, BetterEnd 21.0.39 and its libraries, YUNG's Better End Island 3.1.2 / YUNG's API 5.1.9, and the wider Create/Aeronautics pack. Record this as a user-confirmed pack-level world-playability check, not a blanket feature-compatibility or production-approval pass.
+
+- [x] World successfully runs with the pictured combined mod list (maintainer confirmation).
+- [ ] Continue Every Compat checks: recipes/JEI, textures/models, drops and additional wood types.
+- [ ] Investigate duplicate Golden Cherry leaves registration and the 9,480-block / 36.22% registry-size warning.
+- [ ] Confirm client/server consistency and save/restart; isolate Pythadendron separately.

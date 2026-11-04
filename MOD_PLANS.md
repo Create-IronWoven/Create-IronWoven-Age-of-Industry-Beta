@@ -155,7 +155,7 @@ No colony component is approved or installed by this list. Choose MineColonies a
 | FastFurnace | 9.0.1, file 6751551 | Furnace recipe processing | Optimizes furnace/blast furnace/smoker recipe matching, not smelting speed. Lower priority than FastSuite. |
 | Chunk-Pregenerator | 4.5.4, NeoForge | Dedicated-server/world utility | Pre-generates a selected area to reduce first-exploration chunk-generation spikes. Does not improve FPS in already-generated chunks; plan disk usage/radius. |
 
-Test one at a time and compare matching workloads. spark is diagnostics, not an optimization itself. C2ME and ServerCore are not in the first wave; assess experimental chunk threading and behavior-changing server optimizers separately. More Culling did not have a confirmed 1.21.1 NeoForge file in this review.
+Test one at a time and compare matching workloads. spark is diagnostics, not an optimization itself. C2ME and ServerCore are not in the first wave; assess experimental chunk threading and behavior-changing server optimizers separately. Follow-up verification found More Culling v1.0.9 for NeoForge 1.21.1; see the side-separated research section below.
 
 ## Quality-of-life candidates — 4 November 2026
 

@@ -16,6 +16,7 @@ These are requested candidates only. Botany Pots and Construction Sticks are now
 | Create Deco 2.1.3 | Already in current test inventory | No addition needed; current server inventory already records 2.1.3. |
 | Construction Sticks | Present in 4 Nov server test; feature review pending | Server loaded 1.5.0. Placement with modded blocks has not yet been tested. |
 | Lootr | Present in 4 Nov test; partial manual check | Lootr 1.11.38.127 loaded and the user confirmed a chest opened with loot. Two-player independent personal loot is still unverified; see [Testing Checklist](TESTING_CHECKLIST.md). |
+| Create Big Cannons | Research candidate; not installed or approved | `createbigcannons-5.11.7+mc.1.21.1.jar` (CurseForge 8303106); requires Create 6.0.7+ and Ritchie's Projectile Library 2.1.2 (CurseForge 7587771). Current Create 6.0.10 meets the published minimum; test Sable 2.0.x compatibility and gameplay in a disposable server/world. |
 | YUNG's Better End Island | 2A partial smoke-test pass; End gameplay pending | Both exact JARs discovered and loaded. Server reached Done, client joined, clean shutdown. The user intentionally selected `world_lootr_test` because its End had not yet been generated; there was no world-selection mistake. Verify the End-generation state and custom datapack setup before End exploration. See [Testing Checklist](TESTING_CHECKLIST.md). |
 | BetterEnd: New Dawn | Exact CurseForge file verified; gameplay test pending | `BetterEnd-21.0.39.jar` (file 9306604); requires BCLib 21.0.28, WorldWeaver 21.0.30, WunderLib 21.0.11. Test separately in a fresh disposable world; review BYG / Regions Unexplored / TerraBlender / Lithostitched compatibility. |
 | Bigger Better End Cities | Exact CurseForge NeoForge file verified; gameplay test pending | `biggerbetterendcities-1.21.1-1.0.0.jar` (file 6461536); valid server-side NeoForge 1.21.1 release. Test End City generation alone. |
@@ -104,3 +105,37 @@ All four remain candidates, not installed or approved additions. Use one candida
 ## Batch 2A runtime update — 4 November 2026
 
 The first dedicated-server run confirms YUNG's API 5.1.9 and YUNG's Better End Island 3.1.2 loaded and the server completed startup, client login and clean shutdown. However, the user intentionally selected `world_lootr_test` because its End had not yet been generated. The central End island and dragon features remain untested. The world-scoped IronWoven compatibility datapacks were not evidently loaded and known errors returned. This is a partial smoke-test pass only, not production approval. Follow the next steps in [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md).
+
+
+## Create Big Cannons — additional candidate — 4 November 2026
+
+Create Big Cannons 5.11.7 has an exact Minecraft 1.21.1 NeoForge release. Required components are Create (already recorded at 6.0.10) and Ritchie's Projectile Library 2.1.2. The current release changelog includes Sable 2.0.0 support and a shell-impact compatibility fix; validate against the pack's current Sable version.
+
+- Main file: [Create Big Cannons 5.11.7 — CurseForge file 8303106](https://www.curseforge.com/minecraft/mc-mods/create-big-cannons/files/8303106).
+- Required library: [Ritchie's Projectile Library 2.1.2 — CurseForge file 7587771](https://www.curseforge.com/minecraft/mc-mods/ritchies-projectile-library/files/7587771).
+- [ ] Verify recipe/JEI visibility and material progression.
+- [ ] Test cannon/autocannon multiblock assembly, breeches, kinetic loading/aiming, ammunition, fuzes, firing and shell damage.
+- [ ] Test client/server synchronization, Sable shell impacts, performance and save/restart.
+- [ ] Evaluate Create Aeronautics vehicle integration separately. Do not assume it works without testing.
+- [ ] Bronze and steel materials may require a separate ingot provider; upstream recommends IngotCraft, but it is not a required dependency in the CurseForge relation list. Research separately before adding.
+
+**Status:** research candidate only. Not in the current installed inventory, not installed for IronWoven testing and not production-approved. Use a disposable test server/world after explicit approval.
+
+## Colony ecosystem — complete candidate register
+
+The complete candidate list remains:
+
+| Candidate | Role | Status / next step |
+|---|---|---|
+| MineColonies | Main colony system | Verify exact stable 1.21.1 NeoForge release and its dependency chain |
+| CreateColonies | Create/MineColonies integration | Verify exact project/release and Create 6.0.10 compatibility |
+| Create: MineColonies Link | Separate Create integration | Verify distinct functionality and whether it coexists with CreateColonies |
+| Structurize | MineColonies support component | Match the version required by selected MineColonies |
+| Domum Ornamentum | MineColonies support component | Match the version required by selected MineColonies |
+| BlockUI | MineColonies support component | Match the version required by selected MineColonies |
+| Multi-Piston | Possible supporting dependency | Verify whether the selected MineColonies release requires it |
+| TownTalk | Optional colony integration | Verify exact project, loader support and distinct functionality |
+| Dynamic Trees | Separate world/ecology candidate | Verify NeoForge 1.21.1 and compatibility with BYG / Regions Unexplored |
+| Colony building styles and schematics | Content research, not automatically mods | Check format, dependencies, compatibility and permissions |
+
+No colony component is approved or installed by this list. Choose MineColonies and its exact required dependencies first, verify Create integrations, then test the selected stack only after approval on a disposable dedicated server and world. Keep Dynamic Trees as a separate test and preserve production world generation.

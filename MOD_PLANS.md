@@ -2,6 +2,8 @@
 
 This page separates confirmed installed mods from ideas for future versions. **A mod listed as planned or on hold is not part of the current pack unless it also appears on [Mods in the Pack](MODS.md).**
 
+The [Testing Checklist](TESTING_CHECKLIST.md) is the live list of gameplay checks, compatibility retests, and research still required. A test listed there does not mean the mod is approved for release.
+
 ## Requested candidates — compatibility review 3 November 2026
 
 Target platform: Minecraft 1.21.1, NeoForge 21.1.265, Java 21.
@@ -13,21 +15,20 @@ These are requested candidates only. Botany Pots and Construction Sticks are now
 | Botany Pots | Present in 4 Nov server test; feature review pending | Server loaded Botany Pots 21.1.44 with Bookshelf 21.1.81 and Prickle 21.1.11; one Botany Pots plugin loaded. Existing datapack skips 47 optional Herbs & Harvest Botany Pots recipes; review those before treating crop/recipe coverage as complete. |
 | Create Deco 2.1.3 | Already in current test inventory | No addition needed; current server inventory already records 2.1.3. |
 | Construction Sticks | Present in 4 Nov server test; feature review pending | Server loaded 1.5.0. Placement with modded blocks has not yet been tested. |
-| Lootr | Candidate — compatible | 1.21.1 NeoForge file 1.11.38.127 found. Test on a copied world because it changes loot-container behaviour. |
+| Lootr | Present in 4 Nov test; partial manual check | Lootr 1.11.38.127 loaded and the user confirmed a chest opened with loot. Two-player independent personal loot is still unverified; see [Testing Checklist](TESTING_CHECKLIST.md). |
 | YUNG's Better End Island | Candidate — dependencies required | 1.21.1 NeoForge file 3.1.2; requires YUNG's API. Overlaps the central End island with BetterEnd: New Dawn; test separately. |
 | BetterEnd: New Dawn | Candidate — dependencies and End test required | 1.21.1 NeoForge file 21.0.36; requires BCLib: New Dawn, WunderLib: New Dawn, and WorldWeaver: New Dawn. Adds its own End generator and central-island content. Test separately from YUNG's Better End Island and check the existing BYG / Regions Unexplored setup. |
-| Bigger Better End Cities | Not compatible as currently published | Reviewed 1.21.x project build is Fabric, not NeoForge. Do not add unless a NeoForge 1.21.1 port is verified. |
+| Bigger Better End Cities | Research gate — confirm exact NeoForge file | Confirm a CurseForge Minecraft 1.21.1 NeoForge artifact before any test; do not use a Fabric file. |
 | Ender Villages | On hold — exact file not confirmed | Adds End structures and villagers. A matching 1.21.1 NeoForge file was not confirmed in the reviewed release listings. |
-| Bookshelf | Conditional dependency | Required by Botany Pots on 1.21.1. Add only with the compatible Botany Pots dependency version. |
-| Prickle | Conditional dependency | Required by Botany Pots on 1.21.1. Add only with the compatible Botany Pots dependency version. |
+| Bookshelf | Conditional dependency; load check passed | Required by Botany Pots on 1.21.1; 21.1.81 loaded with the test group. |
+| Prickle | Conditional dependency; load check passed | Required by Botany Pots on 1.21.1; 21.1.11 loaded with the test group. |
 
 ### Important test safeguards
 
-- No installation or world changes were made as part of this review.
 - Keep the production world and its current BYG 2.6.3 / Regions Unexplored 0.6.3 setup unchanged.
-- Test End world-generation candidates in disposable world copies. BetterEnd: New Dawn and YUNG's Better End Island both change the central End island; combined compatibility has not been established.
-- If Botany Pots is added later, revisit the 47 intentionally skipped Herbs & Harvest Botany Pots recipes in the IronWoven recipe-fix datapack.
-- Batch 7 has not started. These candidates are under review and are not approved additions.
+- Test End world-generation candidates in separate disposable worlds. BetterEnd: New Dawn and YUNG's Better End Island both change the central End island; combined compatibility has not been established.
+- The 47 Herbs & Harvest Botany Pots integration recipes remain suppressed; do not describe them as restored.
+- Batch 7 has not started. Candidate mods are not approved additions.
 
 ## Confirmed current client-only additions
 
@@ -52,13 +53,13 @@ These mods remain specifically recorded as not wanted for this project:
 - Carry On
 - Easy Villagers
 - Immersive Paintings
+- Just Create SMP Pops
 
 ## How players can suggest a mod
 
 Use the [feature suggestion form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=feature_suggestion.yml). Please include the exact mod name, its official project page, supported Minecraft / NeoForge versions, and why it fits Create IronWoven.
 
 Suggestions are reviewed, not automatically accepted. The pack's existing compatibility and world-preservation decisions take priority over adding more mods.
-
 
 ## Requested colony ecosystem candidates — 4 November 2026
 
@@ -84,6 +85,6 @@ These are requested candidates and content ideas for compatibility research only
 - Select the exact MineColonies release first and use its declared dependency versions.
 - Verify whether CreateColonies and Create: MineColonies Link are separate compatible integrations before considering both.
 - Keep Dynamic Trees optional; do not change the current BYG 2.6.3 / Regions Unexplored 0.6.3 setup.
-- Test the complete selected stack on a disposable dedicated server and copied world.
+- Test the complete selected stack on a disposable dedicated server and copied world, only after approval.
 - No main-world changes or installations are authorized by this candidate list.
 - Batch 7 has not started. All entries remain under review, not approved additions.

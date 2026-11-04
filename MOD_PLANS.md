@@ -168,3 +168,20 @@ Players can use the [feature suggestion form](https://github.com/alexth110987/Cr
 - Start this as the next maintainer test in a separate disposable profile/world with only the exact required dependencies. Do not combine it with the BetterEnd test or install it in production.
 - Check Carpenter's Table variants, recipes, models/textures, JEI visibility, client/server consistency, logs and save/restart.
 - Keep it as a candidate only; do not change the installed inventory or production world.
+
+
+## Lootr Compatibility: BetterEnd — new candidate (4 November 2026)
+
+**Status: Candidate — exact 1.21.1 file / compatibility research pending. Not installed or approved.** Requested by the maintainer as a possible addition to address the observed BetterEnd + Lootr compatibility limitation.
+
+- CurseForge project: [Lootr Compatibility: BetterEnd](https://www.curseforge.com/minecraft/data-packs/lootr-compat-betterend) — datapack by Noobanidus, MIT license.
+- The datapack registers BetterEnd chest and barrel block types (including Pythadendron and other BetterEnd wood variants) as eligible for Lootr conversion when the blocks have associated loot tables.
+- **Version gate:** the official CurseForge file listing currently shows the main file for Minecraft 1.21.7 and an earlier file for 1.21.4; it does not currently show an exact 1.21.1 file. The pack target is Minecraft 1.21.1 / NeoForge 21.1.265 and CurseForge-only. Do not install the 1.21.7 or 1.21.4 file or treat the generic “1.20 and later” description as proof of exact compatibility.
+- **Scope gate:** the published compatibility list covers BetterEnd chest/barrel blocks, not BetterEnd ship structures as a whole. Verify the actual ship container block IDs and loot-table behavior before assuming this fixes the reported ship issue.
+- [ ] Check the official CurseForge files again for an exact 1.21.1 release, or obtain explicit author confirmation for 1.21.1.
+- [ ] Inspect a BetterEnd-generated ship in a disposable world and identify the exact container block(s) and whether each has a loot table.
+- [ ] If the version gate is cleared, test the datapack alone with the existing Lootr + BetterEnd stack in a fresh disposable world; verify Lootr conversion and loot.
+- [ ] Test the same converted container with a second player to confirm independent personal loot.
+- [ ] Check normal End City loot is unchanged and inspect logs, save/restart, and datapack load priority.
+
+Keep the current Lootr/BetterEnd ship incompatibility recorded until these checks pass. This is a data pack candidate, not a new mod JAR; do not add it to the installed-mod inventory yet.

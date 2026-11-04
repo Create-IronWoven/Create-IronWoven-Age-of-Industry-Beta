@@ -199,3 +199,35 @@ Additional colony building styles and schematics are content research, not autom
 - When a new log, screenshot, or manual test result is reviewed, update this checklist: record the date, move only the proven checks to passed, add newly discovered tests, and remove completed items only when the evidence supports it.
 - Keep this page aligned with the maintainer's latest test records. Publish only concise, player-safe summaries here; do not publish raw logs, private paths, IPs, tokens, or other personal/system details.
 - Do not change the production mod list or world as part of updating this documentation.
+
+
+### 11. End structure alternatives — selected for separate tests
+
+**Status: Selected for test planning; exact dependency gate remains open for Better End Cities Better End. No mods installed or approved.** Use three separate disposable test worlds/iterations; never use the production world.
+
+**Candidate A — Better End Cities Better End**
+- File: `BetterEndCities-Raijin-structure-1.21.1.jar` — [CurseForge file 8105176](https://www.curseforge.com/minecraft/mc-mods/better-end-cities-better-end/files/8105176).
+- Minecraft 1.21.1, NeoForge; server-side structure mod.
+- Adds more intricate End Cities and extra loot using BetterEnd blocks.
+- CurseForge project relations list three required BetterEnd-family dependencies (BetterEnd, BetterEnd Forge, BetterEnd: New Dawn). The project-level list is not enough to establish the exact compatible files for this specific NeoForge file. Resolve exact 1.21.1 NeoForge dependencies before any installation. Do not assume the BetterEnd: New Dawn 21.0.39 stack alone satisfies all requirements.
+- [ ] Confirm exact dependency declarations for file 8105176 and resolve any conflicting/duplicate BetterEnd implementations.
+- [ ] Test the required BetterEnd dependency stack by itself in a fresh disposable world; check startup, client login, End entry and logs.
+- [ ] In a second fresh disposable world, add Better End Cities Better End with only its exact required dependency set.
+- [ ] Inspect End City complexity, loot-room/chest count, structure integrity, spawner/entity behavior, placement frequency, overlaps and chunk boundaries.
+- [ ] Save, restart, revisit generated areas and compare client/server logs.
+
+**Candidate B — MES / Moog's End Structures**
+- Exact 1.21.1 NeoForge file: `mes-1.3.5-1.21.jar` — [CurseForge file 5872117](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures/files/5872117).
+- CurseForge lists client & server; project description says it can be installed server-side only.
+- Earlier file 6918257 / `mes-1.4.6-1.21.jar` reference was wrong for this target; use file 5872117 for the 1.21.1 NeoForge candidate.
+- [ ] Test MES alone in a separate fresh disposable End world.
+- [ ] Locate and inspect each new End structure; record structure types, frequency, placement and overlap with vanilla End Cities.
+- [ ] Inspect ship structures, loot tables, hostile entities/challenges and traversal.
+- [ ] Check chunk-boundary generation, save/restart persistence and client/server logs.
+
+**Combined test — only after both isolated candidates pass**
+- [ ] Decide whether a combined test adds value; do not combine them automatically.
+- [ ] If approved, create another fresh disposable world with only the individually passing candidates and their required dependencies.
+- [ ] Check structure overlap, generation frequency, loot balance, startup and chunk errors.
+
+**Safeguards:** CurseForge only. Keep production world and BYG 2.6.3 / Regions Unexplored 0.6.3 unchanged. Do not modify the installed inventory or production server. Test selection is not production approval.

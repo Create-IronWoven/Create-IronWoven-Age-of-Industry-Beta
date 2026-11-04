@@ -91,10 +91,17 @@ The current recorded baseline already has ModernFix and FerriteCore, plus client
 A follow-up launcher screenshot explicitly displays `Content (88)` and `Mods (88)`, confirming **88 mods in the current profile**. The earlier manual visual filename count of 89 was one over the launcher-confirmed profile total. This is not a fresh dedicated-server manifest; the earlier 79 top-level JAR / 82 loaded-entry figures belong to a historical server snapshot. See [MODS.md](MODS.md) for the distinction. Create Big Cannons/Ritchie's Projectile Library and all colony ecosystem candidates remain not installed.
 
 
-## Expanded performance / Voxy / Tectonic findings — 4 November 2026
+## Side-separated performance and world-generation research — 4 November 2026
 
-The current client profile count is **88 including client-side mods**, confirmed by the launcher. Existing performance baseline remains ModernFix/FerriteCore plus client Sodium/Sodium Extra/Iris. Newly researched 1.21.1 candidates and test requirements are recorded in [MOD_PLANS.md](MOD_PLANS.md) and [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md). Nothing has been installed or approved.
+The launcher confirms **88 total profile mods, including client-side mods**. Existing optimization baseline is:
+- **Both client + server:** ModernFix 5.27.27, FerriteCore 7.0.3.
+- **Client only:** Sodium 0.8.13, Sodium Extra 0.9.5, Iris 1.8.14-beta.1.
 
-Tectonic v3.0.28 has an official NeoForge 1.21.1 CurseForge file and its project documents support for Regions Unexplored and BWG/BYG through biome injection libraries. It remains disposable-world-only because it changes terrain generation and IronWoven has custom worldgen JSON and an existing world.
+Candidate lists and side placement are now separated in [MOD_PLANS.md](MOD_PLANS.md), and the test plan is separated in [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md):
+- **Client only:** ImmediatelyFast 1.6.15, Flerovium 1.1.2, Entity Culling 1.10.4, Distant Horizons 3.3.3.
+- **Server profiling/utility:** spark 1.10.124 (server profiling first), Chunk-Pregenerator 4.5.4 (dedicated-server pre-generation task).
+- **Both sides:** Lithium 0.15.4, FastSuite 6.0.7, FastFurnace 9.0.1, More Culling 1.0.9.
+- **Both sides / worldgen:** Tectonic v3.0.28, disposable-world testing only.
+- **Client-only but blocked:** Voxy/Roxy because the required Voxy JAR is not a matching CurseForge 1.21.1 artifact. SSRD has no verified CurseForge file.
 
-Voxy is technically loadable experimentally through CurseForge-hosted Roxy 0.4.1, but Roxy needs a separate original Voxy JAR; the currently documented verified Voxy build is Fabric 1.21.11, not a matching CurseForge 1.21.1 artifact. Therefore it is blocked by our CurseForge-only policy. Distant Horizons 3.3.3 is a CurseForge-only 1.21.1 NeoForge LOD alternative; Aeronautics sublevel rendering may need SSRD, for which no CurseForge source has been verified.
+A version correction has also been made: More Culling's matching NeoForge 1.21.1 release is v1.0.9, not 1.0.11. No candidate has been installed or approved.

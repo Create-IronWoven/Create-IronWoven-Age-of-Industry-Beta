@@ -209,3 +209,15 @@ Existing End candidates remain: YUNG's Better End Island, BetterEnd: New Dawn, B
 **Test sequence:** The Beyond alone → The Beyond + Isleweaver → Stellarity after exact-file verification → Unusual End → Extended End → structure mods one at a time. Keep End Beyond as a separate comparison branch. Use a fresh disposable world for every stage. Check biomes, ore generation, mobs, structures, loot, recipes, building variants, chunk borders, client/server sync, save/restart and logs. Preserve the production world, BYG 2.6.3, Regions Unexplored 0.6.3 and current world-generation JSON.
 
 Detailed findings and CurseForge links: [private maintainer research report](https://github.com/alexth110987/Create-IronWoven/blob/main/docs/END_EXPANSION_RESEARCH_2026-11-04.md).
+
+
+### Stage A result — 4 November 2026
+
+**Partial feature pass; not approved.** Maintainer confirms modded planks work in Chipped's Carpenter's Table and the stone table works. The supplied server log confirms Every Compat and Moonlight loaded, Chipped modules/dynamic resources generated, and the dedicated server reached Done.
+
+Open concerns from the log:
+- 9,480 compatibility blocks (36.22% of all registered blocks); Every Compat warns of increased memory use/load time, with Chipped the largest contributor (2,537 blocks).
+- Duplicate block registration ERROR: `everycomp:ch/herbsandharvest/golden_cherry_fruit_leaves`.
+- Test log includes BetterEnd, YUNG's Better End Island and the wider modpack; this is not an isolated test and does not prove Pythadendron support.
+
+Continue checking recipes, JEI, models/textures, drops, more modded wood types, duplicate-leaf impact, client/server sync and save/restart. Keep candidate only; no production inventory changes.

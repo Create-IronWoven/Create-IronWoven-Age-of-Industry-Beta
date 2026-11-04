@@ -149,6 +149,8 @@ These entries are not in the active test installation. First confirm an exact Mi
 
 ### 9. End-generation candidates — Batch 2 (historical; paused)
 
+**PAUSED — do not execute the unchecked steps below.** They record the state of the earlier test handover only; the End workstream is closed for now, and both current test folders have been visually checked.
+
 **2A status: Partial smoke-test pass — gameplay checks still pending.** The 4 November 2026 logs confirm that both JARs were installed in the separate test server, discovered, and listed as loaded mods. The server reached Done, accepted the local player, and shut down cleanly with all dimensions saved. No YUNG-specific dependency or startup failure was found.
 
 **2A — YUNG's Better End Island 3.1.2**

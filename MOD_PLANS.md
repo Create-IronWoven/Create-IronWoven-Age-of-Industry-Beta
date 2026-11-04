@@ -159,12 +159,12 @@ These mods are not wanted for Create IronWoven and must not be reintroduced as c
 Players can use the [feature suggestion form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=feature_suggestion.yml). Include the official project page, exact supported Minecraft / NeoForge versions, required dependencies, and why the mod fits Create IronWoven. Suggestions are reviewed, not automatically accepted.
 
 
-## Every Compat (Wood Good) — queued after Batch 2B
+## Every Compat (Wood Good) — next maintainer test
 
-**Status: Candidate — research and isolated test pending. Not installed or approved.** The goal is to check whether Every Compat can expose additional modded wood types to Chipped's decorative variants. Chipped 4.0.2 is already in the recorded inventory; Pythadendron Planks from BetterEnd: New Dawn are the first example to verify.
+**Status: Next isolated maintainer test; candidate only. Not installed or approved.** The initial BetterEnd observations are documented and remaining broad gameplay checks are deferred to beta testers. The goal is to check whether Every Compat can expose additional modded wood types to Chipped's decorative variants. Chipped 4.0.2 is already in the recorded inventory; BetterEnd's Pythadendron Planks are the first example to verify.
 
 - Verify the exact Minecraft 1.21.1 NeoForge file and all required dependencies on CurseForge.
-- Confirm support for Chipped 4.0.2 and BetterEnd: New Dawn's Pythadendron wood; do not assume automatic support for every wood type.
-- Queue a separate disposable test after the active 2B BetterEnd: New Dawn test is documented. Do not combine it with 2B or install it now.
+- Confirm support for Chipped 4.0.2 and BetterEnd's Pythadendron wood; do not assume automatic support for every wood type.
+- Start this as the next maintainer test in a separate disposable profile/world with only the exact required dependencies. Do not combine it with the BetterEnd test or install it in production.
 - Check Carpenter's Table variants, recipes, models/textures, JEI visibility, client/server consistency, logs and save/restart.
 - Keep it as a candidate only; do not change the installed inventory or production world.

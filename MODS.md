@@ -168,3 +168,12 @@ New performance and quality-of-life recommendations remain candidates only. They
 ## Newer user-supplied mods-folder snapshot — 4 November 2026
 
 A follow-up launcher screenshot explicitly displays `Content (88)` and `Mods (88)`, confirming **88 mods in the current profile**. The earlier manual filename transcription gave 89 visible names; that visual count was one over the launcher-confirmed profile total and must not be treated as the profile count. The screenshot includes client-only graphics files Sodium, Iris and Sodium Extra and is not a replacement for a fresh dedicated-server manifest. The older 79 top-level server JAR / 82 loaded-mod figure is a historical server snapshot and must remain separate.
+
+## End test-profile cleanup — 5 November 2026
+
+The maintainer has paused End development and instructed that **all End-specific mods be removed from the active disposable test setup**. The latest inventory snapshot above does not list End-generation mods in the main installed-mod tables; earlier 4 November test runs did load YUNG's Better End Island and BetterEnd: New Dawn. Treat those earlier entries as historical test evidence, not as permission to keep them in the current test profile.
+
+Remove any present End-specific content JARs from the disposable test server and matching client, including YUNG's Better End Island, BetterEnd: New Dawn, Ender Ore, Ender Villages, Better End Cities Better End, MES / Moog's End Structures, and any other End-only content. Bigger Better End Cities remains excluded. Keep all other End candidates out. Remove support libraries only if no remaining mod depends on them. Lootr is general-purpose and is not included in this End-mod removal instruction.
+
+**Physical cleanup is not verified by this repository snapshot.** The GitHub connection cannot inspect or delete files in the live server/client mods folders. A fresh folder listing and clean startup log are still required before this page can claim the physical test setup is clear. Historical test evidence above is retained for accuracy.
+

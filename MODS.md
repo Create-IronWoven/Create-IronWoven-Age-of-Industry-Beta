@@ -152,7 +152,7 @@ See [Mods planned, on hold, and excluded](MOD_PLANS.md) for the difference betwe
 
 ## Inventory notes before release
 
-- Create: Sophisticated Exoskeleton 1.0 was previously installed/tested as a Batch 5 entry, then removed because it did not meet the maintainer's expectations. It is not part of the current test inventory or intended beta release; see [MOD_PLANS.md](MOD_PLANS.md) for the explicit exclusion.
+- Create: Sophisticated Exoskeleton 1.0 was previously installed/tested as a Batch 5 entry, then **REJECTED and removed** because it did not meet the maintainer's expectations. It is not part of the current test inventory or intended beta release; see [MOD_PLANS.md](MOD_PLANS.md) for the explicit exclusion.
 - The current server inventory and client-only additions were drawn from different project records. A fresh client manifest and server JAR inventory will be published with the beta release.
 
 

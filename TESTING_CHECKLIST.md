@@ -412,3 +412,21 @@ Do not combine this candidate with 2B, install it now, alter the production inve
 - [ ] Confirm normal vanilla End City chests/ships still work and check datapack load order, logs, save/restart, and any loot-table errors.
 
 Do not change the installed-mod inventory or production world. Keep the known BetterEnd ship limitation open until the isolated test proves it is fixed. This is a datapack candidate, not a mod JAR.
+
+
+## End expansion shortlist — research and staged tests
+
+**Status:** research candidates only. Do not install into the production profile or world. CurseForge only; target Minecraft 1.21.1 / NeoForge 21.1.265.
+
+- [ ] Verify exact 1.21.1 NeoForge file and dependencies for The Beyond 1.0.1.
+- [ ] Verify exact Isleweaver 0.0.3b-InDev file and its dependency/compatibility requirements.
+- [ ] Test The Beyond alone in a fresh disposable world: biome distribution, terrain, mobs, structures, resources, loot, recipes, chunk borders, save/restart and logs.
+- [ ] Test The Beyond + Isleweaver in a separate fresh disposable world.
+- [ ] Verify exact 1.21.1 NeoForge Stellarity file; if verified, test it as the next isolated stage with The Beyond + Isleweaver.
+- [ ] Verify Unusual End 2.3.1b dependencies and test separately for biome, mob, resource and decorative-block generation.
+- [ ] Verify Extended End 0.9 file/dependencies and test Obscurite ore, Void Bark wood, recipes, tools/armour and decorative blocks.
+- [ ] Keep End Beyond 1.0.4 as a separate alternative-overhaul comparison; do not combine with The Beyond without evidence.
+- [ ] Only after individual passes, test selected structure additions (Bigger Better End Cities, Ender Villages, Better End Cities Better End, MES) one at a time and then evaluate overlap.
+- [ ] Record client/server sync, loot, recipe visibility, chunk-border generation, restart behavior and full logs for every stage.
+
+Keep the production world, BYG 2.6.3, Regions Unexplored 0.6.3 and current world-generation JSON unchanged. Existing BetterEnd / Lootr limitation remains open and must not be assumed fixed by this shortlist. Detailed candidate notes: [End expansion research](https://github.com/alexth110987/Create-IronWoven/blob/main/docs/END_EXPANSION_RESEARCH_2026-11-04.md).

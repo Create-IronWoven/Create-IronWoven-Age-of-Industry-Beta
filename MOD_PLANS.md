@@ -1,6 +1,6 @@
 # Mod Plans — Create IronWoven
 
-**Last reviewed:** 4 November 2026  
+**Last reviewed:** 5 November 2026  
 **Target:** Minecraft 1.21.1 · NeoForge 21.1.265 · Java 21  
 **Download policy:** CurseForge only
 
@@ -22,6 +22,14 @@ This page is the public register of requested additions, research candidates, pa
 | On hold | Do not resume without a new decision. |
 | Excluded | Explicitly not wanted for this project. |
 | Already in test inventory | No new addition is required; see [MODS.md](MODS.md). |
+
+## Explicit exclusions
+
+These decisions must be preserved. Do not reintroduce an excluded mod as a candidate unless the maintainer changes the decision.
+
+| Mod | Version | Reason | Status |
+|---|---|---|---|
+| Create: Sophisticated Exoskeleton | 1.0 | Previously installed/tested in Batch 5, then removed because it did not meet the maintainer's expectations. | Excluded — removed; do not re-add |
 
 ## Recently requested candidates
 

@@ -106,53 +106,42 @@ Do not assign these messages to Lootr based on the current evidence.
 
 These entries are not in the active test installation. First confirm an exact Minecraft 1.21.1 NeoForge file and all required dependencies on CurseForge. Do not install them until the compatibility review is complete and the project owner approves the test.
 
-### 9. End-generation candidates — Batch 2 researched 4 November 2026
+### 9. End-generation candidates — Batch 2
 
-**Status: Exact CurseForge Minecraft 1.21.1 NeoForge files verified; gameplay tests pending. No candidate is installed or approved.** Use separate disposable End worlds, one candidate group at a time.
+**2A status: Setup pending.** The project owner approved starting the YUNG's Better End Island test on 4 November 2026. Exact CurseForge files are verified; the user still needs to place them in the separate test installation.
 
-**YUNG's Better End Island 3.1.2**
+**2A — YUNG's Better End Island 3.1.2**
 - Main file: `YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar` — [CurseForge file 6300968](https://www.curseforge.com/minecraft/mc-mods/yungs-better-end-island-neoforge/files/6300968).
-- Required API: `YungsApi-1.21.1-NeoForge-5.1.9.jar` — [CurseForge file 8894736](https://www.curseforge.com/minecraft/mc-mods/yungs-api-neoforge/files/8894736).
-- Changes the central End island and dragon-fight arena.
-- [ ] Test central island, obsidian pillars, gateways, spawn platform and portal on a fresh disposable world.
-- [ ] Test dragon summon at the bell tower, dragon respawn/crystal placement and return through gateways.
-- [ ] Check server/client logs and save/restart behavior.
+- Required library: `YungsApi-1.21.1-NeoForge-5.1.9.jar` — [CurseForge file 8894736](https://www.curseforge.com/minecraft/mc-mods/yungs-api-neoforge/files/8894736).
+- [ ] Add these two files to the separate test setup only; use test profile/server, never production.
+- [ ] Use a fresh disposable world named `world_yungs_end_test` and ensure the IronWoven custom compatibility datapacks are loaded.
+- [ ] Confirm dependency resolution, server startup, world load, client join and clean shutdown.
+- [ ] Inspect the redesigned central island, spawn platform, portal, pillars and gateways.
+- [ ] Approach the central bell tower and check dragon summon behavior.
+- [ ] Complete the dragon fight and test respawning with the four crystals in the tower's intended positions.
+- [ ] Save, restart and rejoin to verify the arena persists.
 
-**BetterEnd: New Dawn 21.0.39**
+The exact dedicated test procedure and pass criteria are in the private maintainer report. This Beta checklist is the public summary. Do not run `/end_island reset` on an existing or production world.
+
+**2B — BetterEnd: New Dawn 21.0.39**
 - Main file: `BetterEnd-21.0.39.jar` — [CurseForge file 9306604](https://www.curseforge.com/minecraft/mc-mods/betterend-neoforge/files/9306604).
-- Required libraries: `bclib-21.0.28.jar`, `WorldWeaver-21.0.30.jar`, `wunderlib-21.0.11.jar`. [BCLib files](https://www.curseforge.com/minecraft/mc-mods/bclib-neoforge/files), [WorldWeaver files](https://www.curseforge.com/minecraft/mc-mods/worldweaver-neoforge/files), [WunderLib file 9172421](https://www.curseforge.com/minecraft/mc-mods/wunderlib-neoforge/files/9172421).
-- Includes a broad End biome, terrain, cave, structure, mob and progression overhaul. Its stated compatibility work includes TerraBlender, Lithostitched, BYG and Regions Unexplored, but the full IronWoven combination has not been tested.
-- [ ] Test this stack alone in a fresh disposable world.
-- [ ] Check End biomes, terrain, caves, structures, resources, new mobs, recipes, blocks and progression.
-- [ ] Test Infusion Pedestals / rituals, Eternal Portals and Respawn Obelisks.
-- [ ] Verify BYG 2.6.3, Regions Unexplored 0.6.3, TerraBlender, Lithostitched and IronWoven datapack compatibility.
-- [ ] Restart and revisit generated areas; inspect chunks, structures, registry and world-generation logs.
+- Required libraries: BCLib 21.0.28, WorldWeaver 21.0.30, WunderLib 21.0.11. See the relevant [CurseForge files](https://www.curseforge.com/minecraft/mc-mods/bclib-neoforge/files), [WorldWeaver files](https://www.curseforge.com/minecraft/mc-mods/worldweaver-neoforge/files), and [WunderLib file 9172421](https://www.curseforge.com/minecraft/mc-mods/wunderlib-neoforge/files/9172421).
+- [ ] Test alone in a fresh disposable world after 2A has been documented.
+- [ ] Check biomes, terrain, caves, structures, resources, mobs, recipes and progression.
+- [ ] Validate compatibility with BYG, Regions Unexplored, TerraBlender, Lithostitched and IronWoven datapacks.
 
-**WorldWeaver optional patch warning:** [WorldWeaver Registry Synchronization 1.0.0, CurseForge file 9389941](https://www.curseforge.com/minecraft/mc-mods/worldweaver-registry-synchronization/files/9389941) targets WorldWeaver 21.0.30, Minecraft 1.21.1, NeoForge 21.1.265 and Java 21. It is **not** a required BetterEnd dependency and is not approved for installation. Only evaluate it in a separate test if the described parallel registry-registration race reproduces; it is an independently published compatibility patch.
+**WorldWeaver optional patch warning:** [WorldWeaver Registry Synchronization 1.0.0, file 9389941](https://www.curseforge.com/minecraft/mc-mods/worldweaver-registry-synchronization/files/9389941) targets WorldWeaver 21.0.30, Minecraft 1.21.1, NeoForge 21.1.265 and Java 21. It is not a required BetterEnd dependency and is not approved. Only evaluate it in a separate test if its specific registration race reproduces.
 
 **Bigger Better End Cities 1.0.0**
 - Exact file: `biggerbetterendcities-1.21.1-1.0.0.jar` — [CurseForge file 6461536](https://www.curseforge.com/minecraft/mc-mods/bigger-better-end-cities/files/6461536).
-- Valid NeoForge 1.21.1 file; server environment. The earlier Fabric-only note was incorrect.
-- [ ] Test alone in a fresh disposable End world.
-- [ ] Check city size, branching paths, tower height, bridge lengths, ship frequency and config options.
-- [ ] Check generated structures for overlaps, missing pieces, chunk-boundary issues, shulkers and loot chests.
+- [ ] Test alone in a fresh disposable End world, checking city size, branching, tower height, bridges, ships, shulkers, loot and chunk-boundary generation.
 
 **Ender Villages 2.0**
 - Exact file: `endervillages-2.0-1.21.1.jar` — [CurseForge file 6741737](https://www.curseforge.com/minecraft/mc-mods/ender-villages/files/6741737).
-- Valid NeoForge 1.21.1 file, uploaded 7 July 2025. The old “file not confirmed” status was incorrect. The project license is All Rights Reserved; obtain through CurseForge and do not mirror the JAR independently.
-- CurseForge does not set a clear client/server environment for this file; verify intended distribution in the disposable test.
-- [ ] Test alone in a fresh disposable End world.
-- [ ] Find several villages; inspect structure generation and overlap with End Cities.
-- [ ] Test End Villagers, professions, trades, breeding, baby villagers and End Cats.
-- [ ] Verify entity/village persistence after save, server restart and client reconnect.
+- [ ] Test alone in a fresh disposable End world, checking village generation, structure overlap, villagers, professions, trades, breeding, End Cats and persistence.
+- Note: this file is older and its license is All Rights Reserved; do not mirror or redistribute its JAR.
 
-**Recommended test order**
-1. YUNG's Better End Island + YUNG's API.
-2. BetterEnd: New Dawn + its three required libraries.
-3. Bigger Better End Cities alone.
-4. Ender Villages alone.
-
-Do not combine YUNG's Better End Island with BetterEnd: New Dawn in the first test because both alter central End generation. Keep the production world and the current BYG 2.6.3 / Regions Unexplored 0.6.3 setup unchanged. Do not use `/end_island reset` on the production world.
+Do not combine the central-island overhauls in the first test. Keep production world and BYG / Regions Unexplored generation unchanged.
 
 ### 10. Colony ecosystem candidates
 

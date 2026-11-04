@@ -59,7 +59,7 @@ All End-generation candidates must be tested in **separate fresh disposable worl
 
 | Ender Villages | `endervillages-2.0-1.21.1.jar` | CurseForge file 6741737; exact NeoForge 1.21.1 file verified. Check village generation, villagers, professions, trades, breeding, persistence, and client/server placement. Project license is All Rights Reserved. | Candidate — isolated test pending |
 | Better End Cities Better End | `BetterEndCities-Raijin-structure-1.21.1.jar` | CurseForge file 8105176. Selected for a separate test. Resolve the exact three BetterEnd-family required dependencies for this file before testing; do not assume the BetterEnd: New Dawn stack alone satisfies them. Focuses on intricate End Cities and BetterEnd-themed loot, not giant city scale. | Selected for isolated test; dependency gate open |
-| MES — Moog's End Structures | `mes-1.3.5-1.21.jar` | CurseForge file 5872117; corrected 1.21.1 NeoForge file. Selected for a separate test. Inspect structures, ships, loot, entities, frequency, and chunk-boundary generation. | Selected for isolated test |
+| MES — Moog's End Structures | `mes-1.4.6-1.21.jar` | CurseForge file 6918257; verified NeoForge 1.21.1. Selected as the first End structure test. Adds seven Mega Ship variants with loot tables; inspect structure variety, ships, loot, entities, frequency, overlap, and chunk-boundary generation. | First isolated structure test selected |
 
 **End test order:** verify any required dependency baseline first; then test each structure/generation candidate alone in its own fresh disposable world. Only consider combinations after individual tests pass. Preserve the production world and current BYG 2.6.3 / Regions Unexplored 0.6.3 setup.
 

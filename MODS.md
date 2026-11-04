@@ -163,3 +163,8 @@ The recorded performance baseline already includes ModernFix 5.27.27 and Ferrite
 Botany Pots, Construction Sticks, Lootr, and YUNG's Better End Island + YUNG's API have also been exercised in separate test-server runs. Their appearance in test notes does not make them production-approved or part of a final release manifest. See [MOD_PLANS.md](MOD_PLANS.md) and [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md) for the status and outstanding tests.
 
 New performance and quality-of-life recommendations remain candidates only. They are not installed in the confirmed baseline.
+
+
+## Newer user-supplied mods-folder snapshot — 4 November 2026
+
+A newer screenshot of the user's profile mods folder includes test files for Botany Pots and its libraries, Construction Sticks, Lootr, and YUNG's Better End Island/API, along with client-only graphics files Sodium, Iris and Sodium Extra. The user reports 88 entries; a manual visual count of the screenshot gives 89 visible JAR filenames. The exact count remains to be reconciled from a direct file listing. This screenshot is a profile-folder snapshot and is not a replacement for a fresh dedicated-server manifest. The older 79 top-level server JAR / 82 loaded-mod figure is a historical server snapshot and should not be compared as though it were the same folder.

@@ -56,6 +56,10 @@ These are maintainer-side smoke-test results, not a guarantee that every feature
 
 See the [full testing checklist](TESTING_CHECKLIST.md) for each test step and its current status.
 
+## Batch 2 End-content review — 4 November 2026
+
+Exact 1.21.1 NeoForge CurseForge files have been verified for YUNG's Better End Island, BetterEnd: New Dawn 21.0.39, Bigger Better End Cities, and Ender Villages 2.0. Their feature checks and dependencies are recorded in the [testing checklist](TESTING_CHECKLIST.md). These are candidates only; no files have been installed or approved. Test individually in disposable End worlds and preserve the production world.
+
 ## Release readiness
 
 No public beta package or release date is confirmed in this status file. A test pass does not automatically approve a mod for release. The final client and server manifests, clean-install checks, and release validation remain outstanding.

@@ -265,3 +265,14 @@ The latest uploaded server log latest(20261104-225334).log confirms these End-ge
 ### New research priority
 
 Find CurseForge-only Minecraft 1.21.1 NeoForge content that actually generates derelict factories, mining/processing facilities, industrial outposts, abandoned settlements, cargo infrastructure, cranes, pipes, machinery and weathered metal structures in the End. If no End-specific option exists, investigate whether structure datapacks or configurable structure-generation tools can achieve this without introducing an unrelated fantasy overhaul. Record exact files, dependencies, licensing, dimension placement and actual structure previews before adding anything to the test queue.
+
+## Overworld addition — Create Aeronautics Structures
+
+**Selected for the Overworld, not the End.** Create Aeronautics Structures adds abandoned engineering buildings, boats, airships and balloon structures that fit the pack's Create/Aeronautics exploration theme.
+
+- CurseForge: [Create Aeronautics Structures](https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-structures)
+- Target: Minecraft 1.21.1 / NeoForge 21.1.265.
+- Exact CurseForge file version/ID and dependency versions still need verification before installation. Reported dependencies: Create Aeronautics, Sable and GeckoLib.
+- Keep its structure placement in the Overworld; it is not an End content candidate.
+- Status: selected planned addition / test queue; not installed or production-approved. Test in a disposable world/profile first.
+

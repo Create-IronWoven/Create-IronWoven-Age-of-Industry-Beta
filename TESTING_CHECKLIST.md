@@ -366,15 +366,13 @@ Nothing in this checklist authorizes installation into the production profile or
 - [ ] Save, restart, revisit generated areas and compare client/server logs.
 
 **Candidate B — MES / Moog's End Structures — FIRST TEST**
-- Exact 1.21.1 NeoForge file: `mes-1.4.6-1.21.jar` — [CurseForge file 6918257](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures/files/6918257). CurseForge lists Minecraft 1.21.1 and NeoForge. Do not use the older 1.3.5 file 5872117.
-- CurseForge describes MES as vanilla-styled End structures and says it can be installed server-side only. The file page lists no required dependency.
-- The 1.4.6 changelog adds seven Mega Ship variants and loot tables for those structures.
-- [ ] Add only MES 1.4.6 to the disposable test profile/server; do not add another new End candidate.
-- [ ] Create/use a fresh disposable world with a newly generated End. Do not use the production world or previously generated End chunks.
-- [ ] Record the exact mod set. Existing BetterEnd/YUNG baseline mods must be noted if they remain enabled; their presence means the test is not fully isolated from them.
-- [ ] Locate and inspect all new structure types and the seven Mega Ship variants; record frequency, placement and overlap with vanilla End Cities.
-- [ ] Open ship/structure containers and verify loot tables, loot variety and balance.
-- [ ] Check hostile entities/challenges, chunk-boundary generation, save/restart persistence, client/server behavior and logs.
+- Actual uploaded test file: `MoogsEndStructures-universal-1.21-2.1.1.jar` (MES 2.1.1), Minecraft 1.21.1 / NeoForge 21.1.265.
+- **Crash diagnosis (4 November 2026):** mod loading stopped because MES requires `moogs_structures` 1.1.0 or newer; the library was absent. This is a missing dependency, not a confirmed mod incompatibility.
+- Required library: [Moog's Structure Lib 1.1.0-1.21-1.21.1 NeoForge, CurseForge file 7238573](https://www.curseforge.com/minecraft/mc-mods/moogs-structure-lib/files/7238573), `moogs_structures-1.1.0-1.21-1.21.1-neoforge.jar`.
+- [ ] Add the matching Structure Lib file to the disposable server and matching client, then retry startup.
+- [ ] The uploaded server log still has BetterEnd 21.0.39 and YUNG's Better End Island 3.1.2 loaded. Disable those End-generation candidates and their now-unneeded libraries in the disposable profile for an isolated MES test, or record the test as combined with them.
+- [ ] Use a fresh disposable world with a newly generated End; do not use the production world or previously generated End chunks.
+- [ ] Inspect MES structures, Mega Ship variants, loot/chests, hostile entities/challenges, spawn frequency, overlap with vanilla End Cities, chunk-boundary generation, save/restart, client/server behavior and logs.
 
 **Combined test — only after both isolated candidates pass**
 - [ ] Decide whether a combined test adds value; do not combine them automatically.

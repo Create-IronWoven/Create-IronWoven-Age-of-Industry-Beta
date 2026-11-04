@@ -58,3 +58,32 @@ These mods remain specifically recorded as not wanted for this project:
 Use the [feature suggestion form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=feature_suggestion.yml). Please include the exact mod name, its official project page, supported Minecraft / NeoForge versions, and why it fits Create IronWoven.
 
 Suggestions are reviewed, not automatically accepted. The pack's existing compatibility and world-preservation decisions take priority over adding more mods.
+
+
+## Requested colony ecosystem candidates — 4 November 2026
+
+Target platform: Minecraft 1.21.1, NeoForge 21.1.265, Java 21.
+
+These are requested candidates and content ideas for compatibility research only. **None have been installed or approved.** Exact 1.21.1 NeoForge files, versions, dependencies, and compatibility with the current pack still need verification.
+
+| Candidate | Review status | Notes |
+|---|---|---|
+| CreateColonies | Candidate — review pending | Verify exact project, 1.21.1 NeoForge file, MineColonies dependency, and Create 6.0.10 compatibility. |
+| MineColonies | Candidate — review pending | Proposed main colony system. Verify current NeoForge release and complete dependency chain. |
+| Create: MineColonies Link | Candidate — review pending | Verify exact project and compatibility with the selected MineColonies and Create versions. |
+| Structurize | Supporting dependency candidate | Match the version required by the selected MineColonies release. |
+| Domum Ornamentum | Supporting dependency candidate | Match the version required by the selected MineColonies release. |
+| BlockUI | Supporting dependency candidate | Match the version required by the selected MineColonies release. |
+| Multi-Piston | Supporting dependency candidate | Verify whether required by the selected MineColonies release and match its declared version. |
+| TownTalk | Optional integration candidate | Verify exact project, loader support, and distinct functionality. |
+| Dynamic Trees | Optional world/ecology candidate | Verify NeoForge 1.21.1 support and compatibility with existing BYG / Regions Unexplored world generation. |
+| Additional colony building styles and schematics | Content research item — not necessarily a mod | Check format, dependencies, MineColonies/Structurize compatibility, and permissions. |
+
+### Colony ecosystem test safeguards
+
+- Select the exact MineColonies release first and use its declared dependency versions.
+- Verify whether CreateColonies and Create: MineColonies Link are separate compatible integrations before considering both.
+- Keep Dynamic Trees optional; do not change the current BYG 2.6.3 / Regions Unexplored 0.6.3 setup.
+- Test the complete selected stack on a disposable dedicated server and copied world.
+- No main-world changes or installations are authorized by this candidate list.
+- Batch 7 has not started. All entries remain under review, not approved additions.

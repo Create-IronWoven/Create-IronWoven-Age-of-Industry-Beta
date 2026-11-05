@@ -1,4 +1,4 @@
-> Archived snapshot from 5 November 2026. This file preserves the prior appended status record for audit history. Use the current [project status](../PROJECT_STATUS.md) for the private repository, or [beta status](../BETA_STATUS.md) for the public repository.
+> Archived snapshot from 5 November 2026. This file preserves the prior appended status timeline for audit history. Use the current [Beta Status](../BETA_STATUS.md) for the public repository.
 
 # Create IronWoven — Beta Status
 
@@ -15,9 +15,9 @@ The pack is undergoing compatibility and dedicated-server testing. This reposito
 
 ## Mod list, plans, and test queue
 
-- [Mods in the current test pack](MODS.md)
-- [Mods planned, on hold, or excluded](MOD_PLANS.md)
-- [Testing checklist — mods and what still needs testing](TESTING_CHECKLIST.md)
+- [Mods in the current test pack](../MODS.md)
+- [Mods planned, on hold, or excluded](../MOD_PLANS.md)
+- [Testing checklist — mods and what still needs testing](../TESTING_CHECKLIST.md)
 
 The testing checklist is the current queue for unfinished gameplay tests, compatibility retests, and research gates. The 4 November test confirms the server mod set starts and loads as a pack, but **all existing installed mods still require relevant feature/integration checks**; client-only mods also need client-side validation. Batch 2A (YUNG's Better End Island 3.1.2 + YUNG's API 5.1.9) also passed server mod discovery, startup, client login and clean shutdown in the intentionally selected disposable `world_lootr_test`; the world name is not a setup error. Verify the world-scoped IronWoven compatibility datapacks and restore them in that disposable world if absent. Startup success is not release approval or proof that every feature works.
 
@@ -57,11 +57,11 @@ These are maintainer-side smoke-test results, not a guarantee that every feature
 - Review the unattributed world/chunk-generation messages after the compatibility datapacks are correctly loaded in a disposable world.
 - End-mod research and testing are paused; do not resume until the maintainer explicitly reopens that workstream.
 
-See the [full testing checklist](TESTING_CHECKLIST.md) for each test step and its current status.
+See the [full testing checklist](../TESTING_CHECKLIST.md) for each test step and its current status.
 
 ## Batch 2 End-content review — 4 November 2026
 
-Exact 1.21.1 NeoForge CurseForge files have been verified for YUNG's Better End Island, BetterEnd: New Dawn 21.0.39, Bigger Better End Cities, and Ender Villages 2.0. Their feature checks and dependencies are recorded in the [testing checklist](TESTING_CHECKLIST.md). These are candidates only; no files have been installed or approved. Test individually in disposable End worlds and preserve the production world.
+Exact 1.21.1 NeoForge CurseForge files have been verified for YUNG's Better End Island, BetterEnd: New Dawn 21.0.39, Bigger Better End Cities, and Ender Villages 2.0. Their feature checks and dependencies are recorded in the [testing checklist](../TESTING_CHECKLIST.md). These are candidates only; no files have been installed or approved. Test individually in disposable End worlds and preserve the production world.
 
 ## Release readiness
 
@@ -69,12 +69,12 @@ No public beta package or release date is confirmed in this status file. A test 
 
 ## How players can help now
 
-You can report reproducible issues and suggest improvements through the [issue tracker](../../issues). Please state clearly which Minecraft, NeoForge, and modpack build you are using.
+You can report reproducible issues and suggest improvements through the [issue tracker](../../../issues). Please state clearly which Minecraft, NeoForge, and modpack build you are using.
 
 
 ## Historical Batch 2A runtime status — 4 November 2026 (End workstream later paused)
 
-YUNG's API 5.1.9 and YUNG's Better End Island 3.1.2 were discovered and loaded on the separate test server. Server startup, client login and clean shutdown passed. The user clarified that `world_lootr_test` was selected intentionally because its End had not yet been generated. The earlier world-name mismatch assessment is corrected. The End-generation gameplay checks remain pending, and the custom IronWoven compatibility datapacks must be verified (and restored in this disposable world if absent) before continuing. See the [testing checklist](TESTING_CHECKLIST.md). No production changes or approval.
+YUNG's API 5.1.9 and YUNG's Better End Island 3.1.2 were discovered and loaded on the separate test server. Server startup, client login and clean shutdown passed. The user clarified that `world_lootr_test` was selected intentionally because its End had not yet been generated. The earlier world-name mismatch assessment is corrected. The End-generation gameplay checks remain pending, and the custom IronWoven compatibility datapacks must be verified (and restored in this disposable world if absent) before continuing. See the [testing checklist](../TESTING_CHECKLIST.md). No production changes or approval.
 
 
 ## Botany Pots update — 4 November 2026
@@ -86,12 +86,12 @@ The 47 Herbs & Harvest Botany Pots recipes remain suppressed by the temporary `n
 
 ## Inventory, performance and QoL review — 4 November 2026
 
-The current recorded baseline already has ModernFix and FerriteCore, plus client-side Sodium, Sodium Extra and Iris. The maintainer review has added candidate testing for ImmediatelyFast, Entity Culling, Lithium, FastSuite and FastFurnace, with spark as the diagnostic profiler. QoL candidates include JER, Shulker Box Tooltip, Enchantment Descriptions, Nature's Compass, Explorer's Compass and Waystones. None have been installed or approved by this review. Exact versions and test steps are in [MOD_PLANS.md](MOD_PLANS.md) and [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md).
+The current recorded baseline already has ModernFix and FerriteCore, plus client-side Sodium, Sodium Extra and Iris. The maintainer review has added candidate testing for ImmediatelyFast, Entity Culling, Lithium, FastSuite and FastFurnace, with spark as the diagnostic profiler. QoL candidates include JER, Shulker Box Tooltip, Enchantment Descriptions, Nature's Compass, Explorer's Compass and Waystones. None have been installed or approved by this review. Exact versions and test steps are in [MOD_PLANS.md](../MOD_PLANS.md) and [TESTING_CHECKLIST.md](../TESTING_CHECKLIST.md).
 
 
 ## Current mods-folder count reconciliation — 4 November 2026
 
-A follow-up launcher screenshot explicitly displays `Content (88)` and `Mods (88)`, confirming **88 mods in the current profile**. The earlier manual visual filename count of 89 was one over the launcher-confirmed profile total. This is not a fresh dedicated-server manifest; the earlier 79 top-level JAR / 82 loaded-entry figures belong to a historical server snapshot. See [MODS.md](MODS.md) for the distinction. Create Big Cannons/Ritchie's Projectile Library and all colony ecosystem candidates remain not installed.
+A follow-up launcher screenshot explicitly displays `Content (88)` and `Mods (88)`, confirming **88 mods in the current profile**. The earlier manual visual filename count of 89 was one over the launcher-confirmed profile total. This is not a fresh dedicated-server manifest; the earlier 79 top-level JAR / 82 loaded-entry figures belong to a historical server snapshot. See [MODS.md](../MODS.md) for the distinction. Create Big Cannons/Ritchie's Projectile Library and all colony ecosystem candidates remain not installed.
 
 
 ## Side-separated performance and world-generation research — 4 November 2026
@@ -100,7 +100,7 @@ The launcher confirms **88 total profile mods, including client-side mods**. Exi
 - **Both client + server:** ModernFix 5.27.27, FerriteCore 7.0.3.
 - **Client only:** Sodium 0.8.13, Sodium Extra 0.9.5, Iris 1.8.14-beta.1.
 
-Candidate lists and side placement are now separated in [MOD_PLANS.md](MOD_PLANS.md), and the test plan is separated in [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md):
+Candidate lists and side placement are now separated in [MOD_PLANS.md](../MOD_PLANS.md), and the test plan is separated in [TESTING_CHECKLIST.md](../TESTING_CHECKLIST.md):
 - **Client only:** ImmediatelyFast 1.6.15, Flerovium 1.1.2, Entity Culling 1.10.4, Distant Horizons 3.3.3.
 - **Server profiling/utility:** spark 1.10.124 (server profiling first), Chunk-Pregenerator 4.5.4 (dedicated-server pre-generation task).
 - **Both sides:** Lithium 0.15.4, FastSuite 6.0.7, FastFurnace 9.0.1, More Culling 1.0.9.
@@ -110,4 +110,4 @@ Candidate lists and side placement are now separated in [MOD_PLANS.md](MOD_PLANS
 A version correction has also been made: More Culling's matching NeoForge 1.21.1 release is v1.0.9, not 1.0.11. No candidate has been installed or approved.
 ## Quality-of-life shortlist comparison — 4 November 2026
 
-The six QoL candidates from the maintainer's screenshot have been compared with the recorded installed inventory and added to [MOD_PLANS.md](MOD_PLANS.md), with matching isolated checks in [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md). JER complements existing JEI; Shulker Box Tooltip complements Sophisticated Backpacks; Enchantment Descriptions needs Bookshelf and Prickle confirmed in the main profile; Nature's Compass and Explorer's Compass add biome and structure search respectively; Waystones needs an AeroPortals overlap review and compatible Balm dependency check. All remain candidates only. No mods were installed or approved.
+The six QoL candidates from the maintainer's screenshot have been compared with the recorded installed inventory and added to [MOD_PLANS.md](../MOD_PLANS.md), with matching isolated checks in [TESTING_CHECKLIST.md](../TESTING_CHECKLIST.md). JER complements existing JEI; Shulker Box Tooltip complements Sophisticated Backpacks; Enchantment Descriptions needs Bookshelf and Prickle confirmed in the main profile; Nature's Compass and Explorer's Compass add biome and structure search respectively; Waystones needs an AeroPortals overlap review and compatible Balm dependency check. All remain candidates only. No mods were installed or approved.

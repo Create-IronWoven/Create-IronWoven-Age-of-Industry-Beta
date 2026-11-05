@@ -1,12 +1,12 @@
-# Beta Status — v0.1.088
+# Beta Status — v0.1.110
 
-**Current development version:** `v0.1.088` (not yet a downloadable public beta)  
+**Current development version:** `v0.1.110` (not yet a downloadable public beta)  
 **Last updated:** 5 November 2026  
 **Minecraft:** 1.21.1 · **NeoForge:** 21.1.265 · **Java:** 21
 
 ## Current status
 
-The current development version `v0.1.088` reflects the retroactive count of 88 entries in the recorded CurseForge profile snapshot dated 4 November 2026. This is an inventory-based baseline, not a claim of 88 public releases. No downloadable beta package exists.
+The current development version `v0.1.110` reflects the retroactive count of 110 entries in the recorded CurseForge profile snapshot dated 5 November 2026. This is an inventory-based baseline, not a claim of 88 public releases. No downloadable beta package exists.
 
 Create IronWoven is in **internal compatibility and functional testing**. There is currently no public downloadable beta package and no release date has been announced.
 

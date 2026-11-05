@@ -1,3 +1,11 @@
+# Testing order for beta candidates
+
+- Test server-only mods first, then shared client/server mods, and client-only mods last.
+- Complete pending server-side and shared candidates before starting client-only candidates, unless the maintainer explicitly defers, holds, or rejects a specific candidate.
+- Split mixed batches by side. Keep client-only JARs out of the dedicated-server mods folder.
+- Test client-only mods one at a time on the matching client after the server/shared queue is complete.
+- **spark profiling is deferred to beta testers.** It is not an internal development prerequisite; beta testers may capture performance baselines during the beta phase.
+
 # Full Installed-Mod Functional Testing Checklist
 
 **Last updated:** 5 November 2026  

@@ -56,7 +56,7 @@ The server did not reach `Done`, load a world, accept a client, or complete a no
 **Next gate:** restore the Numismatics dependency pair, add FTB Teams to matching client/server profiles, remove client-only rendering mods from the server folder, then retry the disposable-server smoke test. No update from this attempt is approved for release.
 
 
-## Existing-mod update retry — 5 November 2026, 13:58
+## Previous existing-mod update retry — 5 November 2026, 13:58 (historical)
 
 **Result: Partial server startup/world-load pass.** The retry used a disposable server. FTB Teams 2101.1.12 was detected and initialized, and the server reached `Done (1.493s)!` after preparing `world_lootr_test`. The supplied server/debug logs do not show a matching client login or a clean shutdown.
 
@@ -76,7 +76,7 @@ Do not keep both Numismatics versions in one `mods` folder. Test Numismatics Plu
 
 ImmediatelyFast, Flerovium, Entity Culling, and More Culling are client-only and must be tested on the matching client, not in the dedicated-server folder. The server log contains 463 ERROR-level entries, mostly recurring Design n' Decor / Steam 'n' Rails loot-table parsing entries, plus the already tracked Sable, Struts, PowerGrid, Every Compat and Create Deco findings. Verify the world-scoped compatibility datapacks in the disposable world before assigning the recurring entries to a mod regression.
 
-**Next gate:** use one Numismatics version per profile; include Numismatics Plus only with 1.0.20; keep client-only rendering mods out of the server; then provide client login and clean-shutdown evidence. This retry is not a complete routine smoke-test pass or release approval.
+**Next gate at the time of this retry:** use one Numismatics version per profile; include Numismatics Plus only with 1.0.20; keep client-only rendering mods out of the server; then provide client login and clean-shutdown evidence. The 14:09 follow-up below completed the routine smoke sequence; the correct Numismatics pair, isolated client tests, and performance baseline remain open. This retry itself was not a complete smoke-test pass or release approval.
 
 
 ## Existing partial function evidence — do not overstate it

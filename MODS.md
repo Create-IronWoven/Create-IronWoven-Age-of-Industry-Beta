@@ -170,3 +170,21 @@ New performance and quality-of-life recommendations remain candidates only. They
 ## Newer user-supplied mods-folder snapshot — 4 November 2026
 
 A follow-up launcher screenshot explicitly displays `Content (88)` and `Mods (88)`, confirming **88 mods in the current profile**. The earlier manual filename transcription gave 89 visible names; that visual count was one over the launcher-confirmed profile total and must not be treated as the profile count. The screenshot includes client-only graphics files Sodium, Iris and Sodium Extra and is not a replacement for a fresh dedicated-server manifest. The older 79 top-level server JAR / 82 loaded-mod figure is a historical server snapshot and must remain separate.
+
+
+## Failed update-trial snapshot — 5 November 2026, 13:43
+
+The following versions were detected in a later disposable-server attempt. This failed run is **not** the approved inventory snapshot above and does not establish that these versions are release-ready.
+
+| Mod | Trial version |
+|---|---:|
+| Sophisticated Core | 1.5.28.2458 |
+| Sophisticated Backpacks | 3.26.20.2244 |
+| Entity Culling | 1.11.3 — client-only |
+| Create Crafts & Additions | 1.7.2 |
+| Create: Numismatics | 1.1.0 — blocked by Numismatics Plus 1.0.1 dependency |
+| Create: TFMG Community Edition | 1.3.3 |
+| FTB Teams | Missing from server folder |
+| Create: Steam 'n' Rails | 0.3.0-alpha.2; Beta 2 not present |
+
+The server failed before completing mod loading because FTB Teams was missing and Numismatics Plus 1.0.1 required Numismatics 1.0.20. See [Testing Checklist](TESTING_CHECKLIST.md) for repair steps and evidence.

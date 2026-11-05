@@ -416,6 +416,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 **Current status:** Pending
 - [ ] Fresh disposable Overworld: verify representative RU biomes, vegetation, trees and biome blocks.
 - [ ] Check biome edges and Create integration.
+- [ ] Fresh disposable Nether: use biome lookup and explore new chunks to confirm representative Regions Unexplored Nether biomes generate; keep the production world unchanged.
 
 ### Oh The Trees You'll Grow 5.3.5
 **Current status:** Pending

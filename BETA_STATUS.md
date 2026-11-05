@@ -2,7 +2,6 @@
 
 **Last updated:** 5 November 2026  
 **Minecraft:** 1.21.1 · **NeoForge:** 21.1.265 · **Java:** 21  
-**Current modpack version:** `v0.1.000` (update counter `000`)
 
 ## Current stage
 

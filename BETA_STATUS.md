@@ -35,6 +35,12 @@ The 05:48–05:58 disposable-server run reached `Done (1.589s)!`, loaded `world_
 
 The 07:15–07:30 disposable-server run reached `Done (1.718s)!`, loaded the test world, accepted one client login, and shut down cleanly with all dimensions saved. spark 1.10.124 initialized and selected the built-in Java engine on Windows 11 / amd64; no TPS/MSPT, CPU, memory, GC baseline values, or saved profiler report were captured. ImmediatelyFast 1.6.15, Flerovium 1.1.3 Beta, Entity Culling 1.10.4, More Culling 1.0.11, and Cloth Config 15.0.140 were detected. The four rendering mods are client-only and must be tested on the matching client separately, one at a time. The log contains broader existing pack errors; the combined run does not verify individual visual features or performance improvement.
 
+
+
+## Latest existing-mod update trial — 5 November 2026
+
+A separate disposable-server attempt at 13:43 failed during mod loading, before `Done`, world load, client login, or normal shutdown. FTB Teams was missing while FTB Chunks required it, and Numismatics 1.1.0 did not satisfy Numismatics Plus 1.0.1's exact Numismatics 1.0.20 dependency. The next test must restore Numismatics 1.0.20, add FTB Teams 2101.1.12, and keep client-only rendering mods out of the server folder. The other newer files were detected but are not accepted or release-approved. See [Testing Checklist](TESTING_CHECKLIST.md) and [Mod Plans](MOD_PLANS.md).
+
 ## Project direction
 
 Create IronWoven focuses on Create, Create Aeronautics, trains, automation, engineering, transport, and exploration. The production world and its existing BYG 2.6.3 / Regions Unexplored 0.6.3 setup remain protected.

@@ -142,7 +142,7 @@ def main():
     if not ok:
         comment("**Checklist not changed.** " + message + "\n\nPlease check the exact mod heading and test-action text, or ask the maintainer to review this submission.")
         return
-    response = f"**Checklist updated automatically.** The result {result} for **{action}** under **{mod.lstrip('# ').strip()}** was recorded for **{tester}** on **{date}**."
+    response = f"**Checklist updated automatically.** The result {result} for **{action}** under **{mod.lstrip('# ').strip()}** was recorded as **{environment}** for **{tester}** on **{date}**."
     if commit_url:
         response += f"\n\n[View the checklist update commit]({commit_url})."
     comment(response)

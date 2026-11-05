@@ -21,7 +21,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | Create Aeronautics: Transmission & Linkage | 0.2.9 |
 | Create Bits 'n' Bobs | 2.3.5 |
 | Create Cobblestone | 1.5.1+neoforge-1.21.1-160 |
-| Create Crafts & Additions | 1.6.0 |
+| Create Crafts & Additions | 1.7.2 — latest test-folder file; acceptance pending |
 | Create Deco | 2.1.3 |
 | Create Diesel Generators | 1.3.15 |
 | Create Encased | 1.10.0-fix1 |
@@ -48,7 +48,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | Create: Sound of Steam / Pipe Organs | 0.9.2.1 |
 | Create: Steam 'n' Rails | 0.3.0-alpha.2 |
 | Create: Structures Arise | 176.49.50 |
-| Create: The Factory Must Grow | 1.3.2a-community |
+| Create: The Factory Must Grow | 1.3.3-community — latest test-folder file; acceptance pending |
 | Create: Unified Fuels | 1.0.4 |
 | Create: Vibrant Vaults | 0.3.2 |
 | Botany Pots | 21.1.44 |
@@ -68,10 +68,10 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | Design n' Decor | 2.2b |
 | Farmer's Delight | 1.3.4 |
 | Mama's Herbs and Harvest | 1.21.1-24 |
-| Sophisticated Backpacks | 3.26.19 |
+| Sophisticated Backpacks | 3.26.20.2244 — latest test-folder file; acceptance pending |
 | Sophisticated Backpacks Create Integration | 0.2.3 |
 | Sophisticated Air Tank | 1.0.1-beta |
-| Sophisticated Core | 1.5.23 |
+| Sophisticated Core | 1.5.28.2458 — latest test-folder file; acceptance pending |
 
 ## World generation and exploration
 
@@ -92,7 +92,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | AppleSkin | 3.0.9 |
 | FTB Chunks | 2101.1.23 |
 | FTB Library | 2101.1.39 |
-| FTB Teams | 2101.1.11 |
+| FTB Teams | 2101.1.12 — latest test-folder file; initialized in 14:09 smoke test |
 | FTB XMod Compat | 21.1.14 |
 | InControl! | 10.3.1 |
 | Jade | 15.10.6 |
@@ -225,3 +225,28 @@ This is a later test-folder snapshot only and does not replace the accepted inve
 | ImmediatelyFast / Flerovium / Entity Culling / More Culling | 1.6.15 / 1.1.3 / 1.11.3 / 1.0.11 | Client-only files still detected in dedicated-server folder |
 
 The server reached `Done (1.822s)`, loaded the disposable world, accepted a matching client login, and shut down with all dimensions saved. This confirms the routine smoke sequence only. The log contained 463 ERROR-level and 172 WARN-level entries; see [Testing Checklist](TESTING_CHECKLIST.md) for the summary. No feature-function pass or production/release approval is implied.
+
+
+## Latest server-folder snapshot — 5 November 2026, 18:49
+
+The maintainer supplied a newer screenshot of `MinecraftServer-Test/mods`. This section records the visible test-folder contents and supersedes the 14:09 folder snapshot for the current visible server-folder state. It is not a final release manifest and does not imply feature validation or release approval.
+
+### Updated file versions observed
+
+| Mod | Previous recorded version | New folder version | Status |
+|---|---:|---:|---|
+| Create Crafts & Additions | 1.6.0 | 1.7.2 | Installed in test folder; acceptance pending |
+| Sophisticated Backpacks | 3.26.19.2243 | 3.26.20.2244 | Installed in test folder; acceptance pending |
+| Sophisticated Core | 1.5.23.2446 | 1.5.28.2458 | Installed in test folder; acceptance pending |
+| FTB Teams | 2101.1.11 | 2101.1.12 | Installed; initialized in earlier 14:09 smoke test |
+| Create: The Factory Must Grow Community Edition | 1.3.2a-community | 1.3.3-community | Installed in test folder; acceptance pending |
+
+The screenshot also shows Bookshelf 21.1.81, FastFurnace 9.0.1, FastSuite 6.0.7, Integrated API 1.9.1, Integrated Villages 1.3.3+1.21.1, Lootr 1.11.38.127, Prickle 1.1.11, Supplementaries 3.4.0, and spark 1.10.124 in the server folder.
+
+### Important test-folder observations
+
+- Both Create Numismatics 1.0.20 and 1.1.0 JARs are visible. The 14:09 runtime log selected 1.1.0; Numismatics Plus was absent. Do not treat both versions as a compatible pair or test Numismatics Plus against 1.1.0. Use only one Numismatics JAR in a profile.
+- ImmediatelyFast, Flerovium, Entity Culling, and More Culling are not visible in this latest server-folder screenshot. This does not establish their client-profile status.
+- The screenshot is an inventory observation, not proof of each mod's features or acceptance into the final pack.
+
+**Modpack version remains `v0.1.088`.** The project versioning rules require each individual content change to be tested as required and explicitly accepted before its own sequential version increment is assigned. Merely observing a newer JAR in a disposable test folder does not qualify.

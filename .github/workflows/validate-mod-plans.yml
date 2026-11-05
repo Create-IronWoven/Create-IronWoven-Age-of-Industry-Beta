@@ -22,7 +22,7 @@ jobs:
       - name: Check out public beta repository
         uses: actions/checkout@v4
 
-      - name: Validate planned mod entries
+      - name: Validate player-facing mod plan
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -32,35 +32,23 @@ jobs:
               raise SystemExit("Missing required file: MOD_PLANS.md")
 
           content = path.read_text(encoding="utf-8")
-          candidates = [
-              "Botany Pots",
-              "Create Deco",
-              "Construction Sticks",
-              "Lootr",
-              "YUNG's Better End Island",
-              "BetterEnd: New Dawn",
-              "Bigger Better End Cities",
-              "Ender Villages",
-              "Bookshelf",
-              "Prickle",
+          required_sections = [
+              "# Mod Plans",
+              "## Status meanings",
+              "## Current testing and follow-ups",
+              "## Future ideas",
+              "## Paused work",
+              "## Explicit exclusions",
           ]
-
-          errors = [f"Missing planned mod entry: {name}"
-                    for name in candidates if name not in content]
-
-          bookshelf_rows = [
-              line for line in content.splitlines()
-              if line.strip().startswith("| Bookshelf |")
-          ]
-          if len(bookshelf_rows) != 1:
-              errors.append(
-                  f"Bookshelf must appear once in the candidate table; found {len(bookshelf_rows)}"
-              )
-
-          if errors:
-              print("\n".join(f"::error::{error}" for error in errors))
+          missing = [section for section in required_sections if section not in content]
+          if missing:
+              for section in missing:
+                  print(f"::error::Missing required section: {section}")
               raise SystemExit(1)
 
-          print("PASS: all requested candidate names are present.")
-          print("PASS: duplicate Bookshelf entry is not present.")
+          if "not an installed-mod list" not in content:
+              raise SystemExit("Mod plan must clarify that it is not the installed inventory.")
+
+          print("PASS: player-facing mod plan sections are present.")
+          print("PASS: installed inventory is clearly distinguished.")
           PY

@@ -11,6 +11,7 @@ Create IronWoven is a Minecraft modpack built around **Create**, **Create Aerona
 - [Mods in the current test pack](MODS.md)
 - [Planned mods and project decisions](MOD_PLANS.md)
 - [Testing progress](TESTING_CHECKLIST.md)
+- [Submit test results](../../issues/new?template=functional-test-report.yml)
 - [Known issues](KNOWN_ISSUES.md)
 - [Dimensions and exploration](DIMENSIONS.md)
 - [Changelog](CHANGELOG.md)
@@ -34,4 +35,4 @@ Before reporting a problem, check [Known Issues](KNOWN_ISSUES.md) and search the
 
 Remove usernames, private addresses, local paths, passwords, tokens, and personal information from logs or screenshots. Do not upload world saves, private backups, or third-party mod JARs.
 
-A successful server startup does not prove every mod feature works. The [testing checklist](TESTING_CHECKLIST.md) separates startup checks from individual feature validation.
+A successful server startup does not prove every mod feature works. The [testing checklist](TESTING_CHECKLIST.md) separates startup checks from individual feature validation. Testers can submit results using the [simple test report form](../../issues/new?template=functional-test-report.yml); no Markdown editing is required.

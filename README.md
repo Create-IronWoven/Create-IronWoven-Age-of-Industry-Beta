@@ -17,7 +17,6 @@ Welcome to the public, player-facing home for **Create IronWoven**, a Minecraft 
 - [Documentation guide](DOCUMENTATION.md)
 - [Security and responsible reporting](SECURITY.md)
 
-**Current modpack version: `v0.1.000`** (initial development baseline; update counter `000`). See [Versioning](VERSIONING.md) for how updates are numbered.
 
 ## Platform
 

@@ -1,16 +1,16 @@
 # Changelog
 
-Player-facing development highlights for Create IronWoven.
-
-This file records notable changes that are useful to beta testers. It does not attempt to list every internal development commit.
+Player-facing development highlights for Create IronWoven. This is a concise summary of notable changes, not a list of every internal commit.
 
 ## Unreleased — public beta preparation
 
-- Created a public player-facing repository for progress updates, known issues, support, and feedback.
-- Added a dated current mod inventory, including client-only mods and library dependencies.
-- Added a separate list distinguishing planned, on-hold, and excluded mods.
-- Internal testing has passed targeted fixes for Create-related recipes and loot tables, Sable / Copycats physics configuration, and Create Kinetic's dedicated-server mixin configuration.
-- Remaining internal investigations include Struts dedicated-server mixin handling and PowerGrid's optional native solver.
+- Batches A, B, and C passed their routine dedicated-server startup, disposable-world load, matching-client login, and log-review smoke tests.
+- Batch D — Create Aeronautics Structures — remains partial because of a candidate-specific loot-table parsing error. Its non-English startup message is informational only and is not a blocker.
+- Curios configuration now provides two Back slots and one Head slot in a new test world. The maintainer reports the Backpack + Backtank, Aviator Goggles, and Linked Typewriter checks working.
+- More Curios Slots 1.4 was intentionally removed; craftable slot upgrades are not wanted.
+- Distant Horizons 3.3.3 was reviewed and explicitly excluded by the maintainer.
+- The public testing checklist was consolidated around current open work; historical evidence remains in private dated records.
+- Remaining dedicated-server investigations include Struts client-class loading and PowerGrid's optional native solver.
 
 ## Release history
 

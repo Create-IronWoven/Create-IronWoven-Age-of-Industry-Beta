@@ -40,7 +40,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | Create: Fluids Be Gone! | 1.0.1 |
 | Create: Framed | 1.8.2 |
 | Create: Numismatics | 1.0.20 |
-| Create: Numismatics Plus | 1.0.1 |
+| Create: Numismatics Plus | 1.0.1 — archived in `MinecraftServer-Test/mods-disabled`; not part of the active server test profile |
 | Create: Pantographs & Wires | 0.2.3-C6 beta |
 | Create: Pattern Schematics | 2.0.10 |
 | Create: Power Grid | 0.6.2 |
@@ -250,3 +250,61 @@ The screenshot also shows Bookshelf 21.1.81, FastFurnace 9.0.1, FastSuite 6.0.7,
 - The screenshot is an inventory observation, not proof of each mod's features or acceptance into the final pack.
 
 **Modpack version remains `v0.1.088`.** The project versioning rules require each individual content change to be tested as required and explicitly accepted before its own sequential version increment is assigned. Merely observing a newer JAR in a disposable test folder does not qualify.
+
+
+## Disabled/archive server-folder snapshot — 5 November 2026, 17:58
+
+The maintainer supplied a screenshot of `MinecraftServer-Test/mods-disabled`. The following files are archived outside the active server `mods` folder. This is a record of the disabled folder, not a live filesystem scan of the active folder or a final client-profile manifest.
+
+### End workstream — paused / excluded from the current test setup
+
+| Archived file | Classification |
+|---|---|
+| `BetterEnd-21.0.39.jar` | End content; End research/testing is paused and the mod is not in the active test setup |
+| `YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar` | End content; paused with the End workstream |
+| `YungsApi-1.21.1-NeoForge-5.1.9.jar` | Support library archived with the End-only test set; keep archived unless a current dependency requires it |
+
+### Client-only rendering / performance candidates — not active on the dedicated server
+
+| Archived file | Classification |
+|---|---|
+| `entityculling-neoforge-1.10.4-mc1.21.1.jar` | Older Entity Culling candidate |
+| `entityculling-neoforge-1.11.3-mc1.21.1.jar` | Newer Entity Culling candidate |
+| `flerovium-neoforge-1.21.1-1.1.3-all.jar` | Client rendering/performance candidate |
+| `ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar` | Client rendering/performance candidate |
+| `moreculling-neoforge-1.21.1-1.0.11.jar` | Client rendering/performance candidate |
+| `iris-neoforge-1.8.14-beta.1+mc1.21.1.jar` | Client-only graphics mod; archive location is under the server test folder |
+| `sodium-neoforge-0.8.13+mc1.21.1.jar` | Client-only graphics mod; archive location is under the server test folder |
+| `sodium-extra-neoforge-0.9.5+mc1.21.1.jar` | Client-only graphics mod; archive location is under the server test folder |
+
+The screenshot proves these files are in the server's disabled archive, not whether matching client-side copies remain in the CurseForge client profile. Keep client-profile inventory decisions separate. Batch E's isolated client tests remain pending; no performance result or rejection is inferred from the archive screenshot alone.
+
+### Superseded versions — retain only as rollback/archive copies
+
+| Archived file | Newer version already recorded in the active test inventory |
+|---|---|
+| `createaddition-1.6.0.jar` | Create Crafts & Additions 1.7.2 |
+| `create-enchantment-industry-2.4.2.jar` | Create: Enchantment Industry 2.5.4b |
+| `ftb-teams-neoforge-2101.1.11.jar` | FTB Teams 2101.1.12 |
+| `lithostitched-1.7.11-neoforge-21.1.jar` | Lithostitched 1.8.1 |
+| `sophisticatedbackpacks-1.21.1-3.26.19.2243.jar` | Sophisticated Backpacks 3.26.20.2244 |
+| `sophisticatedcore-1.21.1-1.5.23.2446.jar` | Sophisticated Core 1.5.28.2458 |
+| `tfmg-1.21.1-1.3.2a-community.jar` | Create: The Factory Must Grow Community Edition 1.3.3 |
+
+### Other archived test files — reason not established by the screenshot
+
+| Archived file | Classification |
+|---|---|
+| `tracks-neoforge-1.21.1-1.0.1.jar` | Archived track/rail candidate; no current selection or rejection reason recorded |
+| `tracks_plus-1.0.6b7.jar` | Archived track/rail candidate; no current selection or rejection reason recorded |
+
+### Numismatics files
+
+| Archived file | Classification |
+|---|---|
+| `CreateNumismatics-1.1.0+neoforge-mc1.21.1.jar` | Alternate version archived; use only one Numismatics version per profile. Keep the established 1.0.20 baseline in the active server test profile unless a separately approved 1.1.0 test is opened |
+| `numismatics_plus-1.0.1.jar` | Addon archived; absent from the 14:09 runtime list and not currently part of the active server test profile. Reintroduce only for a separate compatibility test with Numismatics 1.0.20 |
+
+`createkinetic-1.4.3.jar.original.bak` is a backup copy, not an active mod JAR. It is recorded here only to distinguish it from an installable mod file.
+
+**Versioning:** this archive reconciliation does not by itself increase the modpack version. Superseded JAR copies, unaccepted candidates, client-only files parked outside the server, and the paused End test set are not counted as new accepted content removals. The current development version remains `v0.1.088`.

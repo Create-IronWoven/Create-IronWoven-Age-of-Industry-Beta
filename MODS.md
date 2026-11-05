@@ -17,7 +17,6 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | Create Aeronautics | 1.3.2 |
 | Create Aeronautics: Curios Compat | 2.0 |
 | Create: Curios Backtank | 1.0.2 — test installation; Backpack + Backtank use in the Curios Back slots reported working; broader release validation remains open |
-| More Curios Slots | 1.4 — intentionally removed by maintainer; slots will be managed through Curios config |
 | Create Aeronautics: Copycat Wing | 1.0.4 |
 | Create Aeronautics: Transmission & Linkage | 0.2.9 |
 | Create Bits 'n' Bobs | 2.3.5 |

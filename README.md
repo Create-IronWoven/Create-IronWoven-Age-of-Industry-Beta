@@ -1,64 +1,36 @@
-# Create IronWoven — Public Beta Hub
+# Create IronWoven
 
-**Current modpack version: `v0.1.000`** · Internal development version; no downloadable beta package has been published.
+Create IronWoven is a Minecraft modpack built around **Create**, **Create Aeronautics**, trains, automation, engineering, transport, building, and exploration.
 
-Welcome to the public, player-facing home for **Create IronWoven**, a Minecraft 1.21.1 NeoForge modpack focused on Create, Create Aeronautics, trains, automation, engineering, transport, and exploration.
+**Development status:** The project is still in internal testing. There is no public downloadable beta yet.
 
-> **Development notice:** The pack is still being tested. Features, balance, compatibility, and stability may change. Back up important worlds before updating, and do not assume a test build is safe for an existing production world.
-
-## Start here
+## Quick links
 
 - [Current beta status](BETA_STATUS.md)
 - [Mods in the current test pack](MODS.md)
-- [Planned, on-hold, and excluded mods](MOD_PLANS.md)
-- [Dimension-based mod guide](DIMENSIONS.md)
-- [Testing checklist](TESTING_CHECKLIST.md)
+- [Planned mods and project decisions](MOD_PLANS.md)
+- [Testing progress](TESTING_CHECKLIST.md)
 - [Known issues](KNOWN_ISSUES.md)
-- [Support and troubleshooting](SUPPORT.md)
+- [Dimensions and exploration](DIMENSIONS.md)
 - [Changelog](CHANGELOG.md)
-- [Documentation guide](DOCUMENTATION.md)
-- [Security and responsible reporting](SECURITY.md)
-
+- [Support and troubleshooting](SUPPORT.md)
+- [Report a problem or suggest an idea](../../issues)
 
 ## Platform
 
 | Component | Target |
 |---|---|
 | Minecraft | 1.21.1 |
-| Loader | NeoForge 21.1.265 |
+| Mod loader | NeoForge 21.1.265 |
 | Java | 21 |
-| Main focus | Create and Create Aeronautics |
-| Current stage | Internal testing / public feedback hub |
+| Mod source | CurseForge only |
 
-This repository documents progress and collects player feedback. It does not currently distribute the modpack files, and no public downloadable beta release is announced here.
+This repository is the public information and feedback hub. It does not host modpack downloads. When a beta is available, its release and installation instructions will be published here.
 
-## Which page should I use?
+## Feedback
 
-| I want to… | Read |
-|---|---|
-| See what is in the current test inventory | [MODS.md](MODS.md) |
-| See ideas that are not installed or approved | [MOD_PLANS.md](MOD_PLANS.md) |
-| Browse world-generation and exploration work by dimension | [DIMENSIONS.md](DIMENSIONS.md) |
-| Find unfinished tests | [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md) |
-| Check an already-known problem | [KNOWN_ISSUES.md](KNOWN_ISSUES.md) |
-| Understand the current development stage | [BETA_STATUS.md](BETA_STATUS.md) |
+Before reporting a problem, check [Known Issues](KNOWN_ISSUES.md) and search the [issue tracker](../../issues). Include reproduction steps, Minecraft/NeoForge versions, and the modpack build if one was provided.
 
-## Report a problem or suggest an idea
+Remove usernames, private addresses, local paths, passwords, tokens, and personal information from logs or screenshots. Do not upload world saves, private backups, or third-party mod JARs.
 
-Before opening an issue:
-
-1. Check [Known Issues](KNOWN_ISSUES.md).
-2. Search the [issue tracker](../../issues).
-3. Choose the closest report form and include steps to reproduce the issue.
-
-- [Report a bug](../../issues/new?template=bug_report.yml)
-- [Report a compatibility problem](../../issues/new?template=compatibility_report.yml)
-- [Suggest a feature or mod](../../issues/new?template=feature_suggestion.yml)
-
-Include the Minecraft, NeoForge, and modpack versions. Remove passwords, tokens, private addresses, local paths, player data, and other personal information from logs or screenshots. Do not upload world saves, private server backups, or third-party mod JARs.
-
-## Project ownership
-
-The private development repository contains maintainer-only technical research, internal test evidence, and development records. This public repository contains player-safe summaries only.
-
-A successful server startup does not prove every mod feature works or that a candidate is approved for release. The testing checklist records what remains to be checked.
+A successful server startup does not prove every mod feature works. The [testing checklist](TESTING_CHECKLIST.md) separates startup checks from individual feature validation.

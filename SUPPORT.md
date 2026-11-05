@@ -6,7 +6,7 @@
 2. Check that the client and server use matching modpack versions.
 3. Restart the game once and see whether the issue repeats.
 4. Check [Known Issues](KNOWN_ISSUES.md).
-5. Search existing reports in the [issue tracker](https://github.com/alexth110987/Create-IronWoven-Beta/issues).
+5. Search existing reports in the [issue tracker](../../issues).
 
 ## What to include in a support report
 
@@ -25,6 +25,6 @@ Do not upload entire world folders or private server backups. A short relevant e
 
 ## Where to report
 
-- [Bug report form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=bug_report.yml)
-- [Compatibility report form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=compatibility_report.yml)
-- [Feature suggestion form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=feature_suggestion.yml)
+- [Bug report form](../../issues/new?template=bug_report.yml)
+- [Compatibility report form](../../issues/new?template=compatibility_report.yml)
+- [Feature suggestion form](../../issues/new?template=feature_suggestion.yml)

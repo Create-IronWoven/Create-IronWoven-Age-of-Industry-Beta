@@ -233,7 +233,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 - [ ] Set generator to cobblestone, stone, basalt, limestone and scoria.
 - [ ] Verify outputs, type switching, SU use and disabled-generator behavior.
 
-### Create Crafts & Additions 1.6.0
+### Create Crafts & Additions 1.7.2
 **Current status:** Pending
 - [ ] Run Electric Motor from FE and verify SU output.
 - [ ] Drive Alternator with SU and verify FE output.
@@ -316,7 +316,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 - [ ] Trigger notes manually and by supported controls/redstone.
 - [ ] Test pitch, sound, range, persistence and multiplayer audio.
 
-### Create: The Factory Must Grow 1.3.2a-community
+### Create: The Factory Must Grow Community Edition 1.3.3
 **Current status:** Pending
 - [ ] Run representative industrial processing: fluid/oil input, machine processing, outputs, power/kinetic requirements and fuel-burning machine.
 - [ ] Test Unified Fuels integration.
@@ -392,7 +392,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 - [ ] Have two players open the same generated Lootr chest.
 - [ ] Verify independent personal loot, container persistence and multiplayer synchronization.
 
-### Sophisticated Backpacks 3.26.19
+### Sophisticated Backpacks 3.26.20.2244
 **Current status:** Pending
 - [ ] Craft/open backpack.
 - [ ] Test storage, upgrades, filters/automation, pickup and save/relog persistence.
@@ -459,7 +459,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 - [ ] Claim/unclaim test chunk.
 - [ ] Verify map, team permissions, boundaries, force-load controls, protection and reconnect persistence.
 
-### FTB Teams 2101.1.11
+### FTB Teams 2101.1.12
 **Current status:** Pending
 - [ ] Create team.
 - [ ] Invite/remove second player.
@@ -701,7 +701,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 - [ ] Verify dependent Sable integrations load and register expected physics behavior.
 - [ ] No separate feature assumed.
 
-### Sophisticated Core 1.5.23
+### Sophisticated Core 1.5.28.2458
 **Current status:** Pending
 - [ ] Verify backpack upgrade/inventory modules initialize and retain data after close/reopen, relog and restart.
 
@@ -758,7 +758,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 | ImmediatelyFast / Flerovium / Entity Culling / More Culling | 1.6.15 / 1.1.3 / 1.11.3 / 1.0.11; all client-only and still present in the dedicated-server folder |
 | spark | 1.10.124 initialized; built-in Java engine selected on Windows 11 / amd64; no numeric baseline or saved profile |
 
-Do not leave both Numismatics JARs in one test folder. Test Numismatics Plus 1.0.1 with Numismatics 1.0.20 only; test Numismatics 1.1.0 separately without Plus until a compatible Plus release is verified. Move the four client-only rendering mods out of the dedicated-server folder and test them on the matching client, one at a time.
+Do not leave both Numismatics JARs in one test folder. The later `mods-disabled` screenshot shows Numismatics 1.1.0 and Numismatics Plus 1.0.1 archived; keep Numismatics 1.0.20 only in the active server test folder. Reintroduce Numismatics Plus only for a separate pairing test with 1.0.20. The four client-only rendering candidates are also now shown in `mods-disabled`; their client tests remain pending and must be performed on the matching client, one at a time.
 
 ### Error review
 

@@ -248,7 +248,9 @@ This is a design preference, not a claim that any installed or shortlisted mod a
 - Target: Minecraft 1.21.1 / NeoForge 21.1.265.
 - Detected test version: 1.1.0-Beta-3.1. The exact CurseForge file ID/provenance and dependency declarations still need verification. Create Aeronautics 1.3.2, Sable 2.0.6, and GeckoLib 4.9.3 were present in the test log.
 - Keep its structure placement in the Overworld; it is not an End content candidate.
-- Status: test attempted in a disposable profile; partial pending review of a candidate-specific loot-table error. Exact CurseForge file provenance and structure generation remain unverified. The non-English startup text is informational only, not a blocker. Not production-approved.
+- Startup message observed in the test log: `Мод Create Aeronautics Structures загружается!`  
+  **English translation:** “Create Aeronautics Structures is loading!” (informational startup message).  
+- Status: test attempted in a disposable profile; partial pending review of a candidate-specific loot-table error. Exact CurseForge file provenance and structure generation remain unverified. The message language is not a blocker. Not production-approved.
 
 ## End mod workstream — paused
 

@@ -35,4 +35,4 @@ Before reporting a problem, check [Known Issues](KNOWN_ISSUES.md) and search the
 
 Remove usernames, private addresses, local paths, passwords, tokens, and personal information from logs or screenshots. Do not upload world saves, private backups, or third-party mod JARs.
 
-A successful server startup does not prove every mod feature works. The [testing checklist](TESTING_CHECKLIST.md) separates startup checks from individual feature validation. Testers can submit results using the [simple test report form](../../issues/new?template=functional-test-report.yml); no Markdown editing is required.
+A successful server startup does not prove every mod feature works. The [testing checklist](TESTING_CHECKLIST.md) separates startup checks from individual feature validation. Testers can submit one action at a time using the [simple test result form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=functional-test-report.yml). Successful submissions update the matching checklist row automatically; no Markdown editing is required.

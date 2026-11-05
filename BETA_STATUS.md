@@ -41,6 +41,13 @@ The 07:15–07:30 disposable-server run reached `Done (1.718s)!`, loaded the tes
 
 A separate disposable-server attempt at 13:43 failed during mod loading, before `Done`, world load, client login, or normal shutdown. FTB Teams was missing while FTB Chunks required it, and Numismatics 1.1.0 did not satisfy Numismatics Plus 1.0.1's exact Numismatics 1.0.20 dependency. The next test must restore Numismatics 1.0.20, add FTB Teams 2101.1.12, and keep client-only rendering mods out of the server folder. The other newer files were detected but are not accepted or release-approved. See [Testing Checklist](TESTING_CHECKLIST.md) and [Mod Plans](MOD_PLANS.md).
 
+
+## Latest existing-mod update retry — 5 November 2026, 13:58
+
+The later disposable-server retry detected and initialized FTB Teams 2101.1.12, clearing the earlier missing-FTB-Teams blocker for this server attempt. The server reached `Done (1.493s)` and prepared the test world. The logs do not show client login or clean shutdown, so this is a partial server startup/world-load pass only.
+
+Both Numismatics 1.0.20 and 1.1.0 JARs were present; the loader selected 1.1.0. Numismatics Plus 1.0.1 was absent from the runtime list, so its compatibility was not tested. Do not keep both Numismatics versions in one profile. Use 1.0.20 only with Numismatics Plus 1.0.1, or test 1.1.0 separately without Plus until compatibility is verified. Client-only rendering mods remain in the server folder and still require separate client tests. See [Testing Checklist](TESTING_CHECKLIST.md) and [Mod Plans](MOD_PLANS.md).
+
 ## Project direction
 
 Create IronWoven focuses on Create, Create Aeronautics, trains, automation, engineering, transport, and exploration. The production world and its existing BYG 2.6.3 / Regions Unexplored 0.6.3 setup remain protected.

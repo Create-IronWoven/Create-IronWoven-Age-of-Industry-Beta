@@ -9,7 +9,7 @@ body:
         Submit one form for each test action you complete. Once the repository's one-time Actions write permission is configured, the matching row in the public testing checklist will update automatically. If GitHub blocks the write, the report stays open and explains what needs maintainer attention.
 
         Before filling this in, open the [testing checklist](https://github.com/alexth110987/Create-IronWoven-Beta/blob/main/TESTING_CHECKLIST.md):
-        - Copy the mod's exact section heading (including its version).
+        - Copy the mod's exact heading text, including its version, but leave off the leading ### symbols.
         - Copy the exact test-action text from that mod's table.
         - Paste both below. This makes sure the correct checklist row is updated.
 
@@ -34,8 +34,8 @@ body:
     id: mod-name
     attributes:
       label: Exact mod section heading
-      description: Copy the complete heading from the checklist, including its version number.
-      placeholder: "### Create: Example Mod 1.2.3"
+      description: Copy only the heading text from the checklist, including its version number. Do not include the leading ### symbols.
+      placeholder: "Create: Example Mod 1.2.3"
     validations:
       required: true
   - type: input

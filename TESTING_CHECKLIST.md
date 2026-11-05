@@ -30,10 +30,10 @@ The 5 November combined test reached Done (1.718s), loaded world_lootr_test, acc
 
 | Check | Evidence | Status |
 |---|---|---|
-| Dedicated-server startup | 5 Nov logs reached Done (1.718s) and Done (1.822s) | PASS — combined disposable profiles |
-| Disposable world load | world_lootr_test loaded in both runs | PASS |
-| Matching client login | One matching client joined in both runs | PASS |
-| Clean shutdown | All dimensions saved in both runs | PASS |
+| Dedicated-server startup | 5 Nov logs reached Done (1.718s), Done (1.822s), and latest Done (1.490s) | PASS — disposable profiles |
+| Disposable world load | world_lootr_test loaded in the latest run | PASS |
+| Matching client login | Matching client joined in the latest run | PASS |
+| Clean shutdown | All dimensions saved in the 22:27 run | PASS |
 | Individual feature tests | Matrix below | OPEN — mostly not yet function-tested |
 | Matching client-only mod startup | No isolated client log for the 14:09 test folder supplied | OPEN |
 | Production/release approval | Not granted | NOT APPROVED |
@@ -421,6 +421,16 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 **Current status:** Pending
 - [ ] Grow representative added trees.
 - [ ] Test sapling growth, leaves/log drops, wood sets and leaves decay.
+ 
+### Integrated Villages 1.3.3+1.21.1 (Overworld candidate)
+**Current status:** Partial — corrected dependencies load; multiple village IDs are locatable, but full structure and performance validation remain open.
+- [ ] Inspect representative generated structures (including Airship and Mediterranean villages) in a fresh disposable Overworld.
+- [ ] Check Cabin Village decoration pool warning and verify that structures are complete, populated, and have intended loot.
+- [ ] Compare locate/generation responsiveness; prior structure searches took roughly 10–37 seconds and caused server tick-delay warnings.
+- [ ] Confirm whether vanilla village generation is intentionally retained. Do not assume Integrated Villages replaces every vanilla village.
+- [ ] Save/restart the disposable world and review the matching server/client logs.
+
+Dependency evidence: the first startup attempt lacked Supplementaries and Integrated API 1.6.2+. The corrected test profile used Supplementaries 3.4.0 and Integrated API 1.9.1 and reached `Done`. Validate these libraries through Integrated Villages; no standalone function test is required.
 
 ### Atmosphere 1.0.18
 **Current status:** Pending
@@ -779,3 +789,34 @@ A new screenshot shows `MinecraftServer-Test/mods-disabled`. It confirms the fol
 - `createkinetic-1.4.3.jar.original.bak` is a backup file, not an active mod.
 
 This is an archive-folder observation, not a fresh filesystem scan. It does not establish a client-profile inventory or a performance improvement. Do not mark any functional test passed or rejected solely because a JAR is archived.
+
+
+## Latest server retest — 5 November 2026, 22:27–22:31
+
+**Result: Full routine smoke test passed** for the disposable server profile. The server reached `Done (1.490s)`, loaded the test world, accepted a matching client login, disconnected the client, and saved all dimensions during clean shutdown. This is not a feature-level test or release approval.
+
+### Numismatics runtime correction
+
+| Mod | Latest runtime evidence | Status |
+|---|---|---|
+| Create: Numismatics | 1.0.20 detected and initialized; 1.1.0 absent | **Runtime selection confirmed** |
+| Create: Numismatics Plus | Absent from the runtime list | **Pairing not tested** |
+
+The 22:27 log supersedes the older 14:09 runtime observation for the latest profile, where Numismatics 1.1.0 had been selected. Keep one Numismatics JAR per profile. The Plus 1.0.1 + Numismatics 1.0.20 pairing still requires its own deliberate test.
+
+### Integrated Villages status
+
+Integrated Villages 1.3.3+1.21.1 loaded after the missing Supplementaries / Integrated API dependency issue was corrected. Multiple Integrated Villages IDs were found by disposable-world lookups, but vanilla village IDs were also present. Structure completeness and the intended vanilla-village behavior remain unconfirmed. Some locate searches took roughly 10–37 seconds and produced tick-delay warnings; the Cabin Village decoration pool warning is also unresolved. See the candidate's checklist above.
+
+### GC observation — separate from a performance benchmark
+
+The accompanying `gc.log` shows G1 garbage collection reclaiming heap after allocation peaks. The run ended after about 4 minutes 27 seconds with about 2.5 GiB used in an 8 GiB committed heap (Java heap maximum 12 GiB). This short trace is evidence of heap reclamation, not proof that no long-session or native-memory leak exists. It is not a TPS/MSPT or CPU performance baseline. spark profiling remains deferred to beta testers.
+
+### Issues still open
+
+- Struts still attempted to load client-only `RenderSystem` on the dedicated server.
+- PowerGrid's optional `powergridNative7` accelerated solver still could not load; the server used its fallback.
+- Batch D's Aeronautics Structures loot-table / provenance / structure-generation review remains partial.
+- World-scoped datapack-dependent errors still need to be interpreted only in worlds where the relevant packs are enabled.
+
+No production world or configuration was changed.

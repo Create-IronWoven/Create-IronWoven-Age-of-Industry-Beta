@@ -66,7 +66,7 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 
 ### Curios add-on test group — 5 November 2026
 
-**Status: TESTING — a newly created test world displays two Back slots; one existing player's saved allocation still needs adjustment.** The maintainer reports installing both 1.21.1 NeoForge client/server candidates. This is a separate add-on test group, not Batch 7 and not production approval.
+**Status: TESTING — the new-world two-slot layout and targeted Backpack + Backtank, Aviator Goggles, and Linked Typewriter checks are reported working. Matching client/server log review and broader validation remain open.** The maintainer reports installing both 1.21.1 NeoForge client/server candidates. This is a separate add-on test group, not Batch 7 and not production approval.
 
 | Mod | Exact CurseForge file | Required baseline |
 |---|---|---|
@@ -80,10 +80,10 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 - [x] Server shut down cleanly and saved all dimensions. Reviewed the server log; see findings below. Matching client log review remains pending.
 - [x] Recorded outcome: partial startup/world-load/login/shutdown pass for the loaded Curios components; More Curios Slots server parity and feature tests remain incomplete.
 
-**Default slot layout — 5 November 2026:** the private master server config sets two total Back slots and one Head slot. An earlier in-game observation for the existing player showed three Back slots, one Head slot, and one Aeronautics slot. The previous internal setting added a Back slot to the mod-registered total. The maintainer now reports that a newly created test world displays two Back slots, confirming the configured default. The existing player's saved allocation remains to be corrected.
+**Default slot layout — 5 November 2026:** the private master server config sets two total Back slots and one Head slot. The previous internal setting added a Back slot to the mod-registered total. The maintainer reports that a newly created test world displays two Back slots, confirming the configured default. The targeted backpack, Backtank, goggles, and typewriter checks are reported working; client/server log review remains open.
 
 - [x] The updated config's default Back-slot count was confirmed in a newly created test world.
-- [x] Earlier in-game display for the existing player showed three Back slots, one Head slot, and one Aeronautics slot. The existing player's saved Back-slot allocation still needs adjustment.
+- [x] In-game display in the newly created test world confirmed two Back slots.
 - [x] Maintainer reports a Sophisticated Backpack and standard Create Backtank work together in the two Back slots.
 - [x] Maintainer reports Create Aeronautics Aviator Goggles work in the Head slot.
 - [x] Maintainer reports the Aeronautics Linked Typewriter works in its separately registered slot.
@@ -101,7 +101,7 @@ This run also repeated 453 loot-table parse errors, one Create Deco placard reci
 
 
 
-**Maintainer clarification and fix — 5 November 2026:** More Curios Slots 1.4 was intentionally removed; do not reinstall it. The internal test-server and private repository configs now set the total Back-slot count to two. Config files will be included with the first beta upload. The maintainer reports that a newly created test world now displays two Back slots, confirming the updated default config. The older existing player's third slot is a separate saved-allocation issue: move any item out of it, then run `/curios set back <player> 2` as an operator on a disposable server. Curios config may not replace slots already assigned to that player. Do not use `/curios reset` or edit player data. The maintainer reports Backpack + standard Create Backtank, Aviator Goggles, and Linked Typewriter checks now work. After adjusting the older player's allocation, review matching client/server logs and record the saved-player result.
+**Maintainer clarification and fix — 5 November 2026:** More Curios Slots 1.4 was intentionally removed; do not reinstall it. The internal test-server and private repository configs set the total Back-slot count to two, and the maintainer reports that a newly created test world displays two Back slots. Config files will be included with the first beta upload. Backpack + standard Create Backtank, Aviator Goggles, and Linked Typewriter checks are also reported working. Matching client/server log review remains open; this does not imply broader production or release approval.
 ### 1. Botany Pots — 21.1.44
 
 **Status: Gameplay test pending; feature checks are expected to be possible.** Botany Pots 21.1.44, Bookshelf 21.1.81 and Prickle 21.1.11 loaded in the 4 November test group. Botany Pots reported one plugin loaded, and the server parsed 14,444 recipes without recipe-parsing failures. This confirms the mod and its dependencies load, but not in-game planting, growth, harvesting or the optional Herbs & Harvest integration.
@@ -589,10 +589,3 @@ The maintainer supplied two current screenshots: the disposable dedicated server
 
 
 
-## Curios existing-player retest — 5 November 2026
-
-**New-world result, reported by the maintainer:** a newly created test world displays exactly two Back slots from the internal config. The remaining issue is limited to the existing player's saved allocation.
-
-After the internal config was changed to set two Back slots, the maintainer's screenshot still showed three Back slots for the existing player. The newer `latest.log` shows the server started at 01:50, reached `Done (1.723s)!`, accepted the player's login, and Curios loaded 11 slot types overall; it does not report per-slot-type counts. The config file on disk still contains the two-slot `SET` rule. Curios' official config guide says configured slots are assigned automatically only if a player does not already have them, so a saved player-specific slot allocation is a likely explanation, but the log does not prove the cause.
-
-Next disposable-server step: first remove any item from the third Back slot, then run `/curios set back <player> 2` as an operator and reopen the inventory. This sets the existing player's Back-slot count directly. Do not run `/curios reset`, edit player NBT, or change the production world. Confirm the result before marking the two-slot fix passed.

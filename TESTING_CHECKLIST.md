@@ -4,7 +4,7 @@
 **Target:** Minecraft 1.21.1 · NeoForge 21.1.265 · Java 21  
 **Approved download source:** CurseForge only
 
-This is the full functional-test matrix for the recorded Create IronWoven test installation. It covers more than the active batch queue. The inventory basis is the 5 November dedicated-server mod list plus the client-only entries in the latest reviewed client inventory. This is a test snapshot, not a final release manifest.
+This is the full functional-test matrix for the recorded Create IronWoven test installation. It currently tracks 123 feature and support-module entries. It covers more than the active batch queue. The inventory basis is the 5 November dedicated-server mod list plus the client-only entries in the latest reviewed client inventory. This is a test snapshot, not a final release manifest.
 
 ## Smoke test is not a function test
 
@@ -145,6 +145,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 | Shulker Box Tooltip 5.1.9+1.21.1 | Hover filled shulkers; verify contents preview, item counts, scroll/page behavior and provider integrations. 31 providers registered is not visual proof. | Pending |
 | Mouse Tweaks 2.26.1 | Test drag distribution, wheel scrolling and quick-move in player inventory, chests, backpacks and modded GUIs. | Pending |
 | Memory Settings 6.0 | Verify settings apply and persist across restart; measure memory only in controlled same-workload comparison, not from startup alone. | Pending |
+| ModernFix 5.27.27 | Verify selected optimization mixins/options on the same disposable test profile; review for mixin errors, changed gameplay behavior, save integrity and comparable startup/runtime metrics. | Pending |
 
 ## E. Client graphics and performance mods
 

@@ -11,6 +11,7 @@ Player-facing development highlights for Create IronWoven. This is a concise sum
 - More Curios Slots 1.4 was intentionally removed; craftable slot upgrades are not wanted.
 - Distant Horizons 3.3.3 was reviewed and explicitly excluded by the maintainer.
 - The public testing checklist was consolidated around current open work; historical evidence remains in private dated records.
+- A full installed-mod functional test matrix now records 123 feature and support-module entries. Smoke-test success is explicitly separate from feature-function validation; the remaining checks are release gates.
 - Remaining dedicated-server investigations include Struts client-class loading and PowerGrid's optional native solver.
 
 ## Release history

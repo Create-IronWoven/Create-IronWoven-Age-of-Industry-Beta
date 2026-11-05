@@ -188,3 +188,22 @@ The following versions were detected in a later disposable-server attempt. This 
 | Create: Steam 'n' Rails | 0.3.0-alpha.2; Beta 2 not present |
 
 The server failed before completing mod loading because FTB Teams was missing and Numismatics Plus 1.0.1 required Numismatics 1.0.20. See [Testing Checklist](TESTING_CHECKLIST.md) for repair steps and evidence.
+
+ 
+## Later disposable update retry — 5 November 2026, 13:58
+
+The latest server/debug logs are a separate test-folder snapshot and do not replace the accepted inventory above.
+
+| Mod | Version detected | Interpretation |
+|---|---:|---|
+| Sophisticated Core | 1.5.28.2458 | Detected |
+| Sophisticated Backpacks | 3.26.20.2244 | Detected |
+| Entity Culling | 1.11.3 | Client-only; detected in server folder |
+| Create Crafts & Additions | 1.7.2 | Detected |
+| Create: The Factory Must Grow Community Edition | 1.3.3 | Detected |
+| FTB Teams | 2101.1.12 | Detected and initialized |
+| Create: Numismatics | Both 1.0.20 and 1.1.0 JARs scanned; 1.1.0 selected | 1.0.20 was not active |
+| Numismatics Plus | Not in runtime mod list | Not tested |
+| Create: Steam 'n' Rails | 0.3.0-alpha.2 | Beta 2 not present |
+
+The server reached `Done (1.493s)` and prepared the disposable world. Client login and clean shutdown are not shown. Do not put both Numismatics versions in one `mods` folder; test Plus only with 1.0.20. This is not an accepted final inventory or release manifest.

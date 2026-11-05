@@ -13,13 +13,13 @@ body:
         - Copy the exact test-action text from that mod's table.
         - Paste both below. This makes sure the correct checklist row is updated.
 
-        Your result and evidence will be recorded in the checklist. If the action already has a result, the automation will not overwrite it; a maintainer will review retests.
+        Your nickname, result and evidence will be recorded in the checklist. Do not include your legal name or account username anywhere in this form or evidence. If the action already has a result, the automation will not overwrite it; a maintainer will review retests.
   - type: input
     id: tester-name
     attributes:
-      label: Your full name
-      description: Enter the name of the person who actually performed this test.
-      placeholder: First and last name
+      label: Tester nickname (no real name or GitHub username)
+      description: Enter a nickname or pseudonym that identifies you for this test. Do not enter your legal/real name or your GitHub account username.
+      placeholder: Your chosen tester nickname
     validations:
       required: true
   - type: input

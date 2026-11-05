@@ -24,6 +24,12 @@ This page is the public register of requested additions, research candidates, pa
 | Excluded | Explicitly not wanted for this project. |
 | Already in test inventory | No new addition is required; see [MODS.md](MODS.md). |
 
+## Active installation batch order
+
+The private project has a detailed test plan. The active order is: client information and tooltips; exploration locators; Create Big Cannons; Create Aeronautics Structures; measured performance tests; server/recipe optimizers; isolated world utility and world generation; then the Waystones travel-system decision. Each batch uses disposable test copies and must pass its own checks before the next starts. Colony candidates, unverified-source candidates, and all paused End content are not installation batches.
+
+The recommended first installation is **Just Enough Resources (JER) alone**. It is a client-side JEI addon with no additional recorded dependency beyond JEI. See [Testing Checklist](TESTING_CHECKLIST.md) for checks and status updates.
+
 ## Recently requested candidates
 
 These six candidates came from the maintainer's 4 November shortlist. They were compared with the existing inventory and are retained here as potential additions only.

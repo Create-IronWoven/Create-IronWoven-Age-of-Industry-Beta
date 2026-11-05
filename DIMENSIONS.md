@@ -13,7 +13,7 @@ This page is a navigation guide, not a second mod inventory. The installed/test 
 
 The recorded world-generation baseline includes BYG 2.6.3 and Regions Unexplored 0.6.3, with their supporting world-generation components. The production world and its current world-generation setup are to remain unchanged during candidate research.
 
-New Overworld candidates will be listed in [MOD_PLANS.md](MOD_PLANS.md) and tested separately in disposable worlds. **Create Aeronautics Structures is selected as a planned Overworld addition**, subject to exact file/dependency verification and disposable-world testing. It is not an End mod.
+New Overworld candidates will be listed in [MOD_PLANS.md](MOD_PLANS.md) and tested separately in disposable worlds. **Create Aeronautics Structures 1.1.0-Beta-3.1 has been tested in a disposable server but is blocked from acceptance** by a Russian startup message and a candidate-specific loot-table error. Exact CurseForge provenance and structure generation remain unverified. It is not an End mod.
 
 ## Nether
 
@@ -53,5 +53,5 @@ For exact status and test steps, use [MOD_PLANS.md](MOD_PLANS.md) and [TESTING_C
 
 ## End folder cleanup verification — 5 November 2026
 
-The supplied screenshots of both `MinecraftServer-Test/mods` and the CurseForge `Create World/mods` folders show no End-specific content/generation JARs or End-only support libraries. The End cleanup is visually verified at screenshot level; a fresh startup-log audit has not been supplied. The End workstream remains paused. Existing candidate/test records are historical only, not an active queue. Lootr remains as a general-purpose mod. Create Aeronautics Structures is still a planned Overworld addition and is not visible as installed in these screenshots.
+The supplied screenshots of both `MinecraftServer-Test/mods` and the CurseForge `Create World/mods` folders show no End-specific content/generation JARs or End-only support libraries. The End cleanup is visually verified at screenshot level; the later 5 November server log confirms the End remains a loaded vanilla dimension, but does not identify End-specific content mods. The End workstream remains paused. Existing End candidate/test records are historical only, not an active queue. Lootr remains as a general-purpose mod. Create Aeronautics Structures was detected in a later disposable-server log as an Overworld candidate; its acceptance is blocked by a Russian startup message and a loot-table error.
 

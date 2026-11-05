@@ -55,36 +55,23 @@ These six candidates came from the maintainer's 4 November shortlist. They were 
 | Bookshelf | 21.1.81 | Conditional library dependency for Botany Pots and Enchantment Descriptions. Loaded in the Botany Pots test group; not thereby confirmed in the main client profile. | Conditional dependency |
 | Prickle | 21.1.11 | Conditional library dependency for Botany Pots and Enchantment Descriptions. Loaded in the Botany Pots test group; not thereby confirmed in the main client profile. | Conditional dependency |
 | Create: Curios Backtank | 1.0.2 · [CurseForge file 9207977](https://www.curseforge.com/minecraft/mc-mods/create-curios-backtank/files/9207977) | Minecraft 1.21.1 NeoForge client/server addon that makes the standard Create Backtank usable in the existing Curios `back` slot; it does not create a dedicated `backtank` slot. Requires Create and Curios API, both present in the master inventory. The maintainer intentionally removed More Curios Slots 1.4 because slot counts should be controlled in config rather than by crafting. Its MISSING status and old upgrade-recipe messages in the 5 Nov server log are expected. The internal config sets the total Back-slot count to two, and the maintainer reports that a newly created test world displays two Back slots. Backpack + standard Create Backtank, Aviator Goggles, and Linked Typewriter checks are reported working in their assigned slots. Matching client/server log review remains open. Support for Create: Sophisticated Air Tank or other Aeronautics gear is not established. | **Testing — targeted checks reported working; matching log review pending** |
-| More Curios Slots | 1.4 · [CurseForge file 8170156](https://www.curseforge.com/minecraft/mc-mods/more-curios-slots/files/8170156) | Minecraft 1.21.1 NeoForge client/server addon that provides craftable +1 slot upgrade items; it does not add accessory items. Requires Curios API. The maintainer intentionally removed this mod because players should not need to craft slot upgrades. Internal Curios config has been changed to set two Back slots and one Head slot. Restart and verify the layout; the previous client showed three Back slots. This mod is not planned for the current setup. | **Removed from test setup by maintainer — slot counts handled in config** |
+| More Curios Slots | 1.4 · [CurseForge file 8170156](https://www.curseforge.com/minecraft/mc-mods/more-curios-slots/files/8170156) | Removed from the test setup by maintainer decision. Craftable slot upgrades are not wanted; slot counts are managed through Curios config. Do not reinstall unless the maintainer changes this decision. | **Removed from test setup — not wanted** |
 | Create Big Cannons | 5.11.7 · [CurseForge file 8303106](https://www.curseforge.com/minecraft/mc-mods/create-big-cannons/files/8303106) | Requires Create 6.0.7+ and Ritchie's Projectile Library 2.1.2 ([file 7587771](https://www.curseforge.com/minecraft/mc-mods/ritchies-projectile-library/files/7587771)). Both were present in Batch C; the routine startup/world-load/client-login/log-review smoke test passed. Cannon features were not separately tested. | Smoke test passed — not production/release approved |
 
 ## End generation and structure candidates — historical research / paused
 
-**Workstream status: PAUSED.** The entries below preserve historical research and test evidence only. No End candidate is active, approved, or queued for testing. The maintainer paused this work because no suitable CurseForge-only Create-style abandoned-industrial End solution was found for Minecraft 1.21.1 / NeoForge 21.1.265.
+**Workstream status: PAUSED.** No End candidate is active, approved, or queued for testing. The maintainer paused this work because no suitable CurseForge-only Create-style abandoned-industrial End solution was found for Minecraft 1.21.1 / NeoForge 21.1.265. The entries below are retained only as a record of previously considered ideas; they are not a testing queue.
 
-| Candidate | Exact recorded file | Evidence / test gate | Status |
-|---|---|---|---|
-| YUNG's Better End Island | 3.1.2; YUNG's API 5.1.9 | Historical 4 November Batch 2A run: startup, client login and shutdown passed. Current 5 November server/client screenshots show the mod is no longer present. | On hold — End workstream paused; not in current test folders |
-| BetterEnd: New Dawn | 21.0.39 · `BetterEnd-21.0.39.jar` | Historical 4 November partial test and Lootr ship limitation; YUNG's Better End Island was also loaded. Current 5 November server/client screenshots show the mod and its End-only libraries are no longer present. | On hold — End workstream paused; not in current test folders | 
-| Ender Villages | `endervillages-2.0-1.21.1.jar` | CurseForge file 6741737; exact NeoForge 1.21.1 file verified. Project license is All Rights Reserved. No test is active. | On hold — End workstream paused; absent from current folder screenshots |
-| Better End Cities Better End | `BetterEndCities-Raijin-structure-1.21.1.jar` | CurseForge file 8105176; dependency gate was never completed. No test is active. | On hold — End workstream paused; absent from current folder screenshots |
-| MES — Moog's End Structures | `MoogsEndStructures-universal-1.21-2.1.1.jar` | Actual test file, Minecraft 1.21.1 / NeoForge. Crash report: required `moogs_structures` >=1.1.0 was missing. Add [Moog's Structure Lib 1.1.0 NeoForge file 7238573](https://www.curseforge.com/minecraft/mc-mods/moogs-structure-lib/files/7238573) before retrying. BetterEnd and YUNG's Better End Island were still loaded, so isolate them for the structure-generation test. | On hold — End workstream paused; absent from current folder screenshots |
+| Historical candidate | Recorded status |
+|---|---|
+| YUNG's Better End Island 3.1.2 | Previously smoke-tested with YUNG's API 5.1.9; absent from the reviewed 5 November test folders. |
+| BetterEnd: New Dawn 21.0.39 | Previously partially tested; its ship/Lootr limitation is historical. Absent from the reviewed 5 November test folders. |
+| Ender Villages 2.0 | CurseForge file 6741737 was identified; licence and gameplay review remain incomplete. |
+| Better End Cities Better End | CurseForge file 8105176 was identified; dependency review was not completed. |
+| MES — Moog's End Structures | Historical crash due to missing Moog's Structure Lib; no retry is active. |
+| The Beyond, Isleweaver, Stellarity, Unusual End, Extended End, End Beyond | Historical shortlist only; no current search or test is active. |
 
-**Historical End test order (paused; do not run):** the earlier proposed test stages are retained as research notes only. The End workstream is paused; preserve the production world and current BYG 2.6.3 / Regions Unexplored 0.6.3 setup.
-
-## Batch 2B preliminary result — 4 November 2026
-
-BetterEnd: New Dawn 21.0.39 and its required libraries loaded in the separate test installation. The user confirmed this Lootr compatibility result:
-
-- Lootr works with normal End City chests and ships.
-- Lootr does **not** work with ships generated by BetterEnd in the observed test.
-- No use for the Ender Ore has been identified by the maintainer yet; this is recorded as unknown, not proof that the ore has no use.
-- The uploaded server log shows YUNG's Better End Island 3.1.2 and YUNG's API 5.1.9 were also loaded, so this was not an isolated BetterEnd world-generation test.
-- Remaining checks for BetterEnd biome variety, structures, resources, mobs, recipes/progression, and broader compatibility are deferred to beta testers.
-
-**Status:** partial test only; beta feedback pending. BetterEnd is not production-approved. The current test result does not change the installed-mod inventory.
-
-See [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md) for the current test handover and [MODS.md](MODS.md) for the test inventory.
+Do not resume End searches, installs, or tests unless the maintainer explicitly reopens the workstream. Preserve the production world and the current BYG 2.6.3 / Regions Unexplored 0.6.3 setup.
 
 ## Colony ecosystem research
 
@@ -177,14 +164,14 @@ Players can use the [feature suggestion form](../../issues/new?template=feature_
 
 - [ ] Stage A: in a disposable copy of the current pack, add only Every Compat 2.11.56 and Moonlight 3.8.1 on both client and server. Keep existing Chipped 4.0.2, RU 0.6.3 and BYG 2.6.3 unchanged.
 - [ ] Verify Chipped Carpenter's Table variants and recipes for multiple installed modded wood types; check JEI, textures/models, drops, placement, client/server consistency, logs and save/restart.
-- [ ] Stage B only after Stage A passes: use a new separate disposable world/profile with the exact BetterEnd: New Dawn 21.0.39 dependency stack to test Pythadendron wood registration and Chipped variants. Do not reuse the 2B test world.
+- [ ] Stage B (BetterEnd / Pythadendron) is on hold while End research/testing is paused. Do not resume unless the maintainer explicitly reopens the End workstream.
 - [ ] Record any missing wood support, duplicate recipes, visual errors or registry conflicts.
 
 Do not change the production inventory or world. Full details: Every Compat Research and Test Plan.
 
 ## Lootr Compatibility: BetterEnd — new candidate (4 November 2026)
 
-**Status: Candidate — exact 1.21.1 file / compatibility research pending. Not installed or approved.** Requested by the maintainer as a possible addition to address the observed BetterEnd + Lootr compatibility limitation.
+**Status: ON HOLD — End workstream paused. Not installed or approved.** This was researched as a possible response to the historical BetterEnd + Lootr limitation; do not resume research or testing until the maintainer reopens End work.
 
 - CurseForge project: [Lootr Compatibility: BetterEnd](https://www.curseforge.com/minecraft/data-packs/lootr-compat-betterend) — datapack by Noobanidus, MIT license.
 - The datapack registers BetterEnd chest and barrel block types (including Pythadendron and other BetterEnd wood variants) as eligible for Lootr conversion when the blocks have associated loot tables.
@@ -196,49 +183,7 @@ Do not change the production inventory or world. Full details: Every Compat Rese
 - [ ] Test the same converted container with a second player to confirm independent personal loot.
 - [ ] Check normal End City loot is unchanged and inspect logs, save/restart, and datapack load priority.
 
-Keep the current Lootr/BetterEnd ship incompatibility recorded until these checks pass. This is a data pack candidate, not a new mod JAR; do not add it to the installed-mod inventory yet.
-
-## End expansion shortlist — 4 November 2026
-
-**Target:** Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21. **CurseForge only.** Every entry below is a potential candidate only; none is approved or installed.
-
-| Candidate | Proposed role | Research / test gate |
-|---|---|---|
-| The Beyond 1.0.1 | Main End terrain and biome overhaul; new mobs and exploration | Test alone first. |
-| Isleweaver 0.0.3b-InDev | Compatibility layer for combining The Beyond with other End biome mods | Test with The Beyond before adding other content. |
-| Stellarity | Additional End fantasy content, structures and items | Confirm exact 1.21.1 NeoForge file; test after The Beyond + Isleweaver. |
-| Unusual End 2.3.1b | More biomes, vegetation, mobs, resources and decorative block variants | Verify dependencies and test as a separate stage. |
-| Extended End 0.9 | Obscurite ore, Void Bark wood, tools/armour, biome and decorative blocks | Older beta; verify exact file and recipes; test separately. |
-| End Beyond 1.0.4 | Alternative End overhaul with Enderite progression, structures and boss | Separate alternative branch; do not combine with The Beyond without evidence. |
-
-Existing End candidates remain: YUNG's Better End Island, BetterEnd: New Dawn, Bigger Better End Cities, Ender Villages, Better End Cities Better End, and MES — Moog's End Structures.
-
-**Compatibility cautions:** Isleweaver's BetterEnd / WorldWeaver support has instability caveats; Stellarity lists BetterEnd as incompatible. End Ores' matching 1.21.1 file is Forge rather than NeoForge, and Dimensional Ores: End has no confirmed 1.21.1 NeoForge file. Do not add either based on a different loader/version.
-
-**Test sequence:** The Beyond alone → The Beyond + Isleweaver → Stellarity after exact-file verification → Unusual End → Extended End → structure mods one at a time. Keep End Beyond as a separate comparison branch. Use a fresh disposable world for every stage. Check biomes, ore generation, mobs, structures, loot, recipes, building variants, chunk borders, client/server sync, save/restart and logs. Preserve the production world, BYG 2.6.3, Regions Unexplored 0.6.3 and current world-generation JSON.
-
-Detailed findings and CurseForge links: private maintainer research report.
-
-### Stage A result — 4 November 2026
-
-**Partial feature pass; not approved.** Maintainer confirms modded planks work in Chipped's Carpenter's Table and the stone table works. The supplied server log confirms Every Compat and Moonlight loaded, Chipped modules/dynamic resources generated, and the dedicated server reached Done.
-
-Open concerns from the log:
-- 9,480 compatibility blocks (36.22% of all registered blocks); Every Compat warns of increased memory use/load time, with Chipped the largest contributor (2,537 blocks).
-- Duplicate block registration ERROR: `everycomp:ch/herbsandharvest/golden_cherry_fruit_leaves`.
-- Test log includes BetterEnd, YUNG's Better End Island and the wider modpack; this is not an isolated test and does not prove Pythadendron support.
-
-Continue checking recipes, JEI, models/textures, drops, more modded wood types, duplicate-leaf impact, client/server sync and save/restart. Keep candidate only; no production inventory changes.
-
-### Full mod-list world test — 4 November 2026
-
-Maintainer confirms the world works with the complete mod set shown in the latest test-installation screenshot, including Every Compat 2.11.56 + Moonlight 3.8.1, Chipped, BetterEnd and YUNG's Better End Island alongside the wider Create/Aeronautics pack. This is a user-confirmed pack-level world-playability result. It does not mean every mod feature/integration is fully tested or grant production approval. Every Compat remains a partial pass while recipe/JEI/visual/drop checks, the duplicate Golden Cherry registration, registry-size impact, Pythadendron and save/restart/client-server checks remain open.
-
-## End design direction — abandoned industrial world (4 November 2026)
-
-The maintainer's preferred End identity is an **abandoned industrial world**, rather than a strongly magical/fantasy dimension. Future End candidates should be assessed for derelict factories, refineries, mines, industrial outposts, abandoned small settlements, broken railways, cargo bridges, cranes, pipes, gears, turbines, laboratories and large industrial complexes. Prefer weathered metal, copper, brass and dark stone, with desolate landscapes and restrained End colours. Create-style engineering is the visual inspiration; functional Create machinery is not required.
-
-This is a design preference, not a claim that any installed or shortlisted mod already adds these features. MES is a structure-variety candidate, not a confirmed town mod. Town/settlement generation remains a separate research need. No installation, approval or production-world change is implied.
+Keep this as historical research only. The End workstream is paused, and the exact 1.21.1 file is not listed. This is a datapack candidate, not a mod JAR; do not install or test it unless the maintainer reopens End work.
 
 ## Overworld addition — Create Aeronautics Structures
 

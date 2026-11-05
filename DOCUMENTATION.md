@@ -1,6 +1,6 @@
 # Documentation Guide
 
-This repository is the public, player-facing home for Create IronWoven beta information. Internal development evidence and maintainer-only notes live in the [private development repository](https://github.com/alexth110987/Create-IronWoven).
+This repository is the public, player-facing home for Create IronWoven beta information. Internal development evidence and maintainer-only notes live in the private development repository.
 
 ## Player reading order
 

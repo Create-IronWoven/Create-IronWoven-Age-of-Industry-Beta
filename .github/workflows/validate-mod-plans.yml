@@ -46,7 +46,7 @@ jobs:
                   print(f"::error::Missing required section: {section}")
               raise SystemExit(1)
 
-          if "not an installed-mod list" not in content:
+          if "not the installed-mod list" not in content:
               raise SystemExit("Mod plan must clarify that it is not the installed inventory.")
 
           print("PASS: player-facing mod plan sections are present.")

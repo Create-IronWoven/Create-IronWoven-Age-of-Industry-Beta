@@ -70,6 +70,16 @@ The loader reported two blockers:
 
 ImmediatelyFast, Flerovium, Entity Culling, and More Culling were present in the dedicated-server folder. Keep client-only rendering mods on the client. No candidate from this attempt is approved for production or beta release. The next gate is a corrected disposable-server startup, world-load, client-login, clean-shutdown, and log-review pass.
 
+
+## Existing-mod update retry — 5 November 2026, 13:58
+
+**Status: Partial server startup/world-load pass; client login and clean shutdown not supplied.** The earlier missing FTB Teams dependency did not recur: FTB Teams 2101.1.12 was detected and initialized. The server reached `Done (1.493s)!` and prepared the disposable test world.
+
+Both Numismatics 1.0.20 and 1.1.0 JARs were present. NeoForge selected 1.1.0 for mod ID `numismatics`; Numismatics Plus 1.0.1 was absent from the runtime mod list. This does not test the Plus integration. Keep only one Numismatics file per test: **1.0.20 + Plus 1.0.1** for the existing addon combination, or **1.1.0 alone** for a separate newer-version test until Plus compatibility is established.
+
+Sophisticated Core 1.5.28.2458, Sophisticated Backpacks 3.26.20.2244, Entity Culling 1.11.3, Create Crafts & Additions 1.7.2, and TFMG Community Edition 1.3.3 were detected. ImmediatelyFast, Flerovium, Entity Culling, and More Culling remain client-only; move them out of the dedicated-server folder and test on the client. The 463 ERROR-level log entries are summarized in [Testing Checklist](TESTING_CHECKLIST.md); no update candidate is approved for release by this partial test.
+
+
 ## Recently requested candidates
 
 These six candidates came from the maintainer's 4 November shortlist. They were compared with the existing inventory and are retained here as potential additions only.

@@ -5,7 +5,7 @@
 **Loader:** NeoForge 21.1.265  
 **Java:** 21
 
-This page records the latest reviewed test-folder inventory snapshot and identifies client-only additions. It is not a final release manifest. The latest CurseForge screenshot shows `Mods (108)`. The latest File Explorer screenshots show 104 selected JAR files in both the client and dedicated-server `mods` folders. These are separate measures: bundled components can be counted within CurseForge entries without each having a separate JAR. Matching folder counts do not alone prove exact filename equality. A later disposable-server log detected Create Aeronautics Structures 1.1.0-Beta-3.1 as an Overworld test candidate; it is not part of the accepted inventory. Its Russian startup message is informational only, while a candidate-specific loot-table error remains under review. Exact CurseForge file provenance and structure generation are unverified.
+This page records the latest reviewed test-folder inventory snapshot and identifies client-only additions. It is not a final release manifest. The latest CurseForge profile shows **108 mod entries**. The latest File Explorer snapshots show **104 JAR files in the client `mods` folder and 104 JAR files in the dedicated-server `mods` folder**. These are different counting methods: CurseForge entries and physical JAR files are not interchangeable, especially where mods bundle components. Matching folder counts do not by themselves prove exact filename equality. A later disposable-server log detected Create Aeronautics Structures 1.1.0-Beta-3.1 as an Overworld test candidate; it is not part of the accepted inventory. Its Russian startup message is informational only, while a candidate-specific loot-table error remains under review. Exact CurseForge file provenance and structure generation are unverified.
 
 Some entries below are libraries, APIs, or bundled components required by other mods. They are listed for transparency even though they do not add a standalone gameplay feature.
 
@@ -103,13 +103,22 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | MezzConfig | 0.6.10 |
 | Sable | 2.0.6 |
 
-## Client-only graphics mods
+## Optional client-side mods — separate client tests
 
-These are recorded in the project master list as client-only additions. They do not belong in the dedicated server's mods folder.
+These are optional client-side additions/candidates. They are not required for the dedicated server and **must not be placed in the dedicated-server `mods` folder**. Test each one individually on the matching client, after the server/shared testing queue is complete. Their inclusion here does not mean the tests have passed or that they are mandatory for the pack.
 
-| Mod | Version recorded | Installation |
+| Mod | Version in latest observed test files | Side / status |
 |---|---|---|
-| Iris | 1.8.14-beta.1 | Client only |
+| ImmediatelyFast | 1.6.15 | Optional client-only rendering/performance candidate — isolated client test pending |
+| Flerovium | 1.1.3 Beta | Optional client-only rendering/performance candidate — observed file; stable 1.1.2 was the original plan, so decide which exact release to test before proceeding |
+| Entity Culling | 1.11.3 | Optional client-only rendering/performance candidate — isolated client test pending; exact CurseForge file provenance still to reconcile |
+| More Culling | 1.0.11 | Optional client-only rendering/performance candidate — isolated client test pending; exact CurseForge file provenance still to reconcile |
+
+**Supporting dependency:** Cloth Config API 15.0.140 was detected with More Culling. Keep it client-side with the More Culling test where required; it is a dependency, not a separate optional gameplay mod.
+
+**Iris:** 1.8.14-beta.1 is recorded in historical inventory/archive notes, but its presence in the latest 108-entry CurseForge profile has not been reconfirmed. Do not count it as a confirmed current client-profile mod until a fresh profile export or screenshot confirms it.
+
+**Testing order:** one candidate at a time; do not combine these rendering candidates during their first tests. Inspect Create screens, contraptions, Aeronautics, Sable visuals, HUD, GUI, particles, entities, block entities, leaves, glass, and connected textures as relevant. This is an optional follow-up test group, not a requirement for the server to run.
 
 ## Libraries, APIs, and support components
 

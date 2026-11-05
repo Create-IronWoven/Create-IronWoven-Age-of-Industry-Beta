@@ -2,6 +2,11 @@
 
 Player-facing development highlights for Create IronWoven. This is a concise summary of notable changes, not a list of every internal commit.
 
+## v0.1.000 — initial development baseline
+
+- Initial version baseline established. No downloadable public beta package has been published.
+- The three-digit update counter starts at `000`; it advances once for each accepted change to the actual modpack contents. Documentation edits and test-only attempts do not count as modpack updates.
+
 ## Unreleased — public beta preparation
 
 - Batches A, B, and C passed their routine dedicated-server startup, disposable-world load, matching-client login, and log-review smoke tests.

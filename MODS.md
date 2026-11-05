@@ -5,7 +5,7 @@
 **Loader:** NeoForge 21.1.265  
 **Java:** 21
 
-This page tells players which mods are recorded in the current test installation and which are client-only. The server log reported 82 loaded mods when bundled/nested mods were counted. The lists below reflect the latest available test snapshot, not a final release manifest. Versions and contents may change before public beta release.
+This page tells players which mods are recorded in the current test installation and which are client-only. The server log reported 82 loaded mods when bundled/nested mods were counted. The lists below reflect the latest available folder screenshot snapshot, not a final release manifest. A later disposable-server log detected Create Aeronautics Structures 1.1.0-Beta-3.1 as a test candidate; it is not included in the accepted inventory because its startup message was Russian and its loot table produced an error. Versions and contents may change before public beta release.
 
 Some entries below are libraries, APIs, or bundled components required by other mods. They are listed for transparency even though they do not add a standalone gameplay feature.
 

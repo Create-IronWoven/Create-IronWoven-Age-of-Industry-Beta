@@ -18,8 +18,9 @@ This is the full functional-test matrix for the recorded Create IronWoven test i
 
 1. Open the [Submit Test Result form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=functional-test-report.yml).
 2. Copy the mod heading text (including version, without the leading ### symbols) and the exact test-action text from the table below.
-3. Enter a tester nickname or pseudonym and the test date in DD-MM-YYYY format, choose the result, and describe what happened. Do not enter a legal/real name or GitHub username. Note: GitHub shows the account that opened the report as the public issue author, but the automation does not copy that account name into this checklist. Do not use your legal/real name or GitHub account username.
-4. Submit the form. Once the repository's one-time Actions write permission is configured, the matching checklist row is updated automatically and the report issue is closed when the update succeeds.
+3. Select the test environment: Single-player, Multiplayer, or Both. Choose Both only when you actually tested the action in both environments.
+4. Enter a tester nickname or pseudonym and the test date in DD-MM-YYYY format, choose the result, and describe what happened. Do not enter a legal/real name or GitHub username. Note: GitHub shows the account that opened the report as the public issue author, but the automation does not copy that account name into this checklist. Do not use your legal/real name or GitHub account username.
+5. Submit the form. Once the repository's one-time Actions write permission is configured, the matching checklist row is updated automatically and the report issue is closed when the update succeeds.
 
 Submit one form for each test action. If the row already has a result, or the mod/action text does not match exactly, the automation will leave the checklist unchanged and explain what needs review. Retests of completed actions require maintainer review; existing results are never silently overwritten.
 

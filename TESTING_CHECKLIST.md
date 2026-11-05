@@ -91,7 +91,7 @@ This run also repeated 453 loot-table parse errors, one Create Deco placard reci
 
 
 
-**Maintainer clarification and fix — 5 November 2026:** More Curios Slots 1.4 was intentionally removed; do not reinstall it. The internal test-server and private repository configs now set the total Back-slot count to two. Config files will be included with the first beta upload. Restart the disposable server and check that exactly two Back slots appear. Move any item out of the third slot first. If the GUI still shows three, investigate another slot modifier before changing or resetting player data. Then test Backpack + standard Create Backtank together, Aviator Goggles, and the Linked Typewriter slot.
+**Maintainer clarification and fix — 5 November 2026:** More Curios Slots 1.4 was intentionally removed; do not reinstall it. The internal test-server and private repository configs now set the total Back-slot count to two. Config files will be included with the first beta upload. Restart the disposable server and check that exactly two Back slots appear. Move any item out of the third slot first. If the GUI still shows three (as it did after the config-only retest), first remove any item from the third Back slot and run `/curios set back SoKkada 2` as an operator to set the existing player's count. Curios config may not replace slots already assigned to that player. Do not use `/curios reset` or edit player data. Confirm two slots, then test Backpack + standard Create Backtank together, Aviator Goggles, and the Linked Typewriter slot.
 ### 1. Botany Pots — 21.1.44
 
 **Status: Gameplay test pending; feature checks are expected to be possible.** Botany Pots 21.1.44, Bookshelf 21.1.81 and Prickle 21.1.11 loaded in the 4 November test group. Botany Pots reported one plugin loaded, and the server parsed 14,444 recipes without recipe-parsing failures. This confirms the mod and its dependencies load, but not in-game planting, growth, harvesting or the optional Herbs & Harvest integration.
@@ -577,3 +577,10 @@ The maintainer supplied two current screenshots: the disposable dedicated server
 
 **Status:** cleanup visually verified from both supplied folder screenshots. Historical End tests and candidates remain recorded above for audit only. Create Aeronautics Structures remains a planned Overworld addition and is not visible as installed in these screenshots.
 
+
+
+## Curios existing-player retest — 5 November 2026
+
+After the internal config was changed to set two Back slots, the maintainer's screenshot still showed three Back slots for the existing player. The newer `latest.log` shows the server started at 01:50, reached `Done (1.723s)!`, accepted the player's login, and Curios loaded 11 slot types overall; it does not report per-slot-type counts. The config file on disk still contains the two-slot `SET` rule. Curios' official config guide says configured slots are assigned automatically only if a player does not already have them, so a saved player-specific slot allocation is a likely explanation, but the log does not prove the cause.
+
+Next disposable-server step: first remove any item from the third Back slot, then run `/curios set back SoKkada 2` as an operator and reopen the inventory. This sets the existing player's Back-slot count directly. Do not run `/curios reset`, edit player NBT, or change the production world. Confirm the result before marking the two-slot fix passed.

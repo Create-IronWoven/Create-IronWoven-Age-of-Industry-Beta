@@ -11,12 +11,12 @@ Create IronWoven is a Minecraft modpack built around **Create**, **Create Aerona
 - [Mods in the current test pack](MODS.md)
 - [Planned mods and project decisions](MOD_PLANS.md)
 - [Testing progress](TESTING_CHECKLIST.md)
-- [Submit test results](../../issues/new?template=functional-test-report.yml)
+- [Submit test results](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=functional-test-report.yml)
 - [Known issues](KNOWN_ISSUES.md)
 - [Dimensions and exploration](DIMENSIONS.md)
 - [Changelog](CHANGELOG.md)
 - [Support and troubleshooting](SUPPORT.md)
-- [Report a problem or suggest an idea](../../issues)
+- [Report a problem or suggest an idea](https://github.com/alexth110987/Create-IronWoven-Beta/issues)
 
 ## Platform
 

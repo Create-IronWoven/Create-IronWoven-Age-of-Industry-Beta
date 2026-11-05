@@ -6,7 +6,7 @@
 
 ## Current status
 
-The current development version `v0.1.110` reflects the retroactive count of 110 entries in the recorded CurseForge profile snapshot dated 5 November 2026. This is an inventory-based baseline, not a claim of 88 public releases. No downloadable beta package exists.
+The current development version `v0.1.110` reflects the retroactive count of 110 entries in the recorded CurseForge profile snapshot dated 5 November 2026. This is an inventory-based baseline, not a claim of 110 public releases. No downloadable beta package exists.
 
 Create IronWoven is in **internal compatibility and functional testing**. There is currently no public downloadable beta package and no release date has been announced.
 

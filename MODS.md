@@ -63,6 +63,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 
 | Mod | Version in test snapshot |
 |---|---|
+| Every Compat (Wood Good) | 2.11.56 — installed and maintainer-approved; Moonlight Lib 3.8.1 required |
 | Chipped | 4.0.2 |
 | Design n' Decor | 2.2b |
 | Farmer's Delight | 1.3.4 |
@@ -143,6 +144,7 @@ These support other mods and may not appear as separate gameplay features.
 | Integrated API | 1.9.1 — Integrated Villages dependency; validated present in corrected server test profile |
 | Kotlin for Forge | 5.12.0 |
 | MezzConfig | 0.6.10 |
+| Moonlight Lib (Selene) | 3.8.1 — required Every Compat dependency |
 | ModernFix | 5.27.27 |
 | Ponder | 1.0.82 |
 | Resourceful Lib | 3.0.12 |

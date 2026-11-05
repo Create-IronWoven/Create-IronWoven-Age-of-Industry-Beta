@@ -431,7 +431,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 - [ ] Confirm whether vanilla village generation is intentionally retained. Do not assume Integrated Villages replaces every vanilla village.
 - [ ] Save/restart the disposable world and review the matching server/client logs.
 
-Dependency evidence: the first startup attempt lacked Supplementaries and Integrated API 1.6.2+. The corrected test profile used Supplementaries 3.4.0 and Integrated API 1.9.1 and reached `Done`. Validate these libraries through Integrated Villages; no standalone function test is required.
+Dependency evidence: the first startup attempt lacked Supplementaries and Integrated API 1.6.2+. The corrected test profile used Create 6.0.10, Supplementaries 3.4.0, and Integrated API 1.9.1 and reached `Done`. Validate these libraries through Integrated Villages; no standalone function test is required.
 
 ### Atmosphere 1.0.18
 **Current status:** Pending

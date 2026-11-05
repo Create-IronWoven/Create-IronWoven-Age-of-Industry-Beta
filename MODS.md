@@ -147,7 +147,7 @@ These support other mods and may not appear as separate gameplay features.
 - Some Create Aeronautics and Gadgets & Gizmos components are bundled inside parent mod JARs.
 - Sodium, Iris, and Sodium Extra are client-only.
 - The 4 November server smoke test confirms Botany Pots 21.1.44 and Construction Sticks 1.5.0 are loaded. This confirms server loading, not full feature testing. The final client and server manifests will be published with the beta release after a fresh inventory and clean-install test.
-- The internal server config sets two Back slots and one Head slot, but the existing player still sees three Back slots after restart; a player-specific slot-count retest is pending. Config files will be included with the first beta upload. Create Aeronautics Curios Compat supplies the Linked Typewriter slot. The maintainer intentionally removed More Curios Slots 1.4 because slot counts should be controlled by config, not crafting.
+- The internal server config sets two Back slots and one Head slot; the maintainer reports a newly created test world displays two Back slots. Config files will be included with the first beta upload. Create Aeronautics Curios Compat supplies the Linked Typewriter slot. More Curios Slots 1.4 was intentionally removed because slot counts should be controlled by config, not crafting.
 - Third-party mods remain the property of their authors. This page identifies the tested components; it does not redistribute their JARs.
 
 See [Mods planned, on hold, and excluded](MOD_PLANS.md) for the difference between installed mods and future candidates.

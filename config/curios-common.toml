@@ -1,0 +1,11 @@
+# List of slots to create or modify.
+# Loaded on the dedicated server and synchronized to clients when they join.
+#
+# Back: set exactly two slots so players can equip a Sophisticated Backpack
+# and a standard Create Backtank at the same time.
+# Head: provide one Head slot for Create Aeronautics Aviator Goggles.
+# Linked Typewriter is registered separately by Create Aeronautics Curios Compat.
+slots = [
+  "id=back;size=2;operation=SET",
+  "id=head;size=1;operation=SET"
+]

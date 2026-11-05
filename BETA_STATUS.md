@@ -1,4 +1,4 @@
-# Beta Status — v0.1.110
+# Beta Status — v0.1.110-R002
 
 **Current development version:** `v0.1.110` (not yet a downloadable public beta)  
 **Last updated:** 5 November 2026  

@@ -67,6 +67,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | Design n' Decor | 2.2b |
 | Farmer's Delight | 1.3.4 |
 | Mama's Herbs and Harvest | 1.21.1-24 |
+| Supplementaries | 3.4.0 — Integrated Villages dependency; validated present in corrected server test profile |
 | Sophisticated Backpacks | 3.26.20.2244 — latest test-folder file; acceptance pending |
 | Sophisticated Backpacks Create Integration | 0.2.3 |
 | Sophisticated Air Tank | 1.0.1-beta |
@@ -82,6 +83,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | TerraBlender | 4.1.0.8 |
 | Lithostitched | 1.8.1 |
 | Atmosphere | 1.0.18 |
+| Integrated Villages | 1.3.3+1.21.1 — server test candidate; structure and performance validation pending |
 | Create Oh The Biomes We've Gone Compatibility | 0.0NONE |
 
 ## Player interface, teams, and utility
@@ -129,6 +131,7 @@ These support other mods and may not appear as separate gameplay features.
 | Forge Config API Port | 21.1.1 |
 | Gadgets & Gizmos Library | 1.2.10 |
 | GeckoLib 4 | 4.9.3 |
+| Integrated API | 1.9.1 — Integrated Villages dependency; validated present in corrected server test profile |
 | Kotlin for Forge | 5.12.0 |
 | MezzConfig | 0.6.10 |
 | ModernFix | 5.27.27 |
@@ -304,4 +307,17 @@ The screenshot proves these files are in the server's disabled archive, not whet
 
 `createkinetic-1.4.3.jar.original.bak` is a backup copy, not an active mod JAR. It is recorded here only to distinguish it from an installable mod file.
 
-**Versioning:** this archive reconciliation does not by itself increase the modpack version. Superseded JAR copies, unaccepted candidates, client-only files parked outside the server, and the paused End test set are not counted as new accepted content removals. The current development version remains `v0.1.088`.
+**Versioning:** this archive reconciliation does not by itself increase the modpack version. Superseded JAR copies, unaccepted candidates, client-only files parked outside the server, and the paused End test set are not counted as new accepted content removals. The current development version remains `v0.1.110-R002`.
+
+
+## Latest dedicated-server retest — 5 November 2026, 22:27–22:31
+
+The latest disposable-server log reached `Done (1.490s)`, prepared the test world, accepted a matching client login, and stopped cleanly with all dimensions saved. This is a routine smoke-test pass only, not feature validation or release approval.
+
+- **Create: Numismatics:** 1.0.20 was the only version detected and initialized. Numismatics 1.1.0 and Numismatics Plus 1.0.1 were absent from the runtime list. The duplicate-version issue is absent from this test snapshot; the Plus + 1.0.20 pairing remains untested.
+- **Integrated Villages 1.3.3+1.21.1:** loaded with Integrated API 1.9.1 and Supplementaries 3.4.0 present. Several structure IDs were returned by disposable-world lookups, but this does not establish complete structure generation or replacement of vanilla villages.
+- Some Integrated Villages locate searches took roughly 10–37 seconds and triggered tick-delay warnings. An Integrated API warning also identified an empty Cabin Village decoration pool. Keep the candidate under testing until representative structures and performance are checked.
+- **Java GC observation:** the accompanying short GC trace shows heap reclamation after allocation peaks. It does not establish a long-term memory baseline or prove the absence of native/long-session memory issues.
+- Struts' dedicated-server RenderSystem issue and PowerGrid's unavailable optional native solver remain open.
+
+The production world and its BYG 2.6.3 / Regions Unexplored 0.6.3 setup remain unchanged. No modpack version increment or release approval is implied by this documentation update.

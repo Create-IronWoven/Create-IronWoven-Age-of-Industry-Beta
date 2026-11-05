@@ -1,5 +1,7 @@
 # Create IronWoven — Beta Status
 
+**Current modpack version:** `v0.1.000` · Internal development version; no downloadable beta package has been published.
+
 **Last updated:** 5 November 2026  
 **Minecraft:** 1.21.1 · **NeoForge:** 21.1.265 · **Java:** 21  
 

@@ -17,7 +17,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | Create Aeronautics | 1.3.2 |
 | Create Aeronautics: Curios Compat | 2.0 |
 | Create: Curios Backtank | 1.0.2 — test installation; smoke test pending |
-| More Curios Slots | 1.4 — test installation; smoke test pending |
+| More Curios Slots | 1.4 — intentionally removed by maintainer; slots will be managed through Curios config |
 | Create Aeronautics: Copycat Wing | 1.0.4 |
 | Create Aeronautics: Transmission & Linkage | 0.2.9 |
 | Create Bits 'n' Bobs | 2.3.5 |
@@ -147,7 +147,7 @@ These support other mods and may not appear as separate gameplay features.
 - Some Create Aeronautics and Gadgets & Gizmos components are bundled inside parent mod JARs.
 - Sodium, Iris, and Sodium Extra are client-only.
 - The 4 November server smoke test confirms Botany Pots 21.1.44 and Construction Sticks 1.5.0 are loaded. This confirms server loading, not full feature testing. The final client and server manifests will be published with the beta release after a fresh inventory and clean-install test.
-- The server-side `config/curios-common.toml` contains `back;size=1;operation=ADD` and `head;size=1;operation=SET`, intended for two Back slots and one Head slot; Create Aeronautics Curios Compat supplies the Linked Typewriter slot. The 5 Nov server log reports the config as incorrect/correcting and records 11 Curios slots total without a category breakdown. Create: Curios Backtank and Aeronautics Curios Compat loaded, but More Curios Slots 1.4 was MISSING on the server. The client showed three Back slots; the source is unexplained. No duplicate client-side common config is required.
+- The server-side `config/curios-common.toml` now contains `back;size=2;operation=SET` and `head;size=1;operation=SET`, intended to enforce two Back slots and one Head slot; Create Aeronautics Curios Compat supplies the Linked Typewriter slot. The maintainer intentionally removed More Curios Slots 1.4 because slot counts should be controlled by config, not crafting. The previous client showed three Back slots; verify the new config after a disposable server restart. No duplicate client-side common config is required.
 - Third-party mods remain the property of their authors. This page identifies the tested components; it does not redistribute their JARs.
 
 See [Mods planned, on hold, and excluded](MOD_PLANS.md) for the difference between installed mods and future candidates.

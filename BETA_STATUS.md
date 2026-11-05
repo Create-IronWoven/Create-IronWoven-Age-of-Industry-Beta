@@ -53,7 +53,7 @@ These are maintainer-side smoke-test results, not a guarantee that every feature
 - **Struts 1.3.1:** dedicated-server attempt to load client-only `RenderSystem` remains under investigation.
 - **PowerGrid 0.6.2:** optional `powergridNative7` accelerated solver did not load in the tested Windows server environment; fallback behavior and native-library availability need review.
 - Review the unattributed world/chunk-generation messages after the compatibility datapacks are correctly loaded in a disposable world.
-- Review requested End-generation and colony candidates only after exact CurseForge NeoForge files and dependencies are verified.
+- End-mod research and testing are paused; do not resume until the maintainer explicitly reopens that workstream.
 
 See the [full testing checklist](TESTING_CHECKLIST.md) for each test step and its current status.
 
@@ -70,7 +70,7 @@ No public beta package or release date is confirmed in this status file. A test 
 You can report reproducible issues and suggest improvements through the [issue tracker](https://github.com/alexth110987/Create-IronWoven-Beta/issues). Please state clearly which Minecraft, NeoForge, and modpack build you are using.
 
 
-## Batch 2A runtime status — 4 November 2026
+## Historical Batch 2A runtime status — 4 November 2026 (End workstream later paused)
 
 YUNG's API 5.1.9 and YUNG's Better End Island 3.1.2 were discovered and loaded on the separate test server. Server startup, client login and clean shutdown passed. The user clarified that `world_lootr_test` was selected intentionally because its End had not yet been generated. The earlier world-name mismatch assessment is corrected. The End-generation gameplay checks remain pending, and the custom IronWoven compatibility datapacks must be verified (and restored in this disposable world if absent) before continuing. See the [testing checklist](TESTING_CHECKLIST.md). No production changes or approval.
 

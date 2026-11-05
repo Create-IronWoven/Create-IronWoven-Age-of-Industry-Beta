@@ -19,7 +19,7 @@ This is the full functional-test matrix for the recorded Create IronWoven test i
 1. Open the [Submit Test Result form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=functional-test-report.yml).
 2. Copy the exact mod heading and exact test-action text from the table below.
 3. Enter your name, test date, choose the result, and describe what happened.
-4. Submit the form. The matching checklist row is updated automatically and the report issue is closed when the update succeeds.
+4. Submit the form. Once the repository's one-time Actions write permission is configured, the matching checklist row is updated automatically and the report issue is closed when the update succeeds.
 
 Submit one form for each test action. If the row already has a result, or the mod/action text does not match exactly, the automation will leave the checklist unchanged and explain what needs review. Retests of completed actions require maintainer review; existing results are never silently overwritten.
 

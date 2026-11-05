@@ -546,9 +546,9 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 - [ ] Ensure no missing faces/transparency errors. Test Cloth Config options.
 
 ### spark 1.10.124 (server profiler)
-**Current status:** Partial — profiler initialized; no numeric baseline or saved report captured.
-- [ ] Record spark-only baseline: TPS, MSPT, memory/GC, CPU under repeatable load and a saved 2–5 minute profile.
-- [ ] Note Windows Java-engine fallback.
+**Current status:** Deferred to beta testers — not required during internal development.
+- [ ] During beta testing, record TPS, MSPT, memory/GC, and CPU under a repeatable load; save a 2–5 minute profile.
+- [ ] Record the selected profiler engine and any platform-specific fallback.
 
 ## F. Libraries, APIs and shared support components
 

@@ -78,7 +78,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | Mod | Version in test snapshot |
 |---|---|
 | Oh The Biomes We've Gone (BYG) | 2.6.3 |
-| Regions Unexplored | 0.6.3 |
+| Regions Unexplored | 0.6.3 — official scope includes Overworld and Nether biome generation; Nether behavior still needs a disposable-world check |
 | Oh The Trees You'll Grow | 5.3.5 |
 | TerraBlender | 4.1.0.8 |
 | Lithostitched | 1.8.1 |

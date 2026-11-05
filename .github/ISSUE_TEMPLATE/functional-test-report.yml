@@ -13,7 +13,7 @@ body:
         - Copy the exact test-action text from that mod's table.
         - Paste both below. This makes sure the correct checklist row is updated.
 
-        Your nickname, result and evidence will be recorded in the checklist. The automation does not copy your GitHub username into the checklist. **Important:** GitHub displays the account that opened an issue as its public issue author; this form cannot hide that account identity. If you need your GitHub account to remain private, do not submit through this public issue form. Do not include your legal name or account username in the form fields or evidence. If the action already has a result, the automation will not overwrite it; a maintainer will review retests.
+        Your selected test environment (Single-player, Multiplayer, or Both), nickname, result and evidence will be recorded in the checklist. The automation does not copy your GitHub username into the checklist. **Important:** GitHub displays the account that opened an issue as its public issue author; this form cannot hide that account identity. If you need your GitHub account to remain private, do not submit through this public issue form. Do not include your legal name or account username in the form fields or evidence. If the action already has a result, the automation will not overwrite it; a maintainer will review retests.
   - type: input
     id: tester-name
     attributes:

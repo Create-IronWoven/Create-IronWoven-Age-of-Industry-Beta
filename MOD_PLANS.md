@@ -169,7 +169,6 @@ These mods are not wanted for Create IronWoven and must not be reintroduced as c
 
 Players can use the [feature suggestion form](../../issues/new?template=feature_suggestion.yml). Include the official project page, exact supported Minecraft / NeoForge versions, required dependencies, and why the mod fits Create IronWoven. Suggestions are reviewed, not automatically accepted.
 
-
 ## Every Compat (Wood Good) — research complete; test pending
 
 **Status: Candidate only. Not installed or approved.** Exact CurseForge 1.21.1 NeoForge file: everycomp-1.21-2.11.56-neoforge.jar (file 9336749). Required library: Moonlight Lib; author's minimum is 1.21.1-3.7.2. Current 1.21.1 NeoForge CurseForge release is moonlight-1.21.1-3.8.1-neoforge.jar (file 9436226). Chipped 4.0.2 is already present and is listed as an optional Every Compat integration; Chipped-specific fixes are documented in the author's changelog.
@@ -199,7 +198,6 @@ Do not change the production inventory or world. Full details: Every Compat Rese
 
 Keep the current Lootr/BetterEnd ship incompatibility recorded until these checks pass. This is a data pack candidate, not a new mod JAR; do not add it to the installed-mod inventory yet.
 
-
 ## End expansion shortlist — 4 November 2026
 
 **Target:** Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21. **CurseForge only.** Every entry below is a potential candidate only; none is approved or installed.
@@ -221,7 +219,6 @@ Existing End candidates remain: YUNG's Better End Island, BetterEnd: New Dawn, B
 
 Detailed findings and CurseForge links: private maintainer research report.
 
-
 ### Stage A result — 4 November 2026
 
 **Partial feature pass; not approved.** Maintainer confirms modded planks work in Chipped's Carpenter's Table and the stone table works. The supplied server log confirms Every Compat and Moonlight loaded, Chipped modules/dynamic resources generated, and the dedicated server reached Done.
@@ -233,7 +230,6 @@ Open concerns from the log:
 
 Continue checking recipes, JEI, models/textures, drops, more modded wood types, duplicate-leaf impact, client/server sync and save/restart. Keep candidate only; no production inventory changes.
 
-
 ### Full mod-list world test — 4 November 2026
 
 Maintainer confirms the world works with the complete mod set shown in the latest test-installation screenshot, including Every Compat 2.11.56 + Moonlight 3.8.1, Chipped, BetterEnd and YUNG's Better End Island alongside the wider Create/Aeronautics pack. This is a user-confirmed pack-level world-playability result. It does not mean every mod feature/integration is fully tested or grant production approval. Every Compat remains a partial pass while recipe/JEI/visual/drop checks, the duplicate Golden Cherry registration, registry-size impact, Pythadendron and save/restart/client-server checks remain open.
@@ -243,38 +239,6 @@ Maintainer confirms the world works with the complete mod set shown in the lates
 The maintainer's preferred End identity is an **abandoned industrial world**, rather than a strongly magical/fantasy dimension. Future End candidates should be assessed for derelict factories, refineries, mines, industrial outposts, abandoned small settlements, broken railways, cargo bridges, cranes, pipes, gears, turbines, laboratories and large industrial complexes. Prefer weathered metal, copper, brass and dark stone, with desolate landscapes and restrained End colours. Create-style engineering is the visual inspiration; functional Create machinery is not required.
 
 This is a design preference, not a claim that any installed or shortlisted mod already adds these features. MES is a structure-variety candidate, not a confirmed town mod. Town/settlement generation remains a separate research need. No installation, approval or production-world change is implied.
-
-## Superseding End direction — abandoned industrial civilisation (4 November 2026)
-
-The maintainer has now chosen a firm visual/gameplay direction: the End should become the remains of a long-abandoned industrial civilisation, not a colourful fantasy biome overhaul or a collection of generic vanilla-style structures. Create-style engineering is the visual reference.
-
-### Remove from the End test setup (proposed cleanup; not production approval)
-
-The latest uploaded server log latest(20261104-225334).log confirms these End-generation mods are currently loaded:
-
-| Mod | Current recorded version | Action | Reason |
-|---|---:|---|---|
-| BetterEnd: New Dawn | 21.0.39 | Remove from the End test profile | Its colourful fantasy biomes, plants and natural features do not match the selected abandoned-industrial aesthetic. |
-| YUNG's Better End Island | 3.1.2 | Remove from the End test profile | Central-island overhaul is not an industrial-world feature and is not needed for the new direction. |
-| MES / Moog's End Structures | 2.1.1 | Remove from the End test profile | Vanilla-styled generic End structures do not meet the industrial-ruin/factory target. The dependency now loads successfully, but this does not make MES thematically suitable. |
-
-### Dependency cleanup — check before deleting
-
-- Moog's Structure Lib 1.1.0 (moogs_structures) was added solely to satisfy MES in the recorded test. Remove it together with MES only after confirming no other installed mod requires it.
-- BetterEnd's BCLib 21.0.28 and related BetterEnd support libraries were part of its stack. Remove a library only after checking the full current dependency graph; do not delete shared libraries blindly.
-- YUNG's API 5.1.9 may be shared by other YUNG mods. Remove it only if no remaining installed mod requires it.
-- Do not remove Lootr, Ender Ore or general-purpose libraries based on this aesthetic decision alone; they are not End terrain/structure overhauls in the evidence reviewed.
-
-### Keep separate from the removal decision
-
-- The user has not asked to delete the existing world or change the production server. Existing generated chunks cannot be visually transformed simply by removing mods.
-- This is a proposed cleanup for the disposable/current test profile. Do not alter the authoritative installed inventory (MODS.md), production world, BYG 2.6.3, Regions Unexplored 0.6.3 or world-generation JSON without explicit approval.
-- The Beyond, Isleweaver, Stellarity, Unusual End, Extended End, End Beyond, Ender Villages and other earlier fantasy/vanilla-style candidates are not automatically suitable. Reassess or pause them against the industrial theme; do not carry them forward just because they were previously shortlisted.
-- Current research has not verified a CurseForge 1.21.1 NeoForge mod that directly supplies abandoned industrial End factories or towns. Do not claim one exists until exact files and feature evidence are found.
-
-### New research priority
-
-Find CurseForge-only Minecraft 1.21.1 NeoForge content that actually generates derelict factories, mining/processing facilities, industrial outposts, abandoned settlements, cargo infrastructure, cranes, pipes, machinery and weathered metal structures in the End. If no End-specific option exists, investigate whether structure datapacks or configurable structure-generation tools can achieve this without introducing an unrelated fantasy overhaul. Record exact files, dependencies, licensing, dimension placement and actual structure previews before adding anything to the test queue.
 
 ## Overworld addition — Create Aeronautics Structures
 
@@ -294,21 +258,3 @@ The maintainer has paused End-mod research and testing for now. No suitable Curs
 - Previously recorded End candidates remain historical research only; this pause does not approve any of them.
 - This does not change the installed mod list, production world or world-generation settings.
 - Overworld additions, including Create Aeronautics Structures, remain a separate active workstream.
-
-## End test-profile cleanup — 5 November 2026
-
-The maintainer has explicitly instructed that all End-specific mods be removed from the active disposable test setup while End development is paused. This supersedes the previous instruction to keep Ender Ore in the test setup.
-
-- Remove any present End-only content JARs from the disposable test server and matching client: YUNG's Better End Island, BetterEnd: New Dawn, Ender Ore, Ender Villages, Better End Cities Better End, MES / Moog's End Structures, and any other End-only generation/content mods.
-- Bigger Better End Cities is excluded and must also be removed if present in the test folders. The Beyond, Isleweaver, Stellarity, Unusual End, Extended End, End Beyond and other uninstalled candidates must stay out.
-- Remove libraries used only by removed End mods only after checking the dependency graph; keep shared libraries. Lootr is general-purpose and is not included in this End-specific removal instruction.
-- End research and testing remain paused until the maintainer explicitly reopens the workstream.
-
-**Physical removal not yet verified:** GitHub access does not expose the live Minecraft test server/client mods folders. A current directory listing and clean startup log are required before cleanup can be reported as complete. Historical test notes are retained as historical evidence only.
-
-## End test-profile cleanup — visually verified 5 November 2026
-
-The maintainer supplied current screenshots of both the disposable dedicated-server `MinecraftServer-Test/mods` folder and the CurseForge client `Create World/mods` folder. No End-specific content/generation JARs are visible in either. BetterEnd, YUNG's Better End Island, Ender Ore, Ender Villages, Better End Cities Better End, MES / Moog's End Structures and Bigger Better End Cities are absent; no End-only support libraries are visible either. Lootr remains as a general-purpose mod.
-
-This visually verifies the current cleanup at screenshot level, not through a live filesystem scan or fresh startup log. All End entries above remain historical research only; the End workstream stays paused. Do not add End mods back or resume tests unless the maintainer explicitly asks. Create Aeronautics Structures remains a planned Overworld addition, not an installed mod in these screenshots.
-

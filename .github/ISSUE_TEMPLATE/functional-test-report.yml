@@ -47,6 +47,17 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: test-environment
+    attributes:
+      label: Test environment
+      description: Select where you actually performed this test action.
+      options:
+        - Single-player
+        - Multiplayer
+        - Both
+    validations:
+      required: true
+  - type: dropdown
     id: result
     attributes:
       label: Test result

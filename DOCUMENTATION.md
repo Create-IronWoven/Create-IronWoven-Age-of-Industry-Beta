@@ -30,10 +30,14 @@ This repository is the public, player-facing home for Create IronWoven beta info
 
 All maintained documentation and other repository-authored content must remain in **English**, regardless of the language used in conversations with the maintainer. Translate maintainer decisions and technical findings into clear English before recording them here. Preserve official names, identifiers, filenames, commands, and verbatim log/error text when exact wording matters, and explain them in English.
 
+## History
+
+The previous status timeline is retained in [the history archive](history/BETA_STATUS_HISTORY_2026-11-05.md). Use [BETA_STATUS.md](BETA_STATUS.md) for the current summary.
+
 ## Public documentation rules
 
 - Keep this repository player-safe and understandable without access to internal development records.
-- Do not publish private logs, credentials, server addresses, player data, local paths, world saves, or internal-only patch instructions.
+- Never publish passwords, access tokens, private server addresses, personal/player data, local paths, private backups, full world folders, raw logs, or exploitable security details. Sanitize evidence before sharing it in a public issue.
 - Clearly distinguish installed/tested, partially tested, candidate, on-hold, and excluded status.
 - A server startup pass is not proof that every mod feature works.
 - Keep detailed test steps in the testing checklist and avoid repeating the full queue in status or plan pages.

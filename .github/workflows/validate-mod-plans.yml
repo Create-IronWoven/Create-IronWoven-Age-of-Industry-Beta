@@ -4,11 +4,21 @@ on:
   push:
     branches: [main]
     paths:
+      - 'README.md'
+      - 'BETA_STATUS.md'
+      - 'MODS.md'
       - 'MOD_PLANS.md'
+      - 'KNOWN_ISSUES.md'
+      - 'TESTING_CHECKLIST.md'
       - '.github/workflows/validate-mod-plans.yml'
   pull_request:
     paths:
+      - 'README.md'
+      - 'BETA_STATUS.md'
+      - 'MODS.md'
       - 'MOD_PLANS.md'
+      - 'KNOWN_ISSUES.md'
+      - 'TESTING_CHECKLIST.md'
       - '.github/workflows/validate-mod-plans.yml'
   workflow_dispatch:
 
@@ -17,38 +27,51 @@ permissions:
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
     steps:
       - name: Check out public beta repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
-      - name: Validate player-facing mod plan
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.12"
+
+      - name: Validate player-facing documentation
         run: |
           python - <<'PY'
           from pathlib import Path
 
-          path = Path("MOD_PLANS.md")
-          if not path.is_file():
-              raise SystemExit("Missing required file: MOD_PLANS.md")
+          required = {
+              "README.md": ["# Create IronWoven", "## Platform", "## Feedback"],
+              "BETA_STATUS.md": ["# Beta Status", "## Current status", "## Release readiness"],
+              "MODS.md": ["# Mods in Create IronWoven", "not a final release manifest"],
+              "MOD_PLANS.md": ["# Mod Plans", "## Status meanings", "## Explicit exclusions",
+                               "not the installed-mod list"],
+              "KNOWN_ISSUES.md": ["# Known Issues", "## Reporting a new issue"],
+              "TESTING_CHECKLIST.md": ["# Full Installed-Mod Functional Testing Checklist",
+                                       "## Smoke test is not a function test"],
+          }
 
-          content = path.read_text(encoding="utf-8")
-          required_sections = [
-              "# Mod Plans",
-              "## Status meanings",
-              "## Current testing and follow-ups",
-              "## Future ideas",
-              "## Paused work",
-              "## Explicit exclusions",
-          ]
-          missing = [section for section in required_sections if section not in content]
-          if missing:
-              for section in missing:
-                  print(f"::error::Missing required section: {section}")
+          errors = []
+          for filename, markers in required.items():
+              path = Path(filename)
+              if not path.is_file():
+                  errors.append(f"Missing required player page: {filename}")
+                  continue
+              content = path.read_text(encoding="utf-8")
+              for marker in markers:
+                  if marker.lower() not in content.lower():
+                      errors.append(f"{filename} is missing required content marker: {marker}")
+
+          if errors:
+              for error in errors:
+                  print(f"::error::{error}")
               raise SystemExit(1)
 
-          if "not the installed-mod list" not in content:
-              raise SystemExit("Mod plan must clarify that it is not the installed inventory.")
-
-          print("PASS: player-facing mod plan sections are present.")
-          print("PASS: installed inventory is clearly distinguished.")
+          print("PASS: all six player-facing entry pages exist and retain their required sections.")
+          print("PASS: the functional checklist remains distinct from routine smoke testing.")
           PY

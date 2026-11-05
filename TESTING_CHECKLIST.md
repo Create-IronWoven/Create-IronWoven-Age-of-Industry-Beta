@@ -10,7 +10,7 @@ This is the full functional-test matrix for the recorded Create IronWoven test i
 
 ## Smoke test is not a function test
 
-The 5 November combined test reached Done (1.718s), loaded world_lootr_test, accepted a client login and shut down cleanly. Batches A, B and C also passed their recorded pack-level startup/login smoke tests. This proves the combined test profile can load and join; **it does not prove every installed mod's functions work**.
+The 5 November combined test reached Done (1.718s), loaded world_lootr_test, accepted a client login and shut down cleanly. A later 14:09 update-trial run also completed Done (1.822s), disposable-world load, matching client login and clean shutdown. Batches A, B and C also passed their recorded pack-level startup/login smoke tests. This proves the combined test profile can load and join; **it does not prove every installed mod's functions work**.
 
 - **Smoke test:** mod discovery, server/client startup as appropriate, world load, login, shutdown and log review.
 - **Function test:** exercise the actual feature(s) that justify keeping the mod: item/block interaction, machine process, transport, GUI, world generation, rendering, recipe/loot behavior or synchronization.
@@ -20,16 +20,15 @@ The 5 November combined test reached Done (1.718s), loaded world_lootr_test, acc
 
 ## Current pack-level smoke evidence
 
-**Completed pack-level smoke steps**
-- [x] Dedicated server reached `Done (1.718s)`.
-- [x] Disposable world `world_lootr_test` loaded.
-- [x] Matching client joined successfully.
-- [x] Clean shutdown saved all dimensions.
-- [ ] Complete individual functional tests in the mod checklists below.
-- [ ] Capture a matching client-only mod launch and review its client log.
-
-**Release approval:** NOT APPROVED.
-
+| Check | Evidence | Status |
+|---|---|---|
+| Dedicated-server startup | 5 Nov logs reached Done (1.718s) and Done (1.822s) | PASS — combined disposable profiles |
+| Disposable world load | world_lootr_test loaded in both runs | PASS |
+| Matching client login | One matching client joined in both runs | PASS |
+| Clean shutdown | All dimensions saved in both runs | PASS |
+| Individual feature tests | Matrix below | OPEN — mostly not yet function-tested |
+| Matching client-only mod startup | No isolated client log for the 14:09 test folder supplied | OPEN |
+| Production/release approval | Not granted | NOT APPROVED |
 
 
 ## Existing-mod update trial — 5 November 2026, 13:43
@@ -732,3 +731,28 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 - Sodium, Iris and Sodium Extra are client-only entries from the reviewed client inventory and are not expected in the dedicated-server list.
 - Batch E detected Flerovium 1.1.3 Beta; the earlier plan called for stable 1.1.2. Record the selected file before closing that row.
 - This checklist does not authorize installing, removing, updating or approving any mod. Test candidates remain test-only until the maintainer approves them.
+
+## Existing-mod update smoke-test pass — 5 November 2026, 14:09
+
+**Result: Full routine smoke-test sequence passed for this combined disposable profile.** The server reached `Done (1.822s)`, loaded the disposable world, accepted a matching client login, and shut down with all dimensions saved. This is not an individual mod-function test, nor release approval.
+
+| Mod / component | Version / result |
+|---|---|
+| Sophisticated Core | 1.5.28.2458 — detected |
+| Sophisticated Backpacks | 3.26.20.2244 — detected |
+| Create Crafts & Additions | 1.7.2 — detected |
+| Create: The Factory Must Grow Community Edition | 1.3.3 — detected |
+| FTB Teams | 2101.1.12 — initialized; missing dependency blocker resolved in this test folder |
+| Create: Numismatics | Both 1.0.20 and 1.1.0 JARs were scanned; 1.1.0 was active |
+| Numismatics Plus | Absent; compatibility not tested |
+| Create: Steam 'n' Rails | 0.3.0-alpha.2; Beta 2 not present |
+| ImmediatelyFast / Flerovium / Entity Culling / More Culling | 1.6.15 / 1.1.3 / 1.11.3 / 1.0.11; all client-only and still present in the dedicated-server folder |
+| spark | 1.10.124 initialized; built-in Java engine selected on Windows 11 / amd64; no numeric baseline or saved profile |
+
+Do not leave both Numismatics JARs in one test folder. Test Numismatics Plus 1.0.1 with Numismatics 1.0.20 only; test Numismatics 1.1.0 separately without Plus until a compatible Plus release is verified. Move the four client-only rendering mods out of the dedicated-server folder and test them on the matching client, one at a time.
+
+### Error review
+
+The log contains **463 ERROR-level entries and 172 WARN-level entries**. The errors include 454 loot-table parse errors (Design n' Decor 256, Steam 'n' Rails 192, Create Kinetic 5, Create Aeronautics Structures 1), three Sable unknown Catwalk selectors, one Struts dedicated-server `RenderSystem` error, one PowerGrid optional native-backend error, three Every Compat registration/block-count messages, and one Create Deco placard recipe error. Verify relevant world-scoped compatibility datapacks before treating recurring loot-table or Sable errors as regressions. The Aeronautics Structures chest-table issue remains unresolved and Batch D remains partial. The 12,288 MB allocation warning exceeds the pack's stated 8,500 MB recommendation but did not block this run.
+
+spark did not produce TPS/MSPT, CPU, memory/GC measurements, or a saved profiler report. Batch E remains partial. Individual feature tests remain open in the matrix below; no function row is passed by this smoke test.

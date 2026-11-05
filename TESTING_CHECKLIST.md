@@ -28,6 +28,32 @@ The 5 November combined test reached Done (1.718s), loaded world_lootr_test, acc
 | Matching client-only mod startup | No matching current client log supplied for this snapshot | OPEN |
 | Production/release approval | Not granted | NOT APPROVED |
 
+
+
+## Existing-mod update trial — 5 November 2026, 13:43
+
+**Result: FAILED before server startup completed.** This was a separate disposable-server update attempt, not a replacement for the earlier successful combined smoke test.
+
+| Mod | Version detected | Result |
+|---|---:|---|
+| Sophisticated Core | 1.5.28.2458 | Detected |
+| Sophisticated Backpacks | 3.26.20.2244 | Detected |
+| Entity Culling | 1.11.3 | Detected in the server folder; client-only |
+| Create Crafts & Additions | 1.7.2 | Detected |
+| Create: Numismatics | 1.1.0 | Dependency conflict with Numismatics Plus 1.0.1 |
+| Create: TFMG Community Edition | 1.3.3 | Detected |
+| FTB Teams | Missing | Required by FTB Chunks 2101.1.23 |
+| Create: Steam 'n' Rails | 0.3.0-alpha.2 | Beta 2 was not present in this test |
+
+### Startup blockers
+
+- **FTB Teams missing:** FTB Chunks 2101.1.23 requires FTB Teams 2101.1.9 or newer. CurseForge NeoForge 1.21.1 release 2101.1.12 is available as [file 9434081](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge/files/9434081).
+- **Numismatics mismatch:** Numismatics Plus 1.0.1 requires exactly Numismatics 1.0.20. Restore [Numismatics 1.0.20, CurseForge file 7948018](https://www.curseforge.com/minecraft/mc-mods/numismatics/files/7948018) for the next test, retaining [Numismatics Plus 1.0.1, file 8839718](https://www.curseforge.com/minecraft/mc-mods/create-numismatics-plus/files/8839718).
+
+The server did not reach `Done`, load a world, accept a client, or complete a normal shutdown. ImmediatelyFast, Flerovium, Entity Culling, and More Culling were also detected in the dedicated-server folder; these rendering mods belong on the client and need separate client testing.
+
+**Next gate:** restore the Numismatics dependency pair, add FTB Teams to matching client/server profiles, remove client-only rendering mods from the server folder, then retry the disposable-server smoke test. No update from this attempt is approved for release.
+
 ## Existing partial function evidence — do not overstate it
 
 - **Curios:** two Back slots and one Head slot appeared in a newly created test world. Backpack + standard Create Backtank, Aviator Goggles and Linked Typewriter use were reported working in their assigned slots. Full matching client/server synchronization and older-player saved-slot correction remain separate.

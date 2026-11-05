@@ -61,7 +61,7 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 | Mod | Exact CurseForge file | Required baseline |
 |---|---|---|
 | Create: Curios Backtank | Version 1.0.2 · file 9207977 | Create 6.0.10 and Curios API 9.5.1 |
-| More Curios Slots | Version 1.4 · file 8170156 | Curios API 9.5.1 |
+| More Curios Slots | Version 1.4 · file 8170156 | Removed by maintainer; craftable slot upgrades are not wanted. Do not reinstall. |
 
 - [ ] Confirm the matching exact-version JAR for each add-on is present in both the test client and dedicated test server; keep client and server versions matched.
 - [x] The 5 Nov server reached `Done (1.310s)!`. More Curios Slots 1.4 was intentionally removed by the maintainer, so its MISSING status and old recipe/advancement messages are expected; see correction below.
@@ -79,7 +79,7 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 - [ ] Verify the Aeronautics Linked Typewriter remains available in its separately registered slot.
 - [ ] Review client and server logs for Curios slot registration, synchronization, rendering, or item-equipping errors.
 
-Curios common configuration is loaded server-side and synchronized to clients on join; do not create a duplicate client-side `curios-common.toml`. The production world and production server must remain unchanged during this test. More Curios Slots remains optional for future player-unlocked slots beyond the defaults.
+Curios common configuration is loaded server-side and synchronized to clients on join; do not create a duplicate client-side `curios-common.toml`. The production world and production server must remain unchanged during this test. More Curios Slots 1.4 was intentionally removed by the maintainer. No craftable slot upgrades are planned; do not reinstall it.
 
 A successful smoke test proves loading, world load, client login, and log status only. It does not by itself prove that the Backtank works when equipped in a Curios slot or that the extra slot recipes and slot behavior are correct. Do not mark either mod approved or release-ready from installation or startup alone. Any deeper feature check should be scoped separately after the smoke-test result.
 

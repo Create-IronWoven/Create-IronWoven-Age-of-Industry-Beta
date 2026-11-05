@@ -31,7 +31,7 @@ Use the [Dimension Mod Guide](DIMENSIONS.md) to group world-generation and explo
 
 ## Recommended work order
 
-**Routine installation sequence:** Batches A and B have passed the standard startup/world-load/client-login smoke test. Batch C — Create Big Cannons with Ritchie's Projectile Library — is next, subject to the exact CurseForge file and dependency recheck in the private batch plan.
+**Routine installation sequence:** Batches A, B, and C have passed the standard startup/world-load/client-login/log-review smoke test. Batch C passed on 5 November 2026 with Create Big Cannons 5.11.7 and Ritchie's Projectile Library 2.1.2 present. Proceed next with Batch D — Create Aeronautics Structures — after the exact CurseForge file and dependency recheck in the private batch plan. Batch C feature testing is not required by the routine policy; no cannon feature pass is claimed.
 
 The items below are **optional, targeted follow-ups**, not prerequisites for passing a routine batch smoke test or advancing to the next batch. Add one only when a specific unresolved issue cannot reasonably be answered by startup, world-load, login, or log review, and after the maintainer agrees:
 

@@ -206,7 +206,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 
 | Test action | Result | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|
-| Assemble/run a train. | Not tested | Not recorded | YYYY-MM-DD | Add result and evidence here |
+| Assemble/run a train. | Pass | Ghosty | 03-11-2026 | I made the train and drove it back and forth a couple of times. (submitted in issue #5) |
 | Test tracks, bogeys, schedules/stations, signals and installed railway interactions. | Not tested | Not recorded | YYYY-MM-DD | Add result and evidence here |
 | Verify save/restart. | Not tested | Not recorded | YYYY-MM-DD | Add result and evidence here |
 

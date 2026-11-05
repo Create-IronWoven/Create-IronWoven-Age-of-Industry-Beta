@@ -3,7 +3,8 @@
 **Target:** Create IronWoven 0.1.0-beta  
 **Distribution:** CurseForge only  
 **Platform:** Minecraft 1.21.1 · NeoForge 21.1.265 · Java 21  
-**Status:** In progress — not a release approval.
+**Status:** In progress — not a release approval.  
+**Last reviewed:** 5 November 2026
 
 Create IronWoven will be distributed exclusively through CurseForge. GitHub is used for project documentation and development records, not as an alternative modpack download platform.
 
@@ -62,6 +63,7 @@ The audit is being performed against the **entire** current inventory and potent
 - TownTalk 1.2.0 is available for 1.21.1 NeoForge but has an All Rights Reserved licence and unset environment metadata; treat it as a separate review item.
 - Dynamic Trees — Regions Unexplored 1.1.2 is available for 1.21.1 NeoForge; the base Dynamic Trees file still needs its own verification.
 - ImmediatelyFast 1.6.15 is available for 1.21.1 NeoForge and is client-only. Flerovium is also identified as client-only and requires Sodium.
+- More Culling 1.0.11 is listed on CurseForge as a Minecraft 1.21.1 NeoForge release. Project metadata identifies it as GPLv3 and client-only; the exact file ID still needs reconciliation before selection.
 
 CurseForge-hosted mods, including those with custom or restrictive project licences, must be referenced through the App-generated manifest. Do not manually bundle their JARs in `overrides/mods`. No mods hosted outside CurseForge will be considered or included.
 

@@ -84,14 +84,14 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 
 - [x] The updated config's default Back-slot count was confirmed in a newly created test world.
 - [x] Earlier in-game display for the existing player showed three Back slots, one Head slot, and one Aeronautics slot. The existing player's saved Back-slot allocation still needs adjustment.
-- [ ] Equip a Sophisticated Backpack and standard Create Backtank simultaneously in the two Back slots.
-- [ ] Equip Create Aeronautics Aviator Goggles in the Head slot and verify their intended behavior.
-- [ ] Verify the Aeronautics Linked Typewriter remains available in its separately registered slot.
+- [x] Maintainer reports a Sophisticated Backpack and standard Create Backtank work together in the two Back slots.
+- [x] Maintainer reports Create Aeronautics Aviator Goggles work in the Head slot.
+- [x] Maintainer reports the Aeronautics Linked Typewriter works in its separately registered slot.
 - [ ] Review client and server logs for Curios slot registration, synchronization, rendering, or item-equipping errors.
 
 Curios common configuration is loaded server-side and synchronized to clients on join; do not create a duplicate client-side `curios-common.toml`. The production world and production server must remain unchanged during this test. More Curios Slots 1.4 was intentionally removed by the maintainer. No craftable slot upgrades are planned; do not reinstall it.
 
-A successful smoke test proves loading, world load, client login, and log status only. It does not by itself prove that the Backtank works when equipped in a Curios slot or that the extra slot recipes and slot behavior are correct. Do not mark either mod approved or release-ready from installation or startup alone. Any deeper feature check should be scoped separately after the smoke-test result.
+A startup smoke test alone does not prove gameplay compatibility. The maintainer reports the targeted Backpack + Backtank, Aviator Goggles, and Linked Typewriter checks passed, but matching client/server log review and the existing-player saved-slot adjustment remain open. Do not mark either add-on approved or release-ready from these targeted checks alone.
 
 
 
@@ -101,7 +101,7 @@ This run also repeated 453 loot-table parse errors, one Create Deco placard reci
 
 
 
-**Maintainer clarification and fix — 5 November 2026:** More Curios Slots 1.4 was intentionally removed; do not reinstall it. The internal test-server and private repository configs now set the total Back-slot count to two. Config files will be included with the first beta upload. The maintainer reports that a newly created test world now displays two Back slots, confirming the updated default config. The older existing player's third slot is a separate saved-allocation issue: move any item out of it, then run `/curios set back <player> 2` as an operator on a disposable server. Curios config may not replace slots already assigned to that player. Do not use `/curios reset` or edit player data. After adjusting that player, test Backpack + standard Create Backtank together, Aviator Goggles, and the Linked Typewriter slot.
+**Maintainer clarification and fix — 5 November 2026:** More Curios Slots 1.4 was intentionally removed; do not reinstall it. The internal test-server and private repository configs now set the total Back-slot count to two. Config files will be included with the first beta upload. The maintainer reports that a newly created test world now displays two Back slots, confirming the updated default config. The older existing player's third slot is a separate saved-allocation issue: move any item out of it, then run `/curios set back <player> 2` as an operator on a disposable server. Curios config may not replace slots already assigned to that player. Do not use `/curios reset` or edit player data. The maintainer reports Backpack + standard Create Backtank, Aviator Goggles, and Linked Typewriter checks now work. After adjusting the older player's allocation, review matching client/server logs and record the saved-player result.
 ### 1. Botany Pots — 21.1.44
 
 **Status: Gameplay test pending; feature checks are expected to be possible.** Botany Pots 21.1.44, Bookshelf 21.1.81 and Prickle 21.1.11 loaded in the 4 November test group. Botany Pots reported one plugin loaded, and the server parsed 14,444 recipes without recipe-parsing failures. This confirms the mod and its dependencies load, but not in-game planting, growth, harvesting or the optional Herbs & Harvest integration.

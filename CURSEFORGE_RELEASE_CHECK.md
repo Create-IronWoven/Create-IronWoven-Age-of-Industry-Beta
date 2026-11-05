@@ -4,7 +4,7 @@
 **Distribution:** CurseForge only  
 **Platform:** Minecraft 1.21.1 · NeoForge 21.1.265 · Java 21  
 **Status:** In progress — not a release approval.  
-**Last reviewed:** 5 November 2026
+**Page update:** 5 November 2026 (More Culling source note)
 
 Create IronWoven will be distributed exclusively through CurseForge. GitHub is used for project documentation and development records, not as an alternative modpack download platform.
 

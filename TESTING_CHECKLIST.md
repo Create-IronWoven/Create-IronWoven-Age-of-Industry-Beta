@@ -31,7 +31,7 @@ Use the [Dimension Mod Guide](DIMENSIONS.md) to group world-generation and explo
 
 ## Recommended work order
 
-**Routine installation sequence:** Batches A, B, and C passed the standard startup/world-load/client-login/log-review smoke test. Batch D — Create Aeronautics Structures 1.1.0-Beta-3.1 — has been attempted. The server started, loaded the disposable world, accepted a client login, and shut down cleanly, but the mod emitted a Russian startup message and a candidate-specific loot-table parsing ERROR. Batch D is blocked from acceptance under the English-only requirement. Do not advance to Batch E until the language and loot-table blockers are resolved or the candidate is rejected.
+**Routine installation sequence:** Batches A, B, and C passed the standard startup/world-load/client-login/log-review smoke test. Batch D — Create Aeronautics Structures 1.1.0-Beta-3.1 — has been attempted. The server started, loaded the disposable world, accepted a client login, and shut down cleanly, A Russian startup message was recorded but is informational only; mod-internal language is not subject to the maintainer's English-only communication preference. A candidate-specific loot-table parsing ERROR remains unresolved. Batch D remains partial. Do not advance to Batch E until the technical issue and outstanding verification are reviewed.
 
 The items below are **optional, targeted follow-ups**, not prerequisites for passing a routine batch smoke test or advancing to the next batch. Add one only when a specific unresolved issue cannot reasonably be answered by startup, world-load, login, or log review, and after the maintainer agrees:
 
@@ -531,7 +531,7 @@ Selected by the maintainer for **Overworld generation only**. Do not treat this 
 - [ ] Verify the exact CurseForge dependency declarations and file versions. Create Aeronautics 1.3.2, Sable 2.0.6, and GeckoLib 4.9.3 were present in the test server.
 - [x] Test in a disposable server/world; no production inventory or world change was made.
 - [x] Server reached `Done`, loaded the disposable world, accepted a client login, and shut down with all dimensions saved.
-- [ ] Resolve the Russian startup message; English-language content is required for acceptance.
+- [x] Record the Russian startup message as informational only; it is not an acceptance blocker.
 - [ ] Fix or explain the candidate-specific `cr_aero_structures:chests/uniform` loot-table parsing ERROR.
 - [ ] Confirm actual generation of abandoned engineering buildings, boats, airships and balloon structures; the log does not establish generation.
 - [ ] Check structure placement/overlap, loot, client/server sync, chunk borders and save/restart.

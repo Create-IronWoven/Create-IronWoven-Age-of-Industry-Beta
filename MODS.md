@@ -171,18 +171,3 @@ New performance and quality-of-life recommendations remain candidates only. They
 ## Newer user-supplied mods-folder snapshot — 4 November 2026
 
 A follow-up launcher screenshot explicitly displays `Content (88)` and `Mods (88)`, confirming **88 mods in the current profile**. The earlier manual filename transcription gave 89 visible names; that visual count was one over the launcher-confirmed profile total and must not be treated as the profile count. The screenshot includes client-only graphics files Sodium, Iris and Sodium Extra and is not a replacement for a fresh dedicated-server manifest. The older 79 top-level server JAR / 82 loaded-mod figure is a historical server snapshot and must remain separate.
-
-## End test-profile cleanup — 5 November 2026
-
-The maintainer has paused End development and instructed that **all End-specific mods be removed from the active disposable test setup**. The latest inventory snapshot above does not list End-generation mods in the main installed-mod tables; earlier 4 November test runs did load YUNG's Better End Island and BetterEnd: New Dawn. Treat those earlier entries as historical test evidence, not as permission to keep them in the current test profile.
-
-Remove any present End-specific content JARs from the disposable test server and matching client, including YUNG's Better End Island, BetterEnd: New Dawn, Ender Ore, Ender Villages, Better End Cities Better End, MES / Moog's End Structures, and any other End-only content. Bigger Better End Cities is excluded and must also be removed if present in the test folders. Keep all other End candidates out. Remove support libraries only if no remaining mod depends on them. Lootr is general-purpose and is not included in this End-mod removal instruction.
-
-**Initial status at the time this note was written:** physical cleanup had not yet been verified. This was superseded by the later screenshots from both the dedicated test server and the CurseForge client folders; see the visually verified section below. Historical test evidence is retained for accuracy.
-
-## End test-profile cleanup — visually verified 5 November 2026
-
-The maintainer supplied current screenshots of the dedicated test server's `MinecraftServer-Test/mods` folder and the CurseForge client instance's `Create World/mods` folder. No End-specific content/generation JARs are visible in either folder. Specifically, BetterEnd, YUNG's Better End Island, Ender Ore, Ender Villages, Better End Cities Better End, MES / Moog's End Structures and Bigger Better End Cities are absent. End-only support libraries (YUNG's API, BCLib, WorldWeaver, WunderLib and Moog's Structure Lib) are also not visible. The general-purpose Lootr mod remains and is not an End overhaul.
-
-**Cleanup status: visually verified from the two supplied screenshots.** This is not a live filesystem scan or fresh startup-log verification. Historic End test runs remain recorded above for transparency; they do not describe the current folders. Create Aeronautics Structures is still only a planned Overworld addition and is not visible as installed in these screenshots.
-

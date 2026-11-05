@@ -116,7 +116,7 @@ These are independent IronWoven candidates. Do not copy decisions from another m
 | ImmediatelyFast | 1.6.15 | Render batching; inspect HUD, GUI, particles, entities, and block entities. [CurseForge file 9165518](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast/files/9165518) |
 | Flerovium | 1.1.2 stable | Requires Sodium; test item, particle, and entity rendering. [CurseForge project](https://www.curseforge.com/minecraft/mc-mods/flerovium) |
 | Entity Culling | 1.10.4 | Check Create contraptions, pulleys, Aeronautics, and Sable sublevels. [CurseForge file 8274693](https://www.curseforge.com/minecraft/mc-mods/entityculling/files/8274693) |
-| Distant Horizons | 3.3.3 | Test LOD without shaders first; shader use requires a compatible Iris shader pack. [CurseForge file 9004764](https://www.curseforge.com/minecraft/mc-mods/distant-horizons/files/9004764) |
+| Distant Horizons | — | Removed from the performance test shortlist at the maintainer's request. Do not test or reintroduce unless the maintainer changes this decision. |
 | Voxy / Roxy | No matching verified CurseForge 1.21.1 Voxy file | Blocked by source/version gate: Roxy 0.4.1 requires the original Voxy JAR, while the author-identified verified Voxy build is for Minecraft 1.21.11. Do not install Roxy alone. |
 | SSRD | No verified CurseForge file | Research only; do not source or install outside the CurseForge-only policy. |
 

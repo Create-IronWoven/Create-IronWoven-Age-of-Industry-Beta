@@ -86,7 +86,7 @@ def update_checklist(mod_heading: str, action: str, result: str, environment: st
         cells[3] = md_cell(tester)
         cells[4] = md_cell(date)
         cells[5] = md_cell(evidence) + f" (submitted in issue #{ISSUE_NUMBER})"
-        lines[row_index] = "| " + " | ".join(cells[:5]) + " |"
+        lines[row_index] = "| " + " | ".join(cells[:6]) + " |"
         new_content = "\n".join(lines) + ("\n" if content.endswith("\n") else "")
         try:
             commit = api("PUT", path, {

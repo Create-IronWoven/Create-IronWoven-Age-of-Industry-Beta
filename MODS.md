@@ -40,7 +40,6 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | Create: Fluids Be Gone! | 1.0.1 |
 | Create: Framed | 1.8.2 |
 | Create: Numismatics | 1.0.20 |
-| Create: Numismatics Plus | 1.0.1 — archived in `MinecraftServer-Test/mods-disabled`; not part of the active server test profile |
 | Create: Pantographs & Wires | 0.2.3-C6 beta |
 | Create: Pattern Schematics | 2.0.10 |
 | Create: Power Grid | 0.6.2 |
@@ -245,7 +244,7 @@ The screenshot also shows Bookshelf 21.1.81, FastFurnace 9.0.1, FastSuite 6.0.7,
 
 ### Important test-folder observations
 
-- Both Create Numismatics 1.0.20 and 1.1.0 JARs are visible. The 14:09 runtime log selected 1.1.0; Numismatics Plus was absent. Do not treat both versions as a compatible pair or test Numismatics Plus against 1.1.0. Use only one Numismatics JAR in a profile.
+- At the earlier 17:48 active-folder snapshot, both Numismatics 1.0.20 and 1.1.0 were visible. The later 17:58 `mods-disabled` screenshot shows Numismatics 1.1.0 and Numismatics Plus 1.0.1 in the archive. The intended active server profile is Numismatics 1.0.20 only; verify the active `mods` folder before the next run. Never keep both Numismatics versions in one profile.
 - ImmediatelyFast, Flerovium, Entity Culling, and More Culling are not visible in this latest server-folder screenshot. This does not establish their client-profile status.
 - The screenshot is an inventory observation, not proof of each mod's features or acceptance into the final pack.
 

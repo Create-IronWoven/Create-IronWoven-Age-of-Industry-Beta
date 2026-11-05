@@ -8,12 +8,12 @@ This is the living queue of mod features and compatibility checks that still nee
 
 ## Quick navigation
 
-- [Recommended work order](#recommended-work-order--4-november-2026)
+- [Recommended work order](#recommended-work-order)
 - [Active tests](#active-tests)
 - [Fresh-world compatibility retest](#fresh-world-compatibility-retest)
 - [Dedicated-server and runtime checks](#outstanding-dedicated-server-and-runtime-checks)
-- [Candidate research queue](#candidate-mods--research-before-any-installtest)
-- [Performance tests](#performance-test-queue--separate-tests-only)
+- [Candidate research queue](#candidate-mods)
+- [Performance tests](#performance-test-queue)
 - [On hold](#on-hold)
 
 ## Dimension-separated world-generation testing
@@ -27,7 +27,7 @@ Use the [Dimension Mod Guide](DIMENSIONS.md) to group world-generation and explo
 - Keep the production world and its existing BYG 2.6.3 / Regions Unexplored 0.6.3 setup unchanged.
 - Keep the canonical candidate status in `MOD_PLANS.md`; this checklist remains the single queue of unfinished tests. The dimension guide is navigation, not a duplicate mod list.
 
-## Recommended work order — 4 November 2026
+## Recommended work order
 
 1. Continue Every Compat (Wood Good) validation: check Chipped 4.0.2 variants, recipes, models/textures, drops, duplicate registration and registry-size impact.
 2. Complete the remaining Botany Pots, Construction Sticks and Lootr multiplayer feature checks.
@@ -192,7 +192,7 @@ The fresh-world debug log also recorded skipped Apotheosis data attachments, inv
 
 Do not assign these messages to Lootr based on the current evidence.
 
-## Candidate mods — research before any install/test
+## Candidate mods
 
 These entries are not in the active test installation. First confirm an exact Minecraft 1.21.1 NeoForge file and all required dependencies on CurseForge. Do not install them until the compatibility review is complete and the project owner approves the test.
 
@@ -290,7 +290,7 @@ Do not combine the central-island overhauls in the first test. Keep production w
 
 Only test on a disposable dedicated server and world after explicit approval. Do not alter the production mod list or world.
 
-## Performance test queue — separate tests only
+## Performance test queue
 
 **Current baseline already includes:** ModernFix 5.27.27 and FerriteCore 7.0.3 in the recorded server inventory; Sodium 0.8.13, Sodium Extra 0.9.5 and Iris 1.8.14-beta.1 in the client graphics profile. Do not add duplicate renderer or memory mods.
 

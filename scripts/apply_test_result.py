@@ -5,7 +5,7 @@ import base64, json, os, re, time, urllib.error, urllib.request
 from pathlib import Path
 
 API = "https://api.github.com"
-TOKEN = os.environ["GITHUB_TOKEN"]
+TOKEN = os.environ.get("TEST_RESULTS_TOKEN") or os.environ["GITHUB_TOKEN"]
 REPOSITORY = os.environ["GITHUB_REPOSITORY"]
 ISSUE_NUMBER = int(os.environ["ISSUE_NUMBER"])
 EVENT_PATH = os.environ["GITHUB_EVENT_PATH"]
@@ -127,7 +127,11 @@ def main():
     if result not in {"Pass", "Partial", "Failed", "Blocked", "N/A"}:
         comment("I could not update the checklist because the result must be Pass, Partial, Failed, Blocked, or N/A.")
         return
-    ok, message, commit_url = update_checklist(mod, action, result, tester, date, evidence)
+    try:
+        ok, message, commit_url = update_checklist(mod, action, result, tester, date, evidence)
+    except urllib.error.HTTPError as exc:
+        comment(f"**Checklist not changed.** GitHub rejected the automatic checklist update (HTTP {exc.code}). This can happen when repository branch protection does not allow the workflow token to update main. A maintainer must review the workflow permissions or configure an authorized TEST_RESULTS_TOKEN secret with the required repository access. No existing result was overwritten.")
+        return
     if not ok:
         comment("**Checklist not changed.** " + message + "\n\nPlease check the exact mod heading and test-action text, or ask the maintainer to review this submission.")
         return

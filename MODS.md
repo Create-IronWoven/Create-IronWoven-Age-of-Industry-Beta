@@ -315,7 +315,7 @@ The screenshot proves these files are in the server's disabled archive, not whet
 The latest disposable-server log reached `Done (1.490s)`, prepared the test world, accepted a matching client login, and stopped cleanly with all dimensions saved. This is a routine smoke-test pass only, not feature validation or release approval.
 
 - **Create: Numismatics:** 1.0.20 was the only version detected and initialized. Numismatics 1.1.0 and Numismatics Plus 1.0.1 were absent from the runtime list. The duplicate-version issue is absent from this test snapshot; the Plus + 1.0.20 pairing remains untested.
-- **Integrated Villages 1.3.3+1.21.1:** loaded with Integrated API 1.9.1 and Supplementaries 3.4.0 present. Several structure IDs were returned by disposable-world lookups, but this does not establish complete structure generation or replacement of vanilla villages.
+- **Integrated Villages 1.3.3+1.21.1:** loaded with required Create 6.0.10, Integrated API 1.9.1, and Supplementaries 3.4.0 present. Several structure IDs were returned by disposable-world lookups, but this does not establish complete structure generation or replacement of vanilla villages.
 - Some Integrated Villages locate searches took roughly 10–37 seconds and triggered tick-delay warnings. An Integrated API warning also identified an empty Cabin Village decoration pool. Keep the candidate under testing until representative structures and performance are checked.
 - **Java GC observation:** the accompanying short GC trace shows heap reclamation after allocation peaks. It does not establish a long-term memory baseline or prove the absence of native/long-session memory issues.
 - Struts' dedicated-server RenderSystem issue and PowerGrid's unavailable optional native solver remain open.

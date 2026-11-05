@@ -189,12 +189,3 @@ Do not change the production inventory or world. Full details: Every Compat Rese
 - Startup message observed in the test log: `Мод Create Aeronautics Structures загружается!`  
   **English translation:** “Create Aeronautics Structures is loading!” (informational startup message).  
 - Status: test attempted in a disposable profile; partial pending review of a candidate-specific loot-table error. Exact CurseForge file provenance and structure generation remain unverified. The message language is not a blocker. Not production-approved.
-
-## End mod workstream — paused
-
-The maintainer has paused End-mod research and testing for now. No suitable CurseForge-only Minecraft 1.21.1 / NeoForge mod has been identified that provides the desired Create-style abandoned industrial End.
-
-- Keep the abandoned-industrial End concept as a future direction, but do not actively search, shortlist, install or test End overhaul/structure mods until the maintainer reopens this workstream.
-- Previously recorded End candidates remain historical research only; this pause does not approve any of them.
-- This does not change the installed mod list, production world or world-generation settings.
-- Overworld additions, including Create Aeronautics Structures, remain a separate active workstream.

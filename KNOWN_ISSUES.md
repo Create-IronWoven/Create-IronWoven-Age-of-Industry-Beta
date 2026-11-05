@@ -30,4 +30,4 @@ The tested Windows server cannot load the optional `powergridNative7` native lib
 
 ## Reporting a new issue
 
-Please check the [issue tracker](https://github.com/alexth110987/Create-IronWoven-Beta/issues) before opening a new report. Include the exact error, what you were doing, and steps to reproduce it.
+Please check the [issue tracker](../../issues) before opening a new report. Include the exact error, what you were doing, and steps to reproduce it.

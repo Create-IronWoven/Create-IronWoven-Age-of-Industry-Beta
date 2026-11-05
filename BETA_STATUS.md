@@ -1,5 +1,6 @@
-# Beta Status
+# Beta Status — v0.1.000
 
+**Current development version:** `v0.1.000` (not yet a downloadable public beta)  
 **Last updated:** 5 November 2026  
 **Minecraft:** 1.21.1 · **NeoForge:** 21.1.265 · **Java:** 21
 

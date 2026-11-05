@@ -8,7 +8,7 @@ body:
       value: |
         Submit one form for each test action you complete. After submission, the matching row in the public testing checklist will update automatically.
 
-        Before filling this in, open the [testing checklist](../../blob/main/TESTING_CHECKLIST.md):
+        Before filling this in, open the [testing checklist](https://github.com/alexth110987/Create-IronWoven-Beta/blob/main/TESTING_CHECKLIST.md):
         - Copy the mod's exact section heading (including its version).
         - Copy the exact test-action text from that mod's table.
         - Paste both below. This makes sure the correct checklist row is updated.

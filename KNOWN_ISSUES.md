@@ -6,7 +6,7 @@ This page lists issues the maintainer is aware of. It is not an exhaustive list 
 
 ### Curios Back-slot count for an existing player
 
-The maintainer confirmed that a newly assigned player receives two Back slots from the internal configuration. An existing player's inventory still showed three after the config-only restart, so this issue is limited to that saved player allocation. Curios may retain slots already assigned to a player, so the cause is not yet confirmed. More Curios Slots 1.4 was intentionally removed; its absence is expected.
+The maintainer reports that a newly created test world displays two Back slots from the internal configuration. An existing player's inventory still showed three after the config-only restart, so this issue is limited to that saved player allocation. Curios may retain slots already assigned to a player, so the cause is not yet confirmed. More Curios Slots 1.4 was intentionally removed; its absence is expected.
 
 Before retesting, move any item out of the third Back slot, then have an operator run `/curios set back <player> 2`. Reopen the inventory and confirm the result. The Backpack, Create Backtank, Aviator Goggles, and Aeronautics slot behavior still need testing.
 

@@ -64,11 +64,11 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 | More Curios Slots | Version 1.4 · file 8170156 | Curios API 9.5.1 |
 
 - [ ] Confirm the matching exact-version JAR for each add-on is present in both the test client and dedicated test server; keep client and server versions matched.
-- [ ] Start the dedicated test server and confirm it reaches `Done` without missing dependencies, mod-file rejection, registry failures, or new Curios-related errors.
-- [ ] Load the disposable test world and confirm the world completes loading.
-- [ ] Join using the matching CurseForge client and confirm login succeeds.
-- [ ] Shut the server down cleanly and review the new server `latest.log` and client log for Curios, Backtank, slot-registration, rendering, and mixin errors.
-- [ ] Record the outcome for each add-on separately as passed, partial, or failed for the smoke-test scope.
+- [x] The 5 Nov server reached `Done (1.310s)!`; however, More Curios Slots 1.4 was MISSING on the dedicated server and two stale extra-back-slot recipe errors appeared at login (see log review below). A matched Curios run is still needed.
+- [x] Disposable `world_lootr_test` loaded in the 5 Nov run.
+- [x] SoKkada logged in successfully in the 5 Nov run; exact More Curios Slots parity was not achieved.
+- [x] Server shut down cleanly and saved all dimensions. Reviewed the server log; see findings below. Matching client log review remains pending.
+- [x] Recorded outcome: partial startup/world-load/login/shutdown pass for the loaded Curios components; More Curios Slots server parity and feature tests remain incomplete.
 
 **Default slot layout prepared — 5 November 2026:** the private master server config was intended to grant one additional Back slot and one Head slot. The maintainer's later in-game observation confirms three Back slots, one Head slot, and one Aeronautics slot. The supplied test-server config screenshot (also matching the workspace file) shows `back;size=1;operation=ADD` and `head;size=1;operation=SET`, intended to produce two Back slots total. The third visible Back slot remains unexplained; functional checks and log review remain pending.
 
@@ -82,6 +82,12 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 Curios common configuration is loaded server-side and synchronized to clients on join; do not create a duplicate client-side `curios-common.toml`. The production world and production server must remain unchanged during this test. More Curios Slots remains optional for future player-unlocked slots beyond the defaults.
 
 A successful smoke test proves loading, world load, client login, and log status only. It does not by itself prove that the Backtank works when equipped in a Curios slot or that the extra slot recipes and slot behavior are correct. Do not mark either mod approved or release-ready from installation or startup alone. Any deeper feature check should be scoped separately after the smoke-test result.
+
+
+
+**Latest server-log review — 5 November 2026 (`MinecraftServer-Test/logs/latest.log`):** the disposable `world_lootr_test` server reached `Done (1.310s)!`, SoKkada logged in, and shutdown saved all dimensions. Curios API reported 11 total slots. Create: Curios Backtank 1.0.2 and Aeronautics Curios Compat 2.0 loaded, but **More Curios Slots 1.4 was MISSING on the dedicated server**. Login produced two unrecognized stale `more_curios_slots:extra_back_slot` recipe entries and one ignored advancement. NeoForge also reported `curios-common.toml` incorrect/correcting; the file inspected after the run still has the intended `back;size=1;operation=ADD` and `head;size=1;operation=SET`. The log does not identify why three Back slots appeared in-game. Re-run with the same exact add-on JARs on server and client, then verify slots and item behavior.
+
+This run also repeated 453 loot-table parse errors, one Create Deco placard recipe error, and three Sable Catwalk selector errors in `world_lootr_test`; the fresh-world compatibility-datapack retest remains open. Struts' RenderSystem error and PowerGrid's optional native-library failure remain.
 
 ### 1. Botany Pots — 21.1.44
 

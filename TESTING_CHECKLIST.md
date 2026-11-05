@@ -44,7 +44,6 @@ The items below are **optional, targeted follow-ups**, not prerequisites for pas
 
 Keep production worlds unchanged.
 
-
 ## Status meanings
 
 - **Gameplay test pending** — a feature-specific test has been requested or agreed for a concrete issue; this is not a requirement for the routine startup/login smoke test.
@@ -53,7 +52,6 @@ Keep production worlds unchanged.
 - **Retest needed** — a known fix must be checked in a correctly prepared disposable world.
 - **Research gate** — verify the exact CurseForge NeoForge file and dependency chain before installing anything.
 - **On hold** — do not start testing until the project owner resumes it.
-
 
 ## Installed baseline: startup/login smoke test passed
 
@@ -98,13 +96,9 @@ Curios common configuration is loaded server-side and synchronized to clients on
 
 A startup smoke test alone does not prove gameplay compatibility. The maintainer reports the targeted Backpack + Backtank, Aviator Goggles, and Linked Typewriter checks passed, but matching client/server log review and the existing-player saved-slot adjustment remain open. Do not mark either add-on approved or release-ready from these targeted checks alone.
 
-
-
 **Latest server-log review — 5 November 2026 (`MinecraftServer-Test/logs/latest.log`):** the disposable `world_lootr_test` server reached `Done (1.310s)!`, <player> logged in, and shutdown saved all dimensions. Curios API reported 11 total slots. Create: Curios Backtank 1.0.2 and Aeronautics Curios Compat 2.0 loaded. More Curios Slots 1.4 was intentionally removed by the maintainer; its MISSING status and two old `extra_back_slot` recipe entries plus one ignored advancement are expected. NeoForge warned that the config was incorrect/correcting. The prior config used an additive Back-slot setting; the internal fix now sets the total Back count to two. The maintainer later confirmed two Back slots in a newly created test world.
 
 This run also repeated 453 loot-table parse errors, one Create Deco placard recipe error, and three Sable Catwalk selector errors in `world_lootr_test`; the fresh-world compatibility-datapack retest remains open. Struts' RenderSystem error and PowerGrid's optional native-library failure remain.
-
-
 
 **Maintainer clarification and fix — 5 November 2026:** More Curios Slots 1.4 was intentionally removed; do not reinstall it. The internal test-server and private repository configs set the total Back-slot count to two, and the maintainer reports that a newly created test world displays two Back slots. Config files will be included with the first beta upload. Backpack + standard Create Backtank, Aviator Goggles, and Linked Typewriter checks are also reported working. Matching client/server log review remains open; this does not imply broader production or release approval.
 ### 1. Botany Pots — 21.1.44
@@ -364,9 +358,6 @@ Do not install C2ME or ServerCore in this first wave. Their chunk-threading/beha
 
 **Already present:** JEI 19.64.0.455, Jade 15.10.6, AppleSkin 3.0.9, Mouse Tweaks 2.26.1, FTB Chunks/Teams and Sophisticated Backpacks 3.26.19. FTB Chunks already supplies claims/team-map functionality. AeroPortals 1.3.6 is also installed and must be compared with Waystones before selecting a travel system.
 
-
-
-
 - [x] **Batch A routine smoke test passed — JER 1.6.0.57, Shulker Box Tooltip 5.1.9+1.21.1, and Enchantment Descriptions 21.1.11.** The server reached `Done`, the disposable world loaded, the matching client joined, and shutdown saved all dimensions. Shulker Box Tooltip registered 31 providers. This records the standard startup/login smoke test only; no feature-by-feature playtest is claimed or required by default. Not production/release approval.
 - [x] **Nature's Compass 3.4.0 — Batch B routine smoke test passed** — [CurseForge file 7892954](https://www.curseforge.com/minecraft/mc-mods/natures-compass/files/7892954). Present in the server mod list; server startup, world load, client login, and clean shutdown passed. One INFO biome-search message ended without a result; no target context is available, so no feature verdict is recorded.
 - [x] **Explorer's Compass 3.4.0 — Batch B routine smoke test passed** — [CurseForge file 7892943](https://www.curseforge.com/minecraft/mc-mods/explorers-compass/files/7892943). Present in the server mod list; server startup, world load, client login, and clean shutdown passed. No feature-by-feature structure search is claimed or required by default. Do not test End structures while the End workstream is paused.
@@ -389,7 +380,6 @@ Do not install C2ME or ServerCore in this first wave. Their chunk-threading/beha
 - When a new log, screenshot, or manual test result is reviewed, update this checklist: record the date, move only the proven checks to passed, add newly discovered tests, and remove completed items only when the evidence supports it.
 - Keep this page aligned with the maintainer's latest test records. Publish only concise, player-safe summaries here; do not publish raw logs, private paths, IPs, tokens, or other personal/system details.
 - Do not change the production mod list or world as part of updating this documentation.
-
 
 ## Performance / LOD / Tectonic tests — separated by installation side (4 November 2026)
 
@@ -453,7 +443,6 @@ Nothing in this checklist authorizes installation into the production profile or
 
 **Safeguards:** CurseForge only. Keep production world and BYG 2.6.3 / Regions Unexplored 0.6.3 unchanged. Do not modify the installed inventory or production server. Test selection is not production approval.
 
-
 ## 12. Every Compat (Wood Good) — research complete; Stage A test pending
 
 **Status: Candidate only; not installed or approved.** Exact CurseForge 1.21.1 NeoForge release: everycomp-1.21-2.11.56-neoforge.jar (file 9336749). Required library: Moonlight Lib / Selene; author's minimum is 1.21.1-3.7.2. Current 1.21.1 NeoForge CurseForge release: moonlight-1.21.1-3.8.1-neoforge.jar (file 9436226). Chipped 4.0.2 is already present and is listed as an optional Every Compat integration. The author's changelog records Chipped fixes, but this does not prove every modded wood type is supported.
@@ -486,7 +475,6 @@ Do not modify the production inventory, production world or world-generation set
 
 Keep the production world, BYG 2.6.3, Regions Unexplored 0.6.3 and current world-generation JSON unchanged. Existing BetterEnd / Lootr limitation remains open and must not be assumed fixed by this shortlist. Detailed candidate notes: End expansion research.
 
-
 ### Stage A maintainer result — 4 November 2026
 
 **Partial pass — feature observed, approval pending.** Maintainer confirms modded planks work in Chipped's Carpenter's Table and the stone table works. Server log confirms Every Compat 2.11.56 + Moonlight 3.8.1 load, Chipped modules and dynamic server resources generate, and dedicated server reaches Done.
@@ -502,7 +490,6 @@ Keep the production world, BYG 2.6.3, Regions Unexplored 0.6.3 and current world
 
 Keep Every Compat candidate-only until remaining checks pass and the project owner approves. No production inventory changes.
 
-
 ### Full mod-list world test — 4 November 2026
 
 Maintainer confirms that the world works with the complete mod set shown in the latest test-installation screenshot. The pictured configuration includes Every Compat 2.11.56 + Moonlight 3.8.1, Chipped 4.0.2, BetterEnd 21.0.39 and its libraries, YUNG's Better End Island 3.1.2 / YUNG's API 5.1.9, and the wider Create/Aeronautics pack. Record this as a user-confirmed pack-level world-playability check, not a blanket feature-compatibility or production-approval pass.
@@ -511,7 +498,6 @@ Maintainer confirms that the world works with the complete mod set shown in the 
 - [ ] Continue Every Compat checks: recipes/JEI, textures/models, drops and additional wood types.
 - [ ] Investigate duplicate Golden Cherry leaves registration and the 9,480-block / 36.22% registry-size warning.
 - [ ] Confirm client/server consistency and save/restart; isolate Pythadendron separately.
-
 
 ## End test direction update — 4 November 2026
 
@@ -537,24 +523,6 @@ The maintainer's chosen End direction is an **abandoned industrial world**, not 
 - [ ] Test promising candidates individually in fresh disposable End worlds; inspect generation frequency, overlap, chunk borders, loot, client/server behavior and save/restart.
 - [ ] Keep production world and installed inventory unchanged; design preference is not installation approval.
 
-## Superseding End test-profile cleanup — abandoned industrial direction
-
-**This section supersedes the earlier End candidate work order and End-generation test stages above.** The selected direction is a long-abandoned industrial civilisation. The following mods are proposed for removal from the disposable End test profile because their current content does not fit that direction:
-
-- **BetterEnd: New Dawn 21.0.39** — remove from the End test profile; its colourful fantasy-style biomes and natural features conflict with the chosen industrial aesthetic.
-- **YUNG's Better End Island 3.1.2** — remove from the End test profile; its central-island overhaul does not add the abandoned industrial locations being sought.
-- **MES / Moog's End Structures 2.1.1** — remove from the End test profile; its vanilla-styled structures do not meet the industrial-settlement goal.
-
-**Dependency cleanup:** remove Moog's Structure Lib only if no remaining mod requires it. Check whether any other installed YUNG mod still needs YUNG's API before removing that library. Check the remaining consumers of BCLib, WorldWeaver and WunderLib before removing any of BetterEnd's support libraries. Do not remove shared libraries blindly.
-
-Keep **Lootr** and **Ender Ore** in the test setup for now; this theme decision does not establish that either should be removed. **Bigger Better End Cities remains explicitly excluded.**
-
-This is a test-profile recommendation only. It does not authorize changes to the production mod inventory, production server or existing world. Existing generated End chunks will not be retroactively redesigned by removing generation mods; assess the revised direction only in newly generated End terrain in a disposable test world.
-
-- [ ] Remove the three listed End-generation mods from the disposable End test profile, after checking shared-library consumers.
-- [ ] Recheck the CurseForge-only 1.21.1 NeoForge candidate list for genuinely abandoned industrial factories, refineries, mines, railways, cranes, pipelines, laboratories and small settlements before selecting any replacement.
-- [ ] Do not promote fantasy-style or generic vanilla-style End overhauls just to fill the slot. Keep candidates as research-only until their actual structures, materials and compatibility are verified.
-
 ## Overworld test — Create Aeronautics Structures
 
 Selected by the maintainer for **Overworld generation only**. Do not treat this as an End structure candidate.
@@ -579,34 +547,3 @@ Keep its status as planned/test pending until these checks are complete.
 - [ ] Continue separate Overworld testing, including Create Aeronautics Structures, under its own test checklist.
 
 This pause does not authorize production mod-list, server, world, BYG 2.6.3, Regions Unexplored 0.6.3 or world-generation JSON changes.
-
-## End test-profile cleanup — 5 November 2026
-
-**End test profile cleanup required; End workstream remains paused.** The maintainer has instructed that all End-specific mods be removed from the disposable test server and matching client. This supersedes the earlier instruction to keep Ender Ore in the test setup.
-
-- [ ] Inspect the current disposable server and client mods folders.
-- [ ] Remove any present End-only content JARs: YUNG's Better End Island, BetterEnd: New Dawn, Ender Ore, Ender Villages, Better End Cities Better End, MES / Moog's End Structures, and any other End-only generation/content mods. Bigger Better End Cities is excluded and must also be removed if present in the test folders.
-- [ ] Keep uninstalled End candidates out of both folders.
-- [ ] Check dependencies before removing support libraries; remove a library only if no remaining mod requires it.
-- [ ] Keep Lootr (general-purpose) unless separately directed; it is not an End overhaul.
-- [ ] Capture a fresh folder listing and clean startup log proving the End-specific JARs are absent.
-- [ ] Leave End research and testing paused unless the maintainer explicitly reopens it.
-
-**Status:** documentation updated, but physical JAR removal is not verified because the GitHub connection cannot access the live Minecraft server/client folders. Do not tick the cleanup complete until the folder listing and startup log have been checked. Keep previous test logs/results as historical evidence.
-
-## End test-profile cleanup — visually verified 5 November 2026
-
-The maintainer supplied two current screenshots: the disposable dedicated server's `MinecraftServer-Test/mods` folder and the CurseForge client instance's `Create World/mods` folder. I reviewed the visible filenames in both. No End-specific content/generation JARs are visible: BetterEnd, YUNG's Better End Island, Ender Ore, Ender Villages, Better End Cities Better End, MES / Moog's End Structures and Bigger Better End Cities are absent. End-only support libraries (YUNG's API, BCLib, WorldWeaver, WunderLib and Moog's Structure Lib) are also not visible. Lootr remains, correctly, as a general-purpose mod.
-
-- [x] Inspect the current dedicated test server mods folder screenshot.
-- [x] Inspect the current CurseForge client mods folder screenshot.
-- [x] Verify visually that no End-specific content/generation JARs are visible in either screenshot.
-- [x] Verify visually that the known End-only support libraries are not visible.
-- [x] Keep Lootr; it is general-purpose and not an End overhaul.
-- [x] Keep the End workstream paused; do not restart searches, installations or tests without explicit maintainer instruction.
-- [ ] Obtain a fresh startup log if a log-level audit is required; screenshot evidence alone is not a runtime scan.
-
-**Status:** cleanup visually verified from both supplied folder screenshots. Historical End tests and candidates remain recorded above for audit only. Create Aeronautics Structures remains a planned Overworld addition and is not visible as installed in these screenshots.
-
-
-

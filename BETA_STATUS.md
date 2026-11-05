@@ -24,4 +24,4 @@
 Create IronWoven focuses on Create, Create Aeronautics, trains, automation, engineering, transport, and exploration. Create Aeronautics Structures is planned for the Overworld but is not installed or approved.
 
 ## Release readiness
-The pack is not release-ready. Client/server manifests, clean-install validation, feature checks, privacy review, and the release checklist remain outstanding. The previous status timeline is preserved in [the history archive](history/BETA_STATUS_HISTORY_2026-11-05.md).
+The pack is not release-ready. Client/server manifests, clean-install validation, feature checks, privacy review, and the release checklist remain outstanding.

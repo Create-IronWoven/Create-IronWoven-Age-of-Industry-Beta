@@ -12,7 +12,7 @@
 **Target:** Minecraft 1.21.1 · NeoForge 21.1.265 · Java 21  
 **Approved download source:** CurseForge only
 
-This is the full functional-test matrix for the recorded Create IronWoven test installation. It currently tracks 123 feature and support-module entries. It covers more than the active batch queue. The inventory basis is the 5 November dedicated-server mod list plus the client-only entries in the latest reviewed client inventory. This is a test snapshot, not a final release manifest.
+This is the full functional-test matrix for the recorded Create IronWoven test installation. It currently tracks 124 feature and support-module entries. It covers more than the active batch queue. The inventory basis is the 5 November dedicated-server mod list plus the client-only entries in the latest reviewed client inventory. This is a test snapshot, not a final release manifest.
 
 **How to use the checklist:** each `[ ]` is an individual action. Tick it only after that exact behavior has been tested on the intended client/server side and the result is recorded. A mod can remain **Partial** while some boxes are checked and others are open. Keep smoke-test evidence separate from feature tests.
 

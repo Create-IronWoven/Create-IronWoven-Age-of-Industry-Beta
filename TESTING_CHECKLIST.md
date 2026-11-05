@@ -66,7 +66,7 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 - [ ] Confirm the matching exact-version JAR for each add-on is present in both the test client and dedicated test server; keep client and server versions matched.
 - [x] The 5 Nov server reached `Done (1.310s)!`. More Curios Slots 1.4 was intentionally removed by the maintainer, so its MISSING status and old recipe/advancement messages are expected; see correction below.
 - [x] Disposable `world_lootr_test` loaded in the 5 Nov run.
-- [x] SoKkada logged in successfully in the 5 Nov run; exact More Curios Slots parity was not achieved.
+- [x] <player> logged in successfully in the 5 Nov run; exact More Curios Slots parity was not achieved.
 - [x] Server shut down cleanly and saved all dimensions. Reviewed the server log; see findings below. Matching client log review remains pending.
 - [x] Recorded outcome: partial startup/world-load/login/shutdown pass for the loaded Curios components; More Curios Slots server parity and feature tests remain incomplete.
 
@@ -85,13 +85,13 @@ A successful smoke test proves loading, world load, client login, and log status
 
 
 
-**Latest server-log review — 5 November 2026 (`MinecraftServer-Test/logs/latest.log`):** the disposable `world_lootr_test` server reached `Done (1.310s)!`, SoKkada logged in, and shutdown saved all dimensions. Curios API reported 11 total slots. Create: Curios Backtank 1.0.2 and Aeronautics Curios Compat 2.0 loaded. More Curios Slots 1.4 was intentionally removed by the maintainer; its MISSING status and two old `extra_back_slot` recipe entries plus one ignored advancement are expected. NeoForge warned that the config was incorrect/correcting. The prior config used an additive Back-slot setting; the internal fix now sets the total Back count to two. Runtime verification after restart remains pending.
+**Latest server-log review — 5 November 2026 (`MinecraftServer-Test/logs/latest.log`):** the disposable `world_lootr_test` server reached `Done (1.310s)!`, <player> logged in, and shutdown saved all dimensions. Curios API reported 11 total slots. Create: Curios Backtank 1.0.2 and Aeronautics Curios Compat 2.0 loaded. More Curios Slots 1.4 was intentionally removed by the maintainer; its MISSING status and two old `extra_back_slot` recipe entries plus one ignored advancement are expected. NeoForge warned that the config was incorrect/correcting. The prior config used an additive Back-slot setting; the internal fix now sets the total Back count to two. Runtime verification after restart remains pending.
 
 This run also repeated 453 loot-table parse errors, one Create Deco placard recipe error, and three Sable Catwalk selector errors in `world_lootr_test`; the fresh-world compatibility-datapack retest remains open. Struts' RenderSystem error and PowerGrid's optional native-library failure remain.
 
 
 
-**Maintainer clarification and fix — 5 November 2026:** More Curios Slots 1.4 was intentionally removed; do not reinstall it. The internal test-server and private repository configs now set the total Back-slot count to two. Config files will be included with the first beta upload. Restart the disposable server and check that exactly two Back slots appear. Move any item out of the third slot first. If the GUI still shows three (as it did after the config-only retest), first remove any item from the third Back slot and run `/curios set back SoKkada 2` as an operator to set the existing player's count. Curios config may not replace slots already assigned to that player. Do not use `/curios reset` or edit player data. Confirm two slots, then test Backpack + standard Create Backtank together, Aviator Goggles, and the Linked Typewriter slot.
+**Maintainer clarification and fix — 5 November 2026:** More Curios Slots 1.4 was intentionally removed; do not reinstall it. The internal test-server and private repository configs now set the total Back-slot count to two. Config files will be included with the first beta upload. Restart the disposable server and check that exactly two Back slots appear. Move any item out of the third slot first. If the GUI still shows three (as it did after the config-only retest), first remove any item from the third Back slot and run `/curios set back <player> 2` as an operator to set the existing player's count. Curios config may not replace slots already assigned to that player. Do not use `/curios reset` or edit player data. Confirm two slots, then test Backpack + standard Create Backtank together, Aviator Goggles, and the Linked Typewriter slot.
 ### 1. Botany Pots — 21.1.44
 
 **Status: Gameplay test pending; feature checks are expected to be possible.** Botany Pots 21.1.44, Bookshelf 21.1.81 and Prickle 21.1.11 loaded in the 4 November test group. Botany Pots reported one plugin loaded, and the server parsed 14,444 recipes without recipe-parsing failures. This confirms the mod and its dependencies load, but not in-game planting, growth, harvesting or the optional Herbs & Harvest integration.
@@ -434,7 +434,7 @@ Nothing in this checklist authorizes installation into the production profile or
 - [ ] Stage B only after Stage A passes: use a new separate disposable profile/world with BetterEnd: New Dawn 21.0.39 and its exact dependencies to test Pythadendron registration and Carpenter's Table variants. Do not reuse or alter the 2B test world.
 - [ ] Record unsupported wood types, duplicate recipes, visual errors, registry conflicts and any attributable log errors.
 
-Full research: [Every Compat Research and Test Plan](https://github.com/alexth110987/Create-IronWoven/blob/main/docs/EVERY_COMPAT_RESEARCH_2026-11-04.md).
+Full research: Every Compat Research and Test Plan.
 
 Do not modify the production inventory, production world or world-generation settings.
 
@@ -453,7 +453,7 @@ Do not modify the production inventory, production world or world-generation set
 - [ ] Only after individual passes, test selected structure additions (Ender Villages, Better End Cities Better End, MES) one at a time and then evaluate overlap.
 - [ ] Record client/server sync, loot, recipe visibility, chunk-border generation, restart behavior and full logs for every stage.
 
-Keep the production world, BYG 2.6.3, Regions Unexplored 0.6.3 and current world-generation JSON unchanged. Existing BetterEnd / Lootr limitation remains open and must not be assumed fixed by this shortlist. Detailed candidate notes: [End expansion research](https://github.com/alexth110987/Create-IronWoven/blob/main/docs/END_EXPANSION_RESEARCH_2026-11-04.md).
+Keep the production world, BYG 2.6.3, Regions Unexplored 0.6.3 and current world-generation JSON unchanged. Existing BetterEnd / Lootr limitation remains open and must not be assumed fixed by this shortlist. Detailed candidate notes: End expansion research.
 
 
 ### Stage A maintainer result — 4 November 2026
@@ -583,4 +583,4 @@ The maintainer supplied two current screenshots: the disposable dedicated server
 
 After the internal config was changed to set two Back slots, the maintainer's screenshot still showed three Back slots for the existing player. The newer `latest.log` shows the server started at 01:50, reached `Done (1.723s)!`, accepted the player's login, and Curios loaded 11 slot types overall; it does not report per-slot-type counts. The config file on disk still contains the two-slot `SET` rule. Curios' official config guide says configured slots are assigned automatically only if a player does not already have them, so a saved player-specific slot allocation is a likely explanation, but the log does not prove the cause.
 
-Next disposable-server step: first remove any item from the third Back slot, then run `/curios set back SoKkada 2` as an operator and reopen the inventory. This sets the existing player's Back-slot count directly. Do not run `/curios reset`, edit player NBT, or change the production world. Confirm the result before marking the two-slot fix passed.
+Next disposable-server step: first remove any item from the third Back slot, then run `/curios set back <player> 2` as an operator and reopen the inventory. This sets the existing player's Back-slot count directly. Do not run `/curios reset`, edit player NBT, or change the production world. Confirm the result before marking the two-slot fix passed.

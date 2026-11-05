@@ -196,7 +196,7 @@ Do not assign these messages to Lootr based on the current evidence.
 
 Follow the private installation batch plan and record each result here. Do not combine batches in their first test.
 
-1. **Batch A:** JER alone, then Shulker Box Tooltip and Enchantment Descriptions only after side/dependency verification.
+1. **Batch A — completed per maintainer report:** JER, Shulker Box Tooltip, and Enchantment Descriptions were tested together. The 5 November server log verifies combined startup, world load, client login, and clean shutdown; it does not itemize client feature results.
 2. **Batch B:** Nature's Compass and Explorer's Compass in a copied disposable world.
 3. **Batch C:** Create Big Cannons with Ritchie's Projectile Library, isolated.
 4. **Batch D:** Create Aeronautics Structures in one fresh disposable Overworld.

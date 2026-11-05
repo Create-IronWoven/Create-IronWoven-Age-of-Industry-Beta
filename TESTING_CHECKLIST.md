@@ -14,22 +14,16 @@
 
 This is the full functional-test matrix for the recorded Create IronWoven test installation. It currently tracks 124 feature and support-module entries. It covers more than the active batch queue. The inventory basis is the 5 November dedicated-server mod list plus the client-only entries in the latest reviewed client inventory. This is a test snapshot, not a final release manifest.
 
-**How to submit test results — no checklist editing required:**
+**How to submit test results — the checklist updates automatically:**
 
-1. Open the [Submit Test Results form](../../issues/new?template=functional-test-report.yml).
-2. Enter your full name, the date, and the mod name.
-3. In the large results box, add one line for each feature you tested. Use: `Test action — Result — Evidence/notes`.
-4. Click **Submit new issue**. That's it — you do not need to edit this checklist or understand Markdown.
+1. Open the [Submit Test Result form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=functional-test-report.yml).
+2. Copy the exact mod heading and exact test-action text from the table below.
+3. Enter your name, test date, choose the result, and describe what happened.
+4. Submit the form. The matching checklist row is updated automatically and the report issue is closed when the update succeeds.
 
-Use `Pass`, `Partial`, `Failed`, `Blocked`, or `N/A` for each result. Your name and date apply to every test action in that report. Submit another report only when you test a different mod or on a different date. The project maintainer will transfer verified results into this checklist.
+Submit one form for each test action. If the row already has a result, or the mod/action text does not match exactly, the automation will leave the checklist unchanged and explain what needs review. Retests of completed actions require maintainer review; existing results are never silently overwritten.
 
-**Example lines:**
-```text
-Train moves forward and backward — Pass — Worked as expected.
-Train survives server restart — Failed — Train disappeared after restart.
-```
-
-Do not use a GitHub username, initials, or an assumed identity as a substitute for your full name. A server startup or an item appearing in JEI is not, by itself, a function-test pass. Keep smoke-test evidence separate from feature tests.
+A server startup or an item appearing in JEI is not, by itself, a function-test pass. Keep smoke-test evidence separate from feature tests.
 
 ## Smoke test is not a function test
 

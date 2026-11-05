@@ -13,7 +13,7 @@
 - [Support and privacy guidance](SUPPORT.md)
 
 ## Current testing highlights
-- **Curios:** the maintainer reports that a newly created test world displays two Back slots with the internal config. An existing player's saved allocation still shows three and needs a player-specific count adjustment. More Curios Slots 1.4 was intentionally removed; craftable slot upgrades are not planned. Raw config files will be included with the first beta package.
+- **Curios:** the maintainer reports that a newly created test world displays two Back slots with the internal config. The maintainer reports Backpack + standard Create Backtank work together in the Back slots, with Aviator Goggles and Linked Typewriter working in their assigned slots. An existing player's saved allocation still shows three and needs a player-specific count adjustment. More Curios Slots 1.4 was intentionally removed; craftable slot upgrades are not planned. Raw config files will be included with the first beta package.
 - **Compatibility datapacks:** targeted fixes passed smoke tests when loaded. Some errors reappeared in a fresh test world without the world-scoped datapacks; verify those datapacks before attributing errors to a mod.
 - **Botany Pots and Construction Sticks:** startup passed; feature checks remain open.
 - **Lootr:** chest opening and loot presence were confirmed by the maintainer; independent per-player loot remains unverified.

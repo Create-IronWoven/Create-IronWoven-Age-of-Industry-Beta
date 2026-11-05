@@ -18,7 +18,7 @@
 
 - **Batches A, B, and C:** routine server startup, disposable-world load, matching client login, and log-review smoke tests passed. These results do not claim feature-by-feature gameplay testing or production/release approval.
 - **Batch D — Create Aeronautics Structures 1.1.0-Beta-3.1:** remains partial. The `cr_aero_structures:chests/uniform` loot-table error, exact CurseForge file provenance, and structure generation remain unresolved. Its Russian startup message is informational only and is not a blocker.
-- **Batch E — performance:** the maintainer started testing while Batch D remained partial. The first combined server smoke test passed (`Done`, disposable-world load, client login, clean shutdown), but four client-only rendering mods were also present in the server folder. spark selected the built-in Java engine; no performance measurements were captured. Flerovium 1.1.3 Beta was detected instead of the planned stable 1.1.2. Batch E remains partial and is not production/release approval.
+- **Batch E — performance:** the first combined server smoke test passed. A later 14:09 update-trial run also completed the full routine sequence (`Done`, disposable-world load, matching client login, clean shutdown), but the four client-only rendering mods were still in the server folder. spark selected the built-in Java engine; no performance measurements or saved profile were captured. Flerovium 1.1.3 Beta was detected instead of the planned stable 1.1.2. Batch E remains partial and is not production/release approval.
 - **Functional coverage:** the [Full Installed-Mod Functional Testing Checklist](TESTING_CHECKLIST.md) now records the primary function test for each installed feature mod and integration checks for support libraries. Most function tests remain pending; combined smoke-test passes are not feature passes. Full functional coverage is required before beta release.
 - **Curios:** the maintainer reports two Back slots in a newly created test world. Backpack + standard Create Backtank, Aviator Goggles, and Linked Typewriter checks are reported working in their assigned slots. More Curios Slots 1.4 was intentionally removed; craftable slot upgrades are not planned. Matching client/server log review remains open.
 - **Botany Pots and Construction Sticks:** server startup checks passed; feature validation remains open.
@@ -42,7 +42,7 @@ The 07:15–07:30 disposable-server run reached `Done (1.718s)!`, loaded the tes
 A separate disposable-server attempt at 13:43 failed during mod loading, before `Done`, world load, client login, or normal shutdown. FTB Teams was missing while FTB Chunks required it, and Numismatics 1.1.0 did not satisfy Numismatics Plus 1.0.1's exact Numismatics 1.0.20 dependency. The next test must restore Numismatics 1.0.20, add FTB Teams 2101.1.12, and keep client-only rendering mods out of the server folder. The other newer files were detected but are not accepted or release-approved. See [Testing Checklist](TESTING_CHECKLIST.md) and [Mod Plans](MOD_PLANS.md).
 
 
-## Latest existing-mod update retry — 5 November 2026, 13:58
+## Previous existing-mod update retry — 5 November 2026, 13:58 (historical)
 
 The later disposable-server retry detected and initialized FTB Teams 2101.1.12, clearing the earlier missing-FTB-Teams blocker for this server attempt. The server reached `Done (1.493s)` and prepared the test world. The logs do not show client login or clean shutdown, so this is a partial server startup/world-load pass only.
 
@@ -55,3 +55,11 @@ Create IronWoven focuses on Create, Create Aeronautics, trains, automation, engi
 ## Release readiness
 
 The pack is **not ready for release**. A fresh client manifest and server inventory, clean-install validation, outstanding compatibility checks, privacy review, and the release checklist remain outstanding.
+
+## Latest existing-mod update smoke test — 5 November 2026, 14:09
+
+The later disposable-server run reached `Done (1.822s)`, loaded the test world, accepted a matching client login, and shut down cleanly with all dimensions saved. FTB Teams 2101.1.12 was present and initialized; the earlier missing-FTB-Teams blocker did not recur.
+
+Both Numismatics 1.0.20 and 1.1.0 JARs were still present, and 1.1.0 was active. Numismatics Plus 1.0.1 was absent, so neither the Plus pairing nor the 1.0.20 runtime was tested. Use exactly one Numismatics version per test profile. ImmediatelyFast 1.6.15, Flerovium 1.1.3, Entity Culling 1.11.3, and More Culling 1.0.11 were still present in the dedicated-server folder; their client functions remain untested.
+
+The log contains 463 ERROR-level and 172 WARN-level entries, including recurring loot-table and existing compatibility errors. spark selected its built-in Java engine, but no measured performance baseline or saved profile was captured. This was a routine smoke-test pass only, not a feature test or update approval. Batch D and Batch E remain partial. No update is approved for production or beta release. See [Testing Checklist](TESTING_CHECKLIST.md), [Mod Plans](MOD_PLANS.md), and the private [server test report](https://github.com/alexth110987/Create-IronWoven/blob/main/docs/SERVER_TEST_2026-11-05.md).

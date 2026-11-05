@@ -22,6 +22,9 @@
 - **Dedicated server:** Struts attempts to load a client-only class; PowerGrid's optional native solver did not load in the tested Windows environment.
 - **End content:** research/testing is paused. The test-profile cleanup was visually checked. Do not resume until the maintainer reopens this workstream.
 
+## Latest disposable server smoke test — 5 November 2026
+The server reached `Done (10.226s)!`, loaded the disposable test world, accepted one client login, and shut down cleanly with all dimensions saved. This was a general pack smoke test, **not Batch C**: Create Big Cannons and Ritchie's Projectile Library were not present. The log also contains existing and unresolved data-loading errors; see the private development records for technical details. No production or release approval follows from this run.
+
 ## Project direction
 Create IronWoven focuses on Create, Create Aeronautics, trains, automation, engineering, transport, and exploration. Create Aeronautics Structures is planned for the Overworld but is not installed or approved.
 

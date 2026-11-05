@@ -395,7 +395,6 @@ Do not install C2ME or ServerCore in this first wave. Their chunk-threading/beha
 - [ ] Test ImmediatelyFast 1.6.15 alone. Check GUI, HUD, particles, entities and block entities.
 - [ ] Reset to baseline; test Flerovium 1.1.2 stable alone. Sodium is already present. Check dropped items, Create depots, belts, particles, mobs and Aeronautics visuals.
 - [ ] Reset; test Entity Culling 1.10.4 alone. Check moving Create block entities, pulleys, Sable sublevels, trains and visual culling errors; whitelist only as needed.
-- [ ] Reset; test Distant Horizons 3.3.3 alone with shaders disabled. Then test only an explicitly DH-compatible Iris shader. Record terrain LOD quality, performance, and the distance at which Aeronautics sublevels disappear.
 - [ ] Do not add Voxy/Roxy under the current CurseForge-only rule. Do not add SSRD unless a CurseForge download is verified.
 
 ### 3. Both-side tests — matching version on client and dedicated server

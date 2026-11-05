@@ -115,14 +115,14 @@ def main():
     if missing:
         comment("I could not update the checklist because these form fields were missing: " + ", ".join(missing) + ". Please submit a corrected report.")
         return
-    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
-        comment("I could not update the checklist because the test date must use YYYY-MM-DD.")
+    if not re.fullmatch(r"\d{2}-\d{2}-\d{4}", date):
+        comment("I could not update the checklist because the test date must use DD-MM-YYYY (for example, 03-11-2026).")
         return
     try:
-        from datetime import date as date_type
-        date_type.fromisoformat(date)
+        from datetime import datetime
+        datetime.strptime(date, "%d-%m-%Y")
     except ValueError:
-        comment("I could not update the checklist because the test date is not a valid calendar date.")
+        comment("I could not update the checklist because the test date is not a valid calendar date. Use DD-MM-YYYY.")
         return
     if result not in {"Pass", "Partial", "Failed", "Blocked", "N/A"}:
         comment("I could not update the checklist because the result must be Pass, Partial, Failed, Blocked, or N/A.")

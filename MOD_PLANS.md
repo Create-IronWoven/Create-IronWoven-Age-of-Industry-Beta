@@ -46,6 +46,30 @@ The private project has a detailed test plan. Batches use disposable test copies
 
 Before marking Batch E complete, capture a spark-only server baseline and test the four rendering candidates on the matching client one at a time. Do not treat the combined run as per-mod acceptance. Batch D remains partial and is tracked separately. No candidate is production-approved.
 
+
+
+## Existing-mod update trial — 5 November 2026, 13:43
+
+**Status: Blocked — server mod loading failed.** The maintainer supplied a disposable-server log after trying the newer files below. Detection is not approval; the server did not reach `Done`, load a test world, or accept a client.
+
+| Mod | Version detected in trial | Current decision |
+|---|---:|---|
+| Sophisticated Core | 1.5.28.2458 | Detected; keep paired with Sophisticated Backpacks |
+| Sophisticated Backpacks | 3.26.20.2244 | Detected; keep paired with Sophisticated Core |
+| Entity Culling | 1.11.3 | Client-only; remove from dedicated-server folder and test on client |
+| Create Crafts & Additions | 1.7.2 | Detected; no specific fatal dependency error in this log |
+| Create: Numismatics | 1.1.0 | Do not use with installed Numismatics Plus 1.0.1; restore 1.0.20 for next test |
+| Create: TFMG Community Edition | 1.3.3 | Detected; no specific fatal dependency error in this log |
+| FTB Teams | Missing | Required by FTB Chunks 2101.1.23; add 2101.1.12 |
+| Create: Steam 'n' Rails | 0.3.0-alpha.2 | Proposed Beta 2 was not present; keep as a separate test |
+
+The loader reported two blockers:
+
+1. FTB Chunks requires FTB Teams 2101.1.9 or newer, but FTB Teams was missing. [FTB Teams 2101.1.12 — CurseForge file 9434081](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge/files/9434081) is a NeoForge 1.21.1 release.
+2. Numismatics Plus 1.0.1 requires exactly Numismatics 1.0.20. Restore [Numismatics 1.0.20 — file 7948018](https://www.curseforge.com/minecraft/mc-mods/numismatics/files/7948018), retaining [Numismatics Plus 1.0.1 — file 8839718](https://www.curseforge.com/minecraft/mc-mods/create-numismatics-plus/files/8839718).
+
+ImmediatelyFast, Flerovium, Entity Culling, and More Culling were present in the dedicated-server folder. Keep client-only rendering mods on the client. No candidate from this attempt is approved for production or beta release. The next gate is a corrected disposable-server startup, world-load, client-login, clean-shutdown, and log-review pass.
+
 ## Recently requested candidates
 
 These six candidates came from the maintainer's 4 November shortlist. They were compared with the existing inventory and are retained here as potential additions only.

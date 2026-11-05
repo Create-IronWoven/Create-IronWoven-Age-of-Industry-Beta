@@ -67,7 +67,7 @@ No public beta package or release date is confirmed in this status file. A test 
 
 ## How players can help now
 
-You can report reproducible issues and suggest improvements through the [issue tracker](https://github.com/alexth110987/Create-IronWoven-Beta/issues). Please state clearly which Minecraft, NeoForge, and modpack build you are using.
+You can report reproducible issues and suggest improvements through the [issue tracker](../../issues). Please state clearly which Minecraft, NeoForge, and modpack build you are using.
 
 
 ## Historical Batch 2A runtime status — 4 November 2026 (End workstream later paused)

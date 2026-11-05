@@ -55,7 +55,7 @@ def locate_section(lines: list[str], requested: str):
             break
     return (start, end), None
 
-def update_checklist(mod_heading: str, action: str, result: str, tester: str, date: str, evidence: str):
+def update_checklist(mod_heading: str, action: str, result: str, environment: str, tester: str, date: str, evidence: str):
     path = f"/repos/{REPOSITORY}/contents/{CHECKLIST_PATH}"
     for attempt in range(4):
         file_info = api("GET", path + "?ref=main")
@@ -72,7 +72,7 @@ def update_checklist(mod_heading: str, action: str, result: str, tester: str, da
             if not line.startswith("|"):
                 continue
             cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
-            if len(cells) >= 5 and clean(cells[0]) == wanted_action:
+            if len(cells) >= 6 and clean(cells[0]) == wanted_action:
                 matches.append((i, cells))
         if len(matches) != 1:
             return False, "Could not find one unique test-action row. Copy the complete action text from the selected mod's table.", None
@@ -80,9 +80,12 @@ def update_checklist(mod_heading: str, action: str, result: str, tester: str, da
         if cells[1].casefold() not in {"not tested", "pending", "not recorded", ""}:
             return False, f"This checklist action already has the result {cells[1]}. The automation will not overwrite an existing result; a maintainer must review this retest.", None
         cells[1] = md_cell(result)
-        cells[2] = md_cell(tester)
-        cells[3] = md_cell(date)
-        cells[4] = md_cell(evidence) + f" (submitted in issue #{ISSUE_NUMBER})"
+        if cells[2].casefold() not in {"not recorded", "pending", ""}:
+            return False, f"This checklist action already has the test environment {cells[2]}. A maintainer must review this retest.", None
+        cells[2] = md_cell(environment)
+        cells[3] = md_cell(tester)
+        cells[4] = md_cell(date)
+        cells[5] = md_cell(evidence) + f" (submitted in issue #{ISSUE_NUMBER})"
         lines[row_index] = "| " + " | ".join(cells[:5]) + " |"
         new_content = "\n".join(lines) + ("\n" if content.endswith("\n") else "")
         try:
@@ -106,11 +109,12 @@ def main():
     date = field(body, "Test date")
     mod = field(body, "Exact mod section heading")
     action = field(body, "Exact test action")
+    environment = field(body, "Test environment")
     result = field(body, "Test result")
     evidence = field(body, "What happened? (required)")
     missing = [name for name, value in [
         ("Tester nickname", tester), ("Test date", date), ("Exact mod section heading", mod),
-        ("Exact test action", action), ("Test result", result), ("What happened?", evidence),
+        ("Exact test action", action), ("Test environment", environment), ("Test result", result), ("What happened?", evidence),
     ] if not value]
     if missing:
         comment("I could not update the checklist because these form fields were missing: " + ", ".join(missing) + ". Please submit a corrected report.")
@@ -124,11 +128,14 @@ def main():
     except ValueError:
         comment("I could not update the checklist because the test date is not a valid calendar date. Use DD-MM-YYYY.")
         return
+    if environment not in {"Single-player", "Multiplayer", "Both"}:
+        comment("I could not update the checklist because the test environment must be Single-player, Multiplayer, or Both.")
+        return
     if result not in {"Pass", "Partial", "Failed", "Blocked", "N/A"}:
         comment("I could not update the checklist because the result must be Pass, Partial, Failed, Blocked, or N/A.")
         return
     try:
-        ok, message, commit_url = update_checklist(mod, action, result, tester, date, evidence)
+        ok, message, commit_url = update_checklist(mod, action, result, environment, tester, date, evidence)
     except urllib.error.HTTPError as exc:
         comment(f"**Checklist not changed.** GitHub rejected the automatic checklist update (HTTP {exc.code}). This can happen when repository branch protection does not allow the workflow token to update main. A maintainer must review the workflow permissions or configure an authorized TEST_RESULTS_TOKEN secret with the required repository access. No existing result was overwritten.")
         return

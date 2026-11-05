@@ -64,7 +64,7 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 | More Curios Slots | Version 1.4 · file 8170156 | Curios API 9.5.1 |
 
 - [ ] Confirm the matching exact-version JAR for each add-on is present in both the test client and dedicated test server; keep client and server versions matched.
-- [x] The 5 Nov server reached `Done (1.310s)!`; however, More Curios Slots 1.4 was MISSING on the dedicated server and two stale extra-back-slot recipe errors appeared at login (see log review below). A matched Curios run is still needed.
+- [x] The 5 Nov server reached `Done (1.310s)!`. More Curios Slots 1.4 was intentionally removed by the maintainer, so its MISSING status and old recipe/advancement messages are expected; see correction below.
 - [x] Disposable `world_lootr_test` loaded in the 5 Nov run.
 - [x] SoKkada logged in successfully in the 5 Nov run; exact More Curios Slots parity was not achieved.
 - [x] Server shut down cleanly and saved all dimensions. Reviewed the server log; see findings below. Matching client log review remains pending.
@@ -85,10 +85,13 @@ A successful smoke test proves loading, world load, client login, and log status
 
 
 
-**Latest server-log review — 5 November 2026 (`MinecraftServer-Test/logs/latest.log`):** the disposable `world_lootr_test` server reached `Done (1.310s)!`, SoKkada logged in, and shutdown saved all dimensions. Curios API reported 11 total slots. Create: Curios Backtank 1.0.2 and Aeronautics Curios Compat 2.0 loaded, but **More Curios Slots 1.4 was MISSING on the dedicated server**. Login produced two unrecognized stale `more_curios_slots:extra_back_slot` recipe entries and one ignored advancement. NeoForge also reported `curios-common.toml` incorrect/correcting; the file inspected after the run still has the intended `back;size=1;operation=ADD` and `head;size=1;operation=SET`. The log does not identify why three Back slots appeared in-game. Re-run with the same exact add-on JARs on server and client, then verify slots and item behavior.
+**Latest server-log review — 5 November 2026 (`MinecraftServer-Test/logs/latest.log`):** the disposable `world_lootr_test` server reached `Done (1.310s)!`, SoKkada logged in, and shutdown saved all dimensions. Curios API reported 11 total slots. Create: Curios Backtank 1.0.2 and Aeronautics Curios Compat 2.0 loaded. More Curios Slots 1.4 was intentionally removed by the maintainer; its MISSING status and two old `extra_back_slot` recipe entries plus one ignored advancement are expected. NeoForge warned that the config was incorrect/correcting. The post-run config retained `back;size=1;operation=ADD` and `head;size=1;operation=SET`; the fix below changes Back to `size=2;operation=SET`.
 
 This run also repeated 453 loot-table parse errors, one Create Deco placard recipe error, and three Sable Catwalk selector errors in `world_lootr_test`; the fresh-world compatibility-datapack retest remains open. Struts' RenderSystem error and PowerGrid's optional native-library failure remain.
 
+
+
+**Maintainer clarification and fix — 5 November 2026:** More Curios Slots 1.4 was intentionally removed; do not reinstall it. The test-server config and private tracked config are now set to `slots = ["id=back;size=2;operation=SET", "id=head;size=1;operation=SET"]`. Curios config docs say `SET` sets the total slot count. Restart the disposable server and check that exactly two Back slots appear. Move any item out of the third slot first. If the GUI still shows three, investigate another slot modifier before changing or resetting player data. Then test Backpack + standard Create Backtank together, Aviator Goggles, and the Linked Typewriter slot.
 ### 1. Botany Pots — 21.1.44
 
 **Status: Gameplay test pending; feature checks are expected to be possible.** Botany Pots 21.1.44, Bookshelf 21.1.81 and Prickle 21.1.11 loaded in the 4 November test group. Botany Pots reported one plugin loaded, and the server parsed 14,444 recipes without recipe-parsing failures. This confirms the mod and its dependencies load, but not in-game planting, growth, harvesting or the optional Herbs & Harvest integration.

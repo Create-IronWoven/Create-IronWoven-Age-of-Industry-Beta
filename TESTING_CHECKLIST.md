@@ -56,14 +56,14 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 
 ### Curios add-on test group — 5 November 2026
 
-**Status: TESTING — installed in the test setup; partial in-game slot observation recorded, log review pending.** The maintainer reports installing both 1.21.1 NeoForge client/server candidates. This is a separate add-on test group, not Batch 7 and not production approval.
+**Status: TESTING — two slots confirmed for newly assigned players; one existing player's saved allocation still needs adjustment.** The maintainer reports installing both 1.21.1 NeoForge client/server candidates. This is a separate add-on test group, not Batch 7 and not production approval.
 
 | Mod | Exact CurseForge file | Required baseline |
 |---|---|---|
 | Create: Curios Backtank | Version 1.0.2 · file 9207977 | Create 6.0.10 and Curios API 9.5.1 |
 | More Curios Slots | Version 1.4 · file 8170156 | Removed by maintainer; craftable slot upgrades are not wanted. Do not reinstall. |
 
-- [ ] Confirm the matching exact-version JAR for each add-on is present in both the test client and dedicated test server; keep client and server versions matched.
+- [ ] Confirm the matching exact-version JAR for Create: Curios Backtank is present in both the test client and dedicated test server; keep client/server versions matched. More Curios Slots remains removed.
 - [x] The 5 Nov server reached `Done (1.310s)!`. More Curios Slots 1.4 was intentionally removed by the maintainer, so its MISSING status and old recipe/advancement messages are expected; see correction below.
 - [x] Disposable `world_lootr_test` loaded in the 5 Nov run.
 - [x] <player> logged in successfully in the 5 Nov run; exact More Curios Slots parity was not achieved.
@@ -580,6 +580,8 @@ The maintainer supplied two current screenshots: the disposable dedicated server
 
 
 ## Curios existing-player retest — 5 November 2026
+
+**New-player result, confirmed afterward:** a newly assigned player receives exactly two Back slots from the internal config. The remaining issue is limited to the existing player's saved allocation.
 
 After the internal config was changed to set two Back slots, the maintainer's screenshot still showed three Back slots for the existing player. The newer `latest.log` shows the server started at 01:50, reached `Done (1.723s)!`, accepted the player's login, and Curios loaded 11 slot types overall; it does not report per-slot-type counts. The config file on disk still contains the two-slot `SET` rule. Curios' official config guide says configured slots are assigned automatically only if a player does not already have them, so a saved player-specific slot allocation is a likely explanation, but the log does not prove the cause.
 

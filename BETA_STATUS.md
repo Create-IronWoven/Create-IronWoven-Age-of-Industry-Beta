@@ -21,7 +21,7 @@
 - **Botany Pots and Construction Sticks:** startup passed; feature checks remain open.
 - **Lootr:** chest opening and loot presence were confirmed by the maintainer; independent per-player loot remains unverified.
 - **Dedicated server:** Struts attempts to load a client-only class; PowerGrid's optional native solver did not load in the tested Windows environment.
-- **End content:** research/testing is paused. The test-profile cleanup was visually checked. Do not resume until the maintainer reopens this workstream.
+- **End content:** research and testing are paused. The 5 November 2026 cleanup was visually verified in both test folders; no End-specific content/generation mods or listed End-only support libraries were visible. Do not resume without explicit maintainer approval.
 
 ## Latest disposable server smoke test — Batch C, 5 November 2026
 The server reached `Done (1.589s)!`, loaded the disposable test world, accepted one client login, and shut down cleanly with all dimensions saved. Create Big Cannons 5.11.7 and Ritchie's Projectile Library 2.1.2 were present. The log still contains existing pack-level errors and warnings; no candidate-specific runtime error was identified. This is a routine smoke-test pass only, not cannon feature validation or production/release approval.

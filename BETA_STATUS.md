@@ -109,3 +109,6 @@ A version correction has also been made: More Culling's matching NeoForge 1.21.1
 ## Quality-of-life shortlist comparison — 4 November 2026
 
 The six QoL candidates from the maintainer's screenshot have been compared with the recorded installed inventory and added to [MOD_PLANS.md](MOD_PLANS.md), with matching isolated checks in [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md). JER complements existing JEI; Shulker Box Tooltip complements Sophisticated Backpacks; Enchantment Descriptions needs Bookshelf and Prickle confirmed in the main profile; Nature's Compass and Explorer's Compass add biome and structure search respectively; Waystones needs an AeroPortals overlap review and compatible Balm dependency check. All remain candidates only. No mods were installed or approved.
+
+
+<!-- TEMPORARY WRITE TEST — 2026-11-05; remove after verification. -->

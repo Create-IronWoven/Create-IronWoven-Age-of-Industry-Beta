@@ -2,7 +2,7 @@ name: Apply beta test results
 
 on:
   issues:
-    types: [opened]
+    types: [opened, edited]
 
 permissions:
   contents: write

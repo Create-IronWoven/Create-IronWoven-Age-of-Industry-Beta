@@ -70,7 +70,7 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 - [ ] Shut the server down cleanly and review the new server `latest.log` and client log for Curios, Backtank, slot-registration, rendering, and mixin errors.
 - [ ] Record the outcome for each add-on separately as passed, partial, or failed for the smoke-test scope.
 
-**Default slot layout prepared — 5 November 2026:** the private master server config was intended to grant one additional Back slot and one Head slot. The maintainer's later in-game observation confirms three Back slots, one Head slot, and one Aeronautics slot. This confirms that slots appear, but the third Back slot is unexpected and its source is unknown; functional checks and log review remain pending.
+**Default slot layout prepared — 5 November 2026:** the private master server config was intended to grant one additional Back slot and one Head slot. The maintainer's later in-game observation confirms three Back slots, one Head slot, and one Aeronautics slot. The supplied test-server config screenshot (also matching the workspace file) shows `back;size=1;operation=ADD` and `head;size=1;operation=SET`, intended to produce two Back slots total. The third visible Back slot remains unexplained; functional checks and log review remain pending.
 
 - [ ] Confirm the dedicated server has the reviewed `config/curios-common.toml` and restart the disposable test server.
 - [x] In-game slot display observed: three Back slots, one Head slot, and one Aeronautics slot. This differs from the intended two Back slots; investigate the source of the extra slot.

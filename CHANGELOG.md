@@ -4,7 +4,10 @@ Player-facing highlights only. This is not a record of internal commits or test 
 
 ## Unreleased — beta preparation
 
-- **Current development version: `v0.1.110`.** The counter was set retroactively from the recorded 110-entry CurseForge profile snapshot dated 5 November 2026. This inventory-based baseline does not represent 110 public releases; no downloadable beta package has been published.
+- **`v0.1.110-R001`:** Removed Sodium 0.8.13 (client-only) from the CurseForge profile.
+- **`v0.1.110-R002`:** Removed Sodium Extra 0.9.5 (client-only) from the CurseForge profile.
+
+- **Current development version: `v0.1.110-R002`.** Content-change counter `110` is the retroactive baseline from the 5 November CurseForge profile screenshot (`Mods (110)`). Removal counter `R002` records two client-only mod removals: Sodium 0.8.13 and Sodium Extra 0.9.5. The latest profile screenshot shows `Mods (108)`; the client and server folders each show 104 JAR files. These are different inventory measures, not 110 public releases. No downloadable beta package has been published.
 
 - Compatibility testing continues for Minecraft 1.21.1 / NeoForge 21.1.265.
 - Routine server startup, disposable-world load, matching-client login, and log-review smoke tests passed for batches A, B, and C.

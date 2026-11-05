@@ -70,7 +70,7 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 - [x] Server shut down cleanly and saved all dimensions. Reviewed the server log; see findings below. Matching client log review remains pending.
 - [x] Recorded outcome: partial startup/world-load/login/shutdown pass for the loaded Curios components; More Curios Slots server parity and feature tests remain incomplete.
 
-**Default slot layout prepared — 5 November 2026:** the private master server config was intended to grant one additional Back slot and one Head slot. The maintainer's later in-game observation confirms three Back slots, one Head slot, and one Aeronautics slot. The supplied test-server config screenshot (also matching the workspace file) shows `back;size=1;operation=ADD` and `head;size=1;operation=SET`, intended to produce two Back slots total. The third visible Back slot remains unexplained; functional checks and log review remain pending.
+**Default slot layout prepared — 5 November 2026:** the private master server config was intended to provide two Back slots and one Head slot. The maintainer's later in-game observation confirms three Back slots, one Head slot, and one Aeronautics slot. The previous internal setting added a Back slot to the mod-registered total. The internal config has since been changed to set the total Back count to two; runtime verification remains pending.
 
 - [ ] Confirm the dedicated server has the reviewed `config/curios-common.toml` and restart the disposable test server.
 - [x] In-game slot display observed: three Back slots, one Head slot, and one Aeronautics slot. This differs from the intended two Back slots; investigate the source of the extra slot.
@@ -85,7 +85,7 @@ A successful smoke test proves loading, world load, client login, and log status
 
 
 
-**Latest server-log review — 5 November 2026 (`MinecraftServer-Test/logs/latest.log`):** the disposable `world_lootr_test` server reached `Done (1.310s)!`, SoKkada logged in, and shutdown saved all dimensions. Curios API reported 11 total slots. Create: Curios Backtank 1.0.2 and Aeronautics Curios Compat 2.0 loaded. More Curios Slots 1.4 was intentionally removed by the maintainer; its MISSING status and two old `extra_back_slot` recipe entries plus one ignored advancement are expected. NeoForge warned that the config was incorrect/correcting. The post-run config retained `back;size=1;operation=ADD` and `head;size=1;operation=SET`; the fix below changes Back to `size=2;operation=SET`.
+**Latest server-log review — 5 November 2026 (`MinecraftServer-Test/logs/latest.log`):** the disposable `world_lootr_test` server reached `Done (1.310s)!`, SoKkada logged in, and shutdown saved all dimensions. Curios API reported 11 total slots. Create: Curios Backtank 1.0.2 and Aeronautics Curios Compat 2.0 loaded. More Curios Slots 1.4 was intentionally removed by the maintainer; its MISSING status and two old `extra_back_slot` recipe entries plus one ignored advancement are expected. NeoForge warned that the config was incorrect/correcting. The prior config used an additive Back-slot setting; the internal fix now sets the total Back count to two. Runtime verification after restart remains pending.
 
 This run also repeated 453 loot-table parse errors, one Create Deco placard recipe error, and three Sable Catwalk selector errors in `world_lootr_test`; the fresh-world compatibility-datapack retest remains open. Struts' RenderSystem error and PowerGrid's optional native-library failure remain.
 

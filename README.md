@@ -1,8 +1,8 @@
-# Create IronWoven — v0.1.000
+# Create IronWoven — v0.1.088
 
 Create IronWoven is a Minecraft modpack built around **Create**, **Create Aeronautics**, trains, automation, engineering, transport, building, and exploration.
 
-**Current development version: `v0.1.000`**  
+**Current development version: `v0.1.088`**  
 **Development status:** Internal testing. This is a development version, not a downloadable public beta release.
 
 ## Quick links

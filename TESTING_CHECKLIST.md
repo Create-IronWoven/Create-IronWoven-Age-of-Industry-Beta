@@ -192,6 +192,21 @@ The fresh-world debug log also recorded skipped Apotheosis data attachments, inv
 
 Do not assign these messages to Lootr based on the current evidence.
 
+## Active installation batches
+
+Follow the private installation batch plan and record each result here. Do not combine batches in their first test.
+
+1. **Batch A:** JER alone, then Shulker Box Tooltip and Enchantment Descriptions only after side/dependency verification.
+2. **Batch B:** Nature's Compass and Explorer's Compass in a copied disposable world.
+3. **Batch C:** Create Big Cannons with Ritchie's Projectile Library, isolated.
+4. **Batch D:** Create Aeronautics Structures in one fresh disposable Overworld.
+5. **Batch E:** spark baseline, then one client performance candidate at a time.
+6. **Batch F:** Lithium, FastSuite, and FastFurnace one at a time.
+7. **Batch G:** Chunk-Pregenerator and Tectonic in separate disposable worlds.
+8. **Batch H:** Waystones only after the AeroPortals and Balm review.
+
+MineColonies, Dynamic Trees, colony content, unverified-source candidates, and paused End candidates remain research-gated and are not ready for installation.
+
 ## Candidate mods
 
 These entries are not in the active test installation. First confirm an exact Minecraft 1.21.1 NeoForge file and all required dependencies on CurseForge. Do not install them until the compatibility review is complete and the project owner approves the test.

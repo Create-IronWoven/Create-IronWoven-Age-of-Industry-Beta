@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Submit one form for each test action you complete. After submission, the matching row in the public testing checklist will update automatically.
+        Submit one form for each test action you complete. Once the repository's one-time Actions write permission is configured, the matching row in the public testing checklist will update automatically. If GitHub blocks the write, the report stays open and explains what needs maintainer attention.
 
         Before filling this in, open the [testing checklist](https://github.com/alexth110987/Create-IronWoven-Beta/blob/main/TESTING_CHECKLIST.md):
         - Copy the mod's exact section heading (including its version).

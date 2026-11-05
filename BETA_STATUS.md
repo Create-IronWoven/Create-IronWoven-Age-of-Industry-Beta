@@ -17,10 +17,8 @@
 ## Current test status
 
 - **Batches A, B, and C:** routine server startup, disposable-world load, matching client login, and log-review smoke tests passed. These results do not claim feature-by-feature gameplay testing or production/release approval.
-- **Batch D — Create Aeronautics Structures 1.1.0-Beta-3.1:** partial. The disposable server started, loaded the test world, accepted a client login, and shut down cleanly. Its startup message is informational only:  
-  `Мод Create Aeronautics Structures загружается!`  
-  **English translation:** “Create Aeronautics Structures is loading!”  
-  The `cr_aero_structures:chests/uniform` loot table failed to parse. Exact CurseForge file provenance and structure generation remain unverified. Do not advance to Batch E until the issue and outstanding checks are reviewed.
+- **Batch D — Create Aeronautics Structures 1.1.0-Beta-3.1:** remains partial. The `cr_aero_structures:chests/uniform` loot-table error, exact CurseForge file provenance, and structure generation remain unresolved. Its Russian startup message is informational only and is not a blocker.
+- **Batch E — performance:** the maintainer started testing while Batch D remained partial. The first combined server smoke test passed (`Done`, disposable-world load, client login, clean shutdown), but four client-only rendering mods were also present in the server folder. spark selected the built-in Java engine; no performance measurements were captured. Flerovium 1.1.3 Beta was detected instead of the planned stable 1.1.2. Batch E remains partial and is not production/release approval.
 - **Curios:** the maintainer reports two Back slots in a newly created test world. Backpack + standard Create Backtank, Aviator Goggles, and Linked Typewriter checks are reported working in their assigned slots. More Curios Slots 1.4 was intentionally removed; craftable slot upgrades are not planned. Matching client/server log review remains open.
 - **Botany Pots and Construction Sticks:** server startup checks passed; feature validation remains open.
 - **Lootr:** chest opening and loot presence were confirmed by the maintainer; independent per-player loot remains unverified.
@@ -31,6 +29,10 @@
 ## Latest Batch D test — 5 November 2026
 
 The 05:48–05:58 disposable-server run reached `Done (1.589s)!`, loaded `world_lootr_test`, accepted one client login, and shut down with all dimensions saved. The candidate-specific loot-table error remains unresolved; the startup message is not a blocker. The server log also contains broader pack errors and warnings, so the Batch D result is partial, not a general pack-cleanliness pass.
+
+## Latest Batch E test — 5 November 2026
+
+The 07:15–07:30 disposable-server run reached `Done (1.718s)!`, loaded the test world, accepted one client login, and shut down cleanly with all dimensions saved. spark 1.10.124 initialized and selected the built-in Java engine on Windows 11 / amd64; no TPS/MSPT, CPU, memory, GC baseline values, or saved profiler report were captured. ImmediatelyFast 1.6.15, Flerovium 1.1.3 Beta, Entity Culling 1.10.4, More Culling 1.0.11, and Cloth Config 15.0.140 were detected. The four rendering mods are client-only and must be tested on the matching client separately, one at a time. The log contains broader existing pack errors; the combined run does not verify individual visual features or performance improvement.
 
 ## Project direction
 

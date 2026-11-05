@@ -31,20 +31,23 @@ Use the [Dimension Mod Guide](DIMENSIONS.md) to group world-generation and explo
 
 ## Recommended work order
 
-1. Continue Every Compat (Wood Good) validation: check Chipped 4.0.2 variants, recipes, models/textures, drops, duplicate registration and registry-size impact.
-2. Complete the remaining Botany Pots, Construction Sticks and Lootr multiplayer feature checks.
-3. Investigate the outstanding Struts dedicated-server error, PowerGrid optional native backend, and unattributed chunk/world-load messages.
-4. Research Create Big Cannons and the full colony ecosystem as separate candidate groups; do not install either until dependency and compatibility reviews are complete.
-5. Complete the remaining pack validation and clean-install checks before any public beta package.
+**Routine installation sequence:** Batches A and B have passed the standard startup/world-load/client-login smoke test. Batch C — Create Big Cannons with Ritchie's Projectile Library — is next, subject to the exact CurseForge file and dependency recheck in the private batch plan.
+
+The items below are **optional, targeted follow-ups**, not prerequisites for passing a routine batch smoke test or advancing to the next batch. Add one only when a specific unresolved issue cannot reasonably be answered by startup, world-load, login, or log review, and after the maintainer agrees:
+
+- Investigate the outstanding Struts dedicated-server error and PowerGrid optional native backend.
+- Revisit the fresh-world compatibility-datapack issue if it reproduces in a correctly prepared test world.
+- Consider deeper Every Compat, Botany Pots, Construction Sticks, or Lootr feature checks only when a concrete issue needs them.
+- Keep colony ecosystem research separate from installation batches until its exact dependency and compatibility review is complete.
 
 **End reminder:** End research/testing is paused. Do not resume the historical End checks below unless the maintainer explicitly reopens that workstream.
 
-This is an order of work, not permission to install or approve additional mods. Keep production worlds unchanged.
+Keep production worlds unchanged.
 
 
 ## Status meanings
 
-- **Gameplay test pending** — the mod loads, but its actual feature has not been checked.
+- **Gameplay test pending** — a feature-specific test has been requested or agreed for a concrete issue; this is not a requirement for the routine startup/login smoke test.
 - **Testing** — installed in the test setup; smoke-test evidence is still pending.
 - **Partial pass** — the specific test described as passed is confirmed; other behavior remains untested.
 - **Retest needed** — a known fix must be checked in a correctly prepared disposable world.
@@ -52,17 +55,17 @@ This is an order of work, not permission to install or approve additional mods. 
 - **On hold** — do not start testing until the project owner resumes it.
 
 
-## Installed baseline: startup passed, feature testing still required
+## Installed baseline: startup/login smoke test passed
 
-The 4 November dedicated-server test reached `Done`, loaded the test world, accepted a client login, and shut down cleanly with the recorded server mod set discovered/loaded. This is a **pack-level startup/load pass** for that server configuration. It does not mean every installed mod has passed its own feature tests.
+The 4 November dedicated-server test reached `Done`, loaded the test world, accepted a client login, and shut down cleanly with the recorded server mod set discovered/loaded. This is a **pack-level startup/login smoke-test pass** for that server configuration.
 
-- [ ] Work through the installed baseline mod list in `MODS.md` and validate each mod's core feature(s) that are relevant to this pack.
-- [ ] Check representative recipes, blocks/items, machines, structures, entities, progression, and integrations where the mod provides them.
-- [ ] Check key cross-mod interactions, especially Create/Create Aeronautics integrations and world-generation/structure mods, in disposable test worlds.
-- [ ] Run a matching client startup test and review the client log; the dedicated-server log does not validate client-only graphics mods such as Sodium, Iris, or Sodium Extra.
-- [ ] Record individual results as **passed**, **partial**, **failed**, or **not yet tested**. Do not infer a feature pass from the server reaching `Done`.
+The routine test for later batches is the same: server reaches `Done`, test world loads, matching client joins, and the log is reviewed. It does **not** require working through every installed mod's features, checking every recipe or integration, or performing an extended gameplay session.
 
-**Known startup exceptions that remain open:** Struts 1.3.1 attempts to load client-only `RenderSystem` on the dedicated server; Create: Power Grid 0.6.2 cannot load its optional `powergridNative7` accelerated solver in the tested Windows environment. Neither prevented the 4 November server startup, but both require follow-up.
+- [ ] Optional: investigate a specific feature or cross-mod issue only when startup/login/log review cannot reasonably answer it and the maintainer agrees to a deeper test.
+- [ ] For a specific client-only problem, collect the matching client log as targeted evidence; a dedicated-server log alone cannot validate client-only graphics behavior.
+- [ ] Record the precise scope actually checked. Do not claim feature behavior was tested when only startup, world load, login, and logs were reviewed.
+
+**Known startup exceptions that remain open:** Struts 1.3.1 attempts to load client-only `RenderSystem` on the dedicated server; Create: Power Grid 0.6.2 cannot load its optional `powergridNative7` accelerated solver in the tested Windows environment. Neither prevented the 4 November server startup, but both remain log issues for targeted review.
 
 ## Active tests
 

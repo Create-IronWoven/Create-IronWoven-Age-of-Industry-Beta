@@ -102,14 +102,14 @@ def update_checklist(mod_heading: str, action: str, result: str, tester: str, da
 def main():
     event = json.loads(Path(EVENT_PATH).read_text(encoding="utf-8"))
     body = event.get("issue", {}).get("body") or ""
-    tester = field(body, "Your full name")
+    tester = field(body, "Tester nickname (no real name or GitHub username)")
     date = field(body, "Test date")
     mod = field(body, "Exact mod section heading")
     action = field(body, "Exact test action")
     result = field(body, "Test result")
     evidence = field(body, "What happened? (required)")
     missing = [name for name, value in [
-        ("Your full name", tester), ("Test date", date), ("Exact mod section heading", mod),
+        ("Tester nickname", tester), ("Test date", date), ("Exact mod section heading", mod),
         ("Exact test action", action), ("Test result", result), ("What happened?", evidence),
     ] if not value]
     if missing:

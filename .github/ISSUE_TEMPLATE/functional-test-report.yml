@@ -1,0 +1,60 @@
+name: Functional test results
+description: Submit test results without editing the checklist.
+title: "[Test Results]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form after testing one mod or a small group of related features. You do not need to edit the testing checklist.
+
+        Enter one line per test action in the format:
+        `Test action — Result — Evidence/notes`
+
+        Results: Pass, Partial, Failed, Blocked, or N/A.
+        Example: Train moves forward and backward — Pass — Tested on a short track; no desync observed.
+
+        Your full name and test date below apply to every action in this report. Remove usernames, private paths, IP addresses, tokens, and other personal information from any evidence.
+  - type: input
+    id: tester-name
+    attributes:
+      label: Your full name
+      description: Enter the name of the person who actually performed these tests.
+      placeholder: First and last name
+    validations:
+      required: true
+  - type: input
+    id: test-date
+    attributes:
+      label: Test date
+      description: Use YYYY-MM-DD.
+      placeholder: "2026-11-05"
+    validations:
+      required: true
+  - type: input
+    id: mod-name
+    attributes:
+      label: Mod or feature tested
+      description: Use the exact mod name from the testing checklist.
+      placeholder: Mod name
+    validations:
+      required: true
+  - type: textarea
+    id: test-results
+    attributes:
+      label: What did you test, and what happened?
+      description: Add one line for each test action. Include the result and a short observation for each.
+      placeholder: |
+        Train moves forward and backward — Pass — Worked as expected.
+        Train survives server restart — Failed — Train disappeared after restart.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Optional evidence
+      description: Add sanitized screenshot links, log filenames, or extra notes. Do not upload world saves, full raw logs, or private information.
+      render: text
+    validations:
+      required: false

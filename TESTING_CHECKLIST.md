@@ -14,19 +14,22 @@
 
 This is the full functional-test matrix for the recorded Create IronWoven test installation. It currently tracks 124 feature and support-module entries. It covers more than the active batch queue. The inventory basis is the 5 November dedicated-server mod list plus the client-only entries in the latest reviewed client inventory. This is a test snapshot, not a final release manifest.
 
-**How to enter test results:** every individual test action has its own editable row in a table beneath its mod. Edit the cells directly on GitHub (open the file and choose the pencil/Edit button; if you do not have write access, submit the changes to someone with repository access). For each row:
-- Replace `Not tested` with `Pass`, `Partial`, `Failed`, `Blocked`, or `N/A`.
-- Enter the actual tester's full name and the test date in `YYYY-MM-DD` format.
-- Replace the evidence placeholder with a short observation and, where useful, a link or filename for a sanitized log, screenshot, or report.
-- If different people test different actions, record each person's name on that action's row.
+**How to submit test results — no checklist editing required:**
 
-**Example of a completed row:**
+1. Open the [Submit Test Results form](../../issues/new?template=functional-test-report.yml).
+2. Enter your full name, the date, and the mod name.
+3. In the large results box, add one line for each feature you tested. Use: `Test action — Result — Evidence/notes`.
+4. Click **Submit new issue**. That's it — you do not need to edit this checklist or understand Markdown.
 
-| Test action | Result | Tester name | Test date | Evidence / notes |
-|---|---|---|---|---|
-| Example: assemble and operate a vehicle | Pass | Jane Tester | 2026-11-05 | Vehicle steered and saved/reloaded; see `vehicle-test.md` |
+Use `Pass`, `Partial`, `Failed`, `Blocked`, or `N/A` for each result. Your name and date apply to every test action in that report. Submit another report only when you test a different mod or on a different date. The project maintainer will transfer verified results into this checklist.
 
-Do not use a GitHub username, initials, or an assumed identity as a substitute for the tester's name. Leave rows as `Not tested` / `Not recorded` until the test is actually performed. A server startup or item appearing in JEI is not, by itself, a function-test pass. Keep smoke-test evidence separate from feature tests.
+**Example lines:**
+```text
+Train moves forward and backward — Pass — Worked as expected.
+Train survives server restart — Failed — Train disappeared after restart.
+```
+
+Do not use a GitHub username, initials, or an assumed identity as a substitute for your full name. A server startup or an item appearing in JEI is not, by itself, a function-test pass. Keep smoke-test evidence separate from feature tests.
 
 ## Smoke test is not a function test
 

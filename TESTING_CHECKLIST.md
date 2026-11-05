@@ -6,6 +6,8 @@
 
 This is the living queue of mod features and compatibility checks that still need testing for Create IronWoven. It is separate from the installed-mod inventory and does not approve a mod for the production pack or a public release.
 
+**Routine batch test scope:** confirm the dedicated server reaches `Done`, the test world loads, the matching client joins, and review the log. Feature-by-feature gameplay checks, manual crafting, and extended playtests are not required by default. Deeper testing is only added for a specific unresolved issue after the maintainer agrees.
+
 ## Quick navigation
 
 - [Recommended work order](#recommended-work-order)
@@ -196,9 +198,9 @@ Do not assign these messages to Lootr based on the current evidence.
 
 Follow the private installation batch plan and record each result here. Do not combine batches in their first test.
 
-1. **Batch A — completed per maintainer report:** JER, Shulker Box Tooltip, and Enchantment Descriptions were tested together. The 5 November server log verifies combined startup, world load, client login, and clean shutdown; it does not itemize client feature results.
-2. **Batch B:** Nature's Compass and Explorer's Compass in a copied disposable world.
-3. **Batch C:** Create Big Cannons with Ritchie's Projectile Library, isolated.
+1. **Batch A — routine smoke test passed:** JER, Shulker Box Tooltip, and Enchantment Descriptions were present together; the server reached `Done`, the world loaded, the matching client joined, and shutdown saved all dimensions.
+2. **Batch B — routine smoke test passed:** Nature's Compass and Explorer's Compass were present together; the server reached `Done`, the world loaded, the matching client joined, and shutdown saved all dimensions. No feature-by-feature test is required by default.
+3. **Batch C — next:** Create Big Cannons with Ritchie's Projectile Library, isolated.
 4. **Batch D:** Create Aeronautics Structures in one fresh disposable Overworld.
 5. **Batch E:** spark baseline, then one client performance candidate at a time.
 6. **Batch F:** Lithium, FastSuite, and FastFurnace one at a time.
@@ -362,12 +364,12 @@ Do not install C2ME or ServerCore in this first wave. Their chunk-threading/beha
 
 
 
-- [x] **Batch A tested — JER 1.6.0.57, Shulker Box Tooltip 5.1.9+1.21.1, and Enchantment Descriptions 21.1.11.** The maintainer reports the batch tested. The 5 November dedicated-server log confirms the combined mod set loaded, the disposable world reached `Done`, a client joined, all dimensions saved on shutdown, and Shulker Box Tooltip registered 31 providers. The log does not itemize client-side JEI or tooltip feature results; see the private batch record for the full server-log review. This is not production/release approval.
-- [ ] **Nature's Compass 3.4.0 — client & server** — [CurseForge file 7892954](https://www.curseforge.com/minecraft/mc-mods/natures-compass/files/7892954). Search vanilla, BYG and Regions Unexplored biomes. No equivalent compass is listed; test biome registration/visibility and XP/durability settings.
-- [ ] **Explorer's Compass 3.4.0 — client & server** — [CurseForge file 7892943](https://www.curseforge.com/minecraft/mc-mods/explorers-compass/files/7892943). Search registered vanilla and Overworld modded structures. FTB Chunks is not a structure locator. Test locator tags, search cost and exploration balance. Do not test End structures while the End workstream is paused.
+- [x] **Batch A routine smoke test passed — JER 1.6.0.57, Shulker Box Tooltip 5.1.9+1.21.1, and Enchantment Descriptions 21.1.11.** The server reached `Done`, the disposable world loaded, the matching client joined, and shutdown saved all dimensions. Shulker Box Tooltip registered 31 providers. This records the standard startup/login smoke test only; no feature-by-feature playtest is claimed or required by default. Not production/release approval.
+- [x] **Nature's Compass 3.4.0 — Batch B routine smoke test passed** — [CurseForge file 7892954](https://www.curseforge.com/minecraft/mc-mods/natures-compass/files/7892954). Present in the server mod list; server startup, world load, client login, and clean shutdown passed. One INFO biome-search message ended without a result; no target context is available, so no feature verdict is recorded.
+- [x] **Explorer's Compass 3.4.0 — Batch B routine smoke test passed** — [CurseForge file 7892943](https://www.curseforge.com/minecraft/mc-mods/explorers-compass/files/7892943). Present in the server mod list; server startup, world load, client login, and clean shutdown passed. No feature-by-feature structure search is claimed or required by default. Do not test End structures while the End workstream is paused.
 - [ ] **Waystones 21.1.46 — client & server** — [CurseForge 1.21.1 NeoForge files](https://www.curseforge.com/minecraft/mc-mods/waystones/files/all). Requires compatible Balm. AeroPortals 1.3.6 is already installed; first document its teleport behavior, then compare both systems in a disposable world. Check Balm's exact version and multiplayer costs, cooldowns, access rules and progression before deciding whether Waystones adds enough.
 
-**Active installation order:** Batch A (JER, Shulker Box Tooltip, and Enchantment Descriptions) has been tested per maintainer report; the supplied 5 November dedicated-server log verifies that all three were present together, the disposable world loaded, a client joined, and shutdown saved all dimensions. Shulker Box Tooltip also completed protocol negotiation and registered 31 providers. The server log does not itemize client feature results. **Next: Batch B — Nature's Compass, then Explorer's Compass** in a copied disposable world. Reconfirm exact files and client/server sides before installation. Waystones remains gated on the AeroPortals/Balm review. These candidates are not production or release approved.
+**Active installation order:** Batches A and B have passed the standard startup/world-load/client-login smoke test. Batch B's 5 November server log confirms Nature's Compass and Explorer's Compass were present together and the server shut down after saving all dimensions. The Nature's Compass INFO search observation is recorded in the private Batch Progress report; it is not a startup failure or feature-test verdict. **Next: Batch C — Create Big Cannons with Ritchie's Projectile Library**, isolated. Routine batch testing does not require feature-by-feature gameplay checks. Waystones remains gated on the AeroPortals/Balm review. No candidate is approved for production or release.
 
 ## On hold
 

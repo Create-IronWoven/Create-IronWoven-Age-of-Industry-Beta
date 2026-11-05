@@ -1,5 +1,7 @@
 # Create IronWoven — Public Beta Hub
 
+**Current modpack version: `v0.1.000`** · Internal development version; no downloadable beta package has been published.
+
 Welcome to the public, player-facing home for **Create IronWoven**, a Minecraft 1.21.1 NeoForge modpack focused on Create, Create Aeronautics, trains, automation, engineering, transport, and exploration.
 
 > **Development notice:** The pack is still being tested. Features, balance, compatibility, and stability may change. Back up important worlds before updating, and do not assume a test build is safe for an existing production world.

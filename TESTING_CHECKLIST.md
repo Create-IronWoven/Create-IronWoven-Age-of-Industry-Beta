@@ -72,7 +72,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 | Create: Aeronautical Diesel 1.1.0 | Use tank/fill port to move diesel, biodiesel, gasoline, ethanol, crude oil or plant oil into an Aeronautics portable engine; test wrench and automation. | Pending |
 | Create: AeroPortals 1.3.6 | Move a complete airship through vanilla and supported modded portals; verify ship, pilot, passengers and decorations arrive intact. | Pending |
 | Shield Generators 1.4.0 | Power a shield generator; test activation, energy draw, boundary visualization, protection/interaction and multiplayer consistency. | Pending |
-| KineticGrip 1.0.5 | Identify its player-facing items/blocks; test the stated grip/kinetic interaction on a controlled contraption, including attach, release, collision and sync. | Pending |
+| KineticGrip 1.0.5 | Test the Aeronautics handles from the player point of view; operate the handle controls and any player-usable tool (such as the chainsaw) included by the installed build. Verify movement/control and client/server interaction. | Pending |
 | Sable 2.0.6 | Test Aeronautics physics: assembly, motion, forces, collision, sublevels and save/restart; inspect Copycats Catwalk physics-tag errors. | Pending |
 | Strut Your Stuff 1.3.1 | Validate through dependent mods: spanning/collision structures, surface clipping, interaction and cable behavior/droop; check dedicated-server RenderSystem class-loading issue. | Pending — shared library; dependent integration and server-side issue remain open. |
 
@@ -88,9 +88,9 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 | Create: Diesel Generators 1.3.15 | Run an oil-to-fuel chain; start diesel generator and test FE output, fuel consumption, upgrades and a representative machine/tool. | Pending |
 | Create Encased 1.10.0-fix1 | Apply casings to shafts, cogwheels and pipes; test rotation, power/fluid transfer and persistent casing visuals. | Pending |
 | Create: Gadgets & Gizmos 1.2.10 (bundled) | Test installed gadgets/engine components used by Aeronautics: assembly, thrust/control, fuel/power consumption and contraption synchronization. | Pending |
-| Create: Dragons Plus 1.11.9 | Inspect added player-facing items/blocks; test each added interaction/transport/processing feature shown in JEI/creative inventory and its Create integration. | Pending |
+| Create: Dragons Plus 1.11.9 | Use an Encased Fan to test Bulk Coloring with dye fluid, Bulk Freezing with Powder Snow, Bulk Ending with Dragon Head or Dragon's Breath fluid, and Bulk Sanding with Quicksand/supported block tag. Test Fluid Hatch take/deposit behavior on tanks and supported addon recipe integrations. | Pending |
 | Create: Liquid Fuel 3.0.0 | Feed supported liquid fuel to a Blaze Burner; verify normal/superheated operation, duration, consumption and rejection of invalid fluids. | Pending |
-| Create: Fluids Be Gone! 1.0.1 | Test its fluid-visibility/handling effect in Create fluid networks and fluid-containing blocks; ensure no required fluid state is hidden or broken. | Pending |
+| Create: Fluids Be Gone! 1.0.1 | Run a Create Drill and a Simulated Rock Cutting Wheel into fluid-containing terrain; verify fluids in the mined path are voided when enabled, separate drill/rock-wheel config switches work, and fluids outside the mining path remain unchanged. | Pending |
 | Create: Framed 1.8.2 | Build framed blocks, apply a supported material/appearance and shape; verify placement, rotation, breaking and reload. | Pending |
 | Create: Enchantment Industry 2.5.4b | Run automated enchanting/disenchanting and XP-fluid processing; verify inputs, outputs, XP/fluid handling, recipes and automation. | Pending |
 | Create: Numismatics 1.0.20 | Obtain coins; use Vendor for buy/sell, Bank Terminal for deposit/withdraw, and Depositor price/redstone pulse for coin/card payments. | Pending |
@@ -194,6 +194,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 | Ponder 1.0.82 | Open Ponder scenes for representative Create/addon blocks; confirm scenes render and advance. | Pending |
 | PrickleMC 21.1.11 | Verify Botany Pots dependency/plugin initialization and crop/soil compatibility; dependency-only otherwise. | Pending |
 | Resourceful Lib 3.0.12 | Verify dependent resource registries/config/content load; check missing resource errors. | Pending |
+| Ritchie's Projectile Library 2.1.2 | Verify through Create Big Cannons: projectile and fuze definitions register, load and fire correctly; confirm client/server projectile synchronization. | Pending |
 | Sable Companion 1.6.0 | Verify dependent Sable integrations load and register expected physics behavior; no separate feature assumed. | Pending |
 | Sophisticated Core 1.5.23 | Verify backpack upgrade/inventory modules initialize and retain data after close/reopen, relog and restart. | Pending |
 | TerraBlender 4.1.0.8 | Verify BYG/RU biome providers register in intended dimensions of fresh disposable world; no missing/duplicate regions. | Pending |

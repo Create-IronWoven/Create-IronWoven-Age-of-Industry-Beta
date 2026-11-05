@@ -19,7 +19,7 @@ Create IronWoven is in **internal compatibility and functional testing**. There 
 
 - **Batches A, B, and C:** routine dedicated-server startup, disposable-world load, matching-client login, and log-review smoke tests passed. These checks do not prove individual mod features work.
 - **Batch D — Create Aeronautics Structures:** partial test. A candidate-specific loot-table error remains unresolved; exact CurseForge file provenance and structure generation have not been confirmed.
-- **Batch E — performance:** partial test. A combined server smoke test passed, but no measured performance baseline was captured and client-only rendering candidates still need separate client testing.
+- **Batch E — client rendering:** the combined server smoke test is historical evidence only; the client-only rendering candidates remain pending and will be tested after the server-side and shared candidate queue. spark profiling is deferred to beta testers and is not an internal release-preparation gate.
 - **Functional testing:** the [Full Installed-Mod Functional Testing Checklist](TESTING_CHECKLIST.md) tracks feature-level coverage. Most checks remain pending. Full functional validation is required before beta release.
 
 ## Release readiness

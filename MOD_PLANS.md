@@ -71,7 +71,7 @@ The loader reported two blockers:
 ImmediatelyFast, Flerovium, Entity Culling, and More Culling were present in the dedicated-server folder. Keep client-only rendering mods on the client. No candidate from this attempt is approved for production or beta release. The next gate is a corrected disposable-server startup, world-load, client-login, clean-shutdown, and log-review pass.
 
 
-## Existing-mod update retry — 5 November 2026, 13:58
+## Previous existing-mod update retry — 5 November 2026, 13:58 (historical)
 
 **Status: Partial server startup/world-load pass; client login and clean shutdown not supplied.** The earlier missing FTB Teams dependency did not recur: FTB Teams 2101.1.12 was detected and initialized. The server reached `Done (1.493s)!` and prepared the disposable test world.
 
@@ -79,6 +79,16 @@ Both Numismatics 1.0.20 and 1.1.0 JARs were present. NeoForge selected 1.1.0 for
 
 Sophisticated Core 1.5.28.2458, Sophisticated Backpacks 3.26.20.2244, Entity Culling 1.11.3, Create Crafts & Additions 1.7.2, and TFMG Community Edition 1.3.3 were detected. ImmediatelyFast, Flerovium, Entity Culling, and More Culling remain client-only; move them out of the dedicated-server folder and test on the client. The 463 ERROR-level log entries are summarized in [Testing Checklist](TESTING_CHECKLIST.md); no update candidate is approved for release by this partial test.
 
+
+
+
+## Existing-mod update smoke test — 5 November 2026, 14:09
+
+**Status: Routine smoke-test pass; update compatibility and feature functions remain unverified.** The disposable server reached `Done (1.822s)`, loaded the test world, accepted a matching client login, and shut down cleanly with all dimensions saved. FTB Teams 2101.1.12 initialized.
+
+Both Numismatics 1.0.20 and 1.1.0 JARs were present; 1.1.0 was active. Numismatics Plus 1.0.1 was absent, so the run did not test the Plus pairing or Numismatics 1.0.20. Use one Numismatics JAR only: 1.0.20 with Plus 1.0.1, or 1.1.0 without Plus until compatibility is verified.
+
+ImmediatelyFast 1.6.15, Flerovium 1.1.3, Entity Culling 1.11.3 and More Culling 1.0.11 were still in the dedicated-server folder. All are client-only and require separate matching-client tests. spark 1.10.124 initialized and selected its built-in Java engine, but no numerical baseline or saved profile was captured. The log contains 463 ERROR-level and 172 WARN-level entries; repeated loot-table/Sable errors require confirmation that their world-scoped compatibility datapacks were enabled. Batch D and Batch E remain partial. No update or candidate is approved for release.
 
 ## Recently requested candidates
 

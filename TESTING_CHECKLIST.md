@@ -6,6 +6,16 @@
 
 This is the living queue of mod features and compatibility checks that still need testing for Create IronWoven. It is separate from the installed-mod inventory and does not approve a mod for the production pack or a public release.
 
+## Quick navigation
+
+- [Recommended work order](#recommended-work-order--4-november-2026)
+- [Active tests](#active-tests)
+- [Fresh-world compatibility retest](#fresh-world-compatibility-retest)
+- [Dedicated-server and runtime checks](#outstanding-dedicated-server-and-runtime-checks)
+- [Candidate research queue](#candidate-mods--research-before-any-installtest)
+- [Performance tests](#performance-test-queue--separate-tests-only)
+- [On hold](#on-hold)
+
 ## Dimension-separated world-generation testing
 
 Use the [Dimension Mod Guide](DIMENSIONS.md) to group world-generation and exploration work into **Overworld**, **Nether**, **End**, and **Shared / multi-dimension**.

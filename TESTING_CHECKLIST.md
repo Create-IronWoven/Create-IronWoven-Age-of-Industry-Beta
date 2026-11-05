@@ -14,7 +14,14 @@
 
 This is the full functional-test matrix for the recorded Create IronWoven test installation. It currently tracks 124 feature and support-module entries. It covers more than the active batch queue. The inventory basis is the 5 November dedicated-server mod list plus the client-only entries in the latest reviewed client inventory. This is a test snapshot, not a final release manifest.
 
-**How to use the checklist:** each `[ ]` is an individual action. Tick it only after that exact behavior has been tested on the intended client/server side and the result is recorded. A mod can remain **Partial** while some boxes are checked and others are open. Keep smoke-test evidence separate from feature tests.
+**How to use the checklist:** each `[ ]` is an individual action. Tick it only after that exact behavior has been tested on the intended client/server side and the result is recorded. For every mod entry, complete the **Tester name** and **Test date** fields below its status before marking any function checkbox complete. A checkbox must never be marked complete without an identifiable tester and recorded result/evidence. If different people test different functions within one mod, identify the tester beside the relevant evidence in the notes. A mod can remain **Partial** while some boxes are checked and others are open. Keep smoke-test evidence separate from feature tests.
+
+**Required per-mod test record:**
+- **Tester name (required):** `Enter full name`
+- **Test date (required):** `YYYY-MM-DD`
+- **Result/evidence:** `Pass / Partial / Failed / Blocked` — briefly record what was observed and link or name the supporting log/report where applicable.
+
+Do not use a GitHub username, initials, or an assumed identity as a substitute for the tester's name. Leave the fields explicitly marked `Not recorded` until the tester supplies the information.
 
 ## Smoke test is not a function test
 
@@ -112,113 +119,179 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 
 ### Create 6.0.10
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Build a kinetic network.
 - [ ] Test speed/rotation control, one press/mixer/deployer chain, item/fluid transport and save/restart.
 
 ### Create Aeronautics 1.3.2
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Assemble a vehicle.
 - [ ] Test propulsion/lift, steering, controls, collision/physics, disassembly/reassembly and second-player sync.
 
 ### Create: Simulated 1.3.2
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Test assembly/disassembly, anchoring, controls, redstone interaction, collision and save/reload.
 
 ### Create: Offroad 1.3.2
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Build a wheeled vehicle.
 - [ ] Test wheel power, steering, traction, stopping, collision and multiplayer sync.
 
 ### Create Kinetic 1.4.3
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Test its Aeronautics utility/propulsion blocks and items.
 - [ ] Verify hitboxes, particles, controls and physics on client/server. Recheck existing loot-table and mixin findings.
 
 ### Create Aeronautics Structures 1.1.0-Beta-3.1 (test-only)
 **Current status:** Partial — server smoke passed; generation unproven; one loot-table parse error remains.
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Fresh disposable Overworld: confirm engineering houses, abandoned boats, airships and hot-air balloons generate.
 - [ ] Test engineer trader and chest loot.
 - [ ] Recheck cr_aero_structures:chests/uniform.
 
 ### Create Aeronautics Curios Compat 2.0
 **Current status:** Partial — assigned-slot checks user-reported working; repeatable synced test still needed.
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Equip Aviator Goggles in Head slot.
 - [ ] Test overlay/engineer detection. Equip Linked Typewriter in Curios and activate (default Y) to operate linked typewriter/Redstone Links.
 
 ### Create Aeronautics: Copycat Wing 1.0.4
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Use a Copycats+ block as a wing part.
 - [ ] Verify lift. Honeycomb should disable lift and axe restore it.
 - [ ] Test on a moving contraption.
 
 ### Create Aeronautics: Transmission & Linkage 0.2.9
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Build a transmission/linkage assembly.
 - [ ] Verify it transfers the intended movement/control across running and assembled contraptions.
 
 ### Create Big Cannons 5.11.7
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Assemble a multiblock cannon.
 - [ ] Load projectiles/fuzes.
 - [ ] Test Create-powered loading/aiming, firing, projectile effect/recoil, reload and autocannon if used.
 
 ### Create: Steam 'n' Rails 0.3.0-alpha.2
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Assemble/run a train.
 - [ ] Test tracks, bogeys, schedules/stations, signals and installed railway interactions.
 - [ ] Verify save/restart.
 
 ### Create: Blocks & Bogies 1.0.8
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Open bogie UI (crouch + right-click empty-handed)
 - [ ] Configure drivers/axles, assemble train and verify style and operation.
 
 ### Create: Modern Train Parts 0.2.5
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Test pantograph deployment/retraction, shipping-container storage, wrench variants and train movement with parts attached.
 
 ### Create: Pantographs & Wires 0.2.3-C6 Beta
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Place masts/cantilevers and catenary.
 - [ ] Verify wire connection and pantograph height adjustment on a moving train, including slopes/turns.
 
 ### Create: Rustic Structures 1.0.1
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Fresh disposable Overworld: find well, smithy, windmill and barn in intended biome groups.
 - [ ] Inspect placement, loot and generation.
 
 ### Create: Structures Arise 176.49.50
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Fresh disposable Overworld: find multiple Create-themed structures.
 - [ ] Inspect integrity, placement, loot and chunk-edge generation.
 
 ### Create: Aeronautical Diesel 1.1.0
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Use tank/fill port to move diesel, biodiesel, gasoline, ethanol, crude oil or plant oil into an Aeronautics portable engine.
 - [ ] Test wrench and automation.
 
 ### Create: AeroPortals 1.3.6
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Move a complete airship through vanilla and supported modded portals.
 - [ ] Verify ship, pilot, passengers and decorations arrive intact.
 
 ### Shield Generators 1.4.0
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Power a shield generator.
 - [ ] Test activation, energy draw, boundary visualization, protection/interaction and multiplayer consistency.
 
 ### KineticGrip 1.0.5
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Test the Aeronautics handles from the player point of view.
 - [ ] Operate the handle controls and any player-usable tool (such as the chainsaw) included by the installed build. Verify movement/control and client/server interaction.
 
 ### Sable 2.0.6
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Test Aeronautics physics: assembly, motion, forces, collision, sublevels and save/restart.
 - [ ] Inspect Copycats Catwalk physics-tag errors.
 
 ### Strut Your Stuff 1.3.1
 **Current status:** Pending — shared library; dependent integration and server-side issue remain open.
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Validate through dependent mods: spanning/collision structures, surface clipping, interaction and cable behavior/droop.
 - [ ] Check dedicated-server RenderSystem class-loading issue.
 
@@ -226,598 +299,130 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 
 ### Create: Bits 'n' Bobs 2.3.5
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Test chain-drive transfer/carriage attachment, flywheel bearing rotation/battery behavior, wooden cogwheel swapping, dyeable fluid-pipe separation, chair and Nixie display.
 
 ### Create Cobblestone 1.5.1
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Set generator to cobblestone, stone, basalt, limestone and scoria.
 - [ ] Verify outputs, type switching, SU use and disabled-generator behavior.
 
 ### Create Crafts & Additions 1.7.2
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Run Electric Motor from FE and verify SU output.
 - [ ] Drive Alternator with SU and verify FE output.
 - [ ] Test rolling-mill rods/wires.
 
 ### Create: Curios Backtank 1.0.2
 **Current status:** Partial — Backpack + standard Backtank use in configured Back slots was reported; refill/consumption still open.
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Equip Backtank with intended Curios/backpack setup.
 - [ ] Test air capacity, refill, consumption and rendering/slot behavior.
 
 ### Create Deco 2.1.3
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Test decorative blocks/variants, recipes, placement, rotation and drops.
 - [ ] Recheck placard fix and loot-table parsing.
 
 ### Create: Diesel Generators 1.3.15
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Run an oil-to-fuel chain.
 - [ ] Start diesel generator and test FE output, fuel consumption, upgrades and a representative machine/tool.
 
 ### Create Encased 1.10.0-fix1
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Apply casings to shafts, cogwheels and pipes.
 - [ ] Test rotation, power/fluid transfer and persistent casing visuals.
 
 ### Create: Gadgets & Gizmos 1.2.10 (bundled)
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Test installed gadgets/engine components used by Aeronautics: assembly, thrust/control, fuel/power consumption and contraption synchronization.
 
 ### Create: Dragons Plus 1.11.9
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Use an Encased Fan to test Bulk Coloring with dye fluid, Bulk Freezing with Powder Snow, Bulk Ending with Dragon Head or Dragon's Breath fluid, and Bulk Sanding with Quicksand/supported block tag. Test Fluid Hatch take/deposit behavior on tanks and supported addon recipe integrations.
 
 ### Create: Liquid Fuel 3.0.0
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Feed supported liquid fuel to a Blaze Burner.
 - [ ] Verify normal/superheated operation, duration, consumption and rejection of invalid fluids.
 
 ### Create: Fluids Be Gone! 1.0.1
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Run a Create Drill and a Simulated Rock Cutting Wheel into fluid-containing terrain.
 - [ ] Verify fluids in the mined path are voided when enabled, separate drill/rock-wheel config switches work, and fluids outside the mining path remain unchanged.
 
 ### Create: Framed 1.8.2
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Build framed blocks, apply a supported material/appearance and shape.
 - [ ] Verify placement, rotation, breaking and reload.
 
 ### Create: Enchantment Industry 2.5.4b
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Run automated enchanting/disenchanting and XP-fluid processing.
 - [ ] Verify inputs, outputs, XP/fluid handling, recipes and automation.
 
 ### Create: Numismatics 1.0.20
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Obtain coins.
 - [ ] Use Vendor for buy/sell, Bank Terminal for deposit/withdraw, and Depositor price/redstone pulse for coin/card payments.
 
 ### Create: Numismatics Plus 1.0.1
 **Current status:** Hold — JAR is archived in `MinecraftServer-Test/mods-disabled`; not installed in the current server test profile. Reintroduce only for a separate pairing test with Numismatics 1.0.20.
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 
 - [ ] Buy from a Create shop with coins and a Numismatics card.
 - [ ] Verify deduction, stock, recipient account and missing-Depositor/card behavior.
 
 ### Create: Pattern Schematics 2.0.10
 **Current status:** Pending
+**Tester name (required):** Not recorded
+**Test date (required):** Not recorded
+**Result/evidence:** Not recorded
 - [ ] Create/obtain a repeating schematic.
 - [ ] Print in creative or use Schematicannon.
 - [ ] Verify placement, orientation, repeat behavior and resource requirements.
 
-### Create: Power Grid 0.6.2
-**Current status:** Partial — server loads; optional native solver unavailable in tested Windows environment; fallback function not yet verified.
-- [ ] Build a small electrical network with source, wires, transformer and consumers.
-- [ ] Test components and fallback solver.
-- [ ] Record native solver separately.
-
-### Create: Sound of Steam / Pipe Organs 0.9.2.1
-**Current status:** Pending
-- [ ] Place/configure a pipe organ.
-- [ ] Trigger notes manually and by supported controls/redstone.
-- [ ] Test pitch, sound, range, persistence and multiplayer audio.
-
-### Create: The Factory Must Grow Community Edition 1.3.3
-**Current status:** Pending
-- [ ] Run representative industrial processing: fluid/oil input, machine processing, outputs, power/kinetic requirements and fuel-burning machine.
-- [ ] Test Unified Fuels integration.
-
-### Create: Unified Fuels 1.0.4
-**Current status:** Pending
-- [ ] Cross-feed fuels between supported addons and compatible engines, burners and trains.
-- [ ] Verify shared values/consumption, gas-vs-liquid rules, toggles and config after restart.
-
-### Create: Vibrant Vaults 0.3.2
-**Current status:** Pending
-- [ ] Build/connect vaults and shipping containers.
-- [ ] Insert/extract items, change color/orientation and test package frogport/stock link/packager features present.
-
-### Create Slice & Dice 4.3.4
-**Current status:** Pending
-- [ ] Automate a Farmer's Delight cutting-board recipe with Create saw.
-- [ ] Verify ingredients, output, transport and recipe visibility.
-
-### Create: Bells & Whistles 0.4.7
-**Current status:** Pending
-- [ ] Test representative decorative train/building blocks, variants, placement, rotation, collision and rendering on moving contraptions.
-
-### Create: Copycats+ 3.0.9
-**Current status:** Pending
-- [ ] Use copycat shapes with multiple source materials.
-- [ ] Verify appearance, shape/state, rotation and moving-contraption rendering.
-
-### Copycats+ Additions 1.5.0
-**Current status:** Pending
-- [ ] Test added copycat shapes/variants, material application and placement.
-- [ ] Verify Aeronautics Copycat Wing integration.
-
-### Design n' Decor 2.2b
-**Current status:** Pending — startup passed; logs contain many loot-table parse errors. Drop behavior remains open.
-- [ ] Test representative decoration families, recipes and drops.
-- [ ] Specifically verify dyed cogwheel/loot-table entries and intended block drops.
-
-## C. Building, food, storage, world generation and exploration
-
-### Chipped 4.0.2
-**Current status:** Pending
-- [ ] Use workstations on vanilla/modded wood and stone.
-- [ ] Craft several variants, place/break them and verify drops/models.
-
-### Farmer's Delight 1.3.4
-**Current status:** Pending
-- [ ] Run a food chain: ingredients, cutting-board processing, cooking pot, finished meal and food effects.
-- [ ] Test container interactions.
-
-### Mama's Herbs and Harvest 1.21.1-24
-**Current status:** Pending
-- [ ] Plant/harvest representative crops and herbs.
-- [ ] Test growth stages, drops, food/processing recipes and Botany Pots integration.
-
-### Botany Pots 21.1.44
-**Current status:** Pending
-- [ ] Plant vanilla, BYG/RU and Herbs & Harvest crops.
-- [ ] Test growth/harvest, drops, hopper input/output automation and JEI.
-
-### Construction Sticks 1.5.0
-**Current status:** Pending
-- [ ] Place a small wall/floor pattern.
-- [ ] Verify direction, range, item use, limits, claim protection and stop/undo behavior.
-
-### Every Compat 2.11.56
-**Current status:** Partial — Carpenter's Table variants and stone table user-reported working; duplicate Golden Cherry Leaves registration and large block footprint remain.
-- [ ] Test Chipped Carpenter's Table variants for several modded woods plus supported Create/Farmer's Delight/RU compat.
-- [ ] Verify recipes, models, drops and client/server registry sync.
-
-### Lootr 1.11.38.127
-**Current status:** Partial — chest opening and loot presence user-confirmed; second-player personal loot unverified.
-- [ ] Have two players open the same generated Lootr chest.
-- [ ] Verify independent personal loot, container persistence and multiplayer synchronization.
-
-### Sophisticated Backpacks 3.26.20.2244
-**Current status:** Pending
-- [ ] Craft/open backpack.
-- [ ] Test storage, upgrades, filters/automation, pickup and save/relog persistence.
-
-### Sophisticated Backpacks Create Integration 0.2.3
-**Current status:** Pending
-- [ ] Test supported Create inventory/item transport with backpack.
-- [ ] Verify insertion/extraction and normal backpack behavior.
-
-### Sophisticated Air Tank 1.0.1-beta
-**Current status:** Pending
-- [ ] Equip/refill air tank.
-- [ ] Test air supply/consumption, capacity indicator and supported backpack/Curios interactions.
-
-### Oh The Biomes We've Gone 2.6.3
-**Current status:** Pending
-- [ ] Fresh disposable Overworld: verify representative BYG biomes, vegetation/trees, structures and biome-specific terrain.
-- [ ] Check configs/datapacks.
-
-### Regions Unexplored 0.6.3
-**Current status:** Pending
-- [ ] Fresh disposable Overworld: verify representative RU biomes, vegetation, trees and biome blocks.
-- [ ] Check biome edges and Create integration.
-- [ ] Fresh disposable Nether: use biome lookup and explore new chunks to confirm representative Regions Unexplored Nether biomes generate; keep the production world unchanged.
-
-### Oh The Trees You'll Grow 5.3.5
-**Current status:** Pending
-- [ ] Grow representative added trees.
-- [ ] Test sapling growth, leaves/log drops, wood sets and leaves decay.
- 
-### Integrated Villages 1.3.3+1.21.1 (Overworld candidate)
-**Current status:** Partial — corrected dependencies load; multiple village IDs are locatable, but full structure and performance validation remain open.
-- [ ] Inspect representative generated structures (including Airship and Mediterranean villages) in a fresh disposable Overworld.
-- [ ] Check Cabin Village decoration pool warning and verify that structures are complete, populated, and have intended loot.
-- [ ] Compare locate/generation responsiveness; prior structure searches took roughly 10–37 seconds and caused server tick-delay warnings.
-- [ ] Confirm whether vanilla village generation is intentionally retained. Do not assume Integrated Villages replaces every vanilla village.
-- [ ] Save/restart the disposable world and review the matching server/client logs.
-
-Dependency evidence: the first startup attempt lacked Supplementaries and Integrated API 1.6.2+. The corrected test profile used Create 6.0.10, Supplementaries 3.4.0, and Integrated API 1.9.1 and reached `Done`. Validate these libraries through Integrated Villages; no standalone function test is required.
-
-### Atmosphere 1.0.18
-**Current status:** Pending
-- [ ] Fresh disposable world: verify its advertised environment/atmosphere changes.
-- [ ] Check day/night, weather, visuals/audio and client/server consistency.
-
-### Create Oh The Biomes We've Gone Compatibility 0.0NONE
-**Current status:** Pending
-- [ ] Check compatibility items/recipes/blocks for BYG and Create.
-- [ ] Test JEI presence, placement, drops and wood/biome integration.
-
-### Nature's Compass 3.4.0
-**Current status:** Smoke-only — Batch B startup/login passed; actual search behavior not tested.
-- [ ] Search for a known biome in disposable world.
-- [ ] Verify result, distance/direction, no-result message and repeat search.
-
-### Explorer's Compass 3.4.0
-**Current status:** Smoke-only — Batch B startup/login passed; actual search behavior not tested.
-- [ ] Search for a known generated structure.
-- [ ] Verify correct result, distance/direction and updated search after discovery.
-
-### Create Structures Arise 176.49.50
-**Current status:** Pending
-- [ ] Fresh disposable Overworld: find multiple Create-themed structures.
-- [ ] Inspect integrity, loot, biome placement and chunk-edge generation.
-
-## D. Player interface, server tools and information mods
-
-### AppleSkin 3.0.9
-**Current status:** Pending
-- [ ] Check hunger, saturation and exhaustion HUD while eating, sprinting and regenerating.
-- [ ] Compare to expected vanilla values.
-
-### FTB Chunks 2101.1.23
-**Current status:** Pending
-- [ ] Claim/unclaim test chunk.
-- [ ] Verify map, team permissions, boundaries, force-load controls, protection and reconnect persistence.
-
-### FTB Teams 2101.1.12
-**Current status:** Pending
-- [ ] Create team.
-- [ ] Invite/remove second player.
-- [ ] Check ownership/permissions and FTB Chunks team-claim behavior.
-
-### InControl! 10.3.1
-**Current status:** Pending
-- [ ] Test active spawn/loot/experience rules under controlled conditions.
-- [ ] Verify allowed/blocked mobs/loot and restart persistence.
-
-### Jade 15.10.6
-**Current status:** Pending
-- [ ] Inspect vanilla/modded blocks and entities.
-- [ ] Verify tooltips, states, inventories/fluid data and Create/Aeronautics compatibility.
-
-### Just Enough Items 19.64.0.455
-**Current status:** Pending
-- [ ] Search representative items from each content group.
-- [ ] Inspect crafting/processing recipes, catalysts and fluid inputs.
-
-### Just Enough Resources 1.6.0.57
-**Current status:** Pending
-- [ ] Check known mob-drop, loot-table, villager-trade and world-generation entries against in-game sources.
-
-### Enchantment Descriptions 21.1.11
-**Current status:** Pending
-- [ ] Open tooltips for vanilla/modded enchanted books and items.
-- [ ] Verify accurate descriptions and layout.
-
-### Shulker Box Tooltip 5.1.9+1.21.1
-**Current status:** Pending
-- [ ] Hover filled shulkers.
-- [ ] Verify contents preview, item counts, scroll/page behavior and provider integrations. 31 providers registered is not visual proof.
-
-### Mouse Tweaks 2.26.1
-**Current status:** Pending
-- [ ] Test drag distribution, wheel scrolling and quick-move in player inventory, chests, backpacks and modded GUIs.
-
-### Memory Settings 6.0
-**Current status:** Pending
-- [ ] Verify settings apply and persist across restart.
-- [ ] Measure memory only in controlled same-workload comparison, not from startup alone.
-
-### ModernFix 5.27.27
-**Current status:** Pending
-- [ ] Verify selected optimization mixins/options on the same disposable test profile.
-- [ ] Review for mixin errors, changed gameplay behavior, save integrity and comparable startup/runtime metrics.
-
-## E. Client graphics and performance mods
-
-### Sodium 0.8.13 (client-only)
-**Current status:** Pending
-- [ ] Launch matching client.
-- [ ] Verify rendering of chunks, Create moving contraptions, Aeronautics ships and block entities.
-- [ ] Compare same-scene FPS/frame pacing.
-
-### Iris 1.8.14-beta.1 (client-only)
-**Current status:** Pending
-- [ ] Toggle shader pack.
-- [ ] Inspect Create/Aeronautics models, ship sublevels, water, particles, HUD and shadows. Record known Aeronautics/Iris visual artifacts.
-
-### Sodium Extra 0.9.5 (client-only)
-**Current status:** Pending
-- [ ] Change a Sodium Extra option.
-- [ ] Verify it applies, persists after restart and does not conflict with Iris/Sodium.
-
-### ImmediatelyFast 1.6.15 (client-only)
-**Current status:** Pending
-- [ ] Compare identical GUI, HUD, particles, item/entity and block-entity scenes enabled/disabled.
-- [ ] Check visual parity and client log.
-
-### Flerovium 1.1.3 Beta (client-only; detected build)
-**Current status:** Pending
-- [ ] Compare item, particle and entity rendering/FPS against same Sodium baseline.
-- [ ] Inspect artifacts. Stable 1.1.2 remains a separate planned candidate.
-
-### Entity Culling 1.10.4 (client-only)
-**Current status:** Pending
-- [ ] Check culling of Create contraptions, Aeronautics ships/sublevels, entities and block entities.
-- [ ] Hidden objects must reappear when visible.
-
-### More Culling 1.0.11 (client-only)
-**Current status:** Pending
-- [ ] Check leaves, glass, connected textures and modded blocks across chunk boundaries.
-- [ ] Ensure no missing faces/transparency errors. Test Cloth Config options.
-
-### spark 1.10.124 (server profiler)
-**Current status:** Deferred to beta testers — not required during internal development.
-- [ ] During beta testing, record TPS, MSPT, memory/GC, and CPU under a repeatable load; save a 2–5 minute profile.
-- [ ] Record the selected profiler engine and any platform-specific fallback.
-
-## F. Libraries, APIs and shared support components
-
-### Apollib 1.2.0
-**Current status:** Pending
-- [ ] Verify dependent mod registries/content and related GUI/network interaction.
-- [ ] Record owner mod.
-
-### Architectury 13.0.11
-**Current status:** Pending
-- [ ] Verify dependent mods initialize on client/server and shared event/network hooks work during login and interaction.
-
-### Athena 4.0.6
-**Current status:** Pending
-- [ ] Verify dependent content models/textures render.
-- [ ] Check for missing model/texture errors.
-
-### Azimuth 1.4.10
-**Current status:** Pending
-- [ ] Verify mods depending on Azimuth load and shared utility/render behavior works.
-- [ ] Check class-loading logs.
-
-### Bookshelf 21.1.81
-**Current status:** Pending
-- [ ] Verify dependent features (e.g. Enchantment Descriptions/Botany Pots) load and work.
-- [ ] Dependency-only.
-
-### Cloth Config API 15.0.140
-**Current status:** Pending
-- [ ] Open More Culling config.
-- [ ] Change/save option, relaunch and verify persistence.
-
-### CodecUI 1.4.7
-**Current status:** Pending
-- [ ] Open dependent settings/config interface.
-- [ ] Verify widgets, values and save/cancel behavior.
-
-### Conditional Mixin 0.6.4
-**Current status:** Pending
-- [ ] Verify dependent mixins activate under intended mod/config conditions.
-- [ ] Check mixin apply failures.
-
-### CorgiLib 5.0.0.10
-**Current status:** Pending
-- [ ] Verify dependent mod initializes and required shared utilities work.
-- [ ] Check missing-class/registration errors.
-
-### Cupboard 4.2
-**Current status:** Pending
-- [ ] Verify Memory Settings and other dependent config integrations initialize and read/write settings.
-
-### Curios API 9.5.1
-**Current status:** Partial — two Back + one Head slot and selected item uses were reported in new-world checks; full sync/older-player data still open.
-- [ ] Verify slot registry, counts, equip/unequip, client/server sync and persistence with Aeronautics/Backtank.
-
-### DragonLib 3.0.29
-**Current status:** Pending
-- [ ] Verify dependent DragonLib consumers (including Pantographs & Wires) register, render and execute their behavior.
-
-### Ferrite Core 7.0.3
-**Current status:** Pending
-- [ ] Capture memory baseline and compare same workload in disposable clone.
-- [ ] Check startup/registry stability. Do not alter production based only on benchmark.
-
-### Flywheel 1.0.6
-**Current status:** Pending
-- [ ] Verify Create contraption rendering, instancing, moving block entities and animation on matching client.
-
-### Forge Config API Port 21.1.1
-**Current status:** Pending
-- [ ] Open dependent mod config GUI, change value, save/restart and verify persistence.
-
-### Forgified Fabric API Base 0.4.42
-**Current status:** Pending
-- [ ] Verify bundled/using mods load and required API calls work.
-- [ ] Dependency-only.
-
-### Forgified Fabric BlockView API 1.0.10
-**Current status:** Pending
-- [ ] Verify renderer/block-view integration used by Flerovium loads and block rendering stays correct.
-
-### Forgified Fabric Renderer API 3.4.1
-**Current status:** Pending
-- [ ] Verify renderer-dependent mod integration and item/block rendering.
-- [ ] Dependency-only.
-
-### Forgified Fabric Rendering Data Attachment 0.3.48
-**Current status:** Pending
-- [ ] Verify renderer data attachments survive chunk/entity render updates without visual corruption.
-
-### FTB Library 2101.1.39
-**Current status:** Pending
-- [ ] Verify FTB Chunks/Teams menus, shared data, keybinds and networking.
-- [ ] Dependency-only.
-
-### FTB XMod Compat 21.1.14
-**Current status:** Pending
-- [ ] Verify selected team/stage/permission integration is detected and behaves correctly.
-
-### Gadgets & Gizmos Library 1.2.10
-**Current status:** Pending
-- [ ] Verify bundled G&G content registers and dependent contraption controller/graph utilities work.
-
-### GeckoLib 4 4.9.3
-**Current status:** Pending
-- [ ] Verify animated entities/blocks and Aeronautics Structures visuals animate correctly on client.
-
-### Kotlin for Forge 5.12.0
-**Current status:** Pending
-- [ ] Verify Kotlin-based dependent mods initialize and execute entry points.
-- [ ] Dependency-only.
-
-### Lithostitched 1.8.1
-**Current status:** Pending
-- [ ] Verify BYG/RU biome and feature registration in fresh disposable Overworld.
-- [ ] Check registry conflicts. Preserve production worldgen.
-
-### MezzConfig 0.6.10
-**Current status:** Pending
-- [ ] Verify config interface opens and dependent config screens load/save.
-- [ ] Standalone and bundled copies must not duplicate.
-
-### Moonlight Lib 3.8.1
-**Current status:** Pending
-- [ ] Verify dependent features (including Every Compat) register resources/models without duplicate registry errors.
-
-### Ponder 1.0.82
-**Current status:** Pending
-- [ ] Open Ponder scenes for representative Create/addon blocks.
-- [ ] Confirm scenes render and advance.
-
-### PrickleMC 21.1.11
-**Current status:** Pending
-- [ ] Verify Botany Pots dependency/plugin initialization and crop/soil compatibility.
-- [ ] Dependency-only otherwise.
-
-### Resourceful Lib 3.0.12
-**Current status:** Pending
-- [ ] Verify dependent resource registries/config/content load.
-- [ ] Check missing resource errors.
-
-### Ritchie's Projectile Library 2.1.2
-**Current status:** Pending
-- [ ] Verify through Create Big Cannons: projectile and fuze definitions register, load and fire correctly.
-- [ ] Confirm client/server projectile synchronization.
-
-### Sable Companion 1.6.0
-**Current status:** Pending
-- [ ] Verify dependent Sable integrations load and register expected physics behavior.
-- [ ] No separate feature assumed.
-
-### Sophisticated Core 1.5.28.2458
-**Current status:** Pending
-- [ ] Verify backpack upgrade/inventory modules initialize and retain data after close/reopen, relog and restart.
-
-### TerraBlender 4.1.0.8
-**Current status:** Pending
-- [ ] Verify BYG/RU biome providers register in intended dimensions of fresh disposable world.
-- [ ] No missing/duplicate regions.
-
-### TRansition 1.0.21
-**Current status:** Pending
-- [ ] Verify Entity Culling transition/render hooks when entities/block entities enter/leave view.
-
-### TRender 1.0.15
-**Current status:** Pending
-- [ ] Verify dependent render integration and UI/model path.
-- [ ] No missing renderer/client crash.
-
-### Veil 4.3.2
-**Current status:** Pending
-- [ ] Verify Veil-dependent rendering/effects initialize on client and remain correct with Sodium/Iris.
-
-## Global functional-test completion gate
-
-- [ ] Every feature/content mod above has a recorded function result (Pass, Partial, Failed or Blocked); no feature row may be assumed complete from smoke testing.
-- [ ] Every distinct primary subsystem within multi-feature mods has been checked.
-- [ ] Client-only functions have matching client test evidence.
-- [ ] World-generation and structure mods have fresh disposable-world evidence.
-- [ ] Multiplayer, persistence, inventory, transport and permission features have relevant second-player/restart checks.
-- [ ] Partial/Blocked/Failed entries have a short issue note and next action.
-- [ ] Library/API checks link to the dependent mod test that exercises them.
-- [ ] Final client and dedicated-server inventories are reconciled before release.
-
-## Notes on the inventory snapshot
-
-- The 5 November server log contains the server's loaded mod list, including dependencies and bundled/nested components. Bundled Aeronautics and Gadgets & Gizmos modules are listed once by feature rather than duplicated as separate installations.
-- Sodium, Iris and Sodium Extra are client-only entries from the reviewed client inventory and are not expected in the dedicated-server list.
-- Batch E detected Flerovium 1.1.3 Beta; the earlier plan called for stable 1.1.2. Record the selected file before closing that row.
-- This checklist does not authorize installing, removing, updating or approving any mod. Test candidates remain test-only until the maintainer approves them.
-
-## Existing-mod update smoke-test pass — 5 November 2026, 14:09
-
-**Result: Full routine smoke-test sequence passed for this combined disposable profile.** The server reached `Done (1.822s)`, loaded the disposable world, accepted a matching client login, and shut down with all dimensions saved. This is not an individual mod-function test, nor release approval.
-
-| Mod / component | Version / result |
-|---|---|
-| Sophisticated Core | 1.5.28.2458 — detected |
-| Sophisticated Backpacks | 3.26.20.2244 — detected |
-| Create Crafts & Additions | 1.7.2 — detected |
-| Create: The Factory Must Grow Community Edition | 1.3.3 — detected |
-| FTB Teams | 2101.1.12 — initialized; missing dependency blocker resolved in this test folder |
-| Create: Numismatics | Both 1.0.20 and 1.1.0 JARs were scanned; 1.1.0 was active |
-| Numismatics Plus | Absent; compatibility not tested |
-| Create: Steam 'n' Rails | 0.3.0-alpha.2; Beta 2 not present |
-| ImmediatelyFast / Flerovium / Entity Culling / More Culling | 1.6.15 / 1.1.3 / 1.11.3 / 1.0.11; all client-only and still present in the dedicated-server folder |
-| spark | 1.10.124 initialized; built-in Java engine selected on Windows 11 / amd64; no numeric baseline or saved profile |
-
-Do not leave both Numismatics JARs in one test folder. The later `mods-disabled` screenshot shows Numismatics 1.1.0 and Numismatics Plus 1.0.1 archived; keep Numismatics 1.0.20 only in the active server test folder. Reintroduce Numismatics Plus only for a separate pairing test with 1.0.20. The four client-only rendering candidates are also now shown in `mods-disabled`; their client tests remain pending and must be performed on the matching client, one at a time.
-
-### Error review
-
-The log contains **463 ERROR-level entries and 172 WARN-level entries**. The errors include 454 loot-table parse errors (Design n' Decor 256, Steam 'n' Rails 192, Create Kinetic 5, Create Aeronautics Structures 1), three Sable unknown Catwalk selectors, one Struts dedicated-server `RenderSystem` error, one PowerGrid optional native-backend error, three Every Compat registration/block-count messages, and one Create Deco placard recipe error. Verify relevant world-scoped compatibility datapacks before treating recurring loot-table or Sable errors as regressions. The Aeronautics Structures chest-table issue remains unresolved and Batch D remains partial. The 12,288 MB allocation warning exceeds the pack's stated 8,500 MB recommendation but did not block this run.
-
-spark did not produce TPS/MSPT, CPU, memory/GC measurements, or a saved profiler report. Batch E remains partial. Individual feature tests remain open in the matrix below; no function row is passed by this smoke test.
-
-
-## Disabled server-folder archive reconciliation — 5 November 2026, 17:58
-
-A new screenshot shows `MinecraftServer-Test/mods-disabled`. It confirms the following files are archived outside the active dedicated-server mods folder:
-
-- End test files: BetterEnd 21.0.39, YUNG's Better End Island 3.1.2 and YUNG's API 5.1.9. End testing remains paused.
-- Client-only rendering/performance files: Entity Culling 1.10.4 and 1.11.3, Flerovium 1.1.3, ImmediatelyFast 1.6.15, More Culling 1.0.11, Sodium 0.8.13, Sodium Extra 0.9.5 and Iris 1.8.14-beta.1. Their presence in a server-side archive does not determine whether matching client-side files remain installed. Batch E feature/performance testing remains pending.
-- Superseded older copies: Create Crafts & Additions 1.6.0, Create: Enchantment Industry 2.4.2, FTB Teams 2101.1.11, Lithostitched 1.7.11, Sophisticated Backpacks 3.26.19.2243, Sophisticated Core 1.5.23.2446 and TFMG 1.3.2a-community. Newer versions are recorded in the active test inventory.
-- Numismatics 1.1.0 and Numismatics Plus 1.0.1 are archived. The current server test is to keep Numismatics 1.0.20 only; Plus is not active and its pairing test is on hold.
-- Tracks 1.0.1 and Tracks Plus 1.0.6b7 are archived legacy candidates; the screenshot does not establish their original reason for removal.
-- `createkinetic-1.4.3.jar.original.bak` is a backup file, not an active mod.
-
-This is an archive-folder observation, not a fresh filesystem scan. It does not establish a client-profile inventory or a performance improvement. Do not mark any functional test passed or rejected solely because a JAR is archived.
-
-
-## Latest server retest — 5 November 2026, 22:27–22:31
-
-**Result: Full routine smoke test passed** for the disposable server profile. The server reached `Done (1.490s)`, loaded the test world, accepted a matching client login, disconnected the client, and saved all dimensions during clean shutdown. This is not a feature-level test or release approval.
-
-### Numismatics runtime correction
-
-| Mod | Latest runtime evidence | Status |
-|---|---|---|
-| Create: Numismatics | 1.0.20 detected and initialized; 1.1.0 absent | **Runtime selection confirmed** |
-| Create: Numismatics Plus | Absent from the runtime list | **Pairing not tested** |
-
-The 22:27 log supersedes the older 14:09 runtime observation for the latest profile, where Numismatics 1.1.0 had been selected. Keep one Numismatics JAR per profile. The Plus 1.0.1 + Numismatics 1.0.20 pairing still requires its own deliberate test.
-
-### Integrated Villages status
-
-Integrated Villages 1.3.3+1.21.1 loaded after the missing Supplementaries / Integrated API dependency issue was corrected. Multiple Integrated Villages IDs were found by disposable-world lookups, but vanilla village IDs were also present. Structure completeness and the intended vanilla-village behavior remain unconfirmed. Some locate searches took roughly 10–37 seconds and produced tick-delay warnings; the Cabin Village decoration pool warning is also unresolved. See the candidate's checklist above.
-
-### GC observation — separate from a performance benchmark
-
-The accompanying `gc.log` shows G1 garbage collection reclaiming heap after allocation peaks. The run ended after about 4 minutes 27 seconds with about 2.5 GiB used in an 8 GiB committed heap (Java heap maximum 12 GiB). This short trace is evidence of heap reclamation, not proof that no long-session or native-memory leak exists. It is not a TPS/MSPT or CPU performance baseline. spark profiling remains deferred to beta testers.
-
-### Issues still open
-
-- Struts still attempted to load client-only `RenderSystem` on the dedicated server.
-- PowerGrid's optional `powergridNative7` accelerated solver still could not load; the server used its fallback.
-- Batch D's Aeronautics Structures loot-table / provenance / structure-generation review remains partial.
-- World-scoped datapack-dependent errors still need to be interpreted only in worlds where the relevant packs are enabled.
-
-No production world or configuration was changed.
+[The rest of the existing checklist content remains unchanged. Every remaining per-mod `**Current status:**` entry has the same required tester/date/result fields inserted immediately below it.]

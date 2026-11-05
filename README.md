@@ -15,6 +15,7 @@ Welcome to the public, player-facing home for **Create IronWoven**, a Minecraft 
 - [Support and troubleshooting](SUPPORT.md)
 - [Changelog](CHANGELOG.md)
 - [Documentation guide](DOCUMENTATION.md)
+- [Security and responsible reporting](SECURITY.md)
 
 ## Platform
 

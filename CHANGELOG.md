@@ -4,7 +4,7 @@ Player-facing highlights only. This is not a record of internal commits or test 
 
 ## Unreleased — beta preparation
 
-- **Current development version: `v0.1.110`.** The counter was set retroactively from the recorded 110-entry CurseForge profile snapshot dated 5 November 2026. This inventory-based baseline does not represent 88 public releases; no downloadable beta package has been published.
+- **Current development version: `v0.1.110`.** The counter was set retroactively from the recorded 110-entry CurseForge profile snapshot dated 5 November 2026. This inventory-based baseline does not represent 110 public releases; no downloadable beta package has been published.
 
 - Compatibility testing continues for Minecraft 1.21.1 / NeoForge 21.1.265.
 - Routine server startup, disposable-world load, matching-client login, and log-review smoke tests passed for batches A, B, and C.

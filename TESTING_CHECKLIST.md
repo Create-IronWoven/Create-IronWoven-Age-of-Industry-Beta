@@ -531,13 +531,14 @@ Selected by the maintainer for **Overworld generation only**. Do not treat this 
 - [ ] Verify the exact CurseForge dependency declarations and file versions. Create Aeronautics 1.3.2, Sable 2.0.6, and GeckoLib 4.9.3 were present in the test server.
 - [x] Test in a disposable server/world; no production inventory or world change was made.
 - [x] Server reached `Done`, loaded the disposable world, accepted a client login, and shut down with all dimensions saved.
-- [x] Record the Russian startup message as informational only; it is not an acceptance blocker.
+- [x] Startup message: `Мод Create Aeronautics Structures загружается!`  
+  **English translation:** “Create Aeronautics Structures is loading!” (informational only; not an acceptance blocker).
 - [ ] Fix or explain the candidate-specific `cr_aero_structures:chests/uniform` loot-table parsing ERROR.
 - [ ] Confirm actual generation of abandoned engineering buildings, boats, airships and balloon structures; the log does not establish generation.
 - [ ] Check structure placement/overlap, loot, client/server sync, chunk borders and save/restart.
 - [ ] Confirm it does not generate in the End unless a separate future decision explicitly requests that.
 
-Keep the candidate blocked from acceptance until the language, loot-table and exact CurseForge provenance issues are resolved. It is not production/release approved.
+Keep the candidate pending acceptance until the loot-table issue and exact CurseForge provenance / structure-generation checks are resolved. The Russian startup message is informational and is not a blocker. It is not production/release approved.
 
 ## End workstream pause — maintainer decision
 

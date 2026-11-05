@@ -70,6 +70,17 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 - [ ] Shut the server down cleanly and review the new server `latest.log` and client log for Curios, Backtank, slot-registration, rendering, and mixin errors.
 - [ ] Record the outcome for each add-on separately as passed, partial, or failed for the smoke-test scope.
 
+**Default slot layout prepared — 5 November 2026:** the private master server config now grants one additional Back slot and one Head slot. The expected player layout is two Back slots total, one Head slot, and one Linked Typewriter slot supplied by Create Aeronautics Curios Compat. This is configuration preparation only; runtime verification remains pending.
+
+- [ ] Confirm the dedicated server has the reviewed `config/curios-common.toml` and restart the disposable test server.
+- [ ] After the matching client joins, confirm two Back slots, one Head slot, and one Linked Typewriter slot appear.
+- [ ] Equip a Sophisticated Backpack and standard Create Backtank simultaneously in the two Back slots.
+- [ ] Equip Create Aeronautics Aviator Goggles in the Head slot and verify their intended behavior.
+- [ ] Verify the Aeronautics Linked Typewriter remains available in its separately registered slot.
+- [ ] Review client and server logs for Curios slot registration, synchronization, rendering, or item-equipping errors.
+
+Curios common configuration is loaded server-side and synchronized to clients on join; do not create a duplicate client-side `curios-common.toml`. The production world and production server must remain unchanged during this test. More Curios Slots remains optional for future player-unlocked slots beyond the defaults.
+
 A successful smoke test proves loading, world load, client login, and log status only. It does not by itself prove that the Backtank works when equipped in a Curios slot or that the extra slot recipes and slot behavior are correct. Do not mark either mod approved or release-ready from installation or startup alone. Any deeper feature check should be scoped separately after the smoke-test result.
 
 ### 1. Botany Pots — 21.1.44

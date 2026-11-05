@@ -318,6 +318,7 @@ The latest disposable-server log reached `Done (1.490s)`, prepared the test worl
 - **Integrated Villages 1.3.3+1.21.1:** loaded with required Create 6.0.10, Integrated API 1.9.1, and Supplementaries 3.4.0 present. Several structure IDs were returned by disposable-world lookups, but this does not establish complete structure generation or replacement of vanilla villages.
 - Some Integrated Villages locate searches took roughly 10–37 seconds and triggered tick-delay warnings. An Integrated API warning also identified an empty Cabin Village decoration pool. Keep the candidate under testing until representative structures and performance are checked.
 - **Java GC observation:** the accompanying short GC trace shows heap reclamation after allocation peaks. It does not establish a long-term memory baseline or prove the absence of native/long-session memory issues.
+- **Maintainer-reported GPU-memory observation:** GPU-memory usage appeared lower after Culling / More Culling candidates were disabled or parked. This is unquantified and not a controlled client A/B test; do not treat it as a proven performance gain or memory fix.
 - Struts' dedicated-server RenderSystem issue and PowerGrid's unavailable optional native solver remain open.
 
 The production world and its BYG 2.6.3 / Regions Unexplored 0.6.3 setup remain unchanged. No modpack version increment or release approval is implied by this documentation update.

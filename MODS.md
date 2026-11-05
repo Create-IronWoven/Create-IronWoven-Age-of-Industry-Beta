@@ -5,7 +5,7 @@
 **Loader:** NeoForge 21.1.265  
 **Java:** 21
 
-This page records the latest reviewed test-folder inventory snapshot and identifies client-only additions. It is not a final release manifest. The 88-entry CurseForge profile screenshot and the earlier server log reporting 82 loaded entries (including bundled/nested mods) are separate snapshots and must not be treated as one count. A later disposable-server log detected Create Aeronautics Structures 1.1.0-Beta-3.1 as an Overworld test candidate; it is not part of the accepted inventory. Its Russian startup message is informational only, while a candidate-specific loot-table error remains under review. Exact CurseForge file provenance and structure generation are unverified.
+This page records the latest reviewed test-folder inventory snapshot and identifies client-only additions. It is not a final release manifest. The latest CurseForge screenshot shows `Mods (108)`. The latest File Explorer screenshots show 104 selected JAR files in both the client and dedicated-server `mods` folders. These are separate measures: bundled components can be counted within CurseForge entries without each having a separate JAR. Matching folder counts do not alone prove exact filename equality. A later disposable-server log detected Create Aeronautics Structures 1.1.0-Beta-3.1 as an Overworld test candidate; it is not part of the accepted inventory. Its Russian startup message is informational only, while a candidate-specific loot-table error remains under review. Exact CurseForge file provenance and structure generation are unverified.
 
 Some entries below are libraries, APIs, or bundled components required by other mods. They are listed for transparency even though they do not add a standalone gameplay feature.
 
@@ -107,9 +107,7 @@ These are recorded in the project master list as client-only additions. They do 
 
 | Mod | Version recorded | Installation |
 |---|---|---|
-| Sodium | 0.8.13 | Client only |
 | Iris | 1.8.14-beta.1 | Client only |
-| Sodium Extra | 0.9.5 NeoForge | Client only |
 
 ## Libraries, APIs, and support components
 
@@ -143,7 +141,7 @@ These support other mods and may not appear as separate gameplay features.
 
 - The server inventory was reconciled against the successful dedicated-server test on 4 November 2026. It is not a promise that every item above will remain in the public release.
 - Some Create Aeronautics and Gadgets & Gizmos components are bundled inside parent mod JARs.
-- Sodium, Iris, and Sodium Extra are client-only.
+- Sodium 0.8.13 and Sodium Extra 0.9.5 were removed from the CurseForge profile on 5 November 2026. Iris remains listed as a client-only entry in the historical inventory; its presence in the latest profile has not been reconfirmed.
 - The 4 November server smoke test confirms Botany Pots 21.1.44 and Construction Sticks 1.5.0 are loaded. This confirms server loading, not full feature testing. The final client and server manifests will be published with the beta release after a fresh inventory and clean-install test.
 - The internal server config sets two Back slots and one Head slot; the maintainer reports a newly created test world displays two Back slots. Config files will be included with the first beta package. Create Aeronautics Curios Compat supplies the Linked Typewriter slot. More Curios Slots 1.4 was intentionally removed and is not part of the current test inventory; slot counts are controlled by config, not crafting.
 - Third-party mods remain the property of their authors. This page identifies the tested components; it does not redistribute their JARs.
@@ -159,7 +157,7 @@ See [Mods planned, on hold, and excluded](MOD_PLANS.md) for the difference betwe
 
 ## Performance baseline and test-only candidates — 4 November 2026
 
-The recorded performance baseline already includes ModernFix 5.27.27 and FerriteCore 7.0.3 in the server inventory. Sodium 0.8.13, Sodium Extra 0.9.5 and Iris 1.8.14-beta.1 are client graphics mods. They are already part of the recorded profile; do not duplicate them with another renderer or memory optimizer.
+The recorded performance baseline includes ModernFix 5.27.27 and FerriteCore 7.0.3 in the server inventory. Sodium 0.8.13 and Sodium Extra 0.9.5 were subsequently removed from the CurseForge profile. Iris 1.8.14-beta.1 remains a historical client-graphics entry whose current profile presence has not been reconfirmed.
 
 Botany Pots, Construction Sticks, Lootr, and YUNG's Better End Island + YUNG's API have also been exercised in separate test-server runs. Their appearance in test notes does not make them production-approved or part of a final release manifest. See [MOD_PLANS.md](MOD_PLANS.md) and [TESTING_CHECKLIST.md](TESTING_CHECKLIST.md) for the status and outstanding tests.
 
@@ -168,7 +166,7 @@ New performance and quality-of-life recommendations remain candidates only. They
 
 ## Newer user-supplied mods-folder snapshot — 4 November 2026
 
-A follow-up launcher screenshot explicitly displays `Content (88)` and `Mods (88)`, confirming **88 mods in the current profile**. The earlier manual filename transcription gave 89 visible names; that visual count was one over the launcher-confirmed profile total and must not be treated as the profile count. The screenshot includes client-only graphics files Sodium, Iris and Sodium Extra and is not a replacement for a fresh dedicated-server manifest. The older 79 top-level server JAR / 82 loaded-mod figure is a historical server snapshot and must remain separate.
+This 4 November 2026 screenshot is a historical snapshot and is superseded by the 5 November profile screenshot showing `Mods (110)`, followed by the latest screenshot showing `Mods (108)` after Sodium and Sodium Extra were removed. Do not use the historical 88-entry count as the current profile count.
 
 
 ## Failed update-trial snapshot — 5 November 2026, 13:43
@@ -248,7 +246,7 @@ The screenshot also shows Bookshelf 21.1.81, FastFurnace 9.0.1, FastSuite 6.0.7,
 - ImmediatelyFast, Flerovium, Entity Culling, and More Culling are not visible in this latest server-folder screenshot. This does not establish their client-profile status.
 - The screenshot is an inventory observation, not proof of each mod's features or acceptance into the final pack.
 
-**Modpack version remains `v0.1.088`.** The project versioning rules require each individual content change to be tested as required and explicitly accepted before its own sequential version increment is assigned. Merely observing a newer JAR in a disposable test folder does not qualify.
+**Current modpack version: `v0.1.110-R002`.** The `R001` and `R002` removal increments record the two maintainer-approved client-only removals, Sodium and Sodium Extra. Future additions/updates use the `UPDATE` counter; future mod removals use the separate `R` counter.
 
 
 ## Disabled/archive server-folder snapshot — 5 November 2026, 17:58

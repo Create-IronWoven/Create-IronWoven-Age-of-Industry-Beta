@@ -207,3 +207,21 @@ The latest server/debug logs are a separate test-folder snapshot and do not repl
 | Create: Steam 'n' Rails | 0.3.0-alpha.2 | Beta 2 not present |
 
 The server reached `Done (1.493s)` and prepared the disposable world. Client login and clean shutdown are not shown. Do not put both Numismatics versions in one `mods` folder; test Plus only with 1.0.20. This is not an accepted final inventory or release manifest.
+
+## Later disposable update smoke-test snapshot — 5 November 2026, 14:09
+
+This is a later test-folder snapshot only and does not replace the accepted inventory above or establish a final release manifest.
+
+| Mod / component | Version detected | Interpretation |
+|---|---:|---|
+| Sophisticated Core | 1.5.28.2458 | Detected |
+| Sophisticated Backpacks | 3.26.20.2244 | Detected |
+| Create Crafts & Additions | 1.7.2 | Detected |
+| Create: The Factory Must Grow Community Edition | 1.3.3 | Detected |
+| FTB Teams | 2101.1.12 | Detected and initialized |
+| Create: Numismatics | Both 1.0.20 and 1.1.0 JARs scanned; 1.1.0 active | 1.0.20 was not active |
+| Numismatics Plus | Absent from runtime list | Compatibility not tested |
+| Create: Steam 'n' Rails | 0.3.0-alpha.2 | Beta 2 not present |
+| ImmediatelyFast / Flerovium / Entity Culling / More Culling | 1.6.15 / 1.1.3 / 1.11.3 / 1.0.11 | Client-only files still detected in dedicated-server folder |
+
+The server reached `Done (1.822s)`, loaded the disposable world, accepted a matching client login, and shut down with all dimensions saved. This confirms the routine smoke sequence only. The log contained 463 ERROR-level and 172 WARN-level entries; see [Testing Checklist](TESTING_CHECKLIST.md) for the summary. No feature-function pass or production/release approval is implied.

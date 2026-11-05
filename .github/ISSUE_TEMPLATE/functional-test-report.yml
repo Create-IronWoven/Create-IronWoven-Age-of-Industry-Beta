@@ -26,8 +26,8 @@ body:
     id: test-date
     attributes:
       label: Test date
-      description: Use YYYY-MM-DD.
-      placeholder: "2026-11-05"
+      description: Use DD-MM-YYYY.
+      placeholder: "05-11-2026"
     validations:
       required: true
   - type: input

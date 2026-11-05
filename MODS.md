@@ -5,7 +5,7 @@
 **Loader:** NeoForge 21.1.265  
 **Java:** 21
 
-This page tells players which mods are recorded in the current test installation and which are client-only. The server log reported 82 loaded mods when bundled/nested mods were counted. The lists below reflect the latest available folder screenshot snapshot, not a final release manifest. A later disposable-server log detected Create Aeronautics Structures 1.1.0-Beta-3.1 as a test candidate; it is not included in the accepted inventory because its startup message was Russian and its loot table produced an error. Versions and contents may change before public beta release.
+This page records the latest reviewed test-folder inventory snapshot and identifies client-only additions. It is not a final release manifest. The 88-entry CurseForge profile screenshot and the earlier server log reporting 82 loaded entries (including bundled/nested mods) are separate snapshots and must not be treated as one count. A later disposable-server log detected Create Aeronautics Structures 1.1.0-Beta-3.1 as an Overworld test candidate; it is not part of the accepted inventory. Its Russian startup message is informational only, while a candidate-specific loot-table error remains under review. Exact CurseForge file provenance and structure generation are unverified.
 
 Some entries below are libraries, APIs, or bundled components required by other mods. They are listed for transparency even though they do not add a standalone gameplay feature.
 
@@ -147,7 +147,7 @@ These support other mods and may not appear as separate gameplay features.
 - Some Create Aeronautics and Gadgets & Gizmos components are bundled inside parent mod JARs.
 - Sodium, Iris, and Sodium Extra are client-only.
 - The 4 November server smoke test confirms Botany Pots 21.1.44 and Construction Sticks 1.5.0 are loaded. This confirms server loading, not full feature testing. The final client and server manifests will be published with the beta release after a fresh inventory and clean-install test.
-- The internal server config sets two Back slots and one Head slot; the maintainer reports a newly created test world displays two Back slots. Config files will be included with the first beta upload. Create Aeronautics Curios Compat supplies the Linked Typewriter slot. More Curios Slots 1.4 was intentionally removed because slot counts should be controlled by config, not crafting.
+- The internal server config sets two Back slots and one Head slot; the maintainer reports a newly created test world displays two Back slots. Config files will be included with the first beta package. Create Aeronautics Curios Compat supplies the Linked Typewriter slot. More Curios Slots 1.4 was intentionally removed and is not part of the current test inventory; slot counts are controlled by config, not crafting.
 - Third-party mods remain the property of their authors. This page identifies the tested components; it does not redistribute their JARs.
 
 See [Mods planned, on hold, and excluded](MOD_PLANS.md) for the difference between installed mods and future candidates.

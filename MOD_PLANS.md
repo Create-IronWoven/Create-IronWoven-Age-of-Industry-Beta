@@ -160,7 +160,7 @@ These mods are not wanted for Create IronWoven and must not be reintroduced as c
 
 ## Suggest a mod
 
-Players can use the [feature suggestion form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=feature_suggestion.yml). Include the official project page, exact supported Minecraft / NeoForge versions, required dependencies, and why the mod fits Create IronWoven. Suggestions are reviewed, not automatically accepted.
+Players can use the [feature suggestion form](../../issues/new?template=feature_suggestion.yml). Include the official project page, exact supported Minecraft / NeoForge versions, required dependencies, and why the mod fits Create IronWoven. Suggestions are reviewed, not automatically accepted.
 
 
 ## Every Compat (Wood Good) — research complete; test pending
@@ -174,7 +174,7 @@ Players can use the [feature suggestion form](https://github.com/alexth110987/Cr
 - [ ] Stage B only after Stage A passes: use a new separate disposable world/profile with the exact BetterEnd: New Dawn 21.0.39 dependency stack to test Pythadendron wood registration and Chipped variants. Do not reuse the 2B test world.
 - [ ] Record any missing wood support, duplicate recipes, visual errors or registry conflicts.
 
-Do not change the production inventory or world. Full details: [Every Compat Research and Test Plan](https://github.com/alexth110987/Create-IronWoven/blob/main/docs/EVERY_COMPAT_RESEARCH_2026-11-04.md).
+Do not change the production inventory or world. Full details: Every Compat Research and Test Plan.
 
 ## Lootr Compatibility: BetterEnd — new candidate (4 November 2026)
 
@@ -212,7 +212,7 @@ Existing End candidates remain: YUNG's Better End Island, BetterEnd: New Dawn, B
 
 **Test sequence:** The Beyond alone → The Beyond + Isleweaver → Stellarity after exact-file verification → Unusual End → Extended End → structure mods one at a time. Keep End Beyond as a separate comparison branch. Use a fresh disposable world for every stage. Check biomes, ore generation, mobs, structures, loot, recipes, building variants, chunk borders, client/server sync, save/restart and logs. Preserve the production world, BYG 2.6.3, Regions Unexplored 0.6.3 and current world-generation JSON.
 
-Detailed findings and CurseForge links: [private maintainer research report](https://github.com/alexth110987/Create-IronWoven/blob/main/docs/END_EXPANSION_RESEARCH_2026-11-04.md).
+Detailed findings and CurseForge links: private maintainer research report.
 
 
 ### Stage A result — 4 November 2026

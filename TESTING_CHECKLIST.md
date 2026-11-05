@@ -56,7 +56,7 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 
 ### Curios add-on test group — 5 November 2026
 
-**Status: TESTING — installed in the test setup; smoke-test evidence pending.** The maintainer reports installing both 1.21.1 NeoForge client/server candidates. This is a separate add-on test group, not Batch 7 and not production approval.
+**Status: TESTING — installed in the test setup; partial in-game slot observation recorded, log review pending.** The maintainer reports installing both 1.21.1 NeoForge client/server candidates. This is a separate add-on test group, not Batch 7 and not production approval.
 
 | Mod | Exact CurseForge file | Required baseline |
 |---|---|---|
@@ -73,7 +73,7 @@ The 4 November dedicated-server test reached `Done`, loaded the test world, acce
 **Default slot layout prepared — 5 November 2026:** the private master server config now grants one additional Back slot and one Head slot. The expected player layout is two Back slots total, one Head slot, and one Linked Typewriter slot supplied by Create Aeronautics Curios Compat. This is configuration preparation only; runtime verification remains pending.
 
 - [ ] Confirm the dedicated server has the reviewed `config/curios-common.toml` and restart the disposable test server.
-- [ ] After the matching client joins, confirm two Back slots, one Head slot, and one Linked Typewriter slot appear.
+- [x] In-game slot display observed: three Back slots, one Head slot, and one Aeronautics slot. This differs from the intended two Back slots; investigate the source of the extra slot.
 - [ ] Equip a Sophisticated Backpack and standard Create Backtank simultaneously in the two Back slots.
 - [ ] Equip Create Aeronautics Aviator Goggles in the Head slot and verify their intended behavior.
 - [ ] Verify the Aeronautics Linked Typewriter remains available in its separately registered slot.

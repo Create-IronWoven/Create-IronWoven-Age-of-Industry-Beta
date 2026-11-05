@@ -19,9 +19,9 @@
 
 ## Logs and privacy
 
-Logs can contain usernames, local file paths, server addresses, and other identifying details. Read through files before posting them. Remove passwords, access tokens, private addresses, and information you do not want public.
+Logs and screenshots can contain usernames, local file paths, private server addresses, personal data, passwords, access tokens, or exploitable security details. Review and sanitize them before sharing. Never post passwords, access tokens, private server addresses, personal data, or exploitable security details in public issues.
 
-Do not upload entire world folders or private server backups. A short relevant excerpt is usually enough.
+Do not upload private backups or full world folders. Share only a short, relevant, sanitized excerpt.
 
 ## Where to report
 

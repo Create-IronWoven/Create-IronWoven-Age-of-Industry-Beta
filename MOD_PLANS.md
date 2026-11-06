@@ -27,7 +27,7 @@ This page gives players a short overview of planned, considered, paused, and exc
 | Performance and rendering | Partial. No measured server performance baseline yet; client rendering candidates require separate client tests. |
 | Botany Pots and Construction Sticks | Loaded in a test group; feature validation remains open. |
 | Lootr | Partial compatibility observations; independent per-player loot still needs verification. |
-| Every Compat (Wood Good) | Accepted baseline target is 2.11.57 + Moonlight Lib 3.8.2 after the paired Windows disposable startup/world/login/shutdown smoke test. The Golden Cherry Leaves duplicate remains open. Feature-level block/recipe/model/texture/drop checks are delegated to beta testers. The original Create World client profile now contains both accepted JARs; the normal dedicated-server baseline still needs the matching pair. |
+| Every Compat (Wood Good) | Accepted baseline target is 2.11.57 + Moonlight Lib 3.8.2 after the paired Windows disposable startup/world/login/shutdown smoke test. The Golden Cherry Leaves duplicate remains open. Feature-level block/recipe/model/texture/drop checks are delegated to beta testers. The original Create World client profile and normal MinecraftServer-Test dedicated-server baseline both contain the accepted JARs; startup/login verification on this updated baseline remains. |
 | Exploration tools and Create Big Cannons | Routine startup/login smoke tests passed; this is not feature validation or release approval. |
 
 Detailed technical evidence, exact file/dependency checks, and test history are maintained in the private development repository. The public [testing checklist](TESTING_CHECKLIST.md) is the place to see current testing tasks.

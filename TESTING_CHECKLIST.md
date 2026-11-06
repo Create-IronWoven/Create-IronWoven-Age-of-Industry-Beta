@@ -1367,3 +1367,16 @@ The maintainer supplied two screenshots from the engineering house:
 - Engineering-house Lootr barrel at `(524, 98, -3954)`: **PENDING — tooltip says loot not generated yet; open it to trigger/check generation**.
 - Crashed-airship vanilla chest: **FAIL — no loot table assigned; `Items: []`**.
 - Official mod JAR / production world: **UNCHANGED**.
+
+
+## Engineering-house Lootr barrel — first-open loot generation — 6 November 2026
+
+The maintainer opened the previously inspected `lootr:loot_barrel` at approximately `(524, 98, -3954)`. The new screenshot shows the barrel GUI populated with multiple item stacks.
+
+**Result: PASS — Lootr generated loot when the barrel was opened.** The earlier Jade tooltip "Loot not generated yet" represented the unopened / not-yet-generated state, not a confirmed loot failure. This confirms that at least this Lootr barrel in the engineering house generates loot correctly on first opening.
+
+- Engineering-house standard barrel: **PASS — items visible**.
+- Engineering-house Lootr barrel: **PASS — multiple items visible after opening**.
+- Crashed-airship vanilla chest: **FAIL — no loot table assigned; `Items: []`**.
+- Other structure containers: **NOT TESTED**.
+- Official mod JAR / production world: **UNCHANGED**.

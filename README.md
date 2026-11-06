@@ -27,6 +27,8 @@ Create IronWoven is a Minecraft modpack built around **Create**, **Create Aerona
 | Java | 21 |
 | Mod source | CurseForge only |
 
+**Server platform status:** Windows is the current development/test environment. Linux server support is planned but has not yet been tested; Linux setup and validation are pending. Do not interpret planned Linux support as a verified compatibility claim.
+
 This repository is the public information and feedback hub. It does not host modpack downloads. When a beta is available, its release and installation instructions will be published here.
 
 ## Feedback

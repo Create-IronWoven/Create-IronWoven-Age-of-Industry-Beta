@@ -14,7 +14,7 @@
 
 This checklist is a feature-test matrix, not a live installed-mod manifest. It follows the recorded test inventory and separately labels current client-only candidates, completed checks, holds, and dated historical evidence. For current file inventories and versions, use [MODS.md](MODS.md): its 6 November server snapshot is separate from the latest CurseForge client-profile screenshot. Do not treat historical snapshot tables below as current installation instructions. This is not a final release manifest.
 
-## Current verification snapshot — 6 November 2026
+## Current verification snapshot — 7 November 2026
 
 This section is the current status summary. Dated trial tables later in this file are historical evidence and must not be read as the current installed inventory.
 

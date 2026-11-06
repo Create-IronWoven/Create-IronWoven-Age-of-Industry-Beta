@@ -2,19 +2,31 @@
 
 This page lists current, unresolved issues. Completed fixes are documented in the testing checklist and compatibility records.
 
+## Test setup note
+
+IronWoven compatibility datapacks are world-scoped. The 6 November 15:12 disposable-world log repeated several targeted errors because that newly created world's datapacks folder was empty. A corrected 15:54 retest enabled all four IronWoven datapacks; the targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk, and Create Deco placard log errors were absent. When creating a new test world, confirm the required IronWoven datapacks are present and enabled before reviewing compatibility errors.
+
 ## Under investigation
-
-### World-scoped compatibility datapacks
-
-Some compatibility fixes require IronWoven datapacks to be loaded by each test world. Errors returned in a fresh disposable world where those datapacks were not present. Confirm the relevant datapacks are loaded before treating the errors as a mod failure or a failed fix.
 
 ### Struts dedicated-server client class
 
-The tested dedicated server reports that Struts attempts to load the client-only class `com.mojang.blaze3d.systems.RenderSystem`. Server startup and client login still completed in maintainer smoke tests. Investigation is ongoing.
+The tested dedicated server attempts to load the client-only class `com.mojang.blaze3d.systems.RenderSystem` through Struts' `StrutRenderSystemAccessor`. Server startup and client login completed, but the invalid-dist error remains.
 
 ### PowerGrid optional native solver
 
-The tested Windows server could not load the optional `powergridNative7` native library, so PowerGrid's accelerated solver is unavailable.
+The tested Windows server could not load the optional `powergridNative7` native library. PowerGrid's accelerated solver is unavailable; the log does not show that the entire mod failed to start.
+
+### Every Compat duplicate block registration
+
+Every Compat reports a duplicate registration for `everycomp:ch/herbsandharvest/golden_cherry_fruit_leaves`. Other compatibility blocks register, but this duplicate remains unresolved.
+
+### Create Aeronautics Structures loot table
+
+The `cr_aero_structures:chests/uniform` loot table fails to parse its `minecraft:dyed_color` provider. Exact file provenance and structure generation also remain under review.
+
+### Shulker Box Tooltip / Supplementaries integration
+
+During dedicated-server client login, the Supplementaries plugin attempts to load the client-only Shulker Box Tooltip `PreviewRenderer` class and fails to register Supplementaries providers. Shulker Box Tooltip still registers its own 31 providers in the test log; the Supplementaries integration remains unresolved.
 
 ## Reporting a new issue
 

@@ -1,4 +1,4 @@
-# Mods in Create IronWoven
+# Mods in Ironwoven: Age of Industry
 
 **Latest dedicated-server folder snapshot:** 6 November 2026 — 106 visible JAR files. Client inventory is separate and unchanged by this server-only screenshot.  
 **Minecraft:** 1.21.1  

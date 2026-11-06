@@ -744,12 +744,13 @@ Dependency evidence: the first startup attempt lacked Supplementaries and Integr
 | Verify accurate descriptions and layout. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Shulker Box Tooltip 5.1.9+1.21.1
-**Current status:** Pending
+**Current status:** Partial — client-side provider registration works; the dedicated-server Supplementaries provider integration triggers the open upstream [issue #263](https://github.com/MisterPeModder/ShulkerBoxTooltip/issues/263). A reversible client config workaround is under investigation, not yet tested.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|
 | Hover filled shulkers. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Verify contents preview, item counts, scroll/page behavior and provider integrations. 31 providers registered is not visual proof. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test dedicated-server login with client `preview.serverIntegration=false`. | Pending | Disposable MinecraftServer-Test + matching CurseForge Create World profile | Not recorded | DD-MM-YYYY | Proposed config-only test; expected to prevent SBT handshake/server plugin load while preserving local client provider registration. Ender Chest synchronization will be disabled during the test. See the public known issue for details. |
 
 ### Mouse Tweaks 2.26.1
 **Current status:** Pending

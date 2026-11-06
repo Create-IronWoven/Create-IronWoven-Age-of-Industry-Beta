@@ -23,7 +23,7 @@ This page gives players a short overview of planned, considered, paused, and exc
 
 | Area | Public status |
 |---|---|
-| Create Aeronautics Structures | Partial test. Test-only uniform-loot datapack passed runtime loot testing; one Overworld airship located and visually confirmed; other structure variants and release-safe fix/distribution decision remain open; original JAR unchanged. |
+| Create Aeronautics Structures | Partial. All 11 valid Overworld structure IDs have locate/visual-presence evidence; crashed-airship hillside placement was visually accepted and `plane` is invalid. Test-only uniform-loot override passed runtime testing. Engineering-house standard and Lootr barrels produced items; one crashed-airship vanilla chest has no assigned loot table. Remaining container-loot coverage is delegated to beta testers; the specific chest defect and release-safe uniform-table decision remain open; original JAR unchanged. |
 | Performance and rendering | Partial. No measured server performance baseline yet; client rendering candidates require separate client tests. |
 | Botany Pots and Construction Sticks | Loaded in a test group; feature validation remains open. |
 | Lootr | Partial compatibility observations; independent per-player loot still needs verification. |

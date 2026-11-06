@@ -1212,3 +1212,13 @@ The accompanying `gc.log` shows G1 garbage collection reclaiming heap after allo
 - World-scoped datapack-dependent errors still need to be interpreted only in worlds where the relevant packs are enabled.
 
 No production world or configuration was changed.
+
+## Existing-mod update candidate — Every Compat 2.11.57 — 6 November 2026
+
+**Status: approved for a disposable paired-update test only; not accepted for the pack.**
+
+- Current accepted pair: Every Compat 2.11.56 + Moonlight Lib 3.8.1.
+- Test Every Compat 2.11.57 NeoForge (CurseForge file [9468938](https://www.curseforge.com/minecraft/mc-mods/every-compat/files/9468938)) together with Moonlight Lib 3.8.2 NeoForge (file [9458248](https://www.curseforge.com/minecraft/mc-mods/selene/files/9458248)). Version 2.11.57 requires Moonlight 3.8.2 or newer; do not pair it with 3.8.1.
+- Use a separate disposable profile/world. Keep Minecraft 1.21.1, NeoForge 21.1.265, Java 21, Chipped, BYG, Regions Unexplored, and the production world unchanged.
+- Verify matching server/client versions, startup, world load, client login, Carpenter's Table recipes, generated blocks/models/textures, JEI, drops, placement, synchronization, known duplicate registration, registry footprint, save/restart, and logs.
+- A startup smoke-test pass is not feature validation or approval. Do not change the accepted mod inventory, public MODS.md, manifest, or modpack version until the paired test is complete and the maintainer separately accepts the update.

@@ -51,7 +51,9 @@ The 5 November combined tests and the corrected 6 November 15:54 datapack-enable
 | Production/release approval | Not granted | NOT APPROVED |
 
 
-## Existing-mod update trial — 5 November 2026, 13:43
+## Historical snapshot — existing-mod update trial, 5 November 2026, 13:43
+
+**Historical record only — not the current installed-mod list.** The Entity Culling entry below records detection in this old disposable-server folder. Entity Culling was subsequently removed from the current CurseForge `Create World/mods` client profile; the maintainer's 6 November 2026 screenshot confirms it is absent. Do not interpret this old row as a current installation or active test candidate.
 
 **Result: FAILED before server startup completed.** This was a separate disposable-server update attempt, not a replacement for the earlier successful combined smoke test.
 
@@ -59,7 +61,7 @@ The 5 November combined tests and the corrected 6 November 15:54 datapack-enable
 |---|---:|---|
 | Sophisticated Core | 1.5.28.2458 | Detected |
 | Sophisticated Backpacks | 3.26.20.2244 | Detected |
-| Entity Culling | 1.11.3 | Detected in the server folder; client-only |
+| Entity Culling | 1.11.3 | Historical detection in 5 Nov disposable server folder only; removed from current client profile on 6 Nov 2026 |
 | Create Crafts & Additions | 1.7.2 | Detected |
 | Create: Numismatics | 1.1.0 | Dependency conflict with Numismatics Plus 1.0.1 |
 | Create: TFMG Community Edition | 1.3.3 | Detected |

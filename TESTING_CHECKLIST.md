@@ -114,7 +114,7 @@ The log contains 6 ERROR-level records and 172 WARN-level records. Remaining err
 - **Batch A:** JER, Enchantment Descriptions and Shulker Box Tooltip passed combined startup/login smoke testing. A later 6 November test exposed a dedicated-server error in the Shulker Box Tooltip / Supplementaries provider integration; Shulker Box Tooltip's own providers still registered. Feature rendering/use remains to be checked.
 - **Batch B:** Nature's Compass and Explorer's Compass passed combined startup/login smoke testing; actual biome/structure searches remain to be checked.
 - **Batch C:** Create Big Cannons and Ritchie's Projectile Library passed combined startup/login smoke testing; cannon operation remains to be checked.
-- **Batch E:** spark initialized, but no saved profiler report or numeric baseline was recorded. ImmediatelyFast, Flerovium, Entity Culling and More Culling are now shown in the server's `mods-disabled` archive; their individual client tests have not been completed.
+- **Batch E:** spark initialized, but no saved profiler report or numeric baseline was recorded. Entity Culling is confirmed removed from the current CurseForge client profile by the 6 November 2026 screenshot. ImmediatelyFast, Flerovium and More Culling remain separate optional client candidates; their individual client tests have not been completed.
 
 ## How to complete this checklist
 
@@ -820,13 +820,9 @@ Dependency evidence: the first startup attempt lacked Supplementaries and Integr
 | Compare item, particle and entity rendering/FPS against same Sodium baseline. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Inspect artifacts. Stable 1.1.2 remains a separate planned candidate. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Entity Culling 1.10.4 (client-only)
-**Current status:** Pending
+### Entity Culling — removed from current client profile
 
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Check culling of Create contraptions, Aeronautics ships/sublevels, entities and block entities. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Hidden objects must reappear when visible. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+The 6 November 2026 CurseForge `Create World/mods` screenshot confirms Entity Culling is absent from the current client mod folder. No further client functional test is planned unless the maintainer explicitly re-adds it.
 
 ### More Culling 1.0.11 (client-only)
 **Current status:** Pending
@@ -1159,7 +1155,7 @@ Dependency evidence: the first startup attempt lacked Supplementaries and Integr
 | Create: Numismatics | Both 1.0.20 and 1.1.0 JARs were scanned; 1.1.0 was active |
 | Numismatics Plus | Absent; compatibility not tested |
 | Create: Steam 'n' Rails | 0.3.0-alpha.2; Beta 2 not present |
-| ImmediatelyFast / Flerovium / Entity Culling / More Culling | 1.6.15 / 1.1.3 / 1.11.3 / 1.0.11; all client-only and still present in the dedicated-server folder |
+| ImmediatelyFast / Flerovium / Entity Culling / More Culling | Historical 5 Nov server-folder detection; not a current client inventory |
 | spark | 1.10.124 initialized; built-in Java engine selected on Windows 11 / amd64; no numeric baseline or saved profile |
 
 Do not leave both Numismatics JARs in one test folder. The later `mods-disabled` screenshot shows Numismatics 1.1.0 and Numismatics Plus 1.0.1 archived; keep Numismatics 1.0.20 only in the active server test folder. Reintroduce Numismatics Plus only for a separate pairing test with 1.0.20. The four client-only rendering candidates are also now shown in `mods-disabled`; their client tests remain pending and must be performed on the matching client, one at a time.
@@ -1176,7 +1172,7 @@ spark did not produce TPS/MSPT, CPU, memory/GC measurements, or a saved profiler
 A new screenshot shows `MinecraftServer-Test/mods-disabled`. It confirms the following files are archived outside the active dedicated-server mods folder:
 
 - End test files: BetterEnd 21.0.39, YUNG's Better End Island 3.1.2 and YUNG's API 5.1.9. End testing remains paused.
-- Client-only rendering/performance files: Entity Culling 1.10.4 and 1.11.3, Flerovium 1.1.3, ImmediatelyFast 1.6.15, More Culling 1.0.11, Sodium 0.8.13, Sodium Extra 0.9.5 and Iris 1.8.14-beta.1. Their presence in a server-side archive does not determine whether matching client-side files remain installed. Batch E feature/performance testing remains pending.
+- Historical server-side archive contents: Entity Culling 1.10.4 and 1.11.3, Flerovium 1.1.3, ImmediatelyFast 1.6.15, More Culling 1.0.11, Sodium 0.8.13, Sodium Extra 0.9.5 and Iris 1.8.14-beta.1. These archive records do not describe the current client profile. The 6 November 2026 client-folder screenshot confirms Entity Culling is now absent from the current profile.
 - Superseded older copies: Create Crafts & Additions 1.6.0, Create: Enchantment Industry 2.4.2, FTB Teams 2101.1.11, Lithostitched 1.7.11, Sophisticated Backpacks 3.26.19.2243, Sophisticated Core 1.5.23.2446 and TFMG 1.3.2a-community. Newer versions are recorded in the active test inventory.
 - Numismatics 1.1.0 and Numismatics Plus 1.0.1 are archived. The current server test is to keep Numismatics 1.0.20 only; Plus is not active and its pairing test is on hold.
 - Tracks 1.0.1 and Tracks Plus 1.0.6b7 are archived legacy candidates; the screenshot does not establish their original reason for removal.

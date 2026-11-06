@@ -14,7 +14,7 @@ A local Struts 1.3.1 mixin-side workaround was applied and script-verified on ma
 
 ### PowerGrid optional native solver
 
-The tested PowerGrid 0.6.2 package omitted its optional Windows and Linux native solver binaries, matching upstream [PowerGrid issue #1165](https://github.com/patryk3211/PowerGrid/issues/1165). A local test copied the official 0.6.1 Windows DLL into the disposable server and matching CurseForge `.pg-native` folders without changing the 0.6.2 JAR. On 6 November 2026 at 18:29 the dedicated-server log reported `Native backend loaded successfully` and reached `Done (1.837s)` with no native-load failure. **Client-side native loading and an in-game electrical network test remain pending.** Linux is not yet tested and will require the `.so`.
+The tested PowerGrid 0.6.2 package omitted its optional Windows and Linux native solver binaries, matching upstream [PowerGrid issue #1165](https://github.com/patryk3211/PowerGrid/issues/1165). A local test copied the official 0.6.1 Windows DLL into the disposable server and matching CurseForge `.pg-native` folders without changing the 0.6.2 JAR. On 6 November 2026, both the 18:29 dedicated-server log and 18:34 CurseForge client log reported `Native backend loaded successfully`; the server reached `Done (1.837s)`, and the client connected to the test server and entered the world. **Both Windows native-load checks passed; an in-game electrical network/circuit test remains pending.** Linux is not yet tested and will require the `.so`.
 
 ### Every Compat duplicate block registration
 

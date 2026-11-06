@@ -26,7 +26,7 @@ This section is the current status summary. Dated trial tables later in this fil
 | Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |
 | PowerGrid 0.6.2 | PARTIAL — internal Windows native loading and client join passed with restored 0.6.1 DLL; electrical-network behavior reserved for beta testers; Linux untested |
 | Every Compat | PARTIAL — duplicate Golden Cherry Leaves registration remains open; newer 2.11.57 + Moonlight 3.8.2 pairing was approved for a disposable test only, not accepted |
-| Create Aeronautics Structures | PARTIAL — server smoke passed; structure generation and exact file provenance unverified; uniform chest loot-table parse error remains under review |
+| Create Aeronautics Structures | PARTIAL — server smoke passed; JAR metadata matches CurseForge file 8399115; uniform loot-table override prepared but not runtime-tested; Overworld structure generation unverified |
 | Integrated Villages | PARTIAL — server load and structure-ID lookups observed; generation completeness, vanilla-village behavior and performance remain unverified |
 | Entity Culling | REMOVED from current CurseForge client profile; confirmed absent in 6 Nov client-folder screenshot; not an active test candidate |
 | ImmediatelyFast / Flerovium / More Culling | Optional client candidates only; not confirmed as currently installed by latest client screenshot; do not treat as current installed mods |
@@ -202,13 +202,14 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 | Verify hitboxes, particles, controls and physics on client/server. Recheck existing loot-table and mixin findings. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create Aeronautics Structures 1.1.0-Beta-3.1 (test-only)
-**Current status:** Partial — server smoke passed; generation unproven; one loot-table parse error remains.
+**Current status:** Partial — the uploaded JAR metadata matches official CurseForge file 8399115 by version. Its invalid uniform-table component has been identified and a 16-color test-only datapack override prepared. The override has not been runtime-tested; Overworld structure generation remains unverified.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
-| Fresh disposable Overworld: confirm engineering houses, abandoned boats, airships and hot-air balloons generate. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Test engineer trader and chest loot. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Recheck cr_aero_structures:chests/uniform. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Enable the IronWoven Aeronautics Structures uniform-loot test datapack and confirm the uniform-table parse error is absent. | Patch prepared — runtime test pending | Disposable MinecraftServer-Test / world_lootr_test; Minecraft 1.21.1 / NeoForge 21.1.265 | Maintainer | DD-MM-YYYY | Source: private fix report and test datapack. Keep the four existing IronWoven world-scoped compatibility datapacks enabled too. |
+| Run `/loot give @s loot cr_aero_structures:chests/uniform` repeatedly and inspect generated loot. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Verify armour selection and the 16-color palette; confirm sword/axe/spyglass pools remain available. Save log and screenshot. |
+| Fresh disposable Overworld: confirm engineering houses, abandoned boats, airships and hot-air balloons generate. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Structure generation is a separate acceptance gate; startup or loot-table parsing alone does not prove generation. |
+| Test engineer trader and chest loot in generated structures. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Record actual chest contents and feature behavior after structures generate. |
 
 ### Create Aeronautics Curios Compat 2.0
 **Current status:** Partial — assigned-slot checks user-reported working; repeatable synced test still needed.

@@ -8,11 +8,33 @@
 
 # Full Installed-Mod Functional Testing Checklist
 
-**Last updated:** 5 November 2026  
+**Last reviewed:** 6 November 2026  
 **Target:** Minecraft 1.21.1 · NeoForge 21.1.265 · Java 21  
 **Approved download source:** CurseForge only
 
-This is the full functional-test matrix for the recorded Create IronWoven test installation. It currently tracks 124 feature and support-module entries. It covers more than the active batch queue. The inventory basis is the 5 November dedicated-server mod list plus the client-only entries in the latest reviewed client inventory. This is a test snapshot, not a final release manifest.
+This checklist is a feature-test matrix, not a live installed-mod manifest. It follows the recorded test inventory and separately labels current client-only candidates, completed checks, holds, and dated historical evidence. For current file inventories and versions, use [MODS.md](MODS.md): its 6 November server snapshot is separate from the latest CurseForge client-profile screenshot. Do not treat historical snapshot tables below as current installation instructions. This is not a final release manifest.
+
+## Current verification snapshot — 6 November 2026
+
+This section is the current status summary. Dated trial tables later in this file are historical evidence and must not be read as the current installed inventory.
+
+| Area | Current verified status |
+|---|---|
+| Dedicated-server smoke test | PASS — corrected 6 Nov datapack-enabled disposable profile reached Done, loaded world, accepted matching client, and shut down cleanly |
+| World-scoped compatibility datapacks | PASS at log level — four packs enabled; targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk and Create Deco placard errors absent in corrected retest |
+| Struts | PARTIAL — local patched server/client runtime and visible test pieces passed; official CurseForge JAR remains unpatched, so standard-install/release issue remains open |
+| Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |
+| PowerGrid 0.6.2 | PARTIAL — Windows native loading passed on disposable server and matching client with restored 0.6.1 Windows DLL; circuit behavior untested; Linux untested |
+| Every Compat | PARTIAL — duplicate Golden Cherry Leaves registration remains open; newer 2.11.57 + Moonlight 3.8.2 pairing was approved for a disposable test only, not accepted |
+| Create Aeronautics Structures | PARTIAL — server smoke passed; structure generation and exact file provenance unverified; uniform chest loot-table parse error remains under review |
+| Integrated Villages | PARTIAL — server load and structure-ID lookups observed; generation completeness, vanilla-village behavior and performance remain unverified |
+| Entity Culling | REMOVED from current CurseForge client profile; confirmed absent in 6 Nov client-folder screenshot; not an active test candidate |
+| ImmediatelyFast / Flerovium / More Culling | Optional client candidates only; not confirmed as currently installed by latest client screenshot; do not treat as current installed mods |
+| Linux dedicated server | NOT TESTED — Linux system has not yet been set up |
+| Individual feature matrix | OPEN — pending rows remain pending until the specific behavior is tested and evidence is recorded |
+| Public beta / release | NOT APPROVED — no downloadable beta package exists |
+
+**Current inventory source:** [MODS.md](MODS.md) holds separate server and client observations. The latest 6 November Windows client screenshot confirms Entity Culling is absent from the CurseForge `Create World/mods` folder. The 6 November server inventory screenshot is not a client inventory. No production world or production world-generation configuration was changed.
 
 **How to submit test results — the checklist updates automatically:**
 
@@ -28,7 +50,7 @@ A server startup or an item appearing in JEI is not, by itself, a function-test 
 
 ## Smoke test is not a function test
 
-The 5 November combined tests and the corrected 6 November 15:54 datapack-enabled retest reached the server-ready `Done` message, loaded `world_lootr_test`, accepted a matching client login, and shut down with all dimensions saved. In the 6 November retest, all four IronWoven world-scoped compatibility datapacks were enabled and the targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk, and Create Deco placard error entries were absent. This proves the corrected combined test profile can start, load, and accept a client; **it does not prove every installed mod's functions work**.
+The 6 November 15:54 datapack-enabled disposable-server retest reached `Done`, loaded `world_lootr_test`, accepted a matching client login, and shut down with all dimensions saved. All four IronWoven world-scoped compatibility datapacks were enabled; the targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk, and Create Deco placard error entries were absent. Later same-day targeted retests also confirmed the local Struts workaround and the Shulker Box Tooltip / Supplementaries client workaround; see the dated records below. The 6 November 18:29 server and 18:34 client logs additionally confirmed PowerGrid's Windows native backend loads after restoring the 0.6.1 Windows DLL to the disposable `.pg-native` folders, while leaving the 0.6.2 JAR unchanged. These are test-profile-specific results; **they do not prove every installed mod's functions work or establish Linux compatibility**.
 
 - **Smoke test:** mod discovery, server/client startup as appropriate, world load, login, shutdown and log review.
 - **Function test:** exercise the actual feature(s) that justify keeping the mod: item/block interaction, machine process, transport, GUI, world generation, rendering, recipe/loot behavior or synchronization.
@@ -47,9 +69,19 @@ The 5 November combined tests and the corrected 6 November 15:54 datapack-enable
 | Matching client login | Matching client joined in the 6 Nov run | PASS |
 | Clean shutdown | All dimensions saved in the 6 Nov run | PASS |
 | Individual feature tests | Matrix below | OPEN — mostly not yet function-tested |
-| Matching client-only mod startup | No isolated client log for the 14:09 test folder supplied | OPEN |
+| Matching client-only mod startup | Targeted client evidence exists for PowerGrid and local Struts / tooltip workaround tests; no complete isolated optional-client candidate sweep | PARTIAL — optional candidates remain open |
 | Production/release approval | Not granted | NOT APPROVED |
 
+
+## PowerGrid Windows native-load retest — 6 November 2026, 18:29–18:34
+
+**Result: Windows native loading passed on the disposable server and matching client; circuit behavior is still untested.** The PowerGrid 0.6.2 JAR was not modified. The official 0.6.1 Windows DLL was copied into the disposable server and CurseForge client `.pg-native` directories. The 18:29 server log and 18:34 client log both reported `Native backend loaded successfully`. The server reached `Done (1.837s)`; the matching client connected to `127.0.0.1:25565` and entered the world. This workaround must not be mistaken for an official 0.6.2 package fix or an accepted modpack change.
+
+- Windows server native load: PASS — disposable profile.
+- Windows client native load: PASS — matching CurseForge profile.
+- PowerGrid electrical network / component behavior: NOT TESTED.
+- Linux native solver: NOT TESTED — Linux requires the Linux `.so`; do not use the Windows DLL.
+- Production files and modpack manifest: unchanged.
 
 ## Historical snapshot — existing-mod update trial, 5 November 2026, 13:43
 
@@ -75,10 +107,10 @@ The 5 November combined tests and the corrected 6 November 15:54 datapack-enable
 
 The server did not reach `Done`, load a world, accept a client, or complete a normal shutdown. ImmediatelyFast, Flerovium, Entity Culling, and More Culling were also detected in the dedicated-server folder; these rendering mods belong on the client and need separate client testing.
 
-**Next gate:** restore the Numismatics dependency pair, add FTB Teams to matching client/server profiles, remove client-only rendering mods from the server folder, then retry the disposable-server smoke test. No update from this attempt is approved for release.
+**Outcome of this historical attempt:** dependency and folder blockers were addressed in later disposable test profiles; see later dated retests and the current `MODS.md` inventory. Do not use this old next-gate text as current setup instructions.
 
 
-## Previous existing-mod update retry — 5 November 2026, 13:58 (historical)
+## Historical snapshot — previous existing-mod update retry, 5 November 2026, 13:58
 
 **Result: Partial server startup/world-load pass.** The retry used a disposable server. FTB Teams 2101.1.12 was detected and initialized, and the server reached `Done (1.493s)!` after preparing `world_lootr_test`. The supplied server/debug logs do not show a matching client login or a clean shutdown.
 
@@ -86,7 +118,7 @@ The server did not reach `Done`, load a world, accept a client, or complete a no
 |---|---:|---|
 | Sophisticated Core | 1.5.28.2458 | Detected |
 | Sophisticated Backpacks | 3.26.20.2244 | Detected |
-| Entity Culling | 1.11.3 | Client-only; still present in server folder |
+| Entity Culling | 1.11.3 | Historical detection in the 5 Nov disposable server folder; removed from current client profile on 6 Nov 2026 |
 | Create Crafts & Additions | 1.7.2 | Detected |
 | Create: The Factory Must Grow Community Edition | 1.3.3 | Detected |
 | FTB Teams | 2101.1.12 | Detected and initialized |
@@ -96,9 +128,9 @@ The server did not reach `Done`, load a world, accept a client, or complete a no
 
 Do not keep both Numismatics versions in one `mods` folder. Test Numismatics Plus 1.0.1 with Numismatics 1.0.20 only. Test Numismatics 1.1.0 separately without Plus until a compatible Plus release is verified.
 
-ImmediatelyFast, Flerovium, Entity Culling, and More Culling are client-only and must be tested on the matching client, not in the dedicated-server folder. The earlier 6 November 15:12 log contained 463 ERROR-level entries, but its new disposable world's `datapacks/` folder was empty, so the recurring Design n' Decor / Steam 'n' Rails / Create Kinetic / Sable / Create Deco entries did not test the maintained compatibility datapacks. The corrected 15:54 run enabled all four packs and those targeted errors were absent. The corrected run contains 6 ERROR-level records and 172 WARN-level records; remaining error findings are Struts, PowerGrid, Every Compat, Create Aeronautics Structures, and the Shulker Box Tooltip / Supplementaries integration.
+At the time of this historical retry, ImmediatelyFast, Flerovium, Entity Culling, and More Culling were noted as client-only files found in the disposable dedicated-server folder. This does not describe the current client profile. The earlier 6 November 15:12 log contained 463 ERROR-level entries, but its new disposable world's `datapacks/` folder was empty, so the recurring Design n' Decor / Steam 'n' Rails / Create Kinetic / Sable / Create Deco entries did not test the maintained compatibility datapacks. The corrected 15:54 run enabled all four packs and those targeted errors were absent. The corrected run contains 6 ERROR-level records and 172 WARN-level records; remaining error findings are Struts, PowerGrid, Every Compat, Create Aeronautics Structures, and the Shulker Box Tooltip / Supplementaries integration.
 
-**Next gate at the time of this retry:** use one Numismatics version per profile; include Numismatics Plus only with 1.0.20; keep client-only rendering mods out of the server; then provide client login and clean-shutdown evidence. The 14:09 follow-up below completed the routine smoke sequence; the correct Numismatics pair, isolated client tests, and performance baseline remain open. This retry itself was not a complete smoke-test pass or release approval.
+**Historical next gate — superseded:** the 14:09 and 22:27–22:31 follow-ups below completed the routine smoke sequence and corrected Numismatics runtime selection for that disposable profile. This retry itself was not a complete smoke-test pass or release approval. Current inventory is maintained separately in `MODS.md`.
 
 
 ## Corrected compatibility datapack smoke retest — 6 November 2026, 15:54
@@ -116,7 +148,7 @@ The log contains 6 ERROR-level records and 172 WARN-level records. Remaining err
 - **Batch A:** JER, Enchantment Descriptions and Shulker Box Tooltip passed combined startup/login smoke testing. A later 6 November test exposed a dedicated-server error in the Shulker Box Tooltip / Supplementaries provider integration; Shulker Box Tooltip's own providers still registered. Feature rendering/use remains to be checked.
 - **Batch B:** Nature's Compass and Explorer's Compass passed combined startup/login smoke testing; actual biome/structure searches remain to be checked.
 - **Batch C:** Create Big Cannons and Ritchie's Projectile Library passed combined startup/login smoke testing; cannon operation remains to be checked.
-- **Batch E:** spark initialized, but no saved profiler report or numeric baseline was recorded. Entity Culling is confirmed removed from the current CurseForge client profile by the 6 November 2026 screenshot. ImmediatelyFast, Flerovium and More Culling remain separate optional client candidates; their individual client tests have not been completed.
+- **Client-only rendering candidates:** Entity Culling is removed from the current CurseForge client profile (confirmed by the 6 November screenshot) and is not in the active test queue. ImmediatelyFast, Flerovium and More Culling remain optional candidates only; verify their presence against a fresh client export before testing. spark profiling is deferred to beta testers and is not an internal development gate.
 
 ## How to complete this checklist
 
@@ -439,7 +471,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 | Verify placement, orientation, repeat behavior and resource requirements. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Power Grid 0.6.2
-**Current status:** Partial — upstream packaging omission confirmed. The official 0.6.1 Windows DLL is in both disposable `.pg-native` folders; server and matching CurseForge client logs both confirm native loading with PowerGrid 0.6.2 unchanged. Client connection to the server also passed. Functional circuit testing remains pending. Linux remains untested and requires its own `.so`.
+**Current status:** Partial — Windows native loading confirmed; electrical function testing and Linux validation remain open. The official 0.6.1 Windows DLL was copied into both disposable `.pg-native` folders while PowerGrid 0.6.2 remained unchanged. The 6 November 18:29 server and 18:34 matching CurseForge client logs report `Native backend loaded successfully`; the server reached `Done (1.837s)` and the client joined. This is a local Windows workaround, not an upstream package fix. Linux remains untested and requires its own `.so`.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
@@ -1108,7 +1140,6 @@ The 6 November 2026 CurseForge `Create World/mods` screenshot confirms Entity Cu
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
-| Verify Entity Culling transition/render hooks when entities/block entities enter/leave view. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### TRender 1.0.15
 **Current status:** Pending
@@ -1143,7 +1174,7 @@ The 6 November 2026 CurseForge `Create World/mods` screenshot confirms Entity Cu
 - Batch E detected Flerovium 1.1.3 Beta; the earlier plan called for stable 1.1.2. Record the selected file before closing that row.
 - This checklist does not authorize installing, removing, updating or approving any mod. Test candidates remain test-only until the maintainer approves them.
 
-## Existing-mod update smoke-test pass — 5 November 2026, 14:09
+## Historical smoke-test record — 5 November 2026, 14:09
 
 **Result: Full routine smoke-test sequence passed for this combined disposable profile.** The server reached `Done (1.822s)`, loaded the disposable world, accepted a matching client login, and shut down with all dimensions saved. This is not an individual mod-function test, nor release approval.
 
@@ -1160,7 +1191,7 @@ The 6 November 2026 CurseForge `Create World/mods` screenshot confirms Entity Cu
 | ImmediatelyFast / Flerovium / Entity Culling / More Culling | Historical 5 Nov server-folder detection; not a current client inventory |
 | spark | 1.10.124 initialized; built-in Java engine selected on Windows 11 / amd64; no numeric baseline or saved profile |
 
-Do not leave both Numismatics JARs in one test folder. The later `mods-disabled` screenshot shows Numismatics 1.1.0 and Numismatics Plus 1.0.1 archived; keep Numismatics 1.0.20 only in the active server test folder. Reintroduce Numismatics Plus only for a separate pairing test with 1.0.20. The four client-only rendering candidates are also now shown in `mods-disabled`; their client tests remain pending and must be performed on the matching client, one at a time.
+Historical 5 November archive note. The later 22:27–22:31 runtime record confirmed Numismatics 1.0.20 alone in that disposable profile. Never combine two Numismatics versions in one profile. Do not infer current client installation from the old server-side `mods-disabled` archive.
 
 ### Error review
 
@@ -1169,7 +1200,7 @@ The log contains **463 ERROR-level entries and 172 WARN-level entries**. The err
 spark did not produce TPS/MSPT, CPU, memory/GC measurements, or a saved profiler report. Batch E remains partial. Individual feature tests remain open in the matrix below; no function row is passed by this smoke test.
 
 
-## Disabled server-folder archive reconciliation — 5 November 2026, 17:58
+## Historical archive record — disabled server-folder snapshot, 5 November 2026, 17:58
 
 A new screenshot shows `MinecraftServer-Test/mods-disabled`. It confirms the following files are archived outside the active dedicated-server mods folder:
 
@@ -1183,7 +1214,7 @@ A new screenshot shows `MinecraftServer-Test/mods-disabled`. It confirms the fol
 This is an archive-folder observation, not a fresh filesystem scan. It does not establish a client-profile inventory or a performance improvement. Do not mark any functional test passed or rejected solely because a JAR is archived.
 
 
-## Latest server retest — 5 November 2026, 22:27–22:31
+## Historical retest record — server run, 5 November 2026, 22:27–22:31
 
 **Result: Full routine smoke test passed** for the disposable server profile. The server reached `Done (1.490s)`, loaded the test world, accepted a matching client login, disconnected the client, and saved all dimensions during clean shutdown. This is not a feature-level test or release approval.
 
@@ -1207,13 +1238,13 @@ The accompanying `gc.log` shows G1 garbage collection reclaiming heap after allo
 ### Issues still open
 
 - Struts' dedicated-server `RenderSystem` issue does not recur in the 6 November 16:40–16:47 local patched-profile runtime test, and the shown components render. The standard-install/release issue remains open because the local JAR patch is not part of the official CurseForge file or modpack manifest; two `girder_strut_structure` waterlogged-variant model warnings remain.
-- PowerGrid's optional `powergridNative7` accelerated solver still could not load; the server used its fallback.
+- PowerGrid 0.6.2's packaged native solver binaries remain omitted upstream. Windows native loading passed in the disposable server and client after copying the official 0.6.1 Windows DLL into both `.pg-native` folders; this workaround is not part of the pack or official 0.6.2 JAR. Electrical circuit behavior remains untested, and Linux still needs a separate `.so` validation.
 - Batch D's Aeronautics Structures loot-table / provenance / structure-generation review remains partial.
 - World-scoped datapack-dependent errors still need to be interpreted only in worlds where the relevant packs are enabled.
 
 No production world or configuration was changed.
 
-## Existing-mod update candidate — Every Compat 2.11.57 — 6 November 2026
+## Historical candidate decision — Every Compat 2.11.57 — 6 November 2026
 
 **Status: approved for a disposable paired-update test only; not accepted for the pack.**
 

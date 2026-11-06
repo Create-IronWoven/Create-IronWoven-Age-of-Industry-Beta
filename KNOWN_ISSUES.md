@@ -18,7 +18,7 @@ The tested PowerGrid 0.6.2 package omitted its optional Windows and Linux native
 
 ### Every Compat duplicate block registration
 
-Every Compat reports a duplicate registration for `everycomp:ch/herbsandharvest/golden_cherry_fruit_leaves`. Other compatibility blocks register, but this duplicate remains unresolved.
+Every Compat reports a duplicate registration for `everycomp:ch/herbsandharvest/golden_cherry_fruit_leaves`. The same duplicate appeared on both client and server during the 6 November 2026 disposable smoke test with the accepted Every Compat 2.11.57 + Moonlight Lib 3.8.2 pair. Other compatibility blocks register, but this duplicate remains unresolved; the update does not fix it.
 
 ### Create Aeronautics Structures loot table
 

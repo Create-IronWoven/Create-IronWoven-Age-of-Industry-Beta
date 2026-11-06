@@ -62,7 +62,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 
 ## Building, decoration, food, and storage
 
-| Mod | Version in test snapshot |
+| Mod | Version / status |
 |---|---|
 | Every Compat (Wood Good) | 2.11.57 — accepted baseline target; paired with Moonlight Lib 3.8.2; local baseline deployment pending |
 | Chipped | 4.0.2 |

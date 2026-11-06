@@ -26,7 +26,7 @@ This section is the current status summary. Dated trial tables later in this fil
 | Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |
 | PowerGrid 0.6.2 | PARTIAL — internal Windows native loading and client join passed with restored 0.6.1 DLL; electrical-network behavior reserved for beta testers; Linux untested |
 | Every Compat | PARTIAL — duplicate Golden Cherry Leaves registration remains open; newer 2.11.57 + Moonlight 3.8.2 pairing was approved for a disposable test only, not accepted |
-| Create Aeronautics Structures | PARTIAL — test-only uniform loot override passed runtime testing; all 11 valid structure IDs have locate/visual presence evidence in disposable Overworld; crashed-airship hillside placement reviewed and visually accepted as a partially buried wreck; loot/interaction checks and release-safe fix/distribution decision remain open; `plane` ID rejected by Minecraft; original JAR unchanged |
+| Create Aeronautics Structures | PARTIAL — test-only uniform loot override passed runtime testing; all 11 valid structure IDs have locate/visual presence evidence in disposable Overworld; crashed-airship hillside placement visually accepted; maintainer spot checks: engineering-house standard and Lootr barrels generated loot; crashed-airship vanilla chest has no assigned loot table; remaining structure/container loot coverage is delegated to beta testers; release-safe fix/distribution decision remains open; `plane` ID rejected; original JAR unchanged |
 | Integrated Villages | PARTIAL — server load and structure-ID lookups observed; generation completeness, vanilla-village behavior and performance remain unverified |
 | Entity Culling | REMOVED from current CurseForge client profile; confirmed absent in 6 Nov client-folder screenshot; not an active test candidate |
 | ImmediatelyFast / Flerovium / More Culling | Optional client candidates only; not confirmed as currently installed by latest client screenshot; do not treat as current installed mods |
@@ -1380,3 +1380,30 @@ The maintainer opened the previously inspected `lootr:loot_barrel` at approximat
 - Crashed-airship vanilla chest: **FAIL — no loot table assigned; `Items: []`**.
 - Other structure containers: **NOT TESTED**.
 - Official mod JAR / production world: **UNCHANGED**.
+
+
+## Create Aeronautics Structures — loot testing handoff to beta testers — 6 November 2026
+
+**Maintainer instruction: do not continue exhaustive loot testing during the current maintainer test session. Remaining loot coverage is assigned to beta testers.**
+
+### Maintainer spot-check evidence
+
+| Structure / container | Result |
+|---|---|
+| Engineering house — standard barrel | **PASS** — items visibly present |
+| Engineering house — Lootr barrel | **PASS** — multiple items appeared after first opening |
+| Crashed airship — vanilla chest at `(-835, 105, -6752)` | **FAIL** — block data showed `Items: []` and no `LootTable` / `LootTableSeed` |
+
+The Lootr tooltip **"Loot not generated yet"** is not itself a failure; testers must open the Lootr container before judging its loot.
+
+### Beta tester tasks
+
+During normal exploration, beta testers should check loot in the remaining Aeronautics structure variants and their containers. For each result, record:
+- Structure variant and container type (vanilla chest, barrel, Lootr barrel, etc.).
+- Whether items appeared after opening the container.
+- Approximate coordinates.
+- Screenshot evidence where practical; include relevant logs for errors.
+
+Report empty containers only after opening them. Do not manually fill containers or modify the official mod JAR. The test-only uniform-loot override is not an approved release fix.
+
+**Handoff:** remaining structure/container loot coverage — **DELEGATED TO BETA TESTERS**. The crashed-airship chest's missing loot-table assignment remains an open maintainer investigation; this handoff does not mark it fixed.

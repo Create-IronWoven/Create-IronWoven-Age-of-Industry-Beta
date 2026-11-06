@@ -26,7 +26,7 @@ This section is the current status summary. Dated trial tables later in this fil
 | Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |
 | PowerGrid 0.6.2 | PARTIAL — internal Windows native loading and client join passed with restored 0.6.1 DLL; electrical-network behavior reserved for beta testers; Linux untested |
 | Every Compat | PARTIAL — duplicate Golden Cherry Leaves registration remains open; newer 2.11.57 + Moonlight 3.8.2 pairing was approved for a disposable test only, not accepted |
-| Create Aeronautics Structures | PARTIAL — test-only uniform loot override passed runtime testing; airship, boat, engineering house, hot-air balloon, crash-airballoon, crash-pillager-airballoon, crash-pillager-airship, crash-plane, pillager-airballoon and pillager-airship visually confirmed in disposable Overworld; crash-airship, loot/interaction checks and release-safe fix/distribution decision remain open; `plane` ID rejected by Minecraft; original JAR unchanged |
+| Create Aeronautics Structures | PARTIAL — test-only uniform loot override passed runtime testing; all 11 valid structure IDs have locate/visual presence evidence in disposable Overworld; crash-airship is present but appears partly buried/occluded by hillside and needs placement review; loot/interaction checks and release-safe fix/distribution decision remain open; `plane` ID rejected by Minecraft; original JAR unchanged |
 | Integrated Villages | PARTIAL — server load and structure-ID lookups observed; generation completeness, vanilla-village behavior and performance remain unverified |
 | Entity Culling | REMOVED from current CurseForge client profile; confirmed absent in 6 Nov client-folder screenshot; not an active test candidate |
 | ImmediatelyFast / Flerovium / More Culling | Optional client candidates only; not confirmed as currently installed by latest client screenshot; do not treat as current installed mods |
@@ -1299,3 +1299,15 @@ The maintainer supplied screenshots showing locate results, teleports and genera
 These passes confirm structure presence and visible generation only, not loot contents, generation frequency, entity behavior or all interactive features. The uniform-loot workaround remains a separate test-only datapack; the official mod JAR and production world remain unchanged.
 
 **Next structure lookup:** `/locate structure cr_aero_structures:crash_airship`
+
+
+## Create Aeronautics Structures — crashed-airship generation check — 6 November 2026
+
+**Result: structure presence confirmed; terrain placement flagged for review.** The maintainer ran `/locate structure cr_aero_structures:crash_airship`. Minecraft reported a nearest result at approximately `[-848, ~-6768]`, 403 blocks away, and teleported the player to `(-847.5, 198.05, -6767.5)`. The screenshot shows an exposed section of the crash site with a chest and mechanical / track-like blocks, while most of the expected structure appears embedded in or occluded by the hillside.
+
+- Structure ID lookup / presence: **PASS**.
+- Visual placement quality: **REVIEW REQUIRED — appears partially buried / terrain-occluded**.
+- Chest contents, loot and interactions: **NOT TESTED**.
+- Official mod JAR and production world: **UNCHANGED**.
+
+Do not call this a clean placement pass until the maintainer inspects the structure around the hill and confirms whether the partial burial is intentional.

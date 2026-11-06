@@ -1335,3 +1335,20 @@ The maintainer opened the chest visible in the `cr_aero_structures:crash_airship
 - Official mod JAR and production world: **UNCHANGED**.
 
 This result applies only to the chest inspected. It does not yet prove that every structure loot table is broken. Investigate the chest's loot-table initialization and active datapack/mod resources before changing the official JAR or beta package.
+
+
+## Create Aeronautics Structures — crashed-airship chest block-entity diagnosis — 6 November 2026
+
+The maintainer ran `/data get block -835 105 -6752` against the chest at the crashed-airship site. Minecraft returned the block-entity data:
+
+```snbt
+{x: -835, y: 105, z: -6752, Items: [], id: "minecraft:chest"}
+```
+
+**Finding: the chest has an empty `Items` list and no `LootTable` or `LootTableSeed` fields in the returned data.** This is stronger evidence than simply observing an empty inventory: the placed chest currently has no loot table assigned in its block-entity data. It points to the structure/template placement or loot-table assignment step, rather than a loot table that was assigned and rolled an empty result.
+
+This finding is limited to this inspected chest. Do not conclude that every chest in every Aeronautics structure is affected until more examples are checked. Preserve the official mod JAR and test world state; do not manually populate the chest or edit the JAR. Next diagnostic: inspect another freshly generated Aeronautics structure chest and compare its block-entity data for a `LootTable` field.
+
+- Crashed-airship chest: **FAIL — no loot table assigned; `Items: []`**.
+- Other structure chests: **NOT TESTED**.
+- Official mod JAR / production world: **UNCHANGED**.

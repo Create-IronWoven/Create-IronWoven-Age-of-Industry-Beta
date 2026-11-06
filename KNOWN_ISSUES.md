@@ -22,7 +22,7 @@ Every Compat reports a duplicate registration for `everycomp:ch/herbsandharvest/
 
 ### Create Aeronautics Structures loot table
 
-The `cr_aero_structures:chests/uniform` loot table fails to parse its `minecraft:dyed_color` provider. Exact file provenance and structure generation also remain under review.
+The maintainer-supplied `cr_aero_structures.jar` identifies version 1.1.0-Beta-3.1 and matches official CurseForge file 8399115 by version (the downloaded artifact was not hash-compared). Inspection found that four leather-armour entries put a `minecraft:uniform` number-provider object inside `minecraft:dyed_color.rgb`, where Minecraft 1.21.1 expects a concrete RGB integer. A test-only world datapack override is prepared with a 16-color vanilla dye palette; it preserves the original armour selection count and other loot pools. Static JSON/ZIP validation passed, but the override has not yet been tested in Minecraft. Overworld structure generation remains unverified.
 
 ### Shulker Box Tooltip / Supplementaries integration
 

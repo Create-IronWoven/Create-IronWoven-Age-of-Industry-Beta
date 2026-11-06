@@ -10,7 +10,7 @@ IronWoven compatibility datapacks are world-scoped. The 6 November 15:12 disposa
 
 ### Struts dedicated-server client class
 
-The tested dedicated server attempts to load the client-only class `com.mojang.blaze3d.systems.RenderSystem` through Struts' `StrutRenderSystemAccessor`. Server startup and client login completed, but the invalid-dist error remains.
+The tested dedicated server attempts to load the client-only class `com.mojang.blaze3d.systems.RenderSystem` through Struts' `StrutRenderSystemAccessor`. A local mixin-side workaround has now been applied and script-verified on matching disposable server and CurseForge client JARs; original backups were preserved. Fresh runtime logs and client-side rendering verification are still pending, so this issue remains open.
 
 ### PowerGrid optional native solver
 

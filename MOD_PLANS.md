@@ -23,7 +23,7 @@ This page gives players a short overview of planned, considered, paused, and exc
 
 | Area | Public status |
 |---|---|
-| Create Aeronautics Structures | Partial test. Supplied JAR metadata matches CurseForge file 8399115 by version; test-only uniform-loot datapack prepared but not runtime-tested; Overworld structure generation remains unverified. |
+| Create Aeronautics Structures | Partial test. Test-only uniform-loot datapack passed runtime loot testing in disposable Windows world; original JAR unchanged; Overworld structure generation and release-safe fix/distribution decision remain open. |
 | Performance and rendering | Partial. No measured server performance baseline yet; client rendering candidates require separate client tests. |
 | Botany Pots and Construction Sticks | Loaded in a test group; feature validation remains open. |
 | Lootr | Partial compatibility observations; independent per-player loot still needs verification. |

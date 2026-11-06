@@ -8,9 +8,9 @@ IronWoven compatibility datapacks are world-scoped. The 6 November 15:12 disposa
 
 ## Under investigation
 
-### Struts dedicated-server client class
+### Struts dedicated-server mixin / visual verification
 
-The tested dedicated server attempts to load the client-only class `com.mojang.blaze3d.systems.RenderSystem` through Struts' `StrutRenderSystemAccessor`. A local mixin-side workaround has now been applied and script-verified on matching disposable server and CurseForge client JARs; original backups were preserved. Fresh runtime logs and client-side rendering verification are still pending, so this issue remains open.
+A local Struts 1.3.1 mixin-side workaround was applied and script-verified on matching disposable server and CurseForge client JARs. Fresh server and client logs from 6 November contain no `RenderSystem` or `StrutRenderSystemAccessor` messages; the server reached `Done`, accepted the matching client, and shut down with all dimensions saved. The dedicated-server mixin error therefore passes log-level retest. The client log still warns that `struts:blockstates/girder_strut_structure.json` has no model for either `waterlogged=false` or `waterlogged=true`. Visual confirmation of the affected Struts block is still required before this item can be closed.
 
 ### PowerGrid optional native solver
 

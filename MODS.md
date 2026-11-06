@@ -112,7 +112,6 @@ These are optional client-side additions/candidates. They are not required for t
 |---|---|---|
 | ImmediatelyFast | 1.6.15 | Optional client-only rendering/performance candidate — isolated client test pending |
 | Flerovium | 1.1.3 Beta | Optional client-only rendering/performance candidate — observed file; stable 1.1.2 was the original plan, so decide which exact release to test before proceeding |
-| Entity Culling | 1.11.3 | Optional client-only rendering/performance candidate — isolated client test pending; exact CurseForge file provenance still to reconcile |
 | More Culling | 1.0.11 | Optional client-only rendering/performance candidate — isolated client test pending; exact CurseForge file provenance still to reconcile |
 
 **Supporting dependency:** Cloth Config API 15.0.140 was detected with More Culling. Keep it client-side with the More Culling test where required; it is a dependency, not a separate optional gameplay mod.
@@ -257,7 +256,7 @@ The screenshot also shows Bookshelf 21.1.81, FastFurnace 9.0.1, FastSuite 6.0.7,
 ### Important test-folder observations
 
 - At the earlier 17:48 active-folder snapshot, both Numismatics 1.0.20 and 1.1.0 were visible. The later 17:58 `mods-disabled` screenshot shows Numismatics 1.1.0 and Numismatics Plus 1.0.1 in the archive. The intended active server profile is Numismatics 1.0.20 only; verify the active `mods` folder before the next run. Never keep both Numismatics versions in one profile.
-- ImmediatelyFast, Flerovium, Entity Culling, and More Culling are not visible in this latest server-folder screenshot. This does not establish their client-profile status.
+- The 6 November 2026 CurseForge `Create World/mods` client-profile screenshot confirms Entity Culling is absent from the current client mod folder. It is removed from the current optional-candidate list; older server-folder and archive references below are historical observations.
 - The screenshot is an inventory observation, not proof of each mod's features or acceptance into the final pack.
 
 **Current modpack version: `v0.1.110-R002`.** The `R001` and `R002` removal increments record the two maintainer-approved client-only removals, Sodium and Sodium Extra. Future additions/updates use the `UPDATE` counter; future mod removals use the separate `R` counter.

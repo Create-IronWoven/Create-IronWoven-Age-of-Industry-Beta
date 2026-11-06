@@ -1,12 +1,14 @@
 # Beta Status — v0.1.110-R002
 
 **Current development version:** `v0.1.110-R002` (not yet a downloadable public beta)  
-**Last updated:** 5 November 2026  
+**Last updated:** 6 November 2026  
 **Minecraft:** 1.21.1 · **NeoForge:** 21.1.265 · **Java:** 21
 
 ## Current status
 
-The current development version `v0.1.110-R002` uses content-change counter `110` as the retroactive baseline from the 5 November 2026 CurseForge screenshot (`Mods (110)`). Removal counter `R002` records two client-only removals: Sodium 0.8.13 and Sodium Extra 0.9.5. The latest profile screenshot shows `Mods (108)`. The client and server folders each show 104 JAR files; these are different inventory measures because bundled components may be counted separately by CurseForge. This is not a claim of 110 public releases. No downloadable beta package exists.
+The 6 November server-folder screenshot is an inventory observation only. It does not confirm runtime loading, compatibility, feature testing, or release approval. The visible Railways, Supplementaries, and Sophisticated Backpacks Create Integration version differences, plus the unversioned `cr_aero_structures.jar`, remain to be reconciled. The current development version remains `v0.1.110-R002`.
+
+The current development version `v0.1.110-R002` uses content-change counter `110` as the retroactive baseline from the 5 November 2026 CurseForge screenshot (`Mods (110)`). Removal counter `R002` records two client-only removals: Sodium 0.8.13 and Sodium Extra 0.9.5. The latest profile screenshot shows `Mods (108)`. The latest dedicated-server folder screenshot on 6 November shows 106 visible JAR files, superseding the earlier 104-file server-folder screenshot. The client inventory remains separate and is not updated by this server-only screenshot. This is not a claim of 110 public releases. No downloadable beta package exists.
 
 Create IronWoven is in **internal compatibility and functional testing**. There is currently no public downloadable beta package and no release date has been announced.
 

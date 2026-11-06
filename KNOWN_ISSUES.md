@@ -10,7 +10,7 @@ IronWoven compatibility datapacks are world-scoped. The 6 November 15:12 disposa
 
 ### Struts dedicated-server mixin / visual verification
 
-A local Struts 1.3.1 mixin-side workaround was applied and script-verified on matching disposable server and CurseForge client JARs. Fresh server and client logs from 6 November contain no `RenderSystem` or `StrutRenderSystemAccessor` messages; the server reached `Done`, accepted the matching client, and shut down with all dimensions saved. The dedicated-server mixin error therefore passes log-level retest. The client log still warns that `struts:blockstates/girder_strut_structure.json` has no model for either `waterlogged=false` or `waterlogged=true`. Visual confirmation of the affected Struts block is still required before this item can be closed.
+A local Struts 1.3.1 mixin-side workaround was applied and script-verified on matching disposable server and CurseForge client JARs; original backups were preserved. The 6 November 16:40–16:47 server/client/debug logs contain no `RenderSystem` or `StrutRenderSystemAccessor` messages. The server reached `Done`, accepted the matching client, and saved all dimensions on shutdown. Screenshots from 16:46 show the tested Struts beams/girders rendering visibly. Two client warnings remain for the `waterlogged=false` and `waterlogged=true` variants in `struts:blockstates/girder_strut_structure.json`, but the shown parts render. The local patched test profile passes; this issue stays open for standard modpack installs because the official CurseForge Struts JAR and modpack manifest have not been changed. A release-safe fix or upstream release is still required.
 
 ### PowerGrid optional native solver
 

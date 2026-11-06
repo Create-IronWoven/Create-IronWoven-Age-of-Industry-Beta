@@ -10,7 +10,7 @@ Issue #139 reports that optional Dye Depot-dependent blocks are not registered w
 
 ## Why no replacement patch is included
 
-PR #140 attempted to add conditions to generated loot-table JSON after data generation by using an additional Gradle post-processing task. The PR was closed without merging, and the maintainer publicly objected to that implementation approach.
+PR #140 attempted to add conditions to generated loot-table JSON after data generation by using an additional Gradle post-processing task. The PR was closed without merging, and a public comment on the PR described that implementation approach as poor.
 
 Repeating the same post-processing design or republishing the same generated-resource changes would not be a constructive contribution.
 

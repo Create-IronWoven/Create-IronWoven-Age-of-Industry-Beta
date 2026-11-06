@@ -32,14 +32,16 @@ This page gives players a short overview of planned, considered, paused, and exc
 
 Detailed technical evidence, exact file/dependency checks, and test history are maintained in the private development repository. The public [testing checklist](TESTING_CHECKLIST.md) is the place to see current testing tasks.
 
-## Future ideas
+## Future ideas — Batch 7 (on hold)
 
-These are ideas for possible future investigation, not commitments or installation plans:
+**Batch 7 is postponed by the maintainer.** The following are possible future candidates only, not an active research or installation queue. No compatibility, dependency, feature, or release approval is implied.
 
-- Colony building and settlement systems, including MineColonies integrations.
-- Additional world-generation and ecology options, subject to compatibility with the existing world-generation setup.
-- More exploration content and structures.
-- Additional performance and client-rendering improvements, tested independently for this modpack.
+- MineColonies and its potential dependency ecosystem: Structurize, Domum Ornamentum, BlockUI, and Multi-Piston.
+- TownTalk as a possible settlement integration.
+- Towns and Towers, Repurposed Structures, Moog's Voyager Structures, Moog's Soaring Structures, Better Villages, and Village Taverns.
+- Create: New Beginnings and Create: Easy Structures.
+
+If Batch 7 is resumed, every candidate must be rechecked for an exact CurseForge Minecraft 1.21.1 NeoForge file, dependencies, side requirements, licence/terms, compatibility with the existing BYG / Regions Unexplored setup, and fit with the pack's industrial/steampunk direction. The production world and current world-generation configuration must remain unchanged.
 
 ## Paused work
 

@@ -1352,3 +1352,18 @@ This finding is limited to this inspected chest. Do not conclude that every ches
 - Crashed-airship chest: **FAIL — no loot table assigned; `Items: []`**.
 - Other structure chests: **NOT TESTED**.
 - Official mod JAR / production world: **UNCHANGED**.
+
+
+## Engineering-house container comparison — 6 November 2026
+
+The maintainer supplied two screenshots from the engineering house:
+
+- One opened barrel GUI visibly contains several items. This confirms that at least one barrel container in the engineering house generated loot.
+- A separate block is identified by Jade as `lootr:loot_barrel` at approximately `(524, 98, -3954)`; its tooltip reads **"Loot not generated yet"**. This container has not yet had its loot generation verified.
+
+**Interpretation:** Engineering-house barrel loot is not uniformly absent. The populated barrel contrasts with the crashed-airship vanilla chest whose block entity had `Items: []` and no `LootTable` field. The Lootr barrel is a separate, still-pending check; its tooltip alone does not establish a failure because loot may be generated on first opening.
+
+- Engineering-house opened barrel: **PASS — items visibly present**.
+- Engineering-house Lootr barrel at `(524, 98, -3954)`: **PENDING — tooltip says loot not generated yet; open it to trigger/check generation**.
+- Crashed-airship vanilla chest: **FAIL — no loot table assigned; `Items: []`**.
+- Official mod JAR / production world: **UNCHANGED**.

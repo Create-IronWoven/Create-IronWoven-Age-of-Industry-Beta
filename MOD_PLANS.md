@@ -27,7 +27,7 @@ This page gives players a short overview of planned, considered, paused, and exc
 | Performance and rendering | Partial. No measured server performance baseline yet; client rendering candidates require separate client tests. |
 | Botany Pots and Construction Sticks | Loaded in a test group; feature validation remains open. |
 | Lootr | Partial compatibility observations; independent per-player loot still needs verification. |
-| Every Compat (Wood Good) | Installed and maintainer-approved baseline remains 2.11.56 + Moonlight Lib 3.8.1. Update candidate 2.11.57 requires Moonlight Lib 3.8.2+; the paired 2.11.57 + 3.8.2 update is approved for disposable testing only, not accepted for the pack yet. |
+| Every Compat (Wood Good) | Accepted baseline remains 2.11.56 + Moonlight Lib 3.8.1. Paired update candidate 2.11.57 + Moonlight Lib 3.8.2 passed a Windows disposable startup/login smoke test on 6 November; the Golden Cherry Leaves duplicate remains. Feature-level block/recipe/model/texture/drop checks are delegated to beta testers. The candidate is not accepted for the pack. |
 | Exploration tools and Create Big Cannons | Routine startup/login smoke tests passed; this is not feature validation or release approval. |
 
 Detailed technical evidence, exact file/dependency checks, and test history are maintained in the private development repository. The public [testing checklist](TESTING_CHECKLIST.md) is the place to see current testing tasks.

@@ -26,7 +26,7 @@ The `cr_aero_structures:chests/uniform` loot table fails to parse its `minecraft
 
 ### Shulker Box Tooltip / Supplementaries integration
 
-During dedicated-server client login, the Supplementaries plugin attempts to load the client-only Shulker Box Tooltip `PreviewRenderer` class and fails to register Supplementaries providers. Shulker Box Tooltip still registers its own 31 providers in the test log; the Supplementaries integration remains unresolved.
+During dedicated-server client login, the Supplementaries plugin attempts to load the client-only Shulker Box Tooltip `PreviewRenderer` class and fails to register Supplementaries providers. Shulker Box Tooltip still registers its own 31 providers; the matching client registers all 3 Supplementaries providers. This matches the open upstream [ShulkerBoxTooltip issue #263](https://github.com/MisterPeModder/ShulkerBoxTooltip/issues/263). A reversible test is being prepared using the client config option `preview.serverIntegration=false`, which should suppress the handshake that triggers server-side provider loading; it has not yet been applied or verified. The expected trade-off is loss of server-supplied extras such as Ender Chest synchronization while the setting is disabled. The integration remains unresolved pending fresh logs and preview testing.
 
 ## Reporting a new issue
 

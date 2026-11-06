@@ -1,6 +1,6 @@
 # Mods in Create IronWoven
 
-**Inventory snapshot:** 5 November 2026 (latest folder screenshots reviewed)  
+**Latest dedicated-server folder snapshot:** 6 November 2026 — 106 visible JAR files. Client inventory is separate and unchanged by this server-only screenshot.  
 **Minecraft:** 1.21.1  
 **Loader:** NeoForge 21.1.265  
 **Java:** 21
@@ -333,3 +333,126 @@ The latest disposable-server log reached `Done (1.490s)`, prepared the test worl
 - Struts' dedicated-server RenderSystem issue and PowerGrid's unavailable optional native solver remain open.
 
 The production world and its BYG 2.6.3 / Regions Unexplored 0.6.3 setup remain unchanged. No modpack version increment or release approval is implied by this documentation update.
+
+
+## Latest dedicated-server folder inventory — 6 November 2026
+
+The maintainer confirmed this screenshot is from the dedicated-server `mods` folder. It shows **106 visible JAR files**, superseding the older 104-file server-folder screenshot as the latest visual observation. This is not a runtime log, final release manifest, CurseForge export, compatibility pass, or feature-test result. The client inventory is separate and is not updated by this screenshot.
+
+### Exact visible server JAR filenames
+
+- `aeronautical_diesel-1.1.0.jar`
+- `aeroportals-1.21.1-1.3.6.jar`
+- `appleskin-neoforge-mc1.21-3.0.9.jar`
+- `architectury-13.0.11-neoforge.jar`
+- `athena-neoforge-1.21.1-4.0.6.jar`
+- `azimuth-1.4.10.jar`
+- `balm-neoforge-1.21.1-21.0.67.jar`
+- `bellsandwhistles-0.4.7-1.21.1.jar`
+- `bits_n_bobs-2.3.5.jar`
+- `bookshelf-neoforge-1.21.1-21.1.81.jar`
+- `botanypots-neoforge-1.21.1-21.1.44.jar`
+- `chipped-neoforge-1.21.1-4.0.2.jar`
+- `cloth-config-15.0.140-neoforge.jar`
+- `ConstructionSticks-1.21.1-1.5.0.jar`
+- `copycats-3.0.9+mc.1.21.1-neoforge.jar`
+- `copycats-plus-additions-1.5.0-neo.jar`
+- `Corgilib-NeoForge-1.21.1-5.0.0.10.jar`
+- `cr_aero_structures.jar`
+- `Create Encased-1.21.1-1.10.0-fix1.jar`
+- `create_aeronautics_transmission_linkage-0.2.9.jar`
+- `create_bb-1.0.8-1.21.1.jar`
+- `create_curios_backtank-neoforge-1.21.1-1.0.2.jar`
+- `create_pattern_schematics-2.0.10.jar`
+- `create_rustic_structures-1.0.1-neoforge-1.21.1.jar`
+- `create_unified_fuels-1.0.4.jar`
+- `create_vibrant_vaults-0.3.2.jar`
+- `create-1.21.1-6.0.10.jar`
+- `createaddition-1.7.2.jar`
+- `create-aeronautics-bundled-1.21.1-1.3.2.jar`
+- `CreateAeronauticsCopycatWing-1.21.1-1.0.4.jar`
+- `createaeronauticscurios-neoforge-1.21.1-2.3.jar`
+- `createbigcannons-5.11.7+mc.1.21.1.jar`
+- `createcobblestone-1.5.1+neoforge-1.21.1-160.jar`
+- `createdeco-2.1.3.jar`
+- `createdieselgenerators-1.21.1-1.3.15.jar`
+- `CreateDragonsPlus-1.11.9.jar`
+- `create-enchantment-industry-2.5.4b.jar`
+- `createframed-1.21.1-1.8.2.jar`
+- `createkinetic-1.4.3.jar`
+- `createliquidfuel-3.0.0-1.21.1.jar`
+- `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar`
+- `create-otbwg-compat-1.0.jar`
+- `Create-Structures-Arise-1.21.1-NeoForge-176.49.50.jar`
+- `cupboard-1.21.1-4.2.jar`
+- `curios-neoforge-9.5.1+1.21.1.jar`
+- `Design-n-Decor-1.21.1-2.2b.jar`
+- `dragonlib-3.0.29+mc1.21.1-neoforge.jar`
+- `enchdesc-neoforge-1.21.1-21.1.11.jar`
+- `everycomp-1.21-2.11.56-neoforge.jar`
+- `ExplorersCompass-1.21.1-3.4.0-neoforge.jar`
+- `FarmersDelight-1.21.1-1.3.4.jar`
+- `FastFurnace-1.21.1-9.0.1.jar`
+- `FastSuite-1.21.1-6.0.7.jar`
+- `ferritecore-7.0.3-neoforge.jar`
+- `fluid_be_gone-1.0.1.jar`
+- `ftb-chunks-neoforge-2101.1.23.jar`
+- `ftb-jei-extras-21.1.7.jar`
+- `ftb-library-neoforge-2101.1.39.jar`
+- `ftb-teams-neoforge-2101.1.12.jar`
+- `ftb-xmod-compat-neoforge-21.1.14.jar`
+- `gadgets-and-gizmos-bundled-V1.2.10.jar`
+- `geckolib-neoforge-1.21.1-4.9.3.jar`
+- `herbsandharvest-1.21.1-24.jar`
+- `incontrol-1.21-10.3.1.jar`
+- `integrated_api-neoforge-1.21.1-1.9.1.jar`
+- `integrated_villages-1.3.3+1.21.1-neoforge.jar`
+- `Jade-1.21.1-NeoForge-15.10.6.jar`
+- `jei-1.21.1-neoforge-19.64.0.455.jar`
+- `jeistuff-1.21.1-1.3.0.jar`
+- `JustEnoughResources-NeoForge-1.21.1-1.6.0.57.jar`
+- `KineticGrip-1.21.1-1.0.5.jar`
+- `kotlinforforge-5.12.0-all.jar`
+- `lithostitched-1.8.1-neoforge-21.1.jar`
+- `lootr-neoforge-1.21.1-1.11.38.127.jar`
+- `memorysettings-1.21-6.0.jar`
+- `mezz_config-1.21.1-neoforge-0.6.10-standalone.jar`
+- `modernfix-neoforge-5.27.27+mc1.21.1.jar`
+- `moderntrainparts-0.2.5-neoforge-mc1.21.1-cr6.0.10.jar`
+- `moonlight-1.21.1-3.8.1-neoforge.jar`
+- `MouseTweaks-neoforge-mc1.21-2.26.1.jar`
+- `NaturesCompass-1.21.1-3.4.0-neoforge.jar`
+- `Oh-The-Biomes-Weve-Gone-NeoForge-2.6.3.jar`
+- `Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.3.5.jar`
+- `pantographsandwires-neoforge-1.21.1-beta-0.2.3-C6.jar`
+- `pipeorgans-0.9.2.1+1.21.1.jar`
+- `Placebo-1.21.1-9.9.4.jar`
+- `powergrid-mc1.21.1-0.6.2.jar`
+- `prickle-neoforge-1.21.1-21.1.11.jar`
+- `railways-0.3.0-beta.2+neoforge-mc1.21.1.jar`
+- `regions-unexplored-0.6.3-neoforge-21.1.jar`
+- `resourcefullib-neoforge-1.21-3.0.12.jar`
+- `ritchiesprojectilelib-2.1.2-mc.1.21.1-neoforge.jar`
+- `sable-neoforge-1.21.1-2.0.6.jar`
+- `shield_generators-1.4.0.jar`
+- `shulkerboxtooltip-neoforge-5.1.9+1.21.1.jar`
+- `sliceanddice-4.3.4-neoforge.jar`
+- `sophisticatedairtank-1.0.1-beta+1.21.1.jar`
+- `sophisticatedbackpacks-1.21.1-3.26.20.2244.jar`
+- `sophisticatedbackpackscreateintegration-1.21.1-0.2.3.194.jar`
+- `sophisticatedcore-1.21.1-1.5.28.2458.jar`
+- `spark-1.10.124-neoforge.jar`
+- `struts-1.3.1.jar`
+- `supplementaries-1.21.1-4.0.2-neoforge.jar`
+- `TerraBlender-neoforge-1.21.1-4.1.0.8.jar`
+- `tfmg-1.21.1-1.3.3-community.jar`
+- `waystones-neoforge-1.21.1-21.1.46.jar`
+
+### Items requiring reconciliation
+
+- `cr_aero_structures.jar` has no visible version; exact metadata and CurseForge provenance are unverified.
+- Railways appears as `0.3.0-beta.2`, compared with earlier `0.3.0-alpha.2` notes. Runtime selection and exact file provenance remain to be checked.
+- Supplementaries appears as `4.0.2`, compared with earlier `3.4.0` dependency notes. Verify the exact file and dependency compatibility.
+- Sophisticated Backpacks Create Integration appears as `0.2.3.194`; verify against prior records.
+- The folder listing does not prove successful loading or feature behavior. Existing Struts and Power Grid dedicated-server issues remain open.
+- No installation/removal decision, release approval, or modpack version increment is implied. Current development version remains `v0.1.110-R002`.

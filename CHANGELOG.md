@@ -11,7 +11,7 @@ Player-facing highlights only. This is not a record of internal commits or test 
 
 - Compatibility testing continues for Minecraft 1.21.1 / NeoForge 21.1.265.
 - Routine server startup, disposable-world load, matching-client login, and log-review smoke tests passed for batches A, B, and C.
-- Create Aeronautics Structures remains under partial testing because of an unresolved loot-table issue and unverified structure generation.
+- Create Aeronautics Structures remains test-only. All 11 valid Overworld structure IDs have visual-presence evidence; a crashed-airship chest loot-assignment defect and a release-safe uniform-loot correction/distribution decision remain open.
 - Performance testing remains incomplete; no measured server performance baseline has been recorded.
 - The installed-mod functional testing checklist remains the source for feature-validation progress. Smoke-test success is not feature validation.
 - CurseForge remains the only approved mod source.

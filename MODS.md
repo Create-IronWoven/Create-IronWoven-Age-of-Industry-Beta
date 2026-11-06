@@ -1,7 +1,7 @@
 # Mods in Ironwoven: Age of Industry
 
 **Latest dedicated-server folder snapshot:** 6 November 2026 — 106 visible JAR files. Client inventory is separate and unchanged by this server-only screenshot.
-**Accepted baseline target:** `v0.1.112-R002` includes Every Compat 2.11.57 and Moonlight Lib 3.8.2. The original `Create World` client profile and normal dedicated-server baseline still need these two JARs copied into place; their latest observed physical folder snapshots remain on 2.11.56 + 3.8.1 until the maintainer confirms deployment.  
+**Accepted baseline target:** `v0.1.112-R002` includes Every Compat 2.11.57 and Moonlight Lib 3.8.2. The latest screenshot confirms both accepted JARs are now physically present in the original `Create World/mods` client profile. The normal dedicated-server baseline still needs the same pair; the 6 November server file listing below is a pre-deployment snapshot.  
 **Minecraft:** 1.21.1  
 **Loader:** NeoForge 21.1.265  
 **Java:** 21
@@ -260,7 +260,7 @@ The screenshot also shows Bookshelf 21.1.81, FastFurnace 9.0.1, FastSuite 6.0.7,
 - The 6 November 2026 CurseForge `Create World/mods` client-profile screenshot confirms Entity Culling is absent from the current client mod folder. It is removed from the current optional-candidate list; older server-folder and archive references below are historical observations.
 - The screenshot is an inventory observation, not proof of each mod's features or acceptance into the final pack.
 
-**Current modpack version: `v0.1.112-R002`.** The `R001` and `R002` removal increments record the two maintainer-approved client-only removals, Sodium and Sodium Extra. `v0.1.111-R002` records the Every Compat 2.11.57 update; `v0.1.112-R002` records the required Moonlight Lib 3.8.2 dependency update. The approved pair is not yet copied into the original client/server baseline folders; this page distinguishes accepted target versions from the 6 November physical folder snapshot. Future additions/updates use the `UPDATE` counter; future mod removals use the separate `R` counter.
+**Current modpack version: `v0.1.112-R002`.** The `R001` and `R002` removal increments record the two maintainer-approved client-only removals, Sodium and Sodium Extra. `v0.1.111-R002` records the Every Compat 2.11.57 update; `v0.1.112-R002` records the required Moonlight Lib 3.8.2 dependency update. The approved pair is confirmed in the original `Create World` client folder. The normal dedicated-server baseline remains pending, and the exact visible server JAR list below preserves the earlier 6 November snapshot rather than claiming a server update. Future additions/updates use the `UPDATE` counter; future mod removals use the separate `R` counter.
 
 
 ## Disabled/archive server-folder snapshot — 5 November 2026, 17:58
@@ -337,7 +337,7 @@ The production world and its BYG 2.6.3 / Regions Unexplored 0.6.3 setup remain u
 
 ## Latest dedicated-server folder inventory — 6 November 2026
 
-The maintainer confirmed this screenshot is from the dedicated-server `mods` folder. It shows **106 visible JAR files**, superseding the older 104-file server-folder screenshot as the latest visual observation. This is not a runtime log, final release manifest, CurseForge export, compatibility pass, or feature-test result. The client inventory is separate and is not updated by this screenshot.
+The maintainer confirmed this screenshot is from the dedicated-server `mods` folder. It shows **106 visible JAR files**, superseding the older 104-file server-folder screenshot as the latest visual observation. This is not a runtime log, final release manifest, CurseForge export, compatibility pass, or feature-test result. The client inventory is separate and is not updated by this screenshot. A later supplied `Create World/mods` screenshot now confirms Every Compat 2.11.57 and Moonlight Lib 3.8.2 in the original client baseline; this does not update or verify the dedicated-server folder listing below.
 
 ### Exact visible server JAR filenames
 
@@ -455,4 +455,4 @@ The maintainer confirmed this screenshot is from the dedicated-server `mods` fol
 - Supplementaries appears as `4.0.2`, compared with earlier `3.4.0` dependency notes. Verify the exact file and dependency compatibility.
 - Sophisticated Backpacks Create Integration appears as `0.2.3.194`; verify against prior records.
 - The folder listing does not prove successful loading or feature behavior. Later 6 November disposable-profile tests passed the local Struts server/client workaround for the shown components and passed PowerGrid Windows native loading on both server and client. The standard-install Struts release issue remains open because the official JAR is unchanged. PowerGrid electrical-network/component behavior is reserved for beta testers; Linux native loading is a separate future platform test. The local PowerGrid DLL copies are not part of the distributable beta package, so native-resource packaging remains a release decision. See `TESTING_CHECKLIST.md` and `KNOWN_ISSUES.md` for current player-facing status.
-- No additional installation/removal decision is implied by this 6 November folder screenshot. Its physical JAR list predates the 7 November accepted Every Compat/Moonlight update; the current accepted development version is `v0.1.112-R002`, and physical baseline deployment is pending.
+- No additional installation/removal decision is implied by this 6 November folder screenshot. Its physical JAR list predates the 7 November accepted Every Compat/Moonlight update; the current accepted development version is `v0.1.112-R002`; the original client is updated, while normal dedicated-server deployment is pending.

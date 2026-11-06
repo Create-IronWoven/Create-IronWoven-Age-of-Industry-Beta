@@ -28,7 +28,7 @@ A server startup or an item appearing in JEI is not, by itself, a function-test 
 
 ## Smoke test is not a function test
 
-The 5 November combined test reached Done (1.718s), loaded world_lootr_test, accepted a client login and shut down cleanly. A later 14:09 update-trial run also completed Done (1.822s), disposable-world load, matching client login and clean shutdown. Batches A, B and C also passed their recorded pack-level startup/login smoke tests. This proves the combined test profile can load and join; **it does not prove every installed mod's functions work**.
+The 5 November combined tests and the corrected 6 November 15:54 datapack-enabled retest reached the server-ready `Done` message, loaded `world_lootr_test`, accepted a matching client login, and shut down with all dimensions saved. In the 6 November retest, all four IronWoven world-scoped compatibility datapacks were enabled and the targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk, and Create Deco placard error entries were absent. This proves the corrected combined test profile can start, load, and accept a client; **it does not prove every installed mod's functions work**.
 
 - **Smoke test:** mod discovery, server/client startup as appropriate, world load, login, shutdown and log review.
 - **Function test:** exercise the actual feature(s) that justify keeping the mod: item/block interaction, machine process, transport, GUI, world generation, rendering, recipe/loot behavior or synchronization.
@@ -40,10 +40,12 @@ The 5 November combined test reached Done (1.718s), loaded world_lootr_test, acc
 
 | Check | Evidence | Status |
 |---|---|---|
-| Dedicated-server startup | 5 Nov logs reached Done (1.718s), Done (1.822s), and latest Done (1.490s) | PASS — disposable profiles |
-| Disposable world load | world_lootr_test loaded in the latest run | PASS |
-| Matching client login | Matching client joined in the latest run | PASS |
-| Clean shutdown | All dimensions saved in the 22:27 run | PASS |
+| Dedicated-server startup | 6 Nov corrected datapack-enabled run reached Done (1.413s) | PASS — disposable profile |
+| Disposable world load | `world_lootr_test` loaded | PASS |
+| IronWoven compatibility datapacks | All four expected world-scoped packs listed as enabled | PASS — log-level retest |
+| Targeted compatibility errors | Design n' Decor, Railways, Create Kinetic, Sable Catwalk, and Create Deco placard errors absent | PASS — log review only |
+| Matching client login | Matching client joined in the 6 Nov run | PASS |
+| Clean shutdown | All dimensions saved in the 6 Nov run | PASS |
 | Individual feature tests | Matrix below | OPEN — mostly not yet function-tested |
 | Matching client-only mod startup | No isolated client log for the 14:09 test folder supplied | OPEN |
 | Production/release approval | Not granted | NOT APPROVED |
@@ -92,10 +94,16 @@ The server did not reach `Done`, load a world, accept a client, or complete a no
 
 Do not keep both Numismatics versions in one `mods` folder. Test Numismatics Plus 1.0.1 with Numismatics 1.0.20 only. Test Numismatics 1.1.0 separately without Plus until a compatible Plus release is verified.
 
-ImmediatelyFast, Flerovium, Entity Culling, and More Culling are client-only and must be tested on the matching client, not in the dedicated-server folder. The server log contains 463 ERROR-level entries, mostly recurring Design n' Decor / Steam 'n' Rails loot-table parsing entries, plus the already tracked Sable, Struts, PowerGrid, Every Compat and Create Deco findings. Verify the world-scoped compatibility datapacks in the disposable world before assigning the recurring entries to a mod regression.
+ImmediatelyFast, Flerovium, Entity Culling, and More Culling are client-only and must be tested on the matching client, not in the dedicated-server folder. The earlier 6 November 15:12 log contained 463 ERROR-level entries, but its new disposable world's `datapacks/` folder was empty, so the recurring Design n' Decor / Steam 'n' Rails / Create Kinetic / Sable / Create Deco entries did not test the maintained compatibility datapacks. The corrected 15:54 run enabled all four packs and those targeted errors were absent. The corrected run contains 6 ERROR-level records and 172 WARN-level records; remaining error findings are Struts, PowerGrid, Every Compat, Create Aeronautics Structures, and the Shulker Box Tooltip / Supplementaries integration.
 
 **Next gate at the time of this retry:** use one Numismatics version per profile; include Numismatics Plus only with 1.0.20; keep client-only rendering mods out of the server; then provide client login and clean-shutdown evidence. The 14:09 follow-up below completed the routine smoke sequence; the correct Numismatics pair, isolated client tests, and performance baseline remain open. This retry itself was not a complete smoke-test pass or release approval.
 
+
+## Corrected compatibility datapack smoke retest — 6 November 2026, 15:54
+
+The disposable `world_lootr_test` run enabled all four IronWoven world-scoped datapacks. Server startup, world load, matching client login, and clean shutdown with all dimensions saved passed. The log-level checks found no targeted Design n' Decor (256), Steam 'n' Rails (192), Create Kinetic (5), Sable Catwalk selector, or Create Deco placard parsing errors. This does not mark the affected gameplay drops or recipes as function-tested.
+
+The log contains 6 ERROR-level records and 172 WARN-level records. Remaining errors: Struts dedicated-server `RenderSystem`; PowerGrid optional `powergridNative7`; Every Compat duplicate Herbs & Harvest Golden Cherry Leaves registration; Create Aeronautics Structures `cr_aero_structures:chests/uniform`; and the Shulker Box Tooltip / Supplementaries dedicated-server `PreviewRenderer` integration failure. InControl read `areas.json`. See the private maintainer's detailed report for full triage.
 
 ## Existing partial function evidence — do not overstate it
 
@@ -103,7 +111,7 @@ ImmediatelyFast, Flerovium, Entity Culling, and More Culling are client-only and
 - **Lootr:** the maintainer confirmed a test chest opened and contained loot. Independent personal loot for a second player is not yet verified.
 - **Every Compat:** Chipped Carpenter's Table modded-wood variants and the stone table were reported working. This is partial; duplicate Golden Cherry Leaves registration and the large compatibility-block footprint remain recorded.
 - **Create Aeronautics Structures:** server smoke test passed, but structure generation was not established and its loot table has a parsing error.
-- **Batch A:** JER, Enchantment Descriptions and Shulker Box Tooltip passed combined startup/login smoke testing; feature rendering/use remains to be checked.
+- **Batch A:** JER, Enchantment Descriptions and Shulker Box Tooltip passed combined startup/login smoke testing. A later 6 November test exposed a dedicated-server error in the Shulker Box Tooltip / Supplementaries provider integration; Shulker Box Tooltip's own providers still registered. Feature rendering/use remains to be checked.
 - **Batch B:** Nature's Compass and Explorer's Compass passed combined startup/login smoke testing; actual biome/structure searches remain to be checked.
 - **Batch C:** Create Big Cannons and Ritchie's Projectile Library passed combined startup/login smoke testing; cannon operation remains to be checked.
 - **Batch E:** spark initialized, but no saved profiler report or numeric baseline was recorded. ImmediatelyFast, Flerovium, Entity Culling and More Culling are now shown in the server's `mods-disabled` archive; their individual client tests have not been completed.

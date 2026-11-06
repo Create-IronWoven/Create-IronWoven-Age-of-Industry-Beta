@@ -1,12 +1,12 @@
 # Mods in Ironwoven: Age of Industry
 
-**Latest dedicated-server folder snapshot:** 6 November 2026 — 106 visible JAR files. Client inventory is separate and unchanged by this server-only screenshot.
-**Accepted baseline target:** `v0.1.112-R002` includes Every Compat 2.11.57 and Moonlight Lib 3.8.2. The latest screenshot confirms both accepted JARs are now physically present in the original `Create World/mods` client profile. The normal dedicated-server baseline still needs the same pair; the 6 November server file listing below is a pre-deployment snapshot.  
+**Latest dedicated-server folder snapshot:** 6 November 2026 — 106 visible JAR files; a later 23:33 screenshot confirms the accepted Every Compat 2.11.57 and Moonlight Lib 3.8.2 JARs are present in this same `MinecraftServer-Test/mods` folder. The original `Create World/mods` client screenshot confirms the matching pair there too.
+**Accepted baseline target:** `v0.1.112-R002` includes Every Compat 2.11.57 and Moonlight Lib 3.8.2. Latest screenshots confirm both accepted JARs are now physically present in the original `Create World/mods` client profile and the normal `MinecraftServer-Test/mods` dedicated-server baseline. Folder deployment is complete; a startup/login smoke test on this updated baseline remains pending.  
 **Minecraft:** 1.21.1  
 **Loader:** NeoForge 21.1.265  
 **Java:** 21
 
-This page records the latest reviewed test-folder inventory snapshot and identifies client-only additions. Accepted version targets may be ahead of physical folder snapshots while an approved update is awaiting local deployment. It is not a final release manifest. The latest CurseForge profile shows **108 mod entries**. The latest client `mods` folder snapshot shows **104 JAR files**; the latest dedicated-server `MinecraftServer-Test/mods` screenshot (6 November 2026) shows **106 JAR files**. The server screenshot supersedes its earlier 104-file observation; the client count remains unchanged. These are different counting methods: CurseForge entries and physical JAR files are not interchangeable, especially where mods bundle components. Matching folder counts do not by themselves prove exact filename equality. A later disposable-server log detected Create Aeronautics Structures 1.1.0-Beta-3.1 as an Overworld test candidate; it is not part of the accepted inventory. The maintainer-supplied JAR metadata matches official CurseForge file 8399115 by version (not hash-compared). Its test-only 16-color uniform-loot override passed runtime testing in a disposable Windows world; the official JAR remains unchanged. All 11 valid Overworld structure IDs now have locate/visual-presence evidence, with the crashed-airship hillside placement visually accepted; `plane` is invalid. Maintainer spot checks found items in the engineering-house standard and Lootr barrels; one crashed-airship vanilla chest has no assigned loot table. Remaining structure/container loot coverage is delegated to beta testers; the chest defect and release-safe correction/distribution decision remain open. Its Russian startup message is informational only.
+This page records the latest reviewed test-folder inventory snapshot and identifies client-only additions. Accepted version targets may be ahead of physical folder snapshots while an approved update is awaiting local deployment. It is not a final release manifest. The latest CurseForge profile shows **108 mod entries**. The latest client `mods` folder snapshot shows **104 JAR files**; the latest dedicated-server `MinecraftServer-Test/mods` screenshot (6 November 2026) shows **106 JAR files**. Later 23:33 screenshot evidence confirms the two accepted JAR versions in the server folder; the exact 6 November list below is updated to those names. The client count remains unchanged. These are different counting methods: CurseForge entries and physical JAR files are not interchangeable, especially where mods bundle components. Matching folder counts do not by themselves prove exact filename equality. A later disposable-server log detected Create Aeronautics Structures 1.1.0-Beta-3.1 as an Overworld test candidate; it is not part of the accepted inventory. The maintainer-supplied JAR metadata matches official CurseForge file 8399115 by version (not hash-compared). Its test-only 16-color uniform-loot override passed runtime testing in a disposable Windows world; the official JAR remains unchanged. All 11 valid Overworld structure IDs now have locate/visual-presence evidence, with the crashed-airship hillside placement visually accepted; `plane` is invalid. Maintainer spot checks found items in the engineering-house standard and Lootr barrels; one crashed-airship vanilla chest has no assigned loot table. Remaining structure/container loot coverage is delegated to beta testers; the chest defect and release-safe correction/distribution decision remain open. Its Russian startup message is informational only.
 
 Some entries below are libraries, APIs, or bundled components required by other mods. They are listed for transparency even though they do not add a standalone gameplay feature.
 
@@ -64,7 +64,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 
 | Mod | Version / status |
 |---|---|
-| Every Compat (Wood Good) | 2.11.57 — accepted baseline target; paired with Moonlight Lib 3.8.2; local baseline deployment pending |
+| Every Compat (Wood Good) | 2.11.57 — accepted baseline version; paired with Moonlight Lib 3.8.2; both client/server folders updated, baseline startup/login verification pending |
 | Chipped | 4.0.2 |
 | Design n' Decor | 2.2b |
 | Farmer's Delight | 1.3.4 |
@@ -144,7 +144,7 @@ These support other mods and may not appear as separate gameplay features.
 | Integrated API | 1.9.1 — Integrated Villages dependency; validated present in corrected server test profile |
 | Kotlin for Forge | 5.12.0 |
 | MezzConfig | 0.6.10 |
-| Moonlight Lib (Selene) | 3.8.2 — accepted required dependency for Every Compat 2.11.57; local baseline deployment pending |
+| Moonlight Lib (Selene) | 3.8.2 — accepted required dependency for Every Compat 2.11.57; both client/server folders updated, baseline startup/login verification pending |
 | ModernFix | 5.27.27 |
 | Ponder | 1.0.82 |
 | Resourceful Lib | 3.0.12 |
@@ -260,7 +260,7 @@ The screenshot also shows Bookshelf 21.1.81, FastFurnace 9.0.1, FastSuite 6.0.7,
 - The 6 November 2026 CurseForge `Create World/mods` client-profile screenshot confirms Entity Culling is absent from the current client mod folder. It is removed from the current optional-candidate list; older server-folder and archive references below are historical observations.
 - The screenshot is an inventory observation, not proof of each mod's features or acceptance into the final pack.
 
-**Current modpack version: `v0.1.112-R002`.** The `R001` and `R002` removal increments record the two maintainer-approved client-only removals, Sodium and Sodium Extra. `v0.1.111-R002` records the Every Compat 2.11.57 update; `v0.1.112-R002` records the required Moonlight Lib 3.8.2 dependency update. The approved pair is confirmed in the original `Create World` client folder. The normal dedicated-server baseline remains pending, and the exact visible server JAR list below preserves the earlier 6 November snapshot rather than claiming a server update. Future additions/updates use the `UPDATE` counter; future mod removals use the separate `R` counter.
+**Current modpack version: `v0.1.112-R002`.** The `R001` and `R002` removal increments record the two maintainer-approved client-only removals, Sodium and Sodium Extra. `v0.1.111-R002` records the Every Compat 2.11.57 update; `v0.1.112-R002` records the required Moonlight Lib 3.8.2 dependency update. The approved pair is confirmed in both the original `Create World` client folder and the normal `MinecraftServer-Test` server folder. The exact visible server JAR list below now reflects the latest screenshot for the two updated filenames; a new baseline startup/login test remains pending. Future additions/updates use the `UPDATE` counter; future mod removals use the separate `R` counter.
 
 
 ## Disabled/archive server-folder snapshot — 5 November 2026, 17:58
@@ -389,7 +389,7 @@ The maintainer confirmed this screenshot is from the dedicated-server `mods` fol
 - `Design-n-Decor-1.21.1-2.2b.jar`
 - `dragonlib-3.0.29+mc1.21.1-neoforge.jar`
 - `enchdesc-neoforge-1.21.1-21.1.11.jar`
-- `everycomp-1.21-2.11.56-neoforge.jar`
+- `everycomp-1.21-2.11.57-neoforge.jar`
 - `ExplorersCompass-1.21.1-3.4.0-neoforge.jar`
 - `FarmersDelight-1.21.1-1.3.4.jar`
 - `FastFurnace-1.21.1-9.0.1.jar`
@@ -419,7 +419,7 @@ The maintainer confirmed this screenshot is from the dedicated-server `mods` fol
 - `mezz_config-1.21.1-neoforge-0.6.10-standalone.jar`
 - `modernfix-neoforge-5.27.27+mc1.21.1.jar`
 - `moderntrainparts-0.2.5-neoforge-mc1.21.1-cr6.0.10.jar`
-- `moonlight-1.21.1-3.8.1-neoforge.jar`
+- `moonlight-1.21.1-3.8.2-neoforge.jar`
 - `MouseTweaks-neoforge-mc1.21-2.26.1.jar`
 - `NaturesCompass-1.21.1-3.4.0-neoforge.jar`
 - `Oh-The-Biomes-Weve-Gone-NeoForge-2.6.3.jar`

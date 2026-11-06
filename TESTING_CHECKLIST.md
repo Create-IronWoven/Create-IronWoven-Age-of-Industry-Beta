@@ -8,7 +8,7 @@
 
 # Full Installed-Mod Functional Testing Checklist
 
-**Last reviewed:** 6 November 2026  
+**Last reviewed:** 7 November 2026  
 **Target:** Minecraft 1.21.1 · NeoForge 21.1.265 · Java 21  
 **Approved download source:** CurseForge only
 
@@ -25,7 +25,7 @@ This section is the current status summary. Dated trial tables later in this fil
 | Struts | PARTIAL — local patched server/client runtime and visible test pieces passed; official CurseForge JAR remains unpatched, so standard-install/release issue remains open |
 | Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |
 | PowerGrid 0.6.2 | PARTIAL — internal Windows native loading and client join passed with restored 0.6.1 DLL; electrical-network behavior reserved for beta testers; Linux untested |
-| Every Compat | PARTIAL — paired 2.11.57 + Moonlight 3.8.2 Windows startup/login smoke test passed in disposable copies; duplicate Golden Cherry Leaves registration remains open; feature-level checks are assigned to beta testers; update candidate not accepted |
+| Every Compat | PARTIAL — accepted pair 2.11.57 + Moonlight 3.8.2 passed Windows disposable startup/world/login/shutdown smoke test; duplicate Golden Cherry Leaves registration remains open; feature-level checks are assigned to beta testers; physical baseline deployment pending |
 | Create Aeronautics Structures | PARTIAL — test-only uniform loot override passed runtime testing; all 11 valid structure IDs have locate/visual presence evidence in disposable Overworld; crashed-airship hillside placement visually accepted; maintainer spot checks: engineering-house standard and Lootr barrels generated loot; crashed-airship vanilla chest has no assigned loot table; remaining structure/container loot coverage is delegated to beta testers; release-safe fix/distribution decision remains open; `plane` ID rejected; original JAR unchanged |
 | Integrated Villages | PARTIAL — server load and structure-ID lookups observed; generation completeness, vanilla-village behavior and performance remain unverified |
 | Entity Culling | REMOVED from current CurseForge client profile; confirmed absent in 6 Nov client-folder screenshot; not an active test candidate |
@@ -598,8 +598,8 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 | Place a small wall/floor pattern. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Verify direction, range, item use, limits, claim protection and stop/undo behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Every Compat 2.11.56
-**Current status:** Partial — Carpenter's Table variants and stone table user-reported working; duplicate Golden Cherry Leaves registration and large block footprint remain.
+### Every Compat 2.11.57
+**Current status:** Partial — the paired 2.11.57 + Moonlight 3.8.2 runtime smoke test passed and was accepted for the baseline; duplicate Golden Cherry Leaves registration and large block footprint remain. Block/recipe/model/texture/drop feature checks are delegated to beta testers.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
@@ -1077,8 +1077,8 @@ The 6 November 2026 CurseForge `Create World/mods` screenshot confirms Entity Cu
 | Verify config interface opens and dependent config screens load/save. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Standalone and bundled copies must not duplicate. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Moonlight Lib 3.8.1
-**Current status:** Pending
+### Moonlight Lib 3.8.2
+**Current status:** Partial — accepted as Every Compat 2.11.57's required dependency after the paired Windows runtime smoke test; feature-level dependent behavior remains assigned to beta testers.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
@@ -1248,17 +1248,18 @@ The accompanying `gc.log` shows G1 garbage collection reclaiming heap after allo
 
 No production world or configuration was changed.
 
-## Every Compat 2.11.57 paired update smoke test — 6 November 2026
+## Every Compat 2.11.57 paired update — accepted 7 November 2026
 
-**Status: routine Windows startup/world-load/client-login/clean-shutdown smoke test passed; the candidate is not accepted for the pack.**
+**Status: accepted baseline target after routine Windows startup/world-load/client-login/clean-shutdown smoke test passed.** The new pair is Every Compat 2.11.57 + Moonlight Lib 3.8.2. The original Create World client profile and standard dedicated-server baseline still need those two JARs copied into place; local deployment is pending.
 
-- Accepted baseline: Every Compat 2.11.56 + Moonlight Lib 3.8.1.
+- Previous baseline: Every Compat 2.11.56 + Moonlight Lib 3.8.1.
+- Accepted baseline target: Every Compat 2.11.57 + Moonlight Lib 3.8.2.
 - Tested disposable pair: Every Compat 2.11.57 NeoForge (CurseForge file [9468938](https://www.curseforge.com/minecraft/mc-mods/every-compat/files/9468938)) + Moonlight Lib 3.8.2 NeoForge (file [9458248](https://www.curseforge.com/minecraft/mc-mods/selene/files/9458248)). The 2.11.57 release requires Moonlight 3.8.2 or newer.
 - Both updated files loaded on the disposable Windows dedicated server and matching client. The server reached Done, all four IronWoven datapacks were enabled, the client joined, and the server saved all dimensions on shutdown.
 - The duplicate Golden Cherry Leaves registration remains on both sides. This update does not resolve the existing duplicate registration issue.
-- The CurseForge test entry named Ironwoven - Every Compat Update Test opened the separate IronWoven Age Of Industry instance folder. The original Create World profile was separate and remained on the accepted 2.11.56 + 3.8.1 pair.
+- The CurseForge test entry named Ironwoven - Every Compat Update Test opened the separate IronWoven Age Of Industry instance folder. The original Create World profile is separate and still awaits local deployment of the accepted pair.
 - The maintainer performed no block, recipe, JEI, model, texture, drop or gameplay feature checks. Those checks are assigned to beta testers and remain pending in the functional-test process. Do not mark any feature row passed from this smoke test.
-- The accepted mod list, public MODS.md, manifest and modpack version remain unchanged pending beta-tester results and a separate maintainer acceptance decision.
+- The maintainer accepted this pair on 7 November 2026. Feature checks remain untested and delegated to beta testers; do not mark any feature row passed from this smoke test. The local baseline folders still need the two accepted JARs copied into place.
 ## Create Aeronautics Structures uniform loot-table runtime retest — 6 November 2026
 
 **Result: test-only loot-table workaround passed runtime testing; Batch D remains partial.** The maintainer placed `IronWoven-Aeronautics-Structures-Loot-Fix.zip` in the disposable `world_lootr_test/datapacks` folder, keeping all four existing IronWoven packs. The server's enabled-pack list includes the new ZIP, the server reaches `Done (1.788s)`, the matching client logs in, and shutdown saves all dimensions. Repeated `/loot give @s loot cr_aero_structures:chests/uniform` commands produced differently dyed leather armour and iron sword/axe drops in the supplied inventory screenshots. The supplied 19:32–19:38 server log contains no recurrence of the targeted uniform loot-table parse error.

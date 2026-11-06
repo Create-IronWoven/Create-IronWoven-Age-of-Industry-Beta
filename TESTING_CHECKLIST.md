@@ -26,7 +26,7 @@ This section is the current status summary. Dated trial tables later in this fil
 | Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |
 | PowerGrid 0.6.2 | PARTIAL — internal Windows native loading and client join passed with restored 0.6.1 DLL; electrical-network behavior reserved for beta testers; Linux untested |
 | Every Compat | PARTIAL — duplicate Golden Cherry Leaves registration remains open; newer 2.11.57 + Moonlight 3.8.2 pairing was approved for a disposable test only, not accepted |
-| Create Aeronautics Structures | PARTIAL — server smoke passed; JAR metadata matches CurseForge file 8399115; uniform loot-table override prepared but not runtime-tested; Overworld structure generation unverified |
+| Create Aeronautics Structures | PARTIAL — test-only uniform loot-table override passed runtime testing in disposable Windows `world_lootr_test`; original JAR unchanged; Overworld structure generation and release-safe fix/distribution decision remain open |
 | Integrated Villages | PARTIAL — server load and structure-ID lookups observed; generation completeness, vanilla-village behavior and performance remain unverified |
 | Entity Culling | REMOVED from current CurseForge client profile; confirmed absent in 6 Nov client-folder screenshot; not an active test candidate |
 | ImmediatelyFast / Flerovium / More Culling | Optional client candidates only; not confirmed as currently installed by latest client screenshot; do not treat as current installed mods |
@@ -1254,3 +1254,15 @@ No production world or configuration was changed.
 - Use a separate disposable profile/world. Keep Minecraft 1.21.1, NeoForge 21.1.265, Java 21, Chipped, BYG, Regions Unexplored, and the production world unchanged.
 - Verify matching server/client versions, startup, world load, client login, Carpenter's Table recipes, generated blocks/models/textures, JEI, drops, placement, synchronization, known duplicate registration, registry footprint, save/restart, and logs.
 - A startup smoke-test pass is not feature validation or approval. Do not change the accepted mod inventory, public MODS.md, manifest, or modpack version until the paired test is complete and the maintainer separately accepts the update.
+
+
+## Create Aeronautics Structures uniform loot-table runtime retest — 6 November 2026
+
+**Result: test-only loot-table workaround passed runtime testing; Batch D remains partial.** The maintainer placed `IronWoven-Aeronautics-Structures-Loot-Fix.zip` in the disposable `world_lootr_test/datapacks` folder, keeping all four existing IronWoven packs. The server's enabled-pack list includes the new ZIP, the server reaches `Done (1.788s)`, the matching client logs in, and shutdown saves all dimensions. Repeated `/loot give @s loot cr_aero_structures:chests/uniform` commands produced differently dyed leather armour and iron sword/axe drops in the supplied inventory screenshots. The supplied 19:32–19:38 server log contains no recurrence of the targeted uniform loot-table parse error.
+
+- Uniform loot table with test-only datapack override: **PASS — disposable Windows profile**.
+- Official `cr_aero_structures.jar`: **UNCHANGED**; the override is not an upstream correction.
+- Overworld structure generation: **NOT TESTED**.
+- Release-safe correction / datapack distribution decision: **OPEN**.
+
+The override substitutes a 16-color vanilla dye palette for the invalid full-range RGB number provider. Do not treat this test-only ZIP as an approved release artifact. The same server log also records a separate Every Compat duplicate Golden Cherry Leaves registration error; it is not caused by this Aeronautics Structures override.

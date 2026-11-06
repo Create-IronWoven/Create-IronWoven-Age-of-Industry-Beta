@@ -17,6 +17,10 @@ Create IronWoven is in **internal compatibility and functional testing**. There 
 - [Planned mods and project decisions](MOD_PLANS.md)
 - [Known player-relevant issues](KNOWN_ISSUES.md)
 
+## Server platform status
+
+Windows is the current development and test environment. Linux is a planned server target, but the maintainer has not yet set up a Linux system. Linux compatibility and runtime behavior are not tested or verified. Linux validation will be added to release preparation once a test system is available.
+
 ## Testing progress
 
 **Latest corrected compatibility datapack retest — 6 November 2026, 15:54:** all four IronWoven world-scoped compatibility datapacks were enabled in the disposable test world. Dedicated-server startup, world load, matching client login, and clean shutdown with all dimensions saved passed. The corrected log contains no targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk, or Create Deco placard errors. This is a log-level compatibility retest, not proof of every gameplay drop or recipe function. The log has 6 ERROR-level records and 172 WARN-level records; the remaining error findings are Struts, PowerGrid, Every Compat, Create Aeronautics Structures, and the Shulker Box Tooltip / Supplementaries integration. InControl read `areas.json`.

@@ -1323,3 +1323,15 @@ The maintainer supplied a wider follow-up screenshot of the `cr_aero_structures:
 - Visual terrain placement: **PASS — accepted as partially buried hillside wreck**.
 - Chest contents / loot / interactions: **NOT TESTED**.
 - Official mod JAR and production world: **UNCHANGED**.
+
+
+## Create Aeronautics Structures — crashed-airship chest loot check — 6 November 2026
+
+The maintainer opened the chest visible in the `cr_aero_structures:crash_airship` wreck and reported that it contained no items.
+
+- Crash-airship structure presence / placement: **PASS**.
+- Tested crash-airship chest: **FAIL — empty / no items found**.
+- Other structure chest loot: **NOT TESTED**.
+- Official mod JAR and production world: **UNCHANGED**.
+
+This result applies only to the chest inspected. It does not yet prove that every structure loot table is broken. Investigate the chest's loot-table initialization and active datapack/mod resources before changing the official JAR or beta package.

@@ -26,7 +26,7 @@ This section is the current status summary. Dated trial tables later in this fil
 | Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |
 | PowerGrid 0.6.2 | PARTIAL — internal Windows native loading and client join passed with restored 0.6.1 DLL; electrical-network behavior reserved for beta testers; Linux untested |
 | Every Compat | PARTIAL — duplicate Golden Cherry Leaves registration remains open; newer 2.11.57 + Moonlight 3.8.2 pairing was approved for a disposable test only, not accepted |
-| Create Aeronautics Structures | PARTIAL — test-only uniform loot override passed runtime testing; Overworld airship and boat visually confirmed; engineering house, hot-air balloon and other variants and release-safe fix/distribution decision remain open; original JAR unchanged |
+| Create Aeronautics Structures | PARTIAL — test-only uniform loot override passed runtime testing; airship, boat, engineering house, hot-air balloon, crash-airballoon, crash-pillager-airballoon, crash-pillager-airship, crash-plane, pillager-airballoon and pillager-airship visually confirmed in disposable Overworld; crash-airship, loot/interaction checks and release-safe fix/distribution decision remain open; `plane` ID rejected by Minecraft; original JAR unchanged |
 | Integrated Villages | PARTIAL — server load and structure-ID lookups observed; generation completeness, vanilla-village behavior and performance remain unverified |
 | Entity Culling | REMOVED from current CurseForge client profile; confirmed absent in 6 Nov client-folder screenshot; not an active test candidate |
 | ImmediatelyFast / Flerovium / More Culling | Optional client candidates only; not confirmed as currently installed by latest client screenshot; do not treat as current installed mods |
@@ -1277,3 +1277,25 @@ The override substitutes a 16-color vanilla dye palette for the invalid full-ran
 - Boat chest contents / loot: **NOT TESTED**.
 - Other structure variants: **PENDING**.
 - Official mod JAR and production world: **UNCHANGED**.
+
+
+## Create Aeronautics Structures — expanded Overworld generation checks — 6 November 2026
+
+The maintainer supplied screenshots showing locate results, teleports and generated structures in the disposable Windows Overworld.
+
+| Structure ID | Result | Evidence |
+|---|---|---|
+| `cr_aero_structures:engineering_house` | **PASS — visual** | Timber-and-stone house with teal roof, balcony and villager visible. |
+| `cr_aero_structures:airballoon` | **PASS — visual** | Suspended hot-air balloon, envelope and basket visible. |
+| `cr_aero_structures:crash_airballoon` | **PASS — visual** | Ground-level crash-site structure and wreckage visible. |
+| `cr_aero_structures:crash_pillager_airballoon` | **PASS — visual** | Locate/teleport shown; crash-site pieces visible. |
+| `cr_aero_structures:crash_pillager_airship` | **PASS — visual** | Locate/teleport shown; dark balloon craft and platform visible. |
+| `cr_aero_structures:crash_plane` | **PASS — visual** | Locate/teleport shown; partially terrain-embedded aircraft wreckage visible. |
+| `cr_aero_structures:pillager_airballoon` | **PASS — visual** | Locate/teleport shown; large pillager balloon craft visible. |
+| `cr_aero_structures:pillager_airship` | **PASS — visual** | Locate/teleport shown; large pillager airship and gondola visible. |
+| `cr_aero_structures:crash_airship` | **PENDING** | No result/evidence supplied yet. |
+| `cr_aero_structures:plane` | **INVALID ID** | Minecraft explicitly returned: `There is no structure with type "cr_aero_structures:plane"`. This is not a generation failure; do not retry this ID. |
+
+These passes confirm structure presence and visible generation only, not loot contents, generation frequency, entity behavior or all interactive features. The uniform-loot workaround remains a separate test-only datapack; the official mod JAR and production world remain unchanged.
+
+**Next structure lookup:** `/locate structure cr_aero_structures:crash_airship`

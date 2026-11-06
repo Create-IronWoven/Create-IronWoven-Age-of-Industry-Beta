@@ -6,8 +6,10 @@ Player-facing highlights only. This is not a record of internal commits or test 
 
 - **`v0.1.110-R001`:** Removed Sodium 0.8.13 (client-only) from the CurseForge profile.
 - **`v0.1.110-R002`:** Removed Sodium Extra 0.9.5 (client-only) from the CurseForge profile.
+- **`v0.1.111-R002`:** Updated Every Compat (Wood Good) from 2.11.56 to 2.11.57 (CurseForge file 9468938).
+- **`v0.1.112-R002`:** Updated the required Moonlight Lib (Selene) dependency from 3.8.1 to 3.8.2 (CurseForge file 9458248), paired with Every Compat 2.11.57.
 
-- **Current development version: `v0.1.110-R002`.** Content-change counter `110` is the retroactive baseline from the 5 November CurseForge profile screenshot (`Mods (110)`). Removal counter `R002` records two client-only mod removals: Sodium 0.8.13 and Sodium Extra 0.9.5. The latest profile screenshot shows `Mods (108)`; the client folder's earlier snapshot shows 104 JAR files; the latest dedicated-server folder screenshot shows 106 JAR files. These are different inventory measures, not 110 public releases. No downloadable beta package has been published.
+- **Current development version: `v0.1.112-R002`.** Content-change counter `110` is the retroactive baseline from the 5 November CurseForge profile screenshot (`Mods (110)`). Removal counter `R002` records two client-only mod removals: Sodium 0.8.13 and Sodium Extra 0.9.5. The latest profile screenshot shows `Mods (108)`; the client folder's earlier snapshot shows 104 JAR files; the latest dedicated-server folder screenshot shows 106 JAR files. These are different inventory measures, not 110 public releases. No downloadable beta package has been published. The accepted Every Compat/Moonlight files still need to be copied into the original client and standard dedicated-server baseline folders.
 
 - Compatibility testing continues for Minecraft 1.21.1 / NeoForge 21.1.265.
 - Routine server startup, disposable-world load, matching-client login, and log-review smoke tests passed for batches A, B, and C.

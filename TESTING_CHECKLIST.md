@@ -26,7 +26,7 @@ This section is the current status summary. Dated trial tables later in this fil
 | Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |
 | PowerGrid 0.6.2 | PARTIAL — internal Windows native loading and client join passed with restored 0.6.1 DLL; electrical-network behavior reserved for beta testers; Linux untested |
 | Every Compat | PARTIAL — duplicate Golden Cherry Leaves registration remains open; newer 2.11.57 + Moonlight 3.8.2 pairing was approved for a disposable test only, not accepted |
-| Create Aeronautics Structures | PARTIAL — test-only uniform loot override passed runtime testing; one Overworld airship located and visually confirmed; other variants and release-safe fix/distribution decision remain open; original JAR unchanged |
+| Create Aeronautics Structures | PARTIAL — test-only uniform loot override passed runtime testing; Overworld airship and boat visually confirmed; engineering house, hot-air balloon and other variants and release-safe fix/distribution decision remain open; original JAR unchanged |
 | Integrated Villages | PARTIAL — server load and structure-ID lookups observed; generation completeness, vanilla-village behavior and performance remain unverified |
 | Entity Culling | REMOVED from current CurseForge client profile; confirmed absent in 6 Nov client-folder screenshot; not an active test candidate |
 | ImmediatelyFast / Flerovium / More Culling | Optional client candidates only; not confirmed as currently installed by latest client screenshot; do not treat as current installed mods |
@@ -1267,3 +1267,13 @@ No production world or configuration was changed.
 - Release-safe correction / datapack distribution decision: **OPEN**.
 
 The override substitutes a 16-color vanilla dye palette for the invalid full-range RGB number provider. Do not treat this test-only ZIP as an approved release artifact. The same server log also records a separate Every Compat duplicate Golden Cherry Leaves registration error; it is not caused by this Aeronautics Structures override.
+
+
+## Create Aeronautics Structures boat-generation check — 6 November 2026, 20:00
+
+**Result: abandoned boat structure visually confirmed in the disposable Overworld.** The maintainer supplied an in-game screenshot showing a small wooden boat structure floating on the water, with a deck and visible equipment / storage-like blocks. This confirms a boat structure is present in the tested world. The screenshot does not independently capture the `/locate` output or prove chest loot, trader behavior, or interactive features.
+
+- Boat structure presence: **PASS — visual confirmation, disposable Windows world**.
+- Boat chest contents / loot: **NOT TESTED**.
+- Other structure variants: **PENDING**.
+- Official mod JAR and production world: **UNCHANGED**.

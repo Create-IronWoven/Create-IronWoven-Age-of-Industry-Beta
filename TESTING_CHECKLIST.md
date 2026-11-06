@@ -299,13 +299,13 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 | Inspect Copycats Catwalk physics-tag errors. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Strut Your Stuff 1.3.1
-**Current status:** Pending — shared library; dependent integration and server-side issue remain open.
+**Current status:** Partial — local patched server/client test passed for the dedicated-server mixin issue and the shown Struts components render, but dependent-mod feature tests remain pending. The official CurseForge file and modpack manifest are unchanged, so release-level resolution remains open.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|
+|---|---|---|---|---|---|
 | Validate through dependent mods: spanning/collision structures, surface clipping, interaction and cable behavior/droop. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Check dedicated-server RenderSystem class-loading issue. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
+| Check dedicated-server RenderSystem class-loading issue. | Passed on local patched profile | Disposable MinecraftServer-Test + matching CurseForge Create World profile; Minecraft 1.21.1 / NeoForge 21.1.265 | Not recorded | 06-11-2026 | 16:40–16:47 server/client/debug logs contain no RenderSystem or StrutRenderSystemAccessor; server reached Done, client joined, clean shutdown. Local patched JAR is not part of official CurseForge manifest. |
+| Inspect visible Struts beams/girders in-game. | Passed for shown examples | Disposable MinecraftServer-Test + matching CurseForge Create World profile | Not recorded | 06-11-2026 | 16:46 screenshots show metal Struts components rendering. Client log still warns that both waterlogged variants of girder_strut_structure have missing models; not every variant tested. |
 ## B. Create automation, energy, industry and build addons
 
 ### Create: Bits 'n' Bobs 2.3.5
@@ -1205,7 +1205,7 @@ The accompanying `gc.log` shows G1 garbage collection reclaiming heap after allo
 
 ### Issues still open
 
-- Struts still attempted to load client-only `RenderSystem` on the dedicated server.
+- Struts' dedicated-server `RenderSystem` issue does not recur in the 6 November 16:40–16:47 local patched-profile runtime test, and the shown components render. The standard-install/release issue remains open because the local JAR patch is not part of the official CurseForge file or modpack manifest; two `girder_strut_structure` waterlogged-variant model warnings remain.
 - PowerGrid's optional `powergridNative7` accelerated solver still could not load; the server used its fallback.
 - Batch D's Aeronautics Structures loot-table / provenance / structure-generation review remains partial.
 - World-scoped datapack-dependent errors still need to be interpreted only in worlds where the relevant packs are enabled.

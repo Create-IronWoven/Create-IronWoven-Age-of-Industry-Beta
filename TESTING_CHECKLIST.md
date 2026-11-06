@@ -744,13 +744,14 @@ Dependency evidence: the first startup attempt lacked Supplementaries and Integr
 | Verify accurate descriptions and layout. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Shulker Box Tooltip 5.1.9+1.21.1
-**Current status:** Partial — client-side provider registration works; the dedicated-server Supplementaries provider integration triggers the open upstream [issue #263](https://github.com/MisterPeModder/ShulkerBoxTooltip/issues/263). A reversible client config workaround is under investigation, not yet tested.
+**Current status:** Partial — client-side providers register locally, and the client config workaround suppresses the dedicated-server Supplementaries `PreviewRenderer` error. In-game preview behavior and release trade-off remain untested. Upstream [issue #263](https://github.com/MisterPeModder/ShulkerBoxTooltip/issues/263) remains relevant.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|
+|---|---|---|---|---|---|
 | Hover filled shulkers. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Verify contents preview, item counts, scroll/page behavior and provider integrations. 31 providers registered is not visual proof. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Test dedicated-server login with client `preview.serverIntegration=false`. | Pending | Disposable MinecraftServer-Test + matching CurseForge Create World profile | Not recorded | DD-MM-YYYY | Proposed config-only test; expected to prevent SBT handshake/server plugin load while preserving local client provider registration. Ender Chest synchronization will be disabled during the test. See the public known issue for details. |
+| Test dedicated-server login with client `preview.serverIntegration=false`. | Passed — log-level handshake suppression | Disposable MinecraftServer-Test + matching CurseForge Create World profile; Minecraft 1.21.1 / NeoForge 21.1.265 | Not recorded | 06-11-2026 | Server log has no PreviewRenderer or failed Supplementaries provider registration; ERROR count fell from 5 to 3. Client still registered 3 Supplementaries and 31 SBT providers locally; player joined and server shut down cleanly. Remote Ender Chest/server-supplied extras are disabled by this workaround. |
+| Test local Supplementaries Sack or Lunch Basket preview with server integration disabled. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Must confirm the client-side preview actually renders; provider registration alone is not visual proof. |
 
 ### Mouse Tweaks 2.26.1
 **Current status:** Pending

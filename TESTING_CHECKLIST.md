@@ -24,7 +24,7 @@ This section is the current status summary. Dated trial tables later in this fil
 | World-scoped compatibility datapacks | PASS at log level — four packs enabled; targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk and Create Deco placard errors absent in corrected retest |
 | Struts | PARTIAL — local patched server/client runtime and visible test pieces passed; official CurseForge JAR remains unpatched, so standard-install/release issue remains open |
 | Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |
-| PowerGrid 0.6.2 | PARTIAL — Windows native loading passed on disposable server and matching client with restored 0.6.1 Windows DLL; circuit behavior untested; Linux untested |
+| PowerGrid 0.6.2 | PARTIAL — internal Windows native loading and client join passed with restored 0.6.1 DLL; electrical-network behavior reserved for beta testers; Linux untested |
 | Every Compat | PARTIAL — duplicate Golden Cherry Leaves registration remains open; newer 2.11.57 + Moonlight 3.8.2 pairing was approved for a disposable test only, not accepted |
 | Create Aeronautics Structures | PARTIAL — server smoke passed; structure generation and exact file provenance unverified; uniform chest loot-table parse error remains under review |
 | Integrated Villages | PARTIAL — server load and structure-ID lookups observed; generation completeness, vanilla-village behavior and performance remain unverified |
@@ -75,11 +75,11 @@ The 6 November 15:54 datapack-enabled disposable-server retest reached `Done`, l
 
 ## PowerGrid Windows native-load retest — 6 November 2026, 18:29–18:34
 
-**Result: Windows native loading passed on the disposable server and matching client; circuit behavior is still untested.** The PowerGrid 0.6.2 JAR was not modified. The official 0.6.1 Windows DLL was copied into the disposable server and CurseForge client `.pg-native` directories. The 18:29 server log and 18:34 client log both reported `Native backend loaded successfully`. The server reached `Done (1.837s)`; the matching client connected to `127.0.0.1:25565` and entered the world. This workaround must not be mistaken for an official 0.6.2 package fix or an accepted modpack change.
+**Result: internal Windows native loading and client connection passed. Electrical-network/component behavior is a beta-tester feature check, not another internal maintainer task.** The PowerGrid 0.6.2 JAR was not modified. The official 0.6.1 Windows DLL was copied into the disposable server and CurseForge client `.pg-native` directories. The 18:29 server log and 18:34 client log both reported `Native backend loaded successfully`. The server reached `Done (1.837s)`; the matching client connected to `127.0.0.1:25565` and entered the world. This workaround must not be mistaken for an official 0.6.2 package fix or an accepted modpack change.
 
 - Windows server native load: PASS — disposable profile.
 - Windows client native load: PASS — matching CurseForge profile.
-- PowerGrid electrical network / component behavior: NOT TESTED.
+- PowerGrid electrical network / component behavior: DEFERRED TO BETA TESTERS; not an internal fix-pass task.
 - Linux native solver: NOT TESTED — Linux requires the Linux `.so`; do not use the Windows DLL.
 - Production files and modpack manifest: unchanged.
 
@@ -477,7 +477,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 |---|---|---|---|---|---|
 | Diagnose missing `powergridNative7` on server and client. | Root cause confirmed — 0.6.2 package omits native binaries | Disposable MinecraftServer-Test + CurseForge Create World; Windows 11 x64; Minecraft 1.21.1 / NeoForge 21.1.265 | Not recorded | 06-11-2026 | Matches upstream [PowerGrid issue #1165](https://github.com/patryk3211/PowerGrid/issues/1165). |
 | Restore 0.6.1 Windows native DLL to server and client `.pg-native` folders. | **Passed — server and client native loading** | Disposable server + matching CurseForge profile | Not recorded | 06-11-2026 | Server `latest(20261106-173022).log` (18:29) and client `latest(20261106-173558).log` (18:34) both report `Native backend loaded successfully`. Server reached `Done (1.837s)`; client connected to `127.0.0.1:25565` and entered the world. PowerGrid 0.6.2 JAR unchanged. |
-| Build a small electrical network with source, wires, transformer and consumers. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Both Windows native loads pass; now test actual circuit behavior and confirm solver operation. |
+| Build and operate a small electrical network with source, compatible wires, transformer (if used), and consumers. | **Reserved for beta testers — not part of internal fix pass** | Beta release package / target test platform | Beta tester | On beta test | Verify network formation, power delivery, stability, solver errors, and whether the beta package includes the platform-native library or uses Java fallback. Record logs and platform. |
 | Test components and Java fallback separately. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Fallback initialization was previously observed; component behavior remains unverified. |
 | Record Linux native solver separately. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Linux requires `native/linux/libpowergridNative7.so`; Windows DLL must not be used on Linux. |
 ### Create: Sound of Steam / Pipe Organs 0.9.2.1

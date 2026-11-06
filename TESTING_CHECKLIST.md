@@ -25,7 +25,7 @@ This section is the current status summary. Dated trial tables later in this fil
 | Struts | PARTIAL — local patched server/client runtime and visible test pieces passed; official CurseForge JAR remains unpatched, so standard-install/release issue remains open |
 | Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |
 | PowerGrid 0.6.2 | PARTIAL — internal Windows native loading and client join passed with restored 0.6.1 DLL; electrical-network behavior reserved for beta testers; Linux untested |
-| Every Compat | PARTIAL — accepted pair 2.11.57 + Moonlight 3.8.2 passed Windows disposable startup/world/login/shutdown smoke test; duplicate Golden Cherry Leaves registration remains open; feature-level checks are assigned to beta testers; physical baseline deployment pending |
+| Every Compat | PARTIAL — accepted pair 2.11.57 + Moonlight 3.8.2 passed Windows disposable startup/world/login/shutdown smoke test; duplicate Golden Cherry Leaves registration remains open; feature-level checks are assigned to beta testers; client baseline deployment confirmed; server deployment pending |
 | Create Aeronautics Structures | PARTIAL — test-only uniform loot override passed runtime testing; all 11 valid structure IDs have locate/visual presence evidence in disposable Overworld; crashed-airship hillside placement visually accepted; maintainer spot checks: engineering-house standard and Lootr barrels generated loot; crashed-airship vanilla chest has no assigned loot table; remaining structure/container loot coverage is delegated to beta testers; release-safe fix/distribution decision remains open; `plane` ID rejected; original JAR unchanged |
 | Integrated Villages | PARTIAL — server load and structure-ID lookups observed; generation completeness, vanilla-village behavior and performance remain unverified |
 | Entity Culling | REMOVED from current CurseForge client profile; confirmed absent in 6 Nov client-folder screenshot; not an active test candidate |
@@ -1250,7 +1250,7 @@ No production world or configuration was changed.
 
 ## Every Compat 2.11.57 paired update — accepted 7 November 2026
 
-**Status: accepted baseline target after routine Windows startup/world-load/client-login/clean-shutdown smoke test passed.** The new pair is Every Compat 2.11.57 + Moonlight Lib 3.8.2. The original Create World client profile and standard dedicated-server baseline still need those two JARs copied into place; local deployment is pending.
+**Status: accepted baseline target after routine Windows startup/world-load/client-login/clean-shutdown smoke test passed.** The new pair is Every Compat 2.11.57 + Moonlight Lib 3.8.2. The original Create World client profile is screenshot-verified with both accepted JARs; the standard dedicated-server baseline still needs the pair.
 
 - Previous baseline: Every Compat 2.11.56 + Moonlight Lib 3.8.1.
 - Accepted baseline target: Every Compat 2.11.57 + Moonlight Lib 3.8.2.

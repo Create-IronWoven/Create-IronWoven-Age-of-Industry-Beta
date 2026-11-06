@@ -1,11 +1,12 @@
 # Mods in Ironwoven: Age of Industry
 
-**Latest dedicated-server folder snapshot:** 6 November 2026 — 106 visible JAR files. Client inventory is separate and unchanged by this server-only screenshot.  
+**Latest dedicated-server folder snapshot:** 6 November 2026 — 106 visible JAR files. Client inventory is separate and unchanged by this server-only screenshot.
+**Accepted baseline target:** `v0.1.112-R002` includes Every Compat 2.11.57 and Moonlight Lib 3.8.2. The original `Create World` client profile and normal dedicated-server baseline still need these two JARs copied into place; their latest observed physical folder snapshots remain on 2.11.56 + 3.8.1 until the maintainer confirms deployment.  
 **Minecraft:** 1.21.1  
 **Loader:** NeoForge 21.1.265  
 **Java:** 21
 
-This page records the latest reviewed test-folder inventory snapshot and identifies client-only additions. It is not a final release manifest. The latest CurseForge profile shows **108 mod entries**. The latest client `mods` folder snapshot shows **104 JAR files**; the latest dedicated-server `MinecraftServer-Test/mods` screenshot (6 November 2026) shows **106 JAR files**. The server screenshot supersedes its earlier 104-file observation; the client count remains unchanged. These are different counting methods: CurseForge entries and physical JAR files are not interchangeable, especially where mods bundle components. Matching folder counts do not by themselves prove exact filename equality. A later disposable-server log detected Create Aeronautics Structures 1.1.0-Beta-3.1 as an Overworld test candidate; it is not part of the accepted inventory. The maintainer-supplied JAR metadata matches official CurseForge file 8399115 by version (not hash-compared). Its test-only 16-color uniform-loot override passed runtime testing in a disposable Windows world; the official JAR remains unchanged. All 11 valid Overworld structure IDs now have locate/visual-presence evidence, with the crashed-airship hillside placement visually accepted; `plane` is invalid. Maintainer spot checks found items in the engineering-house standard and Lootr barrels; one crashed-airship vanilla chest has no assigned loot table. Remaining structure/container loot coverage is delegated to beta testers; the chest defect and release-safe correction/distribution decision remain open. Its Russian startup message is informational only.
+This page records the latest reviewed test-folder inventory snapshot and identifies client-only additions. Accepted version targets may be ahead of physical folder snapshots while an approved update is awaiting local deployment. It is not a final release manifest. The latest CurseForge profile shows **108 mod entries**. The latest client `mods` folder snapshot shows **104 JAR files**; the latest dedicated-server `MinecraftServer-Test/mods` screenshot (6 November 2026) shows **106 JAR files**. The server screenshot supersedes its earlier 104-file observation; the client count remains unchanged. These are different counting methods: CurseForge entries and physical JAR files are not interchangeable, especially where mods bundle components. Matching folder counts do not by themselves prove exact filename equality. A later disposable-server log detected Create Aeronautics Structures 1.1.0-Beta-3.1 as an Overworld test candidate; it is not part of the accepted inventory. The maintainer-supplied JAR metadata matches official CurseForge file 8399115 by version (not hash-compared). Its test-only 16-color uniform-loot override passed runtime testing in a disposable Windows world; the official JAR remains unchanged. All 11 valid Overworld structure IDs now have locate/visual-presence evidence, with the crashed-airship hillside placement visually accepted; `plane` is invalid. Maintainer spot checks found items in the engineering-house standard and Lootr barrels; one crashed-airship vanilla chest has no assigned loot table. Remaining structure/container loot coverage is delegated to beta testers; the chest defect and release-safe correction/distribution decision remain open. Its Russian startup message is informational only.
 
 Some entries below are libraries, APIs, or bundled components required by other mods. They are listed for transparency even though they do not add a standalone gameplay feature.
 
@@ -63,7 +64,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 
 | Mod | Version in test snapshot |
 |---|---|
-| Every Compat (Wood Good) | 2.11.56 — installed and maintainer-approved; Moonlight Lib 3.8.1 required |
+| Every Compat (Wood Good) | 2.11.57 — accepted baseline target; paired with Moonlight Lib 3.8.2; local baseline deployment pending |
 | Chipped | 4.0.2 |
 | Design n' Decor | 2.2b |
 | Farmer's Delight | 1.3.4 |
@@ -143,7 +144,7 @@ These support other mods and may not appear as separate gameplay features.
 | Integrated API | 1.9.1 — Integrated Villages dependency; validated present in corrected server test profile |
 | Kotlin for Forge | 5.12.0 |
 | MezzConfig | 0.6.10 |
-| Moonlight Lib (Selene) | 3.8.1 — required Every Compat dependency |
+| Moonlight Lib (Selene) | 3.8.2 — accepted required dependency for Every Compat 2.11.57; local baseline deployment pending |
 | ModernFix | 5.27.27 |
 | Ponder | 1.0.82 |
 | Resourceful Lib | 3.0.12 |
@@ -259,7 +260,7 @@ The screenshot also shows Bookshelf 21.1.81, FastFurnace 9.0.1, FastSuite 6.0.7,
 - The 6 November 2026 CurseForge `Create World/mods` client-profile screenshot confirms Entity Culling is absent from the current client mod folder. It is removed from the current optional-candidate list; older server-folder and archive references below are historical observations.
 - The screenshot is an inventory observation, not proof of each mod's features or acceptance into the final pack.
 
-**Current modpack version: `v0.1.110-R002`.** The `R001` and `R002` removal increments record the two maintainer-approved client-only removals, Sodium and Sodium Extra. Future additions/updates use the `UPDATE` counter; future mod removals use the separate `R` counter.
+**Current modpack version: `v0.1.112-R002`.** The `R001` and `R002` removal increments record the two maintainer-approved client-only removals, Sodium and Sodium Extra. `v0.1.111-R002` records the Every Compat 2.11.57 update; `v0.1.112-R002` records the required Moonlight Lib 3.8.2 dependency update. The approved pair is not yet copied into the original client/server baseline folders; this page distinguishes accepted target versions from the 6 November physical folder snapshot. Future additions/updates use the `UPDATE` counter; future mod removals use the separate `R` counter.
 
 
 ## Disabled/archive server-folder snapshot — 5 November 2026, 17:58
@@ -317,7 +318,7 @@ The screenshot proves these files are in the server's disabled archive, not whet
 
 `createkinetic-1.4.3.jar.original.bak` is a backup copy, not an active mod JAR. It is recorded here only to distinguish it from an installable mod file.
 
-**Versioning:** this archive reconciliation does not by itself increase the modpack version. Superseded JAR copies, unaccepted candidates, client-only files parked outside the server, and the paused End test set are not counted as new accepted content removals. The current development version remains `v0.1.110-R002`.
+**Versioning:** this archive reconciliation did not itself increase the modpack version at the time. Superseded JAR copies, unaccepted candidates, client-only files parked outside the server, and the paused End test set are not counted as new accepted content removals. The current development version is now `v0.1.112-R002` following the separately accepted Every Compat and Moonlight updates.
 
 
 ## Latest dedicated-server retest — 5 November 2026, 22:27–22:31
@@ -454,4 +455,4 @@ The maintainer confirmed this screenshot is from the dedicated-server `mods` fol
 - Supplementaries appears as `4.0.2`, compared with earlier `3.4.0` dependency notes. Verify the exact file and dependency compatibility.
 - Sophisticated Backpacks Create Integration appears as `0.2.3.194`; verify against prior records.
 - The folder listing does not prove successful loading or feature behavior. Later 6 November disposable-profile tests passed the local Struts server/client workaround for the shown components and passed PowerGrid Windows native loading on both server and client. The standard-install Struts release issue remains open because the official JAR is unchanged. PowerGrid electrical-network/component behavior is reserved for beta testers; Linux native loading is a separate future platform test. The local PowerGrid DLL copies are not part of the distributable beta package, so native-resource packaging remains a release decision. See `TESTING_CHECKLIST.md` and `KNOWN_ISSUES.md` for current player-facing status.
-- No installation/removal decision, release approval, or modpack version increment is implied. Current development version remains `v0.1.110-R002`.
+- No additional installation/removal decision is implied by this 6 November folder screenshot. Its physical JAR list predates the 7 November accepted Every Compat/Moonlight update; the current accepted development version is `v0.1.112-R002`, and physical baseline deployment is pending.

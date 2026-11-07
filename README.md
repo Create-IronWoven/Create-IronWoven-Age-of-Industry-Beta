@@ -1,6 +1,6 @@
 # Create IronWoven: Age of Industry
 
-![Create IronWoven: Age of Industry](assets/Ironwoven_%20Age%20of%20Industry.png)
+![Create IronWoven: Age of Industry](assets/Ironwoven_%20Age%20of%20Industry.v2.png)
 
 **Build. Engineer. Explore. Transport. Automate.**
 

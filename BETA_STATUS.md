@@ -14,12 +14,12 @@ The current development version `v0.1.112-R002` uses content-change counter `112
 
 The maintainer has created a **brand-new, clean Windows dedicated-server installation** named `IronWoven Age Of Industry v.0.1`. It is separate from the older `MinecraftServer-Test` folders and targets `v0.1.112-R002` on Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21.
 
-**Current state:** the NeoForge server runtime installed successfully, the new server folder contains **101 top-level mod JAR files**, and the world `IronWoven Age Of Industry_v0.1.0` has been generated. The server has reached the `Done` startup message.
+**Current state:** the new server has 101 top-level mod JAR files. Its NeoForge Mod List contains 118 entries (116 non-core pack mod IDs plus Minecraft and NeoForge). The active world `IronWoven Age Of Industry_v0.1.0` was generated and startup reached `Done (4.440s)`.
 
-**Datapack validation: PASS for discovery and enablement.** The separate root-aware Windows installer resolved the active world from `server.properties`. The 7 November 02:45 console screenshot reports 12 enabled datapacks and explicitly lists all four IronWoven world packs as enabled. The previous manual-copy discovery issue is resolved. Post-install targeted log review, matching client login, and clean shutdown remain pending.
+**Datapack and smoke-test validation: PASS.** All four IronWoven datapacks are enabled among 12 total datapacks. The 02:44–02:58 server log confirms a matching client joined, was granted operator permissions, successfully used Creative mode, disconnected, and the server saved all dimensions on clean shutdown. The five targeted error families addressed by the maintained datapacks are absent from this log.
 
-The 101-file count is a folder observation, not a NeoForge loaded-mod-ID count, compatibility pass, or feature test. The older `MinecraftServer-Test` count of 106 JARs is a historical observation for that old folder only. No downloadable server package or public beta has been published.
- 
+**Remaining compatibility findings:** the same run has 8 ERROR-level records covering the PowerGrid 0.6.2 native backend, Every Compat Golden Cherry Leaves duplicate, Create Aeronautics Structures uniform loot-table parsing, Shulker Box Tooltip/Supplementaries server-side preview-provider loading, and skipped Apotheosis data attachments. These are distinct from the four datapack fixes. A small set of DUMMY block-entity warnings also needs targeted review. The server has passed a routine smoke test, not complete feature validation. No downloadable server package or public beta has been published.
+
 ## Server platform status
 
 Windows is the current development and test environment. Linux is a planned server target, but the maintainer has not yet set up a Linux system. Linux compatibility and runtime behavior are not tested or verified. Linux validation will be added to release preparation once a test system is available.

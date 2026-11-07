@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Apply to become a beta tester
-    url: https://github.com/alexth110987/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=beta_application.yml
+    url: https://github.com/alexth110987/Create-IronWoven-Age-of-Industry/issues/new?template=beta_application.yml
     about: Beta access is limited and applications are reviewed manually.
   - name: Submit a beta functional test result
     url: https://github.com/alexth110987/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml

@@ -20,6 +20,7 @@ jobs:
       - name: Forward issue reference to private processor
         env:
           PRIVATE_DISPATCH_TOKEN: ${{ secrets.IRONWOVEN_PRIVATE_DISPATCH_TOKEN }}
+          PRIVATE_DISPATCH_URL: ${{ secrets.IRONWOVEN_PRIVATE_DISPATCH_URL }}
           SOURCE_REPOSITORY: ${{ github.repository }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           ISSUE_ACTION: ${{ github.event.action }}
@@ -27,13 +28,28 @@ jobs:
           python3 - <<'PY'
           import json
           import os
+          import re
           import sys
           import urllib.error
           import urllib.request
+          from urllib.parse import urlsplit
 
           token = os.environ.get("PRIVATE_DISPATCH_TOKEN", "").strip()
           if not token:
               sys.exit("Missing Actions secret IRONWOVEN_PRIVATE_DISPATCH_TOKEN.")
+
+          dispatch_url = os.environ.get("PRIVATE_DISPATCH_URL", "").strip()
+          if not dispatch_url:
+              sys.exit("Missing Actions secret IRONWOVEN_PRIVATE_DISPATCH_URL.")
+          parsed_url = urlsplit(dispatch_url)
+          if (
+              parsed_url.scheme != "https"
+              or parsed_url.netloc != "api.github.com"
+              or parsed_url.query
+              or parsed_url.fragment
+              or not re.fullmatch(r"/repos/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+/dispatches", parsed_url.path)
+          ):
+              sys.exit("Actions secret IRONWOVEN_PRIVATE_DISPATCH_URL must be an HTTPS GitHub repository-dispatch endpoint.")
 
           payload = {
               "event_type": "public-test-result-submitted",
@@ -44,7 +60,7 @@ jobs:
               },
           }
           request = urllib.request.Request(
-              "https://api.github.com/repos/alexth110987/Ironwoven-Age-of-Industry/dispatches",
+              dispatch_url,
               data=json.dumps(payload).encode("utf-8"),
               method="POST",
               headers={

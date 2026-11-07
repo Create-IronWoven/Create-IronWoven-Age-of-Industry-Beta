@@ -18,7 +18,7 @@ def api(method: str, path: str, payload: dict | None = None):
         "Authorization": f"Bearer {TOKEN}",
         "X-GitHub-Api-Version": "2022-11-28",
         "Content-Type": "application/json",
-        "User-Agent": "Create-IronWoven-test-result-updater",
+        "User-Agent": "Ironwoven-Age-of-Industry-Beta-test-result-updater",
     })
     with urllib.request.urlopen(request, timeout=30) as response:
         raw = response.read()

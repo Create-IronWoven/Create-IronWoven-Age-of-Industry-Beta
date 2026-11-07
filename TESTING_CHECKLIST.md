@@ -1056,8 +1056,8 @@ The 6 November 2026 CurseForge `Create World/mods` screenshot confirms Entity Cu
 |---|---|---|---|---|---|
 | Verify selected team/stage/permission integration is detected and behaves correctly. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Gadgets & Gizmos Library 1.2.10
-**Current status:** Pending
+### Gadgets & Gizmos Library 1.2.10 (bundled baseline)
+**Current status:** Pending — the 2.0.0-Pre-Release-4 candidate is a replacement bundled parent JAR (CurseForge file 9260191); do not count the library as a separate independently selected mod update unless the exact bundled component/version is separately confirmed.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|

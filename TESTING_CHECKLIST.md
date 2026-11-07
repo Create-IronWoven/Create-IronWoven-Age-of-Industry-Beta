@@ -21,7 +21,7 @@ This section is the current status summary. Dated trial tables later in this fil
 | Area | Current verified status |
 |---|---|
 | Dedicated-server smoke test | PASS — corrected 6 Nov datapack-enabled disposable profile reached Done, loaded world, accepted matching client, and shut down cleanly |
-| Fresh dedicated-server installation v.0.1 | IN PROGRESS — clean folder `IronWoven Age Of Industry v.0.1` created 7 Nov 2026; NeoForge 21.1.265 server runtime installed successfully; no `mods/` folder yet and 0 mod JARs; first server startup not run; final JAR and NeoForge loaded-mod counts pending |
+| Fresh dedicated-server installation v.0.1 | IN PROGRESS — clean Windows server created 7 Nov 2026; 101 top-level mod JARs confirmed; NeoForge reached `Done` and generated `IronWoven Age Of Industry_v0.1.0`; only two Lootr packs appeared in the subsequent available-pack list, so the four IronWoven datapacks are not yet confirmed available/enabled; NeoForge loaded-mod count, client login, and clean shutdown pending |
 | World-scoped compatibility datapacks | PASS at log level — four packs enabled; targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk and Create Deco placard errors absent in corrected retest |
 | Struts | PARTIAL — local patched server/client runtime and visible test pieces passed; official CurseForge JAR remains unpatched, so standard-install/release issue remains open |
 | Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |

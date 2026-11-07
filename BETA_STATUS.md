@@ -10,6 +10,14 @@ The 6 November server-folder screenshot is an inventory observation only. It doe
 
 The current development version `v0.1.112-R002` uses content-change counter `112` as the retroactive baseline from the 5 November 2026 CurseForge screenshot (`Mods (110)`). Removal counter `R002` records two client-only removals: Sodium 0.8.13 and Sodium Extra 0.9.5. The latest profile screenshot shows `Mods (108)`. The latest dedicated-server folder screenshot on 6 November shows 106 visible JAR files, superseding the earlier 104-file server-folder screenshot. The client inventory remains separate and is not updated by this server-only screenshot. This is not a claim of 110 public releases. No downloadable beta package exists. The accepted updates are Every Compat 2.11.57 (`v0.1.111-R002`) and its required Moonlight Lib 3.8.2 dependency (`v0.1.112-R002`). The latest supplied screenshots confirm both JARs are now present in the original Create World client profile and normal MinecraftServer-Test dedicated-server folder. Folder deployment is complete; startup/login verification on this updated baseline remains pending.
 
+## Fresh dedicated-server installation — v.0.1
+
+The next dedicated server is being prepared as a **brand-new, clean installation** named `IronWoven Age Of Industry v.0.1` (Windows folder name; no trailing period). Target content version: `v0.1.112-R002` on Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21.
+
+**Current state:** planned; the new folder has not yet been created. Initial installed mod count: **0 JAR files**. The final top-level `mods/*.jar` count and NeoForge loaded-mod count will be recorded separately after installation and first startup.
+
+The earlier `MinecraftServer-Test` folder contained 106 visible JAR files. That is a historical count for the old test folder only; it is not the new installation's count or expected target. The clean installation will use the reconciled approved server-required/shared inventory, and it is not a copy of the old test server. No downloadable server package has been published.
+
 Ironwoven: Age of Industry is in **internal compatibility and functional testing**. There is currently no public downloadable beta package and no release date has been announced.
 
 - [Current test-pack inventory](MODS.md)

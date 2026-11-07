@@ -1,4 +1,4 @@
-# Mods in Ironwoven: Age of Industry
+# Mods in Create IronWoven: Age of Industry
 
 **Earlier test-server folder snapshot:** 6 November 2026 — 106 visible JAR files in `MinecraftServer-Test/mods`; a later 23:33 screenshot confirms the accepted Every Compat 2.11.57 and Moonlight Lib 3.8.2 JARs are present in that test folder. The original `Create World/mods` client screenshot confirms the matching pair there too. The fresh clean server is a separate installation and contains 101 top-level mod JARs, as confirmed by its 7 November folder-properties screenshot.
 <!-- IRONWOVEN_AUTO_VERSION -->

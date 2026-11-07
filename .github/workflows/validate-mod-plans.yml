@@ -80,9 +80,9 @@ jobs:
           from pathlib import Path
 
           required = {
-              "README.md": ["# Ironwoven: Age of Industry", "## Platform", "## Feedback"],
+              "README.md": ["# Create IronWoven: Age of Industry", "## Platform", "## Feedback"],
               "BETA_STATUS.md": ["# Beta Status", "## Current status", "## Release readiness"],
-              "MODS.md": ["# Mods in Ironwoven: Age of Industry", "not a final release manifest"],
+              "MODS.md": ["# Mods in Create IronWoven: Age of Industry", "not a final release manifest"],
               "MOD_PLANS.md": ["# Mod Plans", "## Status meanings", "## Explicit exclusions",
                                "not the installed-mod list"],
               "KNOWN_ISSUES.md": ["# Known Issues", "## Reporting a new issue"],

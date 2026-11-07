@@ -184,7 +184,7 @@ New performance and quality-of-life recommendations remain candidates only. They
 
 ## Newer user-supplied mods-folder snapshot — 4 November 2026
 
-This 4 November 2026 screenshot is a historical snapshot and is superseded by the 5 November profile screenshot showing `Mods (110)`, then an intermediate screenshot showing `Mods (108)` after Sodium and Sodium Extra were removed. The latest supplied screenshot on 7 November now shows `Mods (99)` and supersedes the 108-entry snapshot as the current profile count. The nine-entry difference from 108 to 99 is not reconciled to named additions/removals; do not infer specific changes. Do not use the historical 88-entry count as the current profile count.
+This 4 November 2026 screenshot is a historical snapshot and is superseded by the 5 November profile screenshot showing `Mods (110)`, then an intermediate screenshot showing `Mods (108)` after Sodium and Sodium Extra were removed. The latest supplied screenshot on 7 November shows `Mods (99)` as the client-profile inventory count. It is not the dedicated-server JAR count used by the automatic version. The nine-entry difference from 108 to 99 is not reconciled to named additions/removals; do not infer specific changes. Do not use the historical 88-entry count as the current profile count.
 
 
 ## Failed update-trial snapshot — 5 November 2026, 13:43

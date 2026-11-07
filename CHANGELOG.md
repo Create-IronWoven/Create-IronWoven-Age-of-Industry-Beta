@@ -2,12 +2,19 @@
 
 Player-facing highlights for the current development pack. This is not a record of internal commits or a downloadable release archive.
 
-## Current development version — `v0.1.108.5`
+## Current development version — `v0.1.99.5`
 
-**Version format:** `v0.1.<installed CurseForge profile entries>.<accepted distinct bug fixes>`.
+**Version format:** `v0.1.<current CurseForge profile Mods count>.<accepted distinct bug fixes>`.
 
-- **108 installed mod entries:** the 5 November 2026 CurseForge App profile showed `Mods (110)`. Sodium 0.8.13 and Sodium Extra 0.9.5 were subsequently removed from the selected profile, leaving 108 entries.
+- **99 installed profile mods:** the latest supplied CurseForge App screenshot for IronWoven Age Of Industry shows `Content (99)` and `Mods (99)`. This is the count used for the first version component.
 - **5 accepted compatibility bug-fix families:** the five distinct defects below are counted once each, even though the fixes affect 455 individual resource entries in total.
+
+### Profile-count history
+
+- 5 November 2026 screenshot: `Mods (110)`.
+- An intermediate later screenshot showed `Mods (108)` after the two known client-only removals (Sodium 0.8.13 and Sodium Extra 0.9.5).
+- The newest screenshot supplied on 7 November shows `Mods (99)`. The nine-entry difference from the intermediate 108 screenshot has not been reconciled to named additions/removals; no explanation is inferred.
+- The dedicated-server folder's 101 physical JAR files and 116 non-core loaded NeoForge mod IDs (118 total including Minecraft and NeoForge) are different measurements and are not used as the version's mod count.
 
 | # | Bug-fix family | Included pack fix |
 |---:|---|---|
@@ -26,7 +33,7 @@ The four maintained datapacks address these five distinct defects. All five targ
 
 These were updates to existing profile entries, so they do not change the mod-count component or add to the five distinct bug-fix count.
 
-## Not included in `v0.1.108.5`
+## Not included in `v0.1.99.5`
 
 - Create Aeronautics: Gadgets & Gizmos 2.0.0-Pre-Release-4 (CurseForge file 9260191) remains an update candidate only; the observed installed baseline is 1.2.10. It has not been installed, tested, or accepted.
 - Test-only Aeronautics Structures loot-table override, local Struts JAR patch, PowerGrid native DLL workaround, and Shulker Box Tooltip / Supplementaries config workaround are not counted as accepted distributed bug fixes.

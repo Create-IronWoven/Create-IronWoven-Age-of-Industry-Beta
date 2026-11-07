@@ -1,0 +1,83 @@
+name: Prepare Create IronWoven social preview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/prepare-social-preview.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: create-ironwoven-social-preview
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out public beta repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.12"
+
+      - name: Create optimized 1280 x 640 JPEG
+        run: |
+          python -m pip install --disable-pip-version-check Pillow
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image, ImageOps
+
+          source = Path("assets/Ironwoven_ Age of Industry.v2.png")
+          output = Path("assets/Create-IronWoven-Social-Preview.jpg")
+          output.parent.mkdir(parents=True, exist_ok=True)
+
+          with Image.open(source) as original:
+              image = ImageOps.fit(
+                  original.convert("RGB"),
+                  (1280, 640),
+                  method=Image.Resampling.LANCZOS,
+                  centering=(0.5, 0.5),
+              )
+              for quality in (90, 88, 86, 84, 82, 80, 78, 76, 74, 72, 70, 68, 66, 64):
+                  image.save(
+                      output,
+                      format="JPEG",
+                      quality=quality,
+                      optimize=True,
+                      progressive=True,
+                      subsampling=0,
+                  )
+                  size = output.stat().st_size
+                  if size < 950_000:
+                      print(f"PASS: {output} | 1280x640 | {size} bytes | quality={quality}")
+                      break
+              else:
+                  raise SystemExit(f"FAIL: JPEG remains above 950 KB ({output.stat().st_size} bytes)")
+          PY
+
+      - name: Upload optimized preview artifact
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: Create-IronWoven-Social-Preview
+          path: assets/Create-IronWoven-Social-Preview.jpg
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Commit optimized preview to public assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/Create-IronWoven-Social-Preview.jpg
+          if git diff --cached --quiet; then
+            echo "Optimized social preview is already current."
+          else
+            git commit -m "assets: add optimized Create IronWoven social preview"
+            git push
+          fi

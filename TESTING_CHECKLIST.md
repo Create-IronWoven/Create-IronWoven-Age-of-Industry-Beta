@@ -264,7 +264,7 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
-| Open bogie UI (crouch + right-click empty-handed) | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Open bogie UI (crouch + right-click empty-handed) | Pass | Multiplayer | Ghosty | 03-11-2026 | Crouch + right-click while empty-handed to access different options. (submitted in issue #9) |
 | Configure drivers/axles, assemble train and verify style and operation. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Modern Train Parts 0.2.5

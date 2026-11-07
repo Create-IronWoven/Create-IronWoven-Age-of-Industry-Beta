@@ -1,37 +1,99 @@
-name: Apply beta test results
+name: Forward beta test results to private processor
 
 on:
   issues:
     types: [opened, edited]
 
 permissions:
-  contents: write
   issues: write
 
 concurrency:
-  group: apply-test-result-${{ github.event.issue.number }}
+  group: forward-test-result-${{ github.event.issue.number }}
   cancel-in-progress: false
 
 jobs:
-  apply-result:
+  forward-result:
     if: startsWith(github.event.issue.title, '[Test Results]:')
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    timeout-minutes: 3
     steps:
-      - name: Check out public beta repository
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: false
+      - name: Forward issue reference to private processor
+        env:
+          PRIVATE_DISPATCH_TOKEN: ${{ secrets.IRONWOVEN_PRIVATE_DISPATCH_TOKEN }}
+          SOURCE_REPOSITORY: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_ACTION: ${{ github.event.action }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import sys
+          import urllib.error
+          import urllib.request
 
-      - name: Set up Python
-        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
-        with:
-          python-version: "3.12"
+          token = os.environ.get("PRIVATE_DISPATCH_TOKEN", "").strip()
+          if not token:
+              sys.exit("Missing Actions secret IRONWOVEN_PRIVATE_DISPATCH_TOKEN.")
 
-      - name: Apply result to the matching checklist row
+          payload = {
+              "event_type": "public-test-result-submitted",
+              "client_payload": {
+                  "repository": os.environ["SOURCE_REPOSITORY"],
+                  "issue_number": os.environ["ISSUE_NUMBER"],
+                  "action": os.environ["ISSUE_ACTION"],
+              },
+          }
+          request = urllib.request.Request(
+              "https://api.github.com/repos/alexth110987/Ironwoven-Age-of-Industry/dispatches",
+              data=json.dumps(payload).encode("utf-8"),
+              method="POST",
+              headers={
+                  "Accept": "application/vnd.github+json",
+                  "Authorization": f"Bearer {token}",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "Content-Type": "application/json",
+                  "User-Agent": "Ironwoven-Public-Test-Result-Forwarder",
+              },
+          )
+          try:
+              with urllib.request.urlopen(request, timeout=20) as response:
+                  if response.status != 204:
+                      sys.exit(f"Private dispatch returned unexpected HTTP status {response.status}.")
+          except urllib.error.HTTPError as error:
+              sys.exit(f"Private dispatch failed with HTTP {error.code}; the report was not processed.")
+          print("Test-result issue reference forwarded to the private processor.")
+          PY
+
+      - name: Explain forwarding failure on the public issue
+        if: failure()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TEST_RESULTS_TOKEN: ${{ secrets.TEST_RESULTS_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
+          SOURCE_REPOSITORY: ${{ github.repository }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
-        run: python scripts/apply_test_result.py
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          payload = {
+              "body": (
+                  "**Automatic processing could not be started.** Your report has not been applied or closed. "
+                  "A maintainer must check the private automation connection and retry the submission."
+              )
+          }
+          request = urllib.request.Request(
+              f"https://api.github.com/repos/{os.environ['SOURCE_REPOSITORY']}/issues/{os.environ['ISSUE_NUMBER']}/comments",
+              data=json.dumps(payload).encode("utf-8"),
+              method="POST",
+              headers={
+                  "Accept": "application/vnd.github+json",
+                  "Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "Content-Type": "application/json",
+                  "User-Agent": "Ironwoven-Public-Test-Result-Forwarder",
+              },
+          )
+          with urllib.request.urlopen(request, timeout=20):
+              pass
+          PY

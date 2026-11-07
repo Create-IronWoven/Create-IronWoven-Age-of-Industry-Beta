@@ -1,23 +1,35 @@
 # Changelog
 
-Player-facing highlights only. This is not a record of internal commits or test logs.
+Player-facing highlights for the current development pack. This is not a record of internal commits or a downloadable release archive.
 
-## Unreleased — beta preparation
+## Current development version — `v0.1.108.5`
 
-- **`v0.1.110-R001`:** Removed Sodium 0.8.13 (client-only) from the CurseForge profile.
-- **`v0.1.110-R002`:** Removed Sodium Extra 0.9.5 (client-only) from the CurseForge profile.
-- **`v0.1.111-R002`:** Updated Every Compat (Wood Good) from 2.11.56 to 2.11.57 (CurseForge file 9468938).
-- **`v0.1.112-R002`:** Updated the required Moonlight Lib (Selene) dependency from 3.8.1 to 3.8.2 (CurseForge file 9458248), paired with Every Compat 2.11.57.
+**Version format:** `v0.1.<installed CurseForge profile entries>.<accepted distinct bug fixes>`.
 
-- **Modpack version label: CORRECTION PENDING.** The maintainer flagged the previously published label `v0.1.112-R002` as incorrect on 7 November 2026; the corrected value is not yet confirmed. The entries above remain the previous recorded per-change history, not an endorsement of the flagged current label. Content-change counter `110` was the retroactive baseline from the 5 November CurseForge profile screenshot (`Mods (110)`); removal counter `R002` records two client-only mod removals: Sodium 0.8.13 and Sodium Extra 0.9.5. The latest profile screenshot shows `Mods (108)`; the client folder's earlier snapshot shows 104 JAR files; the latest dedicated-server folder screenshot shows 106 JAR files. These are different inventory measures, not 110 public releases. No downloadable beta package has been published. The accepted Every Compat/Moonlight files are now present in both the original Create World client profile and normal MinecraftServer-Test dedicated-server folder; startup/login verification on this updated baseline remains pending.
+- **108 installed mod entries:** the 5 November 2026 CurseForge App profile showed `Mods (110)`. Sodium 0.8.13 and Sodium Extra 0.9.5 were subsequently removed from the selected profile, leaving 108 entries.
+- **5 accepted compatibility bug-fix families:** the five distinct defects below are counted once each, even though the fixes affect 455 individual resource entries in total.
 
-- Compatibility testing continues for Minecraft 1.21.1 / NeoForge 21.1.265.
-- Routine server startup, disposable-world load, matching-client login, and log-review smoke tests passed for batches A, B, and C.
-- Create Aeronautics Structures remains test-only. All 11 valid Overworld structure IDs have visual-presence evidence; a crashed-airship chest loot-assignment defect and a release-safe uniform-loot correction/distribution decision remain open.
-- Performance testing remains incomplete; no measured server performance baseline has been recorded.
-- The installed-mod functional testing checklist remains the source for feature-validation progress. Smoke-test success is not feature validation.
-- CurseForge remains the only approved mod source.
+| # | Bug-fix family | Included pack fix |
+|---:|---|---|
+| 1 | Create: Design n' Decor loot-table errors when optional Dye Depot content is absent (256 affected tables) | `IronWoven-Recipe-Fixes` |
+| 2 | Create: Steam 'n' Rails optional track loot-table errors when companion-mod items are absent (192 affected tables) | `IronWoven-Railways-Fix` |
+| 3 | Create Kinetic missing/stale item references in block loot tables (5 affected tables) | `IronWoven-Create-Kinetic-Fix` |
+| 4 | Create Deco placard recipe has an invalid ingredient entry (1 recipe) | `IronWoven-Recipe-Fixes` |
+| 5 | Sable / Copycats+ Catwalk physics selector points to a non-registered block (1 selector) | `IronWoven-Sable-Copycats-Fix` |
 
-## Release history
+The four maintained datapacks address these five distinct defects. All five targeted error signatures were absent in the corrected datapack-enabled server log-level retest. This is log-level compatibility evidence, not a claim that every affected in-game feature has completed full functional testing.
 
-No public beta release has been published yet. Public release notes and version details will be added when an actual package is available.
+## Other accepted mod updates in this profile
+
+- Every Compat (Wood Good) updated from 2.11.56 to 2.11.57 (CurseForge file 9468938).
+- Required Moonlight Lib (Selene) dependency updated from 3.8.1 to 3.8.2 (CurseForge file 9458248).
+
+These were updates to existing profile entries, so they do not change the mod-count component or add to the five distinct bug-fix count.
+
+## Not included in `v0.1.108.5`
+
+- Create Aeronautics: Gadgets & Gizmos 2.0.0-Pre-Release-4 (CurseForge file 9260191) remains an update candidate only; the observed installed baseline is 1.2.10. It has not been installed, tested, or accepted.
+- Test-only Aeronautics Structures loot-table override, local Struts JAR patch, PowerGrid native DLL workaround, and Shulker Box Tooltip / Supplementaries config workaround are not counted as accepted distributed bug fixes.
+
+**Release status:** internal testing. No downloadable public beta package has been published.
+

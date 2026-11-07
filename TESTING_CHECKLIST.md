@@ -63,11 +63,11 @@ The fresh Windows v.0.1 server reached `Done (4.440s)`, generated `IronWoven Age
 
 | Check | Evidence | Status |
 |---|---|---|
-| Dedicated-server startup | 6 Nov corrected datapack-enabled run reached Done (1.413s) | PASS — disposable profile |
-| Disposable world load | `world_lootr_test` loaded | PASS |
-| IronWoven compatibility datapacks | All four expected world-scoped packs listed as enabled | PASS — log-level retest |
-| Targeted compatibility errors | Design n' Decor, Railways, Create Kinetic, Sable Catwalk, and Create Deco placard errors absent | PASS — log review only |
-| Matching client login | Matching client joined in the 6 Nov run | PASS |
+| Dedicated-server startup | Fresh Windows v.0.1 reached `Done (4.440s)`; corrected 6 Nov disposable run reached `Done (1.413s)` | PASS — both profiles |
+| Disposable-world load | Fresh v.0.1 world generated on 7 Nov; corrected `world_lootr_test` loaded on 6 Nov | PASS — both profiles |
+| IronWoven compatibility datapacks | All four world-scoped packs enabled among 12 total in fresh v.0.1 and in corrected `world_lootr_test` | PASS — log-level retest |
+| Targeted compatibility errors | Design n' Decor, Railways, Create Kinetic, Sable Catwalk, and Create Deco placard errors absent in fresh 7 Nov and corrected 6 Nov logs | PASS — log review only |
+| Matching client login | Matching client joined in fresh 7 Nov and corrected 6 Nov runs; 7 Nov operator and Creative-mode commands also succeeded | PASS — smoke test only |
 | Clean shutdown | All dimensions saved in the fresh 7 Nov run and corrected 6 Nov retest | PASS |
 | Individual feature tests | Matrix below | OPEN — mostly not yet function-tested |
 | Matching client-only mod startup | Targeted client evidence exists for PowerGrid and local Struts / tooltip workaround tests; no complete isolated optional-client candidate sweep | PARTIAL — optional candidates remain open |

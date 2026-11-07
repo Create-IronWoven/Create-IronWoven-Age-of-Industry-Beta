@@ -16,7 +16,7 @@ The maintainer has created a **brand-new, clean Windows dedicated-server install
 
 **Current state:** the NeoForge server runtime installed successfully, the new server folder contains **101 top-level mod JAR files**, and the world `IronWoven Age Of Industry_v0.1.0` has been generated. The server has reached the `Done` startup message.
 
-**Datapack validation is still in progress:** the four world-scoped IronWoven datapack folders were placed in the new world's `datapacks/` directory, but the next server check listed only two Lootr feature packs. The four IronWoven packs have not yet been confirmed as available or enabled. A correct fresh-server deployment and enabled-pack check are still required before this clean baseline can count as a datapack-enabled smoke test. Matching client login and clean shutdown are also pending.
+**Datapack validation: PASS for discovery and enablement.** The separate root-aware Windows installer resolved the active world from `server.properties`. The 7 November 02:45 console screenshot reports 12 enabled datapacks and explicitly lists all four IronWoven world packs as enabled. The previous manual-copy discovery issue is resolved. Post-install targeted log review, matching client login, and clean shutdown remain pending.
 
 The 101-file count is a folder observation, not a NeoForge loaded-mod-ID count, compatibility pass, or feature test. The older `MinecraftServer-Test` count of 106 JARs is a historical observation for that old folder only. No downloadable server package or public beta has been published.
  

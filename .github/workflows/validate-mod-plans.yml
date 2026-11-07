@@ -54,7 +54,7 @@ jobs:
           checklist = Path('TESTING_CHECKLIST.md').read_text(encoding='utf-8')
           required = ['id: test-environment', '- Single-player', '- Multiplayer', '- Both']
           missing = [item for item in required if item not in form]
-          required_forwarder = ['repository_dispatch', 'IRONWOVEN_PRIVATE_DISPATCH_TOKEN',
+          required_forwarder = ['public-test-result-submitted', 'IRONWOVEN_PRIVATE_DISPATCH_TOKEN',
                                 'alexth110987/Ironwoven-Age-of-Industry/dispatches']
           missing_forwarder = [item for item in required_forwarder if item not in workflow]
           headers = checklist.count('| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |')

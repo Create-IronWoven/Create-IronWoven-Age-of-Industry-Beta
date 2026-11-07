@@ -55,13 +55,15 @@ jobs:
           required = ['id: test-environment', '- Single-player', '- Multiplayer', '- Both']
           missing = [item for item in required if item not in form]
           required_forwarder = ['public-test-result-submitted', 'IRONWOVEN_PRIVATE_DISPATCH_TOKEN',
-                                'alexth110987/Ironwoven-Age-of-Industry/dispatches']
+                                'PRIVATE_DISPATCH_URL: ${{ secrets.IRONWOVEN_PRIVATE_DISPATCH_URL }}',
+                                'urlsplit', 'api.github.com']
           missing_forwarder = [item for item in required_forwarder if item not in workflow]
+          hardcoded_private_endpoint = 'https://api.github.com/repos/' in workflow
           headers = checklist.count('| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |')
-          if missing or missing_forwarder or headers == 0 or Path('scripts').exists():
+          if missing or missing_forwarder or hardcoded_private_endpoint or headers == 0 or Path('scripts').exists():
               raise SystemExit(
                   f'FAIL: missing form values {missing}; missing forwarder markers {missing_forwarder}; '
-                  f'environment-aware checklist headers {headers}; public scripts directory exists={Path("scripts").exists()}'
+                  f'hard-coded dispatch endpoint={hardcoded_private_endpoint}; environment-aware checklist headers {headers}; public scripts directory exists={Path("scripts").exists()}'
               )
           print(f'PASS: test environment choices present; forwarding workflow targets the private processor; {headers} checklist sections include the environment column.')
           print('PASS: public repository contains no scripts/ directory.')

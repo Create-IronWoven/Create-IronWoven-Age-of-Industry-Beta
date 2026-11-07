@@ -4,6 +4,9 @@
 
 **Build. Engineer. Explore. Transport. Automate.**
 
+**Beta access is limited:** participation is by invitation or approved application only. Public access to this repository does not automatically grant permission or access to beta testing builds, servers, or activities. Acceptance is confirmed separately by the project maintainer.
+
+
 Create IronWoven: Age of Industry is an industrial and steampunk Minecraft modpack built around **Create**, **Create Aeronautics**, trains, automation, engineering, transport, building, and exploration.
 
 <!-- IRONWOVEN_AUTO_VERSION -->

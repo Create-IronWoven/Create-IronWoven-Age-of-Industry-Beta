@@ -43,7 +43,7 @@ These are version updates to existing mod files. Their byte changes are detected
 
 ## Not counted as accepted bug fixes
 
-- Create Aeronautics: Gadgets & Gizmos 2.0.0-Pre-Release-4 (CurseForge file 9260191) remains an uninstalled and untested update candidate; the observed installed baseline is bundled 1.2.10.
+- Create Aeronautics: Gadgets & Gizmos 2.0.0-Pre-Release-4 (CurseForge file 9260191) is **ON HOLD**. Do not install or test this prerelease; keep bundled 1.2.10 (file 9141062) unchanged until a stable 2.x release and exact dependency/side/version review are available, followed by separate maintainer approval.
 - The Aeronautics Structures uniform-loot override remains test-only.
 - The local Struts JAR patch is not part of the accepted pack.
 - The PowerGrid native DLL workaround and Shulker Box Tooltip / Supplementaries config workaround are not accepted distributed pack fixes.

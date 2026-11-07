@@ -30,7 +30,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | Create Deco | 2.1.3 |
 | Create Diesel Generators | 1.3.15 |
 | Create Encased | 1.10.0-fix1 |
-| Create Gadgets & Gizmos | 1.2.10 bundled — observed active baseline; CurseForge 2.0.0-Pre-Release-4 file 9260191 is available as a major-version update candidate, not installed/tested/accepted |
+| Create Gadgets & Gizmos | 1.2.10 bundled — keep unchanged. **2.0.0-Pre-Release-4 (CurseForge file 9260191) is ON HOLD**; do not install or test the prerelease. Reconsider only after a stable 2.x file and exact dependency/side/version review, followed by separate maintainer approval |
 | Create Kinetic | 1.4.3 |
 | Create Liquid Fuel | 3.0.0 |
 | Create Offroad | 1.3.2 |
@@ -143,7 +143,7 @@ These support other mods and may not appear as separate gameplay features.
 | Ferrite Core | 7.0.3 |
 | Flywheel | 1.0.6 |
 | Forge Config API Port | 21.1.1 |
-| Gadgets & Gizmos Library | 1.2.10 bundled baseline; the offered 2.0.0-Pre-Release-4 parent JAR (CF file 9260191) has not been tested or accepted, and its bundled library component version is not yet separately confirmed |
+| Gadgets & Gizmos Library | 1.2.10 bundled baseline; the offered 2.0.0-Pre-Release-4 parent JAR (CurseForge file 9260191) is on hold and must not be installed/tested. Recheck bundled-library metadata only if a stable 2.x release becomes available and the maintainer reopens the decision |
 | GeckoLib 4 | 4.9.3 |
 | Integrated API | 1.9.1 — Integrated Villages dependency; validated present in corrected server test profile |
 | Kotlin for Forge | 5.12.0 |
@@ -459,4 +459,4 @@ The maintainer confirmed this screenshot is from the dedicated-server `mods` fol
 - Supplementaries appears as `4.0.2`, compared with earlier `3.4.0` dependency notes. Verify the exact file and dependency compatibility.
 - Sophisticated Backpacks Create Integration appears as `0.2.3.194`; verify against prior records.
 - The folder listing does not prove successful loading or feature behavior. Later 6 November disposable-profile tests passed the local Struts server/client workaround for the shown components and passed PowerGrid Windows native loading on both server and client. The standard-install Struts release issue remains open because the official JAR is unchanged. PowerGrid electrical-network/component behavior is reserved for beta testers; Linux native loading is a separate future platform test. The local PowerGrid DLL copies are not part of the distributable beta package, so native-resource packaging remains a release decision. See `TESTING_CHECKLIST.md` and `KNOWN_ISSUES.md` for current player-facing status.
-- No additional installation/removal decision is implied by this 6 November folder screenshot. Its physical JAR list predates the 7 November accepted Every Compat/Moonlight update; the automatic version is derived from the selected dedicated-server folder; the original client is updated, while normal dedicated-server deployment is pending.
+- No additional installation/removal decision is implied by this 6 November folder screenshot. Its physical JAR list predates the 7 November accepted Every Compat/Moonlight update. The later 23:33 screenshot confirms both accepted files in the normal `MinecraftServer-Test/mods` folder as well as the original client profile; deployment to those folders is complete, while an updated-baseline startup/login smoke test remains pending. The separate 7 November clean v.0.1 server has 101 top-level JARs and must not be conflated with this older 106-JAR test-folder snapshot.

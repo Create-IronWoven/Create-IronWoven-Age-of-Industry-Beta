@@ -12,7 +12,7 @@
 **Target:** Minecraft 1.21.1 · NeoForge 21.1.265 · Java 21  
 **Approved download source:** CurseForge only
 
-This checklist is a feature-test matrix, not a live installed-mod manifest. It follows the recorded test inventory and separately labels current client-only candidates, completed checks, holds, and dated historical evidence. For current file inventories and versions, use [MODS.md](MODS.md): its 6 November server snapshot is separate from the latest CurseForge client-profile screenshot. Do not treat historical snapshot tables below as current installation instructions. This is not a final release manifest.
+This checklist is a feature-test matrix, not a live installed-mod manifest. It follows the recorded test inventory and separately labels current client-only candidates, completed checks, holds, and dated historical evidence. For current file inventories and versions, use [MODS.md](MODS.md): the 6 November `MinecraftServer-Test` snapshot is historical and separate from the 7 November clean v.0.1 server and latest CurseForge client-profile screenshot. Do not treat historical snapshot tables below as current installation instructions. This is not a final release manifest.
 
 ## Current verification snapshot — 7 November 2026
 
@@ -20,9 +20,9 @@ This section is the current status summary. Dated trial tables later in this fil
 
 | Area | Current verified status |
 |---|---|
-| Dedicated-server smoke test | PASS — corrected 6 Nov datapack-enabled disposable profile reached Done, loaded world, accepted matching client, and shut down cleanly |
+| Dedicated-server smoke test | PASS — the fresh Windows v.0.1 server reached `Done (4.440s)`, generated its world, accepted a matching client, and shut down with all dimensions saved; the separate corrected 6 Nov disposable-profile retest also passed |
 | Fresh dedicated-server installation v.0.1 | PASS — clean Windows server; 101 top-level mod JARs; 116 non-core mod IDs in NeoForge Mod List; world generated; all four IronWoven datapacks enabled among 12; target Design n' Decor, Steam 'n' Rails, Create Kinetic, Create Deco placard and Sable Catwalk errors absent; matching client login, OP grant, Creative command and clean shutdown with all dimensions saved. Separate compatibility ERROR records remain under investigation: five are attributed to PowerGrid, Every Compat, Create Aeronautics Structures, and Shulker Box Tooltip/Supplementaries; three unassigned entity-attachment warnings use `apotheosis:tier_augments_applied`. The fresh `mods/` folder screenshot contains no Apotheosis-named JAR, and the maintainer confirms Apotheosis is not installed or planned. Keep those three warnings monitor-only; do not install Apotheosis or attribute them to an installed mod without evidence. Feature-level testing remains separate. |
-| World-scoped compatibility datapacks | PASS at log level — four packs enabled; targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk and Create Deco placard errors absent in corrected retest |
+| World-scoped compatibility datapacks | PASS at log level — all four packs were enabled among 12 in the fresh 7 Nov world; the five targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk and Create Deco placard errors were absent in the fresh 7 Nov log and corrected 6 Nov retest |
 | Struts | PARTIAL — local patched server/client runtime and visible test pieces passed; official CurseForge JAR remains unpatched, so standard-install/release issue remains open |
 | Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |
 | PowerGrid 0.6.2 | PARTIAL — internal Windows native loading and client join passed with restored 0.6.1 DLL; electrical-network behavior reserved for beta testers; Linux untested |
@@ -37,21 +37,21 @@ This section is the current status summary. Dated trial tables later in this fil
 
 **Current inventory source:** [MODS.md](MODS.md) holds separate server and client observations. The latest 6 November Windows client screenshot confirms Entity Culling is absent from the CurseForge `Create World/mods` folder. The 6 November server inventory screenshot is not a client inventory. No production world or production world-generation configuration was changed.
 
-**How to submit test results — the checklist updates automatically:**
+**How to submit test results:**
 
 1. Open the [Submit Test Result form](https://github.com/alexth110987/Ironwoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml).
 2. Copy the mod heading text (including version, without the leading ### symbols) and the exact test-action text from the table below.
 3. Select the test environment: Single-player, Multiplayer, or Both. Choose Both only when you actually tested the action in both environments.
 4. Enter a tester nickname or pseudonym and the test date in DD-MM-YYYY format, choose the result, and describe what happened. Do not enter a legal/real name or GitHub username. Note: GitHub shows the account that opened the report as the public issue author, but the automation does not copy that account name into this checklist. Do not use your legal/real name or GitHub account username.
-5. Submit the form. Once the repository's one-time Actions write permission is configured, the matching checklist row is updated automatically and the report issue is closed when the update succeeds.
+5. Submit the form. The public form forwards the report for processing, but the first-time submission-to-checklist update path is still undergoing end-to-end verification. A submitted issue does not by itself confirm that a checklist row changed; check this page after submission and contact the maintainers if the result does not appear.
 
-Submit one form for each test action. If the row already has a result, or the mod/action text does not match exactly, the automation will leave the checklist unchanged and explain what needs review. Retests of completed actions require maintainer review; existing results are never silently overwritten.
+Submit one form for each test action. The processor is designed to match the mod/action text and preserve existing results. Duplicate reports are detected and do not overwrite the original result. Retests of completed actions require maintainer review; existing results are never silently overwritten.
 
 A server startup or an item appearing in JEI is not, by itself, a function-test pass. Keep smoke-test evidence separate from feature tests.
 
 ## Smoke test is not a function test
 
-The 6 November 15:54 datapack-enabled disposable-server retest reached `Done`, loaded `world_lootr_test`, accepted a matching client login, and shut down with all dimensions saved. All four IronWoven world-scoped compatibility datapacks were enabled; the targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk, and Create Deco placard error entries were absent. Later same-day targeted retests also confirmed the local Struts workaround and the Shulker Box Tooltip / Supplementaries client workaround; see the dated records below. The 6 November 18:29 server and 18:34 client logs additionally confirmed PowerGrid's Windows native backend loads after restoring the 0.6.1 Windows DLL to the disposable `.pg-native` folders, while leaving the 0.6.2 JAR unchanged. These are test-profile-specific results; **they do not prove every installed mod's functions work or establish Linux compatibility**.
+The fresh Windows v.0.1 server reached `Done (4.440s)`, generated `IronWoven Age Of Industry_v0.1.0`, enabled all four IronWoven world-scoped datapacks among 12 total, accepted the matching client, granted operator permissions, accepted a Creative-mode command, and shut down with all dimensions saved. The five targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk and Create Deco placard error families were absent from its log. This fresh-install smoke test is separate from the 6 November 15:54 corrected `world_lootr_test` retest, which also passed startup/world/login/shutdown with all four packs enabled. Later 6 November targeted retests confirmed the local Struts workaround, Shulker Box Tooltip / Supplementaries client workaround, and PowerGrid Windows native loading workaround; see the dated records below. The fresh 7 November log still contains eight ERROR-level records and five DUMMY block-entity warnings, including three unattributed entity-attachment warnings; review [KNOWN_ISSUES.md](KNOWN_ISSUES.md) and keep unknown sources unattributed. These are test-profile-specific results; **they do not prove every installed mod's functions work or establish Linux compatibility**.
 
 - **Smoke test:** mod discovery, server/client startup as appropriate, world load, login, shutdown and log review.
 - **Function test:** exercise the actual feature(s) that justify keeping the mod: item/block interaction, machine process, transport, GUI, world generation, rendering, recipe/loot behavior or synchronization.
@@ -68,9 +68,10 @@ The 6 November 15:54 datapack-enabled disposable-server retest reached `Done`, l
 | IronWoven compatibility datapacks | All four expected world-scoped packs listed as enabled | PASS — log-level retest |
 | Targeted compatibility errors | Design n' Decor, Railways, Create Kinetic, Sable Catwalk, and Create Deco placard errors absent | PASS — log review only |
 | Matching client login | Matching client joined in the 6 Nov run | PASS |
-| Clean shutdown | All dimensions saved in the 6 Nov run | PASS |
+| Clean shutdown | All dimensions saved in the fresh 7 Nov run and corrected 6 Nov retest | PASS |
 | Individual feature tests | Matrix below | OPEN — mostly not yet function-tested |
 | Matching client-only mod startup | Targeted client evidence exists for PowerGrid and local Struts / tooltip workaround tests; no complete isolated optional-client candidate sweep | PARTIAL — optional candidates remain open |
+| Remaining fresh-server log findings | 8 ERROR-level records (five attributed to PowerGrid, Every Compat, Create Aeronautics Structures and SBT/Supplementaries; three unattributed entity-attachment warnings) and five DUMMY block-entity warnings remain under review | OPEN — do not attribute unknown records to a mod without evidence |
 | Production/release approval | Not granted | NOT APPROVED |
 
 
@@ -410,21 +411,13 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 |---|---|---|---|---|---|
 | Test installed gadgets/engine components used by Aeronautics: assembly, thrust/control, fuel/power consumption and contraption synchronization. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Create: Gadgets & Gizmos 2.0.0-Pre-Release-4 — available update candidate, not installed
+### Create: Gadgets & Gizmos 2.0.0-Pre-Release-4 — ON HOLD (not available for testing)
 
-**Current decision:** The supplied CurseForge App screenshot shows the bundled 1.2.10 JAR active and offers file 9260191 (2.0.0-Pre-Release-4). This is a major-version update for Minecraft 1.21.1 NeoForge, declared Client & Server. It has not been selected, installed, smoke-tested, function-tested, or accepted. Keep the existing 1.2.10 baseline unchanged unless the maintainer explicitly authorizes a test.
+**Maintainer decision (7 November 2026): ON HOLD.** Keep the current bundled 1.2.10 installation (CurseForge file 9141062) unchanged. Do not install or test 2.0.0-Pre-Release-4 (file 9260191), do not add or update dependencies, and do not alter the CurseForge profile or manifest. The 2.0.0-Pre-Release-4 file is not a stable 2.x release.
 
-**Candidate checks after authorization:** Use identical 2.0.0-Pre-Release-4 files on a duplicate client profile and disposable dedicated server/world. Record tester nickname, date, environment and evidence for every action. Do not use the production world.
+Reconsider only after the author publishes a clearly stable, non-prerelease 2.x file for Minecraft 1.21.1 NeoForge. Before proposing a test, verify the exact artifact's embedded mod metadata, bundled-library contents, required and optional dependencies, version ranges, client/server sides, release notes, and known upstream issues. Resolve any incompatible or unclear dependency first. A separate explicit maintainer approval is required before any installation or disposable test begins.
 
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes |
-|---|---|---|---|---|---|
-| Launch matching 2.0.0-Pre-Release-4 client and dedicated server; load a disposable world, join, and shut down cleanly; review both logs. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Candidate file 9260191 only; no installation/approval implied |
-| Verify Thruster Lighting / Flywheel rendering and Contraption Network Linker occlusion fixes. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Compare against the affected 1.2.10 behavior |
-| Verify Ship Control Module placement from affected schematics and horizontal Physics Gantry orientation. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Use a disposable world and representative schematics |
-| Verify ACC Display Half-Panel hitbox/widget interaction and the relevant Advanced Control Computer graph/search/save/logic and camera functions. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Respect documented unfinished ACC Display / Smart Tablet features |
-| Verify Powered Zipline pose handling and Scissor Piston rendering during the affected broken-arm/extension state. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Record the known limitation if reproduced |
-
-**Known limitations from the 2.0.0-Pre-Release-4 page:** Worker Automation has bugs; Smart Tablet is incomplete and disabled by default; ACC Displays are early work in progress; Scissor Piston may render incorrectly when an arm link breaks while extending. These are not test passes.
+**Current test status:** no 2.0.0-Pre-Release-4 installation, startup test, feature test, or acceptance is authorized. Rebuild this section from the exact stable release notes only if the hold is lifted.
 
 ### Create: Dragons Plus 1.11.9
 **Current status:** Pending

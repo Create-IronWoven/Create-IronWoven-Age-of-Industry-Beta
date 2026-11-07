@@ -14,7 +14,7 @@ The current development version `v0.1.112-R002` uses content-change counter `112
 
 The next dedicated server is being prepared as a **brand-new, clean installation** named `IronWoven Age Of Industry v.0.1` (Windows folder name; no trailing period). Target content version: `v0.1.112-R002` on Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21.
 
-**Current state:** planned; the new folder has not yet been created. Initial installed mod count: **0 JAR files**. The final top-level `mods/*.jar` count and NeoForge loaded-mod count will be recorded separately after installation and first startup.
+**Current state:** the maintainer created the new folder on 7 November 2026; screenshot confirms it is empty (`0 items`). Initial installed mod count: **0 JAR files**. The folder has not yet had NeoForge or mods installed. The final top-level `mods/*.jar` count and NeoForge loaded-mod count will be recorded separately after installation and first startup.
 
 The earlier `MinecraftServer-Test` folder contained 106 visible JAR files. That is a historical count for the old test folder only; it is not the new installation's count or expected target. The clean installation will use the reconciled approved server-required/shared inventory, and it is not a copy of the old test server. No downloadable server package has been published.
 

@@ -319,7 +319,7 @@ The screenshot proves these files are in the server's disabled archive, not whet
 
 `createkinetic-1.4.3.jar.original.bak` is a backup copy, not an active mod JAR. It is recorded here only to distinguish it from an installable mod file.
 
-**Versioning:** this archive reconciliation did not itself increase the modpack version at the time. Superseded JAR copies, unaccepted candidates, client-only files parked outside the server, and the paused End test set are not counted as new accepted content removals. The current development version is now `v0.1.112-R002` following the separately accepted Every Compat and Moonlight updates.
+**Versioning:** this archive reconciliation did not itself increase the modpack version at the time. Superseded JAR copies, unaccepted candidates, client-only files parked outside the server, and the paused End test set are not counted as new accepted content removals. The previous versioning ledger assigned `v0.1.112-R002` after the separately accepted Every Compat and Moonlight updates; the maintainer later flagged that label as incorrect, and the corrected version is pending.
 
 
 ## Latest dedicated-server retest — 5 November 2026, 22:27–22:31

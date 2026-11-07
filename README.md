@@ -1,8 +1,10 @@
-# Ironwoven: Age of Industry
+# Create IronWoven: Age of Industry
 
-![Ironwoven: Age of Industry](assets/Ironwoven_%20Age%20of%20Industry.png)
+![Create IronWoven: Age of Industry](assets/Ironwoven_%20Age%20of%20Industry.png)
 
-Ironwoven: Age of Industry is a Minecraft modpack built around **Create**, **Create Aeronautics**, trains, automation, engineering, transport, building, and exploration.
+**Build. Engineer. Explore. Transport. Automate.**
+
+Create IronWoven: Age of Industry is an industrial and steampunk Minecraft modpack built around **Create**, **Create Aeronautics**, trains, automation, engineering, transport, building, and exploration.
 
 <!-- IRONWOVEN_AUTO_VERSION -->
 **Current Ironwoven pack version:** `v0.1.101.5` — release `0`, content revision `1`, `101` top-level server mod JARs, and `5` active accepted bug fixes.

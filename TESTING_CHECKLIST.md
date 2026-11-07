@@ -21,7 +21,7 @@ This section is the current status summary. Dated trial tables later in this fil
 | Area | Current verified status |
 |---|---|
 | Dedicated-server smoke test | PASS — corrected 6 Nov datapack-enabled disposable profile reached Done, loaded world, accepted matching client, and shut down cleanly |
-| Fresh dedicated-server installation v.0.1 | NOT STARTED — clean folder `IronWoven Age Of Industry v.0.1` created 7 Nov 2026 and screenshot-confirmed empty; initial mod JAR count 0; NeoForge installation not started; final JAR and NeoForge loaded-mod counts pending |
+| Fresh dedicated-server installation v.0.1 | IN PROGRESS — clean folder `IronWoven Age Of Industry v.0.1` created 7 Nov 2026; NeoForge 21.1.265 server runtime installed successfully; no `mods/` folder yet and 0 mod JARs; first server startup not run; final JAR and NeoForge loaded-mod counts pending |
 | World-scoped compatibility datapacks | PASS at log level — four packs enabled; targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk and Create Deco placard errors absent in corrected retest |
 | Struts | PARTIAL — local patched server/client runtime and visible test pieces passed; official CurseForge JAR remains unpatched, so standard-install/release issue remains open |
 | Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |
@@ -39,7 +39,7 @@ This section is the current status summary. Dated trial tables later in this fil
 
 **How to submit test results — the checklist updates automatically:**
 
-1. Open the [Submit Test Result form](https://github.com/alexth110987/Create-IronWoven-Beta/issues/new?template=functional-test-report.yml).
+1. Open the [Submit Test Result form](https://github.com/alexth110987/Ironwoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml).
 2. Copy the mod heading text (including version, without the leading ### symbols) and the exact test-action text from the table below.
 3. Select the test environment: Single-player, Multiplayer, or Both. Choose Both only when you actually tested the action in both environments.
 4. Enter a tester nickname or pseudonym and the test date in DD-MM-YYYY format, choose the result, and describe what happened. Do not enter a legal/real name or GitHub username. Note: GitHub shows the account that opened the report as the public issue author, but the automation does not copy that account name into this checklist. Do not use your legal/real name or GitHub account username.

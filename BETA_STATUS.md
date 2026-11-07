@@ -12,19 +12,14 @@ The current development version `v0.1.112-R002` uses content-change counter `112
 
 ## Fresh dedicated-server installation — v.0.1
 
-The next dedicated server is being prepared as a **brand-new, clean installation** named `IronWoven Age Of Industry v.0.1` (Windows folder name; no trailing period). Target content version: `v0.1.112-R002` on Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21.
+The maintainer has created a **brand-new, clean Windows dedicated-server installation** named `IronWoven Age Of Industry v.0.1`. It is separate from the older `MinecraftServer-Test` folders and targets `v0.1.112-R002` on Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21.
 
-**Current state:** the folder was created empty on 7 November 2026, and the NeoForge 21.1.265 server runtime has since been installed successfully using `--installServer`. The post-install folder shows 6 top-level entries (`libraries/`, installer log, installer JAR, `run.sh`, `run.bat`, and `user_jvm_args.txt`). No `mods/` folder is visible and the installed mod JAR count remains **0**; the one root-level JAR is the NeoForge installer, not a mod. First server startup has not been run. Final top-level `mods/*.jar` and NeoForge loaded-mod counts remain pending.
+**Current state:** the NeoForge server runtime installed successfully, the new server folder contains **101 top-level mod JAR files**, and the world `IronWoven Age Of Industry_v0.1.0` has been generated. The server has reached the `Done` startup message.
 
-The earlier `MinecraftServer-Test` folder contained 106 visible JAR files. That is a historical count for the old test folder only; it is not the new installation's count or expected target. The clean installation will use the reconciled approved server-required/shared inventory, and it is not a copy of the old test server. No downloadable server package has been published.
+**Datapack validation is still in progress:** the four world-scoped IronWoven datapack folders were placed in the new world's `datapacks/` directory, but the next server check listed only two Lootr feature packs. The four IronWoven packs have not yet been confirmed as available or enabled. A correct fresh-server deployment and enabled-pack check are still required before this clean baseline can count as a datapack-enabled smoke test. Matching client login and clean shutdown are also pending.
 
-Ironwoven: Age of Industry is in **internal compatibility and functional testing**. There is currently no public downloadable beta package and no release date has been announced.
-
-- [Current test-pack inventory](MODS.md)
-- [Functional testing progress](TESTING_CHECKLIST.md)
-- [Planned mods and project decisions](MOD_PLANS.md)
-- [Known player-relevant issues](KNOWN_ISSUES.md)
-
+The 101-file count is a folder observation, not a NeoForge loaded-mod-ID count, compatibility pass, or feature test. The older `MinecraftServer-Test` count of 106 JARs is a historical observation for that old folder only. No downloadable server package or public beta has been published.
+ 
 ## Server platform status
 
 Windows is the current development and test environment. Linux is a planned server target, but the maintainer has not yet set up a Linux system. Linux compatibility and runtime behavior are not tested or verified. Linux validation will be added to release preparation once a test system is available.

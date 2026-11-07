@@ -63,3 +63,32 @@ The following content is not wanted and must not be reintroduced unless the main
 ## Important
 
 A mod being suggested, researched, or present in a disposable test profile does not mean it is compatible, accepted, or approved for public release. Only CurseForge-hosted mods are eligible for consideration. The production world and installed production pack must not be changed as part of candidate testing.
+
+
+## Extended candidate review — 7 November 2026
+
+A large new candidate list has received an initial CurseForge / Minecraft 1.21.1 / NeoForge 21.1.265 compatibility triage. **No candidate from this list has been selected, installed, or approved for release.** Detailed internal dependency and file evidence remains in the private development repository.
+
+### Best thematic matches identified for further review
+
+- Create Propulsion: Simulated
+- Create: Aeroworks
+- Create: Aquatic Ambitions
+
+These have surfaced 1.21.1 NeoForge files and match the Create / Aeronautics direction. Exact dependency ranges, current file eligibility and feature compatibility still need to be reconciled before any test decision.
+
+### Separate optional utility and quest-system ideas
+
+FTB Essentials, FTB Ultimine, Fuel Goes Here, Polymorph, and selected inventory / interface utilities have target-version files surfaced. They remain candidates only; gameplay changes and server/client roles must be considered individually.
+
+The linked FTB Quests projects form a **new optional questing subsystem**, not independent standalone additions. FTB Quests itself would need to be considered first; dependent addons and resource packs should not be selected as a bundle. Accessories would require a separate migration decision from the current Curios-based equipment system.
+
+### Existing work and holds remain unchanged
+
+- FastSuite remains in its existing Batch F order.
+- Waystones and Waystones: Sable remain subject to the Batch H travel-system decision.
+- Structurize remains associated with paused Batch 7 settlement / MineColonies research.
+- Existing Farmer's Delight, ModernFix, Resourceful Lib and Struts entries are not new additions.
+- Some submitted projects still have no confirmed 1.21.1 NeoForge file or need missing libraries / exact dependency verification.
+
+No installed mods, CurseForge manifest, server configuration, production world or world-generation settings were changed by this review.

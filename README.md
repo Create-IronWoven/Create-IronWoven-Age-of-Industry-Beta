@@ -9,6 +9,12 @@ Ironwoven: Age of Industry is a Minecraft modpack built around **Create**, **Cre
 
 **Development status:** Internal testing. This is a development version, not a downloadable public beta release. The accepted Every Compat 2.11.57 + Moonlight Lib 3.8.2 pair is confirmed in both the original Create World client profile and normal MinecraftServer-Test dedicated-server folder; startup/login verification on that updated baseline remains pending. A separate clean Windows server installation named `IronWoven Age Of Industry v.0.1` has 101 top-level mod JAR files and 116 non-core NeoForge pack mod IDs. Its world `IronWoven Age Of Industry_v0.1.0` generated successfully; all four IronWoven datapacks are enabled; matching-client login, operator access, Creative-mode command, and clean shutdown all passed. Eight separate ERROR-level records remain in that fresh log: five attributed to PowerGrid, Every Compat, Create Aeronautics Structures, and Shulker Box Tooltip/Supplementaries, plus three unattributed entity-attachment warnings. Their source/effect is unknown; do not attribute them to an installed mod without evidence. No server download is available. **Gadgets & Gizmos 2.0.0-Pre-Release-4 is on hold; the bundled 1.2.10 baseline stays unchanged.**
 
+<badge>PROJECT POLICY</badge>
+
+> **NO BACKPORTS — THIS MODPACK SUPPORTS ITS SELECTED MINECRAFT VERSION ONLY.**
+>
+> Ironwoven does not create, maintain, or accept backports to older Minecraft versions. We do not downgrade the pack, maintain parallel legacy-version branches, or select outdated mod releases just to make the pack run on an older Minecraft version. Mod research, compatibility checks, testing, and releases target the Minecraft and NeoForge versions explicitly listed below. If a required mod is unavailable for the selected target, it is treated as unavailable; the pack will not be backported to accommodate it.
+
 ## Quick links
 
 - [Current beta status](BETA_STATUS.md)

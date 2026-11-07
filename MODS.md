@@ -140,7 +140,7 @@ These support other mods and may not appear as separate gameplay features.
 | Ferrite Core | 7.0.3 |
 | Flywheel | 1.0.6 |
 | Forge Config API Port | 21.1.1 |
-| Gadgets & Gizmos Library | 1.2.10 |
+| Gadgets & Gizmos Library | 1.2.10 bundled baseline; the offered 2.0.0-Pre-Release-4 parent JAR (CF file 9260191) has not been tested or accepted, and its bundled library component version is not yet separately confirmed |
 | GeckoLib 4 | 4.9.3 |
 | Integrated API | 1.9.1 — Integrated Villages dependency; validated present in corrected server test profile |
 | Kotlin for Forge | 5.12.0 |

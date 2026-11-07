@@ -92,3 +92,7 @@ The linked FTB Quests projects form a **new optional questing subsystem**, not i
 - Some submitted projects still have no confirmed 1.21.1 NeoForge file or need missing libraries / exact dependency verification.
 
 No installed mods, CurseForge manifest, server configuration, production world or world-generation settings were changed by this review.
+
+### Extended Bogeys
+
+The named Extended Bogeys entry was checked against its official CurseForge project. The available **Create: Extended Bogeys (Borked)** project is deprecated and has files only for Minecraft 1.20.1 on Forge/Fabric; there is no Minecraft 1.21.1 NeoForge file. The project page itself points users to Create: Blocks & Bogies as the replacement. **Do not add the deprecated project.** Create: Blocks & Bogies 1.0.8 is already recorded in Ironwoven and has a passed bogie UI multiplayer test.

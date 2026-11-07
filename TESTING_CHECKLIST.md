@@ -21,7 +21,7 @@ This section is the current status summary. Dated trial tables later in this fil
 | Area | Current verified status |
 |---|---|
 | Dedicated-server smoke test | PASS — corrected 6 Nov datapack-enabled disposable profile reached Done, loaded world, accepted matching client, and shut down cleanly |
-| Fresh dedicated-server installation v.0.1 | NOT STARTED — new clean folder `IronWoven Age Of Industry v.0.1` not yet created; initial mod JAR count 0; final JAR and NeoForge loaded-mod counts pending |
+| Fresh dedicated-server installation v.0.1 | NOT STARTED — clean folder `IronWoven Age Of Industry v.0.1` created 7 Nov 2026 and screenshot-confirmed empty; initial mod JAR count 0; NeoForge installation not started; final JAR and NeoForge loaded-mod counts pending |
 | World-scoped compatibility datapacks | PASS at log level — four packs enabled; targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk and Create Deco placard errors absent in corrected retest |
 | Struts | PARTIAL — local patched server/client runtime and visible test pieces passed; official CurseForge JAR remains unpatched, so standard-install/release issue remains open |
 | Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |

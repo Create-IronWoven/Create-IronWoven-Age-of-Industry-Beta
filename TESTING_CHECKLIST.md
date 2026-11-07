@@ -410,6 +410,22 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 |---|---|---|---|---|---|
 | Test installed gadgets/engine components used by Aeronautics: assembly, thrust/control, fuel/power consumption and contraption synchronization. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
+### Create: Gadgets & Gizmos 2.0.0-Pre-Release-4 — available update candidate, not installed
+
+**Current decision:** The supplied CurseForge App screenshot shows the bundled 1.2.10 JAR active and offers file 9260191 (2.0.0-Pre-Release-4). This is a major-version update for Minecraft 1.21.1 NeoForge, declared Client & Server. It has not been selected, installed, smoke-tested, function-tested, or accepted. Keep the existing 1.2.10 baseline unchanged unless the maintainer explicitly authorizes a test.
+
+**Candidate checks after authorization:** Use identical 2.0.0-Pre-Release-4 files on a duplicate client profile and disposable dedicated server/world. Record tester nickname, date, environment and evidence for every action. Do not use the production world.
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes |
+|---|---|---|---|---|---|
+| Launch matching 2.0.0-Pre-Release-4 client and dedicated server; load a disposable world, join, and shut down cleanly; review both logs. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Candidate file 9260191 only; no installation/approval implied |
+| Verify Thruster Lighting / Flywheel rendering and Contraption Network Linker occlusion fixes. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Compare against the affected 1.2.10 behavior |
+| Verify Ship Control Module placement from affected schematics and horizontal Physics Gantry orientation. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Use a disposable world and representative schematics |
+| Verify ACC Display Half-Panel hitbox/widget interaction and the relevant Advanced Control Computer graph/search/save/logic and camera functions. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Respect documented unfinished ACC Display / Smart Tablet features |
+| Verify Powered Zipline pose handling and Scissor Piston rendering during the affected broken-arm/extension state. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Record the known limitation if reproduced |
+
+**Known limitations from the 2.0.0-Pre-Release-4 page:** Worker Automation has bugs; Smart Tablet is incomplete and disabled by default; ACC Displays are early work in progress; Scissor Piston may render incorrectly when an arm link breaks while extending. These are not test passes.
+
 ### Create: Dragons Plus 1.11.9
 **Current status:** Pending
 

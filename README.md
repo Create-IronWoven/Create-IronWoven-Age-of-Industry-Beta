@@ -1,10 +1,11 @@
-# Ironwoven: Age of Industry — v0.1.99.5
+# Ironwoven: Age of Industry
 
 ![Ironwoven: Age of Industry](assets/Ironwoven_%20Age%20of%20Industry.png)
 
 Ironwoven: Age of Industry is a Minecraft modpack built around **Create**, **Create Aeronautics**, trains, automation, engineering, transport, building, and exploration.
 
-**Current development version: `v0.1.99.5`** — 99 mods shown in the latest supplied CurseForge profile screenshot and five distinct accepted compatibility bug-fix families.  
+<!-- IRONWOVEN_AUTO_VERSION -->
+
 **Development status:** Internal testing. This is a development version, not a downloadable public beta release. The accepted Every Compat 2.11.57 + Moonlight Lib 3.8.2 pair is confirmed in both the original Create World client profile and normal MinecraftServer-Test dedicated-server folder. Updated-baseline startup/login verification remains pending. A separate clean dedicated-server installation named `IronWoven Age Of Industry v.0.1` has 101 top-level mod JAR files and 116 non-core NeoForge pack mod IDs. Its world `IronWoven Age Of Industry_v0.1.0` generated successfully; all four IronWoven datapacks are enabled; matching-client login, operator access, Creative-mode command, and clean shutdown all passed. The latest server log still contains separate compatibility errors under investigation (PowerGrid, Every Compat, Create Aeronautics Structures, and Shulker Box Tooltip/Supplementaries). No server download is available.
 
 ## Quick links

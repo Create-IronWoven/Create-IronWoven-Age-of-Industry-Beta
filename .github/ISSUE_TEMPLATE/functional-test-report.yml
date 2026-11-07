@@ -8,7 +8,7 @@ body:
       value: |
         Submit one form for each test action you complete. Once the maintainer has configured the test-result automation connection, the matching row in the public testing checklist will update automatically. If the connection or checklist update fails, the report stays open and explains what needs maintainer attention.
 
-        Before filling this in, open the [testing checklist](https://github.com/alexth110987/Ironwoven-Age-of-Industry-Beta/blob/main/TESTING_CHECKLIST.md):
+        Before filling this in, open the [testing checklist](https://github.com/alexth110987/Create-IronWoven-Age-of-Industry-Beta/blob/main/TESTING_CHECKLIST.md):
         - Copy the mod's exact heading text, including its version, but leave off the leading ### symbols.
         - Copy the exact test-action text from that mod's table.
         - Paste both below. This makes sure the correct checklist row is updated.

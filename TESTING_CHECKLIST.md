@@ -39,7 +39,7 @@ This section is the current status summary. Dated trial tables later in this fil
 
 **How to submit test results:**
 
-1. Open the [Submit Test Result form](https://github.com/alexth110987/Ironwoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml).
+1. Open the [Submit Test Result form](https://github.com/alexth110987/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml).
 2. Copy the mod heading text (including version, without the leading ### symbols) and the exact test-action text from the table below.
 3. Select the test environment: Single-player, Multiplayer, or Both. Choose Both only when you actually tested the action in both environments.
 4. Enter a tester nickname or pseudonym and the test date in DD-MM-YYYY format, choose the result, and describe what happened. Do not enter a legal/real name or GitHub username. Note: GitHub shows the account that opened the report as the public issue author, but the automation does not copy that account name into this checklist. Do not use your legal/real name or GitHub account username.

@@ -1,7 +1,7 @@
 # Mods in Ironwoven: Age of Industry
 
 **Latest dedicated-server folder snapshot:** 6 November 2026 — 106 visible JAR files; a later 23:33 screenshot confirms the accepted Every Compat 2.11.57 and Moonlight Lib 3.8.2 JARs are present in this same `MinecraftServer-Test/mods` folder. The original `Create World/mods` client screenshot confirms the matching pair there too.
-**Accepted baseline target:** `v0.1.112-R002` includes Every Compat 2.11.57 and Moonlight Lib 3.8.2. Latest screenshots confirm both accepted JARs are now physically present in the original `Create World/mods` client profile and the normal `MinecraftServer-Test/mods` dedicated-server baseline. Folder deployment is complete; a startup/login smoke test on this updated baseline remains pending.  
+**Previously recorded baseline label:** `v0.1.112-R002` included Every Compat 2.11.57 and Moonlight Lib 3.8.2; the maintainer later flagged that label as incorrect. Corrected pack version is pending clarification. Latest screenshots confirm both accepted JARs are now physically present in the original `Create World/mods` client profile and the normal `MinecraftServer-Test/mods` dedicated-server baseline. Folder deployment is complete; a startup/login smoke test on this updated baseline remains pending.  
 **New clean server installation:** `IronWoven Age Of Industry v.0.1` — **101 top-level mod JAR files** and **116 non-core NeoForge mod IDs** confirmed; world `IronWoven Age Of Industry_v0.1.0` generated; all four IronWoven datapacks enabled; matching client login, operator grant, Creative-mode command and clean shutdown with all dimensions saved. The fresh log has the five targeted datapack error families absent, but separate PowerGrid, Every Compat, Create Aeronautics Structures and Shulker Box Tooltip/Supplementaries errors remain under investigation. The 106-JAR `MinecraftServer-Test` snapshot above belongs to the previous test folder only.  
 **Minecraft:** 1.21.1  
 **Loader:** NeoForge 21.1.265  
@@ -27,7 +27,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 | Create Deco | 2.1.3 |
 | Create Diesel Generators | 1.3.15 |
 | Create Encased | 1.10.0-fix1 |
-| Create Gadgets & Gizmos | 1.2.10 |
+| Create Gadgets & Gizmos | 1.2.10 bundled — observed active baseline; CurseForge 2.0.0-Pre-Release-4 file 9260191 is available as a major-version update candidate, not installed/tested/accepted |
 | Create Kinetic | 1.4.3 |
 | Create Liquid Fuel | 3.0.0 |
 | Create Offroad | 1.3.2 |
@@ -261,7 +261,7 @@ The screenshot also shows Bookshelf 21.1.81, FastFurnace 9.0.1, FastSuite 6.0.7,
 - The 6 November 2026 CurseForge `Create World/mods` client-profile screenshot confirms Entity Culling is absent from the current client mod folder. It is removed from the current optional-candidate list; older server-folder and archive references below are historical observations.
 - The screenshot is an inventory observation, not proof of each mod's features or acceptance into the final pack.
 
-**Current modpack version: `v0.1.112-R002`.** The `R001` and `R002` removal increments record the two maintainer-approved client-only removals, Sodium and Sodium Extra. `v0.1.111-R002` records the Every Compat 2.11.57 update; `v0.1.112-R002` records the required Moonlight Lib 3.8.2 dependency update. The approved pair is confirmed in both the original `Create World` client folder and the normal `MinecraftServer-Test` server folder. The exact visible server JAR list below now reflects the latest screenshot for the two updated filenames; a new baseline startup/login test remains pending. Future additions/updates use the `UPDATE` counter; future mod removals use the separate `R` counter.
+**Modpack version label: CORRECTION PENDING.** The maintainer flagged the previous `v0.1.112-R002` label as incorrect on 7 November 2026. The `R001` and `R002` removal entries record the two maintainer-approved client-only removals, Sodium and Sodium Extra. `v0.1.111-R002` records the Every Compat 2.11.57 update; `v0.1.112-R002` records the required Moonlight Lib 3.8.2 dependency update. The approved pair is confirmed in both the original `Create World` client folder and the normal `MinecraftServer-Test` server folder. The exact visible server JAR list below now reflects the latest screenshot for the two updated filenames; a new baseline startup/login test remains pending. Future additions/updates use the `UPDATE` counter; future mod removals use the separate `R` counter.
 
 
 ## Disabled/archive server-folder snapshot — 5 November 2026, 17:58

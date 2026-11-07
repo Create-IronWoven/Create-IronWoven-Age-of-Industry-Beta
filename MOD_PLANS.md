@@ -9,6 +9,18 @@ This page gives players a short overview of planned, considered, paused, and exc
 **Target:** Minecraft 1.21.1 · NeoForge 21.1.265  
 **Mod source policy:** CurseForge only
 
+## Project version policy — no backports
+
+**Ironwoven is developed for its selected Minecraft version only. No backports to older Minecraft versions are made or planned.**
+
+- Do not create or maintain older-Minecraft branches, legacy pack editions, or backported releases.
+- Do not downgrade the modpack or choose obsolete mod files solely to support an older Minecraft version.
+- Evaluate candidate mods, dependencies, compatibility, testing, and releases against the currently declared Minecraft / NeoForge target.
+- If a mod or dependency has no suitable file for that target, mark it unavailable or reject it. Do not change the pack's target to accommodate it.
+- A future target-version change must be an explicit forward migration decision, with its own compatibility and testing plan; it is not a backport.
+
+This policy applies to mod research, dependency selection, issue triage, contributions, documentation, and release planning.
+
 ## Status meanings
 
 | Status | Meaning |

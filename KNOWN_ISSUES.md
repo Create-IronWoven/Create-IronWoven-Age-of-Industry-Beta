@@ -6,7 +6,7 @@ This page lists current, unresolved issues. Completed fixes are documented in th
 
 IronWoven compatibility datapacks are world-scoped. The 6 November 15:12 disposable-world log repeated several targeted errors because that newly created world's datapacks folder was empty. A corrected 15:54 retest enabled all four IronWoven datapacks; the targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk, and Create Deco placard log errors were absent. When creating a new test world, confirm the required IronWoven datapacks are present and enabled before reviewing compatibility errors.
 
-The separate clean Windows server baseline created on 7 November reached `Done` and generated its intended world. After the four pack folders were copied, `/datapack list available` still showed only two Lootr feature packs. This fresh-world datapack discovery check is incomplete; do not use that run as a regression verdict for the four existing compatibility fixes.
+The separate clean Windows server baseline created on 7 November reached `Done` and generated `IronWoven Age Of Industry_v0.1.0`. The root-aware fresh-server installer has now successfully deployed the four maintained IronWoven packs, and the 02:45 console screenshot explicitly lists all four as enabled among 12 datapacks. The datapack discovery/setup blocker is resolved for this fresh world. Post-install targeted error review is still pending; do not infer targeted-error absence from the enabled-pack list alone.
 
 ## Under investigation
 

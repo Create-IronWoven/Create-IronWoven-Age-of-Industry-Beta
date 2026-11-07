@@ -2,7 +2,7 @@
 
 **Latest dedicated-server folder snapshot:** 6 November 2026 — 106 visible JAR files; a later 23:33 screenshot confirms the accepted Every Compat 2.11.57 and Moonlight Lib 3.8.2 JARs are present in this same `MinecraftServer-Test/mods` folder. The original `Create World/mods` client screenshot confirms the matching pair there too.
 **Accepted baseline target:** `v0.1.112-R002` includes Every Compat 2.11.57 and Moonlight Lib 3.8.2. Latest screenshots confirm both accepted JARs are now physically present in the original `Create World/mods` client profile and the normal `MinecraftServer-Test/mods` dedicated-server baseline. Folder deployment is complete; a startup/login smoke test on this updated baseline remains pending.  
-**New clean server installation:** `IronWoven Age Of Industry v.0.1` — planned, not yet created; initial mod JAR count **0**; final top-level JAR and NeoForge loaded-mod counts pending. The 106-JAR `MinecraftServer-Test` snapshot above belongs to the previous test folder only and is not the new install's count or target.  
+**New clean server installation:** `IronWoven Age Of Industry v.0.1` — folder created 7 November 2026 and screenshot-confirmed empty (`0 items`); initial mod JAR count **0**; NeoForge not yet installed; final top-level JAR and loaded-mod counts pending. The 106-JAR `MinecraftServer-Test` snapshot above belongs to the previous test folder only and is not the new install's count or target.  
 **Minecraft:** 1.21.1  
 **Loader:** NeoForge 21.1.265  
 **Java:** 21

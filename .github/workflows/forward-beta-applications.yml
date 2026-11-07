@@ -13,7 +13,8 @@ concurrency:
 
 jobs:
   forward:
-    if: >-\n      startsWith(github.event.issue.title, '[Beta Application]: ')
+    if: >-
+      startsWith(github.event.issue.title, '[Beta Application]: ')
     runs-on: ubuntu-24.04
     timeout-minutes: 3
     steps:

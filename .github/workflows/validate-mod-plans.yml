@@ -11,7 +11,7 @@ on:
       - 'KNOWN_ISSUES.md'
       - 'TESTING_CHECKLIST.md'
       - '.github/ISSUE_TEMPLATE/functional-test-report.yml'
-      - 'scripts/apply_test_result.py'
+      - '.github/workflows/forward-test-results.yml'
       - '.github/workflows/validate-mod-plans.yml'
   pull_request:
     paths:
@@ -22,7 +22,7 @@ on:
       - 'KNOWN_ISSUES.md'
       - 'TESTING_CHECKLIST.md'
       - '.github/ISSUE_TEMPLATE/functional-test-report.yml'
-      - 'scripts/apply_test_result.py'
+      - '.github/workflows/forward-test-results.yml'
       - '.github/workflows/validate-mod-plans.yml'
   workflow_dispatch:
 
@@ -44,20 +44,27 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Validate functional test form YAML and automation syntax
+      - name: Validate functional test form and public forwarding workflow
         run: |
-          ruby -e 'require "yaml"; YAML.load_file(".github/ISSUE_TEMPLATE/functional-test-report.yml"); puts "PASS: functional test issue form YAML parses."'
-          python -m py_compile scripts/apply_test_result.py
+          ruby -e 'require "yaml"; YAML.load_file(".github/ISSUE_TEMPLATE/functional-test-report.yml"); YAML.load_file(".github/workflows/forward-test-results.yml"); puts "PASS: functional test form and forwarding workflow YAML parse."'
           python - <<'PY'
           from pathlib import Path
           form = Path('.github/ISSUE_TEMPLATE/functional-test-report.yml').read_text(encoding='utf-8')
+          workflow = Path('.github/workflows/forward-test-results.yml').read_text(encoding='utf-8')
           checklist = Path('TESTING_CHECKLIST.md').read_text(encoding='utf-8')
           required = ['id: test-environment', '- Single-player', '- Multiplayer', '- Both']
           missing = [item for item in required if item not in form]
+          required_forwarder = ['repository_dispatch', 'IRONWOVEN_PRIVATE_DISPATCH_TOKEN',
+                                'alexth110987/Ironwoven-Age-of-Industry/dispatches']
+          missing_forwarder = [item for item in required_forwarder if item not in workflow]
           headers = checklist.count('| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |')
-          if missing or headers == 0:
-              raise SystemExit(f'FAIL: missing form values {missing}; environment-aware checklist headers {headers}')
-          print(f'PASS: test environment choices present and {headers} functional checklist sections include the environment column.')
+          if missing or missing_forwarder or headers == 0 or Path('scripts').exists():
+              raise SystemExit(
+                  f'FAIL: missing form values {missing}; missing forwarder markers {missing_forwarder}; '
+                  f'environment-aware checklist headers {headers}; public scripts directory exists={Path("scripts").exists()}'
+              )
+          print(f'PASS: test environment choices present; forwarding workflow targets the private processor; {headers} checklist sections include the environment column.')
+          print('PASS: public repository contains no scripts/ directory.')
           PY
 
       - name: Validate player-facing documentation

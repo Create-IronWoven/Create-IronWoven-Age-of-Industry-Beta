@@ -14,7 +14,7 @@ Create IronWoven: Age of Industry is an industrial and steampunk Minecraft modpa
 <!-- IRONWOVEN_AUTO_VERSION -->
 **Current Ironwoven pack version:** `v0.1.101.5` — release `0`, content revision `1`, `101` top-level server mod JARs, and `5` active accepted bug fixes.
 
-**Development status:** Internal testing. This is a development version, not a downloadable public beta release. The accepted Every Compat 2.11.57 + Moonlight Lib 3.8.2 pair is confirmed in both the original Create World client profile and normal MinecraftServer-Test dedicated-server folder; startup/login verification on that updated baseline remains pending. A separate clean Windows server installation named `IronWoven Age Of Industry v.0.1` has 101 top-level mod JAR files and 116 non-core NeoForge pack mod IDs. Its world `IronWoven Age Of Industry_v0.1.0` generated successfully; all four IronWoven datapacks are enabled; matching-client login, operator access, Creative-mode command, and clean shutdown all passed. Eight separate ERROR-level records remain in that fresh log: five attributed to PowerGrid, Every Compat, Create Aeronautics Structures, and Shulker Box Tooltip/Supplementaries, plus three unattributed entity-attachment warnings. Their source/effect is unknown; do not attribute them to an installed mod without evidence. No server download is available. **Gadgets & Gizmos 2.0.0-Pre-Release-4 is on hold; the bundled 1.2.10 baseline stays unchanged.**
+**Development status:** Internal testing. This is a development version, not a downloadable public beta release. The accepted Every Compat 2.11.57 + Moonlight Lib 3.8.2 pair is confirmed in both the original Create World client profile and normal MinecraftServer-Test dedicated-server folder; startup/login verification on that updated baseline remains pending. A separate clean Windows server installation named IronWoven Age Of Industry v.0.1 has 101 top-level mod JAR files and 116 non-core NeoForge pack mod IDs. Its world IronWoven Age Of Industry_v0.1.0 generated successfully; all four IronWoven datapacks are enabled; matching-client login, operator access, Creative-mode command, and clean shutdown all passed. Eight separate ERROR-level records remain in that fresh log: five attributed to PowerGrid, Every Compat, Create Aeronautics Structures, and Shulker Box Tooltip/Supplementaries, plus three unattributed entity-attachment warnings. Their source/effect is unknown; do not attribute them to an installed mod without evidence. No server download is available. **Gadgets & Gizmos 2.0.0-Pre-Release-4 is on hold; the bundled 1.2.10 baseline stays unchanged.**
 
 <badge>PROJECT POLICY</badge>
 
@@ -24,7 +24,7 @@ Create IronWoven: Age of Industry is an industrial and steampunk Minecraft modpa
 
 ## Quick links
 
-- [Apply to become a beta tester](https://github.com/alexth110987/Create-IronWoven-Age-of-Industry/issues/new?template=beta_application.yml)
+- [Apply to become a beta tester](https://alexth110987.github.io/Create-IronWoven-Age-of-Industry/issues/new?template=beta_application.yml)
 - [Current beta status](BETA_STATUS.md)
 - [Mods in the current test pack](MODS.md)
 - [Planned mods and project decisions](MOD_PLANS.md)
@@ -33,6 +33,7 @@ Create IronWoven: Age of Industry is an industrial and steampunk Minecraft modpa
 - [Known issues](KNOWN_ISSUES.md)
 - [Dimensions and exploration](DIMENSIONS.md)
 - [Changelog](CHANGELOG.md)
+- [Beta updates](BETA_UPDATES.md)
 - [Support and troubleshooting](SUPPORT.md)
 - [Report a problem or suggest an idea](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues)
 

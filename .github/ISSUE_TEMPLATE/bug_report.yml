@@ -6,7 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before submitting, search existing issues and check Known Issues. Remove personal information from logs and screenshots.
+        This is a public GitHub issue. Its title, answers, comments, and attachments are visible immediately. GitHub displays your account as the issue author; a nickname does not hide it.
+        Remove real names, contact details, passwords, access tokens, private server addresses, local paths, and raw private configuration from answers, screenshots, and logs. Attach only short, sanitized excerpts.
+        Before submitting, search existing issues and check Known Issues.
   - type: input
     id: pack-version
     attributes:

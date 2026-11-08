@@ -4,6 +4,12 @@ Thanks for helping test Create IronWoven: Age of Industry.
 
 This repository is the public beta tester hub. It is for player feedback and testing records, not the pack's source code.
 
+## Privacy and public issue submissions
+
+Every issue form in this repository creates a public GitHub issue. The title, answers, comments, and attachments are visible as soon as the issue is submitted. GitHub also displays the submitting account as the issue author; a nickname does not anonymize it. Forms cannot screen content before initial publication.
+
+Inspect screenshots, logs, and files before attaching them. Remove real names, personal contact details, passwords, access tokens, private server addresses, local paths, raw private configuration, and other sensitive details. Share only short, relevant, sanitized evidence. If a credential may have been exposed, rotate or revoke it immediately.
+
 ## Functional mod testing
 
 Use the **Functional test result** issue form for a completed test action from the testing checklist.

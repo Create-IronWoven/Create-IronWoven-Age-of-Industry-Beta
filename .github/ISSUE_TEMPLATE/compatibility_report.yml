@@ -3,6 +3,11 @@ description: Report a mod conflict, version mismatch, or client/server compatibi
 title: "[Compatibility]: "
 labels: ["compatibility"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public GitHub issue. Its title, answers, comments, and attachments are visible immediately. GitHub displays your account as the issue author; a nickname does not hide it.
+        Do not include personal contact details, passwords, access tokens, private server addresses, local paths, or private configuration. Inspect logs and screenshots before attaching them.
   - type: input
     id: pack-version
     attributes:

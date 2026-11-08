@@ -3,6 +3,11 @@ description: Suggest a feature, modpack improvement, or quality-of-life change.
 title: "[Suggestion]: "
 labels: ["suggestion"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public GitHub issue. Its title, answers, comments, and attachments are visible immediately. GitHub displays your account as the issue author; a nickname does not hide it.
+        Do not include personal contact details, passwords, access tokens, private server addresses, local paths, or private configuration.
   - type: textarea
     id: idea
     attributes:

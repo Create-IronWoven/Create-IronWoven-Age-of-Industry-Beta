@@ -4,5 +4,5 @@ contact_links:
     url: https://github.com/alexth110987/Create-IronWoven-Age-of-Industry/issues/new?template=beta_application.yml
     about: Beta access is limited and applications are reviewed manually.
   - name: Submit a beta functional test result
-    url: https://github.com/alexth110987/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml
+    url: https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml
     about: Use this form only to report one specific test action after you have beta access.

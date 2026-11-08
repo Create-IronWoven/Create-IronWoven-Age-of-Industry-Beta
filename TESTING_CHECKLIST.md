@@ -39,11 +39,11 @@ This section is the current status summary. Dated trial tables later in this fil
 
 **How to submit test results:**
 
-1. Open the [Submit Test Result form](https://github.com/alexth110987/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml).
+1. Open the [Submit Test Result form](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml).
 2. Copy the mod heading text (including version, without the leading ### symbols) and the exact test-action text from the table below.
 3. Select the test environment: Single-player, Multiplayer, or Both. Choose Both only when you actually tested the action in both environments.
 4. Enter a tester nickname or pseudonym and the test date in DD-MM-YYYY format, choose the result, and describe what happened. Do not enter a legal/real name or GitHub username. Note: GitHub shows the account that opened the report as the public issue author, but the automation does not copy that account name into this checklist. Do not use your legal/real name or GitHub account username.
-5. Submit the form. The public form forwards the report for processing, but the first-time submission-to-checklist update path is still undergoing end-to-end verification. A submitted issue does not by itself confirm that a checklist row changed; check this page after submission and contact the maintainers if the result does not appear.
+5. Submit the form. The Beta-to-private forwarding path and invalid-report safeguards have been verified. A valid, unique report updating a matching checklist row is still awaiting end-to-end verification. A submitted issue does not by itself confirm that a checklist row changed; check this page after submission and contact the maintainers if the result does not appear.
 
 Submit one form for each test action. The processor is designed to match the mod/action text and preserve existing results. Duplicate reports are detected and do not overwrite the original result. Retests of completed actions require maintainer review; existing results are never silently overwritten.
 

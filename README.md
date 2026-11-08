@@ -29,12 +29,12 @@ Create IronWoven: Age of Industry is an industrial and steampunk Minecraft modpa
 - [Mods in the current test pack](MODS.md)
 - [Planned mods and project decisions](MOD_PLANS.md)
 - [Testing progress](TESTING_CHECKLIST.md)
-- [Submit test results](https://github.com/alexth110987/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml)
+- [Submit test results](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml)
 - [Known issues](KNOWN_ISSUES.md)
 - [Dimensions and exploration](DIMENSIONS.md)
 - [Changelog](CHANGELOG.md)
 - [Support and troubleshooting](SUPPORT.md)
-- [Report a problem or suggest an idea](https://github.com/alexth110987/Create-IronWoven-Age-of-Industry-Beta/issues)
+- [Report a problem or suggest an idea](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues)
 
 ## Platform
 
@@ -55,4 +55,4 @@ Before reporting a problem, check [Known Issues](KNOWN_ISSUES.md) and search the
 
 Remove usernames, private addresses, local paths, passwords, tokens, and personal information from logs or screenshots. Do not upload world saves, private backups, or third-party mod JARs.
 
-A successful server startup does not prove every mod feature works. The [testing checklist](TESTING_CHECKLIST.md) separates startup checks from individual feature validation. Testers can submit one action at a time using the [Functional Test Result form](https://github.com/alexth110987/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml). Each report records whether the action was tested in Single-player, Multiplayer, or Both. The test-result forwarding path is active, but the first-time submission-to-checklist update path is still undergoing end-to-end verification. A submitted form does not by itself confirm that a checklist row changed; check the current checklist after submitting, and contact the maintainers when a result does not appear.
+A successful server startup does not prove every mod feature works. The [testing checklist](TESTING_CHECKLIST.md) separates startup checks from individual feature validation. Testers can submit one action at a time using the [Functional Test Result form](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml). Each report records whether the action was tested in Single-player, Multiplayer, or Both. The Beta-to-private forwarding path and invalid-report safeguards have been verified. A valid, unique report updating a matching checklist row is still awaiting end-to-end verification. A submitted form does not by itself confirm that a checklist row changed; check the current checklist after submitting, and contact the maintainers when a result does not appear.

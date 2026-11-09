@@ -6,7 +6,7 @@
 
 **Beta access is limited:** participation is by invitation or approved application only. Public access to this repository does not automatically grant permission or access to beta testing builds, servers, or activities. Acceptance is confirmed separately by the project maintainer.
 
-**This repository is for approved beta testers.** To request access, use the [beta application options on the public project home](https://github.com/alexth110987/Create-IronWoven-Age-of-Industry/issues/new/choose). Applications are reviewed privately; submitting one does not grant access.
+**This repository is for approved beta testers.** To request access, use the [beta application options on the public project home](https://github.com/alexth110987/Create-IronWoven-Age-of-Industry/issues/new/choose). Applications are reviewed manually; the application is submitted as a public GitHub issue. Do not include personal contact details. Submitting one does not grant access.
 
 
 Create IronWoven: Age of Industry is an industrial and steampunk Minecraft modpack built around **Create**, **Create Aeronautics**, trains, automation, engineering, transport, building, and exploration.

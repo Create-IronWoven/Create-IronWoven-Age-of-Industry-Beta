@@ -8,13 +8,13 @@
 
 # Full Installed-Mod Functional Testing Checklist
 
-**Last reviewed:** 7 November 2026  
+**Last reviewed:** 10 November 2026  
 **Target:** Minecraft 1.21.1 · NeoForge 21.1.265 · Java 21  
 **Approved download source:** CurseForge only
 
 This checklist is a feature-test matrix, not a live installed-mod manifest. It follows the recorded test inventory and separately labels current client-only candidates, completed checks, holds, and dated historical evidence. For current file inventories and versions, use [MODS.md](MODS.md): the 6 November `MinecraftServer-Test` snapshot is historical and separate from the 7 November clean v.0.1 server and latest CurseForge client-profile screenshot. Do not treat historical snapshot tables below as current installation instructions. This is not a final release manifest.
 
-## Current verification snapshot — 7 November 2026
+## Current verification snapshot — 10 November 2026
 
 This section is the current status summary. Dated trial tables later in this file are historical evidence and must not be read as the current installed inventory.
 
@@ -29,13 +29,14 @@ This section is the current status summary. Dated trial tables later in this fil
 | Every Compat | PARTIAL — accepted pair 2.11.57 + Moonlight 3.8.2 passed Windows disposable startup/world/login/shutdown smoke test; duplicate Golden Cherry Leaves registration remains open; feature-level checks are assigned to beta testers; client and server folder deployment confirmed; updated-baseline startup/login verification pending |
 | Create Aeronautics Structures | PARTIAL — test-only uniform loot override passed runtime testing; all 11 valid structure IDs have locate/visual presence evidence in disposable Overworld; crashed-airship hillside placement visually accepted; maintainer spot checks: engineering-house standard and Lootr barrels generated loot; crashed-airship vanilla chest has no assigned loot table; remaining structure/container loot coverage is delegated to beta testers; release-safe fix/distribution decision remains open; `plane` ID rejected; original JAR unchanged |
 | Integrated Villages | PARTIAL — server load and structure-ID lookups observed; generation completeness, vanilla-village behavior and performance remain unverified |
+| Create: The Factory Must Grow 1.3.3a | SMOKE PASS — matching client/server loaded the same candidate filename/version and completed login; TFMG feature actions remain NOT TESTED; Electric Diode/Fuse Block visual checks pending; candidate not accepted |
 | Entity Culling | REMOVED from current CurseForge client profile; confirmed absent in 6 Nov client-folder screenshot; not an active test candidate |
 | ImmediatelyFast / Flerovium / More Culling | Optional client candidates only; not confirmed as currently installed by latest client screenshot; do not treat as current installed mods |
 | Linux dedicated server | NOT TESTED — Linux system has not yet been set up |
 | Individual feature matrix | OPEN — pending rows remain pending until the specific behavior is tested and evidence is recorded |
 | Public beta / release | NOT APPROVED — no downloadable beta package exists |
 
-**Current inventory source:** [MODS.md](MODS.md) holds separate server and client observations. The latest 6 November Windows client screenshot confirms Entity Culling is absent from the CurseForge `Create World/mods` folder. The 6 November server inventory screenshot is not a client inventory. No production world or production world-generation configuration was changed.
+**Current inventory source:** [MODS.md](MODS.md) holds separate server and client observations. The latest 6 November Windows client screenshot confirms Entity Culling is absent from the CurseForge `Create World/mods` folder. The 6 November server inventory screenshot is not a client inventory. A separate 10 November TFMG update test confirms the same candidate filename/version was loaded on the active client and dedicated server; this is not a full inventory/hash reconciliation. No production world or production world-generation configuration was changed.
 
 **How to submit test results:**
 
@@ -69,6 +70,7 @@ The fresh Windows v.0.1 server reached `Done (4.440s)`, generated `IronWoven Age
 | Targeted compatibility errors | Design n' Decor, Railways, Create Kinetic, Sable Catwalk, and Create Deco placard errors absent in fresh 7 Nov and corrected 6 Nov logs | PASS — log review only |
 | Matching client login | Matching client joined in fresh 7 Nov and corrected 6 Nov runs; 7 Nov operator and Creative-mode commands also succeeded | PASS — smoke test only |
 | Clean shutdown | All dimensions saved in the fresh 7 Nov run and corrected 6 Nov retest | PASS |
+| TFMG 1.3.3a shared update smoke | Matching client/server loaded `tfmg-1.21.1-1.3.3a-community.jar`; client connected and completed SBT handshake; server saved all dimensions | PASS — smoke only; hash equality and feature behavior not tested |
 | Individual feature tests | Matrix below | OPEN — mostly not yet function-tested |
 | Matching client-only mod startup | Targeted client evidence exists for PowerGrid and local Struts / tooltip workaround tests; no complete isolated optional-client candidate sweep | PARTIAL — optional candidates remain open |
 | Remaining fresh-server log findings | 8 ERROR-level records (five attributed to PowerGrid, Every Compat, Create Aeronautics Structures and SBT/Supplementaries; three unattributed entity-attachment warnings) and five DUMMY block-entity warnings remain under review | OPEN — do not attribute unknown records to a mod without evidence |
@@ -503,12 +505,16 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Trigger notes manually and by supported controls/redstone. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Test pitch, sound, range, persistence and multiplayer audio. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Create: The Factory Must Grow Community Edition 1.3.3
-**Current status:** Pending
+### Create: The Factory Must Grow Community Edition 1.3.3a (update candidate; not accepted)
+**Current status:** Shared client/server routine smoke test passed on 10 November 2026. Feature tests remain Pending; the 1.3.3a candidate is not accepted into the baseline. The smoke result is not a feature pass.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
 | Run representative industrial processing: fluid/oil input, machine processing, outputs, power/kinetic requirements and fuel-burning machine. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test Blast Furnace handling of one-result recipes; confirm it completes without crashing and produces the expected output. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Verify one-block engine fuel consumption. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Verify glass-pipe clone item-stack behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Verify intended connection behavior between cast-iron and aluminium blocks. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Test Unified Fuels integration. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Unified Fuels 1.0.4

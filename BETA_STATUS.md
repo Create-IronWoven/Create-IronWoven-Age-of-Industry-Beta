@@ -3,7 +3,7 @@
 <!-- IRONWOVEN_AUTO_VERSION -->
 **Current Ironwoven pack version:** `v0.1.101.5` — release `0`, content revision `1`, `101` top-level server mod JARs, and `5` active accepted bug fixes.
 **Release status:** Internal development; no downloadable public beta has been published.  
-**Last updated:** 7 November 2026  
+**Last updated:** 10 November 2026  
 **Minecraft:** 1.21.1 · **NeoForge:** 21.1.265 · **Java:** 21
 
 ## Current status
@@ -29,6 +29,8 @@ The maintainer has created a **brand-new, clean Windows dedicated-server install
 Windows is the current development and test environment. Linux is a planned server target, but the maintainer has not yet set up a Linux system. Linux compatibility and runtime behavior are not tested or verified. Linux validation will be added to release preparation once a test system is available.
 
 ## Testing progress
+
+**Create: The Factory Must Grow Community Edition 1.3.3a update smoke test — 10 November 2026:** a separate shared client/server update test loaded the same TFMG JAR filename and version (`1.3.3a-community`) on the Windows dedicated server and matching CurseForge client for Minecraft 1.21.1 / NeoForge 21.1.265. The server reached `Done`, accepted the client, and saved all dimensions on clean shutdown; the client connected, received server data, and completed its Shulker Box Tooltip handshake. **Routine shared smoke test: PASS.** This does not prove TFMG feature behavior or hash-level file identity. The client log reports an Electric Diode model reference and Fuse Block texture warning; visual checks remain open. TFMG 1.3.3a is still an update-test candidate, not an accepted baseline. Its industrial processing, Unified Fuels, Blast Furnace, one-block engine, glass-pipe, and cast-iron/aluminium feature checks remain pending. No pack-version change or public beta release is implied.
 
 **Every Compat 2.11.57 + Moonlight Lib 3.8.2 paired update smoke test — 6 November 2026, 23:40–23:46 CET:** the exact pair loaded on a disposable Windows dedicated server and matching client. The server reached Done, enabled all four IronWoven datapacks, accepted the client, and shut down with all dimensions saved. The duplicate Golden Cherry Leaves registration remains in both client and server logs. This is a routine startup/world-load/client-login/clean-shutdown smoke-test pass only; no block, recipe, JEI, model, texture, drop or gameplay feature was tested by the maintainer. Those feature checks remain assigned to beta testers through the public checklist. The pair was accepted by the maintainer on 7 November 2026. These are updates to existing profile entries and do not change the current version's mod-entry or bug-fix counts. The original Create World client profile and standard MinecraftServer-Test dedicated-server baseline now both contain the accepted pair, confirmed by the latest screenshots. A startup/login smoke test on this updated baseline is the next step. The CurseForge test entry mapped to a separate IronWoven Age Of Industry instance folder; the original Create World profile remained separate on the accepted pair.
 

@@ -8,7 +8,7 @@ IronWoven compatibility datapacks are world-scoped. The 6 November 15:12 disposa
 
 The separate clean Windows server baseline created on 7 November reached `Done` and generated `IronWoven Age Of Industry_v0.1.0`. The root-aware fresh-server installer successfully deployed the four maintained IronWoven packs; the 02:45 console screenshot lists all four as enabled among 12 datapacks. The later 02:44–02:58 server log confirms matching-client login, operator grant, Creative-mode command, and clean shutdown with all dimensions saved. The five targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Create Deco placard and Sable Catwalk errors are absent. The same log contains separate ERROR records for PowerGrid native loading, Every Compat duplicate registration, Aeronautics Structures uniform loot parsing, and SBT/Supplementaries server preview-provider loading. It also contains three unassigned entity-attachment warnings using `apotheosis:tier_augments_applied`. The fresh `mods/` folder screenshot contains no Apotheosis-named JAR, and the maintainer confirms Apotheosis is not installed or planned. Their source and impact are unknown, so keep these three warnings as monitor-only observations rather than an identified mod issue; do not install Apotheosis. Five DUMMY block-entity warnings near a generated structure area also need targeted inspection.
 
-## Under investigation
+## Active issues under investigation
 
 ### Struts dedicated-server client class
 
@@ -22,13 +22,15 @@ The tested PowerGrid 0.6.2 package omitted its optional Windows and Linux native
 
 Every Compat reports a duplicate registration for `everycomp:ch/herbsandharvest/golden_cherry_fruit_leaves`. The same duplicate appeared on both client and server during the 6 November 2026 disposable smoke test with the accepted Every Compat 2.11.57 + Moonlight Lib 3.8.2 pair. Other compatibility blocks register, but this duplicate remains unresolved; the update does not fix it.
 
-### Create Aeronautics Structures loot table
-
-The maintainer-supplied `cr_aero_structures.jar` identifies version 1.1.0-Beta-3.1 and matches official CurseForge file 8399115 by version (the downloaded artifact was not hash-compared). Inspection found that four leather-armour entries put a `minecraft:uniform` number-provider object inside `minecraft:dyed_color.rgb`, where Minecraft 1.21.1 expects a concrete RGB integer. A test-only world datapack override using a 16-color vanilla dye palette passed runtime loot testing on 6 November 2026 in the disposable Windows `world_lootr_test` profile. The override is not release-approved and the original mod JAR remains unchanged. All 11 valid Overworld structure IDs now have locate/visual-presence evidence, including visually accepted crashed-airship hillside placement; `cr_aero_structures:plane` is invalid. Limited maintainer spot checks found items in the engineering-house standard barrel and Lootr barrel. One crashed-airship vanilla chest at `(-835, 105, -6752)` has `Items: []` and no `LootTable` / `LootTableSeed`, confirming a specific loot-assignment defect in that chest. Remaining structure/container loot coverage is delegated to beta testers. The candidate remains test-only; investigation of the specific chest defect and a release-safe uniform-table correction/distribution decision remain open.
-
 ### Shulker Box Tooltip / Supplementaries integration
 
 The default client setting reproduced the client-only Shulker Box Tooltip `PreviewRenderer` invalid-dist error when Supplementaries providers were registered on the dedicated server. This matches the open upstream [ShulkerBoxTooltip issue #263](https://github.com/MisterPeModder/ShulkerBoxTooltip/issues/263). A reversible client-only workaround (`preview.serverIntegration=false`) passed log-level and visual tests on 6 November 2026: fresh server logs contain no `PreviewRenderer` or failed Supplementaries provider registration, and the matching client registers all 3 Supplementaries providers and all 31 Shulker Box Tooltip providers locally. Screenshots confirm the Sack's nine-stack preview and Lunch Basket's food-content/state preview render correctly. With this setting disabled, server-supplied extras such as Ender Chest synchronization are unavailable. This is a local config workaround, not an upstream fix; keep the issue open until the release trade-off is assessed or a server-safe upstream fix is available.
+
+## Deferred candidate — not in the active beta queue
+
+### Create Aeronautics Structures 1.1.0-Beta-3.1 — ON HOLD
+
+This candidate is not eligible for the next beta and is not part of the approved beta content. Testing identified two unresolved defects: the uniform armour loot table does not parse on Minecraft 1.21.1, and one crashed-airship chest had no assigned loot table. A 16-colour datapack workaround passed a disposable test but changes the original full-range random colour behavior and is not approved for distribution. Further testing and packaging are paused. Reconsider only after a new official CurseForge Minecraft 1.21.1 NeoForge file is reviewed and both issues are verified fixed, or the maintainer explicitly approves a documented exception.
 
 ## Reporting a new issue
 

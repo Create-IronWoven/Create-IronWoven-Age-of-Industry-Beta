@@ -6,7 +6,7 @@ This page gives a short overview of dimension content. For the exact inventory, 
 
 The main exploration and building area: biomes, terrain, caves, vegetation, resources, villages, structures, abandoned locations, Create-inspired engineering, transport, and automation.
 
-The recorded world-generation baseline includes BYG 2.6.3 and Regions Unexplored 0.6.3. Existing worlds and their world-generation settings are protected during testing. Create Aeronautics Structures is being evaluated as an Overworld candidate and is not approved for release.
+The recorded world-generation baseline includes BYG 2.6.3 and Regions Unexplored 0.6.3. Existing worlds and their world-generation settings are protected during testing. Create Aeronautics Structures is an Overworld candidate ON HOLD and is not eligible for the next beta. Do not test or package it until an updated official CurseForge 1.21.1 NeoForge file has been reviewed and its known loot defects are verified fixed.
 
 ## Nether
 

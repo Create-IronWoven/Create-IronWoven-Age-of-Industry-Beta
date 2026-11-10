@@ -35,7 +35,7 @@ This policy applies to mod research, dependency selection, issue triage, contrib
 
 | Area | Public status |
 |---|---|
-| Create Aeronautics Structures | Partial. All 11 valid Overworld structure IDs have locate/visual-presence evidence; crashed-airship hillside placement was visually accepted and `plane` is invalid. Test-only uniform-loot override passed runtime testing. Engineering-house standard and Lootr barrels produced items; one crashed-airship vanilla chest has no assigned loot table. Remaining container-loot coverage is delegated to beta testers; the specific chest defect and release-safe uniform-table decision remain open; original JAR unchanged. |
+| Create Aeronautics Structures | **ON HOLD.** The tested 1.1.0-Beta-3.1 candidate has two unresolved loot defects: the uniform armour table fails on Minecraft 1.21.1, and one crashed-airship chest has no loot-table assignment. The 16-colour test override is not approved for release. No further tests or packaging while held; resume only after a new official CurseForge 1.21.1 NeoForge file is reviewed and both issues are verified fixed, or an explicit documented exception is approved. |
 | Performance and rendering | Partial. No measured server performance baseline yet; client rendering candidates require separate client tests. |
 | Botany Pots and Construction Sticks | Loaded in a test group; feature validation remains open. |
 | Lootr | Partial compatibility observations; independent per-player loot still needs verification. |

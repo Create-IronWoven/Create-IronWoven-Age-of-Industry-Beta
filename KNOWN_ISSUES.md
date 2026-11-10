@@ -8,7 +8,7 @@ IronWoven compatibility datapacks are world-scoped. The 6 November 15:12 disposa
 
 The separate clean Windows server baseline created on 7 November reached `Done` and generated `IronWoven Age Of Industry_v0.1.0`. The root-aware fresh-server installer successfully deployed the four maintained IronWoven packs; the 02:45 console screenshot lists all four as enabled among 12 datapacks. The later 02:44–02:58 server log confirms matching-client login, operator grant, Creative-mode command, and clean shutdown with all dimensions saved. The five targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Create Deco placard and Sable Catwalk errors are absent. The same log contains separate ERROR records for PowerGrid native loading, Every Compat duplicate registration, Aeronautics Structures uniform loot parsing, and SBT/Supplementaries server preview-provider loading. It also contains three unassigned entity-attachment warnings using `apotheosis:tier_augments_applied`. The fresh `mods/` folder screenshot contains no Apotheosis-named JAR, and the maintainer confirms Apotheosis is not installed or planned. Their source and impact are unknown, so keep these three warnings as monitor-only observations rather than an identified mod issue; do not install Apotheosis. Five DUMMY block-entity warnings near a generated structure area also need targeted inspection.
 
-## Active issues under investigation
+## Under investigation
 
 ### Struts dedicated-server client class
 
@@ -26,11 +26,9 @@ Every Compat reports a duplicate registration for `everycomp:ch/herbsandharvest/
 
 The default client setting reproduced the client-only Shulker Box Tooltip `PreviewRenderer` invalid-dist error when Supplementaries providers were registered on the dedicated server. This matches the open upstream [ShulkerBoxTooltip issue #263](https://github.com/MisterPeModder/ShulkerBoxTooltip/issues/263). A reversible client-only workaround (`preview.serverIntegration=false`) passed log-level and visual tests on 6 November 2026: fresh server logs contain no `PreviewRenderer` or failed Supplementaries provider registration, and the matching client registers all 3 Supplementaries providers and all 31 Shulker Box Tooltip providers locally. Screenshots confirm the Sack's nine-stack preview and Lunch Basket's food-content/state preview render correctly. With this setting disabled, server-supplied extras such as Ender Chest synchronization are unavailable. This is a local config workaround, not an upstream fix; keep the issue open until the release trade-off is assessed or a server-safe upstream fix is available.
 
-## Deferred candidate — not in the active beta queue
+### Create Aeronautics Structures loot table
 
-### Create Aeronautics Structures 1.1.0-Beta-3.1 — ON HOLD
-
-This candidate is not eligible for the next beta and is not part of the approved beta content. Testing identified two unresolved defects: the uniform armour loot table does not parse on Minecraft 1.21.1, and one crashed-airship chest had no assigned loot table. A 16-colour datapack workaround passed a disposable test but changes the original full-range random colour behavior and is not approved for distribution. Further testing and packaging are paused. Reconsider only after a new official CurseForge Minecraft 1.21.1 NeoForge file is reviewed and both issues are verified fixed, or the maintainer explicitly approves a documented exception.
+**Candidate status: ON HOLD — not eligible for the next beta; no further testing, updating, or packaging is active.** The tested `1.1.0-Beta-3.1` file has two unresolved defects: the official uniform armour loot table does not parse on Minecraft 1.21.1, and one crashed-airship chest had no assigned loot table. A private 16-colour datapack workaround passed a disposable test but changes the original full-range random colour behavior and is not approved for distribution. The specific chest diagnosis is complete; no repair or upstream resolution is recorded. All 11 valid Overworld structure IDs have locate/visual-presence evidence, and broader structure/container loot checks are not being continued while the candidate is held. The original JAR remains unchanged. Reconsider only after a new official CurseForge Minecraft 1.21.1 NeoForge file is reviewed and both issues are verified fixed, or the maintainer explicitly approves a documented exception. The hold is reversible, not a permanent rejection or exclusion.
 
 ## Reporting a new issue
 

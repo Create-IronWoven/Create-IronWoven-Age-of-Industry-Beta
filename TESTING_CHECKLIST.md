@@ -71,6 +71,7 @@ The fresh Windows v.0.1 server reached `Done (4.440s)`, generated `IronWoven Age
 | Matching client login | Matching client joined in fresh 7 Nov and corrected 6 Nov runs; 7 Nov operator and Creative-mode commands also succeeded | PASS — smoke test only |
 | Clean shutdown | All dimensions saved in the fresh 7 Nov run and corrected 6 Nov retest | PASS |
 | TFMG 1.3.3a shared update smoke | Matching client/server loaded `tfmg-1.21.1-1.3.3a-community.jar`; client connected and completed SBT handshake; server saved all dimensions | PASS — smoke only; hash equality and feature behavior not tested |
+| Sophisticated Backpacks 3.26.21.2249 + Sophisticated Core 1.5.32.2464 | Matching pair loaded on client and dedicated server; client joined; all dimensions saved on clean shutdown | PASS — shared smoke only; Backpack feature actions remain Pending for beta testers |
 | Individual feature tests | Matrix below | OPEN — mostly not yet function-tested |
 | Matching client-only mod startup | Targeted client evidence exists for PowerGrid and local Struts / tooltip workaround tests; no complete isolated optional-client candidate sweep | PARTIAL — optional candidates remain open |
 | Remaining fresh-server log findings | 8 ERROR-level records (five attributed to PowerGrid, Every Compat, Create Aeronautics Structures and SBT/Supplementaries; three unattributed entity-attachment warnings) and five DUMMY block-entity warnings remain under review | OPEN — do not attribute unknown records to a mod without evidence |
@@ -630,13 +631,18 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Have two players open the same generated Lootr chest. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Verify independent personal loot, container persistence and multiplayer synchronization. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Sophisticated Backpacks 3.26.20.2244
-**Current status:** Pending
+### Sophisticated Backpacks 3.26.21.2249
+**Current status:** Shared client/server smoke PASS — 10 November 2026. The matching client and dedicated server loaded Backpacks 3.26.21.2249 with Sophisticated Core 1.5.32.2464, the client joined, and the server shut down cleanly. Feature validation is Pending — beta tester validation.
+
+**Supporting library:** Sophisticated Core 1.5.32.2464 is required by this Backpacks version and is tested through the Backpack actions below; it has no separate player-facing gameplay test. Keep Create Integration 0.2.3.194 and Sophisticated Air Tank 1.0.1-beta unchanged while testing these actions. Their separate tests remain in their own sections.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
-| Craft/open backpack. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Test storage, upgrades, filters/automation, pickup and save/relog persistence. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Craft or obtain a test backpack; store, retrieve and move items, then close and reopen it to confirm inventory contents and upgrade slots remain correct. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Use a test backpack; do not risk valuable items. |
+| Install, remove and replace representative upgrades, including Tank, Battery and Stack combinations; confirm slot layouts recalculate without losing, duplicating or displacing items. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Check the backpack inventory before and after each change. |
+| Configure representative Pickup, Deposit and Filter upgrades; verify allowed items are collected or moved and filtered/disallowed items remain in place. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Record which upgrades and filters were used. |
+| Test backpack contents and upgrade persistence after relog and server restart; in multiplayer, confirm the backpack view and contents remain synchronized for its owner. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Include the test environment and whether a restart or relog was used. |
+| Test the Advanced Jukebox upgrade: start playback, die and respawn, then confirm playback stops and does not continue unexpectedly. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | This checks the behavior addressed by the 3.26.21 update. |
 
 ### Sophisticated Backpacks Create Integration 0.2.3
 **Current status:** Pending
@@ -1140,12 +1146,9 @@ The 6 November 2026 CurseForge `Create World/mods` screenshot confirms Entity Cu
 | Verify dependent Sable integrations load and register expected physics behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | No separate feature assumed. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Sophisticated Core 1.5.28.2458
-**Current status:** Pending
+### Sophisticated Core 1.5.32.2464
+**Current status:** Support dependency — shared client/server smoke PASS with Sophisticated Backpacks 3.26.21.2249 on 10 November 2026. Core is a library and has no separate gameplay test. Validate its support through the Sophisticated Backpacks test actions above; do not submit a separate standalone Core feature result.
 
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Verify backpack upgrade/inventory modules initialize and retain data after close/reopen, relog and restart. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### TerraBlender 4.1.0.8
 **Current status:** Pending

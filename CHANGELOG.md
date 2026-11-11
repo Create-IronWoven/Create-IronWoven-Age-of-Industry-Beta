@@ -18,7 +18,7 @@ Player-facing summary of the current Ironwoven development pack. This is not a r
 
 The fresh Windows dedicated-server folder-properties screenshot from 7 November 2026 confirms **101 files** in the server `mods/` folder. The corresponding NeoForge Mod List contains 118 entries (116 non-core mod IDs plus Minecraft and NeoForge); that is a different runtime measurement and is not used by the version.
 
-The 10 November active test-profile archive audit confirms 102 JARs in the client archive and 102 in the dedicated-server test archive. 101 shared non-WITS JARs have identical SHA-256 hashes; WITS is a temporary utility excluded from the mod set. These test-profile archives are not used for the displayed version, which is based on the separate clean v.0.1 server. Deployment of accepted test-profile updates to that server has not been confirmed. The 99-entry CurseForge screenshot and older client/server folder screenshots remain historical inventory records only.
+The 10 November active test-profile archive audit confirms 102 JARs in the client archive and 102 in the dedicated-server test archive. 101 shared non-WITS JARs have identical SHA-256 hashes; WITS is a temporary utility excluded from the mod set. These test-profile archives are not used for the displayed version, which is based on the separate clean v.0.1 server. Deployment of accepted test-profile updates to that server has not been confirmed.
 
 ## Five accepted compatibility bug fixes
 
@@ -41,7 +41,7 @@ These five defects affect 455 individual resources in total, but contribute **5*
 
 These are version updates to existing mod files. Their byte changes are detected by the content fingerprint when those files are present in the selected server `mods/` folder.
 
-## Accepted mod updates — 10 November 2026
+## Accepted mod updates — 10–11 November 2026
 
 - Sophisticated Backpacks updated from 3.26.20.2244 (CurseForge file 9431839) to 3.26.21.2249 (file 9524812); authorised shared smoke PASS and exact client/server SHA-256 parity confirmed.
 - Sophisticated Core dependency updated from 1.5.28.2458 (file 9431812) to 1.5.32.2464 (file 9524669); validated in the same coordinated Backpacks smoke test and hash-matched on both sides.

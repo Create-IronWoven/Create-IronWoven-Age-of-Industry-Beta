@@ -6,7 +6,7 @@
 
 **This page is not a final release manifest.** It summarizes smoke-qualified mod-set updates and unresolved working-profile observations; it does not publish the final CurseForge client/server package inventory.
 
-## Active mod-set updates — verified 10 November 2026
+## Active mod-set updates — verified 10–11 November 2026
 
 The following exact versions passed their authorised, scope-appropriate shared smoke tests and are accepted into the active mod set. This does **not** mark their feature tests complete or grant downloadable-beta/release approval.
 

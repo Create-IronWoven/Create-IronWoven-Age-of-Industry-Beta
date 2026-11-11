@@ -14,7 +14,7 @@ The latest working-profile reconciliation is newer than the older folder snapsho
 
 The generated `v0.1.101.5` version is based on the separate clean Windows server baseline recorded on 7 November: 101 top-level server JARs and five active accepted bug fixes. Do not infer a release version from client-profile counts or older test-folder snapshots. See [CHANGELOG](CHANGELOG.md) for version rules.
 
-## Active mod-set updates — verified 10 November 2026
+## Active mod-set updates — verified 10–11 November 2026
 
 The following exact versions passed their authorised, scope-appropriate shared smoke tests and are accepted into the active mod set. This does **not** mark their feature tests complete or grant downloadable-beta/release approval.
 

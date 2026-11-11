@@ -3,7 +3,7 @@
 <!-- IRONWOVEN_AUTO_VERSION -->
 **Current Ironwoven pack version:** `v0.1.101.5` — release `0`, content revision `1`, `101` top-level server mod JARs, and `5` active accepted bug fixes.
 **Release status:** Internal development; no downloadable public beta has been published.  
-**Last updated:** 10 November 2026  
+**Last updated:** 11 November 2026  
 **Minecraft:** 1.21.1 · **NeoForge:** 21.1.265 · **Java:** 21
 
 ## Current status
@@ -55,11 +55,11 @@ Windows is the current development and test environment. Linux is a planned serv
 - **Integrated Villages 1.3.3+1.21.1:** the corrected server profile loaded its Supplementaries 3.4.0 and Integrated API 1.9.1 dependencies. Several village structure IDs were locatable, but full structure validation and vanilla-village replacement are not confirmed. Some locate searches caused server tick-delay warnings; the candidate remains under testing.
 - **Memory observation:** a short G1 GC trace showed heap reclamation after allocation peaks. This is not a long-term memory-leak assessment or a measured TPS/MSPT/CPU baseline.
 - **Regions Unexplored 0.6.3:** its official project description covers both Overworld and Nether biome generation. A dedicated Nether generation check has been added to the functional checklist; current IronWoven Nether behavior remains unverified in a disposable world.
-- **Functional testing:** the [Full Installed-Mod Functional Testing Checklist](TESTING_CHECKLIST.md) tracks feature-level coverage. Most checks remain pending. Full functional validation is required before beta release.
+- **Functional testing:** the [Full Installed-Mod Functional Testing Checklist](TESTING_CHECKLIST.md) tracks feature-level coverage. Before the initial public beta, every installed feature/content mod must have its test actions represented in the checklist; beta testers perform those feature checks for server-only, shared, and client-only mods. Pending feature results do not block the initial beta by themselves. Complete the full functional matrix before a later stable/final release.
 
 ## Release readiness
 
-**Not ready for public release.** Outstanding compatibility and functional checks, a reconciled CurseForge client manifest and server inventory, clean-install validation, and final release review remain.
+**Not ready for public release.** Outstanding compatibility and smoke-qualification work, beta-tester feature coverage to be collected during the beta, a reconciled CurseForge client manifest and server inventory, clean-install validation, and final release review remain.
 
 ## Project direction
 

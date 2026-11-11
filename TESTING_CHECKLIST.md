@@ -1,14 +1,13 @@
 # Testing order and responsibilities for beta candidates
 
-**Maintainer scope:** exact CurseForge file/dependency/side preflight and routine smoke testing only (startup, world load, matching-client login, and relevant log review). Do not treat this as feature validation.
+**Maintainer scope:** exact CurseForge file/dependency/side preflight and routine smoke testing only (startup, world load, matching-client login, clean shutdown, and relevant log review). Do not treat this as feature validation.
 
-**Beta-tester scope:** beta testers perform feature/function actions for every installed feature/content mod, whether server-only, shared client/server, or client-only. The action matrix below is the source of those tasks. Pending actions are expected during the initial beta and are not passes.
+**Beta-tester scope:** beta testers perform feature/function actions for every installed feature/content mod, whether server-only, shared client/server, or client-only. The action matrix below is the source for those tasks. Pending actions are expected during the initial beta and are not passes.
 
-- Internal profile-smoke work follows the server-first order: server-only mods, then shared client/server mods, then client-only profile checks.
-- Resolve or explicitly disposition server-only/shared dependency, startup, world-load, or matching-client login blockers before moving the internal profile-smoke queue to client-only mods.
-- Split mixed mod sets by side. Keep client-only JARs out of the dedicated-server mods folder.
-- Client-only profile smoke checks use the matching client after server/shared smoke work; beta-tester feature actions for all sides are submitted through the checklist and do not require internal one-at-a-time optimizer isolation.
-- **spark profiling is deferred to beta testers.** It is not an internal development prerequisite; beta testers may capture performance baselines during the beta phase.
+- Internal profile smoke follows the server-first order for any newly authorised candidate: server-only, then shared client/server, then client-only profile checks.
+- This is not an active numbered-batch queue. The previous numbered sequence has been retired; do not restart historical batch work.
+- Do not require isolated per-mod or one-optimizer-at-a-time runs unless a specific diagnostic is explicitly requested and approved.
+- **spark profiling is deferred to beta testers.** It is not an internal development prerequisite.
 
 # Full Installed-Mod Functional Testing Checklist
 
@@ -16,31 +15,28 @@
 **Target:** Minecraft 1.21.1 · NeoForge 21.1.265 · Java 21  
 **Approved download source:** CurseForge only
 
-This checklist is a feature-test matrix, not a live installed-mod manifest. It follows the recorded test inventory and separately labels current client-only candidates, completed checks, holds, and dated historical evidence. For current file inventories and versions, use [MODS.md](MODS.md): the 6 November `MinecraftServer-Test` snapshot is historical and separate from the 7 November clean v.0.1 server and latest CurseForge client-profile screenshot. Do not treat historical snapshot tables below as current installation instructions. This is not a final release manifest.
+This checklist is a feature-test matrix, not a live installed-mod manifest. For current mod-set status and historical inventory context, use [MODS.md](MODS.md). The 10 November active-profile archive audit found 102 JARs in each test-profile archive, with 101 shared non-WITS JARs identical by SHA-256. This is not a final release manifest and does not prove deployment to the separate clean v.0.1 server. The 5–7 November screenshots and folder inventories below are dated historical observations, not current installation instructions.
 
-## Current verification snapshot — 10 November 2026
-
-This section is the current status summary. Dated trial tables later in this file are historical evidence and must not be read as the current installed inventory.
+## Current verification snapshot — 11 November 2026
 
 | Area | Current verified status |
 |---|---|
-| Dedicated-server smoke test | PASS — the fresh Windows v.0.1 server reached `Done (4.440s)`, generated its world, accepted a matching client, and shut down with all dimensions saved; the separate corrected 6 Nov disposable-profile retest also passed |
-| Fresh dedicated-server installation v.0.1 | PASS — clean Windows server; 101 top-level mod JARs; 116 non-core mod IDs in NeoForge Mod List; world generated; all four IronWoven datapacks enabled among 12; target Design n' Decor, Steam 'n' Rails, Create Kinetic, Create Deco placard and Sable Catwalk errors absent; matching client login, OP grant, Creative command and clean shutdown with all dimensions saved. Separate compatibility ERROR records remain under investigation: five are attributed to PowerGrid, Every Compat, Create Aeronautics Structures, and Shulker Box Tooltip/Supplementaries; three unassigned entity-attachment warnings use `apotheosis:tier_augments_applied`. The fresh `mods/` folder screenshot contains no Apotheosis-named JAR, and the maintainer confirms Apotheosis is not installed or planned. Keep those three warnings monitor-only; do not install Apotheosis or attribute them to an installed mod without evidence. Feature-level testing remains separate. |
-| World-scoped compatibility datapacks | PASS at log level — all four packs were enabled among 12 in the fresh 7 Nov world; the five targeted Design n' Decor, Steam 'n' Rails, Create Kinetic, Sable Catwalk and Create Deco placard errors were absent in the fresh 7 Nov log and corrected 6 Nov retest |
-| Struts | PARTIAL — local patched server/client runtime and visible test pieces passed; official CurseForge JAR remains unpatched, so standard-install/release issue remains open |
-| Shulker Box Tooltip / Supplementaries | PARTIAL — client-only `preview.serverIntegration=false` workaround passed local join/log/visual checks; remote server-provided preview extras are disabled; upstream/release decision remains open |
-| PowerGrid 0.6.2 | PARTIAL — internal Windows native loading and client join passed with restored 0.6.1 DLL; electrical-network behavior reserved for beta testers; Linux untested |
-| Every Compat | PARTIAL — accepted pair 2.11.57 + Moonlight 3.8.2 passed Windows disposable startup/world/login/shutdown smoke test; duplicate Golden Cherry Leaves registration remains open; feature-level checks are assigned to beta testers; client and server folder deployment confirmed; updated-baseline startup/login verification pending |
-| Create Aeronautics Structures | **ON HOLD** — not eligible for the next beta. Previous disposable-world observations and the test-only 16-colour override result are retained as history; the official uniform table remains malformed and one crashed-airship chest had no loot-table assignment. Do not perform further tests or package this candidate until a new official CurseForge 1.21.1 NeoForge file is reviewed and both defects are verified fixed, or an explicitly approved documented exception exists. |
-| Integrated Villages | PARTIAL — server load and structure-ID lookups observed; generation completeness, vanilla-village behavior and performance remain unverified |
-| Create: The Factory Must Grow 1.3.3a | SMOKE PASS — matching client/server loaded the same candidate filename/version and completed login; TFMG feature actions remain NOT TESTED; Electric Diode/Fuse Block visual checks pending; candidate not accepted |
-| Entity Culling | REMOVED from current CurseForge client profile; confirmed absent in 6 Nov client-folder screenshot; not an active test candidate |
-| ImmediatelyFast / Flerovium / More Culling | Optional client candidates only; not confirmed as currently installed by latest client screenshot; do not treat as current installed mods |
-| Linux dedicated server | NOT TESTED — Linux system has not yet been set up |
-| Individual feature matrix | OPEN — pending rows remain pending until the specific behavior is tested and evidence is recorded |
-| Public beta / release | NOT APPROVED — no downloadable beta package exists |
+| Clean Windows dedicated-server baseline | PASS — 7 November fresh world, four IronWoven datapacks enabled, matching client login, operator/Creative command, and clean shutdown. This is a separate 101-JAR server baseline. |
+| Active test-profile archive parity | PASS — 10 November client and server archives each contain 102 JARs; 101 shared non-WITS JARs have identical SHA-256. WITS is a temporary utility excluded from the mod set. These profiles are not the versioned v.0.1 server or final release package. |
+| Sophisticated Backpacks 3.26.21.2249 / Sophisticated Core 1.5.32.2464 | Accepted into active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Backpacks feature actions Pending for beta testers; Core validated through Backpacks. |
+| TFMG Community Edition 1.3.3a | Accepted into active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Feature/visual actions Pending; Custom License distribution review remains separate. |
+| FastSuite 6.0.7 / Placebo 9.9.4 / FastFurnace 9.0.1 | Combined-profile smoke PASS. No isolated optimizer test required. FastFurnace exact CurseForge file/dependency/side preflight remains open. Feature/recipe/JEI/performance actions belong to beta testers. |
+| Every Compat 2.11.57 / Moonlight Lib 3.8.2 | Accepted baseline pair; fresh clean-server smoke PASS. Golden Cherry Leaves duplicate registration remains open; feature actions belong to beta testers. |
+| Railways 0.3.0-beta.2 / Supplementaries 4.0.2 | Present in both 10 November profiles with matching hashes; exact CurseForge/dependency review and update disposition remain pending. |
+| Create Aeronautics Curios Compat | Profile JAR filename reports 2.3 while embedded metadata reports 2.0; recheck exact file and loaded metadata. |
+| Waystones 21.1.46 / Sable 2.0.6 | Present in the 10 November profile despite the earlier deferred travel-system decision; reconcile intended disposition, AeroPortals overlap and Balm compatibility before release. |
+| Create Aeronautics Structures 1.1.0-Beta-3.1 | ON HOLD — not eligible for the beta package. |
+| PowerGrid / Struts / Shulker Box Tooltip + Supplementaries | PARTIAL — known Windows workarounds and limits remain documented; feature actions belong to beta testers; Linux is untested. |
+| Linux dedicated server | NOT TESTED / NOT VERIFIED. |
+| Individual feature matrix | OPEN — beta testers own feature/function validation for every installed feature/content mod on every side. |
+| Public beta / release | NOT APPROVED — no downloadable beta package exists. |
 
-**Current inventory source:** [MODS.md](MODS.md) holds separate server and client observations. The latest 6 November Windows client screenshot confirms Entity Culling is absent from the CurseForge `Create World/mods` folder. The 6 November server inventory screenshot is not a client inventory. A separate 10 November TFMG update test confirms the same candidate filename/version was loaded on the active client and dedicated server; this is not a full inventory/hash reconciliation. No production world or production world-generation configuration was changed.
+**Inventory boundary:** accepted updates observed in the 10 November active test profiles are not confirmed deployed to the separate clean v.0.1 server. Keep the recorded `v0.1.101.5` unchanged until that exact server is updated and the private updater is previewed. Do not infer release inclusion from profile presence.
 
 **How to submit test results:**
 
@@ -52,7 +48,7 @@ This section is the current status summary. Dated trial tables later in this fil
 
 Submit one form for each test action. The processor is designed to match the mod/action text and preserve existing results. Duplicate reports are detected and do not overwrite the original result. Retests of completed actions require maintainer review; existing results are never silently overwritten.
 
-A server startup or an item appearing in JEI is not, by itself, a function-test pass. Keep smoke-test evidence separate from feature tests.
+A server startup or an item appearing in JEI is not, by itself, a function-test pass. Keep smoke-test evidence separate from feature tests. A maintainer-recorded smoke PASS may qualify the exact authorised version for active mod-set membership; it does not mark any feature row Pass or grant beta/release distribution approval.
 
 ## Smoke test is not a function test
 
@@ -510,8 +506,8 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Trigger notes manually and by supported controls/redstone. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Test pitch, sound, range, persistence and multiplayer audio. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Create: The Factory Must Grow Community Edition 1.3.3a (update candidate; not accepted)
-**Current status:** Shared client/server routine smoke test passed on 10 November 2026. Feature tests remain Pending; the 1.3.3a candidate is not accepted into the baseline. The smoke result is not a feature pass.
+### Create: The Factory Must Grow Community Edition 1.3.3a (accepted mod-set version; feature tests pending)
+**Current status:** The authorised shared client/server smoke test passed on 10 November 2026 and exact client/server SHA-256 parity was confirmed in the active-profile archive audit. The 1.3.3a version is accepted into the active mod set. Feature tests and Electric Diode/Fuse Block visual checks remain Pending; Custom License distribution review is separate. The smoke result is not a feature pass.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
@@ -636,7 +632,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify independent personal loot, container persistence and multiplayer synchronization. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Sophisticated Backpacks 3.26.21.2249
-**Current status:** Shared client/server smoke PASS — 10 November 2026. The matching client and dedicated server loaded Backpacks 3.26.21.2249 with Sophisticated Core 1.5.32.2464, the client joined, and the server shut down cleanly. Feature validation is Pending — beta tester validation.
+**Current status:** Shared client/server smoke PASS — 10 November 2026; exact client/server SHA-256 parity confirmed in the active-profile archive audit. Backpacks 3.26.21.2249 with Core 1.5.32.2464 is accepted into the active mod set. Feature validation remains Pending — beta tester validation.
 
 **Supporting library:** Sophisticated Core 1.5.32.2464 is required by this Backpacks version and is tested through the Backpack actions below; it has no separate player-facing gameplay test. Keep Create Integration 0.2.3.194 and Sophisticated Air Tank 1.0.1-beta unchanged while testing these actions. Their separate tests remain in their own sections.
 

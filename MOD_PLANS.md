@@ -16,8 +16,8 @@ The previous numbered installation-batch sequence has been retired by the mainta
 | Area | Current disposition |
 |---|---|
 | FastSuite 6.0.7 / Placebo 9.9.4 / FastFurnace 9.0.1 | Combined-profile smoke passed on 11 November. FastFurnace exact CurseForge file/dependency/side preflight remains before package inclusion. Feature/recipe/JEI/performance actions belong to beta testers. |
-| Sophisticated Backpacks 3.26.21.2249 / Sophisticated Core 1.5.32.2464 | Shared smoke passed on 10 November. Feature actions belong to beta testers. |
-| Create: The Factory Must Grow Community Edition 1.3.3a | Shared smoke passed on 10 November; still a test candidate, not accepted. Visual asset warnings and Custom License review remain open. |
+| Sophisticated Backpacks / Core coordinated update | Backpacks 3.26.21.2249 (file 9524812) + Core 1.5.32.2464 (file 9524669) passed authorised shared smoke; client/server SHA-256 parity confirmed. Accepted into active mod set. Backpacks feature actions remain Pending for beta testers; Core is tested through Backpacks. |
+| Create: The Factory Must Grow Community Edition 1.3.3a | Accepted into the active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Feature/visual actions remain Pending; Custom License distribution review remains a separate release gate. |
 | Every Compat 2.11.57 / Moonlight Lib 3.8.2 | Accepted baseline pair; fresh server smoke passed. Golden Cherry Leaves duplicate registration remains an open issue; feature actions belong to beta testers. |
 | Create Aeronautics Structures 1.1.0-Beta-3.1 | **ON HOLD.** Do not test, update, or package until the official defects are resolved in a reviewed file or an explicit documented exception is approved. |
 | Create Aeronautics: Gadgets & Gizmos 2.0.0-Pre-Release-4 | **ON HOLD.** Keep bundled 1.2.10 unchanged; reconsider only after a stable 2.x file and exact dependency review, followed by explicit approval. |
@@ -33,6 +33,7 @@ The previous numbered installation-batch sequence has been retired by the mainta
 | Partial | Some evidence exists, but a stated issue or check remains open. |
 | On hold | Work is paused; do not install, update, or test until the hold is explicitly lifted. |
 | Excluded | The maintainer has decided the content is not wanted. |
+| Accepted mod-set version | The exact maintainer-authorised version passed its required smoke test; feature checks and release approval remain separate. |
 
 ## Optional candidate ideas — not approved additions
 
@@ -46,11 +47,17 @@ The 7 November candidate review identified possible additions, but none was sele
 
 These are ideas, not a missing-mod list. No candidate is a required addition based on the available evidence.
 
+## Active-profile observations requiring recheck
+
+- **Railways 0.3.0-beta.2** and **Supplementaries 4.0.2** appear on both 10 November profiles with matching hashes; older accepted records show 0.3.0-alpha.2 and 3.4.0 respectively. Recheck exact CurseForge files/dependencies and obtain an explicit update disposition.
+- **Create Aeronautics Curios Compat:** active JAR filename reports 2.3 while embedded metadata reports 2.0; reconcile exact file and loaded metadata.
+- **Waystones 21.1.46 / Sable 2.0.6:** both appear in the 10 November profile despite the earlier deferred travel-system decision. Confirm intended disposition and AeroPortals/Balm compatibility before release; do not add duplicates.
+
 ## Conditional candidates
 
 - **Connected Glass:** requires Fusion and SuperMartijn642's Core Lib; Config Lib is not a substitute.
 - **NetherPortalFix:** requires Balm and may overlap with existing portal/travel behavior.
-- **Waystones / Waystones: Sable:** no selection until existing AeroPortals behavior and exact Balm compatibility are reviewed.
+- **Waystones / Waystones: Sable:** already observed in the 10 November profile (21.1.46 / 2.0.6); the earlier deferred travel-system decision conflicts with this presence. Reconcile intended disposition, AeroPortals overlap, and exact Balm compatibility before release. Do not treat them as missing mods.
 - **Sound Physics Remastered:** the surfaced target file was beta; stability and client-audio decision required.
 - **Accessories:** would be a migration from the current Curios equipment system, not an additive slot mod.
 

@@ -14,11 +14,23 @@ The latest working-profile reconciliation is newer than the older folder snapsho
 
 The generated `v0.1.101.5` version is based on the separate clean Windows server baseline recorded on 7 November: 101 top-level server JARs and five active accepted bug fixes. Do not infer a release version from client-profile counts or older test-folder snapshots. See [CHANGELOG](CHANGELOG.md) for version rules.
 
+## Active mod-set updates — verified 10 November 2026
+
+The following exact versions passed their authorised, scope-appropriate shared smoke tests and are accepted into the active mod set. This does **not** mark their feature tests complete or grant downloadable-beta/release approval.
+
+| Mod | Previous version / CurseForge file | Accepted version / CurseForge file | Smoke evidence | Feature / release state |
+|---|---|---|---|---|
+| Sophisticated Backpacks | 3.26.20.2244 / [9431839](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks/files/9431839) | 3.26.21.2249 / [9524812](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks/files/9524812) | Shared startup/login/clean-shutdown PASS, 10 November; client/server SHA-256 matched | Feature actions Pending — beta testers |
+| Sophisticated Core (support dependency) | 1.5.28.2458 / [9431812](https://www.curseforge.com/minecraft/mc-mods/sophisticated-core/files/9431812) | 1.5.32.2464 / [9524669](https://www.curseforge.com/minecraft/mc-mods/sophisticated-core/files/9524669) | Same coordinated Backpacks smoke; exact client/server SHA-256 match | Tested through Backpacks; no standalone gameplay row |
+| Create: The Factory Must Grow Community Edition | 1.3.3 / [9413167](https://www.curseforge.com/minecraft/mc-mods/tfmg-community-edition/files/9413167) | 1.3.3a / [9482161](https://www.curseforge.com/minecraft/mc-mods/tfmg-community-edition/files/9482161) | Shared startup/login/clean-shutdown PASS, 10 November; exact client/server SHA-256 match | Feature/visual actions Pending; Custom License distribution review remains a separate release gate |
+
+The 10 November active-profile archive audit found 102 JARs in each test-profile archive: 101 shared non-WITS JARs have identical hashes. WITS is a temporary testing utility and is excluded from the mod set. Railways `0.3.0-beta.2` and Supplementaries `4.0.2` also appear in both archives with matching hashes, but remain observations pending their own exact CurseForge/dependency review and maintainer update disposition. These profiles are not the selected clean v.0.1 release server.
+
 ## Recent smoke-test evidence
 
 - **FastSuite 6.0.7 / Placebo 9.9.4 / FastFurnace 9.0.1 — 11 November:** the matching files were loaded on both sides in a combined-profile session. Server startup, world load, matching-client login, and clean shutdown passed. This is a profile-level smoke result, not feature or performance validation. FastFurnace's exact CurseForge file/dependency/side preflight remains before package inclusion.
-- **Sophisticated Backpacks 3.26.21.2249 / Sophisticated Core 1.5.32.2464 — 10 November:** shared startup/login/clean-shutdown smoke passed. Backpack feature actions remain for beta testers.
-- **Create: The Factory Must Grow Community Edition 1.3.3a — 10 November:** shared startup/login/clean-shutdown smoke passed. It remains a test candidate, not an accepted baseline; visual asset warnings and licence review remain open.
+- **Sophisticated Backpacks 3.26.21.2249 (file 9524812) / Sophisticated Core 1.5.32.2464 (file 9524669) — 10 November:** accepted into the active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Backpack feature actions remain Pending for beta testers; Core is validated through Backpacks.
+- **Create: The Factory Must Grow Community Edition 1.3.3a (file 9482161) — 10 November:** accepted into the active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Feature/visual actions remain Pending; Custom License distribution review remains a separate release gate.
 - **Every Compat 2.11.57 / Moonlight Lib 3.8.2:** accepted baseline pair; fresh clean-server smoke passed. The Golden Cherry Leaves duplicate registration remains an open compatibility finding.
 
 A smoke-test pass does not prove feature behavior, compatibility with every installed mod, performance improvement, or release approval.

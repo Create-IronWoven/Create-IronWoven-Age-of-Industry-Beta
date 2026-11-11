@@ -18,7 +18,7 @@ Player-facing summary of the current Ironwoven development pack. This is not a r
 
 The fresh Windows dedicated-server folder-properties screenshot from 7 November 2026 confirms **101 files** in the server `mods/` folder. The corresponding NeoForge Mod List contains 118 entries (116 non-core mod IDs plus Minecraft and NeoForge); that is a different runtime measurement and is not used by the version.
 
-A separate CurseForge client-profile screenshot showed 99 entries. That client-profile count is not used for the server-pack version. Older client/test-server folder screenshots are historical inventory records only.
+The 10 November active test-profile archive audit confirms 102 JARs in the client archive and 102 in the dedicated-server test archive. 101 shared non-WITS JARs have identical SHA-256 hashes; WITS is a temporary utility excluded from the mod set and pack-version calculation. This is separate from the selected clean v.0.1 server used for the displayed version; deployment of accepted test-profile updates to that server has not been confirmed. The 99-entry CurseForge screenshot and older client/server folder screenshots remain historical inventory records only.
 
 ## Five accepted compatibility bug fixes
 
@@ -40,6 +40,14 @@ These five defects affect 455 individual resources in total, but contribute **5*
 - Required Moonlight Lib (Selene) dependency updated from 3.8.1 to 3.8.2 (CurseForge file 9458248).
 
 These are version updates to existing mod files. Their byte changes are detected by the content fingerprint when those files are present in the selected server `mods/` folder.
+
+## Accepted mod updates — 10 November 2026
+
+- Sophisticated Backpacks updated from 3.26.20.2244 (CurseForge file 9431839) to 3.26.21.2249 (file 9524812); authorised shared smoke PASS and exact client/server SHA-256 parity confirmed.
+- Sophisticated Core dependency updated from 1.5.28.2458 (file 9431812) to 1.5.32.2464 (file 9524669); validated in the same coordinated Backpacks smoke test and hash-matched on both sides.
+- Create: The Factory Must Grow Community Edition updated from 1.3.3 (file 9413167) to 1.3.3a (file 9482161); authorised shared smoke PASS and exact client/server SHA-256 parity confirmed.
+
+Feature/function checks remain pending and are not marked Pass from smoke testing. TFMG's Custom License distribution review remains a separate release gate. The versioned clean v.0.1 server has not been re-scanned after deployment of these test-profile updates; retain its recorded automatic version until the selected server itself is updated and the private updater is previewed.
 
 ## Not counted as accepted bug fixes
 

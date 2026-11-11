@@ -4,7 +4,20 @@
 <!-- IRONWOVEN_AUTO_VERSION -->
 **Current Ironwoven pack version:** `v0.1.101.5` — release `0`, content revision `1`, `101` top-level server mod JARs, and `5` active accepted bug fixes.
 
-The newer 11 November working-profile reconciliation includes test-only and held files. It is not a final package inventory. The final mod list will be refreshed after the exact CurseForge client export and dedicated-server release package are reconciled.
+## Active mod-set updates — verified 10 November 2026
+
+The following exact versions passed their authorised, scope-appropriate shared smoke tests and are accepted into the active mod set. This does **not** mark their feature tests complete or grant downloadable-beta/release approval.
+
+| Mod | Previous version / CurseForge file | Accepted version / CurseForge file | Smoke evidence | Feature / release state |
+|---|---|---|---|---|
+| Sophisticated Backpacks | 3.26.20.2244 — superseded historical snapshot; current accepted active-profile version is 3.26.21.2249 (see accepted update above) |
+| Sophisticated Core (support dependency) | 1.5.28.2458 / [9431812](https://www.curseforge.com/minecraft/mc-mods/sophisticated-core/files/9431812) | 1.5.32.2464 / [9524669](https://www.curseforge.com/minecraft/mc-mods/sophisticated-core/files/9524669) | Same coordinated Backpacks smoke; exact client/server SHA-256 match | Tested through Backpacks; no standalone gameplay row |
+| Create: The Factory Must Grow Community Edition | 1.3.3 / [9413167](https://www.curseforge.com/minecraft/mc-mods/tfmg-community-edition/files/9413167) | 1.3.3a / [9482161](https://www.curseforge.com/minecraft/mc-mods/tfmg-community-edition/files/9482161) | Shared startup/login/clean-shutdown PASS, 10 November; exact client/server SHA-256 match | Feature/visual actions Pending; Custom License distribution review remains a separate release gate |
+
+The 10 November active-profile archive audit found 102 JARs in each test-profile archive: 101 shared non-WITS JARs have identical hashes. WITS is a temporary testing utility and is excluded from the mod set. Railways `0.3.0-beta.2` and Supplementaries `4.0.2` also appear in both archives with matching hashes, but remain observations pending their own exact CurseForge/dependency review and maintainer update disposition. These profiles are not the selected clean v.0.1 release server.
+
+
+The 10 November active-profile archive audit confirms 102 JARs in each test profile, with 101 shared non-WITS JARs identical by SHA-256; the 11 November reconciliation is a separate later profile check. Both contain test-only and held files and are not a final package inventory. The final mod list will be refreshed after the exact CurseForge client export and dedicated-server release package are reconciled.
 
 ## Recent shared-profile smoke observations
 
@@ -25,7 +38,7 @@ The tables below preserve earlier folder observations and should be read as date
 |---|---|
 | Create | 6.0.10 |
 | Create Aeronautics | 1.3.2 |
-| Create Aeronautics: Curios Compat | 2.0 |
+| Create Aeronautics: Curios Compat | 2.0 — active-profile JAR filename reports 2.3 while embedded metadata reports 2.0; **Recheck required** |
 | Create: Curios Backtank | 1.0.2 — test installation; Backpack + Backtank use in the Curios Back slots reported working; broader release validation remains open |
 | Create Aeronautics: Copycat Wing | 1.0.4 |
 | Create Aeronautics: Transmission & Linkage | 0.2.9 |
@@ -55,9 +68,9 @@ The tables below preserve earlier folder observations and should be read as date
 | Create: Power Grid | 0.6.2 |
 | Create: Rustic Structures | 1.0.1 |
 | Create: Sound of Steam / Pipe Organs | 0.9.2.1 |
-| Create: Steam 'n' Rails | 0.3.0-alpha.2 |
+| Create: Steam 'n' Rails | 0.3.0-alpha.2 — historical snapshot; active profiles show 0.3.0-beta.2 on both sides; **Recheck required** before updating accepted baseline |
 | Create: Structures Arise | 176.49.50 |
-| Create: The Factory Must Grow | 1.3.3a-community — 10 Nov shared update-test candidate; smoke passed, feature/visual checks pending; not accepted |
+| Create: The Factory Must Grow | 1.3.3a-community — accepted into the active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity; feature/visual checks pending; Custom License release review pending |
 | Create: Unified Fuels | 1.0.4 |
 | Create: Vibrant Vaults | 0.3.2 |
 | Botany Pots | 21.1.44 |
@@ -78,7 +91,7 @@ The tables below preserve earlier folder observations and should be read as date
 | Design n' Decor | 2.2b |
 | Farmer's Delight | 1.3.4 |
 | Mama's Herbs and Harvest | 1.21.1-24 |
-| Supplementaries | 3.4.0 — Integrated Villages dependency; validated present in corrected server test profile |
+| Supplementaries | 3.4.0 — historical dependency snapshot; active profiles show 4.0.2 on both sides; **Recheck required** for exact file/dependency compatibility and baseline disposition |
 | Sophisticated Backpacks | 3.26.21.2249 — shared client/server smoke PASS on 10 Nov; feature actions Pending for beta testers; not final-release-approved |
 | Sophisticated Backpacks Create Integration | 0.2.3.194 — unchanged during the 10 Nov Backpacks/Core update test |
 | Sophisticated Air Tank | 1.0.1-beta+1.21.1 — unchanged during the 10 Nov Backpacks/Core update test; separate asset warnings remain |
@@ -198,7 +211,7 @@ The following versions were detected in a later disposable-server attempt. This 
 
 | Mod | Trial version |
 |---|---:|
-| Sophisticated Core | 1.5.28.2458 |
+| Sophisticated Core | 1.5.28.2458 — superseded historical snapshot; current accepted support dependency is 1.5.32.2464 (see accepted update above) |
 | Sophisticated Backpacks | 3.26.20.2244 |
 | Entity Culling | 1.11.3 — client-only |
 | Create Crafts & Additions | 1.7.2 |

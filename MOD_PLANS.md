@@ -15,7 +15,7 @@ The previous numbered installation-batch sequence has been retired by the mainta
 
 | Area | Current disposition |
 |---|---|
-| FastSuite 6.0.7 / Placebo 9.9.4 / FastFurnace 9.0.1 | FastSuite and Placebo are accepted into the active mod set after exact-file/dependency preflight, matching client/server hashes, and authorised 11 November combined-profile smoke PASS. FastFurnace 9.0.1 is already present (file 6751551); exact CurseForge file/dependency/side preflight and combined-profile smoke are also PASS. Do not add a duplicate or repeat the test; record its explicit mod-set/package disposition at release freeze. Feature/recipe/JEI/performance actions belong to beta testers. |
+| FastSuite 6.0.7 / Placebo 9.9.4 / FastFurnace 9.0.1 | FastSuite and Placebo are accepted into the active mod set after exact-file/dependency preflight, matching client/server hashes, and authorised 11 November combined-profile smoke PASS. FastFurnace 9.0.1 is already present (file 6751551); exact CurseForge file/dependency/side preflight and combined-profile smoke are also PASS. Do not add a duplicate or repeat the test; record its explicit mod-set/package disposition at release freeze. Recipe/function and optional performance actions belong to beta testers. |
 | Sophisticated Backpacks / Core coordinated update | Backpacks 3.26.21.2249 (file 9524812) + Core 1.5.32.2464 (file 9524669) passed authorised shared smoke; client/server SHA-256 parity confirmed. Accepted into active mod set. Backpacks feature actions remain Pending for beta testers; Core is tested through Backpacks. |
 | Create: The Factory Must Grow Community Edition 1.3.3a | Accepted into the active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Feature/visual actions remain Pending; Custom License distribution review remains a separate release gate. |
 | Every Compat 2.11.57 / Moonlight Lib 3.8.2 | Accepted baseline pair; fresh server smoke passed. Golden Cherry Leaves duplicate registration remains an open issue; feature actions belong to beta testers. |
@@ -57,7 +57,7 @@ These are ideas, not a missing-mod list. No candidate is a required addition bas
 
 - **Connected Glass:** requires Fusion and SuperMartijn642's Core Lib; Config Lib is not a substitute.
 - **NetherPortalFix:** requires Balm and may overlap with existing portal/travel behavior.
-- **Waystones / Waystones: Sable:** already observed in the 10 November profile (21.1.46 / 2.0.6); the earlier deferred travel-system decision conflicts with this presence. Reconcile intended disposition, AeroPortals overlap, and exact Balm compatibility before release. Do not treat them as missing mods.
+- **Waystones: Sable 1.0.7:** optional MIT integration add-on, CurseForge project 1524471, Minecraft 1.21.1 NeoForge Client & Server. Current official project listing shows 1.0.7 Release; requirements are Waystones 21.1.36+, Sable 2.0.3+, and Create 6.0.10+. This add-on is not in the 10 November profile. Keep deferred until core Waystones is explicitly retained and AeroPortals/travel overlap is resolved; reconfirm the exact CurseForge file ID and Relations before any future preflight. Do not add a duplicate Sable 2.0.6 base library.
 - **Sound Physics Remastered:** the surfaced target file was beta; stability and client-audio decision required.
 - **Accessories:** would be a migration from the current Curios equipment system, not an additive slot mod.
 

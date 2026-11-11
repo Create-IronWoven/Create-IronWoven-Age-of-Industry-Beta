@@ -674,7 +674,7 @@ Dependency evidence: the first startup attempt lacked Supplementaries and Integr
 | Verify result, distance/direction, no-result message and repeat search. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Explorer's Compass 3.4.0
-**Current status:** Smoke-only — Batch B startup/login passed; actual search behavior not tested.
+**Current status:** Smoke-only — earlier startup/login smoke passed; actual search behavior remains Pending for beta testers.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|

@@ -46,6 +46,7 @@ These are version updates to existing mod files. Their byte changes are detected
 - Sophisticated Backpacks updated from 3.26.20.2244 (CurseForge file 9431839) to 3.26.21.2249 (file 9524812); authorised shared smoke PASS and exact client/server SHA-256 parity confirmed.
 - Sophisticated Core dependency updated from 1.5.28.2458 (file 9431812) to 1.5.32.2464 (file 9524669); validated in the same coordinated Backpacks smoke test and hash-matched on both sides.
 - Create: The Factory Must Grow Community Edition updated from 1.3.3 (file 9413167) to 1.3.3a (file 9482161); authorised shared smoke PASS and exact client/server SHA-256 parity confirmed.
+- FastSuite 6.0.7 (CurseForge file 7527945) and Placebo 9.9.4 (file 9153039) accepted into the active mod set after exact-file/dependency preflight, matching client/server hashes, and authorised combined-profile smoke PASS on 11 November. No isolated optimizer run is required; feature/recipe/JEI/performance checks remain Pending for beta testers. FastFurnace 9.0.1 loaded in the same profile but its exact file/dependency/side preflight remains open and it is not yet accepted.
 
 Feature/function checks remain pending and are not marked Pass from smoke testing. TFMG's Custom License distribution review remains a separate release gate. The versioned clean v.0.1 server has not been re-scanned after deployment of these test-profile updates; retain its recorded automatic version until the selected server itself is updated and the private updater is previewed.
 

@@ -24,6 +24,16 @@ The previous numbered installation-batch sequence has been retired by the mainta
 | Lithium 0.15.4 | **ON HOLD / deferred.** Do not install or test the current file. |
 | Linux dedicated server | Not tested; do not claim support or verification. |
 
+## Status meanings
+
+| Status | Meaning |
+|---|---|
+| In testing | Present in a working profile; feature checks may remain open. |
+| Candidate | Considered only; not selected, installed, or approved. |
+| Partial | Some evidence exists, but a stated issue or check remains open. |
+| On hold | Work is paused; do not install, update, or test until the hold is explicitly lifted. |
+| Excluded | The maintainer has decided the content is not wanted. |
+
 ## Optional candidate ideas — not approved additions
 
 The 7 November candidate review identified possible additions, but none was selected, installed, or approved by that report. Recheck exact current CurseForge files, dependencies, sides, licence/terms, and pack fit before any future decision.
@@ -49,10 +59,13 @@ These are ideas, not a missing-mod list. No candidate is a required addition bas
 - End expansion and Terralith investigation remain paused.
 - Settlement, town, and MineColonies ecosystem ideas remain paused. Do not resume this research without explicit maintainer instruction.
 
-## Existing replacement and exclusions
+## Existing replacement
 
 - **Create: Blocks & Bogies 1.0.8** is already recorded in the pack and its bogie UI action was reported passed in multiplayer. Do not add deprecated Create: Extended Bogeys (Borked); it has no 1.21.1 NeoForge file and points to Blocks & Bogies.
-- Do not reintroduce Carry On, Easy Villagers, Immersive Paintings, Bigger Better End Cities, Create: Sophisticated Exoskeleton 1.0, or Distant Horizons 3.3.3.
+
+## Explicit exclusions
+
+Do not reintroduce Carry On, Easy Villagers, Immersive Paintings, Bigger Better End Cities, Create: Sophisticated Exoskeleton 1.0, or Distant Horizons 3.3.3.
 
 ## Important
 

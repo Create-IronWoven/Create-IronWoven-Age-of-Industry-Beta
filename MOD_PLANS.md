@@ -47,10 +47,11 @@ The 7 November candidate review identified possible additions, but none was sele
 
 These are ideas, not a missing-mod list. No candidate is a required addition based on the available evidence. Waystones: Sable 1.0.7 is a distinct optional integration candidate, not a required addition.
 
-## Active-profile observations requiring recheck
+## Active-profile observations — exact file review (11 November 2026)
 
-- **Railways 0.3.0-beta.2** and **Supplementaries 4.0.2** appear on both 10 November profiles with matching hashes; older accepted records show 0.3.0-alpha.2 and 3.4.0 respectively. Recheck exact CurseForge files/dependencies and obtain an explicit update disposition.
-- **Create Aeronautics Curios Compat:** active JAR filename reports 2.3 while embedded metadata reports 2.0; reconcile exact file and loaded metadata.
+- **Railways 0.3.0-beta.2:** exact CurseForge file 8522154 is a 1.21.1 NeoForge Client & Server Beta; the recorded Create/NeoForge versions meet its published source minimums. Upstream Blocks & Bogies menu compatibility restoration is merged, and the later report closed after both mods were updated. Keep the Beta channel and older accepted alpha.2 baseline visible: profile presence does not grant mod-set/package acceptance or create a feature-test PASS.
+- **Supplementaries 4.0.2:** exact CurseForge file 9211734 is a 1.21.1 NeoForge Client & Server Release and requires Moonlight. The profile has Moonlight 3.8.2; newer Release 3.8.3 / file 9519534 exists, but the exact 4.0.2 minimum is not established from matching source metadata. Keep dependency-version closure and Custom License review open. The Shulker Box Tooltip provider issue and client workaround limitations remain separate.
+- **Create Aeronautics Curios Compat:** exact Release file 9076258 is version 2.3; upstream Gradle metadata is 2.3 while the NeoForge descriptor hard-codes 2.0. The mismatch is explained; no JAR change is indicated.
 - **Waystones 21.1.46 / Sable 2.0.6:** both appear in the 10 November profile despite the earlier deferred travel-system decision. Confirm intended disposition and AeroPortals/Balm compatibility before release; do not add duplicates.
 
 ## Conditional candidates

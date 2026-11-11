@@ -2,7 +2,7 @@
 
 **Inventory status:** The detailed tables below are a historical test-folder snapshot, not the current exact client/server inventory or an approved release manifest. The snapshot is preserved here because it remains useful for historical comparison; do not use it to build or update a release package.
 <!-- IRONWOVEN_AUTO_VERSION -->
-**Current IronWoven pack version:** `v0.1.101.5` — release `0`, content revision `1`, `101` top-level server mod JARs, and `5` active accepted bug fixes.
+**Current Ironwoven pack version:** `v0.1.101.5` — release `0`, content revision `1`, `101` top-level server mod JARs, and `5` active accepted bug fixes.
 
 The newer 11 November working-profile reconciliation includes test-only and held files. It is not a final package inventory. The final mod list will be refreshed after the exact CurseForge client export and dedicated-server release package are reconciled.
 

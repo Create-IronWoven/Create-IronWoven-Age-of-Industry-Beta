@@ -442,3 +442,146 @@ The 6 November 2026 CurseForge `Create World/mods` screenshot confirms Entity Cu
 | Record the selected profiler engine and any platform-specific fallback. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 
+
+
+## Removed rows after exact profile inventory reconciliation — 11 November 2026
+
+The following former test headings are preserved as historical candidate/API rows. They were not found as separate top-level JARs in the complete 10 November active-profile inventory. They are not current installed-mod feature assignments and must not be used to build a package or request beta testing unless a new exact profile export and maintainer-authorised selection establishes their presence.
+
+### Create: Numismatics Plus 1.0.1
+**Current status:** Hold — JAR is archived in `MinecraftServer-Test/mods-disabled`; not installed in the current server test profile. Reintroduce only for a separate pairing test with Numismatics 1.0.20.
+
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Buy from a Create shop with coins and a Numismatics card. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Verify deduction, stock, recipient account and missing-Depositor/card behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+
+### Atmosphere 1.0.18
+**Current status:** Pending
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Fresh disposable world: verify its advertised environment/atmosphere changes. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Check day/night, weather, visuals/audio and client/server consistency. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+
+### Just Enough Items 19.64.0.455
+**Current status:** Pending
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Search representative items from each content group. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Inspect crafting/processing recipes, catalysts and fluid inputs. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+
+### Just Enough Resources 1.6.0.57
+**Current status:** Pending
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Check known mob-drop, loot-table, villager-trade and world-generation entries against in-game sources. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+
+### Mouse Tweaks 2.26.1
+**Current status:** Pending
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Test drag distribution, wheel scrolling and quick-move in player inventory, chests, backpacks and modded GUIs. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+
+### Apollib 1.2.0
+**Current status:** Pending
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Verify dependent mod registries/content and related GUI/network interaction. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Record owner mod. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+
+### CodecUI 1.4.7
+**Current status:** Pending
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Open dependent settings/config interface. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Verify widgets, values and save/cancel behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+
+### Conditional Mixin 0.6.4
+**Current status:** Pending
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Verify dependent mixins activate under intended mod/config conditions. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Check mixin apply failures. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+
+### Forgified Fabric API Base 0.4.42
+**Current status:** Pending
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Verify bundled/using mods load and required API calls work. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Dependency-only. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+
+### Forgified Fabric BlockView API 1.0.10
+**Current status:** Pending
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Verify renderer/block-view integration used by Flerovium loads and block rendering stays correct. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+
+### Forgified Fabric Renderer API 3.4.1
+**Current status:** Pending
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Verify renderer-dependent mod integration and item/block rendering. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Dependency-only. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+
+### Forgified Fabric Rendering Data Attachment 0.3.48
+**Current status:** Pending
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Verify renderer data attachments survive chunk/entity render updates without visual corruption. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+
+### TRansition 1.0.21
+**Current status:** Pending
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+
+
+### TRender 1.0.15
+**Current status:** Pending
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Verify dependent render integration and UI/model path. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| No missing renderer/client crash. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+
+### Create Structures Arise 176.49.50
+**Current status:** Pending
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Fresh disposable Overworld: find multiple Create-themed structures. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Inspect integrity, loot, biome placement and chunk-edge generation. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+
+### Superseded Railways feature result — previous alpha.2 baseline
+
+| Assemble/run a train. | Pass | Not recorded | Ghosty | 03-11-2026 | I made the train and drove it back and forth a couple of times. (submitted in issue #5) |
+
+Submitted 3 November 2026 before the active-profile observation of Railways 0.3.0-beta.2. It is preserved as a historical alpha.2 result only and is not a beta.2 feature pass.
+
+The 3 November Railways train-use Pass predates the active-profile beta.2 version and does not validate beta.2. It remains preserved above for historical attribution only.

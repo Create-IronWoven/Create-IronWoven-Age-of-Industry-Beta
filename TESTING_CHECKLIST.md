@@ -25,11 +25,11 @@ This checklist is a feature-test matrix, not a complete file manifest. For curre
 | Active test-profile archive parity | PASS — 10 November client and server archives each contain 102 JARs; 101 shared non-WITS JARs have identical SHA-256. WITS is a temporary utility excluded from the mod set. These profiles are not the versioned v.0.1 server or final release package. |
 | Sophisticated Backpacks 3.26.21.2249 / Sophisticated Core 1.5.32.2464 | Accepted into active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Backpacks feature actions Pending for beta testers; Core validated through Backpacks. |
 | TFMG Community Edition 1.3.3a | Accepted into active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Feature/visual actions Pending; Custom License distribution review remains separate. |
-| FastSuite 6.0.7 / Placebo 9.9.4 / FastFurnace 9.0.1 | FastSuite/Placebo accepted into active mod set after exact-file/dependency preflight, matching client/server hashes, and combined-profile smoke PASS. FastFurnace file 6751551 passed exact CurseForge file/dependency/side preflight and loaded in the same smoke PASS; no duplicate or repeat test needed. Its explicit mod-set/package disposition remains for release freeze. Feature/recipe/JEI/performance actions belong to beta testers. |
+| FastSuite 6.0.7 / Placebo 9.9.4 / FastFurnace 9.0.1 | FastSuite/Placebo accepted into active mod set after exact-file/dependency preflight, matching client/server hashes, and combined-profile smoke PASS. FastFurnace file 6751551 passed exact CurseForge file/dependency/side preflight and loaded in the same smoke PASS; no duplicate or repeat test needed. Its explicit mod-set/package disposition remains for release freeze. Recipe/function and optional performance validation belong to beta testers. |
 | Every Compat 2.11.57 / Moonlight Lib 3.8.2 | Accepted baseline pair; fresh clean-server smoke PASS. Golden Cherry Leaves duplicate registration remains open; feature actions belong to beta testers. |
-| Railways 0.3.0-beta.2 / Supplementaries 4.0.2 | Present in both 10 November profiles with matching hashes; exact CurseForge/dependency review and update disposition remain pending. |
+| Railways 0.3.0-beta.2 / Supplementaries 4.0.2 | Present in both 10 November profiles with matching hashes; older accepted records list Railways alpha.2 and Supplementaries 3.4.0. Exact CurseForge/dependency review and update disposition remain pending. Do not carry old version-specific feature results to these observed versions. |
 | Create Aeronautics Curios Compat | Profile JAR filename reports 2.3 while embedded metadata reports 2.0; recheck exact file and loaded metadata. |
-| Waystones 21.1.46 / Sable 2.0.6 | Present in the 10 November profile despite the earlier deferred travel-system decision; reconcile intended disposition, AeroPortals overlap and Balm compatibility before release. |
+| Waystones 21.1.46 / base Sable 2.0.6 | Both appear in the 10 November profile but are separate projects. Core Waystones inclusion remains deferred; base Sable is the SubLevel physics library already used by Create/Aeronautics. The distinct Waystones: Sable 1.0.7 addon is absent and remains optional/deferred; see MOD_PLANS.md. |
 | Create Aeronautics Structures 1.1.0-Beta-3.1 | ON HOLD — not eligible for the beta package. |
 | PowerGrid / Struts / Shulker Box Tooltip + Supplementaries | PARTIAL — known Windows workarounds and limits remain documented; feature actions belong to beta testers; Linux is untested. |
 | Linux dedicated server | NOT TESTED / NOT VERIFIED. |
@@ -48,7 +48,7 @@ This checklist is a feature-test matrix, not a complete file manifest. For curre
 
 Submit one form for each test action. The processor is designed to match the mod/action text and preserve existing results. Duplicate reports are detected and do not overwrite the original result. Retests of completed actions require maintainer review; existing results are never silently overwritten.
 
-A server startup or an item appearing in JEI is not, by itself, a function-test pass. Keep smoke-test evidence separate from feature tests. A maintainer-recorded smoke PASS may qualify the exact authorised version for active mod-set membership; it does not mark any feature row Pass or grant beta/release distribution approval.
+A server startup or an item appearing in creative inventory or an installed recipe viewer is not, by itself, a function-test pass. Keep smoke-test evidence separate from feature tests. A maintainer-recorded smoke PASS may qualify the exact authorised version for active mod-set membership; it does not mark any feature row Pass or grant beta/release distribution approval.
 
 ## Smoke test is not a function test
 
@@ -110,7 +110,7 @@ The log contains 6 ERROR-level records and 172 WARN-level records. Remaining err
 
 For each feature mod, mark its function complete only after the listed primary behavior works on the intended side(s). Where a mod adds several independent systems, test each system, not just one decorative block. For persistent machines, vehicles, storage, claims, portals and player data, include save/restart or relog. For multiplayer-dependent features, use a second player. Record exact version, test world/profile, relevant log and result.
 
-Use JEI/creative inventory to locate representative items, but item visibility alone is not a functional pass. You do not need to test every recipe or decorative variant; test the primary function and each distinct subsystem.
+Use creative inventory or a recipe viewer only when one is present in the tested profile; the 10 November active-profile inventory does not list JEI or JER. Item visibility alone is not a functional pass. Test representative recipes through the actual crafting/processing function; you do not need to test every recipe or decorative variant.
 
 **World-generation safeguard:** all biome/structure checks use a fresh disposable Overworld. Keep production world, BYG 2.6.3, Regions Unexplored 0.6.3 and active world-generation JSON unchanged. End research remains paused.
 
@@ -205,11 +205,11 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 | Test Create-powered loading/aiming, firing, projectile effect/recoil, reload and autocannon if used. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Steam 'n' Rails 0.3.0-beta.2 (active-profile observation; update disposition pending)
-**Current status:** Pending
+**Current status:** The 10 November profile contains beta.2 on both sides with matching JAR hashes; the older accepted baseline is alpha.2. Exact CurseForge file/dependency review and maintainer update disposition remain open. The 3 November alpha.2 feature result is archived and does not validate beta.2.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
-| Assemble/run a train. | Pass | Not recorded | Ghosty | 03-11-2026 | I made the train and drove it back and forth a couple of times. (submitted in issue #5) |
+| Assemble/run a train. | Not tested for active-profile version 0.3.0-beta.2; prior alpha.2 result is archived | Not recorded | Not recorded | DD-MM-YYYY | Do not carry the 3 November alpha.2 Pass forward to beta.2 |
 | Test tracks, bogeys, schedules/stations, signals and installed railway interactions. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Verify save/restart. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
@@ -284,14 +284,14 @@ Use JEI/creative inventory to locate representative items, but item visibility a
 | Test the Aeronautics handles from the player point of view. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Operate the handle controls and any player-usable tool (such as the chainsaw) included by the installed build. Verify movement/control and client/server interaction. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Sable 2.0.6
-**Current status:** Pending
+### Sable 2.0.6 — base interactive SubLevel physics library
+**Current status:** Present in the active profile as the base SubLevel library used by Create/Aeronautics-related content. This is not the separate Waystones: Sable compatibility add-on. Beta testers own the feature checks below; no mod should be added or duplicated.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
-| Test Aeronautics physics: assembly, motion, forces, collision, sublevels and save/restart. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Inspect Copycats Catwalk physics-tag errors. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
+| Test an installed Aeronautics/Sable SubLevel assembly: motion, forces, collision, entity movement and sublevel transitions. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Record the parent feature/mod and Sable version |
+| Save/restart or relog and verify SubLevel state and player/entity position persist correctly. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence |
+| Verify the corrected Sable/Copycats+ Catwalk physics selector behavior during normal use. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | The server log-level selector fix is not a feature pass |
 ### Strut Your Stuff 1.3.1
 **Current status:** Partial — local patched server/client test passed for the dedicated-server mixin issue and the shown Struts components render, but dependent-mod feature tests remain pending. The official CurseForge file and modpack manifest are unchanged, so release-level resolution remains open.
 
@@ -420,15 +420,6 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Obtain coins. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Use Vendor for buy/sell, Bank Terminal for deposit/withdraw, and Depositor price/redstone pulse for coin/card payments. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Create: Numismatics Plus 1.0.1
-**Current status:** Hold — JAR is archived in `MinecraftServer-Test/mods-disabled`; not installed in the current server test profile. Reintroduce only for a separate pairing test with Numismatics 1.0.20.
-
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Buy from a Create shop with coins and a Numismatics card. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Verify deduction, stock, recipient account and missing-Depositor/card behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
 ### Create: Pattern Schematics 2.0.10
 **Current status:** Pending
 
@@ -468,6 +459,22 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify glass-pipe clone item-stack behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Verify intended connection behavior between cast-iron and aluminium blocks. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Test Unified Fuels integration. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+### FastSuite 6.0.7 — accepted mod-set version; feature actions pending
+**Current status:** Exact CurseForge file 7527945, Placebo dependency and matching client/server hashes were verified. Authorised combined-profile smoke with Placebo 9.9.4 and FastFurnace 9.0.1 passed on 11 November. No isolated optimizer test is required. Recipe-behavior and optional performance actions remain for beta testers.
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Exercise representative vanilla and installed Create crafting/processing recipes through their actual crafting or machine process; confirm expected output and no missing, duplicate or incorrect-result behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Record recipe, machine, exact FastSuite version and evidence |
+| Check a representative shapeless/custom recipe and verify correct multiplayer/client synchronization and behavior after restart. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Do not assume JEI/JER is installed; use an installed viewer only if present |
+| Optional beta performance comparison under a repeatable workload; do not treat smoke evidence as proof of a performance gain. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Profiling belongs to beta testers; record exact workload and evidence |
+
+### FastFurnace 9.0.1 — profile present; final mod-set/package disposition pending
+**Current status:** Exact CurseForge file 6751551 is a 1.21.1 NeoForge Release, MIT, Client & Server; required Placebo is present at 9.9.4. Exact file/dependency/side preflight PASS and combined-profile smoke PASS on 11 November. Do not add a duplicate or repeat the smoke test. Feature actions apply only if this version is retained at release freeze.
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| With FastFurnace 9.0.1, smelt representative vanilla items in a furnace and verify fuel use, processing time and output. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Record item, fuel, furnace and exact mod versions |
+| Verify furnace automation/input-output and expected behavior after save/restart in single-player or multiplayer as applicable. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Feature test only; smoke PASS is not a function pass |
 
 ### Create: Unified Fuels 1.0.4
 **Current status:** Pending
@@ -556,7 +563,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
 | Plant vanilla, BYG/RU and Herbs & Harvest crops. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Test growth/harvest, drops, hopper input/output automation and JEI. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test growth/harvest, drops and hopper input/output automation. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Construction Sticks 1.5.0
 **Current status:** Pending
@@ -647,23 +654,15 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Confirm whether vanilla village generation is intentionally retained. Do not assume Integrated Villages replaces every vanilla village. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Save/restart the disposable world and review the matching server/client logs. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-Dependency evidence: the first startup attempt lacked Supplementaries and Integrated API 1.6.2+. The corrected test profile used Create 6.0.10, Supplementaries 3.4.0, and Integrated API 1.9.1 and reached `Done`. Validate these libraries through Integrated Villages; no standalone function test is required.
+Dependency evidence: a prior corrected test profile used Supplementaries 3.4.0 and Integrated API 1.9.1 and reached Done. The 10 November active profiles now show Supplementaries 4.0.2 and Integrated API 1.9.1 on both sides. Supplementaries' exact CurseForge file/dependency compatibility and update disposition remain open; the older 3.4.0 smoke does not prove the 4.0.2 version. Validate Integrated API through Integrated Villages; no standalone function test is required.
 
-### Atmosphere 1.0.18
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Fresh disposable world: verify its advertised environment/atmosphere changes. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Check day/night, weather, visuals/audio and client/server consistency. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
-### Create Oh The Biomes We've Gone Compatibility 0.0NONE
+### Create Oh The Biomes We've Gone Compatibility 1.0 (active JAR filename; embedded metadata not separately verified)
 **Current status:** Pending
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
 | Check compatibility items/recipes/blocks for BYG and Create. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Test JEI presence, placement, drops and wood/biome integration. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Verify compatibility recipes/registrations, placement, drops and wood/biome integration. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Nature's Compass 3.4.0
 **Current status:** Smoke-only — earlier startup/login smoke passed; actual search behavior remains Pending for beta testers.
@@ -680,14 +679,6 @@ Dependency evidence: the first startup attempt lacked Supplementaries and Integr
 |---|---|---|---|---|---|
 | Search for a known generated structure. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Verify correct result, distance/direction and updated search after discovery. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
-### Create Structures Arise 176.49.50
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Fresh disposable Overworld: find multiple Create-themed structures. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Inspect integrity, loot, biome placement and chunk-edge generation. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ## D. Player interface, server tools and information mods
 
@@ -732,21 +723,6 @@ Dependency evidence: the first startup attempt lacked Supplementaries and Integr
 | Inspect vanilla/modded blocks and entities. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Verify tooltips, states, inventories/fluid data and Create/Aeronautics compatibility. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Just Enough Items 19.64.0.455
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Search representative items from each content group. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Inspect crafting/processing recipes, catalysts and fluid inputs. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
-### Just Enough Resources 1.6.0.57
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Check known mob-drop, loot-table, villager-trade and world-generation entries against in-game sources. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
 ### Enchantment Descriptions 21.1.11
 **Current status:** Pending
 
@@ -764,13 +740,6 @@ Dependency evidence: the first startup attempt lacked Supplementaries and Integr
 | Test dedicated-server login with client `preview.serverIntegration=false`. | Passed — repeated log-level handshake suppression | Disposable MinecraftServer-Test + matching CurseForge Create World profile; Minecraft 1.21.1 / NeoForge 21.1.265 | Not recorded | 06-11-2026 | Fresh server log has no PreviewRenderer or failed Supplementaries provider registration. Client registered 3 Supplementaries and 31 SBT providers locally; player joined and left before clean shutdown. |
 | Test local Supplementaries Sack and Lunch Basket previews with server integration disabled. | **Passed — visual** | Disposable MinecraftServer-Test + matching CurseForge Create World profile; Minecraft 1.21.1 / NeoForge 21.1.265 | Not recorded | 06-11-2026 | Screenshots at 17:39–17:40 show Sack nine-stack 3×3 preview and opened Sack GUI; Lunch Basket shows stored food stacks, Closed state and four-stack summary. |
 | Assess the release trade-off for disabling server integration. | Pending | Not recorded | Not recorded | DD-MM-YYYY | Remote/server-supplied extras such as Ender Chest synchronization are unavailable while `preview.serverIntegration=false`. Decide whether this is acceptable for the pack or wait for upstream server-safe fix. |
-
-### Mouse Tweaks 2.26.1
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Test drag distribution, wheel scrolling and quick-move in player inventory, chests, backpacks and modded GUIs. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Memory Settings 6.0
 **Current status:** Pending
@@ -794,15 +763,24 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 
 **spark 1.10.124:** present in the 10 November active-profile inventory. Profiling remains deferred to beta testers and is not an internal maintainer prerequisite.
 
-## F. Libraries, APIs and shared support components
+### Balm 21.0.67 — shared support library
+**Current status:** Present as a top-level JAR in the 10 November active-profile inventory. No independent gameplay test is assumed; validate its API through exact installed consumers retained in the release profile. Balm presence alone does not approve Waystones or another travel mod.
 
-### Apollib 1.2.0
-**Current status:** Pending
+### Integrated API 1.9.1 — Integrated Villages support dependency
+**Current status:** Present as a top-level JAR in the 10 November active-profile inventory and used by Integrated Villages. No standalone gameplay test is required; validate through the Integrated Villages feature actions above.
+
+### Placebo 9.9.4 — FastSuite / FastFurnace support dependency
+**Current status:** Accepted support dependency, exact CurseForge file 9153039; shared profile hash parity and 11 November combined-profile smoke PASS. Validate through FastSuite and FastFurnace actions below; no standalone gameplay test.
+
+### Supplementaries 4.0.2 — active-profile version recheck
+**Current status:** Present on both 10 November profiles with matching hashes. Older accepted/dependency evidence names 3.4.0, so exact CurseForge file/dependency/update disposition for 4.0.2 remains open. The known Shulker Box Tooltip server-provider issue is documented separately. Feature actions are for beta testers only if this observed version is retained in the final beta profile.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
-| Verify dependent mod registries/content and related GUI/network interaction. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Record owner mod. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Verify representative Supplementaries block/item placement, interaction, recipes and persistence after restart. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Record exact tested version 4.0.2 |
+| Verify Shulker Box Tooltip / Supplementaries server-provided preview integration only within the documented supported configuration; record any loss of remote Ender Chest preview extras caused by the server-safe workaround. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Beta feature action only; do not expand maintainer smoke scope |
+
+## F. Libraries, APIs and shared support components
 
 ### Architectury 13.0.11
 **Current status:** Pending
@@ -836,29 +814,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Dependency-only. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Cloth Config API 15.0.140
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Open More Culling config. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Change/save option, relaunch and verify persistence. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
-### CodecUI 1.4.7
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Open dependent settings/config interface. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Verify widgets, values and save/cancel behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
-### Conditional Mixin 0.6.4
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Verify dependent mixins activate under intended mod/config conditions. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Check mixin apply failures. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
+**Current status:** Present support API. More Culling is not in the 10 November active-profile inventory, so its former config action is not applicable. No standalone gameplay test is required; exercise configuration screens only through installed consumers that actually declare Cloth Config.
 ### CorgiLib 5.0.0.10
 **Current status:** Pending
 
@@ -896,50 +852,10 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Capture memory baseline and compare same workload in disposable clone. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Check startup/registry stability. Do not alter production based only on benchmark. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Flywheel 1.0.6
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Verify Create contraption rendering, instancing, moving block entities and animation on matching client. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
-### Forge Config API Port 21.1.1
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Open dependent mod config GUI, change value, save/restart and verify persistence. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
-### Forgified Fabric API Base 0.4.42
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Verify bundled/using mods load and required API calls work. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Dependency-only. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
-### Forgified Fabric BlockView API 1.0.10
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Verify renderer/block-view integration used by Flerovium loads and block rendering stays correct. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
-### Forgified Fabric Renderer API 3.4.1
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Verify renderer-dependent mod integration and item/block rendering. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Dependency-only. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
-### Forgified Fabric Rendering Data Attachment 0.3.48
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Verify renderer data attachments survive chunk/entity render updates without visual corruption. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
+### Flywheel 1.0.6 — Create/Sable support component
+**Current status:** Flywheel 1.0.6 is declared by Sable 2.0.6 as an optional client support dependency; no separate top-level Flywheel JAR appears in the 10 November inventory. Do not add a duplicate standalone JAR. Test Create contraption rendering through installed Create/Aeronautics feature rows.
+### Forge Config API Port 21.1.3 — Sable source dependency; no separate profile JAR
+**Current status:** Sable 2.0.6's current source declares Forge Config API Port 21.1.3 as a common implementation dependency. No separate top-level Forge Config API Port JAR appears in the 10 November active-profile inventory. Do not add a duplicate or claim a separate installed mod. Validate config-dependent behavior through Sable's feature actions; final package freeze must reconcile whether the exact Sable file bundles or requires this dependency as a CurseForge manifest entry.
 ### FTB Library 2101.1.39
 **Current status:** Pending
 
@@ -955,13 +871,8 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 |---|---|---|---|---|---|
 | Verify selected team/stage/permission integration is detected and behaves correctly. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Gadgets & Gizmos Library 1.2.10 (bundled baseline)
-**Current status:** Pending — the 2.0.0-Pre-Release-4 candidate is a replacement bundled parent JAR (CurseForge file 9260191); do not count the library as a separate independently selected mod update unless the exact bundled component/version is separately confirmed.
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Verify bundled G&G content registers and dependent contraption controller/graph utilities work. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
+### Gadgets & Gizmos Library 1.2.10 — bundled support component
+**Current status:** This library is bundled in the existing gadgets-and-gizmos V1.2.10 parent JAR; it is not a separately selected top-level JAR. Validate through the installed bundled G&G feature set. The 2.0.0-Pre-Release-4 parent candidate remains ON HOLD; do not install or test.
 ### GeckoLib 4 4.9.3
 **Current status:** Pending
 
@@ -1000,14 +911,8 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 |---|---|---|---|---|---|
 | Verify dependent features (including Every Compat) register resources/models without duplicate registry errors. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Ponder 1.0.82
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Open Ponder scenes for representative Create/addon blocks. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| Confirm scenes render and advance. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
+### Ponder 1.0.82 — Create/Sable scene support
+**Current status:** Ponder 1.0.82 is declared by Sable 2.0.6 as a Create-related support dependency; no separate top-level Ponder JAR appears in the 10 November inventory. Do not add a duplicate standalone JAR. Beta testers should inspect Ponder scenes through installed Create/addon feature rows; record the parent feature tested.
 ### PrickleMC 21.1.11
 **Current status:** Pending
 
@@ -1032,14 +937,8 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Verify through Create Big Cannons: projectile and fuze definitions register, load and fire correctly. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Confirm client/server projectile synchronization. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### Sable Companion 1.6.0
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Verify dependent Sable integrations load and register expected physics behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| No separate feature assumed. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
+### Sable Companion 1.6.0 — embedded support component
+**Current status:** Sable 2.0.6's current NeoForge build declares Sable Companion 1.6.0 as a Jar-in-Jar API dependency. No separate top-level Sable Companion JAR is present in the 10 November active-profile inventory. No standalone gameplay test or additional JAR is required; validate support through the Sable actions above.
 ### Sophisticated Core 1.5.32.2464
 **Current status:** Accepted support dependency — shared client/server smoke PASS with Sophisticated Backpacks 3.26.21.2249 on 10 November 2026 and exact client/server SHA-256 parity confirmed. Core is a library and has no separate gameplay test. Validate its support through the Sophisticated Backpacks test actions above; do not submit a separate standalone Core feature result.
 
@@ -1052,27 +951,8 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Verify BYG/RU biome providers register in intended dimensions of fresh disposable world. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | No missing/duplicate regions. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
-### TRansition 1.0.21
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-
-### TRender 1.0.15
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Verify dependent render integration and UI/model path. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-| No missing renderer/client crash. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
-### Veil 4.3.2
-**Current status:** Pending
-
-| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
-|---|---|---|---|---|---|
-| Verify Veil-dependent rendering/effects initialize on client and remain correct with Sodium/Iris. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
-
+### Veil 4.3.2 — embedded Sable support library
+**Current status:** Sable 2.0.6's current NeoForge build packages Veil 4.3.2 through Jar-in-Jar. No separate top-level Veil JAR is present in the 10 November active-profile inventory. Do not test it as a separate installed mod or assume Sodium/Iris are present. Validate support through Sable's installed dependent rendering only.
 ## Global functional-test completion gate
 
 - [ ] Every feature/content mod above has a recorded function result (Pass, Partial, Failed or Blocked); no feature row may be assumed complete from smoke testing.

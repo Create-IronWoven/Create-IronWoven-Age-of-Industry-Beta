@@ -45,7 +45,7 @@ The 7 November candidate review identified possible additions, but none was sele
 - **Small client or convenience options:** Exposure, Fireproof Boats, Just Zoom, and Toast Control.
 - **Questing:** FTB Quests is a separate optional gameplay-system decision. Do not select addons before choosing the base system and checking its complete dependency chain.
 
-These are ideas, not a missing-mod list. No candidate is a required addition based on the available evidence.
+These are ideas, not a missing-mod list. No candidate is a required addition based on the available evidence. Waystones: Sable 1.0.7 is a distinct optional integration candidate, not a required addition.
 
 ## Active-profile observations requiring recheck
 

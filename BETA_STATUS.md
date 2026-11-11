@@ -29,7 +29,7 @@ The 10 November active-profile archive audit found 102 JARs in each test-profile
 
 ## Recent smoke-test evidence
 
-- **FastSuite 6.0.7 (file 7527945) / Placebo 9.9.4 (file 9153039) — 11 November:** accepted into the active mod set after exact-file/dependency preflight, matching client/server hashes, and authorised combined-profile smoke PASS. No isolated optimizer run is required; recipe/JEI/performance actions remain Pending for beta testers. FastFurnace 9.0.1 loaded in the same session, but its exact CurseForge file/dependency/side preflight remains open and it is not yet accepted.
+- **FastSuite 6.0.7 (file 7527945) / Placebo 9.9.4 (file 9153039) — 11 November:** accepted into the active mod set after exact-file/dependency preflight, matching client/server hashes, and authorised combined-profile smoke PASS. No isolated optimizer run is required; recipe/JEI/performance actions remain Pending for beta testers. **FastFurnace 9.0.1 (file 6751551)** also passed exact CurseForge file/dependency/side preflight and loaded on both sides in the same combined-profile smoke PASS. Do not add a duplicate or repeat the smoke test; record its explicit mod-set/package disposition at release freeze.
 - **Sophisticated Backpacks 3.26.21.2249 (file 9524812) / Sophisticated Core 1.5.32.2464 (file 9524669) — 10 November:** accepted into the active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Backpack feature actions remain Pending for beta testers; Core is validated through Backpacks.
 - **Create: The Factory Must Grow Community Edition 1.3.3a (file 9482161) — 10 November:** accepted into the active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Feature/visual actions remain Pending; Custom License distribution review remains a separate release gate.
 - **Every Compat 2.11.57 / Moonlight Lib 3.8.2:** accepted baseline pair; fresh clean-server smoke passed. The Golden Cherry Leaves duplicate registration remains an open compatibility finding.
@@ -54,4 +54,4 @@ Windows is the current development/test environment. Linux server compatibility 
 
 ## Release readiness
 
-**NOT READY.** No downloadable beta has been published. Exact final client/server package inventories, FastFurnace preflight, compatibility and licence decisions, clean final-package smoke testing, and explicit release approval remain required.
+**NOT READY.** No downloadable beta has been published. Exact final client/server package inventories, FastFurnace's final mod-set/package disposition, compatibility and licence decisions, clean final-package smoke testing, and explicit release approval remain required.

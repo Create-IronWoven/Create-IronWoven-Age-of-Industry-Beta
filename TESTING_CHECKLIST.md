@@ -25,7 +25,7 @@ This checklist is a feature-test matrix, not a complete file manifest. For curre
 | Active test-profile archive parity | PASS — 10 November client and server archives each contain 102 JARs; 101 shared non-WITS JARs have identical SHA-256. WITS is a temporary utility excluded from the mod set. These profiles are not the versioned v.0.1 server or final release package. |
 | Sophisticated Backpacks 3.26.21.2249 / Sophisticated Core 1.5.32.2464 | Accepted into active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Backpacks feature actions Pending for beta testers; Core validated through Backpacks. |
 | TFMG Community Edition 1.3.3a | Accepted into active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Feature/visual actions Pending; Custom License distribution review remains separate. |
-| FastSuite 6.0.7 / Placebo 9.9.4 / FastFurnace 9.0.1 | FastSuite/Placebo accepted into active mod set after exact-file/dependency preflight, matching client/server hashes, and combined-profile smoke PASS. No isolated optimizer test required. FastFurnace loaded in the same session but exact CurseForge file/dependency/side preflight remains open; not yet accepted. Feature/recipe/JEI/performance actions belong to beta testers. |
+| FastSuite 6.0.7 / Placebo 9.9.4 / FastFurnace 9.0.1 | FastSuite/Placebo accepted into active mod set after exact-file/dependency preflight, matching client/server hashes, and combined-profile smoke PASS. FastFurnace file 6751551 passed exact CurseForge file/dependency/side preflight and loaded in the same smoke PASS; no duplicate or repeat test needed. Its explicit mod-set/package disposition remains for release freeze. Feature/recipe/JEI/performance actions belong to beta testers. |
 | Every Compat 2.11.57 / Moonlight Lib 3.8.2 | Accepted baseline pair; fresh clean-server smoke PASS. Golden Cherry Leaves duplicate registration remains open; feature actions belong to beta testers. |
 | Railways 0.3.0-beta.2 / Supplementaries 4.0.2 | Present in both 10 November profiles with matching hashes; exact CurseForge/dependency review and update disposition remain pending. |
 | Create Aeronautics Curios Compat | Profile JAR filename reports 2.3 while embedded metadata reports 2.0; recheck exact file and loaded metadata. |
@@ -71,7 +71,7 @@ The fresh Windows v.0.1 server reached `Done (4.440s)`, generated `IronWoven Age
 | Matching client login | Matching client joined in fresh 7 Nov and corrected 6 Nov runs; 7 Nov operator and Creative-mode commands also succeeded | PASS — smoke test only |
 | Clean shutdown | All dimensions saved in the fresh 7 Nov run and corrected 6 Nov retest | PASS |
 | TFMG 1.3.3a shared update smoke | Matching client/server loaded `tfmg-1.21.1-1.3.3a-community.jar`; client connected and completed SBT handshake; server saved all dimensions; exact client/server SHA-256 parity confirmed | PASS — accepted into active mod set; feature/visual actions Pending; Custom License review separate |
-| FastSuite 6.0.7 / Placebo 9.9.4 combined-profile smoke | Exact files/dependency preflight and matching client/server hashes confirmed; both loaded with FastFurnace in the 11 November smoke session; startup/world/login/shutdown passed | PASS — FastSuite/Placebo accepted into active mod set; FastFurnace exact preflight remains open; no isolated optimizer test; feature actions Pending for beta testers |
+| FastSuite 6.0.7 / Placebo 9.9.4 / FastFurnace 9.0.1 combined-profile smoke | Exact FastSuite/Placebo files and dependencies and matching client/server hashes confirmed; FastFurnace file 6751551 is the official 1.21.1 NeoForge Release, MIT, Client & Server; Placebo dependency satisfied by 9.9.4; all loaded on both sides; startup/world/login/shutdown passed | PASS — FastSuite/Placebo accepted into active mod set; FastFurnace exact preflight and smoke PASS; no isolated optimizer test; no duplicate or repeat test; final mod-set/package disposition at release freeze; feature actions Pending for beta testers |
 | Sophisticated Backpacks 3.26.21.2249 + Sophisticated Core 1.5.32.2464 | Matching pair loaded on client and dedicated server; client joined; all dimensions saved on clean shutdown; exact client/server SHA-256 parity confirmed | PASS — accepted into active mod set; Backpack feature actions remain Pending for beta testers |
 | Individual feature tests | Matrix below | OPEN — mostly not yet function-tested |
 | Matching client-only mod startup | Targeted client evidence exists for PowerGrid and local Struts / tooltip workaround tests; no complete isolated optional-client candidate sweep | PARTIAL — optional candidates remain open |
@@ -666,7 +666,7 @@ Dependency evidence: the first startup attempt lacked Supplementaries and Integr
 | Test JEI presence, placement, drops and wood/biome integration. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Nature's Compass 3.4.0
-**Current status:** Smoke-only — Batch B startup/login passed; actual search behavior not tested.
+**Current status:** Smoke-only — earlier startup/login smoke passed; actual search behavior remains Pending for beta testers.
 
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|

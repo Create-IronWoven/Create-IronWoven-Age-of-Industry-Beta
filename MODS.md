@@ -21,9 +21,13 @@ The 10 November active-profile archive audit found 102 JARs in each test-profile
 
 
 
+## Present in the tested profile — mod-set/package disposition pending
+
+- **FastFurnace 9.0.1 · CurseForge file 6751551:** exact 1.21.1 NeoForge Release, MIT, Client & Server metadata, and required Placebo relation are verified. Placebo 9.9.4 (file 9153039) satisfies the upstream 9.0.1 dependency baseline. Exact-file/dependency/side preflight PASS; combined-profile startup/world/login/shutdown smoke PASS on 11 November. It is already present—do not add a duplicate. Its explicit mod-set/package disposition remains for release freeze; no feature or performance claims are made from smoke evidence.
+
 ## Recent shared-profile smoke observations
 
-- **FastSuite 6.0.7 / Placebo 9.9.4 — 11 November:** accepted into the active mod set after exact-file/dependency preflight, matching client/server hashes and combined-profile smoke PASS. No isolated optimizer test is required; feature actions remain for beta testers. FastFurnace 9.0.1 also loaded in that session, but its exact CurseForge file/dependency/side preflight remains open.
+- **FastSuite 6.0.7 / Placebo 9.9.4 — 11 November:** accepted into the active mod set after exact-file/dependency preflight, matching client/server hashes and combined-profile smoke PASS. No isolated optimizer test is required; feature actions remain for beta testers. FastFurnace 9.0.1 (file 6751551) also loaded in that session and passed exact CurseForge file/dependency/side preflight; its final mod-set/package disposition remains pending.
 - **Sophisticated Backpacks 3.26.21.2249 (file 9524812) / Sophisticated Core 1.5.32.2464 (file 9524669) — 10 November:** accepted into the active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Backpack feature actions remain Pending for beta testers; Core is validated through Backpacks.
 - **Create: The Factory Must Grow Community Edition 1.3.3a (file 9482161) — 10 November:** accepted into the active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Feature/visual actions remain Pending; Custom License distribution review remains a separate release gate.
 - **Every Compat 2.11.57 / Moonlight Lib 3.8.2:** accepted baseline pair; fresh clean-server smoke passed. The Golden Cherry Leaves duplicate registration remains open.
@@ -35,7 +39,7 @@ The 101-JAR clean Windows server baseline is a separate 7 November test installa
 - **Railways 0.3.0-beta.2** and **Supplementaries 4.0.2** appear in both 10 November profiles with matching hashes. Their older accepted records show 0.3.0-alpha.2 and 3.4.0; exact CurseForge file/dependency review and explicit update disposition remain open.
 - **Create Aeronautics Curios Compat:** the active-profile JAR filename reports 2.3 while embedded metadata reports 2.0. Reconcile the exact file and loaded metadata.
 - **Waystones 21.1.46 / Sable 2.0.6:** both appear in the 10 November profile despite the earlier deferred travel-system decision. Reconcile intended disposition, AeroPortals overlap, and Balm compatibility before release; do not add duplicates.
-- **FastFurnace 9.0.1:** loaded in the 11 November combined-profile smoke, but exact CurseForge file/dependency/side preflight remains open. It is not yet accepted for package inclusion.
+- **FastFurnace 9.0.1:** exact CurseForge file/dependency/side preflight and combined-profile smoke both PASS. Do not add a duplicate or repeat the test. Record its explicit mod-set/package disposition at release freeze.
 
 ## Holds and exclusions
 

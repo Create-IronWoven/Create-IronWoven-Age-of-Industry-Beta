@@ -2,7 +2,7 @@
 
 This file preserves dated and superseded evidence removed from the live beta-tester checklist. It is for historical comparison and issue diagnosis only. It is **not** a current installed-mod inventory, active testing queue, setup instruction, or release manifest.
 
-Use [the current functional checklist](../../TESTING_CHECKLIST.md), [current mod summary](../../MODS.md), and [current plans](../../MOD_PLANS.md) for active decisions. The active-profile snapshot and its full file/hash inventory remain private development evidence.
+Use [the current functional checklist](../TESTING_CHECKLIST.md), [current mod summary](../MODS.md), and [current plans](../MOD_PLANS.md) for active decisions. The active-profile snapshot and its full file/hash inventory remain private development evidence.
 
 ## Historical failed / partial update trials — 5 November 2026
 

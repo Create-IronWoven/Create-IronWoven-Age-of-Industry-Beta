@@ -1,22 +1,23 @@
 # Mods in Create IronWoven: Age of Industry
 
-**Earlier test-server folder snapshot:** 6 November 2026 — 106 visible JAR files in `MinecraftServer-Test/mods`; a later 23:33 screenshot confirms the accepted Every Compat 2.11.57 and Moonlight Lib 3.8.2 JARs are present in that test folder. The original `Create World/mods` client screenshot confirms the matching pair there too. The fresh clean server is a separate installation and contains 101 top-level mod JARs, as confirmed by its 7 November folder-properties screenshot.
+**Inventory status:** The detailed tables below are a historical test-folder snapshot, not the current exact client/server inventory or an approved release manifest. The snapshot is preserved here because it remains useful for historical comparison; do not use it to build or update a release package.
 <!-- IRONWOVEN_AUTO_VERSION -->
-**Current Ironwoven pack version:** `v0.1.101.5` — release `0`, content revision `1`, `101` top-level server mod JARs, and `5` active accepted bug fixes.
+**Current IronWoven pack version:** `v0.1.101.5` — release `0`, content revision `1`, `101` top-level server mod JARs, and `5` active accepted bug fixes.
 
-The accepted Every Compat 2.11.57 and Moonlight Lib 3.8.2 files update existing profile entries. The automatic updater detects their exact bytes when they are present in the selected server `mods/` folder; the top-level JAR count may remain unchanged while the content revision advances. Latest screenshots confirm both accepted JARs are physically present in the original `Create World/mods` client profile and the normal `MinecraftServer-Test/mods` test-server folder. Folder deployment is complete; a startup/login smoke test on that older baseline remains pending.  
-**New clean server installation:** `IronWoven Age Of Industry v.0.1` — **101 top-level mod JAR files** and **116 non-core NeoForge mod IDs** confirmed; world `IronWoven Age Of Industry_v0.1.0` generated; all four IronWoven datapacks enabled; matching client login, operator grant, Creative-mode command and clean shutdown with all dimensions saved. The fresh log has the five targeted datapack error families absent, but separate PowerGrid, Every Compat, the held Create Aeronautics Structures test candidate, and Shulker Box Tooltip/Supplementaries errors remain in the historical test log. The Aeronautics Structures candidate is not eligible for the next beta. The 106-JAR `MinecraftServer-Test` snapshot above belongs to the previous test folder only.  
-**Minecraft:** 1.21.1  
-**Loader:** NeoForge 21.1.265  
-**Java:** 21
+The newer 11 November working-profile reconciliation includes test-only and held files. It is not a final package inventory. The final mod list will be refreshed after the exact CurseForge client export and dedicated-server release package are reconciled.
 
-**Separate 10 November TFMG update-test observation:** CurseForge file 9482161 (`tfmg-1.21.1-1.3.3a-community.jar`) was discovered on both the active matching client and dedicated server. The shared startup/login smoke test passed, but this is an unaccepted update candidate; TFMG feature checks and visual inspection of the Electric Diode and Fuse Block resource warnings remain pending. The 6 November folder inventory tables and older test records below remain dated observations, not a full 10 November inventory rescan or an accepted release manifest.
+## Recent shared-profile smoke observations
 
-**10 November 2026 — Sophisticated Backpacks / Core shared update smoke test:** Sophisticated Backpacks **3.26.21.2249** and Sophisticated Core **1.5.32.2464** were discovered with matching filenames and versions on the active IronWoven CurseForge client profile and clean Windows dedicated server (Minecraft 1.21.1 / NeoForge 21.1.265). The server reached `Done (1.899s)`, the matching client joined, and all dimensions saved on clean shutdown. No ERROR-level records from Backpacks or Core were found. SHA-256 equality was not checked. **Shared client/server smoke: PASS only.** Backpack feature actions remain Pending for beta testers; Core is a supporting library validated through those Backpack actions, not a separate gameplay test. The pair remains a beta-candidate update, not feature-complete or final-release-approved. Create Integration 0.2.3.194 and Sophisticated Air Tank 1.0.1-beta+1.21.1 were unchanged.
+- **FastSuite 6.0.7 / Placebo 9.9.4 / FastFurnace 9.0.1 — 11 November:** matching files loaded on both sides and the combined-profile startup/world/login/shutdown smoke passed. FastFurnace exact CurseForge file/dependency/side preflight remains open; feature actions belong to beta testers.
+- **Sophisticated Backpacks 3.26.21.2249 / Sophisticated Core 1.5.32.2464 — 10 November:** shared smoke passed; feature actions remain for beta testers.
+- **Create: The Factory Must Grow Community Edition 1.3.3a — 10 November:** shared smoke passed; this update remains a test candidate, not an accepted baseline.
+- **Every Compat 2.11.57 / Moonlight Lib 3.8.2:** accepted baseline pair; fresh clean-server smoke passed. The Golden Cherry Leaves duplicate registration remains open.
 
-This page records the latest reviewed base test-folder inventory snapshot and identifies client-only additions; separately dated single-mod update observations are called out above. Accepted version targets may be ahead of physical folder snapshots while an approved update is awaiting local deployment. It is not a final release manifest. The latest supplied CurseForge profile screenshot shows **99 client-profile entries**. This is a separate inventory measurement and is not the version's server-mod count. The latest client `mods` folder snapshot shows **104 JAR files**; the latest dedicated-server `MinecraftServer-Test/mods` screenshot (6 November 2026) shows **106 JAR files**. Later 23:33 screenshot evidence confirms the two accepted JAR versions in the server folder; the exact 6 November list below is updated to those names. The client count remains unchanged. These are different counting methods: CurseForge entries and physical JAR files are not interchangeable, especially where mods bundle components. Matching folder counts do not by themselves prove exact filename equality. A later disposable-server log detected Create Aeronautics Structures 1.1.0-Beta-3.1 as an Overworld test candidate; it is not part of the accepted inventory. The maintainer-supplied JAR metadata matches official CurseForge file 8399115 by version (not hash-compared). Its test-only 16-color uniform-loot override passed runtime testing in a disposable Windows world; the official JAR remains unchanged. All 11 valid Overworld structure IDs now have locate/visual-presence evidence, with the crashed-airship hillside placement visually accepted; `plane` is invalid. Maintainer spot checks found items in the engineering-house standard and Lootr barrels; one crashed-airship vanilla chest has no assigned loot table. The candidate is now ON HOLD; no further testing or packaging is active. The earlier 16-colour override remains private test material, not an approved release artifact. Its Russian startup message is informational only.
+The 101-JAR clean Windows server baseline is a separate 7 November test installation. It is the source for the generated development version above, not a final release package. The numbered installation-batch sequence has since been retired; use [Beta Status](BETA_STATUS.md) and [Mod Plans](MOD_PLANS.md) for current decisions.
 
-Some entries below are libraries, APIs, or bundled components required by other mods. They are listed for transparency even though they do not add a standalone gameplay feature.
+## Historical inventory snapshot
+
+The tables below preserve earlier folder observations and should be read as dated evidence only. They do not establish the exact current installed inventory, accepted status, or release eligibility.
 
 ## Main Create, engineering, transport, and automation mods
 
@@ -72,7 +73,7 @@ Some entries below are libraries, APIs, or bundled components required by other 
 
 | Mod | Version / status |
 |---|---|
-| Every Compat (Wood Good) | 2.11.57 — accepted baseline version; paired with Moonlight Lib 3.8.2; both client/server folders updated, baseline startup/login verification pending |
+| Every Compat (Wood Good) | 2.11.57 — accepted baseline version; paired with Moonlight Lib 3.8.2; fresh clean-server startup/world/login/shutdown smoke passed; Golden Cherry Leaves duplicate remains open |
 | Chipped | 4.0.2 |
 | Design n' Decor | 2.2b |
 | Farmer's Delight | 1.3.4 |

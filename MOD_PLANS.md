@@ -1,110 +1,59 @@
 # Mod Plans
 
-This page gives players a short overview of planned, considered, paused, and excluded content. It is not the installed-mod list or a release approval list.
+This page summarizes optional content decisions, current holds, and candidate ideas. It is not the installed-mod list or a release approval list.
 
-- [Mods in the current test snapshot](MODS.md)
-- [What still needs testing](TESTING_CHECKLIST.md)
-- [Current project status](BETA_STATUS.md)
+- [Current mod inventory status](MODS.md)
+- [Beta status](BETA_STATUS.md)
+- [Beta-tester feature checklist](TESTING_CHECKLIST.md)
 
 **Target:** Minecraft 1.21.1 · NeoForge 21.1.265  
 **Mod source policy:** CurseForge only
 
-## Project version policy — no backports
+## Current work status
 
-**Ironwoven is developed for its selected Minecraft version only. No backports to older Minecraft versions are made or planned.**
+The previous numbered installation-batch sequence has been retired by the maintainer. There is no active numbered batch queue. Historical batch labels in older evidence are not outstanding tasks. New candidate work requires a specific current reason and maintainer authorization.
 
-- Do not create or maintain older-Minecraft branches, legacy pack editions, or backported releases.
-- Do not downgrade the modpack or choose obsolete mod files solely to support an older Minecraft version.
-- Evaluate candidate mods, dependencies, compatibility, testing, and releases against the currently declared Minecraft / NeoForge target.
-- If a mod or dependency has no suitable file for that target, mark it unavailable or reject it. Do not change the pack's target to accommodate it.
-- A future target-version change must be an explicit forward migration decision, with its own compatibility and testing plan; it is not a backport.
-
-This policy applies to mod research, dependency selection, issue triage, contributions, documentation, and release planning.
-
-## Status meanings
-
-| Status | Meaning |
+| Area | Current disposition |
 |---|---|
-| In testing | Present in a test profile; feature checks may be incomplete. |
-| Candidate | Being considered; not installed or approved for release. |
-| Partial | Some checks passed, but a problem or unanswered check remains. |
-| On hold | Work is paused; do not assume it is being researched or tested. |
-| Excluded | The maintainer has decided this content is not wanted. |
+| FastSuite 6.0.7 / Placebo 9.9.4 / FastFurnace 9.0.1 | Combined-profile smoke passed on 11 November. FastFurnace exact CurseForge file/dependency/side preflight remains before package inclusion. Feature/recipe/JEI/performance actions belong to beta testers. |
+| Sophisticated Backpacks 3.26.21.2249 / Sophisticated Core 1.5.32.2464 | Shared smoke passed on 10 November. Feature actions belong to beta testers. |
+| Create: The Factory Must Grow Community Edition 1.3.3a | Shared smoke passed on 10 November; still a test candidate, not accepted. Visual asset warnings and Custom License review remain open. |
+| Every Compat 2.11.57 / Moonlight Lib 3.8.2 | Accepted baseline pair; fresh server smoke passed. Golden Cherry Leaves duplicate registration remains an open issue; feature actions belong to beta testers. |
+| Create Aeronautics Structures 1.1.0-Beta-3.1 | **ON HOLD.** Do not test, update, or package until the official defects are resolved in a reviewed file or an explicit documented exception is approved. |
+| Create Aeronautics: Gadgets & Gizmos 2.0.0-Pre-Release-4 | **ON HOLD.** Keep bundled 1.2.10 unchanged; reconsider only after a stable 2.x file and exact dependency review, followed by explicit approval. |
+| Lithium 0.15.4 | **ON HOLD / deferred.** Do not install or test the current file. |
+| Linux dedicated server | Not tested; do not claim support or verification. |
 
-## Current testing and follow-ups
+## Optional candidate ideas — not approved additions
 
-| Area | Public status |
-|---|---|
-| Create Aeronautics Structures | **ON HOLD.** The tested 1.1.0-Beta-3.1 candidate has two unresolved loot defects: the uniform armour table fails on Minecraft 1.21.1, and one crashed-airship chest has no loot-table assignment. The 16-colour test override is not approved for release. No further tests or packaging while held; resume only after a new official CurseForge 1.21.1 NeoForge file is reviewed and both issues are verified fixed, or an explicit documented exception is approved. |
-| Performance and rendering | Partial. No measured server performance baseline yet; client rendering candidates require separate client tests. |
-| Botany Pots and Construction Sticks | Loaded in a test group; feature validation remains open. |
-| Lootr | Partial compatibility observations; independent per-player loot still needs verification. |
-| Every Compat (Wood Good) | Accepted baseline is 2.11.57 + Moonlight Lib 3.8.2 after the paired Windows disposable startup/world/login/shutdown smoke test. The Golden Cherry Leaves duplicate remains open. Feature-level block/recipe/model/texture/drop checks are delegated to beta testers. The original Create World client profile and normal MinecraftServer-Test dedicated-server baseline both contain the accepted JARs; startup/login verification on this updated baseline remains. |
-| Create Aeronautics: Gadgets & Gizmos 2.0.0-Pre-Release-4 | **ON HOLD.** Keep bundled 1.2.10 (file 9141062) unchanged. Do not install or test Pre-Release-4 (file 9260191). Reconsider only after a stable 2.x release for 1.21.1 NeoForge passes exact bundled-content, dependency, side, version-range and upstream-issue review, followed by separate maintainer approval. |
-| Exploration tools and Create Big Cannons | Routine startup/login smoke tests passed; this is not feature validation or release approval. |
+The 7 November candidate review identified possible additions, but none was selected, installed, or approved by that report. Recheck exact current CurseForge files, dependencies, sides, licence/terms, and pack fit before any future decision.
 
-Detailed technical evidence, exact file/dependency checks, and test history are maintained in the private development repository. The public [testing checklist](TESTING_CHECKLIST.md) is the place to see current testing tasks.
+- **Create / Aeronautics content:** Create Propulsion: Simulated, Create: Aeroworks, Create: Aquatic Ambitions.
+- **Server utilities:** FTB Essentials and Crash Utilities.
+- **Gameplay and recipe options:** FTB Ultimine, Fuel Goes Here, Polymorph, Torchmaster, and FastWorkbench.
+- **Small client or convenience options:** Exposure, Fireproof Boats, Just Zoom, and Toast Control.
+- **Questing:** FTB Quests is a separate optional gameplay-system decision. Do not select addons before choosing the base system and checking its complete dependency chain.
 
-## Future ideas — Batch 7 (on hold)
+These are ideas, not a missing-mod list. No candidate is a required addition based on the available evidence.
 
-**Batch 7 is postponed by the maintainer.** The following are possible future candidates only, not an active research or installation queue. No compatibility, dependency, feature, or release approval is implied.
+## Conditional candidates
 
-- MineColonies and its potential dependency ecosystem: Structurize, Domum Ornamentum, BlockUI, and Multi-Piston.
-- TownTalk as a possible settlement integration.
-- Towns and Towers, Repurposed Structures, Moog's Voyager Structures, Moog's Soaring Structures, Better Villages, and Village Taverns.
-- Create: New Beginnings and Create: Easy Structures.
+- **Connected Glass:** requires Fusion and SuperMartijn642's Core Lib; Config Lib is not a substitute.
+- **NetherPortalFix:** requires Balm and may overlap with existing portal/travel behavior.
+- **Waystones / Waystones: Sable:** no selection until existing AeroPortals behavior and exact Balm compatibility are reviewed.
+- **Sound Physics Remastered:** the surfaced target file was beta; stability and client-audio decision required.
+- **Accessories:** would be a migration from the current Curios equipment system, not an additive slot mod.
 
-If Batch 7 is resumed, every candidate must be rechecked for an exact CurseForge Minecraft 1.21.1 NeoForge file, dependencies, side requirements, licence/terms, compatibility with the existing BYG / Regions Unexplored setup, and fit with the pack's industrial/steampunk direction. The production world and current world-generation configuration must remain unchanged.
+## Paused ideas
 
-## Paused work
+- End expansion and Terralith investigation remain paused.
+- Settlement, town, and MineColonies ecosystem ideas remain paused. Do not resume this research without explicit maintainer instruction.
 
-- **End expansion:** paused by the maintainer. Historical End candidates are not an active shortlist or test queue.
-- **Terralith:** world-generation investigation is paused. The current BYG 2.6.3 / Regions Unexplored 0.6.3 setup and existing worlds must remain unchanged.
+## Existing replacement and exclusions
 
-## Explicit exclusions
-
-The following content is not wanted and must not be reintroduced unless the maintainer explicitly changes the decision:
-
-- Carry On
-- Easy Villagers
-- Immersive Paintings
-- Bigger Better End Cities
-- Create: Sophisticated Exoskeleton 1.0
-- Distant Horizons 3.3.3
+- **Create: Blocks & Bogies 1.0.8** is already recorded in the pack and its bogie UI action was reported passed in multiplayer. Do not add deprecated Create: Extended Bogeys (Borked); it has no 1.21.1 NeoForge file and points to Blocks & Bogies.
+- Do not reintroduce Carry On, Easy Villagers, Immersive Paintings, Bigger Better End Cities, Create: Sophisticated Exoskeleton 1.0, or Distant Horizons 3.3.3.
 
 ## Important
 
-A mod being suggested, researched, or present in a disposable test profile does not mean it is compatible, accepted, or approved for public release. Only CurseForge-hosted mods are eligible for consideration. The production world and installed production pack must not be changed as part of candidate testing.
-
-
-## Extended candidate review — 7 November 2026
-
-A large new candidate list has received an initial CurseForge / Minecraft 1.21.1 / NeoForge 21.1.265 compatibility triage. **No candidate from this list has been selected, installed, or approved for release.** Detailed internal dependency and file evidence remains in the private development repository.
-
-### Best thematic matches identified for further review
-
-- Create Propulsion: Simulated
-- Create: Aeroworks
-- Create: Aquatic Ambitions
-
-These have surfaced 1.21.1 NeoForge files and match the Create / Aeronautics direction. Exact dependency ranges, current file eligibility and feature compatibility still need to be reconciled before any test decision.
-
-### Separate optional utility and quest-system ideas
-
-FTB Essentials, FTB Ultimine, Fuel Goes Here, Polymorph, and selected inventory / interface utilities have target-version files surfaced. They remain candidates only; gameplay changes and server/client roles must be considered individually.
-
-The linked FTB Quests projects form a **new optional questing subsystem**, not independent standalone additions. FTB Quests itself would need to be considered first; dependent addons and resource packs should not be selected as a bundle. Accessories would require a separate migration decision from the current Curios-based equipment system.
-
-### Existing work and holds remain unchanged
-
-- FastSuite remains in its existing Batch F order.
-- Waystones and Waystones: Sable remain subject to the Batch H travel-system decision.
-- Structurize remains associated with paused Batch 7 settlement / MineColonies research.
-- Existing Farmer's Delight, ModernFix, Resourceful Lib and Struts entries are not new additions.
-- Some submitted projects still have no confirmed 1.21.1 NeoForge file or need missing libraries / exact dependency verification.
-
-No installed mods, CurseForge manifest, server configuration, production world or world-generation settings were changed by this review.
-
-### Extended Bogeys
-
-The named Extended Bogeys entry was checked against its official CurseForge project. The available **Create: Extended Bogeys (Borked)** project is deprecated and has files only for Minecraft 1.20.1 on Forge/Fabric; there is no Minecraft 1.21.1 NeoForge file. The project page itself points users to Create: Blocks & Bogies as the replacement. **Do not add the deprecated project.** Create: Blocks & Bogies 1.0.8 is already recorded in Ironwoven and has a passed bogie UI multiplayer test.
+A mod being researched, appearing in a working profile, or passing a smoke test does not make it accepted or release-approved. Only CurseForge-hosted files are eligible for consideration. The production world and installed production pack must not be changed as part of candidate research.

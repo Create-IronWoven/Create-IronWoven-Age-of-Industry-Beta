@@ -70,8 +70,8 @@ The fresh Windows v.0.1 server reached `Done (4.440s)`, generated `IronWoven Age
 | Targeted compatibility errors | Design n' Decor, Railways, Create Kinetic, Sable Catwalk, and Create Deco placard errors absent in fresh 7 Nov and corrected 6 Nov logs | PASS — log review only |
 | Matching client login | Matching client joined in fresh 7 Nov and corrected 6 Nov runs; 7 Nov operator and Creative-mode commands also succeeded | PASS — smoke test only |
 | Clean shutdown | All dimensions saved in the fresh 7 Nov run and corrected 6 Nov retest | PASS |
-| TFMG 1.3.3a shared update smoke | Matching client/server loaded `tfmg-1.21.1-1.3.3a-community.jar`; client connected and completed SBT handshake; server saved all dimensions | PASS — smoke only; hash equality and feature behavior not tested |
-| Sophisticated Backpacks 3.26.21.2249 + Sophisticated Core 1.5.32.2464 | Matching pair loaded on client and dedicated server; client joined; all dimensions saved on clean shutdown | PASS — shared smoke only; Backpack feature actions remain Pending for beta testers |
+| TFMG 1.3.3a shared update smoke | Matching client/server loaded `tfmg-1.21.1-1.3.3a-community.jar`; client connected and completed SBT handshake; server saved all dimensions; exact client/server SHA-256 parity confirmed | PASS — accepted into active mod set; feature/visual actions Pending; Custom License review separate |
+| Sophisticated Backpacks 3.26.21.2249 + Sophisticated Core 1.5.32.2464 | Matching pair loaded on client and dedicated server; client joined; all dimensions saved on clean shutdown; exact client/server SHA-256 parity confirmed | PASS — accepted into active mod set; Backpack feature actions remain Pending for beta testers |
 | Individual feature tests | Matrix below | OPEN — mostly not yet function-tested |
 | Matching client-only mod startup | Targeted client evidence exists for PowerGrid and local Struts / tooltip workaround tests; no complete isolated optional-client candidate sweep | PARTIAL — optional candidates remain open |
 | Remaining fresh-server log findings | 8 ERROR-level records (five attributed to PowerGrid, Every Compat, Create Aeronautics Structures and SBT/Supplementaries; three unattributed entity-attachment warnings) and five DUMMY block-entity warnings remain under review | OPEN — do not attribute unknown records to a mod without evidence |
@@ -1147,7 +1147,7 @@ The 6 November 2026 CurseForge `Create World/mods` screenshot confirms Entity Cu
 | No separate feature assumed. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Sophisticated Core 1.5.32.2464
-**Current status:** Support dependency — shared client/server smoke PASS with Sophisticated Backpacks 3.26.21.2249 on 10 November 2026. Core is a library and has no separate gameplay test. Validate its support through the Sophisticated Backpacks test actions above; do not submit a separate standalone Core feature result.
+**Current status:** Accepted support dependency — shared client/server smoke PASS with Sophisticated Backpacks 3.26.21.2249 on 10 November 2026 and exact client/server SHA-256 parity confirmed. Core is a library and has no separate gameplay test. Validate its support through the Sophisticated Backpacks test actions above; do not submit a separate standalone Core feature result.
 
 
 ### TerraBlender 4.1.0.8

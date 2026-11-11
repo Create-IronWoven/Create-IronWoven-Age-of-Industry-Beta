@@ -10,20 +10,19 @@ The following exact versions passed their authorised, scope-appropriate shared s
 
 | Mod | Previous version / CurseForge file | Accepted version / CurseForge file | Smoke evidence | Feature / release state |
 |---|---|---|---|---|
-| Sophisticated Backpacks | 3.26.20.2244 — superseded historical snapshot; current accepted active-profile version is 3.26.21.2249 (see accepted update above) |
+| Sophisticated Backpacks | 3.26.20.2244 / [9431839](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks/files/9431839) | 3.26.21.2249 / [9524812](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks/files/9524812) | Shared startup/login/clean-shutdown PASS, 10 November; exact client/server SHA-256 match | Feature actions Pending — beta testers |
 | Sophisticated Core (support dependency) | 1.5.28.2458 / [9431812](https://www.curseforge.com/minecraft/mc-mods/sophisticated-core/files/9431812) | 1.5.32.2464 / [9524669](https://www.curseforge.com/minecraft/mc-mods/sophisticated-core/files/9524669) | Same coordinated Backpacks smoke; exact client/server SHA-256 match | Tested through Backpacks; no standalone gameplay row |
 | Create: The Factory Must Grow Community Edition | 1.3.3 / [9413167](https://www.curseforge.com/minecraft/mc-mods/tfmg-community-edition/files/9413167) | 1.3.3a / [9482161](https://www.curseforge.com/minecraft/mc-mods/tfmg-community-edition/files/9482161) | Shared startup/login/clean-shutdown PASS, 10 November; exact client/server SHA-256 match | Feature/visual actions Pending; Custom License distribution review remains a separate release gate |
 
-The 10 November active-profile archive audit found 102 JARs in each test-profile archive: 101 shared non-WITS JARs have identical hashes. WITS is a temporary testing utility and is excluded from the mod set. Railways `0.3.0-beta.2` and Supplementaries `4.0.2` also appear in both archives with matching hashes, but remain observations pending their own exact CurseForge/dependency review and maintainer update disposition. These profiles are not the selected clean v.0.1 release server.
+The 10 November active-profile archive audit found 102 JARs in each test-profile archive: 101 shared non-WITS JARs have identical hashes. WITS is a temporary testing utility and is excluded from the mod set. Railways `0.3.0-beta.2` and Supplementaries `4.0.2` also appear in both archives with matching hashes, but remain observations pending their own exact CurseForge/dependency review and maintainer update disposition. These profiles are not the selected clean v.0.1 release server. Waystones 21.1.46 and Sable 2.0.6 also appear in the 10 November profile despite an earlier deferred travel-system decision; reconcile intended disposition, AeroPortals overlap and Balm compatibility before release. Do not add duplicates.
 
 
-The 10 November active-profile archive audit confirms 102 JARs in each test profile, with 101 shared non-WITS JARs identical by SHA-256; the 11 November reconciliation is a separate later profile check. Both contain test-only and held files and are not a final package inventory. The final mod list will be refreshed after the exact CurseForge client export and dedicated-server release package are reconciled.
 
 ## Recent shared-profile smoke observations
 
 - **FastSuite 6.0.7 / Placebo 9.9.4 / FastFurnace 9.0.1 — 11 November:** matching files loaded on both sides and the combined-profile startup/world/login/shutdown smoke passed. FastFurnace exact CurseForge file/dependency/side preflight remains open; feature actions belong to beta testers.
-- **Sophisticated Backpacks 3.26.21.2249 / Sophisticated Core 1.5.32.2464 — 10 November:** shared smoke passed; feature actions remain for beta testers.
-- **Create: The Factory Must Grow Community Edition 1.3.3a — 10 November:** shared smoke passed; this update remains a test candidate, not an accepted baseline.
+- **Sophisticated Backpacks 3.26.21.2249 (file 9524812) / Sophisticated Core 1.5.32.2464 (file 9524669) — 10 November:** accepted into the active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Backpack feature actions remain Pending for beta testers; Core is validated through Backpacks.
+- **Create: The Factory Must Grow Community Edition 1.3.3a (file 9482161) — 10 November:** accepted into the active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity. Feature/visual actions remain Pending; Custom License distribution review remains a separate release gate.
 - **Every Compat 2.11.57 / Moonlight Lib 3.8.2:** accepted baseline pair; fresh clean-server smoke passed. The Golden Cherry Leaves duplicate registration remains open.
 
 The 101-JAR clean Windows server baseline is a separate 7 November test installation. It is the source for the generated development version above, not a final release package. The numbered installation-batch sequence has since been retired; use [Beta Status](BETA_STATUS.md) and [Mod Plans](MOD_PLANS.md) for current decisions.
@@ -92,10 +91,10 @@ The tables below preserve earlier folder observations and should be read as date
 | Farmer's Delight | 1.3.4 |
 | Mama's Herbs and Harvest | 1.21.1-24 |
 | Supplementaries | 3.4.0 — historical dependency snapshot; active profiles show 4.0.2 on both sides; **Recheck required** for exact file/dependency compatibility and baseline disposition |
-| Sophisticated Backpacks | 3.26.21.2249 — shared client/server smoke PASS on 10 Nov; feature actions Pending for beta testers; not final-release-approved |
+| Sophisticated Backpacks | 3.26.21.2249 — accepted into active mod set after authorised shared smoke PASS and exact client/server SHA-256 parity; feature actions Pending for beta testers; not final-release-approved |
 | Sophisticated Backpacks Create Integration | 0.2.3.194 — unchanged during the 10 Nov Backpacks/Core update test |
 | Sophisticated Air Tank | 1.0.1-beta+1.21.1 — unchanged during the 10 Nov Backpacks/Core update test; separate asset warnings remain |
-| Sophisticated Core | 1.5.32.2464 — supporting library; shared smoke PASS through Backpacks; no separate gameplay test |
+| Sophisticated Core | 1.5.32.2464 — accepted support dependency; shared smoke PASS through Backpacks and exact client/server SHA-256 parity; no separate gameplay test |
 
 ## World generation and exploration
 

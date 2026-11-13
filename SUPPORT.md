@@ -1,5 +1,70 @@
 # Support and Troubleshooting
 
+
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-SUPPORT-0001",
+  "record_type": "beta_support_environment_preflight",
+  "created_at": "unknown",
+  "updated_at": "2026-11-13T14:08:07Z",
+  "verified_at": "2026-11-13T14:08:07Z",
+  "migrated_at": "2026-11-13T14:08:07Z",
+  "source_ref": [
+    "Beta SUPPORT.md — target Minecraft/NeoForge/build matching, matching client/server versions, restart and Known Issues checks; current Beta links verified."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "CURRENT"
+}
+-->
+
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-SUPPORT-0002",
+  "record_type": "beta_support_report_fields",
+  "created_at": "unknown",
+  "updated_at": "2026-11-13T14:08:07Z",
+  "verified_at": "2026-11-13T14:08:07Z",
+  "migrated_at": "2026-11-13T14:08:07Z",
+  "source_ref": [
+    "Beta SUPPORT.md — support report environment, reproduction context, steps and relevant sanitized error evidence; checked against public bug/compatibility issue templates."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "CURRENT"
+}
+-->
+
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-SUPPORT-0003",
+  "record_type": "beta_support_evidence_privacy",
+  "created_at": "unknown",
+  "updated_at": "2026-11-13T14:08:07Z",
+  "verified_at": "2026-11-13T14:08:07Z",
+  "migrated_at": "2026-11-13T14:08:07Z",
+  "source_ref": [
+    "Beta SUPPORT.md — sanitization of logs/screenshots and prohibition on private backups/full world folders; checked against Main SECURITY.md and Private FILE_INTAKE_WORKFLOW.md."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "CURRENT"
+}
+-->
+
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-SUPPORT-0004",
+  "record_type": "beta_support_issue_routing",
+  "created_at": "unknown",
+  "updated_at": "2026-11-13T14:08:07Z",
+  "verified_at": "2026-11-13T14:08:07Z",
+  "migrated_at": "2026-11-13T14:08:07Z",
+  "source_ref": [
+    "Beta SUPPORT.md — bug, compatibility and feature suggestion issue destinations; each linked template path checked against the live Beta repository tree."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "CURRENT"
+}
+-->
+
 ## Before asking for help
 
 1. Confirm that you are using the Minecraft and NeoForge versions required by the beta build you installed.

@@ -1,4 +1,19 @@
 # Privacy Review — Upstream Fix Contributions
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-UPSTREAM-PRIVACY-0001",
+  "record_type": "beta_upstream_contribution_privacy_review",
+  "created_at": "unknown",
+  "updated_at": "unknown",
+  "verified_at": "2026-11-13T14:33:30Z",
+  "migrated_at": "2026-11-13T14:33:30Z",
+  "source_ref": [
+    "Beta contributions/upstream-fixes/PRIVACY_REVIEW.md — review scope and limitations rechecked 13 November 2026. All eight files in the contribution folder were scanned with the ten exact private privacy_guard.py scan_text patterns; zero findings. Contextual review found no private repository paths, local filesystem paths, personal identifiers, credentials, raw private logs, or copied mod assets. This does not claim to scan complete Git history or external services."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "CURRENT"
+}
+-->
 
 **Review scope:** files under `contributions/upstream-fixes/` in this repository.
 

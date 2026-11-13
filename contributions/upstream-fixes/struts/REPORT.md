@@ -1,4 +1,19 @@
 # Strut Your Stuff — dedicated-server mixin side
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-UPSTREAM-STRUTS-0001",
+  "record_type": "struts_dedicated_server_client_mixin_report",
+  "created_at": "unknown",
+  "updated_at": "unknown",
+  "verified_at": "2026-11-13T14:33:30Z",
+  "migrated_at": "2026-11-13T14:33:30Z",
+  "source_ref": [
+    "Beta contributions/upstream-fixes/struts/REPORT.md — historical dedicated-server mixin report. Existing issue #6 remains OPEN; current struts.mixins.json blob 2df756d36229dbda10de40ab0846538df33c68ae still lists StrutRenderSystemAccessor in common mixins and the accessor class targets RenderSystem. Historical local patch smoke evidence was not rerun."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "HISTORICAL"
+}
+-->
 
 **Target:** Minecraft 1.21.1 / NeoForge / Java 21  
 **Upstream issue:** [cakeGit/StrutYourStuff #6](https://github.com/cakeGit/StrutYourStuff/issues/6)  

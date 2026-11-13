@@ -1,4 +1,19 @@
 # Copycats+ — Sable Catwalk physics selector
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-UPSTREAM-COPYCATS-0001",
+  "record_type": "copycats_sable_catwalk_selector_investigation",
+  "created_at": "unknown",
+  "updated_at": "unknown",
+  "verified_at": "2026-11-13T14:33:30Z",
+  "migrated_at": "2026-11-13T14:33:30Z",
+  "source_ref": [
+    "Beta contributions/upstream-fixes/copycats/INVESTIGATION.md — historical investigation of issue #437. Upstream issue #437 remains OPEN; PR #443 closed unmerged. Current multiloader catwalk resource blob 7784c73f1153993be4529d334742259db344f161 still selects copycats:copycat_catwalk; Board resource blob 1608a0f89875acd797a0cb416a8548723c0aa13c uses the same 0.25 mass/volume values. Historical local smoke evidence was not rerun."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "HISTORICAL"
+}
+-->
 
 **Upstream issue:** [copycats-plus/copycats #437](https://github.com/copycats-plus/copycats/issues/437)  
 **Previous proposal:** [PR #443](https://github.com/copycats-plus/copycats/pull/443)  

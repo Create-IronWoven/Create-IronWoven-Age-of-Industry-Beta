@@ -1,4 +1,19 @@
 # Create: Design n' Decor — optional Dye Depot loot tables
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-UPSTREAM-DESIGNNDECOR-0001",
+  "record_type": "design_n_decor_optional_dye_depot_loot_investigation",
+  "created_at": "unknown",
+  "updated_at": "unknown",
+  "verified_at": "2026-11-13T14:33:30Z",
+  "migrated_at": "2026-11-13T14:33:30Z",
+  "source_ref": [
+    "Beta contributions/upstream-fixes/design-n-decor/INVESTIGATION.md — historical optional Dye Depot loot-table investigation. Issue #139 remains OPEN; PR #140 is CLOSED and unmerged, and the PR discussion's maintainer comment says 'poor way of doing it'. No replacement upstream fix is claimed; historical local override smoke evidence was not rerun."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "HISTORICAL"
+}
+-->
 
 **Upstream issue:** [DrMango14/Create-Design-n-Decor #139](https://github.com/DrMango14/Create-Design-n-Decor/issues/139)  
 **Previous proposal:** [PR #140](https://github.com/DrMango14/Create-Design-n-Decor/pull/140)  

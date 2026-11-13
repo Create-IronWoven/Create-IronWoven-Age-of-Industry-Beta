@@ -1,4 +1,19 @@
 # Create Kinetic — client-only Minecraft mixin placement
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-UPSTREAM-CREATEKINETIC-0001",
+  "record_type": "createkinetic_client_only_mixin_placement",
+  "created_at": "unknown",
+  "updated_at": "unknown",
+  "verified_at": "2026-11-13T14:33:30Z",
+  "migrated_at": "2026-11-13T14:33:30Z",
+  "source_ref": [
+    "Beta contributions/upstream-fixes/create-kinetic/REPORT.md, subject 'client-only Minecraft mixin placement' — current main_aeronautics_1.21.1 createkinetic.mixins.json blob bc975a02e67a306b09165ff79966d3f75472292e still lists client.MinecraftMixin in common mixins; the class targets Minecraft.class. No matching open upstream issue was found. Historical local server/client smoke evidence was not rerun."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "HISTORICAL"
+}
+-->
 
 **Target source branch:** `main_aeronautics_1.21.1`  
 **Target:** Minecraft 1.21.1 / NeoForge / Java 21  

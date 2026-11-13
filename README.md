@@ -1,5 +1,70 @@
 # Create IronWoven: Age of Industry
 
+
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-README-0001",
+  "record_type": "beta_tester_hub_access_and_release_boundary",
+  "created_at": "unknown",
+  "updated_at": "2026-11-13T14:08:07Z",
+  "verified_at": "2026-11-13T14:08:07Z",
+  "migrated_at": "2026-11-13T14:08:07Z",
+  "source_ref": [
+    "Beta README.md — invitation/approval-only tester access, internal testing, no downloadable public Beta, version v0.1.101.5 and Minecraft 1.21.1 / NeoForge 21.1.265 target; checked against Private VERSIONING.md and PROJECT_STATUS.md."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "CURRENT"
+}
+-->
+
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-README-0002",
+  "record_type": "beta_tester_hub_policy_and_navigation",
+  "created_at": "unknown",
+  "updated_at": "2026-11-13T14:08:07Z",
+  "verified_at": "2026-11-13T14:08:07Z",
+  "migrated_at": "2026-11-13T14:08:07Z",
+  "source_ref": [
+    "Beta README.md — CurseForge-only/no-backports policy, project purpose, tester navigation and issue/report links; checked against Private MASTER_PROMPT.md and live Main/Beta destinations."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "CURRENT"
+}
+-->
+
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-README-0003",
+  "record_type": "beta_tester_hub_platform_boundary",
+  "created_at": "unknown",
+  "updated_at": "2026-11-13T14:08:07Z",
+  "verified_at": "2026-11-13T14:08:07Z",
+  "migrated_at": "2026-11-13T14:08:07Z",
+  "source_ref": [
+    "Beta README.md — Windows is the current development/test environment and Linux dedicated-server support remains NOT TESTED / NOT VERIFIED; checked against Private PROJECT_STATUS.md and TESTING_POLICY.md."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "CURRENT"
+}
+-->
+
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-README-0004",
+  "record_type": "beta_tester_hub_reporting_boundary",
+  "created_at": "unknown",
+  "updated_at": "2026-11-13T14:08:07Z",
+  "verified_at": "2026-11-13T14:08:07Z",
+  "migrated_at": "2026-11-13T14:08:07Z",
+  "source_ref": [
+    "Beta README.md — public evidence sanitization and functional-test reporting guidance; forwarding/invalid-report safeguards are verified while positive valid-report checklist update remains unverified end-to-end; checked against Beta CONTRIBUTING.md and Private PUBLIC_TEST_AUTOMATION.md."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "CURRENT"
+}
+-->
+
 ![Create IronWoven: Age of Industry](assets/Ironwoven_%20Age%20of%20Industry.v2.png)
 
 **Build. Engineer. Explore. Transport. Automate.**

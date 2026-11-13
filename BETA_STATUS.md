@@ -3,7 +3,7 @@
 <!-- IRONWOVEN_AUTO_VERSION -->
 **Current Ironwoven pack version:** `v0.1.101.5` — release `0`, content revision `1`, `101` top-level server mod JARs, and `5` active accepted bug fixes.
 **Release status:** Internal development; no downloadable public beta has been published.  
-**Last updated:** 11 November 2026  
+**Last updated:** 13 November 2026  
 **Minecraft:** 1.21.1 · **NeoForge:** 21.1.265 · **Java:** 21
 
 ## Current status
@@ -25,7 +25,7 @@ The following exact versions passed their authorised, scope-appropriate shared s
 | Sophisticated Core (support dependency) | 1.5.28.2458 / [9431812](https://www.curseforge.com/minecraft/mc-mods/sophisticated-core/files/9431812) | 1.5.32.2464 / [9524669](https://www.curseforge.com/minecraft/mc-mods/sophisticated-core/files/9524669) | Same coordinated Backpacks smoke; exact client/server SHA-256 match | Tested through Backpacks; no standalone gameplay row |
 | Create: The Factory Must Grow Community Edition | 1.3.3 / [9413167](https://www.curseforge.com/minecraft/mc-mods/tfmg-community-edition/files/9413167) | 1.3.3a / [9482161](https://www.curseforge.com/minecraft/mc-mods/tfmg-community-edition/files/9482161) | Shared startup/login/clean-shutdown PASS, 10 November; exact client/server SHA-256 match | Feature/visual actions Pending; Custom License distribution review remains a separate release gate |
 
-The 10 November active-profile archive audit found 102 JARs in each test-profile archive: 101 shared non-WITS JARs have identical hashes. WITS is a temporary testing utility and is excluded from the mod set. Railways `0.3.0-beta.2` and Supplementaries `4.0.2` also appear in both archives with matching hashes, but remain observations pending their own exact CurseForge/dependency review and maintainer update disposition. Waystones `21.1.46` is present despite the core-Waystones deferral; base Sable `2.0.6` is a separate SubLevel physics library. The distinct Waystones: Sable `1.0.7` integration addon is absent and remains optional/deferred. These profiles are not the selected clean v.0.1 release server.
+The 10 November active-profile archive audit found 102 JARs in each test-profile archive: 101 shared non-WITS JARs have identical hashes. WITS is a temporary testing utility and is excluded from the mod set. Railways `0.3.0-beta.2` and Supplementaries `4.0.2` also appear in both archives with matching hashes. Their exact CurseForge file reviews are complete. Railways remains a Beta-channel observation; explicit mod-set/package disposition against the older accepted `0.3.0-alpha.2` baseline remains open. Supplementaries `4.0.2` remains an active-profile observation, not an accepted update; exact Moonlight version closure and final Custom License review remain open. Neither profile presence nor metadata review is an IronWoven feature-test PASS or release approval. Waystones `21.1.46` is present despite the core-Waystones deferral; base Sable `2.0.6` is a separate SubLevel physics library. The distinct Waystones: Sable `1.0.7` integration addon is absent and remains optional/deferred. These profiles are not the selected clean v.0.1 release server.
 
 ## Recent smoke-test evidence
 
@@ -55,3 +55,22 @@ Windows is the current development/test environment. Linux server compatibility 
 ## Release readiness
 
 **NOT READY.** No downloadable beta has been published. Exact final client/server package inventories, FastFurnace's final mod-set/package disposition, compatibility and licence decisions, clean final-package smoke testing, and explicit release approval remain required.
+
+
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-PUBLIC-0001",
+  "record_type": "public_beta_status_summary",
+  "created_at": "2026-11-03T22:10:10Z",
+  "updated_at": "2026-11-13T13:04:33Z",
+  "verified_at": "2026-11-13T13:04:33Z",
+  "migrated_at": "2026-11-13T13:04:33Z",
+  "source_ref": [
+    "Git history: BETA_STATUS.md first added in commit 71af98c360c2409608b1e08db365e402a75abb75 (2026-11-03T22:10:10Z); latest pre-migration update e2c72d9c3c98e62f4647940e5f5f1abcaedeff67 (2026-11-11T02:41:17Z). These are repository record timestamps only, not test or decision times.",
+    "Source: BETA_STATUS.md — current status, active mod-set updates, profile archive audit, recent smoke-test evidence, holds and safeguards, testing responsibilities, server platform, and release readiness.",
+    "Cross-check: MODS.md, MOD_PLANS.md, TESTING_CHECKLIST.md, and CHANGELOG.md were re-read together on 13 November 2026. Existing smoke results, feature-test Pending states, holds, exclusions, Linux NOT TESTED status, and NOT READY release state are preserved; no tests were rerun and no release approval was made."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "CURRENT"
+}
+-->

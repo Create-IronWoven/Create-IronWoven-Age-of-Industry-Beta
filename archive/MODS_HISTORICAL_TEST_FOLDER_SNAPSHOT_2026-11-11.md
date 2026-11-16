@@ -2148,7 +2148,8 @@ The maintainer supplied a newer screenshot of `MinecraftServer-Test/mods`. This 
     "Beta archive/MODS_HISTORICAL_TEST_FOLDER_SNAPSHOT_2026-11-11.md, original line 245, ### Updated file versions observed: Create Crafts & Additions | 1.6.0 | 1.7.2 | Installed in test folder; acceptance pending"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-ACTION-0056"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2162,7 +2163,8 @@ The maintainer supplied a newer screenshot of `MinecraftServer-Test/mods`. This 
     "Beta archive/MODS_HISTORICAL_TEST_FOLDER_SNAPSHOT_2026-11-11.md, original line 246, ### Updated file versions observed: Sophisticated Backpacks | 3.26.19.2243 | 3.26.20.2244 | Installed in test folder; acceptance pending"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PUBLIC-0004"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2176,7 +2178,8 @@ The maintainer supplied a newer screenshot of `MinecraftServer-Test/mods`. This 
     "Beta archive/MODS_HISTORICAL_TEST_FOLDER_SNAPSHOT_2026-11-11.md, original line 247, ### Updated file versions observed: Sophisticated Core | 1.5.23.2446 | 1.5.28.2458 | Installed in test folder; acceptance pending"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PUBLIC-0005"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2190,7 +2193,8 @@ The maintainer supplied a newer screenshot of `MinecraftServer-Test/mods`. This 
     "Beta archive/MODS_HISTORICAL_TEST_FOLDER_SNAPSHOT_2026-11-11.md, original line 248, ### Updated file versions observed: FTB Teams | 2101.1.11 | 2101.1.12 | Installed; initialized in earlier 14:09 smoke test"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-ACTION-0159"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2204,7 +2208,8 @@ The maintainer supplied a newer screenshot of `MinecraftServer-Test/mods`. This 
     "Beta archive/MODS_HISTORICAL_TEST_FOLDER_SNAPSHOT_2026-11-11.md, original line 249, ### Updated file versions observed: Create: The Factory Must Grow Community Edition | 1.3.2a-community | 1.3.3-community | Installed in test folder; acceptance pending"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PUBLIC-0006"
 }
 -->
 
@@ -2464,7 +2469,8 @@ The screenshot proves these files are in the server's disabled archive, not whet
     "Beta archive/MODS_HISTORICAL_TEST_FOLDER_SNAPSHOT_2026-11-11.md, original line 293, ### Superseded versions — retain only as rollback/archive copies: `createaddition-1.6.0.jar` | Create Crafts & Additions 1.7.2"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-ACTION-0056"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2478,7 +2484,8 @@ The screenshot proves these files are in the server's disabled archive, not whet
     "Beta archive/MODS_HISTORICAL_TEST_FOLDER_SNAPSHOT_2026-11-11.md, original line 294, ### Superseded versions — retain only as rollback/archive copies: `create-enchantment-industry-2.4.2.jar` | Create: Enchantment Industry 2.5.4b"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-ACTION-0075"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2492,7 +2499,8 @@ The screenshot proves these files are in the server's disabled archive, not whet
     "Beta archive/MODS_HISTORICAL_TEST_FOLDER_SNAPSHOT_2026-11-11.md, original line 295, ### Superseded versions — retain only as rollback/archive copies: `ftb-teams-neoforge-2101.1.11.jar` | FTB Teams 2101.1.12"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-ACTION-0159"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2506,7 +2514,8 @@ The screenshot proves these files are in the server's disabled archive, not whet
     "Beta archive/MODS_HISTORICAL_TEST_FOLDER_SNAPSHOT_2026-11-11.md, original line 296, ### Superseded versions — retain only as rollback/archive copies: `lithostitched-1.7.11-neoforge-21.1.jar` | Lithostitched 1.8.1"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-ACTION-0198"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2520,7 +2529,8 @@ The screenshot proves these files are in the server's disabled archive, not whet
     "Beta archive/MODS_HISTORICAL_TEST_FOLDER_SNAPSHOT_2026-11-11.md, original line 297, ### Superseded versions — retain only as rollback/archive copies: `sophisticatedbackpacks-1.21.1-3.26.19.2243.jar` | Sophisticated Backpacks 3.26.20.2244"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PUBLIC-0004"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2534,7 +2544,8 @@ The screenshot proves these files are in the server's disabled archive, not whet
     "Beta archive/MODS_HISTORICAL_TEST_FOLDER_SNAPSHOT_2026-11-11.md, original line 298, ### Superseded versions — retain only as rollback/archive copies: `sophisticatedcore-1.21.1-1.5.23.2446.jar` | Sophisticated Core 1.5.28.2458"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PUBLIC-0005"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2548,7 +2559,8 @@ The screenshot proves these files are in the server's disabled archive, not whet
     "Beta archive/MODS_HISTORICAL_TEST_FOLDER_SNAPSHOT_2026-11-11.md, original line 299, ### Superseded versions — retain only as rollback/archive copies: `tfmg-1.21.1-1.3.2a-community.jar` | Create: The Factory Must Grow Community Edition 1.3.3"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PUBLIC-0006"
 }
 -->
 

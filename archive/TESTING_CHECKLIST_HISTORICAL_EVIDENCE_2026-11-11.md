@@ -375,7 +375,8 @@ At the time of this historical retry, ImmediatelyFast, Flerovium, Entity Culling
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original heading at line 58 (Superseded client-rendering candidate rows): Earlier client-rendering candidate rows were superseded by the later 10 November working-profile inventory and are not current installation or beta-testing instructions."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PARTIAL-EVIDENCE-0009"
 }
 -->
 
@@ -590,7 +591,8 @@ The following rows came from an earlier client-profile review and are retained o
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original heading at line 105 (Entity Culling — removed from current client profile): Entity Culling was confirmed absent from the 6 November current client profile; the archived candidate/action rows are not current test obligations."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PARTIAL-EVIDENCE-0009"
 }
 -->
 
@@ -1164,7 +1166,8 @@ This is an archive-folder observation, not a fresh filesystem scan. It does not 
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original heading at line 189 (Numismatics runtime correction): The 22:27 Numismatics 1.0.20-only observation superseded the older 14:09 runtime selection of 1.1.0; the Numismatics Plus pairing remained untested."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-CHECKLIST-ARCHIVE-ROW-059"
 }
 -->
 
@@ -2335,7 +2338,8 @@ The maintainer opened the previously inspected `lootr:loot_barrel` at approximat
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original heading at line 352 (Create Aeronautics Structures — loot testing handoff to beta testers — 6 November 2026): The historical handoff assigned remaining structure loot coverage to beta testers; the current ON HOLD decision supersedes that instruction and forbids further testing until reopened."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-MODPLANS-0010"
 }
 -->
 
@@ -2411,7 +2415,8 @@ During normal exploration, beta testers should check loot in the remaining Aeron
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 369, Archived Beta Checklist Evidence — 11 November 2026 > Create Aeronautics Structures — loot testing handoff to beta testers — 6 November 2026 > Beta tester tasks: Structure variant and container type (vanilla chest, barrel, Lootr barrel, etc.)."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PARTIAL-EVIDENCE-0004"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2425,7 +2430,8 @@ During normal exploration, beta testers should check loot in the remaining Aeron
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 370, Archived Beta Checklist Evidence — 11 November 2026 > Create Aeronautics Structures — loot testing handoff to beta testers — 6 November 2026 > Beta tester tasks: Whether items appeared after opening the container."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PARTIAL-EVIDENCE-0004"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2439,7 +2445,8 @@ During normal exploration, beta testers should check loot in the remaining Aeron
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 371, Archived Beta Checklist Evidence — 11 November 2026 > Create Aeronautics Structures — loot testing handoff to beta testers — 6 November 2026 > Beta tester tasks: Approximate coordinates."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PARTIAL-EVIDENCE-0004"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2453,7 +2460,8 @@ During normal exploration, beta testers should check loot in the remaining Aeron
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 372, Archived Beta Checklist Evidence — 11 November 2026 > Create Aeronautics Structures — loot testing handoff to beta testers — 6 November 2026 > Beta tester tasks: Screenshot evidence where practical; include relevant logs for errors."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PARTIAL-EVIDENCE-0004"
 }
 -->
 
@@ -2474,7 +2482,8 @@ Report empty containers only after opening them. Do not manually fill containers
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original heading at line 379 (Superseded client graphics/performance action matrix): The old client graphics/performance action matrix is retained only for history and is not the current beta testing queue."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PARTIAL-EVIDENCE-0009"
 }
 -->
 
@@ -2687,7 +2696,8 @@ Report empty containers only after opening them. Do not manually fill containers
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original heading at line 424 (Entity Culling — removed from current client profile): The later archived graphics/performance action matrix repeats the removed Entity Culling candidate; it remains historical and is not a current test request."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PARTIAL-EVIDENCE-0009"
 }
 -->
 
@@ -2780,7 +2790,8 @@ The 6 November 2026 CurseForge `Create World/mods` screenshot confirms Entity Cu
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original heading at line 447 (Removed rows after exact profile inventory reconciliation — 11 November 2026): Former test headings absent as separate top-level JARs in the 10 November profile were removed from active assignments; archived actions must not be used to request testing or build a package."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 
@@ -2805,7 +2816,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 457, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Create: Numismatics Plus 1.0.1: Buy from a Create shop with coins and a Numismatics card. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2819,7 +2831,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 458, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Create: Numismatics Plus 1.0.1: Verify deduction, stock, recipient account and missing-Depositor/card behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 
@@ -2842,7 +2855,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 466, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Atmosphere 1.0.18: Fresh disposable world: verify its advertised environment/atmosphere changes. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2856,7 +2870,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 467, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Atmosphere 1.0.18: Check day/night, weather, visuals/audio and client/server consistency. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 
@@ -2879,7 +2894,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 475, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Just Enough Items 19.64.0.455: Search representative items from each content group. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2893,7 +2909,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 476, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Just Enough Items 19.64.0.455: Inspect crafting/processing recipes, catalysts and fluid inputs. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 
@@ -2915,7 +2932,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 484, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Just Enough Resources 1.6.0.57: Check known mob-drop, loot-table, villager-trade and world-generation entries against in-game sources. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 
@@ -2937,7 +2955,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 492, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Mouse Tweaks 2.26.1: Test drag distribution, wheel scrolling and quick-move in player inventory, chests, backpacks and modded GUIs. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 
@@ -2960,7 +2979,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 500, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Apollib 1.2.0: Verify dependent mod registries/content and related GUI/network interaction. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -2974,7 +2994,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 501, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Apollib 1.2.0: Record owner mod. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 
@@ -2997,7 +3018,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 509, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > CodecUI 1.4.7: Open dependent settings/config interface. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -3011,7 +3033,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 510, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > CodecUI 1.4.7: Verify widgets, values and save/cancel behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 
@@ -3034,7 +3057,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 518, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Conditional Mixin 0.6.4: Verify dependent mixins activate under intended mod/config conditions. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -3048,7 +3072,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 519, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Conditional Mixin 0.6.4: Check mixin apply failures. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 
@@ -3071,7 +3096,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 527, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Forgified Fabric API Base 0.4.42: Verify bundled/using mods load and required API calls work. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -3085,7 +3111,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 528, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Forgified Fabric API Base 0.4.42: Dependency-only. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 
@@ -3107,7 +3134,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 536, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Forgified Fabric BlockView API 1.0.10: Verify renderer/block-view integration used by Flerovium loads and block rendering stays correct. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PARTIAL-EVIDENCE-0009"
 }
 -->
 
@@ -3130,7 +3158,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 544, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Forgified Fabric Renderer API 3.4.1: Verify renderer-dependent mod integration and item/block rendering. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PARTIAL-EVIDENCE-0009"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -3144,7 +3173,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 545, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Forgified Fabric Renderer API 3.4.1: Dependency-only. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-PARTIAL-EVIDENCE-0009"
 }
 -->
 
@@ -3166,7 +3196,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 553, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Forgified Fabric Rendering Data Attachment 0.3.48: Verify renderer data attachments survive chunk/entity render updates without visual corruption. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 
@@ -3210,7 +3241,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 568, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > TRender 1.0.15: Verify dependent render integration and UI/model path. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -3224,7 +3256,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 569, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > TRender 1.0.15: No missing renderer/client crash. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0014"
 }
 -->
 
@@ -3247,7 +3280,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 577, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Create Structures Arise 176.49.50: Fresh disposable Overworld: find multiple Create-themed structures. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-ACTION-0037"
 }
 -->
 <!-- IRONWOVEN_CHRONOLOGY
@@ -3261,7 +3295,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original line 578, Archived Beta Checklist Evidence — 11 November 2026 > Removed rows after exact profile inventory reconciliation — 11 November 2026 > Create Structures Arise 176.49.50: Inspect integrity, loot, biome placement and chunk-edge generation. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here"
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-ACTION-0038"
 }
 -->
 
@@ -3278,7 +3313,8 @@ The following former test headings are preserved as historical candidate/API row
     "Beta archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md, original heading at line 581 (Superseded Railways feature result — previous alpha.2 baseline): The 3 November train-use Pass applies only to the older alpha.2 baseline and does not validate the current beta.2 file."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "SUPERSEDED"
+  "chronology_status": "SUPERSEDED",
+  "superseded_by": "IRONWOVEN-BETA-SNAPSHOT-0007"
 }
 -->
 

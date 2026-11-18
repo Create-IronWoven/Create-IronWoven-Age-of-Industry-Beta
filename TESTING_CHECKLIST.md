@@ -1916,3 +1916,39 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 ## Historical evidence archive
 
 The former dated smoke attempts, old inventory-folder observations, removed client-rendering candidate rows, and detailed Aeronautics Structures investigation are preserved in [Archived Beta Checklist Evidence — 11 November 2026](archive/TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md). Use that file only when the specific history is relevant; it is not a current test queue or release inventory.
+
+### Create: Aeroworks 1.5.0
+**Current status:** Pending
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-AEROWORKS-150-ACTION-0001","record_type":"action","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-18T21:06:18.376Z","source_ref":["Approved public-facing feature action derived from the exact Aeroworks project description and 1.5.0 changelog: https://www.curseforge.com/minecraft/mc-mods/create-aeroworks and https://www.curseforge.com/minecraft/mc-mods/create-aeroworks/files/8743051.","Maintainer authorized exact Aeroworks 1.5.0 Beta feature testing; no feature result is implied."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-AEROWORKS-150-ACTION-0002","record_type":"action","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-18T21:06:18.376Z","source_ref":["Approved public-facing feature action derived from the exact Aeroworks project description and 1.5.0 changelog: https://www.curseforge.com/minecraft/mc-mods/create-aeroworks and https://www.curseforge.com/minecraft/mc-mods/create-aeroworks/files/8743051.","Maintainer authorized exact Aeroworks 1.5.0 Beta feature testing; no feature result is implied."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-AEROWORKS-150-ACTION-0003","record_type":"action","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-18T21:06:18.376Z","source_ref":["Approved public-facing feature action derived from the exact Aeroworks project description and 1.5.0 changelog: https://www.curseforge.com/minecraft/mc-mods/create-aeroworks and https://www.curseforge.com/minecraft/mc-mods/create-aeroworks/files/8743051.","Maintainer authorized exact Aeroworks 1.5.0 Beta feature testing; no feature result is implied."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-AEROWORKS-150-ACTION-0004","record_type":"action","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-18T21:06:18.376Z","source_ref":["Approved public-facing feature action derived from the exact Aeroworks project description and 1.5.0 changelog: https://www.curseforge.com/minecraft/mc-mods/create-aeroworks and https://www.curseforge.com/minecraft/mc-mods/create-aeroworks/files/8743051.","Maintainer authorized exact Aeroworks 1.5.0 Beta feature testing; no feature result is implied."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-AEROWORKS-150-ACTION-0005","record_type":"action","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-18T21:06:18.376Z","source_ref":["Approved public-facing feature action derived from the exact Aeroworks project description and 1.5.0 changelog: https://www.curseforge.com/minecraft/mc-mods/create-aeroworks and https://www.curseforge.com/minecraft/mc-mods/create-aeroworks/files/8743051.","Maintainer authorized exact Aeroworks 1.5.0 Beta feature testing; no feature result is implied."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-AEROWORKS-150-ACTION-0006","record_type":"action","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-18T21:06:18.376Z","source_ref":["Approved public-facing feature action derived from the exact Aeroworks project description and 1.5.0 changelog: https://www.curseforge.com/minecraft/mc-mods/create-aeroworks and https://www.curseforge.com/minecraft/mc-mods/create-aeroworks/files/8743051.","Maintainer authorized exact Aeroworks 1.5.0 Beta feature testing; no feature result is implied."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Power a gyroscope and verify that it stabilizes the airship. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Use the joystick to steer the airship on both axes and verify its redstone outputs. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Assemble a modular controller cockpit and test its selected control modules. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Configure a servo block's rotational output and verify the resulting movement. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Build a Control Stand and Copycat Control Stand and verify their control-module interactions. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test the copper and dyed steering-wheel variants, third pedal socket, and Drive-By-Sable compatibility. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |

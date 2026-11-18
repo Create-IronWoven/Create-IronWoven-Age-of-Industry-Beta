@@ -509,7 +509,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
 |---|---|---|---|---|---|
 | Open bogie UI (crouch + right-click empty-handed) | Pass | Multiplayer | Ghosty | 03-11-2026 | Crouch + right-click while empty-handed to access different options. (submitted in issue #9) |
-| Configure drivers/axles, assemble train and verify style and operation. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Configure drivers/axles, assemble train and verify style and operation. | Pass | Multiplayer | Ghosty | 16-11-2026 | it switses between boggie's ent the meanu pops up en i driven it (submitted in issue #12) |
 
 ### Create: Modern Train Parts 0.2.5
 **Current status:** Pending

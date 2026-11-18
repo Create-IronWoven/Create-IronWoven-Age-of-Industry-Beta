@@ -85,8 +85,8 @@ This is a player feedback and beta testing repository, not the pack's source cod
   "record_id": "IRONWOVEN-BETA-CONTRIBUTING-TEST-AUTOMATION-20261118-0001",
   "record_type": "current_beta_test_result_automation_verification",
   "created_at": "unknown",
-  "updated_at": "2026-11-18T05:39:24+01:00",
-  "verified_at": "2026-11-18T05:39:24+01:00",
+  "updated_at": "2026-11-18T04:39:24Z",
+  "verified_at": "2026-11-18T04:39:24Z",
   "source_ref": [
     "Beta issue #12 and forwarder/private processor runs 44232736737 / 44232749911 verify a valid first checklist write and completed issue closure.",
     "Beta issue #11 and forwarder/private processor runs 44231996038 / 44232007075 verify exact duplicate handling and no checklist change.",

@@ -1,6 +1,5 @@
 # Create IronWoven: Age of Industry
 
-
 <!-- IRONWOVEN_CHRONOLOGY
 {
   "record_id": "IRONWOVEN-BETA-README-0001",
@@ -8,15 +7,13 @@
   "created_at": "unknown",
   "updated_at": "2026-11-13T14:08:07Z",
   "verified_at": "2026-11-13T14:08:07Z",
-  "migrated_at": "2026-11-13T14:08:07Z",
   "source_ref": [
     "Beta README.md — invitation/approval-only tester access, internal testing, no downloadable public Beta, version v0.1.101.5 and Minecraft 1.21.1 / NeoForge 21.1.265 target; checked against Private VERSIONING.md and PROJECT_STATUS.md."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "CURRENT"
+  "chronology_status": "HISTORICAL"
 }
 -->
-
 <!-- IRONWOVEN_CHRONOLOGY
 {
   "record_id": "IRONWOVEN-BETA-README-0002",
@@ -24,15 +21,13 @@
   "created_at": "unknown",
   "updated_at": "2026-11-13T14:08:07Z",
   "verified_at": "2026-11-13T14:08:07Z",
-  "migrated_at": "2026-11-13T14:08:07Z",
   "source_ref": [
     "Beta README.md — CurseForge-only/no-backports policy, project purpose, tester navigation and issue/report links; checked against Private MASTER_PROMPT.md and live Main/Beta destinations."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "CURRENT"
+  "chronology_status": "HISTORICAL"
 }
 -->
-
 <!-- IRONWOVEN_CHRONOLOGY
 {
   "record_id": "IRONWOVEN-BETA-README-0003",
@@ -40,15 +35,13 @@
   "created_at": "unknown",
   "updated_at": "2026-11-13T14:08:07Z",
   "verified_at": "2026-11-13T14:08:07Z",
-  "migrated_at": "2026-11-13T14:08:07Z",
   "source_ref": [
     "Beta README.md — Windows is the current development/test environment and Linux dedicated-server support remains NOT TESTED / NOT VERIFIED; checked against Private PROJECT_STATUS.md and TESTING_POLICY.md."
   ],
   "timezone_display": "Europe/Amsterdam",
-  "chronology_status": "CURRENT"
+  "chronology_status": "HISTORICAL"
 }
 -->
-
 <!-- IRONWOVEN_CHRONOLOGY
 {
   "record_id": "IRONWOVEN-BETA-README-0004",
@@ -56,53 +49,78 @@
   "created_at": "unknown",
   "updated_at": "2026-11-13T14:08:07Z",
   "verified_at": "2026-11-13T14:08:07Z",
-  "migrated_at": "2026-11-13T14:08:07Z",
   "source_ref": [
     "Beta README.md — public evidence sanitization and functional-test reporting guidance; forwarding/invalid-report safeguards are verified while positive valid-report checklist update remains unverified end-to-end; checked against Beta CONTRIBUTING.md and Private PUBLIC_TEST_AUTOMATION.md."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "HISTORICAL"
+}
+-->
+
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-README-REFRESH-20261118-0001",
+  "record_type": "beta_tester_hub_navigation_and_branding_refresh",
+  "created_at": "unknown",
+  "updated_at": "unknown",
+  "verified_at": "2026-11-18T02:42:17Z",
+  "source_ref": [
+    "Current Beta main README.md, issue-template configuration, application destination in the Main repository, functional-test form, bug-report form, feature-suggestion form, and official banner asset were re-fetched and checked during the navigation refresh.",
+    "All twelve established navigation labels were retained; the report/suggestion destination now opens GitHub's issue-form chooser.",
+    "The official image file assets/Ironwoven_ Age of Industry.v2.png and its existing URL-encoded README path were preserved exactly."
   ],
   "timezone_display": "Europe/Amsterdam",
   "chronology_status": "CURRENT"
 }
 -->
 
-![Create IronWoven: Age of Industry](assets/Ironwoven_%20Age%20of%20Industry.v2.png)
+![Official Create IronWoven: Age of Industry banner](assets/Ironwoven_%20Age%20of%20Industry.v2.png)
 
-**Build. Engineer. Explore. Transport. Automate.**
+**Build · Engineer · Automate · Transport · Explore**
 
-**Beta access is limited:** participation is by invitation or approved application only. Public access to this repository does not automatically grant permission or access to beta testing builds, servers, or activities. Acceptance is confirmed separately by the project maintainer.
+Welcome to the official beta tester hub for **Create IronWoven: Age of Industry**, an industrial and steampunk Minecraft modpack built around Create, engineering, trains, automation, transport, building, and exploration.
 
-**This repository is for approved beta testers.** To request access, use the [beta tester application form on the public project home](https://github.com/alexth110987/Create-IronWoven-Age-of-Industry/issues/new?template=beta_application.yml). Applications are reviewed manually; the application is submitted as a public GitHub issue. Do not include personal contact details. Submitting one does not grant access.
+> **Beta access is limited.** Apply for access below. Applications are reviewed manually, and acceptance is confirmed separately by the project maintainer. Public access to this repository does not grant access to beta builds, servers, or testing activities.
 
-
-Create IronWoven: Age of Industry is an industrial and steampunk Minecraft modpack built around **Create**, **Create Aeronautics**, trains, automation, engineering, transport, building, and exploration.
+**Development status:** Internal testing. This is not a downloadable public beta release. No server download is currently available. A successful startup smoke test does not mean every mod feature has been validated or that a release is approved.
 
 <!-- IRONWOVEN_AUTO_VERSION -->
 **Current Ironwoven pack version:** `v0.1.101.5` — release `0`, content revision `1`, `101` top-level server mod JARs, and `5` active accepted bug fixes.
 
-**Development status:** Internal testing. This is a development version, not a downloadable public beta release. A separate clean Windows test-server installation has passed routine startup, world-load, matching-client login, and clean-shutdown checks. These smoke checks do not validate every mod feature or constitute release approval. Some compatibility findings and explicit candidate holds remain under review. No server download is available.
+## Quick start
 
-<badge>PROJECT POLICY</badge>
+1. Read the [current beta status](BETA_STATUS.md).
+2. Review the [mods in the current test pack](MODS.md) and [planned mods and project decisions](MOD_PLANS.md).
+3. If you want to participate, submit the [beta tester application](https://github.com/alexth110987/Create-IronWoven-Age-of-Industry/issues/new?template=beta_application.yml). Applications are reviewed manually.
 
-> **NO BACKPORTS — THIS MODPACK SUPPORTS ITS SELECTED MINECRAFT VERSION ONLY.**
->
-> Ironwoven does not create, maintain, or accept backports to older Minecraft versions. We do not downgrade the pack, maintain parallel legacy-version branches, or select outdated mod releases just to make the pack run on an older Minecraft version. Mod research, compatibility checks, testing, and releases target the Minecraft and NeoForge versions explicitly listed below. If a required mod is unavailable for the selected target, it is treated as unavailable; the pack will not be backported to accommodate it.
+## Tester navigation
 
-## Quick links
+### Apply and get oriented
 
 - [Open beta tester application](https://github.com/alexth110987/Create-IronWoven-Age-of-Industry/issues/new?template=beta_application.yml)
 - [Current beta status](BETA_STATUS.md)
 - [Mods in the current test pack](MODS.md)
 - [Planned mods and project decisions](MOD_PLANS.md)
+
+### Test and report results
+
 - [Testing progress](TESTING_CHECKLIST.md)
 - [Submit test results](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml)
 - [Known issues](KNOWN_ISSUES.md)
 - [Dimensions and exploration](DIMENSIONS.md)
+
+Submit one functional-test report for each completed checklist action. Select the environment in which you actually tested: Single-player, Multiplayer, or Both. The checklist is updated only after the private processor validates a report; submitting a form does not itself guarantee that a result has been applied.
+
+### Updates and help
+
 - [Changelog](CHANGELOG.md)
 - [Beta updates](BETA_UPDATES.md)
 - [Support and troubleshooting](SUPPORT.md)
-- [Report a problem or suggest an idea](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues)
+- [Report a problem or suggest an idea](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/new/choose)
 
-## Platform
+Use the issue-form chooser to select the appropriate bug report, compatibility report, or feature suggestion. Please search existing issues and [Known Issues](KNOWN_ISSUES.md) first.
+
+## Platform and project target
 
 | Component | Target |
 |---|---|
@@ -111,14 +129,20 @@ Create IronWoven: Age of Industry is an industrial and steampunk Minecraft modpa
 | Java | 21 |
 | Mod source | CurseForge only |
 
-**Server platform status:** Windows is the current development/test environment. Linux server support is planned but has not yet been tested; Linux setup and validation are pending. Do not interpret planned Linux support as a verified compatibility claim.
+**No backports:** the project targets Minecraft 1.21.1 only. Older Minecraft versions and parallel legacy branches are not supported.
 
-This repository is the public information and feedback hub. It does not host modpack downloads. When a beta is available, its release and installation instructions will be published here.
+**Server platform status:** Windows is the current development and tested server environment. Linux server support is planned but has not yet been tested or verified. Do not interpret planned Linux support as a compatibility claim.
 
-## Feedback
+## Reporting and privacy
 
-Before reporting a problem, check [Known Issues](KNOWN_ISSUES.md) and search the [issue tracker](../../issues). Include reproduction steps, Minecraft/NeoForge versions, and the modpack build if one was provided.
+This repository is the public information and feedback hub. It does not host modpack downloads. When a beta release becomes available, its release and installation instructions will be published here.
 
-Remove usernames, private addresses, local paths, passwords, tokens, and personal information from logs or screenshots. Do not upload world saves, private backups, or third-party mod JARs.
+GitHub issue submissions are public immediately. GitHub displays the account that opened an issue as its author; a nickname in a form does not hide that identity. Do not include real names, contact details, passwords, access tokens, private server addresses, local file paths, raw private configuration, world saves, private backups, or third-party mod JARs. Attach only relevant, sanitized evidence.
 
-A successful server startup does not prove every mod feature works. The [testing checklist](TESTING_CHECKLIST.md) separates startup checks from individual feature validation. Testers can submit one action at a time using the [Functional Test Result form](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml). Each report records whether the action was tested in Single-player, Multiplayer, or Both. The Beta-to-private forwarding path and invalid-report safeguards have been verified. A valid, unique report updating a matching checklist row is still awaiting end-to-end verification. A submitted form does not by itself confirm that a checklist row changed; check the current checklist after submitting, and contact the maintainers when a result does not appear.
+A successful server startup does not prove every mod feature works. The [testing checklist](TESTING_CHECKLIST.md) separates routine smoke checks from individual feature validation. See [Contributing and test-reporting guidance](CONTRIBUTING.md) before submitting test results.
+
+## Repository scope
+
+This repository contains beta-tester information, approved testing guidance, public feedback forms, and player-facing progress. Internal development records, private automation, raw technical evidence, and project source-of-truth decisions remain in the private project repository.
+
+Historical records are retained in the [archive](archive/README.md). Upstream compatibility proposals are grouped under [contributions/upstream-fixes](contributions/upstream-fixes/README.md).

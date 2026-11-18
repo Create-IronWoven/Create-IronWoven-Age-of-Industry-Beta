@@ -2,6 +2,22 @@
 
 <!-- IRONWOVEN_CHRONOLOGY
 {
+  "record_id": "IRONWOVEN-BETA-MINECRAFT-VERSION-POLICY-20261118-0001",
+  "record_type": "player_facing_minecraft_version_and_no_backport_policy",
+  "created_at": "unknown",
+  "updated_at": "unknown",
+  "verified_at": "2026-11-18T00:00:00Z",
+  "source_ref": [
+    "Private docs/MASTER_PROMPT.md and docs/PROJECT_STATUS.md establish Minecraft 1.21.1 as the current target baseline.",
+    "Maintainer instruction: no backporting; a future move to a newer Minecraft version is conditional on the required mods being updated for that version."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "CURRENT"
+}
+-->
+
+<!-- IRONWOVEN_CHRONOLOGY
+{
   "record_id": "IRONWOVEN-BETA-README-0001",
   "record_type": "beta_tester_hub_access_and_release_boundary",
   "created_at": "unknown",
@@ -130,6 +146,8 @@ Use the issue-form chooser to select the appropriate bug report, compatibility r
 | Mod source | CurseForge only |
 
 **No backports:** the project targets Minecraft 1.21.1 only. Older Minecraft versions and parallel legacy branches are not supported.
+
+**Future Minecraft versions:** A move to a newer Minecraft version may be considered in the future, but it is not currently planned or promised. We will only consider upgrading when the mods required by IronWoven have actually been updated for that Minecraft version and the complete modpack can be re-evaluated for compatibility, dependencies, client/server support, and testing. We will not backport the pack to older Minecraft versions, and we will not move forward by leaving essential mods behind.
 
 **Server platform status:** Windows is the current development and tested server environment. Linux server support is planned but has not yet been tested or verified. Do not interpret planned Linux support as a compatibility claim.
 

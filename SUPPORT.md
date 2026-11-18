@@ -71,7 +71,7 @@
 2. Check that the client and server use matching modpack versions.
 3. Restart the game once and see whether the issue repeats.
 4. Check [Known Issues](KNOWN_ISSUES.md).
-5. Search existing reports in the [issue tracker](../../issues).
+5. Search existing reports in the [issue tracker](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues).
 
 ## What to include in a support report
 
@@ -90,6 +90,6 @@ Do not upload private backups or full world folders. Share only a short, relevan
 
 ## Where to report
 
-- [Bug report form](../../issues/new?template=bug_report.yml)
-- [Compatibility report form](../../issues/new?template=compatibility_report.yml)
-- [Feature suggestion form](../../issues/new?template=feature_suggestion.yml)
+- [Bug report form](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=bug_report.yml)
+- [Compatibility report form](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=compatibility_report.yml)
+- [Feature suggestion form](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=feature_suggestion.yml)

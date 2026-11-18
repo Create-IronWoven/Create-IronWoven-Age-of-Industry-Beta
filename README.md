@@ -6,7 +6,7 @@
   "record_type": "player_facing_minecraft_version_and_no_backport_policy",
   "created_at": "unknown",
   "updated_at": "unknown",
-  "verified_at": "2026-11-18T00:00:00Z",
+  "verified_at": "2026-11-18T02:51:23Z",
   "source_ref": [
     "Private docs/MASTER_PROMPT.md and docs/PROJECT_STATUS.md establish Minecraft 1.21.1 as the current target baseline.",
     "Maintainer instruction: no backporting; a future move to a newer Minecraft version is conditional on the required mods being updated for that version."

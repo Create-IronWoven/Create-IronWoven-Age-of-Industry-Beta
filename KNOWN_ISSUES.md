@@ -64,4 +64,4 @@ The default client setting reproduced the client-only Shulker Box Tooltip `Previ
 
 ## Reporting a new issue
 
-Please check the [issue tracker](../../issues) before opening a new report. Include the exact error, what you were doing, and steps to reproduce it.
+Please check the [issue tracker](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues) before opening a new report. Include the exact error, what you were doing, and steps to reproduce it.

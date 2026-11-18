@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   forward-result:
-    if: startsWith(github.event.issue.title, '[Test Results]:')
+    if: contains(github.event.issue.title, '[Test Results]:')
     runs-on: ubuntu-24.04
     timeout-minutes: 3
     steps:

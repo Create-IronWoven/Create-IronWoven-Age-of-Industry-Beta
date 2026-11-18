@@ -87,7 +87,7 @@ jobs:
           from pathlib import Path
 
           required = {
-              "README.md": ["# Create IronWoven: Age of Industry", "## Platform", "## Feedback"],
+              "README.md": ["# Create IronWoven: Age of Industry", "## Tester navigation", "## Platform and project target", "## Reporting and privacy"],
               "BETA_STATUS.md": ["# Beta Status", "## Current status", "## Release readiness"],
               "MODS.md": ["# Mods in Create IronWoven: Age of Industry", "not a final release manifest"],
               "MOD_PLANS.md": ["# Mod Plans", "## Status meanings", "## Explicit exclusions",
@@ -140,7 +140,7 @@ jobs:
           }
           errors = []
           for label, target in protected.items():
-              if not re.search(rf"\\[{re.escape(label)}\\]\\(({re.escape(target)})(?:\\))", readme):
+              if not re.search(rf"\[{re.escape(label)}\]\({re.escape(target)}\)", readme):
                   errors.append(f"Protected navigation link missing or changed: {label}")
               if not target.startswith("https://") and not Path(target).is_file():
                   errors.append(f"Protected local destination missing: {target}")

@@ -1,5 +1,7 @@
 # Beta Functional Testing Checklist
 
+## Full Installed-Mod Functional Testing Checklist
+
 <!-- IRONWOVEN_CHRONOLOGY
 {"record_id":"IRONWOVEN-BETA-CHECKLIST-0001","record_type":"checklist","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-13T13:39:14Z","migrated_at":"2026-11-13T13:39:14Z","source_ref":["Beta TESTING_CHECKLIST.md — complete player-facing installed-mod functional test matrix, smoke/feature boundary, submission instructions, and current test queue reviewed 13 November 2026. This describes the published checklist only, not release approval or test authorization."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
 -->
@@ -39,7 +41,7 @@
 
 **Automation verification:** the current organization-owned Beta route has verified a valid first checklist write (issue [#12](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/12)), exact duplicate handling without a checklist write (issue [#11](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/11)), and invalid-heading rejection without a checklist write (issue [#10](https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/10)). A materially different retest is covered by unit tests, but its live end-to-end observation is deferred until a genuine retest is submitted. Existing completed results are never silently overwritten; retests remain open for maintainer review.
 
-## Smoke testing is not feature testing
+## Smoke test is not a function test
 
 A server startup, a successful login, or an item appearing in creative inventory/recipe viewer is not by itself a function-test pass. Smoke evidence establishes only the tested startup/world/login/shutdown scope; it does not mark any feature row Pass or grant beta/release distribution approval. Client-only mods require matching-client launch and client-side review. Libraries/APIs are validated through their dependent mods rather than invented standalone gameplay tests.
 
@@ -77,8 +79,8 @@ Use creative inventory or a recipe viewer only when one is present in the tested
   "record_id": "IRONWOVEN-BETA-CHECKLIST-REORGANIZATION-20261118-0001",
   "record_type": "current_checklist_structure_and_test_automation_status",
   "created_at": "unknown",
-  "updated_at": "2026-11-18T05:39:24+01:00",
-  "verified_at": "2026-11-18T05:39:24+01:00",
+  "updated_at": "2026-11-18T04:42:37Z",
+  "verified_at": "2026-11-18T04:42:37Z",
   "source_ref": [
     "Beta issue #12, forwarder run 44232736737 and private processor run 44232749911 prove a current organization-owned valid first checklist write; the issue was completed and exactly one Pending row was updated.",
     "Beta issue #11, forwarder run 44231996038 and private processor run 44232007075 prove exact duplicate handling; issue #11 closed as duplicate and the checklist blob remained unchanged.",

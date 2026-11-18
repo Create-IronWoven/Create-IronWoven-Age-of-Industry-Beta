@@ -17,18 +17,23 @@ on:
       - 'MOD_PLANS.md'
       - 'KNOWN_ISSUES.md'
       - 'TESTING_CHECKLIST.md'
-      - '.github/ISSUE_TEMPLATE/functional-test-report.yml'
       - '.github/workflows/forward-test-results.yml'
       - '.github/workflows/validate-mod-plans.yml'
   pull_request:
     paths:
       - 'README.md'
+      - 'CONTRIBUTING.md'
+      - 'DIMENSIONS.md'
+      - 'CHANGELOG.md'
+      - 'BETA_UPDATES.md'
+      - 'SUPPORT.md'
+      - 'archive/**'
+      - '.github/ISSUE_TEMPLATE/**'
       - 'BETA_STATUS.md'
       - 'MODS.md'
       - 'MOD_PLANS.md'
       - 'KNOWN_ISSUES.md'
       - 'TESTING_CHECKLIST.md'
-      - '.github/ISSUE_TEMPLATE/functional-test-report.yml'
       - '.github/workflows/forward-test-results.yml'
       - '.github/workflows/validate-mod-plans.yml'
   workflow_dispatch:
@@ -70,7 +75,7 @@ jobs:
                                 'PRIVATE_DISPATCH_URL', 'IRONWOVEN_PRIVATE_DISPATCH_URL',
                                 'urlsplit', 'api.github.com']
           missing_forwarder = [item for item in required_forwarder if item not in workflow]
-          hardcoded_private_endpoint = 'request = urllib.request.Request(\n              "https://api.github.com/repos/' in workflow
+          hardcoded_private_endpoint = 'request = urllib.request.Request(\\n              "https://api.github.com/repos/' in workflow
           headers = checklist.count('| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |')
           if missing or missing_forwarder or hardcoded_private_endpoint or headers == 0 or Path('scripts').exists():
               raise SystemExit(
@@ -140,7 +145,7 @@ jobs:
           }
           errors = []
           for label, target in protected.items():
-              if not re.search(rf"\[{re.escape(label)}\]\({re.escape(target)}\)", readme):
+              if not re.search(rf"\\[{re.escape(label)}\\]\\({re.escape(target)}\\)", readme):
                   errors.append(f"Protected navigation link missing or changed: {label}")
               if not target.startswith("https://") and not Path(target).is_file():
                   errors.append(f"Protected local destination missing: {target}")

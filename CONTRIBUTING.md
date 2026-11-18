@@ -45,14 +45,14 @@ Use the **Functional test result** issue form for a completed test action from t
 
 **Privacy notice:** GitHub publicly displays the account that opened an issue as its author. The form's nickname field does not hide or anonymize that GitHub account. Do not submit through the public issue form if you need your GitHub account identity to remain private.
 
-The private processor validates reports before changing the checklist. Valid checklist-row updates are still undergoing final verification. After submitting, check the checklist for the result; do not manually edit checklist rows or submit duplicate reports just because an update is not immediately visible. If processing fails or a report needs review, leave the issue open and follow the maintainer's instructions.
+The private processor validates reports before changing the checklist. The current organization-owned Beta route has verified a valid first checklist write (issue #12), exact duplicate handling without a checklist write (issue #11), and invalid-heading rejection without a checklist write (issue #10). A materially different retest is covered by unit tests, but its live end-to-end observation is deferred until a genuine retest is submitted. After submitting, check the checklist for the result; do not manually edit checklist rows or submit duplicate reports just because an update is not immediately visible. If processing fails or a report needs review, leave the issue open and follow the maintainer's instructions.
 
 <!-- IRONWOVEN_CHRONOLOGY
 {"record_id":"IRONWOVEN-BETA-CONTRIBUTING-0006","record_type":"beta_private_test_result_processor_and_no_overwrite_boundary","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-13T13:59:11Z","migrated_at":"2026-11-13T13:59:11Z","source_ref":["Beta CONTRIBUTING.md — public Beta forwards only repository, issue number and event action; the private processor fetches the authoritative public issue, validates its source/fields/exact checklist target, and does not overwrite an existing result. Checked against the live Beta forwarder, Private process-public-test-results workflow, scripts/apply_test_result.py and docs/PUBLIC_TEST_AUTOMATION.md."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
 -->
 
 <!-- IRONWOVEN_CHRONOLOGY
-{"record_id":"IRONWOVEN-BETA-CONTRIBUTING-0007","record_type":"beta_valid_test_result_submission_end_to_end_verification","created_at":"unknown","updated_at":"unknown","migrated_at":"2026-11-13T13:59:11Z","source_ref":["Beta CONTRIBUTING.md — valid unique submission updating a matching checklist row, posting the success comment, and closing the issue remains pending end-to-end verification. docs/PUBLIC_TEST_AUTOMATION.md explicitly lists these positive-write, duplicate, and retest checks as still required. No test-result issue was submitted and no checklist row was changed during this chronology migration."],"timezone_display":"Europe/Amsterdam","chronology_status":"INCOMPLETE"}
+{"record_id":"IRONWOVEN-BETA-CONTRIBUTING-0007","record_type":"beta_valid_test_result_submission_end_to_end_verification","created_at":"unknown","updated_at":"unknown","migrated_at":"2026-11-13T13:59:11Z","source_ref":["Beta CONTRIBUTING.md — valid unique submission updating a matching checklist row, posting the success comment, and closing the issue remains pending end-to-end verification. docs/PUBLIC_TEST_AUTOMATION.md explicitly lists these positive-write, duplicate, and retest checks as still required. No test-result issue was submitted and no checklist row was changed during this chronology migration."],"timezone_display":"Europe/Amsterdam","chronology_status":"HISTORICAL"}
 -->
 
 
@@ -79,3 +79,22 @@ Search existing issues first and include the Minecraft version, modpack version,
 ## Scope and repository boundaries
 
 This is a player feedback and beta testing repository, not the pack's source code repository. Please do not submit mod JARs, world saves, private configuration files, or large log bundles. Do not edit the testing checklist directly; submit results through the designated form. Feature suggestions are welcome, but not every suggestion will be accepted.
+
+<!-- IRONWOVEN_CHRONOLOGY
+{
+  "record_id": "IRONWOVEN-BETA-CONTRIBUTING-TEST-AUTOMATION-20261118-0001",
+  "record_type": "current_beta_test_result_automation_verification",
+  "created_at": "unknown",
+  "updated_at": "2026-11-18T05:39:24+01:00",
+  "verified_at": "2026-11-18T05:39:24+01:00",
+  "source_ref": [
+    "Beta issue #12 and forwarder/private processor runs 44232736737 / 44232749911 verify a valid first checklist write and completed issue closure.",
+    "Beta issue #11 and forwarder/private processor runs 44231996038 / 44232007075 verify exact duplicate handling and no checklist change.",
+    "Beta issue #10 and forwarder/private processor runs 42432977973 / 42432985663 verify invalid-heading rejection through the current organization-owned Beta route.",
+    "The current private processor unit suite covers materially different retests; live end-to-end retest observation remains deferred until a genuine retest report is submitted.",
+    "The prior CONTRIBUTING record IRONWOVEN-BETA-CONTRIBUTING-0007 is retained as HISTORICAL because its awaiting-first-write statement was superseded by the verified issue #12 event."
+  ],
+  "timezone_display": "Europe/Amsterdam",
+  "chronology_status": "CURRENT"
+}
+-->

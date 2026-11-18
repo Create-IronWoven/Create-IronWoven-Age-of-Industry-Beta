@@ -21,3 +21,4 @@ Historical records retained for troubleshooting and comparison. These files are 
 
 - [Historical test-folder inventory snapshot — 11 November 2026](MODS_HISTORICAL_TEST_FOLDER_SNAPSHOT_2026-11-11.md) — dated mod-folder tables moved out of the current `MODS.md`; use the current page for accepted mod-set status.
 - [Archived beta checklist evidence — 11 November 2026](TESTING_CHECKLIST_HISTORICAL_EVIDENCE_2026-11-11.md) — superseded smoke attempts, removed candidate/API action rows, old inventory observations, and detailed held Aeronautics Structures evidence; not a live test queue.
+- [Retired checklist snapshot and smoke evidence — 18 November 2026](TESTING_CHECKLIST_SNAPSHOT_AND_SMOKE_EVIDENCE_2026-11-18.md) — the former live-page snapshot, pack-level smoke records, dated retests and partial observations, preserved verbatim; not current tester instructions.

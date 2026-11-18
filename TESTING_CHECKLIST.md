@@ -6,11 +6,9 @@
 {"record_id":"IRONWOVEN-BETA-CHECKLIST-0001","record_type":"checklist","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-13T13:39:14Z","migrated_at":"2026-11-13T13:39:14Z","source_ref":["Beta TESTING_CHECKLIST.md — complete player-facing installed-mod functional test matrix, smoke/feature boundary, submission instructions, and current test queue reviewed 13 November 2026. This describes the published checklist only, not release approval or test authorization."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
 -->
 
-
 **Last reviewed:** 13 November 2026  
 **Target:** Minecraft 1.21.1 · NeoForge 21.1.265 · Java 21
 
-**Target:** Minecraft 1.21.1 · NeoForge 21.1.265 · Java 21  
 **Approved download source:** CurseForge only  
 **Checklist scope:** Player-facing functional tests for the currently listed mod/version sections. This is not a complete file manifest or release approval; see [MODS.md](MODS.md) for current accepted mod-set status.
 
@@ -96,6 +94,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 ## A. Create, Aeronautics, vehicles and transport
 
 ### Create 6.0.10
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -112,6 +111,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test speed/rotation control, one press/mixer/deployer chain, item/fluid transport and save/restart. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create Aeronautics 1.3.2
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -128,6 +128,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test propulsion/lift, steering, controls, collision/physics, disassembly/reassembly and second-player sync. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Simulated 1.3.2
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -139,6 +140,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test assembly/disassembly, anchoring, controls, redstone interaction, collision and save/reload. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Offroad 1.3.2
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -155,6 +157,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test wheel power, steering, traction, stopping, collision and multiplayer sync. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create Kinetic 1.4.3
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -171,6 +174,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Verify hitboxes, particles, controls and physics on client/server. Recheck existing loot-table and mixin findings. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create Aeronautics Structures 1.1.0-Beta-3.1 (test-only; ON HOLD)
+
 **Current status: ON HOLD.** The candidate is not eligible for the next beta and no new tests are active. The previous test results below remain historical evidence only: the 16-colour override passed runtime testing, all 11 valid Overworld structure IDs have visual-presence evidence, and the specific crashed-airship chest was diagnosed without a loot-table assignment. The official JAR remains unchanged; the test-only override is not approved for distribution. Reopen only after a new official CurseForge 1.21.1 NeoForge file is reviewed and both loot defects are verified fixed, or a documented exception is explicitly approved. Do not submit new feature-test results for this candidate while it remains held.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -212,6 +216,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Check remaining structure/container loot and trader behavior. | **PAUSED — candidate ON HOLD; do not test until re-opened** | Not recorded | Not recorded | DD-MM-YYYY | The previous beta-tester handoff is suspended while this candidate is held. Resume only after the exact updated CurseForge file and both known loot defects have been reviewed and the hold is lifted. |
 
 ### Create Aeronautics Curios Compat 2.3 — metadata difference explained; feature testing pending
+
 **Current status:** Exact CurseForge Release file 9076258 is confirmed as version 2.3. The embedded NeoForge descriptor reports 2.0, but this is an explained metadata difference, not evidence that the JAR is outdated; do not rename or replace the file for this reason. Assigned-slot behavior was user-reported working, but repeatable synchronized feature validation remains Not tested.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -228,6 +233,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test overlay/engineer detection. Equip Linked Typewriter in Curios and activate (default Y) to operate linked typewriter/Redstone Links. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create Aeronautics: Copycat Wing 1.0.4
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -249,6 +255,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test on a moving contraption. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create Aeronautics: Transmission & Linkage 0.2.9
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -265,6 +272,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Verify it transfers the intended movement/control across running and assembled contraptions. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create Big Cannons 5.11.7
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -286,6 +294,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test Create-powered loading/aiming, firing, projectile effect/recoil, reload and autocannon if used. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Steam 'n' Rails 0.3.0-beta.2 — exact-file review complete; mod-set disposition pending
+
 **Current status:** The 10 November profiles contain Beta file 8522154 on both sides with matching JAR hashes. Exact CurseForge file, dependency and side review is complete; the recorded Create 6.0.10 and NeoForge 21.1.265 meet the published minimums. The observed file remains a Beta, while the older accepted baseline is alpha.2; explicit mod-set/package disposition is still pending. The 3 November alpha.2 feature result is archived and does not validate beta.2.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -307,6 +316,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Verify save/restart. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Blocks & Bogies 1.0.8
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -323,6 +333,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Configure drivers/axles, assemble train and verify style and operation. | Pass | Multiplayer | Ghosty | 16-11-2026 | it switses between boggie's ent the meanu pops up en i driven it (submitted in issue #12) |
 
 ### Create: Modern Train Parts 0.2.5
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -334,6 +345,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test pantograph deployment/retraction, shipping-container storage, wrench variants and train movement with parts attached. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Pantographs & Wires 0.2.3-C6 Beta
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -350,6 +362,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Verify wire connection and pantograph height adjustment on a moving train, including slopes/turns. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Rustic Structures 1.0.1
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -366,6 +379,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Inspect placement, loot and generation. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Structures Arise 176.49.50
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -382,6 +396,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Inspect integrity, placement, loot and chunk-edge generation. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Aeronautical Diesel 1.1.0
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -398,6 +413,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test wrench and automation. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: AeroPortals 1.3.6
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -414,6 +430,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Verify ship, pilot, passengers and decorations arrive intact. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Shield Generators 1.4.0
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -430,6 +447,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test activation, energy draw, boundary visualization, protection/interaction and multiplayer consistency. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### KineticGrip 1.0.5
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -446,6 +464,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Operate the handle controls and any player-usable tool (such as the chainsaw) included by the installed build. Verify movement/control and client/server interaction. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Sable 2.0.6 — base interactive SubLevel physics library
+
 **Current status:** Present in the active profile as the base SubLevel library used by Create/Aeronautics-related content. This is not the separate Waystones: Sable compatibility add-on. Beta testers own the feature checks below; no mod should be added or duplicated.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -465,7 +484,9 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test an installed Aeronautics/Sable SubLevel assembly: motion, forces, collision, entity movement and sublevel transitions. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Record the parent feature/mod and Sable version |
 | Save/restart or relog and verify SubLevel state and player/entity position persist correctly. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence |
 | Verify the corrected Sable/Copycats+ Catwalk physics selector behavior during normal use. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | The server log-level selector fix is not a feature pass |
+
 ### Strut Your Stuff 1.3.1
+
 **Current status:** Partial — local patched server/client test passed for the dedicated-server mixin issue and the shown Struts components render, but dependent-mod feature tests remain pending. The official CurseForge file and modpack manifest are unchanged, so release-level resolution remains open.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -485,9 +506,11 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Validate through dependent mods: spanning/collision structures, surface clipping, interaction and cable behavior/droop. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Check dedicated-server RenderSystem class-loading issue. | Passed on local patched profile | Disposable MinecraftServer-Test + matching CurseForge Create World profile; Minecraft 1.21.1 / NeoForge 21.1.265 | Not recorded | 06-11-2026 | 16:40–16:47 server/client/debug logs contain no RenderSystem or StrutRenderSystemAccessor; server reached Done, client joined, clean shutdown. Local patched JAR is not part of official CurseForge manifest. |
 | Inspect visible Struts beams/girders in-game. | Passed for shown examples | Disposable MinecraftServer-Test + matching CurseForge Create World profile | Not recorded | 06-11-2026 | 16:46 screenshots show metal Struts components rendering. Client log still warns that both waterlogged variants of girder_strut_structure have missing models; not every variant tested. |
+
 ## B. Create automation, energy, industry and build addons
 
 ### Create: Bits 'n' Bobs 2.3.5
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -499,6 +522,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test chain-drive transfer/carriage attachment, flywheel bearing rotation/battery behavior, wooden cogwheel swapping, dyeable fluid-pipe separation, chair and Nixie display. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create Cobblestone 1.5.1
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -515,6 +539,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Verify outputs, type switching, SU use and disabled-generator behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create Crafts & Additions 1.7.2
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -536,6 +561,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test rolling-mill rods/wires. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Curios Backtank 1.0.2
+
 **Current status:** Partial — Backpack + standard Backtank use in configured Back slots was reported; refill/consumption still open.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -552,6 +578,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test air capacity, refill, consumption and rendering/slot behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create Deco 2.1.3
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -568,6 +595,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Recheck placard fix and loot-table parsing. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Diesel Generators 1.3.15
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -584,6 +612,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Start diesel generator and test FE output, fuel consumption, upgrades and a representative machine/tool. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create Encased 1.10.0-fix1
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -600,6 +629,7 @@ Use creative inventory or a recipe viewer only when one is present in the tested
 | Test rotation, power/fluid transfer and persistent casing visuals. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Gadgets & Gizmos 1.2.10 (bundled)
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -619,6 +649,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 **Current test status:** no 2.0.0-Pre-Release-4 installation, startup test, feature test, or acceptance is authorized. Rebuild this section from the exact stable release notes only if the hold is lifted.
 
 ### Create: Dragons Plus 1.11.9
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -630,6 +661,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Use an Encased Fan to test Bulk Coloring with dye fluid, Bulk Freezing with Powder Snow, Bulk Ending with Dragon Head or Dragon's Breath fluid, and Bulk Sanding with Quicksand/supported block tag. Test Fluid Hatch take/deposit behavior on tanks and supported addon recipe integrations. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Liquid Fuel 3.0.0
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -646,6 +678,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify normal/superheated operation, duration, consumption and rejection of invalid fluids. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Fluids Be Gone! 1.0.1
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -662,6 +695,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify fluids in the mined path are voided when enabled, separate drill/rock-wheel config switches work, and fluids outside the mining path remain unchanged. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Framed 1.8.2
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -678,6 +712,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify placement, rotation, breaking and reload. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Enchantment Industry 2.5.4b
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -694,6 +729,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify inputs, outputs, XP/fluid handling, recipes and automation. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Numismatics 1.0.20
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -710,6 +746,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Use Vendor for buy/sell, Bank Terminal for deposit/withdraw, and Depositor price/redstone pulse for coin/card payments. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Pattern Schematics 2.0.10
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -731,6 +768,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify placement, orientation, repeat behavior and resource requirements. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Power Grid 0.6.2
+
 **Current status:** Partial — internal Windows native loading and client connection passed using the official 0.6.1 Windows DLL in disposable `.pg-native` folders while keeping PowerGrid 0.6.2 unchanged. Electrical-network/component behavior is reserved for beta testers, not another internal maintainer task. Linux is a separate future platform test requiring its own `.so`. The local DLL workaround is not part of the distributable beta package; a release-safe native-resource packaging decision remains open.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -760,7 +798,9 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Build and operate a small electrical network with source, compatible wires, transformer (if used), and consumers. | **Reserved for beta testers — not part of internal fix pass** | Beta release package / target test platform | Beta tester | During beta | Verify network formation, power delivery, stability, solver errors, and whether the beta package includes the platform-native library or uses Java fallback. Record logs and platform. |
 | Test components and Java fallback separately. | **Reserved for beta testers** | Beta release package / target test platform | Beta tester | During beta | Exercise representative PowerGrid components with the release package. Record whether native or Java fallback is active and any behavior/errors. |
 | Record Linux native solver separately. | Future platform validation — not yet available | Linux test host (not yet set up) | Maintainer / tester | When Linux host is ready | Linux requires `native/linux/libpowergridNative7.so`; never use the Windows DLL on Linux. |
+
 ### Create: Sound of Steam / Pipe Organs 0.9.2.1
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -782,6 +822,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Test pitch, sound, range, persistence and multiplayer audio. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: The Factory Must Grow Community Edition 1.3.3a (accepted mod-set version; feature tests pending)
+
 **Current status:** The authorised shared client/server smoke test passed on 10 November 2026 and exact client/server SHA-256 parity was confirmed in the active-profile archive audit. The 1.3.3a version is accepted into the active mod set. Feature tests and Electric Diode/Fuse Block visual checks remain Pending; Custom License distribution review is separate. The smoke result is not a feature pass.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -816,7 +857,9 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify glass-pipe clone item-stack behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Verify intended connection behavior between cast-iron and aluminium blocks. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Test Unified Fuels integration. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
 ### FastSuite 6.0.7 — accepted mod-set version; feature actions pending
+
 **Current status:** Exact CurseForge file 7527945, Placebo dependency and matching client/server hashes were verified. Authorised combined-profile smoke with Placebo 9.9.4 and FastFurnace 9.0.1 passed on 11 November. No isolated optimizer test is required. Recipe-behavior and optional performance actions remain for beta testers.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -838,6 +881,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Optional beta performance comparison under a repeatable workload; do not treat smoke evidence as proof of a performance gain. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Profiling belongs to beta testers; record exact workload and evidence |
 
 ### FastFurnace 9.0.1 — profile present; final mod-set/package disposition pending
+
 **Current status:** Exact CurseForge file 6751551 is a 1.21.1 NeoForge Release, MIT, Client & Server; required Placebo is present at 9.9.4. Exact file/dependency/side preflight PASS and combined-profile smoke PASS on 11 November. Do not add a duplicate or repeat the smoke test. Feature actions apply only if this version is retained at release freeze.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -854,6 +898,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify furnace automation/input-output and expected behavior after save/restart in single-player or multiplayer as applicable. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Feature test only; smoke PASS is not a function pass |
 
 ### Create: Unified Fuels 1.0.4
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -870,6 +915,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify shared values/consumption, gas-vs-liquid rules, toggles and config after restart. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Vibrant Vaults 0.3.2
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -886,6 +932,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Insert/extract items, change color/orientation and test package frogport/stock link/packager features present. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create Slice & Dice 4.3.4
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -902,6 +949,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify ingredients, output, transport and recipe visibility. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Bells & Whistles 0.4.7
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -913,6 +961,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Test representative decorative train/building blocks, variants, placement, rotation, collision and rendering on moving contraptions. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Create: Copycats+ 3.0.9
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -929,6 +978,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify appearance, shape/state, rotation and moving-contraption rendering. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Copycats+ Additions 1.5.0
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -945,6 +995,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify Aeronautics Copycat Wing integration. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Design n' Decor 2.2b
+
 **Current status:** Pending — startup passed; logs contain many loot-table parse errors. Drop behavior remains open.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -963,6 +1014,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 ## C. Building, food, storage, world generation and exploration
 
 ### Chipped 4.0.2
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -979,6 +1031,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Craft several variants, place/break them and verify drops/models. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Farmer's Delight 1.3.4
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -995,6 +1048,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Test container interactions. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Mama's Herbs and Harvest 1.21.1-24
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1011,6 +1065,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Test growth stages, drops, food/processing recipes and Botany Pots integration. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Botany Pots 21.1.44
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1027,6 +1082,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Test growth/harvest, drops and hopper input/output automation. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Construction Sticks 1.5.0
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1043,6 +1099,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify direction, range, item use, limits, claim protection and stop/undo behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Every Compat 2.11.57
+
 **Current status:** Partial — the paired 2.11.57 + Moonlight 3.8.2 runtime smoke test passed and was accepted for the baseline; duplicate Golden Cherry Leaves registration and large block footprint remain. Block/recipe/model/texture/drop feature checks are delegated to beta testers.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1059,6 +1116,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify recipes, models, drops and client/server registry sync. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Lootr 1.11.38.127
+
 **Current status:** Partial — chest opening and loot presence user-confirmed; second-player personal loot unverified.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1075,6 +1133,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify independent personal loot, container persistence and multiplayer synchronization. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Sophisticated Backpacks 3.26.21.2249
+
 **Current status:** Shared client/server smoke PASS — 10 November 2026; exact client/server SHA-256 parity confirmed in the active-profile archive audit. Backpacks 3.26.21.2249 with Core 1.5.32.2464 is accepted into the active mod set. Feature validation remains Pending — beta tester validation.
 
 **Supporting library:** Sophisticated Core 1.5.32.2464 is required by this Backpacks version and is tested through the Backpack actions below; it has no separate player-facing gameplay test. Keep Create Integration 0.2.3.194 and Sophisticated Air Tank 1.0.1-beta unchanged while testing these actions. Their separate tests remain in their own sections.
@@ -1108,6 +1167,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Test the Advanced Jukebox upgrade: start playback, die and respawn, then confirm playback stops and does not continue unexpectedly. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | This checks the behavior addressed by the 3.26.21 update. |
 
 ### Sophisticated Backpacks Create Integration 0.2.3
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1124,6 +1184,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Verify insertion/extraction and normal backpack behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Sophisticated Air Tank 1.0.1-beta
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1140,6 +1201,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Test air supply/consumption, capacity indicator and supported backpack/Curios interactions. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Oh The Biomes We've Gone 2.6.3
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1156,6 +1218,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Check configs/datapacks. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Regions Unexplored 0.6.3
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1177,6 +1240,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Fresh disposable Nether: use biome lookup and explore new chunks to confirm representative Regions Unexplored Nether biomes generate; keep the production world unchanged. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Oh The Trees You'll Grow 5.3.5
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1192,7 +1256,9 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 | Grow representative added trees. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Test sapling growth, leaves/log drops, wood sets and leaves decay. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
  
+
 ### Integrated Villages 1.3.3+1.21.1 (Overworld candidate)
+
 **Current status:** Partial — corrected dependencies load; multiple village IDs are locatable, but full structure and performance validation remain open.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1226,6 +1292,7 @@ Reconsider only after the author publishes a clearly stable, non-prerelease 2.x 
 Dependency evidence: a prior corrected test profile used Supplementaries 3.4.0 and Integrated API 1.9.1 and reached Done. The 10 November active profiles now show Supplementaries 4.0.2 and Integrated API 1.9.1 on both sides. Supplementaries' exact CurseForge file/dependency compatibility and update disposition remain open; the older 3.4.0 smoke does not prove the 4.0.2 version. Validate Integrated API through Integrated Villages; no standalone function test is required.
 
 ### Create Oh The Biomes We've Gone Compatibility 1.0 (active JAR filename; embedded metadata not separately verified)
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1242,6 +1309,7 @@ Dependency evidence: a prior corrected test profile used Supplementaries 3.4.0 a
 | Verify compatibility recipes/registrations, placement, drops and wood/biome integration. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Nature's Compass 3.4.0
+
 **Current status:** Smoke-only — earlier startup/login smoke passed; actual search behavior remains Pending for beta testers.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1258,6 +1326,7 @@ Dependency evidence: a prior corrected test profile used Supplementaries 3.4.0 a
 | Verify result, distance/direction, no-result message and repeat search. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Explorer's Compass 3.4.0
+
 **Current status:** Smoke-only — earlier startup/login smoke passed; actual search behavior remains Pending for beta testers.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1276,6 +1345,7 @@ Dependency evidence: a prior corrected test profile used Supplementaries 3.4.0 a
 ## D. Player interface, server tools and information mods
 
 ### AppleSkin 3.0.9
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1292,6 +1362,7 @@ Dependency evidence: a prior corrected test profile used Supplementaries 3.4.0 a
 | Compare to expected vanilla values. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### FTB Chunks 2101.1.23
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1308,6 +1379,7 @@ Dependency evidence: a prior corrected test profile used Supplementaries 3.4.0 a
 | Verify map, team permissions, boundaries, force-load controls, protection and reconnect persistence. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### FTB Teams 2101.1.12
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1329,6 +1401,7 @@ Dependency evidence: a prior corrected test profile used Supplementaries 3.4.0 a
 | Check ownership/permissions and FTB Chunks team-claim behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### InControl! 10.3.1
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1345,6 +1418,7 @@ Dependency evidence: a prior corrected test profile used Supplementaries 3.4.0 a
 | Verify allowed/blocked mobs/loot and restart persistence. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Jade 15.10.6
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1361,6 +1435,7 @@ Dependency evidence: a prior corrected test profile used Supplementaries 3.4.0 a
 | Verify tooltips, states, inventories/fluid data and Create/Aeronautics compatibility. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Enchantment Descriptions 21.1.11
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1377,6 +1452,7 @@ Dependency evidence: a prior corrected test profile used Supplementaries 3.4.0 a
 | Verify accurate descriptions and layout. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Shulker Box Tooltip 5.1.9+1.21.1
+
 **Current status:** Partial — local Supplementaries Sack and Lunch Basket previews now visually pass, and the client config workaround suppresses the dedicated-server `PreviewRenderer` error. Generic filled-shulker preview behavior and the release trade-off for disabling server integration remain untested. Upstream [issue #263](https://github.com/MisterPeModder/ShulkerBoxTooltip/issues/263) remains relevant.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1403,6 +1479,7 @@ Dependency evidence: a prior corrected test profile used Supplementaries 3.4.0 a
 | Assess the release trade-off for disabling server integration. | Pending | Not recorded | Not recorded | DD-MM-YYYY | Remote/server-supplied extras such as Ender Chest synchronization are unavailable while `preview.serverIntegration=false`. Decide whether this is acceptable for the pack or wait for upstream server-safe fix. |
 
 ### Memory Settings 6.0
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1419,6 +1496,7 @@ Dependency evidence: a prior corrected test profile used Supplementaries 3.4.0 a
 | Measure memory only in controlled same-workload comparison, not from startup alone. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### ModernFix 5.27.27
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1441,15 +1519,19 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 **spark 1.10.124:** present in the 10 November active-profile inventory. Profiling remains deferred to beta testers and is not an internal maintainer prerequisite.
 
 ### Balm 21.0.67 — shared support library
+
 **Current status:** Present as a top-level JAR in the 10 November active-profile inventory. No independent gameplay test is assumed; validate its API through exact installed consumers retained in the release profile. Balm presence alone does not approve Waystones or another travel mod.
 
 ### Integrated API 1.9.1 — Integrated Villages support dependency
+
 **Current status:** Present as a top-level JAR in the 10 November active-profile inventory and used by Integrated Villages. No standalone gameplay test is required; validate through the Integrated Villages feature actions above.
 
 ### Placebo 9.9.4 — FastSuite / FastFurnace support dependency
+
 **Current status:** Accepted support dependency, exact CurseForge file 9153039; shared profile hash parity and 11 November combined-profile smoke PASS. Validate through FastSuite and FastFurnace actions below; no standalone gameplay test.
 
 ### Supplementaries 4.0.2 — exact-file review complete; dependency and licence gates remain open
+
 **Current status:** Exact CurseForge Release file 9211734 is confirmed for Minecraft 1.21.1 NeoForge on both sides, and Moonlight Lib is a required project dependency. The profile contains Moonlight 3.8.2, but available version-matched public evidence does not establish the exact minimum for Supplementaries 4.0.2; do not assume 3.8.3 is mandatory solely because it is newer. The Shulker Box Tooltip server-provider issue and limited client workaround remain documented separately. Feature actions belong to beta testers only if this observed version is retained in the final beta profile. Exact-file review is complete; dependency-version closure and Custom License review remain open.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1468,6 +1550,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 ## F. Libraries, APIs and shared support components
 
 ### Architectury 13.0.11
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1479,6 +1562,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Verify dependent mods initialize on client/server and shared event/network hooks work during login and interaction. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Athena 4.0.6
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1495,6 +1579,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Check for missing model/texture errors. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Azimuth 1.4.10
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1511,6 +1596,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Check class-loading logs. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Bookshelf 21.1.81
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1527,8 +1613,11 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Dependency-only. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Cloth Config API 15.0.140
+
 **Current status:** Present support API. More Culling is not in the 10 November active-profile inventory, so its former config action is not applicable. No standalone gameplay test is required; exercise configuration screens only through installed consumers that actually declare Cloth Config.
+
 ### CorgiLib 5.0.0.10
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1545,6 +1634,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Check missing-class/registration errors. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Cupboard 4.2
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1556,6 +1646,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Verify Memory Settings and other dependent config integrations initialize and read/write settings. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Curios API 9.5.1
+
 **Current status:** Partial — two Back + one Head slot and selected item uses were reported in new-world checks; full sync/older-player data still open.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1567,6 +1658,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Verify slot registry, counts, equip/unequip, client/server sync and persistence with Aeronautics/Backtank. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### DragonLib 3.0.29
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1578,6 +1670,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Verify dependent DragonLib consumers (including Pantographs & Wires) register, render and execute their behavior. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Ferrite Core 7.0.3
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1594,10 +1687,15 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Check startup/registry stability. Do not alter production based only on benchmark. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Flywheel 1.0.6 — Create/Sable support component
+
 **Current status:** Flywheel 1.0.6 is declared by Sable 2.0.6 as an optional client support dependency; no separate top-level Flywheel JAR appears in the 10 November inventory. Do not add a duplicate standalone JAR. Test Create contraption rendering through installed Create/Aeronautics feature rows.
+
 ### Forge Config API Port 21.1.3 — Sable source dependency; no separate profile JAR
+
 **Current status:** Sable 2.0.6's current source declares Forge Config API Port 21.1.3 as a common implementation dependency. No separate top-level Forge Config API Port JAR appears in the 10 November active-profile inventory. Do not add a duplicate or claim a separate installed mod. Validate config-dependent behavior through Sable's feature actions; final package freeze must reconcile whether the exact Sable file bundles or requires this dependency as a CurseForge manifest entry.
+
 ### FTB Library 2101.1.39
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1614,6 +1712,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Dependency-only. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### FTB XMod Compat 21.1.14
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1625,8 +1724,11 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Verify selected team/stage/permission integration is detected and behaves correctly. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Gadgets & Gizmos Library 1.2.10 — bundled support component
+
 **Current status:** This library is bundled in the existing gadgets-and-gizmos V1.2.10 parent JAR; it is not a separately selected top-level JAR. Validate through the installed bundled G&G feature set. The 2.0.0-Pre-Release-4 parent candidate remains ON HOLD; do not install or test.
+
 ### GeckoLib 4 4.9.3
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1638,6 +1740,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Verify animated entities/blocks and Aeronautics Structures visuals animate correctly on client. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Kotlin for Forge 5.12.0
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1654,6 +1757,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Dependency-only. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Lithostitched 1.8.1
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1670,6 +1774,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Check registry conflicts. Preserve production worldgen. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### MezzConfig 0.6.10
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1686,6 +1791,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Standalone and bundled copies must not duplicate. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Moonlight Lib 3.8.2
+
 **Current status:** Partial — accepted as Every Compat 2.11.57's required dependency after the paired Windows runtime smoke test; feature-level dependent behavior remains assigned to beta testers.
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1697,8 +1803,11 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Verify dependent features (including Every Compat) register resources/models without duplicate registry errors. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Ponder 1.0.82 — Create/Sable scene support
+
 **Current status:** Ponder 1.0.82 is declared by Sable 2.0.6 as a Create-related support dependency; no separate top-level Ponder JAR appears in the 10 November inventory. Do not add a duplicate standalone JAR. Beta testers should inspect Ponder scenes through installed Create/addon feature rows; record the parent feature tested.
+
 ### PrickleMC 21.1.11
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1715,6 +1824,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Dependency-only otherwise. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Resourceful Lib 3.0.12
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1731,6 +1841,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Check missing resource errors. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Ritchie's Projectile Library 2.1.2
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1747,12 +1858,15 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | Confirm client/server projectile synchronization. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Sable Companion 1.6.0 — embedded support component
+
 **Current status:** Sable 2.0.6's current NeoForge build declares Sable Companion 1.6.0 as a Jar-in-Jar API dependency. No separate top-level Sable Companion JAR is present in the 10 November active-profile inventory. No standalone gameplay test or additional JAR is required; validate support through the Sable actions above.
+
 ### Sophisticated Core 1.5.32.2464
+
 **Current status:** Accepted support dependency — shared client/server smoke PASS with Sophisticated Backpacks 3.26.21.2249 on 10 November 2026 and exact client/server SHA-256 parity confirmed. Core is a library and has no separate gameplay test. Validate its support through the Sophisticated Backpacks test actions above; do not submit a separate standalone Core feature result.
 
-
 ### TerraBlender 4.1.0.8
+
 **Current status:** Pending
 
 <!-- IRONWOVEN_CHRONOLOGY
@@ -1769,6 +1883,7 @@ No optional client rendering/performance mods are confirmed in the complete 10 N
 | No missing/duplicate regions. | Not tested | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 
 ### Veil 4.3.2 — embedded Sable support library
+
 **Current status:** Sable 2.0.6's current NeoForge build packages Veil 4.3.2 through Jar-in-Jar. No separate top-level Veil JAR is present in the 10 November active-profile inventory. Do not test it as a separate installed mod or assume Sodium/Iris are present. Validate support through Sable's installed dependent rendering only.
 
 ## Global functional-test completion gate

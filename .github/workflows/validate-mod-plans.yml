@@ -5,6 +5,13 @@ on:
     branches: [main]
     paths:
       - 'README.md'
+      - 'CONTRIBUTING.md'
+      - 'DIMENSIONS.md'
+      - 'CHANGELOG.md'
+      - 'BETA_UPDATES.md'
+      - 'SUPPORT.md'
+      - 'archive/**'
+      - '.github/ISSUE_TEMPLATE/**'
       - 'BETA_STATUS.md'
       - 'MODS.md'
       - 'MOD_PLANS.md'
@@ -108,4 +115,55 @@ jobs:
 
           print("PASS: all six player-facing entry pages exist and retain their required sections.")
           print("PASS: the functional checklist remains distinct from routine smoke testing.")
+          PY
+
+      - name: Validate protected tester navigation and official branding
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          readme = Path("README.md").read_text(encoding="utf-8")
+          protected = {
+              "Open beta tester application": "https://github.com/alexth110987/Create-IronWoven-Age-of-Industry/issues/new?template=beta_application.yml",
+              "Current beta status": "BETA_STATUS.md",
+              "Mods in the current test pack": "MODS.md",
+              "Planned mods and project decisions": "MOD_PLANS.md",
+              "Testing progress": "TESTING_CHECKLIST.md",
+              "Submit test results": "https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/new?template=functional-test-report.yml",
+              "Known issues": "KNOWN_ISSUES.md",
+              "Dimensions and exploration": "DIMENSIONS.md",
+              "Changelog": "CHANGELOG.md",
+              "Beta updates": "BETA_UPDATES.md",
+              "Support and troubleshooting": "SUPPORT.md",
+              "Report a problem or suggest an idea": "https://github.com/Create-IronWoven/Create-IronWoven-Age-of-Industry-Beta/issues/new/choose",
+          }
+          errors = []
+          for label, target in protected.items():
+              if not re.search(rf"\\[{re.escape(label)}\\]\\(({re.escape(target)})(?:\\))", readme):
+                  errors.append(f"Protected navigation link missing or changed: {label}")
+              if not target.startswith("https://") and not Path(target).is_file():
+                  errors.append(f"Protected local destination missing: {target}")
+
+          forms = (
+              ".github/ISSUE_TEMPLATE/functional-test-report.yml",
+              ".github/ISSUE_TEMPLATE/bug_report.yml",
+              ".github/ISSUE_TEMPLATE/feature_suggestion.yml",
+              ".github/ISSUE_TEMPLATE/compatibility_report.yml",
+          )
+          for form in forms:
+              if not Path(form).is_file():
+                  errors.append(f"Expected issue form is missing: {form}")
+
+          logo_url = "assets/Ironwoven_%20Age%20of%20Industry.v2.png"
+          logo_file = Path("assets/Ironwoven_ Age of Industry.v2.png")
+          if f"]({logo_url})" not in readme or not logo_file.is_file():
+              errors.append("Official IronWoven logo/banner reference or source file is missing.")
+
+          if errors:
+              for error in errors:
+                  print(f"::error::{error}")
+              raise SystemExit(1)
+          print("PASS: all 12 protected navigation links retain their intended destinations.")
+          print("PASS: application and test-result forms, issue chooser forms, and official logo are present.")
           PY

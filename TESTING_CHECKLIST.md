@@ -79,14 +79,14 @@ Use creative inventory or a recipe viewer only when one is present in the tested
   "record_id": "IRONWOVEN-BETA-CHECKLIST-REORGANIZATION-20261118-0001",
   "record_type": "current_checklist_structure_and_test_automation_status",
   "created_at": "unknown",
-  "updated_at": "2026-11-18T04:42:37Z",
-  "verified_at": "2026-11-18T04:42:37Z",
+  "updated_at": "2026-11-18T04:46:27Z",
+  "verified_at": "2026-11-18T04:46:27Z",
   "source_ref": [
     "Beta issue #12, forwarder run 44232736737 and private processor run 44232749911 prove a current organization-owned valid first checklist write; the issue was completed and exactly one Pending row was updated.",
     "Beta issue #11, forwarder run 44231996038 and private processor run 44232007075 prove exact duplicate handling; issue #11 closed as duplicate and the checklist blob remained unchanged.",
     "Beta issue #10, forwarder run 42432977973 and private processor run 42432985663 prove current organization-owned forwarding and invalid-heading rejection without a checklist write.",
     "Private processor unit tests cover materially different retests; a live end-to-end retest observation remains deferred until a genuine retest report arrives.",
-    "The 18 November checklist reorganization preserves the complete A-F mod/action matrix byte-for-byte, including exact mod headings, table headers, action rows, and tester results. The dated snapshot and smoke/partial evidence block is moved verbatim to the linked historical archive."
+    "The 18 November checklist reorganization preserves the complete A-F mod/action matrix byte-for-byte, including exact mod headings, table headers, action rows, and tester results. The dated snapshot and smoke/partial evidence block is moved with its original evidence and chronology metadata preserved; only relative Markdown links are rebased for the archive location."
   ],
   "timezone_display": "Europe/Amsterdam",
   "chronology_status": "CURRENT"

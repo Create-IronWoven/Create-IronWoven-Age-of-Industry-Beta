@@ -2,7 +2,7 @@
 
 **Inventory status:** The dated test-folder tables were moved to [the historical snapshot archive](archive/MODS_HISTORICAL_TEST_FOLDER_SNAPSHOT_2026-11-11.md). This page now summarizes accepted mod-set updates and unresolved working-profile observations; it is not the complete current file inventory or a release manifest.
 <!-- IRONWOVEN_AUTO_VERSION -->
-**Current Ironwoven pack version:** `v0.1.101.5` — release `0`, content revision `1`, `101` top-level server mod JARs, and `5` active accepted bug fixes.
+**Current Ironwoven pack version:** `v0.1.102.5` — release `0`, content revision `1`, `101` top-level server mod JARs, and `5` active accepted bug fixes.
 
 **This page is not a final release manifest.** It summarizes smoke-qualified mod-set updates and unresolved working-profile observations; it does not publish the final CurseForge client/server package inventory.
 

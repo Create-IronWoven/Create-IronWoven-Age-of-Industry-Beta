@@ -101,7 +101,7 @@ Welcome to the official beta tester hub for **Create IronWoven: Age of Industry*
 **Development status:** Internal testing. This is not a downloadable public beta release. No server download is currently available. A successful startup smoke test does not mean every mod feature has been validated or that a release is approved.
 
 <!-- IRONWOVEN_AUTO_VERSION -->
-**Current Ironwoven pack version:** `v0.1.102.5` — release `0`, content revision `1`, `102` matching screenshot-listed mod JARs (after documented exclusions), and `5` active accepted bug fixes.
+**Current Ironwoven pack version:** `v0.1.107.5` — release `0`, content revision `1`, `107` matching screenshot-listed mod JARs (after documented exclusions), and `5` active accepted bug fixes.
 
 ## Quick start
 

@@ -1,7 +1,7 @@
 # Beta Status
 
 <!-- IRONWOVEN_AUTO_VERSION -->
-**Current Ironwoven pack version:** `v0.1.107.5` — release `0`, content revision `1`, `107` matching screenshot-listed mod JARs (after documented exclusions), and `5` active accepted bug fixes.
+**Current Ironwoven pack version:** `v0.1.113.5` — release `0`, content revision `1`, `113` matching screenshot-listed mod JARs (after documented exclusions), and `5` active accepted bug fixes.
 **Release status:** Internal development; no downloadable public beta has been published.  
 **Last updated:** 13 November 2026  
 **Minecraft:** 1.21.1 · **NeoForge:** 21.1.265 · **Java:** 21

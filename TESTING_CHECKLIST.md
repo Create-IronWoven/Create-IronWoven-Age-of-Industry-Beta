@@ -1952,3 +1952,230 @@ The former dated smoke attempts, old inventory-folder observations, removed clie
 | Configure a servo block's rotational output and verify the resulting movement. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Build a Control Stand and Copycat Control Stand and verify their control-module interactions. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
 | Test the copper and dyed steering-wheel variants, third pedal socket, and Drive-By-Sable compatibility. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+
+<!-- IRONWOVEN_COVERAGE_COLLECTION_BEGIN -->
+## Screenshot-managed coverage from paired profile inventories
+
+<!-- IRONWOVEN_COVERAGE_BEGIN filename="connectedglass-1.1.14-neoforge-mc1.21.jar" -->
+### Connected Glass 1.1.14
+**Current status:** Pending — Beta tester validation
+**Testing restriction:** Do not execute these actions until the maintainer clears the exact-version preflight gates.
+**Preflight gate:** Conditional distribution status and All Rights Reserved terms remain. Verify Core Lib/Fusion dependencies and exact client/server placement before testing.
+**Source identity:** [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/connected-glass/files/6811960)
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-COVERAGE-CONNECTED-GLASS-1-1-14","record_type":"screenshot_managed_beta_coverage","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-21T07:38:22Z","source_ref":["docs/archive/research/BETA_CHECKLIST_GAP_RESEARCH_2026-11-21.md — Connected Glass 1.1.14; exact CurseForge file 6811960 and proposed actions.","verified_at is the private research-source commit time, not a feature-test event.","Screenshot presence is coverage evidence only; it does not establish acceptance or testing authorization."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Place adjacent connected-glass blocks and verify seamless edges. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Build pane rows/corners/vertical stacks; verify side-section rules. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test isolated panes, mixed orientations and glass-to-pane boundaries. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test colored variants and clear glass adjacency. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Reload resources/relog; check missing textures and render errors. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Revisit large façades after chunk reload and observe rendering regressions. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+<!-- IRONWOVEN_COVERAGE_END -->
+
+<!-- IRONWOVEN_COVERAGE_BEGIN filename="create_aquatic_ambitions-1.21.1-2.0.4.jar" -->
+### Create: Aquatic Ambitions 2.0.4
+**Current status:** Pending — Beta tester validation
+**Testing restriction:** Do not execute these actions until the maintainer clears the exact-version preflight gates.
+**Preflight gate:** Exact source identity researched; exact-version authorization and canonical mod-set acceptance remain unestablished.
+**Source identity:** [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/create-aquatic-ambitions/files/8466444)
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-COVERAGE-CREATE-AQUATIC-AMBITIONS-2-0-4","record_type":"screenshot_managed_beta_coverage","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-21T07:38:22Z","source_ref":["docs/archive/research/BETA_CHECKLIST_GAP_RESEARCH_2026-11-21.md — Create: Aquatic Ambitions 2.0.4; exact CurseForge file 8466444 and proposed actions.","verified_at is the private research-source commit time, not a feature-test event.","Screenshot presence is coverage evidence only; it does not establish acceptance or testing authorization."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Build the Conduit Cage and inspect its Ponder scene. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Pump water and another supported fluid/potion into the Cage; verify awake duration, effect selection and target mode. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Run a fan channeling recipe with an active conduit/Cage catalyst; verify output and a negative control. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Verify prismarine from channeling flint and copper from prismarine. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Revive dead coral, harvest it with a Create Harvester and verify output. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test dry sponge channeling, limestone-to-Nautilus and Spiky Shell + Prismarine Alloy Rod trident crafting. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Verify JEI recipe display when installed; JEI remains optional. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+<!-- IRONWOVEN_COVERAGE_END -->
+
+<!-- IRONWOVEN_COVERAGE_BEGIN filename="loconautics-0.1.3BETA.jar" -->
+### Create: Loconautics 0.1.3BETA
+**Current status:** Pending — Beta tester validation
+**Testing restriction:** Do not execute these actions until the maintainer clears the exact-version preflight gates.
+**Preflight gate:** Beta build with deep Create/Sable integration. Verify Create Simulated 1.3 dependency closure, compatibility and licence/art restrictions before testing; use disposable worlds for derailment/collision checks.
+**Source identity:** [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/createloconautics/files/9627028)
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-COVERAGE-CREATE-LOCONAUTICS-0-1-3BETA","record_type":"screenshot_managed_beta_coverage","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-21T07:38:22Z","source_ref":["docs/archive/research/BETA_CHECKLIST_GAP_RESEARCH_2026-11-21.md — Create: Loconautics 0.1.3BETA; exact CurseForge file 9627028 and proposed actions.","verified_at is the private research-source commit time, not a feature-test event.","Screenshot presence is coverage evidence only; it does not establish acceptance or testing authorization."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Run a short train and verify carriage sublevels follow track without desync. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test bogeys, knuckle coupling/uncoupling, curves and stops. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test analog controller and locomotive gauges. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test turntables and rejoining routes. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test hoses/fluid transfer and connector exclusivity. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test schedules, stops and train mail. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test portal transfer and carrying another sublevel. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test controlled collision/derailment only in disposable world; verify recovery/cleanup. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Copy a panel with a schematic and test links; test sticker interactions. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Repeat with a second player; inspect physics desync, tick spikes, crashes and save integrity. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+<!-- IRONWOVEN_COVERAGE_END -->
+
+<!-- IRONWOVEN_COVERAGE_BEGIN filename="createornithopterglider-1.2.1-1.21.1.jar" -->
+### Create: Ornithopter Glider 1.2.1
+**Current status:** Pending — Beta tester validation
+**Testing restriction:** Do not execute these actions until the maintainer clears the exact-version preflight gates.
+**Preflight gate:** Exact source identity researched; confirm exact-version authorization and active-profile compatibility before feature testing.
+**Source identity:** [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/create-ornithopter-glider/files/9258973)
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-COVERAGE-CREATE-ORNITHOPTER-GLIDER-1-2-1","record_type":"screenshot_managed_beta_coverage","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-21T07:38:22Z","source_ref":["docs/archive/research/BETA_CHECKLIST_GAP_RESEARCH_2026-11-21.md — Create: Ornithopter Glider 1.2.1; exact CurseForge file 9258973 and proposed actions.","verified_at is the private research-source commit time, not a feature-test event.","Screenshot presence is coverage evidence only; it does not establish acceptance or testing authorization."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Assemble the recipe in a Mechanical Crafter. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Equip the glider and verify first/third-person model and animation. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Glide and charge flap boost; verify direction, activation and cooldown. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test cooldown boundary for repeated activation. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test durability limit and damaged texture. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Verify sound, animation and movement after landing, relog and multiplayer. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+<!-- IRONWOVEN_COVERAGE_END -->
+
+<!-- IRONWOVEN_COVERAGE_BEGIN filename="towed-1.2.0.jar" -->
+### Create: Towed 1.2.0
+**Current status:** Pending — Beta tester validation
+**Testing restriction:** Do not execute these actions until the maintainer clears the exact-version preflight gates.
+**Preflight gate:** Early-development warning remains relevant. Confirm Sable/Create Aeronautics dependency closure and use a backed-up disposable world before testing.
+**Source identity:** [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/create-towed/files/7997655)
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-COVERAGE-CREATE-TOWED-1-2-0","record_type":"screenshot_managed_beta_coverage","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-21T07:38:22Z","source_ref":["docs/archive/research/BETA_CHECKLIST_GAP_RESEARCH_2026-11-21.md — Create: Towed 1.2.0; exact CurseForge file 7997655 and proposed actions.","verified_at is the private research-source commit time, not a feature-test event.","Screenshot presence is coverage evidence only; it does not establish acceptance or testing authorization."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Connect a Rope Coupling to Rope Connector then mob; repeat in reverse order. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Verify rope gravity and movement follow both endpoints without jitter. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Extend/retract using Rope Winch. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Tow a mob over flat terrain and around turns; check clipping/force/detachment. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Break block, remove/kill entity and sever rope separately; verify cleanup and recovery item. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test multiple ropes per entity and configured maximum. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test multiplayer synchronization, server tick behavior and save/reload. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+<!-- IRONWOVEN_COVERAGE_END -->
+
+<!-- IRONWOVEN_COVERAGE_BEGIN filename="exposure-neoforge-1.21.1-1.9.21.jar" -->
+### Exposure 1.9.21
+**Current status:** Pending — Beta tester validation
+**Testing restriction:** Do not execute these actions until the maintainer clears the exact-version preflight gates.
+**Preflight gate:** Exact source identity researched; feature behavior remains untested; confirm exact-version authorization and compatibility review before testing.
+**Source identity:** [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/exposure/files/9529806)
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-COVERAGE-EXPOSURE-1-9-21","record_type":"screenshot_managed_beta_coverage","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-21T07:38:22Z","source_ref":["docs/archive/research/BETA_CHECKLIST_GAP_RESEARCH_2026-11-21.md — Exposure 1.9.21; exact CurseForge file 9529806 and proposed actions.","verified_at is the private research-source commit time, not a feature-test event.","Screenshot presence is coverage evidence only; it does not establish acceptance or testing authorization."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Open/close the Camera controls and verify normal player movement returns. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Load film, take photographs with different exposure/shutter settings and verify film consumption/results. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Develop and print photographs; verify each stage's inputs and outputs. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Attach/remove camera accessories and verify model/control changes. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Place a Camera Stand; test viewfinder, self-timer and sound origin. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test Camera Stand interaction in an FTB Chunks claim with authorized access; verify no stuck player and no claim bypass. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Display a photograph in a Photograph Frame/Interplanar Projector path; verify rendering and persistence after relog. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+<!-- IRONWOVEN_COVERAGE_END -->
+
+<!-- IRONWOVEN_COVERAGE_BEGIN filename="fancymenu_neoforge_3.10.0_MC_1.21.1.jar" -->
+### FancyMenu 3.10.0
+**Current status:** Pending — Beta tester validation
+**Testing restriction:** Do not execute these actions until the maintainer clears the exact-version preflight gates.
+**Preflight gate:** Custom License and exact 3.10.0 dependency closure remain gates. WaterMedia 3.0.1+ is required for video tests and is not established present; do not run video actions unless verified.
+**Source identity:** [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/fancymenu/files/9537151)
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-COVERAGE-FANCYMENU-3-10-0","record_type":"screenshot_managed_beta_coverage","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-21T07:38:22Z","source_ref":["docs/archive/research/BETA_CHECKLIST_GAP_RESEARCH_2026-11-21.md — FancyMenu 3.10.0; exact CurseForge file 9537151 and proposed actions.","verified_at is the private research-source commit time, not a feature-test event.","Screenshot presence is coverage evidence only; it does not establish acceptance or testing authorization."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Launch client and verify main-menu layout/navigation/back behavior. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Save a profile with title, version, author, description and icon. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Export .fmp and import in disposable client profile; verify menu setup. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Import newer-version profile and test warning plus keep-both/replace options. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Switch profiles; verify reload and persistence of both setups. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Restart client; verify menu settings persist without startup/resource errors. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test video elements only if WaterMedia 3.0.1+ is verified present and video is configured; otherwise mark video test blocked, not failed. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+<!-- IRONWOVEN_COVERAGE_END -->
+
+<!-- IRONWOVEN_COVERAGE_BEGIN filename="ftb-ultimine-neoforge-2101.1.15.jar" -->
+### FTB Ultimine 2101.1.15
+**Current status:** Pending — Beta tester validation
+**Testing restriction:** Do not execute these actions until the maintainer clears the exact-version preflight gates.
+**Preflight gate:** All Rights Reserved terms and exact FTB Library relation closure remain preflight checks; no feature authorization is inferred.
+**Source identity:** [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge/files/8231400)
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-COVERAGE-FTB-ULTIMINE-2101-1-15","record_type":"screenshot_managed_beta_coverage","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-21T07:38:22Z","source_ref":["docs/archive/research/BETA_CHECKLIST_GAP_RESEARCH_2026-11-21.md — FTB Ultimine 2101.1.15; exact CurseForge file 8231400 and proposed actions.","verified_at is the private research-source commit time, not a feature-test event.","Screenshot presence is coverage evidence only; it does not establish acceptance or testing authorization."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Activate Ultimine and verify selected-shape indicator/key behavior. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Mine connected ore/log groups; verify only eligible connected blocks break, correct drops and tool durability. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Cycle through shapes and test logs, stone and supported crops. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test large connected groups and configured limits. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test claimed/protected blocks; verify FTB Chunks permissions are not bypassed. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test mixed block states/variants and verify unrelated structures are not destroyed. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Repeat in multiplayer and review client/server logs. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+<!-- IRONWOVEN_COVERAGE_END -->
+
+<!-- IRONWOVEN_COVERAGE_BEGIN filename="invtweaks-1.21.1-1.4.0.jar" -->
+### Inventory Tweaks ReFoxed 1.4.0
+**Current status:** Pending — Beta tester validation
+**Testing restriction:** Do not execute these actions until the maintainer clears the exact-version preflight gates.
+**Preflight gate:** Confirm client-only placement/compatibility and exact-version authorization before feature testing.
+**Source identity:** [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/inventory-tweaks-refoxed/files/9488021)
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-COVERAGE-INVENTORY-TWEAKS-REFOXED-1-4-0","record_type":"screenshot_managed_beta_coverage","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-21T07:38:22Z","source_ref":["docs/archive/research/BETA_CHECKLIST_GAP_RESEARCH_2026-11-21.md — Inventory Tweaks ReFoxed 1.4.0; exact CurseForge file 9488021 and proposed actions.","verified_at is the private research-source commit time, not a feature-test event.","Screenshot presence is coverage evidence only; it does not establish acceptance or testing authorization."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Sort player inventory with button and key; verify each sort order. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Sort a chest and verify only the intended side is rearranged. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Quick-stack into a container already holding that item; verify Shift-click moves only what fits. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test restricted slots, stack limits and locked slots. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Empty a held stack/break a tool; verify auto-refill. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Verify held-item counter updates after transfers and use. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test Ctrl+Shift+Q; verify only matching stacks in that inventory drop. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Repeat sorting/quick-stack in multiplayer and confirm no loss or duplication. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+<!-- IRONWOVEN_COVERAGE_END -->
+
+<!-- IRONWOVEN_COVERAGE_BEGIN filename="simplemagnets-1.1.12c-neoforge-mc1.21.jar" -->
+### Simple Magnets 1.1.12c
+**Current status:** Pending — Beta tester validation
+**Testing restriction:** Do not execute these actions until the maintainer clears the exact-version preflight gates.
+**Preflight gate:** All Rights Reserved terms remain a distribution gate. Required Core Lib/Config Lib filename-suffix differences are unresolved; verify exact dependency placement and parity before feature testing.
+**Source identity:** [CurseForge file](https://www.curseforge.com/minecraft/mc-mods/simple-magnets/files/6316527)
+
+<!-- IRONWOVEN_CHRONOLOGY
+{"record_id":"IRONWOVEN-COVERAGE-SIMPLE-MAGNETS-1-1-12C","record_type":"screenshot_managed_beta_coverage","created_at":"unknown","updated_at":"unknown","verified_at":"2026-11-21T07:38:22Z","source_ref":["docs/archive/research/BETA_CHECKLIST_GAP_RESEARCH_2026-11-21.md — Simple Magnets 1.1.12c; exact CurseForge file 6316527 and proposed actions.","verified_at is the private research-source commit time, not a feature-test event.","Screenshot presence is coverage evidence only; it does not establish acceptance or testing authorization."],"timezone_display":"Europe/Amsterdam","chronology_status":"CURRENT"}
+-->
+
+| Test action | Result | Test environment | Tester nickname | Test date (DD-MM-YYYY) | Evidence / notes (log, screenshot, observations) |
+|---|---|---|---|---|---|
+| Test each available magnet tier with dropped items. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Verify XP attraction awards XP once, without loss/duplication. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test near, medium and configured maximum range. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Configure whitelist and blacklist; verify only intended item types are attracted. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Toggle magnet/demagnetization behavior and verify config persistence after relog. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test Curios slot integration. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+| Test around farms/machines and claim boundaries for unintended item extraction. | Pending — Beta tester validation | Not recorded | Not recorded | DD-MM-YYYY | Add result and evidence here |
+<!-- IRONWOVEN_COVERAGE_END -->
+
+<!-- IRONWOVEN_COVERAGE_COLLECTION_END -->

@@ -9,7 +9,7 @@ Player-facing summary of the current Ironwoven development pack. This is not a r
 ## Current automatic version
 
 <!-- IRONWOVEN_AUTO_VERSION -->
-**Current Ironwoven pack version:** `v0.1.118.5` — release `0`, content revision `1`, `118` matching screenshot-listed mod JARs (after documented exclusions), and `5` active accepted bug fixes.
+**Current Ironwoven pack version:** `v0.1.126.5` — release `0`, content revision `1`, `126` matching screenshot-listed mod JARs (after documented exclusions), and `5` active accepted bug fixes.
 
 **Version format:** `v<release>.<content revision>.<top-level dedicated-server mod JARs>.<active accepted bug fixes>`.
 
